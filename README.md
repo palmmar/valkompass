@@ -1,5 +1,8 @@
 # Valkompass 2026
 
+[![CI](https://github.com/palmmar/valkompass/actions/workflows/ci.yml/badge.svg)](https://github.com/palmmar/valkompass/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 En valkompass för det svenska riksdagsvalet 2026. Användaren svarar anonymt på ~50
 påståenden och får se hur väl ställningstagandena stämmer överens med de åtta
 riksdagspartierna (S, M, SD, C, V, KD, L, MP) — totalt, per politikområde och fråga för fråga.
@@ -78,3 +81,8 @@ av arbetsmarknad, försvar, äldreomsorg, bostäder och EU.
 
 Innehållet seedas idempotent från `backend/src/Valkompass.Infrastructure/Seed/Content/*.json`.
 Generatorn `backend/tools/gen_content.py` skapar `questions.json` och `positions.json`.
+
+## Licens
+
+Öppen källkod under [MIT-licensen](LICENSE) – fri att använda, kopiera, ändra, sprida och
+använda kommersiellt. Bidrag är välkomna.
