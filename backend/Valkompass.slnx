@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Valkompass.Api/Valkompass.Api.csproj" />
+    <Project Path="src/Valkompass.Application/Valkompass.Application.csproj" />
+    <Project Path="src/Valkompass.Domain/Valkompass.Domain.csproj" />
+    <Project Path="src/Valkompass.Infrastructure/Valkompass.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Valkompass.IntegrationTests/Valkompass.IntegrationTests.csproj" />
+    <Project Path="tests/Valkompass.UnitTests/Valkompass.UnitTests.csproj" />
+  </Folder>
+</Solution>

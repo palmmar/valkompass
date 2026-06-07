@@ -1,0 +1,83 @@
+import type {
+  AdminCategory,
+  AdminParty,
+  AdminQuestion,
+  AuthUser,
+  CategoryInput,
+  PartyInput,
+  PositionInput,
+  PositionsMatrix,
+  QuestionInput,
+} from "@/lib/admin-types";
+
+export class ApiError extends Error {
+  constructor(
+    public status: number,
+    message: string,
+  ) {
+    super(message);
+  }
+}
+
+async function req<T>(path: string, options?: RequestInit): Promise<T> {
+  const res = await fetch(`/api${path}`, {
+    credentials: "include",
+    headers: { "Content-Type": "application/json" },
+    ...options,
+  });
+
+  if (res.status === 204) return undefined as T;
+
+  const text = await res.text();
+  const data = text ? JSON.parse(text) : null;
+
+  if (!res.ok) {
+    let message = data?.message ?? `Något gick fel (${res.status}).`;
+    if (data?.errors) message = Object.values(data.errors).flat().join(" ");
+    throw new ApiError(res.status, message);
+  }
+  return data as T;
+}
+
+// --- Auth ---
+export const login = (email: string, password: string) =>
+  req<AuthUser>("/auth/login", { method: "POST", body: JSON.stringify({ email, password }) });
+export const logout = () => req<void>("/auth/logout", { method: "POST" });
+export const getMe = () => req<AuthUser>("/auth/me");
+
+// --- Categories ---
+export const listCategories = () => req<AdminCategory[]>("/admin/categories");
+export const createCategory = (input: CategoryInput) =>
+  req<AdminCategory>("/admin/categories", { method: "POST", body: JSON.stringify(input) });
+export const updateCategory = (id: number, input: CategoryInput) =>
+  req<AdminCategory>(`/admin/categories/${id}`, { method: "PUT", body: JSON.stringify(input) });
+export const deleteCategory = (id: number) =>
+  req<void>(`/admin/categories/${id}`, { method: "DELETE" });
+
+// --- Parties ---
+export const listParties = () => req<AdminParty[]>("/admin/parties");
+export const createParty = (input: PartyInput) =>
+  req<AdminParty>("/admin/parties", { method: "POST", body: JSON.stringify(input) });
+export const updateParty = (id: number, input: PartyInput) =>
+  req<AdminParty>(`/admin/parties/${id}`, { method: "PUT", body: JSON.stringify(input) });
+export const deleteParty = (id: number) =>
+  req<void>(`/admin/parties/${id}`, { method: "DELETE" });
+
+// --- Questions ---
+export const listQuestions = () => req<AdminQuestion[]>("/admin/questions");
+export const getQuestion = (id: number) => req<AdminQuestion>(`/admin/questions/${id}`);
+export const createQuestion = (input: QuestionInput) =>
+  req<AdminQuestion>("/admin/questions", { method: "POST", body: JSON.stringify(input) });
+export const updateQuestion = (id: number, input: QuestionInput) =>
+  req<AdminQuestion>(`/admin/questions/${id}`, { method: "PUT", body: JSON.stringify(input) });
+export const deleteQuestion = (id: number) =>
+  req<void>(`/admin/questions/${id}`, { method: "DELETE" });
+
+// --- Positions ---
+export const getPositions = (questionId: number) =>
+  req<PositionsMatrix>(`/admin/questions/${questionId}/positions`);
+export const savePositions = (questionId: number, positions: PositionInput[]) =>
+  req<void>(`/admin/questions/${questionId}/positions`, {
+    method: "PUT",
+    body: JSON.stringify({ positions }),
+  });

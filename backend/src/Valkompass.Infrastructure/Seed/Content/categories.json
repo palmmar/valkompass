@@ -1,0 +1,13 @@
+[
+  { "slug": "sjukvard",       "name": "Sjukvård",              "icon": "heart-pulse",   "displayOrder": 1,  "description": "Hälso- och sjukvårdens finansiering, organisation och tillgänglighet." },
+  { "slug": "lag-ordning",    "name": "Lag och ordning",       "icon": "shield",        "displayOrder": 2,  "description": "Brottsbekämpning, straff och polisens resurser." },
+  { "slug": "migration",      "name": "Migration och integration", "icon": "globe",     "displayOrder": 3,  "description": "Asyl- och invandringspolitik samt integration." },
+  { "slug": "ekonomi-skatter","name": "Ekonomi och skatter",   "icon": "banknote",      "displayOrder": 4,  "description": "Skatter, statens utgifter och den ekonomiska politiken." },
+  { "slug": "klimat-energi",  "name": "Klimat och energi",     "icon": "leaf",          "displayOrder": 5,  "description": "Klimatomställning, energiförsörjning och kärnkraft." },
+  { "slug": "skola",          "name": "Skola och utbildning",  "icon": "graduation-cap","displayOrder": 6,  "description": "Skolans styrning, friskolor och utbildningens kvalitet." },
+  { "slug": "arbetsmarknad",  "name": "Arbetsmarknad",         "icon": "briefcase",     "displayOrder": 7,  "description": "Arbetsrätt, a-kassa och villkor på arbetsmarknaden." },
+  { "slug": "forsvar",        "name": "Försvar och säkerhet",  "icon": "swords",        "displayOrder": 8,  "description": "Försvarets finansiering och Sveriges säkerhetspolitik." },
+  { "slug": "aldreomsorg",    "name": "Äldreomsorg",           "icon": "users",         "displayOrder": 9,  "description": "Omsorg om äldre, pensioner och välfärdens kvalitet." },
+  { "slug": "bostader",       "name": "Bostäder",              "icon": "home",          "displayOrder": 10, "description": "Bostadsbyggande, hyresreglering och bostadsmarknad." },
+  { "slug": "eu",             "name": "EU och omvärlden",      "icon": "flag",          "displayOrder": 11, "description": "Sveriges roll i EU och internationellt samarbete." }
+]
