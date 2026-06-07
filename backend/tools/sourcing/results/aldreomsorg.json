@@ -1,0 +1,244 @@
+[
+  {
+    "questionKey": "aldre-resurser",
+    "partyCode": "V",
+    "value": 4,
+    "motivation": "V vill kraftigt förstärka statsbidragen till äldreomsorgen för fler anställda och högre löner och är generellt berett att höja skatter för välfärden.",
+    "sourceCitation": "Vänsterpartiet, Vår politik A-Ö: Äldreomsorg, 2025",
+    "sourceUrl": "https://www.vansterpartiet.se/var-politik/politik-a-o/aldreomsorg/",
+    "quote": "De generiska statsbidragen måste därför förstärkas rejält för att möjliggöra en ökad personaltäthet bland undersköterskor och vårdbiträden.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "aldre-resurser",
+    "partyCode": "S",
+    "value": 3,
+    "motivation": "S vill öka resurserna till äldreomsorgen och indexera statsbidragen för att stoppa nedskärningar, men driver inte generella skattehöjningar som huvudlinje.",
+    "sourceCitation": "Socialdemokraterna, S vill stoppa nedskärningarna i äldreomsorgen, 2026",
+    "sourceUrl": "https://www.socialdemokraterna.se/nyheter/nyheter/2026-01-29-s-vill-stoppa-nedskarningarna-i-aldreomsorgen-och-slopa-minutstyrningen",
+    "quote": "Genomför ett systemskifte så att statsbidragen till äldreomsorgen indexeras utifrån inflationen.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "aldre-resurser",
+    "partyCode": "MP",
+    "value": 3,
+    "motivation": "MP har drivit på för stora statliga satsningar på äldreomsorgen och vill stärka kvaliteten, men formulerar det inte primärt som en skattehöjningsfråga.",
+    "sourceCitation": "Miljöpartiet, Satsningar för samhällets mest utsatta, 2024",
+    "sourceUrl": "https://www.mp.se/politik/satsningar-samhallets-mest-utsatta-hela-listan/",
+    "quote": "",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "aldre-resurser",
+    "partyCode": "C",
+    "value": 2,
+    "motivation": "C vill stärka kvalitet, bemanning och medicinsk trygghet i äldreomsorgen men är skattekritiskt och prioriterar sänkt skatt framför höjda skatter.",
+    "sourceCitation": "Centerpartiet, Vår politik A-Ö: Äldreomsorg, 2025",
+    "sourceUrl": "https://www.centerpartiet.se/var-politik/politik-a-o/vard-och-omsorg/aldreomsorg",
+    "quote": "Stärka den medicinska tryggheten med fler läkare och kompetensutveckling",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "aldre-resurser",
+    "partyCode": "L",
+    "value": 2,
+    "motivation": "L vill stärka äldreomsorgens kvalitet och valfrihet men förespråkar lägre skatt och ser inte höjd skatt som vägen till bättre äldreomsorg.",
+    "sourceCitation": "Liberalerna, Hemtjänst, 2025",
+    "sourceUrl": "https://www.liberalerna.se/politik/hemtjanst",
+    "quote": "Vi vill att äldre ska ha ett högre RUT-avdrag så att fler har råd att använda detta.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "aldre-resurser",
+    "partyCode": "KD",
+    "value": 3,
+    "motivation": "KD prioriterar äldreomsorgen högt och vill satsa på bemanning, medicinsk kompetens och kvalitet, men förordar samtidigt sänkt skatt för pensionärer.",
+    "sourceCitation": "Kristdemokraterna, Vår politik: Äldre, 2025",
+    "sourceUrl": "https://kristdemokraterna.se/var-politik/politikomraden/aldre",
+    "quote": "kraftfulla reformer för att skapa en trygg och värdig äldreomsorg",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "aldre-resurser",
+    "partyCode": "M",
+    "value": 2,
+    "motivation": "M vill stärka äldreomsorgens kvalitet och kompetens men säger uttryckligen nej till skattehöjningar och förespråkar i stället sänkt skatt.",
+    "sourceCitation": "Moderaterna, Äldreomsorg och äldrevård, 2025",
+    "sourceUrl": "https://moderaterna.se/var-politik/aldreomsorg-och-aldrevard/",
+    "quote": "Stärka den medicinska kompetensen och ledarskapet i äldreomsorgen",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "aldre-resurser",
+    "partyCode": "SD",
+    "value": 3,
+    "motivation": "SD prioriterar äldreomsorgen högt och vill öka stödet till äldre, men driver inte generella skattehöjningar och vill sänka skatt för pensionärer.",
+    "sourceCitation": "Sverigedemokraterna, Sverige för äldre, 2025",
+    "sourceUrl": "https://www.sd.se/vad-vi-vill/sverige-for-aldre/",
+    "quote": "Öka det ekonomiska stödet till utsatta äldre",
+    "confidence": "medium"
+  },
+
+  {
+    "questionKey": "aldre-pension",
+    "partyCode": "V",
+    "value": 4,
+    "motivation": "V driver att alla ska kunna leva på sin pension och vill höja garantipensionen och de lägsta pensionerna.",
+    "sourceCitation": "Vänsterpartiet, Vår politik A-Ö: Pension, 2025",
+    "sourceUrl": "https://www.vansterpartiet.se/var-politik/politik-a-o/pension/",
+    "quote": "Alla människor ska kunna leva på sin pension, inte bara de som varit höginkomsttagare",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "aldre-pension",
+    "partyCode": "S",
+    "value": 3,
+    "motivation": "S vill stärka pensionärernas ekonomi och har stått bakom höjt grundskydd, men driver inte de mest långtgående höjningarna av de lägsta pensionerna.",
+    "sourceCitation": "Socialdemokraterna, S vill satsa på pensionärer och en starkare äldreomsorg, 2025",
+    "sourceUrl": "https://www.socialdemokraterna.se/nyheter/nyheter/2025-10-02-s-vill-satsa-pa-pensionarer-och-en-starkare-aldreomsorg",
+    "quote": "",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "aldre-pension",
+    "partyCode": "MP",
+    "value": 4,
+    "motivation": "MP vill uttryckligen höja garantipensionen och de lägsta pensionerna, bland annat av jämställdhetsskäl.",
+    "sourceCitation": "Miljöpartiet, Pensioner, 2025",
+    "sourceUrl": "https://www.mp.se/politik/pensioner/",
+    "quote": "Höja garantipensionen och reformera pensionssystemet med syfte att höja pensionerna, mest för de med de lägsta pensionerna.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "aldre-pension",
+    "partyCode": "C",
+    "value": 2,
+    "motivation": "C vill värna ett starkt grundskydd men prioriterar längre arbetsliv framför direkta höjningar av de lägsta pensionerna.",
+    "sourceCitation": "Centerpartiet, Centerpartiets politik A-Ö: Pensioner, 2025",
+    "sourceUrl": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/trygghetssystem/pensioner",
+    "quote": "",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "aldre-pension",
+    "partyCode": "L",
+    "value": 3,
+    "motivation": "L betonar arbetslinje och systemstabilitet men har som del av högerblocket stått bakom en höjning av garantipensionen för de med lägst pension.",
+    "sourceCitation": "Moderaterna, M, SD, KD och L är överens om kraftigt höjda pensioner, 2022",
+    "sourceUrl": "https://moderaterna.se/nyhet/m-sd-kd-och-l-ar-overens-om-kraftigt-hojda-pensioner/",
+    "quote": "Höjning av garantipensionen med 600 kronor per månad, för alla med en allmän pension under 14 000 kronor i månaden.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "aldre-pension",
+    "partyCode": "KD",
+    "value": 3,
+    "motivation": "KD har varit med och höjt garantipensionen och vill förbättra bostadstillägget, men kombinerar det med sänkt pensionärsskatt snarare än enbart höjda lägstanivåer.",
+    "sourceCitation": "Kristdemokraterna, Vår politik A-Ö: Pension, 2025",
+    "sourceUrl": "https://kristdemokraterna.se/politik-a-o/pension/",
+    "quote": "Vi har varit med och höjt garantipensionen och föreslår ett förbättrat bostadstillägg för pensionärer.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "aldre-pension",
+    "partyCode": "M",
+    "value": 3,
+    "motivation": "M vill höja ersättningen till de sämst ställda pensionärerna men kopplar det till sänkt skatt och en gas-mekanism snarare än stora generella höjningar.",
+    "sourceCitation": "Moderaterna, Moderaterna vill förbättra ekonomin för landets pensionärer, 2025",
+    "sourceUrl": "https://moderaterna.se/nyhet/hojda-pensioner/",
+    "quote": "Höjd ersättning till de sämst ställda pensionärerna – 1000 kronor mer i plånboken varje månad",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "aldre-pension",
+    "partyCode": "SD",
+    "value": 4,
+    "motivation": "SD vill höja grundskyddet, garantipensionen och bostadstillägget och har gjort höjda pensioner till en profilfråga.",
+    "sourceCitation": "SVT Nyheter, SD vill reformera pensionssystemet, 2022",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/sd-vill-reformera-pensionssystemet",
+    "quote": "SD vill slopa den allmänna pensionsavgiften och höja grundskyddet, garantipensionen och bostadstilläggen för pensionärer.",
+    "confidence": "high"
+  },
+
+  {
+    "questionKey": "aldre-privat-omsorg",
+    "partyCode": "V",
+    "value": 4,
+    "motivation": "V vill stoppa vinstjakten i vård och omsorg och menar att skattepengar ska gå till personal och brukare, inte till privata vinster.",
+    "sourceCitation": "Vänsterpartiet, Vår politik A-Ö: Äldreomsorg, 2025",
+    "sourceUrl": "https://www.vansterpartiet.se/var-politik/politik-a-o/aldreomsorg/",
+    "quote": "Stopp för vinstjakten i vård och omsorg. Varenda skattekrona ska gå till personal och brukare, inte till VD:ars-löner och aktieägares utdelningar.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "aldre-privat-omsorg",
+    "partyCode": "S",
+    "value": 3,
+    "motivation": "S vill avskaffa LOV och bygga ett system som utgår från behov i stället för företagens vinstmöjligheter, vilket begränsar privata utförares roll.",
+    "sourceCitation": "Socialdemokraterna, S vill stoppa nedskärningarna i äldreomsorgen, 2026",
+    "sourceUrl": "https://www.socialdemokraterna.se/nyheter/nyheter/2026-01-29-s-vill-stoppa-nedskarningarna-i-aldreomsorgen-och-slopa-minutstyrningen",
+    "quote": "Avskaffa LOV och inför ett system som utgår utifrån behoven, inte företagens möjlighet till vinst.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "aldre-privat-omsorg",
+    "partyCode": "MP",
+    "value": 3,
+    "motivation": "MP är skeptiskt till obegränsad valfrihet och vinstdrivna aktörer och vill hellre begränsa valet till kommunalt upphandlade utförare med högre krav.",
+    "sourceCitation": "Vårdföretagarna, Valspecial: Ska du få välja äldreboende själv? Så svarar partierna, 2026",
+    "sourceUrl": "https://www.vardforetagarna.se/2026/05/valspecial-ska-du-fa-valja-aldreboende-sjalv-sa-svarar-partierna/",
+    "quote": "",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "aldre-privat-omsorg",
+    "partyCode": "C",
+    "value": 1,
+    "motivation": "C värnar valfriheten och en mångfald av offentliga, privata och ideella utförare och vill inte begränsa privata aktörer.",
+    "sourceCitation": "Centerpartiet, Vår politik A-Ö: Valfrihet i välfärden, 2025",
+    "sourceUrl": "https://www.centerpartiet.se/var-politik/politik-a-o/vard-och-omsorg/valfrihet-i-valfarden",
+    "quote": "Stå upp för människors rätt att välja och främja en mångfald av vård- och omsorgsaktörer",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "aldre-privat-omsorg",
+    "partyCode": "L",
+    "value": 1,
+    "motivation": "L vill utöka valfriheten och slår fast att äldre själva ska få välja mellan privata och kommunala utförare i hemtjänsten.",
+    "sourceCitation": "Liberalerna, Hemtjänst, 2025",
+    "sourceUrl": "https://www.liberalerna.se/politik/hemtjanst",
+    "quote": "Därför ska alla som behöver hemtjänst själva få välja utförare, och få mer makt över innehållet.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "aldre-privat-omsorg",
+    "partyCode": "KD",
+    "value": 1,
+    "motivation": "KD välkomnar privata, ideella och kooperativa alternativ och vill stärka äldres rätt att välja utförare, inte begränsa dem.",
+    "sourceCitation": "Kristdemokraterna, Vår politik A-Ö: Valfrihet, 2025",
+    "sourceUrl": "https://kristdemokraterna.se/var-politik/politik-a-till-o/valfrihet",
+    "quote": "Vi välkomnar privata, ideella och kooperativa alternativ som komplement till den kommunala verksamheten.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "aldre-privat-omsorg",
+    "partyCode": "M",
+    "value": 1,
+    "motivation": "M ser valfrihet och en mångfald av utförare som centralt för kvaliteten i äldreomsorgen och vill inte begränsa privata aktörer.",
+    "sourceCitation": "SVT Valkompass 2022, Privata företag ska tillåtas driva äldreboenden och hemtjänst (Stockholm)",
+    "sourceUrl": "https://valkompass.svt.se/2022/stockholm/fraga/privata-foretag-ska-tillatas-driva-aldreboenden-och-hemtjanst",
+    "quote": "",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "aldre-privat-omsorg",
+    "partyCode": "SD",
+    "value": 2,
+    "motivation": "SD vill snarare utöka privata utförare och göra LOV obligatorisk i alla kommuner, men betonar samtidigt hårdare tillsyn och uppföljning.",
+    "sourceCitation": "Sveriges riksdag, Motion 2024/25:1365 God vård och omsorg för äldre (SD)",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/god-vard-och-omsorg-for-aldre_hc021365/",
+    "quote": "LOV bör göras obligatorisk för äldreomsorg i alla landets kommuner och regeringen bör se över hur detta kan genomföras.",
+    "confidence": "high"
+  }
+]

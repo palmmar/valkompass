@@ -5,8 +5,10 @@ Genererar questions.json och positions.json för valkompassen.
 Frågorna är fördelade efter väljarnas viktigaste frågor (Novus 2025: sjukvård, skola,
 lag och ordning, migration, klimat/energi, ekonomi, försvar, arbetsmarknad, äldreomsorg).
 
-OBS: Partiernas positioner är ett UTKAST baserat på partiernas etablerade hållningar i
-klassiska skiljefrågor. De ska granskas och källsättas i admingränssnittet innan publicering.
+Partiernas positioner källsätts från sourcing/sources.json (verkliga, hämtade
+webbkällor: partiprogram/"Vår politik A–Ö", riksdagsvoteringar, etablerade valkompasser,
+trovärdig nyhetsrapportering). Värdelistan nedan är det ursprungliga UTKASTET och används
+numera bara som fallback för celler som ännu inte finns i sources.json.
 
 Skala: 4 = håller helt med, 3 = delvis med, 2 = delvis emot, 1 = håller inte med, None = oklar.
 Partiordning i value-listan: [V, S, MP, C, L, KD, M, SD]
@@ -249,6 +251,12 @@ def main():
     content_dir = os.path.normpath(os.path.join(
         here, "..", "src", "Valkompass.Infrastructure", "Seed", "Content"))
 
+    # Källsatta positioner (verkliga webbkällor). Faller tillbaka på utkastet i Q
+    # för ev. celler som saknas i sources.json.
+    sources_path = os.path.join(here, "sourcing", "sources.json")
+    with open(sources_path, encoding="utf-8") as f:
+        src_by = {(s["questionKey"], s["partyCode"]): s for s in json.load(f)}
+
     questions = []
     positions = []
     order_by_cat = {}
@@ -263,16 +271,25 @@ def main():
             "explanation": expl,
         })
         for party, value in zip(PARTIES, values):
-            if value is None:
-                continue
-            positions.append({
-                "partyCode": party,
-                "questionKey": key,
-                "value": value,
-                "motivation": None,
-                "sourceCitation": DRAFT_SOURCE,
-                "sourceUrl": None,
-            })
+            src = src_by.get((key, party))
+            if src is not None and src.get("value") is not None:
+                positions.append({
+                    "partyCode": party,
+                    "questionKey": key,
+                    "value": src["value"],
+                    "motivation": src["motivation"],
+                    "sourceCitation": src["sourceCitation"],
+                    "sourceUrl": src["sourceUrl"],
+                })
+            elif value is not None:
+                positions.append({
+                    "partyCode": party,
+                    "questionKey": key,
+                    "value": value,
+                    "motivation": None,
+                    "sourceCitation": DRAFT_SOURCE,
+                    "sourceUrl": None,
+                })
 
     with open(os.path.join(content_dir, "questions.json"), "w", encoding="utf-8") as f:
         json.dump(questions, f, ensure_ascii=False, indent=2)

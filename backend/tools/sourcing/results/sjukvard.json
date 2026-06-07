@@ -1,0 +1,482 @@
+[
+  {
+    "questionKey": "sjukvard-statlig-styrning",
+    "partyCode": "V",
+    "value": 2,
+    "motivation": "V vill inte förstatliga vården men förespråkar ökat statligt ansvar för finansiering och vissa områden; behåller regionalt huvudmannaskap.",
+    "sourceCitation": "Vänsterpartiet, Vår politik A-Ö: Hälso- och sjukvårdens huvudmannaskap, 2025",
+    "sourceUrl": "https://www.vansterpartiet.se/var-politik/politik-a-o/halso-och-sjukvardens-huvudmannaskap/",
+    "quote": "Vänsterpartiet vill inte förstatliga vården.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "sjukvard-statlig-styrning",
+    "partyCode": "S",
+    "value": 2,
+    "motivation": "S vill behålla regionalt huvudmannaskap (men gärna färre/större regioner) och avvisar ett statligt övertagande efter utredningen.",
+    "sourceCitation": "SVT Nyheter, Efter utredning: 6 av 8 partier vill inte att staten tar över sjukvården, 2025",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/svt-erfar-partierna-splittrade-om-statlig-sjukvard",
+    "quote": "Nu är det här prövat och analyserat och i mina ögon är det här spiken i kistan för ett statligt huvudmannaskap.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "sjukvard-statlig-styrning",
+    "partyCode": "MP",
+    "value": 1,
+    "motivation": "MP vill att huvudmannaskapet för sjukvården fortsatt ska ligga hos regionerna och avvisar statligt övertagande.",
+    "sourceCitation": "Sjukhusläkaren, Så ser riksdagspartierna på SKR:s roll i svensk sjukvård, 2024",
+    "sourceUrl": "https://www.sjukhuslakaren.se/sa-ser-riksdagspartierna-pa-skrs-roll-i-svensk-sjukvard/",
+    "quote": "Huvudmannaskapet över sjukvården ska fortsatt ligga hos regionerna.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "sjukvard-statlig-styrning",
+    "partyCode": "C",
+    "value": 1,
+    "motivation": "C motsätter sig förstatligande av sjukvården och vill behålla regionalt ansvar, med utökad statlig samordning på vissa områden.",
+    "sourceCitation": "SVT Nyheter, Efter utredning: 6 av 8 partier vill inte att staten tar över sjukvården, 2025",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/svt-erfar-partierna-splittrade-om-statlig-sjukvard",
+    "quote": "Efter utredningen är KD och SD de enda partierna som förespråkar ett fullständigt förstatligande av hälso- och sjukvården.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "sjukvard-statlig-styrning",
+    "partyCode": "L",
+    "value": 1,
+    "motivation": "L vill att huvudmannaskapet fortsatt ska ligga hos regionerna och avvisar ett förstatligande, även om de vill ha tydligare statlig styrning.",
+    "sourceCitation": "Sjukhusläkaren, Så ser riksdagspartierna på SKR:s roll i svensk sjukvård, 2024",
+    "sourceUrl": "https://www.sjukhuslakaren.se/sa-ser-riksdagspartierna-pa-skrs-roll-i-svensk-sjukvard/",
+    "quote": "Huvudmannaskapet över sjukvården ska fortsatt ligga hos regionerna.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "sjukvard-statlig-styrning",
+    "partyCode": "KD",
+    "value": 4,
+    "motivation": "KD vill att staten ska vara huvudman för sjukvården och ta bort regionernas beskattningsrätt och självstyre över vården.",
+    "sourceCitation": "Sjukhusläkaren, Så ser riksdagspartierna på SKR:s roll i svensk sjukvård, 2024",
+    "sourceUrl": "https://www.sjukhuslakaren.se/sa-ser-riksdagspartierna-pa-skrs-roll-i-svensk-sjukvard/",
+    "quote": "Staten ska ha huvudansvar för hälso- och sjukvården ... regionernas beskattningsrätt och självstyre över hälso- och sjukvården ska tas bort.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "sjukvard-statlig-styrning",
+    "partyCode": "M",
+    "value": 1,
+    "motivation": "M centralt vill behålla regionalt huvudmannaskap och avvisar ett förstatligande; staten ska ha en tydligare men smalare roll.",
+    "sourceCitation": "SVT Nyheter, Efter utredning: 6 av 8 partier vill inte att staten tar över sjukvården, 2025",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/svt-erfar-partierna-splittrade-om-statlig-sjukvard",
+    "quote": "Efter utredningen är KD och SD de enda partierna som förespråkar ett fullständigt förstatligande av hälso- och sjukvården.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "sjukvard-statlig-styrning",
+    "partyCode": "SD",
+    "value": 4,
+    "motivation": "SD vill flytta huvudmannaskapet för hela eller delar av sjukvården från regionerna till staten, med förstatligande som slutmål.",
+    "sourceCitation": "Sjukhusläkaren, Så ser riksdagspartierna på SKR:s roll i svensk sjukvård, 2024",
+    "sourceUrl": "https://www.sjukhuslakaren.se/sa-ser-riksdagspartierna-pa-skrs-roll-i-svensk-sjukvard/",
+    "quote": "flytta huvudmannaskapet för hela, eller delar av sjukvården, från regionerna till staten",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "sjukvard-vinstforbud",
+    "partyCode": "V",
+    "value": 4,
+    "motivation": "V vill att ett förbud mot vinster i välfärden utreds och införs; vinstsyftande företag ska inte bedriva skattefinansierad kärnverksamhet.",
+    "sourceCitation": "Vänsterpartiet, Vår politik A-Ö: Vinster i välfärden, 2025",
+    "sourceUrl": "https://www.vansterpartiet.se/var-politik/politik-a-o/vinster-i-valfarden/",
+    "quote": "ett förbud mot vinster i välfärden bör utredas och införas",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "sjukvard-vinstforbud",
+    "partyCode": "S",
+    "value": 3,
+    "motivation": "S vill stoppa vinstjakten och har föreslagit vinstbegränsningar samt utredning om att stoppa vinstuttag i vården, men driver inte ett totalt vinstförbud.",
+    "sourceCitation": "Socialdemokraterna, Vår politik A-Ö: Sjukvård, 2026",
+    "sourceUrl": "https://www.socialdemokraterna.se/var-politik/a-till-o/sjukvard",
+    "quote": "dina medicinska behov alltid går före privata vinstintressen",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "sjukvard-vinstforbud",
+    "partyCode": "MP",
+    "value": 3,
+    "motivation": "MP vill att eventuella överskott ska återinvesteras i verksamheten och att vinstintressen inte ska styra välfärden, snarare än ett uttalat totalförbud.",
+    "sourceCitation": "Dagens Arena, Så vill partierna förbättra sjukvården, 2026",
+    "sourceUrl": "https://www.dagensarena.se/innehall/sa-vill-partierna-forbattra-sjukvarden/",
+    "quote": "",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "sjukvard-vinstforbud",
+    "partyCode": "C",
+    "value": 1,
+    "motivation": "C motsätter sig vinstförbud och menar att kvaliteten, inte ägandeformen, ska styra; höga krav ska gälla alla utförare.",
+    "sourceCitation": "Centerpartiet, Vår politik A-Ö: Valfrihet i välfärden, 2025",
+    "sourceUrl": "https://www.centerpartiet.se/var-politik/politik-a-o/vard-och-omsorg/valfrihet-i-valfarden",
+    "quote": "kvaliteten, inte ägandeformen, ska styra. Höga krav ska gälla alla",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "sjukvard-vinstforbud",
+    "partyCode": "L",
+    "value": 1,
+    "motivation": "L vill inte förbjuda företag i välfärden att göra vinst och fokuserar på kvalitet snarare än ägandeform.",
+    "sourceCitation": "Dagens Arena, Så vill partierna förbättra sjukvården, 2026",
+    "sourceUrl": "https://www.dagensarena.se/innehall/sa-vill-partierna-forbattra-sjukvarden/",
+    "quote": "",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "sjukvard-vinstforbud",
+    "partyCode": "KD",
+    "value": 1,
+    "motivation": "KD motsätter sig vinstförbud och betonar valfrihet och mångfald av utförare; fokus ligger på kvalitet i den solidariskt finansierade vården.",
+    "sourceCitation": "Dagens Arena, Så vill partierna förbättra sjukvården, 2026",
+    "sourceUrl": "https://www.dagensarena.se/innehall/sa-vill-partierna-forbattra-sjukvarden/",
+    "quote": "Den solidariskt finansierade vården ska hålla en så hög kvalitet",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "sjukvard-vinstforbud",
+    "partyCode": "M",
+    "value": 1,
+    "motivation": "M motsätter sig vinstförbud och ser gärna fristående aktörer i vården; ingen vinstbegränsning nämns i deras politik.",
+    "sourceCitation": "Moderaterna, Vår politik: Hälso- och sjukvård, 2025",
+    "sourceUrl": "https://moderaterna.se/var-politik/halso-och-sjukvard-2/",
+    "quote": "Vi ser gärna fristående aktörer inom sjukvården – om det bidrar till att fler patienter får vård i rätt tid.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "sjukvard-vinstforbud",
+    "partyCode": "SD",
+    "value": 2,
+    "motivation": "SD driver inget generellt vinstförbud men vill ha hårdare kontroll, tillståndsplikt och åtgärder mot oseriösa privata aktörer; svagt belägg för exakt position.",
+    "sourceCitation": "Dagens Arena, Så vill partierna förbättra sjukvården, 2026",
+    "sourceUrl": "https://www.dagensarena.se/innehall/sa-vill-partierna-forbattra-sjukvarden/",
+    "quote": "",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "sjukvard-privat-vard",
+    "partyCode": "V",
+    "value": 1,
+    "motivation": "V är kritiskt till privata vårdgivare och anser att vinstsyftande företag inte ska bedriva skattefinansierad vård i kärnverksamheten.",
+    "sourceCitation": "Vänsterpartiet, Vår politik A-Ö: Sjukvård, 2025",
+    "sourceUrl": "https://www.vansterpartiet.se/var-politik/politik-a-o/sjukvard/",
+    "quote": "Vänsterpartiet tycker inte att vinstsyftande företag ska kunna bedriva verksamhet med skattemedel i sjukvårdens kärnverksamheter.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "sjukvard-privat-vard",
+    "partyCode": "S",
+    "value": 2,
+    "motivation": "S är kritiskt till privatiseringar (vill stoppa privatisering av akutsjukhus) och vill ta tillbaka demokratisk kontroll, men förbjuder inte privat vård generellt.",
+    "sourceCitation": "Dagens Arena, Så vill partierna förbättra sjukvården, 2026",
+    "sourceUrl": "https://www.dagensarena.se/innehall/sa-vill-partierna-forbattra-sjukvarden/",
+    "quote": "Vi vill stoppa privatiseringar av svenska akutsjukhus",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "sjukvard-privat-vard",
+    "partyCode": "MP",
+    "value": 2,
+    "motivation": "MP är kritiskt till marknadsstyrning och vinstdrivna modeller i vården men förbjuder inte privata aktörer helt.",
+    "sourceCitation": "Dagens Arena, Så vill partierna förbättra sjukvården, 2026",
+    "sourceUrl": "https://www.dagensarena.se/innehall/sa-vill-partierna-forbattra-sjukvarden/",
+    "quote": "",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "sjukvard-privat-vard",
+    "partyCode": "C",
+    "value": 4,
+    "motivation": "C välkomnar en mångfald av vårdgivare och menar att fler vårdgivare, offentliga och privata, är nyckeln till kortare köer.",
+    "sourceCitation": "Centerpartiet, Vår politik A-Ö: Sjukvård, 2025",
+    "sourceUrl": "https://www.centerpartiet.se/var-politik/politik-a-o/vard-och-omsorg/sjukvard",
+    "quote": "Fler vårdgivare, både offentliga och privata, är nyckeln till kortare köer.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "sjukvard-privat-vard",
+    "partyCode": "L",
+    "value": 4,
+    "motivation": "L anser att en mångfald av aktörer – offentliga, privata och civilsamhälleliga – är avgörande för valfrihet och innovation.",
+    "sourceCitation": "Riksdagen, Motion 2021/22:4001 Liberal sjukvårdspolitik (L)",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/liberal-sjukvardspolitik_h9024001/html/",
+    "quote": "Att det finns en mångfald av aktörer, både offentliga, privata och civilsamhällsdrivna, är avgörande för valfrihet och innovation.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "sjukvard-privat-vard",
+    "partyCode": "KD",
+    "value": 4,
+    "motivation": "KD stödjer mångfald och valfrihet med privata utförare i vården, även om de vill ha statligt huvudmannaskap för organisationen.",
+    "sourceCitation": "Dagens Arena, Så vill partierna förbättra sjukvården, 2026",
+    "sourceUrl": "https://www.dagensarena.se/innehall/sa-vill-partierna-forbattra-sjukvarden/",
+    "quote": "Den solidariskt finansierade vården ska hålla en så hög kvalitet att privata vårdförsäkringar inte ska behövas",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "sjukvard-privat-vard",
+    "partyCode": "M",
+    "value": 4,
+    "motivation": "M ser gärna fristående/privata aktörer inom sjukvården om de bidrar till att fler patienter får vård i rätt tid.",
+    "sourceCitation": "Moderaterna, Vår politik: Hälso- och sjukvård, 2025",
+    "sourceUrl": "https://moderaterna.se/var-politik/halso-och-sjukvard-2/",
+    "quote": "Vi ser gärna fristående aktörer inom sjukvården – om det bidrar till att fler patienter får vård i rätt tid.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "sjukvard-privat-vard",
+    "partyCode": "SD",
+    "value": 3,
+    "motivation": "SD accepterar privata vårdgivare och fri valfrihet av vårdgivare men vill ha tillståndsplikt och tydligare statlig styrning/förstatligande som slutmål.",
+    "sourceCitation": "Dagens Arena, Så vill partierna förbättra sjukvården, 2026",
+    "sourceUrl": "https://www.dagensarena.se/innehall/sa-vill-partierna-forbattra-sjukvarden/",
+    "quote": "",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "sjukvard-mer-resurser",
+    "partyCode": "V",
+    "value": 4,
+    "motivation": "V vill satsa mer pengar på sjukvården och höja den progressiva statliga skatten istället för skattesänkningar för höginkomsttagare.",
+    "sourceCitation": "Vänsterpartiet, Vår politik A-Ö: Sjukvård, 2025",
+    "sourceUrl": "https://www.vansterpartiet.se/var-politik/politik-a-o/sjukvard/",
+    "quote": "Vänsterpartiet vill satsa mer pengar för att få en bättre sjukvård. Det är viktigare än nya skattesänkningar för de som redan tjänar mest.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "sjukvard-mer-resurser",
+    "partyCode": "S",
+    "value": 3,
+    "motivation": "S vill höja statsbidragen till regionerna och göra personalsatsningar, men kopplar inte uttryckligen detta till generella skattehöjningar.",
+    "sourceCitation": "Socialdemokraterna, Vår politik A-Ö: Sjukvård, 2026",
+    "sourceUrl": "https://www.socialdemokraterna.se/var-politik/a-till-o/sjukvard",
+    "quote": "Genomföra en personalsatsning på 2,4 miljarder kronor",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "sjukvard-mer-resurser",
+    "partyCode": "MP",
+    "value": 3,
+    "motivation": "MP säger ja till ökade resurser till vården och vill höja de generella statsbidragen.",
+    "sourceCitation": "Dagens Arena, Så vill partierna förbättra sjukvården, 2026",
+    "sourceUrl": "https://www.dagensarena.se/innehall/sa-vill-partierna-forbattra-sjukvarden/",
+    "quote": "",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "sjukvard-mer-resurser",
+    "partyCode": "C",
+    "value": 2,
+    "motivation": "C vill undvika skattehöjningar och menar att skattepengar ska användas effektivare; skattesatsen avgörs av varje region.",
+    "sourceCitation": "Dagens Arena, Så vill partierna förbättra sjukvården, 2026",
+    "sourceUrl": "https://www.dagensarena.se/innehall/sa-vill-partierna-forbattra-sjukvarden/",
+    "quote": "Skattesatsen ligger dock på varje enskild region",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "sjukvard-mer-resurser",
+    "partyCode": "L",
+    "value": 2,
+    "motivation": "L menar att det går att få fram mer resurser till vården utan att höja skatten, dvs satsa mer men inte via skattehöjning.",
+    "sourceCitation": "Dagens Arena, Så vill partierna förbättra sjukvården, 2026",
+    "sourceUrl": "https://www.dagensarena.se/innehall/sa-vill-partierna-forbattra-sjukvarden/",
+    "quote": "Det går att få fram mer resurser utan att behöva höja skatten",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "sjukvard-mer-resurser",
+    "partyCode": "KD",
+    "value": 2,
+    "motivation": "KD vill tillföra medel via statsbidrag men driver inte skattehöjningar; betonar effektivare användning och statligt huvudmannaskap.",
+    "sourceCitation": "Dagens Arena, Så vill partierna förbättra sjukvården, 2026",
+    "sourceUrl": "https://www.dagensarena.se/innehall/sa-vill-partierna-forbattra-sjukvarden/",
+    "quote": "",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "sjukvard-mer-resurser",
+    "partyCode": "M",
+    "value": 1,
+    "motivation": "M motsätter sig höjda skatter och menar att Sverige redan satsar mycket; resurserna ska användas smartare och effektivare.",
+    "sourceCitation": "Moderaterna, Vår politik: Hälso- och sjukvård, 2025",
+    "sourceUrl": "https://moderaterna.se/var-politik/halso-och-sjukvard-2/",
+    "quote": "nästan inget land i världen satsar så mycket pengar på hälso- och sjukvården som Sverige",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "sjukvard-mer-resurser",
+    "partyCode": "SD",
+    "value": 3,
+    "motivation": "SD svarar ja på att mer resurser behövs till vården, men kopplar det inte tydligt till generella skattehöjningar.",
+    "sourceCitation": "Dagens Arena, Så vill partierna förbättra sjukvården, 2026",
+    "sourceUrl": "https://www.dagensarena.se/innehall/sa-vill-partierna-forbattra-sjukvarden/",
+    "quote": "Det korta svaret är ja",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "sjukvard-tandvard",
+    "partyCode": "V",
+    "value": 4,
+    "motivation": "V vill att tandvården på sikt ska ingå som en del av hälso- och sjukvården och i samma högkostnadsskydd; har avsatt budget för det.",
+    "sourceCitation": "Riksdagen, Betänkande 2025/26:SoU10 Ett förstärkt högkostnadsskydd för tandvård (Reservation V)",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/ett-forstarkt-hogkostnadsskydd-for-tandvard_hd01sou10/html/",
+    "quote": "tandvården bör ingå i högkostnadsskyddet för hälso- och sjukvården",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "sjukvard-tandvard",
+    "partyCode": "S",
+    "value": 4,
+    "motivation": "S vill att tandvården på sikt ska omfattas av ett högkostnadsskydd liknande hälso- och sjukvårdens.",
+    "sourceCitation": "Hint, Kartläggning: Här är partiernas tandvårdspolitik, 2024",
+    "sourceUrl": "https://hinthint.se/nyheter/politik/kartlaggning-har-ar-partiernas-tandvardspolitik/",
+    "quote": "På sikt bör tandvården omfattas av ett högkostnadsskydd liknande hälso- och sjukvårdens.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "sjukvard-tandvard",
+    "partyCode": "MP",
+    "value": 4,
+    "motivation": "MP vill att tandvården ska omfattas av samma högkostnadsskydd som all annan sjukvård och likställas med övrig vård.",
+    "sourceCitation": "Hint, Kartläggning: Här är partiernas tandvårdspolitik, 2024",
+    "sourceUrl": "https://hinthint.se/nyheter/politik/kartlaggning-har-ar-partiernas-tandvardspolitik/",
+    "quote": "tandvården omfattas av samma högkostnadsskydd som all annan sjukvård",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "sjukvard-tandvard",
+    "partyCode": "C",
+    "value": 3,
+    "motivation": "C anser att tandvården idealt bör ingå i högkostnadsskyddet men prioriterar i nuläget andra brister i vården framför detta.",
+    "sourceCitation": "Hint, Kartläggning: Här är partiernas tandvårdspolitik, 2024",
+    "sourceUrl": "https://hinthint.se/nyheter/politik/kartlaggning-har-ar-partiernas-tandvardspolitik/",
+    "quote": "Det finns så stora brister och behov inom andra delar av hälso- och sjukvården.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "sjukvard-tandvard",
+    "partyCode": "L",
+    "value": 3,
+    "motivation": "L vill göra tandvårdens finansiering mer lik den i övrig hälso- och sjukvård, dvs närma sig men inte fullt likställa på kort sikt.",
+    "sourceCitation": "Hint, Kartläggning: Här är partiernas tandvårdspolitik, 2024",
+    "sourceUrl": "https://hinthint.se/nyheter/politik/kartlaggning-har-ar-partiernas-tandvardspolitik/",
+    "quote": "tandvårdens finansiering mer lik den i övrig hälso- och sjukvård",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "sjukvard-tandvard",
+    "partyCode": "KD",
+    "value": 3,
+    "motivation": "KD vill förstärka tandvårdens högkostnadsskydd så att det mer efterliknar övrig vård och har som mål att all tandvård på sikt ingår i samma system, när ekonomin tillåter.",
+    "sourceCitation": "Kristdemokraterna, Vår politik A-Ö: Tandvård, 2025",
+    "sourceUrl": "https://kristdemokraterna.se/var-politik/politik-a-till-o/tandvard",
+    "quote": "Vi vill också att tandvårdens högkostnadsskydd förstärks för att mer efterlikna det i övrig vård",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "sjukvard-tandvard",
+    "partyCode": "M",
+    "value": 1,
+    "motivation": "M säger nej till att tandvården ska ingå i sjukvårdens högkostnadsskydd och menar att tandvården i huvudsak fungerar väl.",
+    "sourceCitation": "Hint, Kartläggning: Här är partiernas tandvårdspolitik, 2024",
+    "sourceUrl": "https://hinthint.se/nyheter/politik/kartlaggning-har-ar-partiernas-tandvardspolitik/",
+    "quote": "Nej. Tandvården fungerar i huvudsak väl och patienterna är nöjda med den service man får.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "sjukvard-tandvard",
+    "partyCode": "SD",
+    "value": 4,
+    "motivation": "SD vill att samma kostnadsskydd som gäller för sjukvården ska gälla tandvården, så att det kostar lika mycket att gå till tandläkaren som till doktorn (för svenska/EU-medborgare).",
+    "sourceCitation": "Läkartidningen, SD vill satsa miljarder på tandvård för de som är svenska medborgare, 2022",
+    "sourceUrl": "https://lakartidningen.se/aktuellt/nyheter/2022/08/sd-vill-satsa-miljarder-pa-tandvard-for-de-som-ar-svenska-medborgare/",
+    "quote": "alla vuxna som är svenska medborgare, eller EU- och EES-medborgare ska ha samma kostnad för att gå till tandläkaren som till doktorn",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "sjukvard-privata-forsakringar",
+    "partyCode": "V",
+    "value": 4,
+    "motivation": "V är kritiskt till privata sjukvårdsförsäkringar och menar att vård ska ges efter behov, inte efter försäkring; vill stoppa gräddfiler.",
+    "sourceCitation": "Vänsterpartiet, Vår politik A-Ö: Sjukvård, 2025",
+    "sourceUrl": "https://www.vansterpartiet.se/var-politik/politik-a-o/sjukvard/",
+    "quote": "I ett rättvist Sverige ges vård efter behov, inte först till den som har en privat sjukvårdsförsäkring.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "sjukvard-privata-forsakringar",
+    "partyCode": "S",
+    "value": 4,
+    "motivation": "S vill förbjuda privata sjukvårdsförsäkringar inom den offentligt finansierade vården för att stoppa orättvisa gräddfiler.",
+    "sourceCitation": "Socialdemokraterna, Vår politik A-Ö: Sjukvård, 2026",
+    "sourceUrl": "https://www.socialdemokraterna.se/var-politik/a-till-o/sjukvard",
+    "quote": "Förbjuda privata sjukvårdsförsäkringar inom den offentligt finansierade vården för att stoppa orättvisa gräddfiler.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "sjukvard-privata-forsakringar",
+    "partyCode": "MP",
+    "value": 3,
+    "motivation": "MP vill lagstifta mot gräddfiler i sjukvården, dvs begränsa effekten av privata sjukvårdsförsäkringar i offentligt finansierad vård.",
+    "sourceCitation": "Dagens Arena, Så vill partierna förbättra sjukvården, 2026",
+    "sourceUrl": "https://www.dagensarena.se/innehall/sa-vill-partierna-forbattra-sjukvarden/",
+    "quote": "Lagstifta mot gräddfiler i sjukvården",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "sjukvard-privata-forsakringar",
+    "partyCode": "C",
+    "value": 1,
+    "motivation": "C vill inte begränsa privata sjukvårdsförsäkringar och menar att de kan utgöra ett komplement så länge vårdköerna är långa.",
+    "sourceCitation": "Dagens Arena, Så vill partierna förbättra sjukvården, 2026",
+    "sourceUrl": "https://www.dagensarena.se/innehall/sa-vill-partierna-forbattra-sjukvarden/",
+    "quote": "Så länge vi har långa vårdköer kan privata sjukförsäkringar utgöra komplement",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "sjukvard-privata-forsakringar",
+    "partyCode": "L",
+    "value": 1,
+    "motivation": "L vill inte förbjuda eller begränsa privata sjukvårdsförsäkringar, men anser att den offentliga vården ska vara så bra att de inte behövs.",
+    "sourceCitation": "Dagens Arena, Så vill partierna förbättra sjukvården, 2026",
+    "sourceUrl": "https://www.dagensarena.se/innehall/sa-vill-partierna-forbattra-sjukvarden/",
+    "quote": "Liberalerna vill inte förbjuda privata sjukvårdsförsäkringar",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "sjukvard-privata-forsakringar",
+    "partyCode": "KD",
+    "value": 1,
+    "motivation": "KD vill inte begränsa privata sjukvårdsförsäkringar utan menar att den solidariskt finansierade vården ska vara så bra att de inte behövs; röstade mot hårdare regler.",
+    "sourceCitation": "Dagens Arena, Så vill partierna förbättra sjukvården, 2026",
+    "sourceUrl": "https://www.dagensarena.se/innehall/sa-vill-partierna-forbattra-sjukvarden/",
+    "quote": "Den solidariskt finansierade vården ska hålla en så hög kvalitet att privata vårdförsäkringar inte ska behövas",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "sjukvard-privata-forsakringar",
+    "partyCode": "M",
+    "value": 1,
+    "motivation": "M vill inte begränsa privata sjukvårdsförsäkringar och kombinerar trygghet för alla med valfrihet för den enskilde; röstade mot hårdare regler.",
+    "sourceCitation": "Läkartidningen, Förslag om hårdare regler för privata vårdförsäkringar fick ett väntat nej, 2023",
+    "sourceUrl": "https://lakartidningen.se/aktuellt/nyheter/2023/01/forslag-om-hardare-regler-for-privata-vardforsakringar-fick-ett-vantat-nej/",
+    "quote": "Moderaterna, Kristdemokraterna och Liberalerna med stöd av Sverigedemokraterna la tillsammans en följdmotion om att slopa det tidigare rödgröna regeringsförslaget.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "sjukvard-privata-forsakringar",
+    "partyCode": "SD",
+    "value": 2,
+    "motivation": "SD har inga principiella invändningar mot sjukvårdsförsäkringar (röstade mot hårdare regler), men vill lagstifta mot gräddfiler så att privatförsäkrade inte går före i samma offentligt finansierade vård.",
+    "sourceCitation": "Dagens Arena, Så vill partierna förbättra sjukvården, 2026",
+    "sourceUrl": "https://www.dagensarena.se/innehall/sa-vill-partierna-forbattra-sjukvarden/",
+    "quote": "Inga principiella invändningar mot sjukvårdsförsäkringar",
+    "confidence": "medium"
+  }
+]

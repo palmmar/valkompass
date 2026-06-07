@@ -1,0 +1,487 @@
+[
+  {
+    "questionKey": "lag-skarpta-straff",
+    "partyCode": "V",
+    "value": 2,
+    "motivation": "V avvisar generella straffskärpningar som metod och menar att längre straff inte minskar brottsligheten, men har stött vissa skärpningar för vålds- och vapenbrott. Tolkat som delvis emot ett 'kraftigt' skärpt straffspår.",
+    "sourceCitation": "Vänsterpartiet, Kriminalitet och kriminalvård, vansterpartiet.se (hämtad 2026)",
+    "sourceUrl": "https://www.vansterpartiet.se/var-politik/politik-a-o/kriminalitet-och-kriminalvard/",
+    "quote": "Vi har till exempel stått bakom straffskärpningar när det gäller vålds- och sexualbrott, brott mot barn och vapenbrott.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "lag-skarpta-straff",
+    "partyCode": "S",
+    "value": 3,
+    "motivation": "S står bakom genomförda och kommande straffskärpningar mot gängbrottslighet men har en mer förebyggande profil än de borgerliga partierna och SD. Tolkat som delvis med.",
+    "sourceCitation": "SVT Nyheter, Majoritet av riksdagspartierna vill skärpa straffen för minderåriga (2024)",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/majoritet-av-riksdagspartierna-vill-skarpa-straffen-for-minderariga",
+    "quote": "",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "lag-skarpta-straff",
+    "partyCode": "MP",
+    "value": 2,
+    "motivation": "MP prioriterar förebyggande insatser framför straffskärpningar och menar att hårdare straff inte gett effekt mot gängbrottsligheten. Tolkat som delvis emot kraftiga skärpningar.",
+    "sourceCitation": "Miljöpartiet, partiprogram – Trygghet och en effektiv brottsbekämpning, mp.se (hämtad 2026)",
+    "sourceUrl": "https://www.mp.se/om/partiprogram/partiprogram-effektiv-brottsbekampning/",
+    "quote": "",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "lag-skarpta-straff",
+    "partyCode": "C",
+    "value": 3,
+    "motivation": "C vill skärpa straffen för gängrelaterade brott och att straff bättre ska spegla brottens allvar, men kombinerar det med förebyggande och rättsstatliga reservationer. Tolkat som delvis med.",
+    "sourceCitation": "Centerpartiet, Rättspolitik (Motion 2023/24:2484 av Ulrika Liljeberg m.fl.), riksdagen.se",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/rattspolitik_hb022484/html/",
+    "quote": "Straffet för den som döms för flera brott i en och samma rättegång ska skärpas",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "lag-skarpta-straff",
+    "partyCode": "L",
+    "value": 4,
+    "motivation": "L driver hårdare straff som central del av sin rättspolitik och framhåller att flera straff skärpts och mängdrabatten avskaffats under regeringen.",
+    "sourceCitation": "Liberalerna, Gängkriminalitet, liberalerna.se (hämtad 2026)",
+    "sourceUrl": "https://www.liberalerna.se/politik/gangkriminalitet",
+    "quote": "Straffen för flera grova brott har skärpts. Mängdrabatten för brott har avskaffats",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "lag-skarpta-straff",
+    "partyCode": "KD",
+    "value": 4,
+    "motivation": "KD driver kraftiga straffskärpningar och avskaffade mängdrabatter som del av vad de kallar ett paradigmskifte i kriminalpolitiken.",
+    "sourceCitation": "Kristdemokraterna, Brottsbekämpning, kristdemokraterna.se (hämtad 2026)",
+    "sourceUrl": "https://kristdemokraterna.se/var-politik/politik-a-till-o/brottsbekampning",
+    "quote": "Den som begår brott måste få ett kännbart straff och dagens generösa mängdrabatter ska avskaffas.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "lag-skarpta-straff",
+    "partyCode": "M",
+    "value": 4,
+    "motivation": "M vill kraftigt skärpa straffen så de speglar brottens allvar och har gjort straffskärpningar till en kärnfråga i rättspolitiken.",
+    "sourceCitation": "Moderaterna, Lag och ordning, moderaterna.se (hämtad 2026)",
+    "sourceUrl": "https://moderaterna.se/var-politik/lag-och-ordning-2/",
+    "quote": "Skärpa straffen så att de speglar brottens allvar och flytta fokus från gärningsman till brottsoffer",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "lag-skarpta-straff",
+    "partyCode": "SD",
+    "value": 4,
+    "motivation": "SD vill rejält höja straffen för allvarliga brott och avskaffa alla straffrabatter.",
+    "sourceCitation": "Sverigedemokraterna, Brott och straff, sd.se (hämtad 2026)",
+    "sourceUrl": "https://www.sd.se/vad-vi-vill/brott-och-straff/",
+    "quote": "Höja straffen för allvarliga brott rejält samt avskaffa alla straffrabatter",
+    "confidence": "high"
+  },
+
+  {
+    "questionKey": "lag-fler-poliser",
+    "partyCode": "V",
+    "value": 3,
+    "motivation": "V anser att fler poliser är viktigt för att förebygga brott, men betonar samtidigt välfärd och brottsförebyggande arbete snarare än en renodlad polissatsning. Tolkat som delvis med.",
+    "sourceCitation": "Vänsterpartiet, Kriminalitet och kriminalvård, vansterpartiet.se (hämtad 2026)",
+    "sourceUrl": "https://www.vansterpartiet.se/var-politik/politik-a-o/kriminalitet-och-kriminalvard/",
+    "quote": "Att vi anställer fler poliser är viktigt för att förebygga brott.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "lag-fler-poliser",
+    "partyCode": "S",
+    "value": 4,
+    "motivation": "S vill öka polisnärvaron i hela landet och har som mål att polisen ska ha 50 000 anställda 2032, varav över 34 000 poliser.",
+    "sourceCitation": "Socialdemokraterna, Polisen (A–Ö), socialdemokraterna.se (hämtad 2026)",
+    "sourceUrl": "https://www.socialdemokraterna.se/var-politik/a-till-o/polisen",
+    "quote": "Att polisen ska ha 50 000 anställda 2032, varav över 34 000 ska vara poliser.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "lag-fler-poliser",
+    "partyCode": "MP",
+    "value": 3,
+    "motivation": "MP vill att polisen ska ha förmåga att både bekämpa och förebygga brott och stödjer en stärkt poliskår, men utan att lyfta fram en stor numerär utbyggnad som huvudlinje. Tolkat som delvis med.",
+    "sourceCitation": "Miljöpartiet, partiprogram – Trygghet och en effektiv brottsbekämpning, mp.se (hämtad 2026)",
+    "sourceUrl": "https://www.mp.se/om/partiprogram/partiprogram-effektiv-brottsbekampning/",
+    "quote": "Polisen och andra brottsbekämpande myndigheter ska ha förmåga att både bekämpa och förebygga brott.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "lag-fler-poliser",
+    "partyCode": "C",
+    "value": 4,
+    "motivation": "C vill utöka antalet poliser till europeisk genomsnittlig polistäthet och återupprätta lokal polisnärvaro i hela landet.",
+    "sourceCitation": "Centerpartiet, Rättspolitik (Motion 2023/24:2484 av Ulrika Liljeberg m.fl.), riksdagen.se",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/rattspolitik_hb022484/html/",
+    "quote": "Antalet poliser utökas för att motsvara den genomsnittliga polistäthet som gäller i övriga Europa",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "lag-fler-poliser",
+    "partyCode": "L",
+    "value": 4,
+    "motivation": "L har länge drivit en kraftig utbyggnad av poliskåren och hela rättsväsendet som nödvändig för rättsstaten.",
+    "sourceCitation": "Liberalerna, Fler åtgärder för en bättre brottsbekämpning, liberalerna.se (hämtad 2026)",
+    "sourceUrl": "https://www.liberalerna.se/nyheter/liberalerna-fler-atgarder-for-en-battre-brottsbekampning",
+    "quote": "fler poliser men också verktyg för att klara upp de brott som ändå begås",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "lag-fler-poliser",
+    "partyCode": "KD",
+    "value": 4,
+    "motivation": "KD vill ha fler poliser, åklagare och domare och ökad kapacitet i hela rättskedjan.",
+    "sourceCitation": "Kristdemokraterna, Brottsbekämpning, kristdemokraterna.se (hämtad 2026)",
+    "sourceUrl": "https://kristdemokraterna.se/var-politik/politik-a-till-o/brottsbekampning",
+    "quote": "Det krävs fler poliser, åklagare, domare och ökad kapacitet i Kriminalvården.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "lag-fler-poliser",
+    "partyCode": "M",
+    "value": 4,
+    "motivation": "M vill förstärka polisens resurser och öka polistillväxten; anslaget till Polismyndigheten beräknas öka kraftigt 2023–2027.",
+    "sourceCitation": "Moderaterna, Lag och ordning, moderaterna.se (hämtad 2026)",
+    "sourceUrl": "https://moderaterna.se/var-politik/lag-och-ordning-2/",
+    "quote": "Förstärka polisens resurser och öka polistillväxten. Mellan 2023 och 2027 beräknas anslaget öka med 40 procent",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "lag-fler-poliser",
+    "partyCode": "SD",
+    "value": 4,
+    "motivation": "SD vill att antalet poliser ska öka kraftigt för att kunna slå ned grov och organiserad kriminalitet.",
+    "sourceCitation": "Sverigedemokraterna, Brott och straff, sd.se (hämtad 2026)",
+    "sourceUrl": "https://www.sd.se/vad-vi-vill/brott-och-straff/",
+    "quote": "Antalet poliser måste öka kraftigt för att både ha styrkan att slå ned den grova och organiserad kriminaliteten",
+    "confidence": "high"
+  },
+
+  {
+    "questionKey": "lag-visitationszoner",
+    "partyCode": "V",
+    "value": 1,
+    "motivation": "V yrkade avslag på regeringens förslag om säkerhetszoner och anser att befintlig lagstiftning räcker samt att förslaget riskerar etnisk profilering.",
+    "sourceCitation": "Vänsterpartiet, Motion 2023/24:2829 med anledning av prop. 2023/24:84 Säkerhetszoner, riksdagen.se",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/med-anledning-av-prop.-20232484-sakerhetszoner_hb022829/",
+    "quote": "Vänsterpartiet anser att den befintliga lagstiftningen är tillräcklig för att kunna visitera personer och göra husrannsakan i syfte att bl.a. söka efter vapen.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "lag-visitationszoner",
+    "partyCode": "S",
+    "value": 3,
+    "motivation": "S röstade nej till säkerhetszoner 2024 men har därefter svängt och kräver nu att t.ex. hela södra Stockholm görs till visitationszon med det verktyg som nu finns. Tolkat som numera delvis med.",
+    "sourceCitation": "SVT Nyheter, Socialdemokraternas förslag efter sprängningarna: Gör södra Stockholm till visitationszon (2025)",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/socialdemokraternas-forslag-efter-sprangningarna-gor-sodra-stockholm-till-visitationszon",
+    "quote": "Men nu är det detta verktyg som finns.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "lag-visitationszoner",
+    "partyCode": "MP",
+    "value": 1,
+    "motivation": "MP yrkade avslag på säkerhetszoner och menar att visitationszoner inte gett effekt mot gängkriminaliteten.",
+    "sourceCitation": "Sveriges riksdag, Betänkande 2023/24:JuU13 Säkerhetszoner, riksdagen.se",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/sakerhetszoner_hb01juu13/",
+    "quote": "",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "lag-visitationszoner",
+    "partyCode": "C",
+    "value": 1,
+    "motivation": "C röstade nej till säkerhetszoner och är kritiskt till att personer kan visiteras utan brottsmisstanke, då det riskerar peka ut boende i hela bostadsområden som potentiella brottslingar.",
+    "sourceCitation": "SVT Nyheter, Visitationszoner och anonyma vittnen omstridda politiska förslag (hämtad 2026)",
+    "sourceUrl": "https://www.svt.se/nyheter/visitationszoner-och-anonyma-vittnen-omstridda-politiska-forslag",
+    "quote": "",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "lag-visitationszoner",
+    "partyCode": "L",
+    "value": 3,
+    "motivation": "L:s partiledning står bakom Tidöregeringens linje att införa säkerhets-/visitationszoner och röstade ja, även om L:s landsmöte tidigare sagt nej. Tolkat som delvis med, med intern spänning.",
+    "sourceCitation": "Sveriges riksdag, Betänkande 2023/24:JuU13 Säkerhetszoner, riksdagen.se",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/sakerhetszoner_hb01juu13/",
+    "quote": "",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "lag-visitationszoner",
+    "partyCode": "KD",
+    "value": 4,
+    "motivation": "KD stödjer säkerhets-/visitationszoner och menar att utvidgade befogenheter i särskilda zoner kan öka effektiviteten mot gängkonflikter.",
+    "sourceCitation": "Sveriges riksdag, Betänkande 2023/24:JuU13 Säkerhetszoner (Torsten Elofsson, KD), riksdagen.se",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/sakerhetszoner_hb01juu13/",
+    "quote": "Sammantaget bedömer vi att en möjlighet att kombinera Polismyndighetens nuvarande trygghetsskapande åtgärder med utvidgade befogenheter i särskilda zoner kan förväntas öka effektiviteten.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "lag-visitationszoner",
+    "partyCode": "M",
+    "value": 4,
+    "motivation": "M är pådrivande för visitationszoner och har infört säkerhetszoner som ett polisverktyg, med hänvisning till att det fungerat i Danmark.",
+    "sourceCitation": "SVT Nyheter, Visitationszoner och anonyma vittnen omstridda politiska förslag (hämtad 2026)",
+    "sourceUrl": "https://www.svt.se/nyheter/visitationszoner-och-anonyma-vittnen-omstridda-politiska-forslag",
+    "quote": "Det här är ett instrument som har fungerat bra i Danmark",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "lag-visitationszoner",
+    "partyCode": "SD",
+    "value": 4,
+    "motivation": "SD röstade ja till säkerhetszoner och driver tillsammans med regeringen frågan om visitationszoner inom Tidösamarbetet.",
+    "sourceCitation": "Sveriges riksdag, Betänkande 2023/24:JuU13 Säkerhetszoner, riksdagen.se",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/sakerhetszoner_hb01juu13/",
+    "quote": "",
+    "confidence": "high"
+  },
+
+  {
+    "questionKey": "lag-anonyma-vittnen",
+    "partyCode": "V",
+    "value": 1,
+    "motivation": "V yrkade avslag på regeringens proposition om anonyma vittnen och förespråkar i stället stärkt vittnesskydd och ett personsäkerhetsprogram.",
+    "sourceCitation": "Sveriges riksdag, Betänkande 2024/25:JuU6 Anonyma vittnen, riksdagen.se",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/anonyma-vittnen_hc01juu6/",
+    "quote": "Jag kommer att yrka avslag på regeringens proposition",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "lag-anonyma-vittnen",
+    "partyCode": "S",
+    "value": 4,
+    "motivation": "S sa ja till införandet av anonyma vittnen, men med reservationer om utvärdering och stärkt vittnesskydd. Korrigerar utkastet uppåt.",
+    "sourceCitation": "Sveriges riksdag, Betänkande 2024/25:JuU6 Anonyma vittnen, riksdagen.se",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/anonyma-vittnen_hc01juu6/",
+    "quote": "Vi socialdemokrater säger ja till införandet av anonyma vittnen",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "lag-anonyma-vittnen",
+    "partyCode": "MP",
+    "value": 1,
+    "motivation": "MP motsätter sig anonyma vittnen och menar att systemet riskerar att försvaga rättssäkerheten och inskränka grundläggande rättigheter.",
+    "sourceCitation": "Sveriges riksdag, Betänkande 2024/25:JuU6 Anonyma vittnen, riksdagen.se",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/anonyma-vittnen_hc01juu6/",
+    "quote": "Anonyma vittnen är någonting nytt i vår lagstiftning",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "lag-anonyma-vittnen",
+    "partyCode": "C",
+    "value": 1,
+    "motivation": "C yrkade avslag på förslaget om anonyma vittnen och anser att bevisvärdet är lågt eftersom vittnets trovärdighet blir svår att bedöma. Korrigerar utkastet nedåt.",
+    "sourceCitation": "Sveriges riksdag, Betänkande 2024/25:JuU6 Anonyma vittnen (reservation 1, C), riksdagen.se",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/anonyma-vittnen_hc01juu6/",
+    "quote": "Vi yrkar bifall till reservation 1, som innebär avslag på förslaget",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "lag-anonyma-vittnen",
+    "partyCode": "L",
+    "value": 4,
+    "motivation": "L beslutade att stå bakom propositionen om anonyma vittnen, trots att partiets landsmöte tidigare sagt nej. Tolkat som med, med intern spänning.",
+    "sourceCitation": "Sveriges riksdag, Betänkande 2024/25:JuU6 Anonyma vittnen, riksdagen.se",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/anonyma-vittnen_hc01juu6/",
+    "quote": "Vi har beslutat oss för att stå bakom den",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "lag-anonyma-vittnen",
+    "partyCode": "KD",
+    "value": 4,
+    "motivation": "KD var första riksdagsparti att föreslå anonyma vittnen och välkomnar att möjligheten införts som ett verktyg mot gängens tystnadskultur.",
+    "sourceCitation": "Kristdemokraterna, Anonyma vittnen, kristdemokraterna.se (hämtad 2026)",
+    "sourceUrl": "https://kristdemokraterna.se/var-politik/politik-a-till-o/anonyma-vittnen",
+    "quote": "Kristdemokraterna var första riksdagsparti att föreslå möjligheten att vittna anonymt i domstol.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "lag-anonyma-vittnen",
+    "partyCode": "M",
+    "value": 4,
+    "motivation": "M stödde införandet av anonyma vittnen som ett avgränsat verktyg att använda i undantagsfall.",
+    "sourceCitation": "Sveriges riksdag, Betänkande 2024/25:JuU6 Anonyma vittnen, riksdagen.se",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/anonyma-vittnen_hc01juu6/",
+    "quote": "Möjligheten att höra vittnen anonymt är avgränsad och ska användas i undantagsfall",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "lag-anonyma-vittnen",
+    "partyCode": "SD",
+    "value": 4,
+    "motivation": "SD stödde införandet av anonyma vittnen tillsammans med regeringen.",
+    "sourceCitation": "Sveriges riksdag, Betänkande 2024/25:JuU6 Anonyma vittnen, riksdagen.se",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/anonyma-vittnen_hc01juu6/",
+    "quote": "Tack vare Sverigedemokraterna och den moderatledda regeringen inför vi nu möjligheten för utsatta vittnen att vittna anonymt",
+    "confidence": "high"
+  },
+
+  {
+    "questionKey": "lag-sankt-straffmyndighet",
+    "partyCode": "V",
+    "value": 1,
+    "motivation": "V säger nej till sänkt straffmyndighetsålder och menar att flera straffskärpningar redan gjorts utan effekt, varför något helt annat krävs.",
+    "sourceCitation": "SVT Nyheter, Majoritet av riksdagspartierna vill skärpa straffen för minderåriga (2024)",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/majoritet-av-riksdagspartierna-vill-skarpa-straffen-for-minderariga",
+    "quote": "Det har gjorts flera straffskärpningar den senaste tiden och ändå slår dödsskjutningarna rekord. Då måste vi göra något helt annat.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "lag-sankt-straffmyndighet",
+    "partyCode": "S",
+    "value": 3,
+    "motivation": "S vill tillfälligt sänka straffbarhetsåldern till 14 år vid allvarliga brott och pröva metoden, men motsätter sig generella sänkningar. Korrigerar utkastet uppåt.",
+    "sourceCitation": "SVT Nyheter, S-kongressen: Låt 14-åringar bli straffmyndiga (2025)",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/s-kongressen-lat-14-aringar-bli-straffmyndiga",
+    "quote": "Vi måste ha modet, uthålligheten och handlingskraften att pröva nya metoder",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "lag-sankt-straffmyndighet",
+    "partyCode": "MP",
+    "value": 1,
+    "motivation": "MP vill behålla straffmyndighetsåldern vid 15 år och menar att en sänkning inte är ett effektivt sätt att skapa ett tryggare samhälle.",
+    "sourceCitation": "Miljöpartiet, partiprogram – Trygghet och en effektiv brottsbekämpning, mp.se (hämtad 2026)",
+    "sourceUrl": "https://www.mp.se/om/partiprogram/partiprogram-effektiv-brottsbekampning/",
+    "quote": "Sänkt straffmyndighetsålder är inte ett effektivt sätt att verka för ett tryggare samhälle.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "lag-sankt-straffmyndighet",
+    "partyCode": "C",
+    "value": 1,
+    "motivation": "C anser att en sänkt straffbarhetsålder till 13 eller 14 år inte löser problemet och säger nej till sänkningen.",
+    "sourceCitation": "Centerpartiet, Organiserad brottslighet (Lag och rätt), centerpartiet.se (hämtad 2026)",
+    "sourceUrl": "https://www.centerpartiet.se/var-politik/politik-a-o/lag-och-ratt/organiserad-brottslighet",
+    "quote": "en sänkt straffbarhetsålder till 13 eller 14 år inte löser problemet",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "lag-sankt-straffmyndighet",
+    "partyCode": "L",
+    "value": 4,
+    "motivation": "L står bakom Tidöregeringens förslag att tillfälligt sänka straffbarhetsåldern till 13 år för mycket allvarliga brott. Korrigerar utkastet kraftigt uppåt.",
+    "sourceCitation": "Regeringen, Pressmeddelande: Regeringen föreslår sänkt straffbarhetsålder för allvarliga brott (januari 2026)",
+    "sourceUrl": "https://www.regeringen.se/pressmeddelanden/2026/01/regeringen-foreslar-sankt-straffbarhetsalder-for-allvarliga-brott-och-skarpta-regler-for-unga-lagovertradare/",
+    "quote": "Regeringen föreslår att straffbarhetsåldern under en femårsperiod sänks till 13 år för brott med minst fyra års fängelse i straffskalan",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "lag-sankt-straffmyndighet",
+    "partyCode": "KD",
+    "value": 4,
+    "motivation": "KD står bakom regeringens förslag att tillfälligt sänka straffbarhetsåldern till 13 år för allvarliga brott.",
+    "sourceCitation": "Regeringen, Pressmeddelande: Regeringen föreslår sänkt straffbarhetsålder för allvarliga brott (januari 2026)",
+    "sourceUrl": "https://www.regeringen.se/pressmeddelanden/2026/01/regeringen-foreslar-sankt-straffbarhetsalder-for-allvarliga-brott-och-skarpta-regler-for-unga-lagovertradare/",
+    "quote": "Regeringen föreslår att straffbarhetsåldern under en femårsperiod sänks till 13 år för brott med minst fyra års fängelse i straffskalan",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "lag-sankt-straffmyndighet",
+    "partyCode": "M",
+    "value": 4,
+    "motivation": "M, som leder regeringen, står bakom förslaget att tillfälligt sänka straffbarhetsåldern till 13 år för allvarliga brott. Korrigerar utkastet uppåt.",
+    "sourceCitation": "Regeringen, Pressmeddelande: Regeringen föreslår sänkt straffbarhetsålder för allvarliga brott (januari 2026)",
+    "sourceUrl": "https://www.regeringen.se/pressmeddelanden/2026/01/regeringen-foreslar-sankt-straffbarhetsalder-for-allvarliga-brott-och-skarpta-regler-for-unga-lagovertradare/",
+    "quote": "Regeringen föreslår att straffbarhetsåldern under en femårsperiod sänks till 13 år för brott med minst fyra års fängelse i straffskalan",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "lag-sankt-straffmyndighet",
+    "partyCode": "SD",
+    "value": 4,
+    "motivation": "SD vill sänka straffbarhetsåldern (till 13 år) och driver frågan inom Tidösamarbetet.",
+    "sourceCitation": "SVT Nyheter, S-kongressen: Låt 14-åringar bli straffmyndiga (2025); Regeringen, pressmeddelande januari 2026",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/s-kongressen-lat-14-aringar-bli-straffmyndiga",
+    "quote": "",
+    "confidence": "high"
+  },
+
+  {
+    "questionKey": "lag-kameraovervakning",
+    "partyCode": "V",
+    "value": 2,
+    "motivation": "V är restriktivt och betonar att kameraövervakning ska kräva tillstånd och vägas mot den personliga integriteten; har velat se en integritetsöversyn av kamerabevakningslagen. Tolkat som delvis emot kraftig utbyggnad.",
+    "sourceCitation": "Sveriges riksdag, Betänkande 2019/20:JuU5 Kamerabevakning i brottsbekämpningen, riksdagen.se",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/kamerabevakning-i-brottsbekampningen-ett_h701juu5/",
+    "quote": "",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "lag-kameraovervakning",
+    "partyCode": "S",
+    "value": 4,
+    "motivation": "S vill ge polisen tillgång till realtidskameraövervakning med ansiktsigenkänning och utökade övervakningsverktyg. Korrigerar utkastet uppåt.",
+    "sourceCitation": "Socialdemokraterna, Polisen (A–Ö), socialdemokraterna.se (hämtad 2026)",
+    "sourceUrl": "https://www.socialdemokraterna.se/var-politik/a-till-o/polisen",
+    "quote": "tillgång till realtidskameraövervakning med ansiktsigenkänning och avläsning av registreringsskyltar",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "lag-kameraovervakning",
+    "partyCode": "MP",
+    "value": 2,
+    "motivation": "MP accepterar övervakningsmetoder mot grov brottslighet men vill väga dem mot den personliga integriteten och kräver stark oberoende tillsyn. Tolkat som delvis emot kraftig utbyggnad.",
+    "sourceCitation": "Miljöpartiet, partiprogram – Trygghet och en effektiv brottsbekämpning, mp.se (hämtad 2026)",
+    "sourceUrl": "https://www.mp.se/om/partiprogram/partiprogram-effektiv-brottsbekampning/",
+    "quote": "Tvångsmedel och övervakningsmetoder behövs för att komma åt den samhällshotande brottsligheten. Dessa måste samtidigt vägas mot den personliga integriteten.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "lag-kameraovervakning",
+    "partyCode": "C",
+    "value": 3,
+    "motivation": "C vill ge polisen vassare verktyg och göra det lättare att kameraövervaka i brottsdrabbade områden, men med integritetshänsyn. Tolkat som delvis med.",
+    "sourceCitation": "Centerpartiet, Organiserad brottslighet (Lag och rätt), centerpartiet.se (hämtad 2026)",
+    "sourceUrl": "https://www.centerpartiet.se/var-politik/politik-a-o/lag-och-ratt/organiserad-brottslighet",
+    "quote": "Ge polisen vassare verktyg, som möjlighet att använda hemlig avlyssning mot gängen.",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "lag-kameraovervakning",
+    "partyCode": "L",
+    "value": 3,
+    "motivation": "L vill stärka möjligheterna till kameraövervakning och lätta på kamerabevakningslagen för brottsdrabbade platser. Tolkat som delvis till klart med.",
+    "sourceCitation": "Liberalerna, Fler åtgärder för en bättre brottsbekämpning, liberalerna.se (hämtad 2026)",
+    "sourceUrl": "https://www.liberalerna.se/nyheter/liberalerna-fler-atgarder-for-en-battre-brottsbekampning",
+    "quote": "Möjlighet till beslut om hemlig rumsavlyssning och hemlig kameraövervakning som knyts till person istället för plats",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "lag-kameraovervakning",
+    "partyCode": "KD",
+    "value": 4,
+    "motivation": "KD vill göra det lättare att kameraövervaka, exempelvis platser där narkotika säljs och vid gränspassager.",
+    "sourceCitation": "SVT Nyheter, Visitationszoner och anonyma vittnen omstridda politiska förslag (hämtad 2026); Kristdemokraterna, kristdemokraterna.se",
+    "sourceUrl": "https://kristdemokraterna.se/var-politik/politik-a-till-o/brottsbekampning",
+    "quote": "",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "lag-kameraovervakning",
+    "partyCode": "M",
+    "value": 4,
+    "motivation": "M vill ge polisen ökade möjligheter till kamerabevakning som del av paketet av nya brottsbekämpande verktyg.",
+    "sourceCitation": "Moderaterna, Lag och ordning, moderaterna.se (hämtad 2026)",
+    "sourceUrl": "https://moderaterna.se/var-politik/lag-och-ordning-2/",
+    "quote": "ökade möjligheter till kamerabevakning",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "lag-kameraovervakning",
+    "partyCode": "SD",
+    "value": 4,
+    "motivation": "SD vill att gängaktiva ska kartläggas bland annat genom kameraövervakning och driver utökad övervakning.",
+    "sourceCitation": "Sverigedemokraterna, Brott och straff, sd.se (hämtad 2026)",
+    "sourceUrl": "https://www.sd.se/vad-vi-vill/brott-och-straff/",
+    "quote": "Gängaktiva ska kartläggas genom spaning, kameraövervakning och avlyssning.",
+    "confidence": "high"
+  }
+]

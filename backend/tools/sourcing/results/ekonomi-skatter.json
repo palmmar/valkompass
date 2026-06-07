@@ -1,0 +1,402 @@
+[
+  {
+    "questionKey": "ekonomi-hoginkomstskatt",
+    "partyCode": "V",
+    "value": 4,
+    "motivation": "V vill höja skatten på höga inkomster, bl.a. genom en beredskapsskatt och utfasat jobbskatteavdrag på höga månadsinkomster.",
+    "sourceCitation": "Vänsterpartiet, Vår politik A-Ö: Skattepolitik, 2026",
+    "sourceUrl": "https://www.vansterpartiet.se/var-politik/politik-a-o/skattepolitik/",
+    "quote": "Nej till regeringens skattesänkningar för miljonärer, ingen som tjänar under 50 000 kr/månaden får höjd skatt med Vänsterpartiets förslag.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "ekonomi-hoginkomstskatt",
+    "partyCode": "S",
+    "value": 3,
+    "motivation": "S vill att de allra högsta inkomsterna ska bidra mer och säger nej till ytterligare skattesänkningar för dem, men driver inte en bred höjning av inkomstskatten.",
+    "sourceCitation": "SVT Nyheter, Mikael Damberg (S): Höjda skatter för de som tjänar mest, 2026",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/mikael-damberg-s-hojda-skatter-for-de-som-tjanar-mest",
+    "quote": "Nej, inte för vanligt folk. Men de med de allra högsta inkomsterna ska bidra mer",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "ekonomi-hoginkomstskatt",
+    "partyCode": "MP",
+    "value": 3,
+    "motivation": "MP vill ha mer progressiv beskattning och föreslår ett ytterligare steg i statlig inkomstskatt för höga inkomster, men tyngdpunkten ligger på kapital.",
+    "sourceCitation": "Miljöpartiet, Ekonomi och skatter, 2026",
+    "sourceUrl": "https://www.mp.se/politik/ekonomi-och-skatter/",
+    "quote": "Miljöpartiet vill därför se en mer progressiv och rättvis beskattning av kapitalinkomster.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "ekonomi-hoginkomstskatt",
+    "partyCode": "C",
+    "value": 1,
+    "motivation": "C vill sänka skatten på arbete och höja gränsen för statlig inkomstskatt, dvs. motsatsen till höjd skatt på höga inkomster.",
+    "sourceCitation": "Centerpartiet, Vår politik A-Ö: Inkomstskatt, 2026",
+    "sourceUrl": "https://www.centerpartiet.se/var-politik/politik-a-o/ekonomi-och-skatter/inkomstskatt",
+    "quote": "Höja gränsen för när man börjar betala statlig inkomstskatt, så att fler vanliga yrkesgrupper som lärare och sjuksköterskor får behålla mer av sin lön.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "ekonomi-hoginkomstskatt",
+    "partyCode": "L",
+    "value": 1,
+    "motivation": "L vill sänka skatten på arbete och har drivit igenom avskaffad värnskatt, dvs. avvisar höjd skatt på höga inkomster.",
+    "sourceCitation": "Liberalerna, Skatter, 2026",
+    "sourceUrl": "https://www.liberalerna.se/politik/skatter",
+    "quote": "drivit på för sänkt skatt på arbete, bland annat genom att avskaffa värnskatten, ta bort avtrappningen av jobbskatteavdraget och sänka skatten för löntagare ytterligare.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "ekonomi-hoginkomstskatt",
+    "partyCode": "KD",
+    "value": 1,
+    "motivation": "KD vill ha lägre skatt på arbete och har drivit på för att höja brytpunkten för statlig inkomstskatt, dvs. avvisar höjd skatt på höga inkomster.",
+    "sourceCitation": "Kristdemokraterna, Ekonomi & skatter, 2026",
+    "sourceUrl": "https://kristdemokraterna.se/var-politik/politikomraden/ekonomi--skatter",
+    "quote": "Kristdemokraterna har drivit på för att höja brytpunkten för statlig inkomstskatt vilket inneburit att färre löntagare tvingas betala den.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "ekonomi-hoginkomstskatt",
+    "partyCode": "M",
+    "value": 1,
+    "motivation": "M sänker skatten på arbete genom förstärkt jobbskatteavdrag och avvisar höjd skatt på höga inkomster.",
+    "sourceCitation": "Moderaterna, Budgetnyhet: Nya skattesänkningar, 2026",
+    "sourceUrl": "https://moderaterna.se/nyhet/budgetnyhet-nya-skattesankningar/",
+    "quote": "Vi sänker skatten på arbete – för att det alltid ska löna sig att arbeta – och för att stärka hårt arbetande människors plånböcker.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "ekonomi-hoginkomstskatt",
+    "partyCode": "SD",
+    "value": 2,
+    "motivation": "SD vill stärka jobbskatteavdraget och tillhör högerblocket som vill sänka snarare än höja skatten, men har inte lika stora skattesänkningar som M och fokuserar mindre på höginkomsttagare.",
+    "sourceCitation": "Valkoll 2026, Skatter och partier 2026, 2026",
+    "sourceUrl": "https://valkoll2026.se/insikt/skatter-partier-2026/",
+    "quote": "",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "ekonomi-formogenhetsskatt",
+    "partyCode": "V",
+    "value": 4,
+    "motivation": "V vill uttryckligen återinföra både arvsskatt och förmögenhetsskatt.",
+    "sourceCitation": "Valkoll 2026, Skatter och partier 2026, 2026",
+    "sourceUrl": "https://valkoll2026.se/insikt/skatter-partier-2026/",
+    "quote": "vill återinföra både arvsskatt och förmögenhetsskatt",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "ekonomi-formogenhetsskatt",
+    "partyCode": "S",
+    "value": 2,
+    "motivation": "S vill höja skatten på stora kapital (t.ex. ISK) men avvisar ett återinförande av förmögenhetsskatt och arvsskatt.",
+    "sourceCitation": "Socialdemokraterna, Vår politik A-Ö: Skatter, 2026",
+    "sourceUrl": "https://www.socialdemokraterna.se/var-politik/a-till-o/skatter",
+    "quote": "en tredje beskattningsnivå för de med störst kapitalinnehav i ISK för att minska skatterabatten för stora kapital.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "ekonomi-formogenhetsskatt",
+    "partyCode": "MP",
+    "value": 3,
+    "motivation": "MP:s kongress 2025 beslutade att partiet ska verka för en progressiv förmögenhetsskatt riktad mot de allra rikaste.",
+    "sourceCitation": "Dagens ETC, Skattehöjningar för de rikaste – Grön ungdom för Miljöpartiet vänsterut, 2025",
+    "sourceUrl": "https://www.etc.se/inrikes/das-kapital",
+    "quote": "progressiv förmögenhetsskatt som träffar de allra rikaste i Sverige",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "ekonomi-formogenhetsskatt",
+    "partyCode": "C",
+    "value": 1,
+    "motivation": "C tillhör högerblocket som vill behålla dagens system utan förmögenhetsskatt och arvsskatt.",
+    "sourceCitation": "Valkoll 2026, Skatter och partier 2026, 2026",
+    "sourceUrl": "https://valkoll2026.se/insikt/skatter-partier-2026/",
+    "quote": "Vill behålla dagens system där ingen arvsskatt eller förmögenhetsskatt finns och ISK fungerar som schablon.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "ekonomi-formogenhetsskatt",
+    "partyCode": "L",
+    "value": 1,
+    "motivation": "L tillhör högerblocket som vill behålla dagens system utan förmögenhetsskatt och vill i stället utöka skattefritt ISK-sparande.",
+    "sourceCitation": "Liberalerna, Skatter, 2026",
+    "sourceUrl": "https://www.liberalerna.se/politik/skatter",
+    "quote": "Liberalerna vill införa skattefritt sparande på ISK upp till 500 000 kronor.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "ekonomi-formogenhetsskatt",
+    "partyCode": "KD",
+    "value": 1,
+    "motivation": "KD tillhör högerblocket som vill behålla dagens system utan förmögenhetsskatt och arvsskatt.",
+    "sourceCitation": "Valkoll 2026, Skatter och partier 2026, 2026",
+    "sourceUrl": "https://valkoll2026.se/insikt/skatter-partier-2026/",
+    "quote": "Vill behålla dagens system där ingen arvsskatt eller förmögenhetsskatt finns och ISK fungerar som schablon.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "ekonomi-formogenhetsskatt",
+    "partyCode": "M",
+    "value": 1,
+    "motivation": "M tillhör högerblocket som vill behålla dagens system utan förmögenhetsskatt och arvsskatt.",
+    "sourceCitation": "Valkoll 2026, Skatter och partier 2026, 2026",
+    "sourceUrl": "https://valkoll2026.se/insikt/skatter-partier-2026/",
+    "quote": "Vill behålla dagens system där ingen arvsskatt eller förmögenhetsskatt finns och ISK fungerar som schablon.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "ekonomi-formogenhetsskatt",
+    "partyCode": "SD",
+    "value": 1,
+    "motivation": "SD tillhör högerblocket som vill behålla dagens system utan förmögenhetsskatt och arvsskatt.",
+    "sourceCitation": "Valkoll 2026, Skatter och partier 2026, 2026",
+    "sourceUrl": "https://valkoll2026.se/insikt/skatter-partier-2026/",
+    "quote": "Vill behålla dagens system där ingen arvsskatt eller förmögenhetsskatt finns och ISK fungerar som schablon.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "ekonomi-sankt-skatt-arbete",
+    "partyCode": "V",
+    "value": 1,
+    "motivation": "V vill flytta skatteuttaget mot kapital och höga inkomster och avvisar generella sänkningar av skatten på arbete (men vill ha vissa riktade lättnader för låg- och medelinkomsttagare).",
+    "sourceCitation": "Vänsterpartiet, Vår politik A-Ö: Skattepolitik, 2026",
+    "sourceUrl": "https://www.vansterpartiet.se/var-politik/politik-a-o/skattepolitik/",
+    "quote": "Nej till regeringens skattesänkningar för miljonärer, ingen som tjänar under 50 000 kr/månaden får höjd skatt med Vänsterpartiets förslag.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "ekonomi-sankt-skatt-arbete",
+    "partyCode": "S",
+    "value": 2,
+    "motivation": "S vill se en riktad skattesänkning för vanligt folk men avvisar breda sänkningar och vill höja skatten för de högsta inkomsterna.",
+    "sourceCitation": "Socialdemokraterna, Vår politik A-Ö: Skatter, 2026",
+    "sourceUrl": "https://www.socialdemokraterna.se/var-politik/a-till-o/skatter",
+    "quote": "Vi säger nej till skattebonusar för de allra rikaste som finansieras med lånade pengar.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "ekonomi-sankt-skatt-arbete",
+    "partyCode": "MP",
+    "value": 2,
+    "motivation": "MP vill avvisa regeringens ytterligare jobbskatteavdrag och flytta skatt från arbete mot miljö och kapital snarare än en generell sänkning av skatten på arbete.",
+    "sourceCitation": "Miljöpartiet, Ekonomi och skatter, 2026",
+    "sourceUrl": "https://www.mp.se/politik/ekonomi-och-skatter/",
+    "quote": "Miljöpartiet vill därför se en mer progressiv och rättvis beskattning av kapitalinkomster.",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "ekonomi-sankt-skatt-arbete",
+    "partyCode": "C",
+    "value": 4,
+    "motivation": "C vill sänka skatten på arbete så att den som jobbar får behålla mer av sin lön.",
+    "sourceCitation": "Centerpartiet, Vår politik A-Ö: Inkomstskatt, 2026",
+    "sourceUrl": "https://www.centerpartiet.se/var-politik/politik-a-o/ekonomi-och-skatter/inkomstskatt",
+    "quote": "Centerpartiet vill sänka skatten på arbete och företagande. Du som jobbar ska få behålla mer av din lön",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "ekonomi-sankt-skatt-arbete",
+    "partyCode": "L",
+    "value": 4,
+    "motivation": "L vill att skattesystemet tydligare ska uppmuntra arbete och har drivit på för sänkt skatt på arbete.",
+    "sourceCitation": "Liberalerna, Skatter, 2026",
+    "sourceUrl": "https://www.liberalerna.se/politik/skatter",
+    "quote": "Liberalerna vill därför att skattesystemet tydligare ska uppmuntra arbete, utbildning och entreprenörskap.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "ekonomi-sankt-skatt-arbete",
+    "partyCode": "KD",
+    "value": 4,
+    "motivation": "KD vill se lägre skatt på arbete och pension så att fler får behålla mer av sina inkomster.",
+    "sourceCitation": "Kristdemokraterna, Ekonomi & skatter, 2026",
+    "sourceUrl": "https://kristdemokraterna.se/var-politik/politikomraden/ekonomi--skatter",
+    "quote": "Kristdemokraterna vill se lägre skatter på arbete och pension för att fler ska få behålla mer av sina inkomster.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "ekonomi-sankt-skatt-arbete",
+    "partyCode": "M",
+    "value": 4,
+    "motivation": "M sänker skatten på arbete genom förstärkt jobbskatteavdrag och grundavdrag.",
+    "sourceCitation": "Moderaterna, Budgetnyhet: Nya skattesänkningar, 2026",
+    "sourceUrl": "https://moderaterna.se/nyhet/budgetnyhet-nya-skattesankningar/",
+    "quote": "Vi sänker skatten på arbete – för att det alltid ska löna sig att arbeta – och för att stärka hårt arbetande människors plånböcker.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "ekonomi-sankt-skatt-arbete",
+    "partyCode": "SD",
+    "value": 3,
+    "motivation": "SD vill stärka jobbskatteavdraget och sänka skatten på arbete, men har inte lika stora samlade skattesänkningar som Moderaterna.",
+    "sourceCitation": "Valkoll 2026, Skatter och partier 2026, 2026",
+    "sourceUrl": "https://valkoll2026.se/insikt/skatter-partier-2026/",
+    "quote": "",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "ekonomi-drivmedelsskatt",
+    "partyCode": "V",
+    "value": 2,
+    "motivation": "V ser drivmedelsskatten som ett klimatstyrmedel och vill snarare kompensera drabbade grupper än sänka skatten generellt; tillfälliga sänkningar accepteras men ska vara tillfälliga.",
+    "sourceCitation": "Vänsterpartiet, Vår politik A-Ö: Drivmedelsbeskattning, 2026",
+    "sourceUrl": "https://www.vansterpartiet.se/var-politik/politik-a-o/drivmedelsbeskattning/",
+    "quote": "Drivmedelsbeskattning är ett användbart verktyg, men det speglar inte människors olika livssituationer eller förutsättningar.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "ekonomi-drivmedelsskatt",
+    "partyCode": "S",
+    "value": 2,
+    "motivation": "S motsätter sig höjningar och har föreslagit tillfälliga sänkningar, men vill långsiktigt dämpa priserna genom inhemska biodrivmedel snarare än permanent sänkt skatt.",
+    "sourceCitation": "Socialdemokraterna, Vår politik A-Ö: Bränslepriser, 2026",
+    "sourceUrl": "https://www.socialdemokraterna.se/var-politik/a-till-o/branslepriser",
+    "quote": "Socialdemokraterna har inga förslag om att höja skatten på drivmedel.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "ekonomi-drivmedelsskatt",
+    "partyCode": "MP",
+    "value": 1,
+    "motivation": "MP vill behålla styrande drivmedelsskatter och motionerade om att avslå regeringens sänkningar och återgå till tidigare nivåer.",
+    "sourceCitation": "Valkoll 2026, Skatter och partier 2026, 2026",
+    "sourceUrl": "https://valkoll2026.se/insikt/skatter-partier-2026/",
+    "quote": "Miljöpartiet & Vänsterpartiet: Vill höja drivmedelsskatten istället",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "ekonomi-drivmedelsskatt",
+    "partyCode": "C",
+    "value": 2,
+    "motivation": "C förespråkar grön skatteväxling med höjd skatt på utsläpp och prioriterar inte sänkt drivmedelsskatt, men vill sänka kostnader för landsbygdsbor på andra sätt.",
+    "sourceCitation": "Centerpartiet, Vår politik A-Ö: Ekonomi och skatter, 2026",
+    "sourceUrl": "https://www.centerpartiet.se/var-politik/politik-a-o/ekonomi-och-skatter",
+    "quote": "vi sänker skatten på jobb och företagande och höjer den istället på det som skadar klimatet och miljön.",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "ekonomi-drivmedelsskatt",
+    "partyCode": "L",
+    "value": 3,
+    "motivation": "L ingår i regeringsunderlaget som genomfört tillfälligt sänkt skatt på bensin och diesel ned mot EU:s miniminivå.",
+    "sourceCitation": "Moderaterna, Budgetnyhet: Sänkt skatt på bensin och diesel och reformerad reduktionsplikt, 2026",
+    "sourceUrl": "https://moderaterna.se/nyhet/budgetnyhet-sankt-skatt-pa-bensin-och-diesel-och-reformerad-reduktionsplikt/",
+    "quote": "drivmedelspriserna vid pump allt annat lika väntas minska till följd av förslaget.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "ekonomi-drivmedelsskatt",
+    "partyCode": "KD",
+    "value": 4,
+    "motivation": "KD (med Ebba Busch som energiminister) driver sänkt skatt på bensin och diesel för att hålla nere priserna för hushållen.",
+    "sourceCitation": "Moderaterna, Budgetnyhet: Sänkt skatt på bensin och diesel och reformerad reduktionsplikt, 2026",
+    "sourceUrl": "https://moderaterna.se/nyhet/budgetnyhet-sankt-skatt-pa-bensin-och-diesel-och-reformerad-reduktionsplikt/",
+    "quote": "Den sänkta skatten beräknas totalt mer än kompensera för det prispåslag som reduktionsplikten kan leda till.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "ekonomi-drivmedelsskatt",
+    "partyCode": "M",
+    "value": 3,
+    "motivation": "M driver sänkt skatt på bensin och diesel ned mot EU:s miniminivå, men har genomfört det som tillfälliga åtgärder snarare än permanent stor sänkning.",
+    "sourceCitation": "Moderaterna, Budgetnyhet: Sänkt skatt på bensin och diesel och reformerad reduktionsplikt, 2026",
+    "sourceUrl": "https://moderaterna.se/nyhet/budgetnyhet-sankt-skatt-pa-bensin-och-diesel-och-reformerad-reduktionsplikt/",
+    "quote": "Den sänkta skatten beräknas totalt mer än kompensera för det prispåslag som reduktionsplikten kan leda till.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "ekonomi-drivmedelsskatt",
+    "partyCode": "SD",
+    "value": 4,
+    "motivation": "SD har gjort sänkt bensin- och dieselskatt till en av sina viktigaste valfrågor och vill sänka skatten permanent med 2 kronor per liter.",
+    "sourceCitation": "SVT Nyheter, SD: Lägg 34 miljarder på sänkt bränslepris, 2026",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/sd-lagg-34-miljarder-pa-sankt-branslepris",
+    "quote": "sänka skatten på bensin och diesel med 2 kronor",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "ekonomi-bistand",
+    "partyCode": "V",
+    "value": 1,
+    "motivation": "V vill återställa biståndet till en procent av BNI och avvisar minskningar, trots att deras budget för 2026 tillfälligt landar lägre.",
+    "sourceCitation": "CONCORD Sverige, Oppositionspartiernas biståndsbudgetar, 2026",
+    "sourceUrl": "https://concord.se/oppositionspartiernas-bistandsbudgetar",
+    "quote": "För Vänsterpartiet är det självklart att Sverige ska uppnå målet att en procent av BNI ska avsättas för internationellt bistånd.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "ekonomi-bistand",
+    "partyCode": "S",
+    "value": 2,
+    "motivation": "S vill successivt öka biståndet och tillbaka till enprocentsmålet, även om budgeten för 2026 ligger under en procent.",
+    "sourceCitation": "CONCORD Sverige, Oppositionspartiernas biståndsbudgetar, 2026",
+    "sourceUrl": "https://concord.se/oppositionspartiernas-bistandsbudgetar",
+    "quote": "Vi vill successivt öka biståndet. Vår principiella inställning är att vi ska tillbaka till en procent av BNI.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "ekonomi-bistand",
+    "partyCode": "MP",
+    "value": 1,
+    "motivation": "MP återinför enprocentsmålet i sin budget och vill höja biståndet, inte minska det.",
+    "sourceCitation": "CONCORD Sverige, Oppositionspartiernas biståndsbudgetar, 2026",
+    "sourceUrl": "https://concord.se/oppositionspartiernas-bistandsbudgetar",
+    "quote": "I Miljöpartiets budget återinför vi målet om att svenskt bistånd ska uppgå till minst en procent av BNI.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "ekonomi-bistand",
+    "partyCode": "C",
+    "value": 1,
+    "motivation": "C vill trappa upp biståndet stegvis tills det åter når en procent av BNI och avvisar därmed minskningar.",
+    "sourceCitation": "CONCORD Sverige, Oppositionspartiernas biståndsbudgetar, 2026",
+    "sourceUrl": "https://concord.se/oppositionspartiernas-bistandsbudgetar",
+    "quote": "en stegvis upptrappning av biståndet tills dess det åter når 1 procent av BNI",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "ekonomi-bistand",
+    "partyCode": "L",
+    "value": 2,
+    "motivation": "L värnar principiellt enprocentsmålet men anger inget årtal för återställning och tillhör regeringen som sänkt biståndet under denna mandatperiod.",
+    "sourceCitation": "Diakonia, Det här lovar partierna om biståndet, 2024",
+    "sourceUrl": "https://www.diakonia.se/aktuellt/vad-lovar-partierna-for-bistandet/",
+    "quote": "",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "ekonomi-bistand",
+    "partyCode": "KD",
+    "value": 3,
+    "motivation": "KD vill på sikt återställa biståndet till en procent av BNI men ingår i regeringen som under mandatperioden hållit biståndet på en lägre nivå.",
+    "sourceCitation": "Diakonia, Det här lovar partierna om biståndet, 2024",
+    "sourceUrl": "https://www.diakonia.se/aktuellt/vad-lovar-partierna-for-bistandet/",
+    "quote": "",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "ekonomi-bistand",
+    "partyCode": "M",
+    "value": 3,
+    "motivation": "M vill slopa enprocentsmålet och prioritera behov i Sverige, vilket pressat biståndet nedåt, men beskriver det som omläggning mot kvalitet snarare än ren neddragning.",
+    "sourceCitation": "Moderaterna, Reformer för ett effektivt och resultatinriktat bistånd, 2026",
+    "sourceUrl": "https://moderaterna.se/nyhet/reformer-ett-effektivt-och-resultatinriktat-bistand/",
+    "quote": "Vi ska hjälpa människor i världen, men vi behöver också prioritera de behov vi har i Sverige",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "ekonomi-bistand",
+    "partyCode": "SD",
+    "value": 4,
+    "motivation": "SD har länge motsatt sig enprocentsmålet och vill minska biståndet och styra det tydligare utifrån svenska intressen.",
+    "sourceCitation": "IM (Individuell Människohjälp), Sverigedemokraterna: Bistånd ska tydligare utgå från svenska intressen, 2022",
+    "sourceUrl": "https://www.imsweden.org/sverigedemokraterna-bistand-ska-tydligare-utga-fran-svenska-intressen/",
+    "quote": "",
+    "confidence": "medium"
+  }
+]
