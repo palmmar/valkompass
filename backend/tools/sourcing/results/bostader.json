@@ -1,0 +1,162 @@
+[
+  {
+    "questionKey": "bostad-hyressattning",
+    "partyCode": "V",
+    "value": 1,
+    "motivation": "Vänsterpartiet motsätter sig marknadshyror helt och vill värna det kollektivt förhandlade bruksvärdessystemet.",
+    "sourceCitation": "Vänsterpartiet, \"Hyresrätter och allmännyttan\", vansterpartiet.se (hämtad 2026)",
+    "sourceUrl": "https://www.vansterpartiet.se/var-politik/politik-a-o/hyresratter/",
+    "quote": "Vänsterpartiet värnar den svenska modellen för hyressättning med kollektivt förhandlade hyror som sätts utifrån bruksvärdesprincipen.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "bostad-hyressattning",
+    "partyCode": "S",
+    "value": 1,
+    "motivation": "Socialdemokraterna är uttalat emot marknadshyror och vill värna det förhandlade hyressystemet.",
+    "sourceCitation": "Socialdemokraterna, \"Nej till Moderaternas hyreschock\", socialdemokraterna.se (2018)",
+    "sourceUrl": "https://www.socialdemokraterna.se/nyheter/nyheter/2018-06-25-nej-till-moderaternas-hyreschock",
+    "quote": "Människor ska ha rätt till en bostad med rimlig hyra. Därför är vi emot marknadshyror.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "bostad-hyressattning",
+    "partyCode": "MP",
+    "value": 2,
+    "motivation": "Miljöpartiet avvisar rena marknadshyror men kan tänka sig något mer marknadsanpassade hyror inom bruksvärdessystemet.",
+    "sourceCitation": "Hem & Hyra, \"Miljöpartiet vill utveckla hyressättningen\", hemhyra.se",
+    "sourceUrl": "https://www.hemhyra.se/nyheter/miljopartiet-vill-utveckla-hyressattningen/",
+    "quote": "Vi kan tänka oss något mer marknadsanpassade hyror på så vis att äldre bestånd och läge värderas en aning högre, men absolut inte rena marknadshyror.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "bostad-hyressattning",
+    "partyCode": "C",
+    "value": 3,
+    "motivation": "Centerpartiet släppte i maj 2026 kravet på fri hyressättning i nyproduktion men ser fortfarande behov av friare hyressättning; vill inte införa marknadshyror.",
+    "sourceCitation": "Bostadspolitik.se, \"Centerpartiet släpper kravet på fri hyressättning i nyproduktion\" (2026-05-30)",
+    "sourceUrl": "https://bostadspolitik.se/centerpartiet-slapper-kravet-pa-fri-hyressattning-i-nyproduktion/",
+    "quote": "inget parti i Sveriges riksdag vill införa marknadshyror. Inte heller Centerpartiet.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "bostad-hyressattning",
+    "partyCode": "L",
+    "value": 4,
+    "motivation": "Liberalerna vill införa fri hyressättning vid nyproduktion och låta hyror i högre grad spegla efterfrågan.",
+    "sourceCitation": "Liberalerna, \"Bostad\", liberalerna.se (hämtad 2026)",
+    "sourceUrl": "https://www.liberalerna.se/politik/politikbostader-2",
+    "quote": "Liberalerna vill införa fri hyressättning vid nyproduktion och låta hyror i större utsträckning spegla efterfrågan även i det befintliga beståndet.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "bostad-hyressattning",
+    "partyCode": "KD",
+    "value": 3,
+    "motivation": "Kristdemokraterna vill ha friare/fri hyressättning i nyproduktion men inte i det befintliga beståndet, med starkt besittningsskydd.",
+    "sourceCitation": "Kristdemokraterna, \"Hyresrätt\", kristdemokraterna.se (hämtad 2026)",
+    "sourceUrl": "https://kristdemokraterna.se/var-politik/politik-a-till-o/hyresratt",
+    "quote": "nyproduktion ges fri hyressättning i avtal mellan hyresgäst och fastighetsägare under förutsättning att besittningsskyddet är starkt och indexeringen av hyran är förutsägbar över tid",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "bostad-hyressattning",
+    "partyCode": "M",
+    "value": 3,
+    "motivation": "Moderaterna vill införa \"trygghetshyror\" där hyresgäst och hyresvärd förhandlar inflyttningshyran för nya kontrakt, men driver inte marknadshyror i befintligt bestånd.",
+    "sourceCitation": "Moderaterna, \"Bostadspolitik\", moderaterna.se (hämtad 2026)",
+    "sourceUrl": "https://moderaterna.se/var-politik/bostader/",
+    "quote": "Moderaterna vill inleda ett arbete med så kallade trygghetshyror för nya kontrakt, där hyresgäst och hyresvärd förhandlar hyran vid inflyttning.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "bostad-hyressattning",
+    "partyCode": "SD",
+    "value": 2,
+    "motivation": "Sverigedemokraterna säger nej till fri hyressättning och vill behålla bruksvärdessystemet, men vill ändra hur förhandlingarna görs.",
+    "sourceCitation": "Bostadspolitik.se, \"SD säger nej till marknadshyror\" (intervju med Mikael Eskilandersson, SD)",
+    "sourceUrl": "https://bostadspolitik.se/sd-sager-nej-till-marknadshyror-gillar-det-system-som-vi-har/",
+    "quote": "Vi gillar det system som vi har.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "bostad-subventioner",
+    "partyCode": "V",
+    "value": 4,
+    "motivation": "Vänsterpartiet vill öka den statliga finansieringen av bostadsbyggandet och bygga hyresrätter med rimliga hyror.",
+    "sourceCitation": "Vänsterpartiet, \"Bostäder\", vansterpartiet.se (hämtad 2026)",
+    "sourceUrl": "https://www.vansterpartiet.se/var-politik/politik-a-o/bostader/",
+    "quote": "Öka den statliga finansieringen av bostadsbyggandet (stöd och lån)",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "bostad-subventioner",
+    "partyCode": "S",
+    "value": 4,
+    "motivation": "Socialdemokraterna vill införa en statlig byggstimulans/produktionsstöd riktat till hyresbostäder med rimliga hyresnivåer.",
+    "sourceCitation": "Socialdemokraterna, \"Bostad\", socialdemokraterna.se (hämtad 2026)",
+    "sourceUrl": "https://www.socialdemokraterna.se/var-politik/a-till-o/bostad",
+    "quote": "Införa en statlig byggstimulans i form av ett produktionsstöd riktat till hyresbostäder med rimliga hyresnivåer",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "bostad-subventioner",
+    "partyCode": "MP",
+    "value": 4,
+    "motivation": "Miljöpartiet vill behålla och utveckla investeringsstödet för nya hyresrätter.",
+    "sourceCitation": "SVT Nyheter, \"Så här tycker politikerna om investeringsstöd till hyresrätter\" (2018)",
+    "sourceUrl": "https://www.svt.se/nyheter/val2018/sa-har-tycker-politikerna-om-investeringsstod-till-hyresratter",
+    "quote": "Miljöpartiet vill inte ta bort investeringsstödet för nya hyresrätter, vi vill istället utveckla det ytterligare.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "bostad-subventioner",
+    "partyCode": "C",
+    "value": 1,
+    "motivation": "Centerpartiet är kritiskt till byggsubventioner och menar att stödet gått till bostäder som ändå hade byggts; lägger inga förslag om finansiella stimulanser.",
+    "sourceCitation": "SVT Nyheter, \"Så här tycker politikerna om investeringsstöd till hyresrätter\" (2018)",
+    "sourceUrl": "https://www.svt.se/nyheter/val2018/sa-har-tycker-politikerna-om-investeringsstod-till-hyresratter",
+    "quote": "Stödet har gått till bostäder som hade byggts även om det aldrig införts.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "bostad-subventioner",
+    "partyCode": "L",
+    "value": 1,
+    "motivation": "Liberalerna anser att byggsubventioner är ineffektiva och dyra och vill inte ha statligt stöd för hyresrättsbyggande.",
+    "sourceCitation": "SVT Nyheter, \"Så här tycker politikerna om investeringsstöd till hyresrätter\" (2018)",
+    "sourceUrl": "https://www.svt.se/nyheter/val2018/sa-har-tycker-politikerna-om-investeringsstod-till-hyresratter",
+    "quote": "Byggsubventionerna är ineffektiva och dyra.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "bostad-subventioner",
+    "partyCode": "KD",
+    "value": 1,
+    "motivation": "Kristdemokraterna vill avskaffa byggsubventionerna och var med och avskaffade investeringsstödet för hyresrätter, då de anser att det driver upp byggkostnaderna.",
+    "sourceCitation": "SVT Nyheter, \"Så här tycker politikerna om investeringsstöd till hyresrätter\" (2018)",
+    "sourceUrl": "https://www.svt.se/nyheter/val2018/sa-har-tycker-politikerna-om-investeringsstod-till-hyresratter",
+    "quote": "Vi vill avskaffa subventionerna. Erfarenheten från tidigare subventioner är att det driver upp byggkostnaderna.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "bostad-subventioner",
+    "partyCode": "M",
+    "value": 1,
+    "motivation": "Moderaterna anser att investeringsstödet varit ett fiasko och var med och avskaffade det; lägger inga finansieringslösningar för hyresrätter.",
+    "sourceCitation": "SVT Nyheter, \"Så här tycker politikerna om investeringsstöd till hyresrätter\" (2018)",
+    "sourceUrl": "https://www.svt.se/nyheter/val2018/sa-har-tycker-politikerna-om-investeringsstod-till-hyresratter",
+    "quote": "Investeringsstödet har varit ett fiasko, knappt fem procent av stödet har betalats ut.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "bostad-subventioner",
+    "partyCode": "SD",
+    "value": 1,
+    "motivation": "Sverigedemokraterna vill dra in investeringsstödet i sin helhet så snart som möjligt och anser att det är dyrt och ineffektivt.",
+    "sourceCitation": "Dagens Arena, \"M och SD vill avveckla byggstöd\" (citat Oscar Sjöstedt, SD)",
+    "sourceUrl": "https://www.dagensarena.se/innehall/m-och-sd-vill-avveckla-byggstod/",
+    "quote": "Vi anser att investeringsstödet ska dras in i sin helhet så snart det är möjligt",
+    "confidence": "high"
+  }
+]

@@ -1,0 +1,487 @@
+[
+  {
+    "questionKey": "klimat-karnkraft-utbyggnad",
+    "partyCode": "V",
+    "value": 1,
+    "motivation": "V avvisar utbyggnad av kärnkraften och vill i stället ha en varsam avveckling och förnybart.",
+    "sourceCitation": "Vänsterpartiet, Politik A-Ö: Kärnkraft (hämtad 2026)",
+    "sourceUrl": "https://www.vansterpartiet.se/var-politik/politik-a-o/karnkraft/",
+    "quote": "Vänsterpartiet avvisar planerna på att bygga ut kärnkraften som en väg ur fossilberoendet",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "klimat-karnkraft-utbyggnad",
+    "partyCode": "S",
+    "value": 4,
+    "motivation": "S bejakar numera kärnkraften och vill tillåta byggande av ny kärnkraft vid befintliga lägen.",
+    "sourceCitation": "Socialdemokraterna, Politik A-Ö: Kärnkraft (hämtad 2026)",
+    "sourceUrl": "https://www.socialdemokraterna.se/var-politik/a-till-o/karnkraft",
+    "quote": "Tillåta byggandet av ny kärnkraft på de platser där det redan finns kärnkraftsproduktion (Ringhals, Oskarshamn och Forsmark).",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "klimat-karnkraft-utbyggnad",
+    "partyCode": "MP",
+    "value": 1,
+    "motivation": "MP motsätter sig ny kärnkraft och vill satsa på förnybart, främst havsbaserad vindkraft.",
+    "sourceCitation": "Miljöpartiet, Förnybar energi istället för kärnkraft (hämtad 2026)",
+    "sourceUrl": "https://www.mp.se/politik/karnkraft/",
+    "quote": "Ny kärnkraft är extremt mycket dyrare än ny förnybar energi och tar ofta flera decennier att bygga.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "klimat-karnkraft-utbyggnad",
+    "partyCode": "C",
+    "value": 2,
+    "motivation": "C ser kärnkraft som möjlig men bara på marknadsmässiga villkor utan statliga subventioner, och avvisar den subventionsdrivna utbyggnaden.",
+    "sourceCitation": "Centerpartiet, Politik A-Ö: Kärnkraft (hämtad 2026)",
+    "sourceUrl": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/energi/karnkraft",
+    "quote": "Kärnkraftsaktörer själva ansvarar för och finansierar kostnaderna för säkerhet, avfallshantering och olycksförsäkring, utan statliga stöd",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "klimat-karnkraft-utbyggnad",
+    "partyCode": "L",
+    "value": 4,
+    "motivation": "L vill bygga ut kärnkraften och ser den som det enda fossilfritt planerbara kraftslaget.",
+    "sourceCitation": "SVT Valkompass 2022, riksdag: Kärnkraften ska byggas ut (Liberalerna)",
+    "sourceUrl": "https://valkompass.svt.se/2022/riksdag/fraga/karnkraften-ska-byggas-ut",
+    "quote": "Kärnkraften är det enda fossilfritt planerbara kraftslaget",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "klimat-karnkraft-utbyggnad",
+    "partyCode": "KD",
+    "value": 4,
+    "motivation": "KD vill investera i ny kärnkraft för planerbar fossilfri baskraft.",
+    "sourceCitation": "Kristdemokraterna, Politik A-Ö: Kärnkraft (hämtad 2026)",
+    "sourceUrl": "https://kristdemokraterna.se/var-politik/politik-a-till-o/karnkraft",
+    "quote": "Därför behöver vi investera i ny kärnkraft.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "klimat-karnkraft-utbyggnad",
+    "partyCode": "M",
+    "value": 4,
+    "motivation": "M vill se till att ny kärnkraft byggs och prioriterar utbyggnad genom snabbspår.",
+    "sourceCitation": "Moderaterna, Klimat, miljö och energi (hämtad 2026)",
+    "sourceUrl": "https://moderaterna.se/miljopolitik",
+    "quote": "Återuppbygga det stabila svenska kraftsystemet där ny kärnkraft försörjer södra Sverige",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "klimat-karnkraft-utbyggnad",
+    "partyCode": "SD",
+    "value": 4,
+    "motivation": "SD vill bygga ny kärnkraft och ta fram en färdplan för SMR-reaktorer.",
+    "sourceCitation": "Sverigedemokraterna, Vad vi vill: Svensk energi (hämtad 2026)",
+    "sourceUrl": "https://www.sd.se/vad-vi-vill/svensk-energi/",
+    "quote": "Bygga ny kärnkraft i Sverige och sätta upp en färdplan för byggandet av SMR-reaktorer",
+    "confidence": "high"
+  },
+
+  {
+    "questionKey": "klimat-skarpta-mal",
+    "partyCode": "V",
+    "value": 4,
+    "motivation": "V vill skärpa målen och nå ett fossilfritt samhälle med nollutsläpp senast 2035.",
+    "sourceCitation": "Vänsterpartiet, Politik A-Ö: Klimat (hämtad 2026)",
+    "sourceUrl": "https://www.vansterpartiet.se/var-politik/politik-a-o/klimat/",
+    "quote": "Vänsterpartiets mål är ett fossilfritt samhälle senast år 2035.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "klimat-skarpta-mal",
+    "partyCode": "S",
+    "value": 3,
+    "motivation": "S behåller nettonoll 2045 men driver på för skärpta EU-mål om minst 95 procent till 2040.",
+    "sourceCitation": "Socialdemokraterna, Politik A-Ö: Klimatpolitik (hämtad 2026)",
+    "sourceUrl": "https://www.socialdemokraterna.se/var-politik/a-till-o/klimatpolitik",
+    "quote": "Driva på för ett bindande utsläppsmål i EU om minst 95 procents minskning av koldioxidutsläppen till 2040",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "klimat-skarpta-mal",
+    "partyCode": "MP",
+    "value": 4,
+    "motivation": "MP vill uttryckligen skärpa Sveriges klimatmål utifrån bästa forskning och rättviseprincip.",
+    "sourceCitation": "Miljöpartiet, Klimat (hämtad 2026)",
+    "sourceUrl": "https://www.mp.se/politik/klimat/",
+    "quote": "Skärpa Sveriges klimatmål utifrån bästa tillgängliga forskning och en princip om rättvisa",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "klimat-skarpta-mal",
+    "partyCode": "C",
+    "value": 3,
+    "motivation": "C vill skärpa klimatmålet till nettonoll i Sverige och EU senast 2040.",
+    "sourceCitation": "Centerpartiet, Politik A-Ö: Klimat (hämtad 2026)",
+    "sourceUrl": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/klimat",
+    "quote": "",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "klimat-skarpta-mal",
+    "partyCode": "L",
+    "value": 2,
+    "motivation": "L står bakom nuvarande mål och CCS-ambitioner men driver inte skärpning av de svenska målen.",
+    "sourceCitation": "Liberalerna, Klimatet (hämtad 2026)",
+    "sourceUrl": "https://www.liberalerna.se/politik/klimatet",
+    "quote": "",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "klimat-skarpta-mal",
+    "partyCode": "KD",
+    "value": 2,
+    "motivation": "KD står bakom nettonoll 2045 men vill inte skärpa de svenska klimatmålen ytterligare.",
+    "sourceCitation": "Kristdemokraterna, Miljö & energi (hämtad 2026)",
+    "sourceUrl": "https://kristdemokraterna.se/var-politik/politikomraden/miljo--energi",
+    "quote": "",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "klimat-skarpta-mal",
+    "partyCode": "M",
+    "value": 2,
+    "motivation": "M håller fast vid nettonoll 2045 men betonar svårigheter och vill inte skärpa målen.",
+    "sourceCitation": "Moderaterna, Klimat, miljö och energi (hämtad 2026)",
+    "sourceUrl": "https://moderaterna.se/miljopolitik",
+    "quote": "Sverige ska nå nettonollutsläpp senast år 2045",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "klimat-skarpta-mal",
+    "partyCode": "SD",
+    "value": 1,
+    "motivation": "SD vill se över 2030-målen och anser delar av EU:s klimatmål orimliga; vill inte skärpa.",
+    "sourceCitation": "SVT Nyheter, SD: Transportmålet ska bort (hämtad 2026)",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/sd-transportmalet-ska-bort",
+    "quote": "",
+    "confidence": "medium"
+  },
+
+  {
+    "questionKey": "klimat-vindkraft",
+    "partyCode": "V",
+    "value": 3,
+    "motivation": "V ser stor potential i havsbaserad vindkraft och vill bygga ut den systematiskt via auktioner.",
+    "sourceCitation": "Vänsterpartiet, Politik A-Ö: Energi (hämtad 2026)",
+    "sourceUrl": "https://www.vansterpartiet.se/var-politik/politik-a-o/energi/",
+    "quote": "",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "klimat-vindkraft",
+    "partyCode": "S",
+    "value": 3,
+    "motivation": "S vill påskynda och förenkla utbyggnaden av havsbaserad vindkraft.",
+    "sourceCitation": "SVT Nyheter, S och regeringen om havsbaserad vindkraft (hämtad 2026)",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/regeringen-splittrad-om-vindkraft-och-reduktionsplikt",
+    "quote": "",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "klimat-vindkraft",
+    "partyCode": "MP",
+    "value": 4,
+    "motivation": "MP vill satsa stort på att utöka den förnybara produktionen, framför allt havsbaserad vindkraft.",
+    "sourceCitation": "Miljöpartiet, Förnybar energi istället för kärnkraft (hämtad 2026)",
+    "sourceUrl": "https://www.mp.se/politik/karnkraft/",
+    "quote": "Satsa stort på att utöka vår förnyelsebara energiproduktion, framförallt den havsbaserade vindkraften.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "klimat-vindkraft",
+    "partyCode": "C",
+    "value": 4,
+    "motivation": "C vill bygga ut vindkraften på land och till havs och snabba på tillståndsprocesserna.",
+    "sourceCitation": "Centerpartiet, Politik A-Ö: Vindkraft (hämtad 2026)",
+    "sourceUrl": "https://www.centerpartiet.se/var-politik/politik-a-o/energi/vindkraft",
+    "quote": "Förenkla och snabba på tillståndsprocesserna så att mer ren el kan byggas snabbare.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "klimat-vindkraft",
+    "partyCode": "L",
+    "value": 3,
+    "motivation": "L vill se utbyggnad av sol, vind och vatten parallellt med kärnkraft och snabbare tillstånd.",
+    "sourceCitation": "Energi.se, Så vill partierna påverka energifrågorna i EU (2024)",
+    "sourceUrl": "https://www.energi.se/artiklar/2024/maj-2024/sa-vill-partierna-paverka-energifragorna-i-eu/",
+    "quote": "satsningar både på kärnkraft och sol, vind och vatten",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "klimat-vindkraft",
+    "partyCode": "KD",
+    "value": 2,
+    "motivation": "KD vill bygga vindkraft där den är välkommen och värna det kommunala vetot snarare än att påskynda.",
+    "sourceCitation": "Kristdemokraterna, Politik A-Ö: Vindkraft (hämtad 2026)",
+    "sourceUrl": "https://kristdemokraterna.se/var-politik/politik-a-till-o/vindkraft",
+    "quote": "Vindkraften ska byggas ut där den är välkommen.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "klimat-vindkraft",
+    "partyCode": "M",
+    "value": 2,
+    "motivation": "M vill se mer vindkraft men utan subventioner och utan att köra över kommuner och medborgare.",
+    "sourceCitation": "SVT Nyheter, Regeringen splittrad om vindkraft (hämtad 2026)",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/regeringen-splittrad-om-vindkraft-och-reduktionsplikt",
+    "quote": "",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "klimat-vindkraft",
+    "partyCode": "SD",
+    "value": 1,
+    "motivation": "SD säger nej till ny vindkraft, vill värna kommunalt veto och rentav plocka bort byggda verk.",
+    "sourceCitation": "Sverigedemokraterna, Vad vi vill: Svensk energi (hämtad 2026)",
+    "sourceUrl": "https://www.sd.se/vad-vi-vill/svensk-energi/",
+    "quote": "Problemet är att vindkraften är väderberoende, vilket ger rörlighet i pris och osäkerhet i tillgång.",
+    "confidence": "high"
+  },
+
+  {
+    "questionKey": "klimat-flygskatt",
+    "partyCode": "V",
+    "value": 4,
+    "motivation": "V vill återinföra flygskatten och på sikt göra den progressiv så att den som flyger mer betalar mer.",
+    "sourceCitation": "Vänsterpartiet, Politik A-Ö: Klimat (hämtad 2026)",
+    "sourceUrl": "https://www.vansterpartiet.se/var-politik/politik-a-o/klimat/",
+    "quote": "Därför är vi för en träffsäker vägslitageavgift för tunga lastbilar och progressiv flygskatt.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "klimat-flygskatt",
+    "partyCode": "S",
+    "value": 3,
+    "motivation": "S vill återinföra flygskatten, och då en progressiv variant, efter att regeringen slopat den.",
+    "sourceCitation": "Altinget, om S förslag att återinföra flygskatten (hämtad 2026)",
+    "sourceUrl": "https://www.altinget.se/artikel/socialdemokraterna-vill-ta-dod-paa-svenskt-flyg",
+    "quote": "återinförande av flygskatten och då en progressiv skatt är ytterst aktuellt",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "klimat-flygskatt",
+    "partyCode": "MP",
+    "value": 4,
+    "motivation": "MP ser flygskatten som en rimlig klimatåtgärd och vill ha kvar och höja den.",
+    "sourceCitation": "Miljöpartiet, Flygskatten - rimlig klimatåtgärd (hämtad 2026)",
+    "sourceUrl": "https://www.mp.se/gotland/just-nu/flygskatten-rimlig-klimatatgard/",
+    "quote": "",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "klimat-flygskatt",
+    "partyCode": "C",
+    "value": 2,
+    "motivation": "C har varit kritiskt till flygskatten men har tonat ner motståndet och behållit den i sitt budgetalternativ; vill inte höja den.",
+    "sourceCitation": "Sveriges Radio / mediarapportering om C:s flygskatteposition (hämtad 2026)",
+    "sourceUrl": "https://www.sverigesradio.se/artikel/centerpartiet-overger-motstandet-mot-karnkraft",
+    "quote": "",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "klimat-flygskatt",
+    "partyCode": "L",
+    "value": 1,
+    "motivation": "L vill hantera flygets miljöpåverkan på EU-nivå via utsläppsrätter, inte via höjd svensk flygskatt, och ingick i regeringen som slopade den.",
+    "sourceCitation": "Liberalerna, Flyg (hämtad 2026)",
+    "sourceUrl": "https://www.liberalerna.se/politik/flyg",
+    "quote": "Flygets miljöpåverkan ska betalas på EU-nivå genom utsläppsrätter.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "klimat-flygskatt",
+    "partyCode": "KD",
+    "value": 1,
+    "motivation": "KD ingick i regeringen som slopade flygskatten och förordar klimatstyrande start- och landningsavgifter i stället.",
+    "sourceCitation": "SVT Nyheter, Regeringen och SD slopar flygskatten (hämtad 2026)",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/regeringen-och-sd-vill-slopa-flygskatten",
+    "quote": "Flygskatten gör att många företag riskerar att lägga ner för att flyglinjer försvinner",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "klimat-flygskatt",
+    "partyCode": "M",
+    "value": 1,
+    "motivation": "M drev fram och stod bakom slopandet av flygskatten för att stärka flygbranschens konkurrenskraft.",
+    "sourceCitation": "SVT Nyheter, Regeringen och SD slopar flygskatten (hämtad 2026)",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/regeringen-och-sd-vill-slopa-flygskatten",
+    "quote": "",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "klimat-flygskatt",
+    "partyCode": "SD",
+    "value": 1,
+    "motivation": "SD drev igenom att flygskatten helt tas bort med hänvisning till konkurrenskraft.",
+    "sourceCitation": "SVT Nyheter, Regeringen och SD slopar flygskatten (hämtad 2026)",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/regeringen-och-sd-vill-slopa-flygskatten",
+    "quote": "Vi tar helt enkelt bort den",
+    "confidence": "high"
+  },
+
+  {
+    "questionKey": "klimat-reduktionsplikt",
+    "partyCode": "V",
+    "value": 1,
+    "motivation": "V vill behålla systemet men kritiserar sänkt reduktionsplikt och vill i stället höja drivmedelsskatten; motsätter sig sänkning för lägre priser.",
+    "sourceCitation": "Vänsterpartiet, Politik A-Ö: Klimat (hämtad 2026)",
+    "sourceUrl": "https://www.vansterpartiet.se/var-politik/politik-a-o/klimat/",
+    "quote": "",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "klimat-reduktionsplikt",
+    "partyCode": "S",
+    "value": 1,
+    "motivation": "S vill fullfölja reduktionsplikten enligt den ursprungliga, högre planen och motsätter sig sänkningen.",
+    "sourceCitation": "Supermiljöbloggen, Så vill riksdagspartierna ställa om transportsektorn (hämtad 2026)",
+    "sourceUrl": "https://supermiljobloggen.se/nyheter/sa-vill-riksdagspartierna-stalla-om-transportsektorn/",
+    "quote": "nu är det bara Socialdemokraterna och Centerpartiet som vill fullfölja reduktionsplikten enligt den ursprungliga planen",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "klimat-reduktionsplikt",
+    "partyCode": "MP",
+    "value": 1,
+    "motivation": "MP vill ha betydligt högre, inte lägre, reduktionsnivåer.",
+    "sourceCitation": "Supermiljöbloggen, Så vill riksdagspartierna ställa om transportsektorn (hämtad 2026)",
+    "sourceUrl": "https://supermiljobloggen.se/nyheter/sa-vill-riksdagspartierna-stalla-om-transportsektorn/",
+    "quote": "Miljöpartiet vill ha ännu mer ambitiösa nivåer: 94 procents minskning för såväl bensin som diesel",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "klimat-reduktionsplikt",
+    "partyCode": "C",
+    "value": 1,
+    "motivation": "C vill fullfölja reduktionsplikten enligt den ursprungliga planen och motsätter sig sänkningen.",
+    "sourceCitation": "Supermiljöbloggen, Så vill riksdagspartierna ställa om transportsektorn (hämtad 2026)",
+    "sourceUrl": "https://supermiljobloggen.se/nyheter/sa-vill-riksdagspartierna-stalla-om-transportsektorn/",
+    "quote": "nu är det bara Socialdemokraterna och Centerpartiet som vill fullfölja reduktionsplikten enligt den ursprungliga planen",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "klimat-reduktionsplikt",
+    "partyCode": "L",
+    "value": 3,
+    "motivation": "L vill behålla systemet men sänka reduktionsnivåerna, dock inte slopa det helt.",
+    "sourceCitation": "Supermiljöbloggen, Så vill riksdagspartierna ställa om transportsektorn (hämtad 2026)",
+    "sourceUrl": "https://supermiljobloggen.se/nyheter/sa-vill-riksdagspartierna-stalla-om-transportsektorn/",
+    "quote": "Övriga partier vill behålla systemet men sänka reduktionsnivåerna.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "klimat-reduktionsplikt",
+    "partyCode": "KD",
+    "value": 4,
+    "motivation": "KD har drivit att reduktionsplikten sänks till EU:s miniminivå för att hålla nere drivmedelspriserna.",
+    "sourceCitation": "Supermiljöbloggen, Så vill riksdagspartierna ställa om transportsektorn (hämtad 2026)",
+    "sourceUrl": "https://supermiljobloggen.se/nyheter/sa-vill-riksdagspartierna-stalla-om-transportsektorn/",
+    "quote": "Övriga partier vill behålla systemet men sänka reduktionsnivåerna.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "klimat-reduktionsplikt",
+    "partyCode": "M",
+    "value": 3,
+    "motivation": "M har sänkt reduktionsplikten i regeringsställning men vill behålla systemet, inte slopa det helt.",
+    "sourceCitation": "Supermiljöbloggen, Så vill riksdagspartierna ställa om transportsektorn (hämtad 2026)",
+    "sourceUrl": "https://supermiljobloggen.se/nyheter/sa-vill-riksdagspartierna-stalla-om-transportsektorn/",
+    "quote": "Övriga partier vill behålla systemet men sänka reduktionsnivåerna.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "klimat-reduktionsplikt",
+    "partyCode": "SD",
+    "value": 4,
+    "motivation": "SD vill dra ner reduktionsnivåerna mest av alla och öka den fossila andelen avsevärt för lägre priser.",
+    "sourceCitation": "Supermiljöbloggen, Så vill riksdagspartierna ställa om transportsektorn (hämtad 2026)",
+    "sourceUrl": "https://supermiljobloggen.se/nyheter/sa-vill-riksdagspartierna-stalla-om-transportsektorn/",
+    "quote": "Sverigedemokraterna vill dra ner dem mest och vill med andra ord öka den fossila andelen avsevärt.",
+    "confidence": "high"
+  },
+
+  {
+    "questionKey": "klimat-prioritet",
+    "partyCode": "V",
+    "value": 4,
+    "motivation": "V prioriterar en kraftfull klimatomställning och ser den som jobbskapande snarare än ett hot mot ekonomin.",
+    "sourceCitation": "Vänsterpartiet, Politik A-Ö: Klimat (hämtad 2026)",
+    "sourceUrl": "https://www.vansterpartiet.se/var-politik/politik-a-o/klimat/",
+    "quote": "Med en grön politik från vänster kan vi skapa fler jobb, företag och framtidstro även utanför storstäderna.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "klimat-prioritet",
+    "partyCode": "S",
+    "value": 3,
+    "motivation": "S vill nå klimatmålen men betonar en rättvis omställning som skapar gröna jobb och tryggar vardagen.",
+    "sourceCitation": "Socialdemokraterna, Politik A-Ö: Klimatpolitik (hämtad 2026)",
+    "sourceUrl": "https://www.socialdemokraterna.se/var-politik/a-till-o/klimatpolitik",
+    "quote": "att skapa nya gröna jobb och samtidigt se till att miljön och din vardag tryggas",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "klimat-prioritet",
+    "partyCode": "MP",
+    "value": 4,
+    "motivation": "MP vill ha en snabb och rättvis klimatomställning och prioriterar klimatet högt.",
+    "sourceCitation": "Miljöpartiet, Klimat (hämtad 2026)",
+    "sourceUrl": "https://www.mp.se/politik/klimat/",
+    "quote": "Det kommer skapa arbetstillfällen och minska utsläppen.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "klimat-prioritet",
+    "partyCode": "C",
+    "value": 2,
+    "motivation": "C ser klimat och tillväxt som sammanlänkade och vill att omställningen ska skapa jobb, inte gå ut över dem.",
+    "sourceCitation": "Centerpartiet, Politik A-Ö: Klimat (hämtad 2026)",
+    "sourceUrl": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/klimat",
+    "quote": "",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "klimat-prioritet",
+    "partyCode": "L",
+    "value": 2,
+    "motivation": "L vill driva klimatomställning men i en växande ekonomi, inte på bekostnad av tillväxten.",
+    "sourceCitation": "Liberalerna, Klimatet (hämtad 2026)",
+    "sourceUrl": "https://www.liberalerna.se/politik/klimatet",
+    "quote": "",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "klimat-prioritet",
+    "partyCode": "KD",
+    "value": 1,
+    "motivation": "KD vill nå klimatmål med smarta åtgärder och elektrifiering utan att belasta hushåll och ekonomi.",
+    "sourceCitation": "Kristdemokraterna, Miljö & energi (hämtad 2026)",
+    "sourceUrl": "https://kristdemokraterna.se/var-politik/politikomraden/miljo--energi",
+    "quote": "",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "klimat-prioritet",
+    "partyCode": "M",
+    "value": 1,
+    "motivation": "M betonar smarta åtgärder och elektrifiering framför höjda bränslepriser och vill inte att klimatpolitiken ska slå mot ekonomin.",
+    "sourceCitation": "Moderaterna, Klimat, miljö och energi (hämtad 2026)",
+    "sourceUrl": "https://moderaterna.se/miljopolitik",
+    "quote": "",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "klimat-prioritet",
+    "partyCode": "SD",
+    "value": 1,
+    "motivation": "SD prioriterar konkurrenskraft och hushållens ekonomi och vill inte att klimatpolitiken ska gå ut över jobb och tillväxt.",
+    "sourceCitation": "Sverigesnatur, KD och SD motarbetar aktivt klimatarbetet (hämtad 2026)",
+    "sourceUrl": "https://www.sverigesnatur.org/aktuellt/kd-och-sd-motarbetar-aktivt-klimatarbetet/",
+    "quote": "",
+    "confidence": "medium"
+  }
+]

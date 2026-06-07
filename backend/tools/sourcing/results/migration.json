@@ -1,0 +1,487 @@
+[
+  {
+    "questionKey": "migration-faerre-asyl",
+    "partyCode": "V",
+    "value": 1,
+    "motivation": "Vänsterpartiet vill värna asylrätten och bygger sin politik på solidarisk realism, inte på att minska mottagandet.",
+    "sourceCitation": "Vänsterpartiet, Flyktingpolitik (politik A–Ö), 2026",
+    "sourceUrl": "https://www.vansterpartiet.se/var-politik/politik-a-o/flyktingpolitik/",
+    "quote": "Vår flyktingpolitik bygger på solidarisk realism. Det betyder att vår politik grundar sig i asylrätten, i solidariteten mellan människor och i en robust välfärd.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "migration-faerre-asyl",
+    "partyCode": "S",
+    "value": 3,
+    "motivation": "Socialdemokraterna förespråkar en stram migrationspolitik och lyfter att Sveriges andel av asylsökande till EU minskat kraftigt.",
+    "sourceCitation": "Socialdemokraterna, Integration (politik A–Ö), 2026",
+    "sourceUrl": "https://www.socialdemokraterna.se/var-politik/a-till-o/integration",
+    "quote": "migrationspolitiken vara stram, så att samhället får de resurser och den tid som krävs",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "migration-faerre-asyl",
+    "partyCode": "MP",
+    "value": 1,
+    "motivation": "Miljöpartiet vill värna asylrätten och ta emot minst 5000 kvotflyktingar per år, alltså inte minska mottagandet.",
+    "sourceCitation": "Miljöpartiet, Migration och lika rätt, 2026",
+    "sourceUrl": "https://www.mp.se/politik/migration-och-lika-ratt/",
+    "quote": "Sverige ska ta emot minst 5000 kvotflyktingar per år",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "migration-faerre-asyl",
+    "partyCode": "C",
+    "value": 2,
+    "motivation": "Centerpartiet värnar asylrätten och vill utöka kvotflyktingmottagandet, men förordar samtidigt en mer ordnad och reglerad migration.",
+    "sourceCitation": "Centerpartiet, Migration och integration (politik A–Ö), 2026",
+    "sourceUrl": "https://www.centerpartiet.se/var-politik/politik-a-o/migration-och-integration",
+    "quote": "",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "migration-faerre-asyl",
+    "partyCode": "L",
+    "value": 3,
+    "motivation": "Liberalerna värnar asylrätten men står bakom regeringens stramare linje där de utan skyddsskäl måste lämna landet.",
+    "sourceCitation": "Liberalerna, Invandring (politik), 2026",
+    "sourceUrl": "https://www.liberalerna.se/politik/migration",
+    "quote": "Människor som flyr krig och förföljelse ska få skydd. Asylrätten ska värnas.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "migration-faerre-asyl",
+    "partyCode": "KD",
+    "value": 4,
+    "motivation": "Kristdemokraterna vill kraftigt begränsa migrationen och ha ett mottagande i nivå med de nordiska grannländerna.",
+    "sourceCitation": "Kristdemokraterna, Migration och integration, 2026",
+    "sourceUrl": "https://kristdemokraterna.se/var-politik/politikomraden/migration-och-integration",
+    "quote": "Kristdemokraterna vill ha ett mottagande i nivå med våra nordiska grannländer.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "migration-faerre-asyl",
+    "partyCode": "M",
+    "value": 4,
+    "motivation": "Moderaterna vill minska den asylrelaterade invandringen genom att anpassa asyllagstiftningen till EU-rättens miniminivå.",
+    "sourceCitation": "Moderaterna, Migration (vår politik), 2026",
+    "sourceUrl": "https://moderaterna.se/var-politik/migrationspolitik/",
+    "quote": "Minska den asylrelaterade invandringen till Sverige genom att bland annat anpassa asyllagstiftningen till EU-rättens miniminivå.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "migration-faerre-asyl",
+    "partyCode": "SD",
+    "value": 4,
+    "motivation": "Sverigedemokraterna vill minska det direkta asylmottagandet till nära noll.",
+    "sourceCitation": "Sverigedemokraterna, En strikt invandringspolitik, 2026",
+    "sourceUrl": "https://www.sd.se/vad-vi-vill/en-strikt-invandringspolitik/",
+    "quote": "Det direkta asylmottagandet från länder som inte utgör vårt närområde ska minskas till nära noll.",
+    "confidence": "high"
+  },
+
+  {
+    "questionKey": "migration-medborgarskap",
+    "partyCode": "V",
+    "value": 1,
+    "motivation": "Vänsterpartiet motsätter sig skärpta krav och avvisar bland annat språkkrav för medborgarskap.",
+    "sourceCitation": "Sveriges riksdag, Utskott ställer sig bakom skärpta krav för svenskt medborgarskap, 2026",
+    "sourceUrl": "https://www.riksdagen.se/sv/aktuellt/aktuelltnotiser/2026/apr/28/utskott-staller-sig-bakom-skarpta-krav-for-svenskt_cms9877b1a3-c06e-4220-9ffb-00f2c4e9c722sv/",
+    "quote": "riskerar att förstärka ojämlikhet och utanförskap i stället för att minska den",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "migration-medborgarskap",
+    "partyCode": "S",
+    "value": 3,
+    "motivation": "Socialdemokraterna vill ha språk- och samhällskunskapskrav men hade invändningar mot delar av regeringens skärpningar.",
+    "sourceCitation": "Sveriges riksdag, Utskott ställer sig bakom skärpta krav för svenskt medborgarskap, 2026",
+    "sourceUrl": "https://www.riksdagen.se/sv/aktuellt/aktuelltnotiser/2026/apr/28/utskott-staller-sig-bakom-skarpta-krav-for-svenskt_cms9877b1a3-c06e-4220-9ffb-00f2c4e9c722sv/",
+    "quote": "Det införs krav på både tillräckliga kunskaper i svenska och om det svenska samhället",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "migration-medborgarskap",
+    "partyCode": "MP",
+    "value": 1,
+    "motivation": "Miljöpartiet motsatte sig regeringens förslag om skärpta medborgarskapskrav i stora delar.",
+    "sourceCitation": "Sveriges riksdag, Utskott ställer sig bakom skärpta krav för svenskt medborgarskap, 2026",
+    "sourceUrl": "https://www.riksdagen.se/sv/aktuellt/aktuelltnotiser/2026/apr/28/utskott-staller-sig-bakom-skarpta-krav-for-svenskt_cms9877b1a3-c06e-4220-9ffb-00f2c4e9c722sv/",
+    "quote": "riskerar att förstärka ojämlikhet och utanförskap i stället för att minska den",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "migration-medborgarskap",
+    "partyCode": "C",
+    "value": 2,
+    "motivation": "Centerpartiet stödjer språk- och samhällskunskapskrav men ville mildra hemvisttiden, t.ex. genom skatteundantag, snarare än generellt skärpa.",
+    "sourceCitation": "Sveriges riksdag, Utskott ställer sig bakom skärpta krav för svenskt medborgarskap, 2026",
+    "sourceUrl": "https://www.riksdagen.se/sv/aktuellt/aktuelltnotiser/2026/apr/28/utskott-staller-sig-bakom-skarpta-krav-for-svenskt_cms9877b1a3-c06e-4220-9ffb-00f2c4e9c722sv/",
+    "quote": "under en femårsperiod har betalat in minst 500 000 kronor i skatt",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "migration-medborgarskap",
+    "partyCode": "L",
+    "value": 4,
+    "motivation": "Liberalerna driver sedan länge språk- och samhällskunskapskrav för medborgarskap och ser detta som en liberal seger.",
+    "sourceCitation": "Liberalerna, Liberal vinst i regeringen: språk- och samhällskunskaper blir krav för medborgarskap, 2026",
+    "sourceUrl": "https://www.liberalerna.se/nyheter/sprak-och-samhallskunskaper-blir-krav-for-medborgarskap",
+    "quote": "",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "migration-medborgarskap",
+    "partyCode": "KD",
+    "value": 4,
+    "motivation": "Kristdemokraterna vill införa godkänt språkkrav och prov i samhällsorientering för medborgarskap.",
+    "sourceCitation": "Kristdemokraterna, Migration och integration, 2026",
+    "sourceUrl": "https://kristdemokraterna.se/var-politik/politikomraden/migration-och-integration",
+    "quote": "Kristdemokraterna vill införa ett godkänt språkkrav för den som söker medborgarskap.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "migration-medborgarskap",
+    "partyCode": "M",
+    "value": 4,
+    "motivation": "Moderaterna vill införa krav på svenska, samhällskunskap, egen försörjning och längre hemvist för medborgarskap.",
+    "sourceCitation": "Moderaterna, Migration (vår politik), 2026",
+    "sourceUrl": "https://moderaterna.se/var-politik/migrationspolitik/",
+    "quote": "Införa krav på kunskaper i svenska och samhällskunskap, egen försörjning och att ha bott i Sverige en längre tid för att bli svensk medborgare.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "migration-medborgarskap",
+    "partyCode": "SD",
+    "value": 4,
+    "motivation": "Sverigedemokraterna vill att medborgarskap ska kräva språk, samhällskunskap, lång hemvist och egen försörjning.",
+    "sourceCitation": "Sverigedemokraterna, En strikt invandringspolitik, 2026",
+    "sourceUrl": "https://www.sd.se/vad-vi-vill/en-strikt-invandringspolitik/",
+    "quote": "För att få medborgarskap ska man uppfylla en rad krav: man ska kunna det svenska språket, ha kunskap om vårt samhälle och vår kultur, man ska ha bott här en lång tid, och man ska ha försörjt sig själv.",
+    "confidence": "high"
+  },
+
+  {
+    "questionKey": "migration-arbetskraft",
+    "partyCode": "V",
+    "value": 2,
+    "motivation": "Vänsterpartiet vill ha arbetsmarknadsbehovsstyrd invandring med kollektivavtalsenliga villkor, men inte begränsa via politiskt satta lönekrav till bara högkvalificerade.",
+    "sourceCitation": "Vänsterpartiet, Arbetskraftsinvandring (politik A–Ö), 2026",
+    "sourceUrl": "https://www.vansterpartiet.se/var-politik/politik-a-o/arbetskraftsinvandring/",
+    "quote": "Det ska vara arbetsmarknadens behov som ska styra arbetskraftsinvandringen – inte högerregeringens behov av att minska invandringen.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "migration-arbetskraft",
+    "partyCode": "S",
+    "value": 3,
+    "motivation": "Socialdemokraterna vill återinföra arbetsmarknadsprövning så att invandringen begränsas till yrken där arbetskraft saknas i Sverige.",
+    "sourceCitation": "Socialdemokraterna, Arbetskraftsinvandring (politik A–Ö), 2026",
+    "sourceUrl": "https://www.socialdemokraterna.se/var-politik/a-till-o/arbetskraftsinvandring",
+    "quote": "Återinföra arbetsmarknadsprövning i samverkan med arbetsmarknadens parter för att säkerställa att arbetskraftsinvandring endast sker när det inte går att hitta någon i Sverige som kan ta jobbet.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "migration-arbetskraft",
+    "partyCode": "MP",
+    "value": 2,
+    "motivation": "Miljöpartiet vill att den som arbetar och försörjer sig ska kunna stanna med kollektivavtalsenlig lön, alltså inte begränsa till enbart högkvalificerade.",
+    "sourceCitation": "Miljöpartiet, Migration och lika rätt, 2026",
+    "sourceUrl": "https://www.mp.se/politik/migration-och-lika-ratt/",
+    "quote": "Lön i nivå med kollektivavtal och praxis inom branschen ska räcka för att stanna",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "migration-arbetskraft",
+    "partyCode": "C",
+    "value": 1,
+    "motivation": "Centerpartiet vill underlätta arbetskraftsinvandring brett och riva upp det höjda lönekravet, även för lägre kvalificerade jobb i glesbygd.",
+    "sourceCitation": "Arbetet, Centern vill skrota höjt lönekrav för invandrare, 2026-03-30",
+    "sourceUrl": "https://arbetet.se/2026/03/30/centrern-vill-skrota-hojt-lonekrav-for-invandrare-glesbygden-forlorare/",
+    "quote": "Medianlön är en helt irrelevant grund för arbetstillstånd som leder helt fel. Det blir orättvist.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "migration-arbetskraft",
+    "partyCode": "L",
+    "value": 2,
+    "motivation": "Liberalerna ser arbetskraftsinvandring som bra för Sverige och vill underlätta att komma hit för att arbeta, men ställer sig bakom regeringens högre lönekrav.",
+    "sourceCitation": "Liberalerna, Invandring (politik), 2026",
+    "sourceUrl": "https://www.liberalerna.se/politik/migration",
+    "quote": "Arbetskraftinvandring är bra för Sverige.",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "migration-arbetskraft",
+    "partyCode": "KD",
+    "value": 3,
+    "motivation": "Kristdemokraterna vill främja kvalificerad arbetskraftsinvandring men skärpa reglerna och har drivit ett lönegolv för att stoppa lågkvalificerad invandring.",
+    "sourceCitation": "Kristdemokraterna, Arbetskraftsinvandring (politik A–Ö), 2026",
+    "sourceUrl": "https://kristdemokraterna.se/var-politik/politik-a-till-o/arbetskraftsinvandring",
+    "quote": "",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "migration-arbetskraft",
+    "partyCode": "M",
+    "value": 3,
+    "motivation": "Moderaterna vill främja högkvalificerad arbetskraftsinvandring och har höjt försörjningskravet kraftigt för att stoppa lågkvalificerad invandring.",
+    "sourceCitation": "Moderaterna, Migration (vår politik), 2026",
+    "sourceUrl": "https://moderaterna.se/var-politik/migrationspolitik/",
+    "quote": "Höja försörjningskravet (lönekravet) för arbetskraftsinvandrare från länder utanför EU",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "migration-arbetskraft",
+    "partyCode": "SD",
+    "value": 4,
+    "motivation": "Sverigedemokraterna vill införa arbetsmarknadsprövning för att förhindra import av billig, lågkvalificerad arbetskraft.",
+    "sourceCitation": "Sverigedemokraterna, En strikt invandringspolitik, 2026",
+    "sourceUrl": "https://www.sd.se/vad-vi-vill/en-strikt-invandringspolitik/",
+    "quote": "Sverige behöver införa en riktig arbetsmarknadsprövning av arbetstillstånd för att förhindra att arbetsgivare importerar billig arbetskraft.",
+    "confidence": "high"
+  },
+
+  {
+    "questionKey": "migration-atervandring",
+    "partyCode": "V",
+    "value": 1,
+    "motivation": "Vänsterpartiet tillhör de oppositionspartier som är helt emot det höjda återvandringsbidraget.",
+    "sourceCitation": "SVT Nyheter, Valfrågan: Gör höjt återvandringsbidrag att fler lämnar Sverige?, 2026",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/en-fick-atervandringsbidrag-forra-aret-chockhojning-ska-fa-fler-att-lamna-sverige",
+    "quote": "En höjning som alla fyra oppositionspartier är helt emot.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "migration-atervandring",
+    "partyCode": "S",
+    "value": 1,
+    "motivation": "Socialdemokraterna är emot det höjda återvandringsbidraget och varnar för att det får människor att känna sig ovälkomna.",
+    "sourceCitation": "SVT Nyheter, Valfrågan: Gör höjt återvandringsbidrag att fler lämnar Sverige?, 2026",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/en-fick-atervandringsbidrag-forra-aret-chockhojning-ska-fa-fler-att-lamna-sverige",
+    "quote": "En höjning som alla fyra oppositionspartier är helt emot.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "migration-atervandring",
+    "partyCode": "MP",
+    "value": 1,
+    "motivation": "Miljöpartiet tillhör de oppositionspartier som är helt emot det höjda återvandringsbidraget.",
+    "sourceCitation": "SVT Nyheter, Valfrågan: Gör höjt återvandringsbidrag att fler lämnar Sverige?, 2026",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/en-fick-atervandringsbidrag-forra-aret-chockhojning-ska-fa-fler-att-lamna-sverige",
+    "quote": "En höjning som alla fyra oppositionspartier är helt emot.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "migration-atervandring",
+    "partyCode": "C",
+    "value": 1,
+    "motivation": "Centerpartiet tillhör de oppositionspartier som är helt emot det höjda återvandringsbidraget.",
+    "sourceCitation": "SVT Nyheter, Valfrågan: Gör höjt återvandringsbidrag att fler lämnar Sverige?, 2026",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/en-fick-atervandringsbidrag-forra-aret-chockhojning-ska-fa-fler-att-lamna-sverige",
+    "quote": "En höjning som alla fyra oppositionspartier är helt emot.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "migration-atervandring",
+    "partyCode": "L",
+    "value": 3,
+    "motivation": "Liberalerna ingår i regeringen som kraftigt höjt återvandringsbidraget, men frågan är främst driven av SD och M och inte profilfråga för L.",
+    "sourceCitation": "Regeringen, Ett kraftigt höjt återvandringsbidrag, 2025",
+    "sourceUrl": "https://www.regeringen.se/pressmeddelanden/2025/04/ett-kraftigt-hojt-atervandringsbidrag/",
+    "quote": "",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "migration-atervandring",
+    "partyCode": "KD",
+    "value": 4,
+    "motivation": "Kristdemokraterna ingår i regeringen som kraftigt höjt återvandringsbidraget för att uppmuntra frivillig återvandring.",
+    "sourceCitation": "Regeringen, Ett kraftigt höjt återvandringsbidrag, 2025",
+    "sourceUrl": "https://www.regeringen.se/pressmeddelanden/2025/04/ett-kraftigt-hojt-atervandringsbidrag/",
+    "quote": "Frivillig återvandring skapar möjligheter för individen att göra en nystart i livet och kan leda till att ekonomin och arbetskraften växer i ett annat land.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "migration-atervandring",
+    "partyCode": "M",
+    "value": 4,
+    "motivation": "Moderaterna driver i regeringen ett kraftigt höjt återvandringsbidrag (350 000 kr) för att uppmuntra frivillig återvandring.",
+    "sourceCitation": "Moderaterna, Migration (vår politik), 2026",
+    "sourceUrl": "https://moderaterna.se/var-politik/migrationspolitik/",
+    "quote": "Sedan den 1 januari 2026 är bidraget 350 000 kronor för vuxna och 25 000 kronor för barn.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "migration-atervandring",
+    "partyCode": "SD",
+    "value": 4,
+    "motivation": "Sverigedemokraterna vill uppmuntra dem som inte kommit in i samhället att återvandra och är pådrivande bakom det höjda bidraget.",
+    "sourceCitation": "Sverigedemokraterna, En strikt invandringspolitik, 2026",
+    "sourceUrl": "https://www.sd.se/vad-vi-vill/en-strikt-invandringspolitik/",
+    "quote": "De som är här lagligt, men inte kommit in i samhället på ett bra sätt, ska uppmuntras att återvandra.",
+    "confidence": "high"
+  },
+
+  {
+    "questionKey": "migration-sprakkrav-bidrag",
+    "partyCode": "V",
+    "value": 1,
+    "motivation": "Vänsterpartiet motsätter sig språkkrav och menar att de bara ökar klyftorna i stället för att gynna integrationen.",
+    "sourceCitation": "Vänsterpartiet, Språk och integration (politik A–Ö), 2026",
+    "sourceUrl": "https://www.vansterpartiet.se/var-politik/politik-a-o/sprak-och-integration/",
+    "quote": "Språkkrav ökar bara klyftorna genom att de som har goda förutsättningar att lära sig svenska gynnas och de som har sämre förutsättningar oftare hamnar utanför samhället.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "migration-sprakkrav-bidrag",
+    "partyCode": "S",
+    "value": 3,
+    "motivation": "Socialdemokraterna vill införa språk- och aktivitetsplikt för dem som har försörjningsstöd.",
+    "sourceCitation": "Socialdemokraterna, Integration (politik A–Ö), 2026",
+    "sourceUrl": "https://www.socialdemokraterna.se/var-politik/a-till-o/integration",
+    "quote": "Införa språk-och aktivitetsplikt för dem som har försörjningsstöd",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "migration-sprakkrav-bidrag",
+    "partyCode": "MP",
+    "value": 2,
+    "motivation": "Miljöpartiet vill individualisera krav och stöd och är skeptiskt till hårda generella språkkrav kopplade till bidrag.",
+    "sourceCitation": "Miljöpartiet, Migration och lika rätt, 2026",
+    "sourceUrl": "https://www.mp.se/politik/migration-och-lika-ratt/",
+    "quote": "",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "migration-sprakkrav-bidrag",
+    "partyCode": "C",
+    "value": 3,
+    "motivation": "Centerpartiet vill ha aktivitetskrav med uppföljning för bidrag, där insatser som svenskstudier kan ingå, men betonar ekonomiska incitament.",
+    "sourceCitation": "Centerpartiet, Integration (politik A–Ö), 2026",
+    "sourceUrl": "https://www.centerpartiet.se/var-politik/politik-a-o/migration-och-integration/integration",
+    "quote": "",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "migration-sprakkrav-bidrag",
+    "partyCode": "L",
+    "value": 4,
+    "motivation": "Liberalerna vill ha tydligare krav på motprestation för bidrag och kopplar starkt språk och egen försörjning till bidragsrätt.",
+    "sourceCitation": "Liberalerna, Integration (politik), 2026",
+    "sourceUrl": "https://www.liberalerna.se/politik/integration",
+    "quote": "Vi vill se tydligare krav på motprestation för bidrag.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "migration-sprakkrav-bidrag",
+    "partyCode": "KD",
+    "value": 4,
+    "motivation": "Kristdemokraterna driver en kravbaserad integration där etableringsprogram och deltagande villkoras, i linje med Tidöregeringens språkkrav för bidrag.",
+    "sourceCitation": "Kristdemokraterna, Migration och integration, 2026",
+    "sourceUrl": "https://kristdemokraterna.se/var-politik/politikomraden/migration-och-integration",
+    "quote": "",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "migration-sprakkrav-bidrag",
+    "partyCode": "M",
+    "value": 4,
+    "motivation": "Moderaterna driver en kravbaserad integrationspolitik där bidrag villkoras av motprestation och deltagande, inklusive svenskinlärning.",
+    "sourceCitation": "Moderaterna, Migration (vår politik), 2026",
+    "sourceUrl": "https://moderaterna.se/var-politik/migrationspolitik/",
+    "quote": "",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "migration-sprakkrav-bidrag",
+    "partyCode": "SD",
+    "value": 4,
+    "motivation": "Sverigedemokraterna vill att den som inte lär sig svenska och lever på försörjningsstöd ska anses stå till arbetsmarknadens förfogande och ges incitament att återvandra.",
+    "sourceCitation": "Sverigedemokraternas integrationspolitik (Motion 2021/22:3704 av Ludvig Aspling m.fl. (SD))",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/sverigedemokraternas-integrationspolitik-med_h9023704/html/",
+    "quote": "personer som bott i Sverige under en längre tid, men valt att inte lära sig svenska språket i tillräcklig utsträckning för att kunna ta tillgängliga arbeten, ska anses stå till arbetsmarknadens förfogande",
+    "confidence": "medium"
+  },
+
+  {
+    "questionKey": "migration-utvisning-vandel",
+    "partyCode": "V",
+    "value": 1,
+    "motivation": "Vänsterpartiet värnar rättssäkerhet och individuell prövning och motsätter sig utvidgade grunder för utvisning utan brott.",
+    "sourceCitation": "Vänsterpartiet, Flyktingpolitik (politik A–Ö), 2026",
+    "sourceUrl": "https://www.vansterpartiet.se/var-politik/politik-a-o/flyktingpolitik/",
+    "quote": "",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "migration-utvisning-vandel",
+    "partyCode": "S",
+    "value": 2,
+    "motivation": "Socialdemokraterna har kritiserat regeringens migrationsförslag, inklusive vandelskravet, som slarviga och ogenomtänkta.",
+    "sourceCitation": "Socialdemokraterna, S-kritik: Regeringen lägger fram slarviga och ogenomtänkta förslag på migrationsområdet, 2026-05-13",
+    "sourceUrl": "https://www.socialdemokraterna.se/nyheter/nyheter/2026-05-13-s-kritik-regeringen-lagger-fram-slarviga-och-ogenomtankta-forslag-pa-migrationsomradet.",
+    "quote": "",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "migration-utvisning-vandel",
+    "partyCode": "MP",
+    "value": 1,
+    "motivation": "Miljöpartiet vill tvärtom stoppa utvisningar av personer som rotat sig i Sverige och motsätter sig utvidgade utvisningsgrunder.",
+    "sourceCitation": "Miljöpartiet, Migration och lika rätt, 2026",
+    "sourceUrl": "https://www.mp.se/politik/migration-och-lika-ratt/",
+    "quote": "Människor som etablerat sig i Sverige med familj, jobb eller utbildning ska kunna stanna",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "migration-utvisning-vandel",
+    "partyCode": "C",
+    "value": 1,
+    "motivation": "Centerpartiet betonar rättssäkerhet och individuell prövning och har inte föreslagit utvisning på grund av bristande livsföring utan brott.",
+    "sourceCitation": "Centerpartiet, Migration och integration (politik A–Ö), 2026",
+    "sourceUrl": "https://www.centerpartiet.se/var-politik/politik-a-o/migration-och-integration",
+    "quote": "",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "migration-utvisning-vandel",
+    "partyCode": "L",
+    "value": 3,
+    "motivation": "Liberalerna ingår i regeringen som föreslår ett vandelskrav och vill kunna ställa krav på att de som kommer hit följer lagar och regler.",
+    "sourceCitation": "Regeringen, Regeringen föreslår ett nytt vandelskrav, 2026",
+    "sourceUrl": "https://www.regeringen.se/pressmeddelanden/2026/03/regeringen-foreslar-ett-nytt-vandelskrav/",
+    "quote": "Vi ska också kunna ställa krav på att de som kommer hit följer lagar och regler.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "migration-utvisning-vandel",
+    "partyCode": "KD",
+    "value": 4,
+    "motivation": "Kristdemokraterna står bakom regeringens skärpta vandelskrav som grund för utvisning vid misskötsamhet.",
+    "sourceCitation": "Regeringen, Regeringen föreslår ett nytt vandelskrav, 2026",
+    "sourceUrl": "https://www.regeringen.se/pressmeddelanden/2026/03/regeringen-foreslar-ett-nytt-vandelskrav/",
+    "quote": "Vid bristande vandel ger dagens förändringar förutsättningar för att skapa ett tryggare Sverige.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "migration-utvisning-vandel",
+    "partyCode": "M",
+    "value": 4,
+    "motivation": "Moderaterna vill införa krav på vandel så att den som missköter sig kan utvisas.",
+    "sourceCitation": "Moderaterna, Migration (vår politik), 2026",
+    "sourceUrl": "https://moderaterna.se/var-politik/migrationspolitik/",
+    "quote": "Införa krav på vandel så att den som missköter sig utvisas.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "migration-utvisning-vandel",
+    "partyCode": "SD",
+    "value": 4,
+    "motivation": "Sverigedemokraterna vill kunna utvisa gängmedlemmar, personer med kriminell livsstil och andra asociala även utan fällande dom.",
+    "sourceCitation": "Sverigedemokraterna, En strikt invandringspolitik, 2026",
+    "sourceUrl": "https://www.sd.se/vad-vi-vill/en-strikt-invandringspolitik/",
+    "quote": "Även gängmedlemmar, narkotikamissbrukare, personer med en kriminell livsstil och andra asociala, måste kunna utvisas.",
+    "confidence": "high"
+  }
+]
