@@ -1,0 +1,352 @@
+[
+  {
+    "externalKey": "sjukvard-statlig-styrning",
+    "categorySlug": "sjukvard",
+    "displayOrder": 1,
+    "text": "Staten ska ta över ansvaret för sjukvården från regionerna",
+    "explanation": "Om sjukvårdens huvudmannaskap ska flyttas från regionerna till staten."
+  },
+  {
+    "externalKey": "sjukvard-vinstforbud",
+    "categorySlug": "sjukvard",
+    "displayOrder": 2,
+    "text": "Vinster i välfärden ska förbjudas",
+    "explanation": "Om privata utförare inom vård, skola och omsorg ska få ta ut vinst."
+  },
+  {
+    "externalKey": "sjukvard-privat-vard",
+    "categorySlug": "sjukvard",
+    "displayOrder": 3,
+    "text": "Privata vårdgivare är bra för sjukvården",
+    "explanation": "Om privata aktörer förbättrar vårdens kvalitet och tillgänglighet."
+  },
+  {
+    "externalKey": "sjukvard-mer-resurser",
+    "categorySlug": "sjukvard",
+    "displayOrder": 4,
+    "text": "Mer skattepengar ska gå till sjukvården även om det kräver höjda skatter",
+    "explanation": "Om vården bör tillföras mer resurser även till priset av högre skatt."
+  },
+  {
+    "externalKey": "sjukvard-tandvard",
+    "categorySlug": "sjukvard",
+    "displayOrder": 5,
+    "text": "Tandvården ska ingå i högkostnadsskyddet på samma sätt som annan sjukvård",
+    "explanation": "Om tandvård ska subventioneras som övrig hälso- och sjukvård."
+  },
+  {
+    "externalKey": "sjukvard-privata-forsakringar",
+    "categorySlug": "sjukvard",
+    "displayOrder": 6,
+    "text": "Privata sjukvårdsförsäkringar ska begränsas",
+    "explanation": "Om försäkringar som ger snabbare vård ska begränsas."
+  },
+  {
+    "externalKey": "lag-skarpta-straff",
+    "categorySlug": "lag-ordning",
+    "displayOrder": 1,
+    "text": "Straffen för våldsbrott ska skärpas kraftigt",
+    "explanation": "Om längre fängelsestraff för våldsbrott."
+  },
+  {
+    "externalKey": "lag-fler-poliser",
+    "categorySlug": "lag-ordning",
+    "displayOrder": 2,
+    "text": "Sverige ska anställa betydligt fler poliser",
+    "explanation": "Om en stor utökning av poliskåren."
+  },
+  {
+    "externalKey": "lag-visitationszoner",
+    "categorySlug": "lag-ordning",
+    "displayOrder": 3,
+    "text": "Polisen ska få inrätta visitationszoner där de kan kroppsvisitera utan konkret brottsmisstanke",
+    "explanation": "Om polisen ska få utökade befogenheter i särskilt utsatta områden."
+  },
+  {
+    "externalKey": "lag-anonyma-vittnen",
+    "categorySlug": "lag-ordning",
+    "displayOrder": 4,
+    "text": "Anonyma vittnen ska tillåtas i fler brottmål",
+    "explanation": "Om vittnen ska kunna vara anonyma för att fler ska våga vittna."
+  },
+  {
+    "externalKey": "lag-sankt-straffmyndighet",
+    "categorySlug": "lag-ordning",
+    "displayOrder": 5,
+    "text": "Barn under 15 år ska kunna straffas för brott",
+    "explanation": "Om straffmyndighetsåldern ska sänkas."
+  },
+  {
+    "externalKey": "lag-kameraovervakning",
+    "categorySlug": "lag-ordning",
+    "displayOrder": 6,
+    "text": "Kameraövervakningen på allmänna platser ska byggas ut kraftigt",
+    "explanation": "Om mer övervakning för att förebygga och klara upp brott."
+  },
+  {
+    "externalKey": "migration-faerre-asyl",
+    "categorySlug": "migration",
+    "displayOrder": 1,
+    "text": "Sverige ska ta emot färre asylsökande",
+    "explanation": "Om asylmottagandet bör minska jämfört med i dag."
+  },
+  {
+    "externalKey": "migration-medborgarskap",
+    "categorySlug": "migration",
+    "displayOrder": 2,
+    "text": "Det ska bli svårare att få svenskt medborgarskap",
+    "explanation": "Om hårdare krav på tid, språk och kunskaper för medborgarskap."
+  },
+  {
+    "externalKey": "migration-arbetskraft",
+    "categorySlug": "migration",
+    "displayOrder": 3,
+    "text": "Arbetskraftsinvandringen ska begränsas till högkvalificerade yrken",
+    "explanation": "Om arbetskraftsinvandring för lägre kvalificerade jobb ska begränsas."
+  },
+  {
+    "externalKey": "migration-atervandring",
+    "categorySlug": "migration",
+    "displayOrder": 4,
+    "text": "Staten ska aktivt uppmuntra invandrare att återvandra till sina hemländer",
+    "explanation": "Om staten ska driva program för frivillig återvandring."
+  },
+  {
+    "externalKey": "migration-sprakkrav-bidrag",
+    "categorySlug": "migration",
+    "displayOrder": 5,
+    "text": "Det ska krävas kunskaper i svenska för att få vissa bidrag",
+    "explanation": "Om språkkrav ska kopplas till rätten till bidrag."
+  },
+  {
+    "externalKey": "migration-utvisning-vandel",
+    "categorySlug": "migration",
+    "displayOrder": 6,
+    "text": "Det ska bli lättare att utvisa utländska medborgare på grund av bristande livsföring",
+    "explanation": "Om utvisning ska kunna ske även utan att personen dömts för brott."
+  },
+  {
+    "externalKey": "ekonomi-hoginkomstskatt",
+    "categorySlug": "ekonomi-skatter",
+    "displayOrder": 1,
+    "text": "Skatten på höga inkomster ska höjas",
+    "explanation": "Om personer med höga inkomster ska betala mer i skatt."
+  },
+  {
+    "externalKey": "ekonomi-formogenhetsskatt",
+    "categorySlug": "ekonomi-skatter",
+    "displayOrder": 2,
+    "text": "Sverige ska återinföra en skatt på stora förmögenheter",
+    "explanation": "Om en förmögenhetsskatt ska införas igen."
+  },
+  {
+    "externalKey": "ekonomi-sankt-skatt-arbete",
+    "categorySlug": "ekonomi-skatter",
+    "displayOrder": 3,
+    "text": "Skatten på arbete ska sänkas",
+    "explanation": "Om inkomstskatten generellt ska sänkas."
+  },
+  {
+    "externalKey": "ekonomi-drivmedelsskatt",
+    "categorySlug": "ekonomi-skatter",
+    "displayOrder": 4,
+    "text": "Skatten på bensin och diesel ska sänkas",
+    "explanation": "Om drivmedelsskatterna ska sänkas för att hålla nere priserna."
+  },
+  {
+    "externalKey": "ekonomi-bistand",
+    "categorySlug": "ekonomi-skatter",
+    "displayOrder": 5,
+    "text": "Sverige ska minska biståndet till andra länder",
+    "explanation": "Om biståndsbudgeten ska minska."
+  },
+  {
+    "externalKey": "klimat-karnkraft-utbyggnad",
+    "categorySlug": "klimat-energi",
+    "displayOrder": 1,
+    "text": "Sverige ska bygga ut kärnkraften",
+    "explanation": "Om ny kärnkraft bör byggas för elförsörjningen."
+  },
+  {
+    "externalKey": "klimat-skarpta-mal",
+    "categorySlug": "klimat-energi",
+    "displayOrder": 2,
+    "text": "Sveriges klimatmål ska skärpas",
+    "explanation": "Om Sverige ska sätta tuffare mål för utsläppsminskningar."
+  },
+  {
+    "externalKey": "klimat-vindkraft",
+    "categorySlug": "klimat-energi",
+    "displayOrder": 3,
+    "text": "Utbyggnaden av vindkraft ska påskyndas",
+    "explanation": "Om mer vindkraft ska byggas snabbare."
+  },
+  {
+    "externalKey": "klimat-flygskatt",
+    "categorySlug": "klimat-energi",
+    "displayOrder": 4,
+    "text": "Flygskatten ska höjas för att minska klimatutsläppen",
+    "explanation": "Om skatten på flygresor ska höjas."
+  },
+  {
+    "externalKey": "klimat-reduktionsplikt",
+    "categorySlug": "klimat-energi",
+    "displayOrder": 5,
+    "text": "Reduktionsplikten ska sänkas för att hålla nere drivmedelspriserna",
+    "explanation": "Om kravet på inblandning av biodrivmedel ska minska."
+  },
+  {
+    "externalKey": "klimat-prioritet",
+    "categorySlug": "klimat-energi",
+    "displayOrder": 6,
+    "text": "Klimatpolitiken ska prioriteras även om det kostar jobb och tillväxt på kort sikt",
+    "explanation": "Om klimatåtgärder bör gå före kortsiktig ekonomisk tillväxt."
+  },
+  {
+    "externalKey": "skola-friskolor-vinst",
+    "categorySlug": "skola",
+    "displayOrder": 1,
+    "text": "Vinstdrivande friskolor ska förbjudas",
+    "explanation": "Om aktiebolag ska få driva skattefinansierade skolor med vinstsyfte."
+  },
+  {
+    "externalKey": "skola-tidigare-betyg",
+    "categorySlug": "skola",
+    "displayOrder": 2,
+    "text": "Betyg ska ges från lägre åldrar än i dag",
+    "explanation": "Om betyg ska införas tidigare i grundskolan."
+  },
+  {
+    "externalKey": "skola-statlig-skola",
+    "categorySlug": "skola",
+    "displayOrder": 3,
+    "text": "Staten ska ta över ansvaret för skolan från kommunerna",
+    "explanation": "Om skolans huvudmannaskap ska förstatligas."
+  },
+  {
+    "externalKey": "skola-mobilforbud",
+    "categorySlug": "skola",
+    "displayOrder": 4,
+    "text": "Mobiltelefoner ska förbjudas under hela skoldagen",
+    "explanation": "Om ett generellt mobilförbud i skolan."
+  },
+  {
+    "externalKey": "skola-religiosa-friskolor",
+    "categorySlug": "skola",
+    "displayOrder": 5,
+    "text": "Religiösa friskolor ska förbjudas",
+    "explanation": "Om konfessionella friskolor ska få finnas kvar."
+  },
+  {
+    "externalKey": "arbete-las",
+    "categorySlug": "arbetsmarknad",
+    "displayOrder": 1,
+    "text": "Anställningsskyddet ska försvagas för att göra det lättare att säga upp personal",
+    "explanation": "Om arbetsrätten (LAS) ska göras mer flexibel för arbetsgivare."
+  },
+  {
+    "externalKey": "arbete-akassa",
+    "categorySlug": "arbetsmarknad",
+    "displayOrder": 2,
+    "text": "A-kassan ska höjas",
+    "explanation": "Om ersättningen vid arbetslöshet ska bli högre."
+  },
+  {
+    "externalKey": "arbete-bidragstak",
+    "categorySlug": "arbetsmarknad",
+    "displayOrder": 3,
+    "text": "Det ska finnas ett tak för hur mycket bidrag ett hushåll kan få",
+    "explanation": "Om ett bidragstak ska göra det mer lönsamt att arbeta."
+  },
+  {
+    "externalKey": "arbete-arbetstid",
+    "categorySlug": "arbetsmarknad",
+    "displayOrder": 4,
+    "text": "Arbetstiden ska förkortas med bibehållen lön",
+    "explanation": "Om normalarbetstiden ska sänkas, t.ex. till sex timmar."
+  },
+  {
+    "externalKey": "forsvar-okade-utgifter",
+    "categorySlug": "forsvar",
+    "displayOrder": 1,
+    "text": "Sverige ska öka försvarsutgifterna ytterligare",
+    "explanation": "Om försvarsanslagen ska höjas mer än i dag."
+  },
+  {
+    "externalKey": "forsvar-varnplikt",
+    "categorySlug": "forsvar",
+    "displayOrder": 2,
+    "text": "Värnplikten ska byggas ut och omfatta fler",
+    "explanation": "Om fler ska göra militär grundutbildning."
+  },
+  {
+    "externalKey": "forsvar-karnvapen",
+    "categorySlug": "forsvar",
+    "displayOrder": 3,
+    "text": "Kärnvapen ska få placeras på svensk mark om säkerhetsläget kräver det",
+    "explanation": "Om Sverige ska tillåta kärnvapen på sitt territorium."
+  },
+  {
+    "externalKey": "forsvar-ukraina",
+    "categorySlug": "forsvar",
+    "displayOrder": 4,
+    "text": "Sverige ska fortsätta ge omfattande militärt stöd till Ukraina",
+    "explanation": "Om det militära stödet till Ukraina ska ligga kvar på hög nivå."
+  },
+  {
+    "externalKey": "aldre-resurser",
+    "categorySlug": "aldreomsorg",
+    "displayOrder": 1,
+    "text": "Mer resurser ska satsas på äldreomsorgen även om det kräver höjd skatt",
+    "explanation": "Om äldreomsorgen bör tillföras mer pengar även till priset av högre skatt."
+  },
+  {
+    "externalKey": "aldre-pension",
+    "categorySlug": "aldreomsorg",
+    "displayOrder": 2,
+    "text": "De lägsta pensionerna ska höjas",
+    "explanation": "Om garantipension och låga pensioner ska bli högre."
+  },
+  {
+    "externalKey": "aldre-privat-omsorg",
+    "categorySlug": "aldreomsorg",
+    "displayOrder": 3,
+    "text": "Privata utförare i äldreomsorgen ska begränsas",
+    "explanation": "Om privata företag i äldreomsorgen ska få en mindre roll."
+  },
+  {
+    "externalKey": "bostad-hyressattning",
+    "categorySlug": "bostader",
+    "displayOrder": 1,
+    "text": "Hyrorna ska sättas mer marknadsmässigt",
+    "explanation": "Om hyrorna ska bestämmas friare i stället för genom dagens förhandlingssystem."
+  },
+  {
+    "externalKey": "bostad-subventioner",
+    "categorySlug": "bostader",
+    "displayOrder": 2,
+    "text": "Staten ska subventionera byggandet av fler hyresrätter",
+    "explanation": "Om statliga stöd ska öka byggandet av hyresrätter."
+  },
+  {
+    "externalKey": "eu-mer-makt",
+    "categorySlug": "eu",
+    "displayOrder": 1,
+    "text": "EU ska få mer makt på bekostnad av medlemsländerna",
+    "explanation": "Om mer beslutsmakt ska flyttas från Sverige till EU."
+  },
+  {
+    "externalKey": "eu-euro",
+    "categorySlug": "eu",
+    "displayOrder": 2,
+    "text": "Sverige ska införa euron som valuta",
+    "explanation": "Om Sverige ska byta krona mot euro."
+  },
+  {
+    "externalKey": "eu-forsvarssamarbete",
+    "categorySlug": "eu",
+    "displayOrder": 3,
+    "text": "Sverige bör vara drivande för ett tätare försvarssamarbete inom EU",
+    "explanation": "Om Sverige ska driva på för mer gemensamt försvar i EU."
+  }
+]

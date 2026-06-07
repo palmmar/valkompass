@@ -1,0 +1,181 @@
+"use client";
+
+import { useEffect, useMemo, useState } from "react";
+import { useRouter } from "next/navigation";
+import { toast } from "sonner";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Progress } from "@/components/ui/progress";
+import { Switch } from "@/components/ui/switch";
+import { Badge } from "@/components/ui/badge";
+import { Skeleton } from "@/components/ui/skeleton";
+import { Star, SkipForward, ChevronLeft } from "lucide-react";
+import { useQuizStore } from "@/stores/quiz-store";
+import { submitQuiz } from "@/lib/api";
+import { SCALE_OPTIONS } from "@/lib/scale";
+import type { QuestionnaireCategory, QuestionnaireQuestion, SubmitQuizRequest } from "@/lib/types";
+import { cn } from "@/lib/utils";
+
+interface Props {
+  questions: QuestionnaireQuestion[];
+  categories: QuestionnaireCategory[];
+}
+
+export function QuizFlow({ questions, categories }: Props) {
+  const router = useRouter();
+  const { answers, currentIndex, setAnswer, skip, toggleImportant, setIndex, reset } = useQuizStore();
+  const [mounted, setMounted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+
+  useEffect(() => setMounted(true), []);
+
+  const categoryName = useMemo(() => {
+    const map = new Map(categories.map((c) => [c.slug, c.name]));
+    return (slug: string) => map.get(slug) ?? "";
+  }, [categories]);
+
+  const answeredCount = useMemo(
+    () => questions.filter((q) => answers[q.id]?.value != null || answers[q.id]?.isSkipped).length,
+    [answers, questions],
+  );
+
+  if (!mounted) {
+    return (
+      <div className="mx-auto max-w-2xl space-y-6 px-4 py-10">
+        <Skeleton className="h-2 w-full" />
+        <Skeleton className="h-48 w-full" />
+      </div>
+    );
+  }
+
+  if (questions.length === 0) {
+    return (
+      <div className="mx-auto max-w-2xl px-4 py-16 text-center text-muted-foreground">
+        Inga frågor är publicerade ännu.
+      </div>
+    );
+  }
+
+  const index = Math.min(currentIndex, questions.length - 1);
+  const question = questions[index];
+  const current = answers[question.id] ?? { value: null, isSkipped: false, isImportant: false };
+  const isLast = index === questions.length - 1;
+  const progress = (answeredCount / questions.length) * 100;
+
+  function choose(value: number) {
+    setAnswer(question.id, value);
+    if (!isLast) setTimeout(() => setIndex(index + 1), 180);
+  }
+
+  function onSkip() {
+    skip(question.id);
+    if (!isLast) setTimeout(() => setIndex(index + 1), 120);
+  }
+
+  async function onSubmit() {
+    const payload: SubmitQuizRequest = {
+      answers: questions.map((q) => {
+        const a = answers[q.id];
+        const answered = a && (a.value != null || a.isSkipped);
+        return {
+          questionId: q.id,
+          value: answered && !a!.isSkipped ? a!.value : null,
+          isSkipped: !answered || a!.isSkipped,
+          isImportant: a?.isImportant ?? false,
+        };
+      }),
+    };
+
+    setSubmitting(true);
+    try {
+      const { shareToken } = await submitQuiz(payload);
+      reset();
+      router.push(`/resultat/${shareToken}`);
+    } catch (e) {
+      toast.error(e instanceof Error ? e.message : "Något gick fel.");
+      setSubmitting(false);
+    }
+  }
+
+  return (
+    <div className="mx-auto max-w-2xl space-y-6 px-4 py-8">
+      <div className="space-y-2">
+        <div className="flex items-center justify-between text-sm text-muted-foreground">
+          <span>Fråga {index + 1} av {questions.length}</span>
+          <span>{answeredCount} besvarade</span>
+        </div>
+        <Progress value={progress} />
+      </div>
+
+      <Card>
+        <CardContent className="space-y-5 pt-6">
+          <div className="space-y-3">
+            <Badge variant="secondary">{categoryName(question.categorySlug)}</Badge>
+            <h2 className="text-xl font-semibold leading-snug">{question.text}</h2>
+            {question.explanation && (
+              <p className="text-sm text-muted-foreground">{question.explanation}</p>
+            )}
+          </div>
+
+          <div className="grid gap-2">
+            {SCALE_OPTIONS.map((opt) => {
+              const selected = current.value === opt.value && !current.isSkipped;
+              return (
+                <Button
+                  key={opt.value}
+                  variant={selected ? "default" : "outline"}
+                  className={cn("h-12 justify-start text-base", selected && "ring-2 ring-ring")}
+                  onClick={() => choose(opt.value)}
+                >
+                  {opt.label}
+                </Button>
+              );
+            })}
+          </div>
+
+          <label className="flex items-center gap-3 rounded-md border p-3">
+            <Switch
+              checked={current.isImportant}
+              onCheckedChange={() => toggleImportant(question.id)}
+            />
+            <span className="flex items-center gap-1.5 text-sm">
+              <Star className="size-4" />
+              Den här frågan är extra viktig för mig (väger dubbelt)
+            </span>
+          </label>
+        </CardContent>
+      </Card>
+
+      <div className="flex items-center justify-between gap-2">
+        <Button
+          variant="ghost"
+          onClick={() => setIndex(Math.max(0, index - 1))}
+          disabled={index === 0}
+        >
+          <ChevronLeft className="size-4" /> Föregående
+        </Button>
+
+        <div className="flex items-center gap-2">
+          <Button variant="ghost" onClick={onSkip}>
+            <SkipForward className="size-4" /> Hoppa över
+          </Button>
+          {isLast ? (
+            <Button onClick={onSubmit} disabled={submitting}>
+              {submitting ? "Beräknar…" : "Se resultat"}
+            </Button>
+          ) : (
+            <Button onClick={() => setIndex(index + 1)}>Nästa</Button>
+          )}
+        </div>
+      </div>
+
+      {!isLast && answeredCount === questions.length && (
+        <div className="text-center">
+          <Button variant="link" onClick={onSubmit} disabled={submitting}>
+            Alla frågor besvarade – se ditt resultat
+          </Button>
+        </div>
+      )}
+    </div>
+  );
+}

@@ -1,0 +1,10 @@
+[
+  { "code": "V",  "name": "Vänsterpartiet",     "fullName": "Vänsterpartiet",                          "color": "#DA291C", "displayOrder": 1, "shortDescription": "Socialistiskt och feministiskt parti med rötter i arbetarrörelsen." },
+  { "code": "S",  "name": "Socialdemokraterna", "fullName": "Sveriges socialdemokratiska arbetareparti", "color": "#E8112D", "displayOrder": 2, "shortDescription": "Socialdemokratiskt parti och historiskt Sveriges största." },
+  { "code": "MP", "name": "Miljöpartiet",       "fullName": "Miljöpartiet de gröna",                    "color": "#83CF39", "displayOrder": 3, "shortDescription": "Grönt parti med fokus på klimat och miljö." },
+  { "code": "C",  "name": "Centerpartiet",      "fullName": "Centerpartiet",                            "color": "#009933", "displayOrder": 4, "shortDescription": "Liberalt mittenparti med landsbygds- och företagarprofil." },
+  { "code": "L",  "name": "Liberalerna",        "fullName": "Liberalerna",                              "color": "#006AB3", "displayOrder": 5, "shortDescription": "Socialliberalt parti med fokus på skola och frihet." },
+  { "code": "KD", "name": "Kristdemokraterna",  "fullName": "Kristdemokraterna",                        "color": "#073192", "displayOrder": 6, "shortDescription": "Kristdemokratiskt parti med värdekonservativ profil." },
+  { "code": "M",  "name": "Moderaterna",        "fullName": "Moderata samlingspartiet",                 "color": "#52BDEC", "displayOrder": 7, "shortDescription": "Liberalkonservativt parti med fokus på ekonomi och lag och ordning." },
+  { "code": "SD", "name": "Sverigedemokraterna","fullName": "Sverigedemokraterna",                      "color": "#DDB451", "displayOrder": 8, "shortDescription": "Nationalkonservativt parti med fokus på migration och brottslighet." }
+]

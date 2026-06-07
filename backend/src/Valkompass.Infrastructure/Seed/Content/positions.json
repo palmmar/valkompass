@@ -1,0 +1,3202 @@
+[
+  {
+    "partyCode": "V",
+    "questionKey": "sjukvard-statlig-styrning",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "S",
+    "questionKey": "sjukvard-statlig-styrning",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "MP",
+    "questionKey": "sjukvard-statlig-styrning",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "C",
+    "questionKey": "sjukvard-statlig-styrning",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "L",
+    "questionKey": "sjukvard-statlig-styrning",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "KD",
+    "questionKey": "sjukvard-statlig-styrning",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "M",
+    "questionKey": "sjukvard-statlig-styrning",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "SD",
+    "questionKey": "sjukvard-statlig-styrning",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "V",
+    "questionKey": "sjukvard-vinstforbud",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "S",
+    "questionKey": "sjukvard-vinstforbud",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "MP",
+    "questionKey": "sjukvard-vinstforbud",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "C",
+    "questionKey": "sjukvard-vinstforbud",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "L",
+    "questionKey": "sjukvard-vinstforbud",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "KD",
+    "questionKey": "sjukvard-vinstforbud",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "M",
+    "questionKey": "sjukvard-vinstforbud",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "SD",
+    "questionKey": "sjukvard-vinstforbud",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "V",
+    "questionKey": "sjukvard-privat-vard",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "S",
+    "questionKey": "sjukvard-privat-vard",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "MP",
+    "questionKey": "sjukvard-privat-vard",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "C",
+    "questionKey": "sjukvard-privat-vard",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "L",
+    "questionKey": "sjukvard-privat-vard",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "KD",
+    "questionKey": "sjukvard-privat-vard",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "M",
+    "questionKey": "sjukvard-privat-vard",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "SD",
+    "questionKey": "sjukvard-privat-vard",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "V",
+    "questionKey": "sjukvard-mer-resurser",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "S",
+    "questionKey": "sjukvard-mer-resurser",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "MP",
+    "questionKey": "sjukvard-mer-resurser",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "C",
+    "questionKey": "sjukvard-mer-resurser",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "L",
+    "questionKey": "sjukvard-mer-resurser",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "KD",
+    "questionKey": "sjukvard-mer-resurser",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "M",
+    "questionKey": "sjukvard-mer-resurser",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "SD",
+    "questionKey": "sjukvard-mer-resurser",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "V",
+    "questionKey": "sjukvard-tandvard",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "S",
+    "questionKey": "sjukvard-tandvard",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "MP",
+    "questionKey": "sjukvard-tandvard",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "C",
+    "questionKey": "sjukvard-tandvard",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "L",
+    "questionKey": "sjukvard-tandvard",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "KD",
+    "questionKey": "sjukvard-tandvard",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "M",
+    "questionKey": "sjukvard-tandvard",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "SD",
+    "questionKey": "sjukvard-tandvard",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "V",
+    "questionKey": "sjukvard-privata-forsakringar",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "S",
+    "questionKey": "sjukvard-privata-forsakringar",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "MP",
+    "questionKey": "sjukvard-privata-forsakringar",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "C",
+    "questionKey": "sjukvard-privata-forsakringar",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "L",
+    "questionKey": "sjukvard-privata-forsakringar",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "KD",
+    "questionKey": "sjukvard-privata-forsakringar",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "M",
+    "questionKey": "sjukvard-privata-forsakringar",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "SD",
+    "questionKey": "sjukvard-privata-forsakringar",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "V",
+    "questionKey": "lag-skarpta-straff",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "S",
+    "questionKey": "lag-skarpta-straff",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "MP",
+    "questionKey": "lag-skarpta-straff",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "C",
+    "questionKey": "lag-skarpta-straff",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "L",
+    "questionKey": "lag-skarpta-straff",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "KD",
+    "questionKey": "lag-skarpta-straff",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "M",
+    "questionKey": "lag-skarpta-straff",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "SD",
+    "questionKey": "lag-skarpta-straff",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "V",
+    "questionKey": "lag-fler-poliser",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "S",
+    "questionKey": "lag-fler-poliser",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "MP",
+    "questionKey": "lag-fler-poliser",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "C",
+    "questionKey": "lag-fler-poliser",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "L",
+    "questionKey": "lag-fler-poliser",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "KD",
+    "questionKey": "lag-fler-poliser",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "M",
+    "questionKey": "lag-fler-poliser",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "SD",
+    "questionKey": "lag-fler-poliser",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "V",
+    "questionKey": "lag-visitationszoner",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "S",
+    "questionKey": "lag-visitationszoner",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "MP",
+    "questionKey": "lag-visitationszoner",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "C",
+    "questionKey": "lag-visitationszoner",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "L",
+    "questionKey": "lag-visitationszoner",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "KD",
+    "questionKey": "lag-visitationszoner",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "M",
+    "questionKey": "lag-visitationszoner",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "SD",
+    "questionKey": "lag-visitationszoner",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "V",
+    "questionKey": "lag-anonyma-vittnen",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "S",
+    "questionKey": "lag-anonyma-vittnen",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "MP",
+    "questionKey": "lag-anonyma-vittnen",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "C",
+    "questionKey": "lag-anonyma-vittnen",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "L",
+    "questionKey": "lag-anonyma-vittnen",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "KD",
+    "questionKey": "lag-anonyma-vittnen",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "M",
+    "questionKey": "lag-anonyma-vittnen",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "SD",
+    "questionKey": "lag-anonyma-vittnen",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "V",
+    "questionKey": "lag-sankt-straffmyndighet",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "S",
+    "questionKey": "lag-sankt-straffmyndighet",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "MP",
+    "questionKey": "lag-sankt-straffmyndighet",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "C",
+    "questionKey": "lag-sankt-straffmyndighet",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "L",
+    "questionKey": "lag-sankt-straffmyndighet",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "KD",
+    "questionKey": "lag-sankt-straffmyndighet",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "M",
+    "questionKey": "lag-sankt-straffmyndighet",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "SD",
+    "questionKey": "lag-sankt-straffmyndighet",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "V",
+    "questionKey": "lag-kameraovervakning",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "S",
+    "questionKey": "lag-kameraovervakning",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "MP",
+    "questionKey": "lag-kameraovervakning",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "C",
+    "questionKey": "lag-kameraovervakning",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "L",
+    "questionKey": "lag-kameraovervakning",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "KD",
+    "questionKey": "lag-kameraovervakning",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "M",
+    "questionKey": "lag-kameraovervakning",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "SD",
+    "questionKey": "lag-kameraovervakning",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "V",
+    "questionKey": "migration-faerre-asyl",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "S",
+    "questionKey": "migration-faerre-asyl",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "MP",
+    "questionKey": "migration-faerre-asyl",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "C",
+    "questionKey": "migration-faerre-asyl",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "L",
+    "questionKey": "migration-faerre-asyl",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "KD",
+    "questionKey": "migration-faerre-asyl",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "M",
+    "questionKey": "migration-faerre-asyl",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "SD",
+    "questionKey": "migration-faerre-asyl",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "V",
+    "questionKey": "migration-medborgarskap",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "S",
+    "questionKey": "migration-medborgarskap",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "MP",
+    "questionKey": "migration-medborgarskap",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "C",
+    "questionKey": "migration-medborgarskap",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "L",
+    "questionKey": "migration-medborgarskap",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "KD",
+    "questionKey": "migration-medborgarskap",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "M",
+    "questionKey": "migration-medborgarskap",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "SD",
+    "questionKey": "migration-medborgarskap",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "V",
+    "questionKey": "migration-arbetskraft",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "S",
+    "questionKey": "migration-arbetskraft",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "MP",
+    "questionKey": "migration-arbetskraft",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "C",
+    "questionKey": "migration-arbetskraft",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "L",
+    "questionKey": "migration-arbetskraft",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "KD",
+    "questionKey": "migration-arbetskraft",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "M",
+    "questionKey": "migration-arbetskraft",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "SD",
+    "questionKey": "migration-arbetskraft",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "V",
+    "questionKey": "migration-atervandring",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "S",
+    "questionKey": "migration-atervandring",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "MP",
+    "questionKey": "migration-atervandring",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "C",
+    "questionKey": "migration-atervandring",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "L",
+    "questionKey": "migration-atervandring",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "KD",
+    "questionKey": "migration-atervandring",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "M",
+    "questionKey": "migration-atervandring",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "SD",
+    "questionKey": "migration-atervandring",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "V",
+    "questionKey": "migration-sprakkrav-bidrag",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "S",
+    "questionKey": "migration-sprakkrav-bidrag",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "MP",
+    "questionKey": "migration-sprakkrav-bidrag",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "C",
+    "questionKey": "migration-sprakkrav-bidrag",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "L",
+    "questionKey": "migration-sprakkrav-bidrag",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "KD",
+    "questionKey": "migration-sprakkrav-bidrag",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "M",
+    "questionKey": "migration-sprakkrav-bidrag",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "SD",
+    "questionKey": "migration-sprakkrav-bidrag",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "V",
+    "questionKey": "migration-utvisning-vandel",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "S",
+    "questionKey": "migration-utvisning-vandel",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "MP",
+    "questionKey": "migration-utvisning-vandel",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "C",
+    "questionKey": "migration-utvisning-vandel",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "L",
+    "questionKey": "migration-utvisning-vandel",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "KD",
+    "questionKey": "migration-utvisning-vandel",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "M",
+    "questionKey": "migration-utvisning-vandel",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "SD",
+    "questionKey": "migration-utvisning-vandel",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "V",
+    "questionKey": "ekonomi-hoginkomstskatt",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "S",
+    "questionKey": "ekonomi-hoginkomstskatt",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "MP",
+    "questionKey": "ekonomi-hoginkomstskatt",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "C",
+    "questionKey": "ekonomi-hoginkomstskatt",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "L",
+    "questionKey": "ekonomi-hoginkomstskatt",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "KD",
+    "questionKey": "ekonomi-hoginkomstskatt",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "M",
+    "questionKey": "ekonomi-hoginkomstskatt",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "SD",
+    "questionKey": "ekonomi-hoginkomstskatt",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "V",
+    "questionKey": "ekonomi-formogenhetsskatt",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "S",
+    "questionKey": "ekonomi-formogenhetsskatt",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "MP",
+    "questionKey": "ekonomi-formogenhetsskatt",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "C",
+    "questionKey": "ekonomi-formogenhetsskatt",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "L",
+    "questionKey": "ekonomi-formogenhetsskatt",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "KD",
+    "questionKey": "ekonomi-formogenhetsskatt",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "M",
+    "questionKey": "ekonomi-formogenhetsskatt",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "SD",
+    "questionKey": "ekonomi-formogenhetsskatt",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "V",
+    "questionKey": "ekonomi-sankt-skatt-arbete",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "S",
+    "questionKey": "ekonomi-sankt-skatt-arbete",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "MP",
+    "questionKey": "ekonomi-sankt-skatt-arbete",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "C",
+    "questionKey": "ekonomi-sankt-skatt-arbete",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "L",
+    "questionKey": "ekonomi-sankt-skatt-arbete",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "KD",
+    "questionKey": "ekonomi-sankt-skatt-arbete",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "M",
+    "questionKey": "ekonomi-sankt-skatt-arbete",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "SD",
+    "questionKey": "ekonomi-sankt-skatt-arbete",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "V",
+    "questionKey": "ekonomi-drivmedelsskatt",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "S",
+    "questionKey": "ekonomi-drivmedelsskatt",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "MP",
+    "questionKey": "ekonomi-drivmedelsskatt",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "C",
+    "questionKey": "ekonomi-drivmedelsskatt",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "L",
+    "questionKey": "ekonomi-drivmedelsskatt",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "KD",
+    "questionKey": "ekonomi-drivmedelsskatt",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "M",
+    "questionKey": "ekonomi-drivmedelsskatt",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "SD",
+    "questionKey": "ekonomi-drivmedelsskatt",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "V",
+    "questionKey": "ekonomi-bistand",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "S",
+    "questionKey": "ekonomi-bistand",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "MP",
+    "questionKey": "ekonomi-bistand",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "C",
+    "questionKey": "ekonomi-bistand",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "L",
+    "questionKey": "ekonomi-bistand",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "KD",
+    "questionKey": "ekonomi-bistand",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "M",
+    "questionKey": "ekonomi-bistand",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "SD",
+    "questionKey": "ekonomi-bistand",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "V",
+    "questionKey": "klimat-karnkraft-utbyggnad",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "S",
+    "questionKey": "klimat-karnkraft-utbyggnad",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "MP",
+    "questionKey": "klimat-karnkraft-utbyggnad",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "C",
+    "questionKey": "klimat-karnkraft-utbyggnad",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "L",
+    "questionKey": "klimat-karnkraft-utbyggnad",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "KD",
+    "questionKey": "klimat-karnkraft-utbyggnad",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "M",
+    "questionKey": "klimat-karnkraft-utbyggnad",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "SD",
+    "questionKey": "klimat-karnkraft-utbyggnad",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "V",
+    "questionKey": "klimat-skarpta-mal",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "S",
+    "questionKey": "klimat-skarpta-mal",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "MP",
+    "questionKey": "klimat-skarpta-mal",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "C",
+    "questionKey": "klimat-skarpta-mal",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "L",
+    "questionKey": "klimat-skarpta-mal",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "KD",
+    "questionKey": "klimat-skarpta-mal",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "M",
+    "questionKey": "klimat-skarpta-mal",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "SD",
+    "questionKey": "klimat-skarpta-mal",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "V",
+    "questionKey": "klimat-vindkraft",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "S",
+    "questionKey": "klimat-vindkraft",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "MP",
+    "questionKey": "klimat-vindkraft",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "C",
+    "questionKey": "klimat-vindkraft",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "L",
+    "questionKey": "klimat-vindkraft",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "KD",
+    "questionKey": "klimat-vindkraft",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "M",
+    "questionKey": "klimat-vindkraft",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "SD",
+    "questionKey": "klimat-vindkraft",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "V",
+    "questionKey": "klimat-flygskatt",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "S",
+    "questionKey": "klimat-flygskatt",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "MP",
+    "questionKey": "klimat-flygskatt",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "C",
+    "questionKey": "klimat-flygskatt",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "L",
+    "questionKey": "klimat-flygskatt",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "KD",
+    "questionKey": "klimat-flygskatt",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "M",
+    "questionKey": "klimat-flygskatt",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "SD",
+    "questionKey": "klimat-flygskatt",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "V",
+    "questionKey": "klimat-reduktionsplikt",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "S",
+    "questionKey": "klimat-reduktionsplikt",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "MP",
+    "questionKey": "klimat-reduktionsplikt",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "C",
+    "questionKey": "klimat-reduktionsplikt",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "L",
+    "questionKey": "klimat-reduktionsplikt",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "KD",
+    "questionKey": "klimat-reduktionsplikt",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "M",
+    "questionKey": "klimat-reduktionsplikt",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "SD",
+    "questionKey": "klimat-reduktionsplikt",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "V",
+    "questionKey": "klimat-prioritet",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "S",
+    "questionKey": "klimat-prioritet",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "MP",
+    "questionKey": "klimat-prioritet",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "C",
+    "questionKey": "klimat-prioritet",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "L",
+    "questionKey": "klimat-prioritet",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "KD",
+    "questionKey": "klimat-prioritet",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "M",
+    "questionKey": "klimat-prioritet",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "SD",
+    "questionKey": "klimat-prioritet",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "V",
+    "questionKey": "skola-friskolor-vinst",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "S",
+    "questionKey": "skola-friskolor-vinst",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "MP",
+    "questionKey": "skola-friskolor-vinst",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "C",
+    "questionKey": "skola-friskolor-vinst",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "L",
+    "questionKey": "skola-friskolor-vinst",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "KD",
+    "questionKey": "skola-friskolor-vinst",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "M",
+    "questionKey": "skola-friskolor-vinst",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "SD",
+    "questionKey": "skola-friskolor-vinst",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "V",
+    "questionKey": "skola-tidigare-betyg",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "S",
+    "questionKey": "skola-tidigare-betyg",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "MP",
+    "questionKey": "skola-tidigare-betyg",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "C",
+    "questionKey": "skola-tidigare-betyg",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "L",
+    "questionKey": "skola-tidigare-betyg",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "KD",
+    "questionKey": "skola-tidigare-betyg",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "M",
+    "questionKey": "skola-tidigare-betyg",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "SD",
+    "questionKey": "skola-tidigare-betyg",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "V",
+    "questionKey": "skola-statlig-skola",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "S",
+    "questionKey": "skola-statlig-skola",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "MP",
+    "questionKey": "skola-statlig-skola",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "C",
+    "questionKey": "skola-statlig-skola",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "L",
+    "questionKey": "skola-statlig-skola",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "KD",
+    "questionKey": "skola-statlig-skola",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "M",
+    "questionKey": "skola-statlig-skola",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "SD",
+    "questionKey": "skola-statlig-skola",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "V",
+    "questionKey": "skola-mobilforbud",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "S",
+    "questionKey": "skola-mobilforbud",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "MP",
+    "questionKey": "skola-mobilforbud",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "C",
+    "questionKey": "skola-mobilforbud",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "L",
+    "questionKey": "skola-mobilforbud",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "KD",
+    "questionKey": "skola-mobilforbud",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "M",
+    "questionKey": "skola-mobilforbud",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "SD",
+    "questionKey": "skola-mobilforbud",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "V",
+    "questionKey": "skola-religiosa-friskolor",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "S",
+    "questionKey": "skola-religiosa-friskolor",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "MP",
+    "questionKey": "skola-religiosa-friskolor",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "C",
+    "questionKey": "skola-religiosa-friskolor",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "L",
+    "questionKey": "skola-religiosa-friskolor",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "KD",
+    "questionKey": "skola-religiosa-friskolor",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "M",
+    "questionKey": "skola-religiosa-friskolor",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "SD",
+    "questionKey": "skola-religiosa-friskolor",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "V",
+    "questionKey": "arbete-las",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "S",
+    "questionKey": "arbete-las",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "MP",
+    "questionKey": "arbete-las",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "C",
+    "questionKey": "arbete-las",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "L",
+    "questionKey": "arbete-las",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "KD",
+    "questionKey": "arbete-las",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "M",
+    "questionKey": "arbete-las",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "SD",
+    "questionKey": "arbete-las",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "V",
+    "questionKey": "arbete-akassa",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "S",
+    "questionKey": "arbete-akassa",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "MP",
+    "questionKey": "arbete-akassa",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "C",
+    "questionKey": "arbete-akassa",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "L",
+    "questionKey": "arbete-akassa",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "KD",
+    "questionKey": "arbete-akassa",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "M",
+    "questionKey": "arbete-akassa",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "SD",
+    "questionKey": "arbete-akassa",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "V",
+    "questionKey": "arbete-bidragstak",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "S",
+    "questionKey": "arbete-bidragstak",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "MP",
+    "questionKey": "arbete-bidragstak",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "C",
+    "questionKey": "arbete-bidragstak",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "L",
+    "questionKey": "arbete-bidragstak",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "KD",
+    "questionKey": "arbete-bidragstak",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "M",
+    "questionKey": "arbete-bidragstak",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "SD",
+    "questionKey": "arbete-bidragstak",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "V",
+    "questionKey": "arbete-arbetstid",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "S",
+    "questionKey": "arbete-arbetstid",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "MP",
+    "questionKey": "arbete-arbetstid",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "C",
+    "questionKey": "arbete-arbetstid",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "L",
+    "questionKey": "arbete-arbetstid",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "KD",
+    "questionKey": "arbete-arbetstid",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "M",
+    "questionKey": "arbete-arbetstid",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "SD",
+    "questionKey": "arbete-arbetstid",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "V",
+    "questionKey": "forsvar-okade-utgifter",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "S",
+    "questionKey": "forsvar-okade-utgifter",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "MP",
+    "questionKey": "forsvar-okade-utgifter",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "C",
+    "questionKey": "forsvar-okade-utgifter",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "L",
+    "questionKey": "forsvar-okade-utgifter",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "KD",
+    "questionKey": "forsvar-okade-utgifter",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "M",
+    "questionKey": "forsvar-okade-utgifter",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "SD",
+    "questionKey": "forsvar-okade-utgifter",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "V",
+    "questionKey": "forsvar-varnplikt",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "S",
+    "questionKey": "forsvar-varnplikt",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "MP",
+    "questionKey": "forsvar-varnplikt",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "C",
+    "questionKey": "forsvar-varnplikt",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "L",
+    "questionKey": "forsvar-varnplikt",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "KD",
+    "questionKey": "forsvar-varnplikt",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "M",
+    "questionKey": "forsvar-varnplikt",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "SD",
+    "questionKey": "forsvar-varnplikt",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "V",
+    "questionKey": "forsvar-karnvapen",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "S",
+    "questionKey": "forsvar-karnvapen",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "MP",
+    "questionKey": "forsvar-karnvapen",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "C",
+    "questionKey": "forsvar-karnvapen",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "L",
+    "questionKey": "forsvar-karnvapen",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "KD",
+    "questionKey": "forsvar-karnvapen",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "M",
+    "questionKey": "forsvar-karnvapen",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "SD",
+    "questionKey": "forsvar-karnvapen",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "V",
+    "questionKey": "forsvar-ukraina",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "S",
+    "questionKey": "forsvar-ukraina",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "MP",
+    "questionKey": "forsvar-ukraina",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "C",
+    "questionKey": "forsvar-ukraina",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "L",
+    "questionKey": "forsvar-ukraina",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "KD",
+    "questionKey": "forsvar-ukraina",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "M",
+    "questionKey": "forsvar-ukraina",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "SD",
+    "questionKey": "forsvar-ukraina",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "V",
+    "questionKey": "aldre-resurser",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "S",
+    "questionKey": "aldre-resurser",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "MP",
+    "questionKey": "aldre-resurser",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "C",
+    "questionKey": "aldre-resurser",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "L",
+    "questionKey": "aldre-resurser",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "KD",
+    "questionKey": "aldre-resurser",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "M",
+    "questionKey": "aldre-resurser",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "SD",
+    "questionKey": "aldre-resurser",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "V",
+    "questionKey": "aldre-pension",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "S",
+    "questionKey": "aldre-pension",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "MP",
+    "questionKey": "aldre-pension",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "C",
+    "questionKey": "aldre-pension",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "L",
+    "questionKey": "aldre-pension",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "KD",
+    "questionKey": "aldre-pension",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "M",
+    "questionKey": "aldre-pension",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "SD",
+    "questionKey": "aldre-pension",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "V",
+    "questionKey": "aldre-privat-omsorg",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "S",
+    "questionKey": "aldre-privat-omsorg",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "MP",
+    "questionKey": "aldre-privat-omsorg",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "C",
+    "questionKey": "aldre-privat-omsorg",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "L",
+    "questionKey": "aldre-privat-omsorg",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "KD",
+    "questionKey": "aldre-privat-omsorg",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "M",
+    "questionKey": "aldre-privat-omsorg",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "SD",
+    "questionKey": "aldre-privat-omsorg",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "V",
+    "questionKey": "bostad-hyressattning",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "S",
+    "questionKey": "bostad-hyressattning",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "MP",
+    "questionKey": "bostad-hyressattning",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "C",
+    "questionKey": "bostad-hyressattning",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "L",
+    "questionKey": "bostad-hyressattning",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "KD",
+    "questionKey": "bostad-hyressattning",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "M",
+    "questionKey": "bostad-hyressattning",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "SD",
+    "questionKey": "bostad-hyressattning",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "V",
+    "questionKey": "bostad-subventioner",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "S",
+    "questionKey": "bostad-subventioner",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "MP",
+    "questionKey": "bostad-subventioner",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "C",
+    "questionKey": "bostad-subventioner",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "L",
+    "questionKey": "bostad-subventioner",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "KD",
+    "questionKey": "bostad-subventioner",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "M",
+    "questionKey": "bostad-subventioner",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "SD",
+    "questionKey": "bostad-subventioner",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "V",
+    "questionKey": "eu-mer-makt",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "S",
+    "questionKey": "eu-mer-makt",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "MP",
+    "questionKey": "eu-mer-makt",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "C",
+    "questionKey": "eu-mer-makt",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "L",
+    "questionKey": "eu-mer-makt",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "KD",
+    "questionKey": "eu-mer-makt",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "M",
+    "questionKey": "eu-mer-makt",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "SD",
+    "questionKey": "eu-mer-makt",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "V",
+    "questionKey": "eu-euro",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "S",
+    "questionKey": "eu-euro",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "MP",
+    "questionKey": "eu-euro",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "C",
+    "questionKey": "eu-euro",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "L",
+    "questionKey": "eu-euro",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "KD",
+    "questionKey": "eu-euro",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "M",
+    "questionKey": "eu-euro",
+    "value": 2,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "SD",
+    "questionKey": "eu-euro",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "V",
+    "questionKey": "eu-forsvarssamarbete",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "S",
+    "questionKey": "eu-forsvarssamarbete",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "MP",
+    "questionKey": "eu-forsvarssamarbete",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "C",
+    "questionKey": "eu-forsvarssamarbete",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "L",
+    "questionKey": "eu-forsvarssamarbete",
+    "value": 4,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "KD",
+    "questionKey": "eu-forsvarssamarbete",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "M",
+    "questionKey": "eu-forsvarssamarbete",
+    "value": 3,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  },
+  {
+    "partyCode": "SD",
+    "questionKey": "eu-forsvarssamarbete",
+    "value": 1,
+    "motivation": null,
+    "sourceCitation": "Utkast – verifieras i admin",
+    "sourceUrl": null
+  }
+]

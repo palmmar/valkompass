@@ -1,0 +1,6 @@
+@Valkompass.Api_HostAddress = http://localhost:5208
+
+GET {{Valkompass.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

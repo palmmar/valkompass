@@ -1,0 +1,34 @@
+# Lokal utvecklingsinfrastruktur för Valkompass.
+# Starta med:  docker compose up -d
+# Postgres exponeras på localhost:5432, Adminer (db-UI) på localhost:8080.
+services:
+  db:
+    image: postgres:17
+    container_name: valkompass-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: valkompass
+      POSTGRES_PASSWORD: valkompass
+      POSTGRES_DB: valkompass
+    ports:
+      - "5432:5432"
+    volumes:
+      - valkompass-pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U valkompass -d valkompass"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  adminer:
+    image: adminer:5
+    container_name: valkompass-adminer
+    restart: unless-stopped
+    ports:
+      - "8081:8080"
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  valkompass-pgdata:
