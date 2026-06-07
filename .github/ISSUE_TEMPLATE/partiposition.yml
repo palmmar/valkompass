@@ -1,0 +1,43 @@
+name: Felaktig partiposition
+description: Rapportera eller föreslå en rättelse av ett partis position på en fråga
+title: "[Position]: "
+labels: ["innehåll", "partiposition"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Tack för att du hjälper till att hålla kompassen korrekt och källbelagd.
+        Partipositionerna är ett utkast och rättas löpande – ange gärna en primärkälla.
+  - type: input
+    id: parti
+    attributes:
+      label: Parti
+      description: Vilket parti gäller det? (t.ex. S, M, SD)
+    validations:
+      required: true
+  - type: input
+    id: fraga
+    attributes:
+      label: Fråga / påstående
+      description: Vilken fråga gäller det?
+    validations:
+      required: true
+  - type: dropdown
+    id: foreslagen
+    attributes:
+      label: Föreslagen position
+      options:
+        - "1 – Håller inte med"
+        - "2 – Håller delvis inte med"
+        - "3 – Håller delvis med"
+        - "4 – Håller helt med"
+        - "Oklart / ingen tydlig position"
+    validations:
+      required: true
+  - type: textarea
+    id: kalla
+    attributes:
+      label: Källa
+      description: Primärkälla (partiprogram, valmanifest, votering eller officiellt uttalande) – gärna med länk.
+    validations:
+      required: true
