@@ -1,0 +1,406 @@
+[
+  {
+    "questionKey": "skola-friskolor-vinst",
+    "partyCode": "V",
+    "value": 4,
+    "motivation": "V vill lägga ned marknadsskolan och förbjuda vinstuttag; bara icke vinstdrivande former ska få driva friskolor.",
+    "sourceCitation": "Vänsterpartiet, Vår politik A–Ö: Marknadsskolan (hämtad 2026-06-07)",
+    "sourceUrl": "https://www.vansterpartiet.se/var-politik/politik-a-o/marknadsskolan/",
+    "quote": "Bara icke vinstdrivande organisationsformer som ideella föreningar, stiftelser och kooperativ bör få bedriva fristående skolor.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "skola-friskolor-vinst",
+    "partyCode": "S",
+    "value": 4,
+    "motivation": "S vill förbjuda vinstuttag i skolan och inför etableringsstopp i väntan på ett totalt vinstförbud.",
+    "sourceCitation": "Socialdemokraterna, Vår politik A–Ö: Marknadsskolan och vinster i skolan (hämtad 2026-06-07)",
+    "sourceUrl": "https://www.socialdemokraterna.se/var-politik/a-till-o/marknadskolan-och-vinster-i-skolan",
+    "quote": "Förbjuda vinstuttag i skolan, gymnasieskolan och förskolan.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "skola-friskolor-vinst",
+    "partyCode": "MP",
+    "value": 4,
+    "motivation": "MP vill stoppa vinstutdelningen och förbjuda vinstutdelande aktiebolag att driva skola.",
+    "sourceCitation": "Miljöpartiet, Politik: Skola (hämtad 2026-06-07)",
+    "sourceUrl": "https://www.mp.se/politik/skola/",
+    "quote": "Förbjuda vinstutdelande aktiebolag att driva skola.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "skola-friskolor-vinst",
+    "partyCode": "C",
+    "value": 1,
+    "motivation": "C vill inte förbjuda vinst generellt, utan bara stoppa vinstutdelning vid kvalitetsbrister.",
+    "sourceCitation": "Centerpartiet, Politik A–Ö: Friskolor (hämtad 2026-06-07)",
+    "sourceUrl": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/utbildning/friskolor",
+    "quote": "förbjuda vinstutdelning vid kvalitetsbrister",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "skola-friskolor-vinst",
+    "partyCode": "L",
+    "value": 2,
+    "motivation": "L driver inte ett vinstförbud men utesluter inget för att skolpengen ska gå till undervisning.",
+    "sourceCitation": "Vi lärare, '22 heta valfrågor för skolan – så svarar partierna', fråga 12 (2025-09-24)",
+    "sourceUrl": "https://www.vilarare.se/nyheter/skolpolitik/22-heta-valfragor-for-skolan--sa-svarar-partierna/",
+    "quote": "Vi utesluter ingenting för att säkerställa att skolpengen går till elevernas undervisning och ingenting annat.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "skola-friskolor-vinst",
+    "partyCode": "KD",
+    "value": 1,
+    "motivation": "KD vill inte förbjuda vinst utan begränsa, reglera och återinvestera den i skolan.",
+    "sourceCitation": "Vi lärare, '22 heta valfrågor för skolan – så svarar partierna', fråga 12 (2025-09-24)",
+    "sourceUrl": "https://www.vilarare.se/nyheter/skolpolitik/22-heta-valfragor-for-skolan--sa-svarar-partierna/",
+    "quote": "Vi vill att vinsterna ska begränsas, regleras och återinvesteras i skolan.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "skola-friskolor-vinst",
+    "partyCode": "M",
+    "value": 1,
+    "motivation": "M anser att aktiebolag ska få göra vinst (utdelning villkoras av kvalitet), inte förbjudas.",
+    "sourceCitation": "Vi lärare, '22 heta valfrågor för skolan – så svarar partierna', fråga 12 (2025-09-24)",
+    "sourceUrl": "https://www.vilarare.se/nyheter/skolpolitik/22-heta-valfragor-for-skolan--sa-svarar-partierna/",
+    "quote": "",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "skola-friskolor-vinst",
+    "partyCode": "SD",
+    "value": 1,
+    "motivation": "SD ser inte vinstuttag som problemet utan vill att dåliga skolor stängs oavsett ägare; svarar ja på rätt till överskott.",
+    "sourceCitation": "Vi lärare, '22 heta valfrågor för skolan – så svarar partierna', fråga 12 (2025-09-24)",
+    "sourceUrl": "https://www.vilarare.se/nyheter/skolpolitik/22-heta-valfragor-for-skolan--sa-svarar-partierna/",
+    "quote": "",
+    "confidence": "medium"
+  },
+
+  {
+    "questionKey": "skola-tidigare-betyg",
+    "partyCode": "V",
+    "value": 1,
+    "motivation": "V motsätter sig betyg i tidiga åldrar och menar att det ger stress och tidig utslagning.",
+    "sourceCitation": "Vänsterpartiet, Vår politik A–Ö: Betyg (hämtad 2026-06-07)",
+    "sourceUrl": "https://www.vansterpartiet.se/var-politik/politik-a-o/betyg/",
+    "quote": "Det finns ingenting som talar för att betyg i tidiga åldrar har en positiv effekt på inlärningen, tvärtom ger det upphov till stress och tidig utslagning.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "skola-tidigare-betyg",
+    "partyCode": "S",
+    "value": 2,
+    "motivation": "S fokuserar på att avskaffa F som spärr och driver inte tidigare betyg; snarast skeptiska.",
+    "sourceCitation": "Socialdemokraterna, Vår politik A–Ö: Betyg (hämtad 2026-06-07)",
+    "sourceUrl": "https://www.socialdemokraterna.se/var-politik/a-till-o/betyg",
+    "quote": "Betygen ska vara ett verktyg för kunskap och utveckling, inte utslagning.",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "skola-tidigare-betyg",
+    "partyCode": "MP",
+    "value": 1,
+    "motivation": "MP är emot tidiga betyg och vill ha uppföljning av kunskaper i stället för betyg i låga åldrar.",
+    "sourceCitation": "Miljöpartiet, utbildningspolitiskt program (2024)",
+    "sourceUrl": "https://www.mp.se/wp-content/uploads/2024/05/utbildningspolitiskt-program.pdf",
+    "quote": "",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "skola-tidigare-betyg",
+    "partyCode": "C",
+    "value": 2,
+    "motivation": "C fokuserar på att ta bort den hårda gymnasiebehörighetsspärren, inte på att tidigarelägga betyg.",
+    "sourceCitation": "Centerpartiet, Ge varje unge chansen att lyckas i svenska skolan (hämtad 2026-06-07)",
+    "sourceUrl": "https://www.centerpartiet.se/var-politik/ge-varje-unge-chansen-att-lyckas-i-svenska-skolan",
+    "quote": "",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "skola-tidigare-betyg",
+    "partyCode": "L",
+    "value": 4,
+    "motivation": "L vill ha betyg tidigt i grundskolan, sedan länge med krav på betyg från årskurs 4.",
+    "sourceCitation": "Liberalerna, Politik: Betyg/Nationella prov (hämtad 2026-06-07)",
+    "sourceUrl": "https://www.liberalerna.se/politik/betyg",
+    "quote": "Ha betyg tidigt i grundskolan för att upptäcka elever som behöver stöd",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "skola-tidigare-betyg",
+    "partyCode": "KD",
+    "value": 2,
+    "motivation": "KD vill ge betyg första gången i årskurs 6, dvs samma som i dag, och driver inte tidigare betyg.",
+    "sourceCitation": "Kristdemokraterna, Politik A–Ö: Betyg (hämtad 2026-06-07)",
+    "sourceUrl": "https://kristdemokraterna.se/var-politik/politik-a-till-o/betyg",
+    "quote": "Betyg ska ges första gången i årskurs 6.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "skola-tidigare-betyg",
+    "partyCode": "M",
+    "value": 3,
+    "motivation": "M har förespråkat tidigare betyg (bl.a. från årskurs 3) men dagens program betonar mest att stoppa betygsinflation.",
+    "sourceCitation": "Sveriges Radio Ekot: 'Moderaterna vill ha betyg från tredje klass'",
+    "sourceUrl": "https://www.sverigesradio.se/artikel/5442769",
+    "quote": "",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "skola-tidigare-betyg",
+    "partyCode": "SD",
+    "value": 3,
+    "motivation": "SD har drivit betyg från årskurs 4 och vill se ordningsbetyg från årskurs ett, men nuvarande webbfokus är ordningsbetyg.",
+    "sourceCitation": "Sverigedemokraterna, Vad vi vill: Utbildningspolitik (hämtad 2026-06-07)",
+    "sourceUrl": "https://www.sd.se/vad-vi-vill/utbildningspolitik/",
+    "quote": "införa ett ordningsbetyg från årskurs ett",
+    "confidence": "low"
+  },
+
+  {
+    "questionKey": "skola-statlig-skola",
+    "partyCode": "V",
+    "value": 4,
+    "motivation": "V svarar ja på att det bör införas ett statligt huvudmannaskap för skolväsendet.",
+    "sourceCitation": "Vi lärare, '22 heta valfrågor för skolan – så svarar partierna', fråga 5 (2025-09-24)",
+    "sourceUrl": "https://www.vilarare.se/nyheter/skolpolitik/22-heta-valfragor-for-skolan--sa-svarar-partierna/",
+    "quote": "",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "skola-statlig-skola",
+    "partyCode": "S",
+    "value": 2,
+    "motivation": "S vill inte ta över huvudmannaskapet men öka statens styrning mot jämlikhet och kvalitet.",
+    "sourceCitation": "Vi lärare, '22 heta valfrågor för skolan – så svarar partierna', fråga 5 (2025-09-24)",
+    "sourceUrl": "https://www.vilarare.se/nyheter/skolpolitik/22-heta-valfragor-for-skolan--sa-svarar-partierna/",
+    "quote": "Staten ska öka styrningen mot jämlikhet och kvalitet men inte ta över huvudmannaskapet.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "skola-statlig-skola",
+    "partyCode": "MP",
+    "value": 2,
+    "motivation": "MP säger nej till statligt huvudmannaskap men vill att staten tar större ansvar för likvärdighet och resurser.",
+    "sourceCitation": "Vi lärare, '22 heta valfrågor för skolan – så svarar partierna', fråga 5 (2025-09-24)",
+    "sourceUrl": "https://www.vilarare.se/nyheter/skolpolitik/22-heta-valfragor-for-skolan--sa-svarar-partierna/",
+    "quote": "Men vi vill att staten tar ett större ansvar för likvärdighet och resurser.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "skola-statlig-skola",
+    "partyCode": "C",
+    "value": 1,
+    "motivation": "C svarar nej på frågan om ett statligt huvudmannaskap för skolväsendet.",
+    "sourceCitation": "Vi lärare, '22 heta valfrågor för skolan – så svarar partierna', fråga 5 (2025-09-24)",
+    "sourceUrl": "https://www.vilarare.se/nyheter/skolpolitik/22-heta-valfragor-for-skolan--sa-svarar-partierna/",
+    "quote": "",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "skola-statlig-skola",
+    "partyCode": "L",
+    "value": 4,
+    "motivation": "L vill förstatliga skolan så att staten återfår huvudansvaret från kommunerna.",
+    "sourceCitation": "Liberalerna: 'Nu tillsätter vi utredningen om att förstatliga skolan' (hämtad 2026-06-07)",
+    "sourceUrl": "https://www.liberalerna.se/nyamko/nu-tillsatter-vi-utredningen-om-att-forstatliga-skolan",
+    "quote": "Att låta staten återfå huvudansvaret för skolan skulle leda till ökad likvärdighet och tydligare styrning.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "skola-statlig-skola",
+    "partyCode": "KD",
+    "value": 2,
+    "motivation": "KD säger nej till förstatligande men förespråkar ökad statlig styrning eller statlig finansiering som medelväg.",
+    "sourceCitation": "Vi lärare, '22 heta valfrågor för skolan – så svarar partierna', fråga 5 (2025-09-24)",
+    "sourceUrl": "https://www.vilarare.se/nyheter/skolpolitik/22-heta-valfragor-for-skolan--sa-svarar-partierna/",
+    "quote": "Vi är för ökad statlig styrning eller en statlig finansiering av skolan som en medelväg.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "skola-statlig-skola",
+    "partyCode": "M",
+    "value": 2,
+    "motivation": "M säger nej till att staten tar över huvudmannaskapet men vill ha mycket starkare statlig styrning av skolpengen.",
+    "sourceCitation": "Vi lärare, '22 heta valfrågor för skolan – så svarar partierna', fråga 5 (2025-09-24)",
+    "sourceUrl": "https://www.vilarare.se/nyheter/skolpolitik/22-heta-valfragor-for-skolan--sa-svarar-partierna/",
+    "quote": "Men ökad statlig styrning.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "skola-statlig-skola",
+    "partyCode": "SD",
+    "value": 4,
+    "motivation": "SD vill ha ett statligt huvudmannaskap för den svenska skolan.",
+    "sourceCitation": "Sverigedemokraterna, Vad vi vill: Utbildningspolitik (hämtad 2026-06-07)",
+    "sourceUrl": "https://www.sd.se/vad-vi-vill/utbildningspolitik/",
+    "quote": "Vi måste få till stånd ett statligt huvudmannaskap för den svenska skolan.",
+    "confidence": "high"
+  },
+
+  {
+    "questionKey": "skola-mobilforbud",
+    "partyCode": "V",
+    "value": 2,
+    "motivation": "V anser att det inte är politikens roll att detaljstyra och att skolorna själva kan besluta om mobilförbud.",
+    "sourceCitation": "SVT Nyheter: 'M: Upp till rektorer och lärare att avgöra' (partiernas svar)",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/partierna-om-s-vallofte",
+    "quote": "Vi anser inte att det är politikens roll att detaljstyra skolan. Skolorna kan redan idag besluta om mobilförbud",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "skola-mobilforbud",
+    "partyCode": "S",
+    "value": 3,
+    "motivation": "S har länge drivit mobilförbud på lektionstid och står bakom att skolorna ska vara mobilfria.",
+    "sourceCitation": "SVT Nyheter: 'M: Upp till rektorer och lärare att avgöra' (partiernas svar)",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/partierna-om-s-vallofte",
+    "quote": "",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "skola-mobilforbud",
+    "partyCode": "MP",
+    "value": 3,
+    "motivation": "MP välkomnar regeringens förslag om mobilfria skolor och vill ha bort störande mobiler ur klassrummet.",
+    "sourceCitation": "Sveriges riksdag: 'Utskott säger ja till bättre förutsättningar för trygghet och studiero i skolan' (2026-05-21)",
+    "sourceUrl": "https://www.riksdagen.se/sv/aktuellt/aktuelltnotiser/2026/maj/21/utskott-sager-ja-till-battre-forutsattningar-for_cmsd1241725-b918-4fe7-995b-8ea4bf18bba1sv/",
+    "quote": "",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "skola-mobilforbud",
+    "partyCode": "C",
+    "value": 2,
+    "motivation": "C anser att mobilförbud är en fråga för varje skola att avgöra snarare än ett nationellt förbud.",
+    "sourceCitation": "Läget (JMK, Stockholms universitet): 'Så här tycker partierna om mobilförbud i skolan'",
+    "sourceUrl": "https://sites.jmk.su.se/laget/758-sa-har-tycker-partierna-om-mobilforbud-i-skolan",
+    "quote": "",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "skola-mobilforbud",
+    "partyCode": "L",
+    "value": 4,
+    "motivation": "L driver ett nationellt mobilförbud under hela skoldagen, infört i regering från höstterminen 2026.",
+    "sourceCitation": "Liberalerna, Beslutade reformer: Mobilförbud i skolan (hämtad 2026-06-07)",
+    "sourceUrl": "https://www.liberalerna.se/beslutade-reformer-i-regering/mobilforbud-i-skolan",
+    "quote": "Från och med höstterminen 2026 införs ett nationellt mobilförbud i grundskolan och fritidshemmet",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "skola-mobilforbud",
+    "partyCode": "KD",
+    "value": 4,
+    "motivation": "KD ingår i Tidöpartiernas överenskommelse om att alla skolor ska vara mobilfria under hela skoldagen.",
+    "sourceCitation": "Sveriges riksdag, Departementsserien 2025:9: Ett nationellt mobilförbud i de obligatoriska skolformerna och fritidshemmet",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/departementsserien/ett-nationellt-mobilforbud-i-de-obligatoriska_hdb49/html/",
+    "quote": "",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "skola-mobilforbud",
+    "partyCode": "M",
+    "value": 4,
+    "motivation": "M (regeringsparti) driver det nationella mobilförbudet under hela skoldagen som införs hösten 2026.",
+    "sourceCitation": "Sveriges riksdag, Departementsserien 2025:9: Ett nationellt mobilförbud i de obligatoriska skolformerna och fritidshemmet",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/departementsserien/ett-nationellt-mobilforbud-i-de-obligatoriska_hdb49/html/",
+    "quote": "",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "skola-mobilforbud",
+    "partyCode": "SD",
+    "value": 4,
+    "motivation": "SD ingår i Tidöpartiernas överenskommelse om mobilfria skolor under hela skoldagen, inklusive raster.",
+    "sourceCitation": "Sveriges riksdag, Departementsserien 2025:9: Ett nationellt mobilförbud i de obligatoriska skolformerna och fritidshemmet",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/departementsserien/ett-nationellt-mobilforbud-i-de-obligatoriska_hdb49/html/",
+    "quote": "",
+    "confidence": "medium"
+  },
+
+  {
+    "questionKey": "skola-religiosa-friskolor",
+    "partyCode": "V",
+    "value": 4,
+    "motivation": "V vill förbjuda konfessionella friskolor; alla skolor bör vara konfessionsfria.",
+    "sourceCitation": "Kristna Friskolerådet, valenkät 'Kristna Skolor' om konfessionella skolor",
+    "sourceUrl": "https://kristnaskolor.se/",
+    "quote": "Alla skolor bör därför vara konfessionsfria, oaktat vem som är huvudman.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "skola-religiosa-friskolor",
+    "partyCode": "S",
+    "value": 4,
+    "motivation": "S vill förbjuda religiösa friskolor; syftet med skolan ska varken vara vinst eller religiös påverkan.",
+    "sourceCitation": "Socialdemokraterna, Vår politik A–Ö: Friskolor (hämtad 2026-06-07)",
+    "sourceUrl": "https://www.socialdemokraterna.se/var-politik/a-till-o/friskolor",
+    "quote": "Syftet med svensk skola ska varken vara vinst eller religiös påverkan",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "skola-religiosa-friskolor",
+    "partyCode": "MP",
+    "value": 3,
+    "motivation": "MP står bakom skärpta krav och etableringsstopp men är tveksamt till ett fullt förbud av folkrättsliga skäl.",
+    "sourceCitation": "Kristna Friskolerådet, valenkät 'Kristna Skolor' om konfessionella skolor",
+    "sourceUrl": "https://kristnaskolor.se/",
+    "quote": "",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "skola-religiosa-friskolor",
+    "partyCode": "C",
+    "value": 2,
+    "motivation": "C vill inte förbjuda konfessionella friskolor men skärpa reglerna; undervisning ska aldrig få ha konfessionella inslag.",
+    "sourceCitation": "Kristna Friskolerådet, valenkät 'Kristna Skolor' om konfessionella skolor",
+    "sourceUrl": "https://kristnaskolor.se/",
+    "quote": "Undervisning ska aldrig få innehålla konfessionella inslag.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "skola-religiosa-friskolor",
+    "partyCode": "L",
+    "value": 3,
+    "motivation": "L vill ta bort undantaget som tillåter konfessionella inslag i offentligt finansierade friskolor.",
+    "sourceCitation": "Kristna Friskolerådet, valenkät 'Kristna Skolor' om konfessionella skolor",
+    "sourceUrl": "https://kristnaskolor.se/",
+    "quote": "Vi vill därför ta bort dagens undantagsbestämmelse som möjliggör för offentligt finansierade friskolor att ha konfessionella inslag.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "skola-religiosa-friskolor",
+    "partyCode": "KD",
+    "value": 1,
+    "motivation": "KD vill inte förbjuda religiösa friskolor utan står upp för rätten att välja mellan kommunala och fristående skolor.",
+    "sourceCitation": "Kristna Friskolerådet, valenkät 'Kristna Skolor' om konfessionella skolor",
+    "sourceUrl": "https://kristnaskolor.se/",
+    "quote": "Kristdemokraterna står upp för rätten att välja mellan kommunala och fristående skolor.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "skola-religiosa-friskolor",
+    "partyCode": "M",
+    "value": 2,
+    "motivation": "M vill ha ett tillfälligt etableringsstopp för konfessionella friskolor, inte ett permanent förbud av befintliga.",
+    "sourceCitation": "Kristna Friskolerådet, valenkät 'Kristna Skolor' om konfessionella skolor",
+    "sourceUrl": "https://kristnaskolor.se/",
+    "quote": "Moderaterna vill se ett tillfälligt etableringsstopp för konfessionella friskolor.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "skola-religiosa-friskolor",
+    "partyCode": "SD",
+    "value": 3,
+    "motivation": "SD vill förbjuda specifikt muslimska friskolor men inte alla konfessionella friskolor.",
+    "sourceCitation": "Kristna Friskolerådet, valenkät 'Kristna Skolor' om konfessionella skolor",
+    "sourceUrl": "https://kristnaskolor.se/",
+    "quote": "Vi är emot muslimska friskolor och anser att de ska förbjudas helt.",
+    "confidence": "medium"
+  }
+]

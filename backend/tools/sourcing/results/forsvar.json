@@ -1,0 +1,325 @@
+[
+  {
+    "questionKey": "forsvar-okade-utgifter",
+    "partyCode": "V",
+    "value": 2,
+    "motivation": "Vänsterpartiet står bakom upprustningen men betonar att resursbehoven är stora även i andra delar av samhället och är återhållsamt till att öka försvaret ytterligare.",
+    "sourceCitation": "Vänsterpartiet, \"Försvaret\", vansterpartiet.se (hämtad 2026)",
+    "sourceUrl": "https://www.vansterpartiet.se/var-politik/politik-a-o/forsvaret/",
+    "quote": "Både det militära försvaret och det civila försvaret har ett behov av mer resurser, men behovet av resurser är också stort i många andra delar av samhället.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "forsvar-okade-utgifter",
+    "partyCode": "S",
+    "value": 3,
+    "motivation": "Socialdemokraterna driver på för fortsatt upprustning och vill bland annat införa en beredskapsskatt för att finansiera den utökade försvarsbudgeten.",
+    "sourceCitation": "Socialdemokraterna, \"Militärt försvar\", socialdemokraterna.se (hämtad 2026)",
+    "sourceUrl": "https://www.socialdemokraterna.se/var-politik/a-till-o/militart-forsvar",
+    "quote": "Införa en beredskapsskatt för att säkerställa den långsiktiga och permanenta utökad finansieringen av försvarsutbyggnaden.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "forsvar-okade-utgifter",
+    "partyCode": "MP",
+    "value": 2,
+    "motivation": "Miljöpartiet har skrivit under den blocköverskridande upprustningen mot Natos 3,5-procentsmål men är kritiskt till militära satsningar på bekostnad av andra områden och vill inte gärna gå längre.",
+    "sourceCitation": "Regeringen, \"Blocköverskridande överenskommelse nådd om historisk upprustning\", regeringen.se (2025)",
+    "sourceUrl": "https://www.regeringen.se/pressmeddelanden/2025/06/blockoverskridande-overenskommelse-nadd-om-historisk-upprustning/",
+    "quote": "nå Natos nya mål för försvarsutgifter, som bedöms bli 3,5 procent av BNP",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "forsvar-okade-utgifter",
+    "partyCode": "C",
+    "value": 4,
+    "motivation": "Centerpartiet vill höja försvarsanslaget snabbare och längre än överenskommet och förespråkar minst 3,5 procent av BNP till 2030.",
+    "sourceCitation": "Centerpartiet, \"Försvar\", centerpartiet.se (hämtad 2026)",
+    "sourceUrl": "https://www.centerpartiet.se/var-politik/politik-a-o/forsvar",
+    "quote": "Nå försvarsanslaget på minst 3,5 procent av BNP till 2030.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "forsvar-okade-utgifter",
+    "partyCode": "L",
+    "value": 4,
+    "motivation": "Liberalerna har varit pådrivande i regeringen för kraftigt höjda försvarssatsningar upp mot 5 procent av BNP totalt.",
+    "sourceCitation": "Liberalerna, \"Försvar\", liberalerna.se (hämtad 2026)",
+    "sourceUrl": "https://www.liberalerna.se/politik/forsvar",
+    "quote": "Liberalerna har varit pådrivande i regeringen om att öka Sveriges försvarssatsningar till sammanlagt 5 procent av BNP – 3,5 procent till militära utgifter och 1,5 procent till försvarsrelaterade utgifter.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "forsvar-okade-utgifter",
+    "partyCode": "KD",
+    "value": 4,
+    "motivation": "Kristdemokraterna har tillsammans med regeringen aviserat kraftigt utökade försvarssatsningar på sammanlagt 5 procent av BNP.",
+    "sourceCitation": "Kristdemokraterna, \"Försvar\", kristdemokraterna.se (hämtad 2026)",
+    "sourceUrl": "https://kristdemokraterna.se/var-politik/politikomraden/forsvar",
+    "quote": "Kristdemokraterna och regeringen har i detta syfte aviserat kraftigt utökade försvarssatsningar som sammanlagt kommer uppgå till 5% av BNP",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "forsvar-okade-utgifter",
+    "partyCode": "M",
+    "value": 4,
+    "motivation": "Moderaterna vill nå Natos mål för försvarsutgifter redan 2030 och prioriterar en fortsatt kraftig upprustning.",
+    "sourceCitation": "Moderaterna, \"Försvar och krisberedskap\", moderaterna.se (hämtad 2026)",
+    "sourceUrl": "https://moderaterna.se/var-politik/forsvar-och-krisberedskap/",
+    "quote": "Sverige ska ha ett ambitiöst mål där vi ska uppnå Natos mål för försvarsutgifter redan år 2030.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "forsvar-okade-utgifter",
+    "partyCode": "SD",
+    "value": 4,
+    "motivation": "Sverigedemokraterna vill att försvarsbudgeten ska växa kraftigt och att en lägstanivå skrivs in i grundlagen.",
+    "sourceCitation": "Sverigedemokraterna, \"Svensk Försvarsmakt\", sd.se (hämtad 2026)",
+    "sourceUrl": "https://www.sd.se/vad-vi-vill/svensk-forsvarsmakt/",
+    "quote": "Försvarets budget ska växa till åtminstone 2,5 % av BNP och en minsta nivå om 2 % ska skrivas in i grundlagen.",
+    "confidence": "high"
+  },
+
+  {
+    "questionKey": "forsvar-varnplikt",
+    "partyCode": "V",
+    "value": 4,
+    "motivation": "Vänsterpartiet är för en allmän och könsneutral värnplikt och ser den som en demokratifråga och grund för personalförsörjningen.",
+    "sourceCitation": "Vänsterpartiet, \"Försvaret\", vansterpartiet.se (hämtad 2026)",
+    "sourceUrl": "https://www.vansterpartiet.se/var-politik/politik-a-o/forsvaret/",
+    "quote": "Vi är för en allmän och könsneutral värnplikt.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "forsvar-varnplikt",
+    "partyCode": "S",
+    "value": 4,
+    "motivation": "Socialdemokraterna vill bygga ut värnplikten och nå målet om 12 000 och på sikt 20 000 värnpliktiga.",
+    "sourceCitation": "Socialdemokraterna, \"Militärt försvar\", socialdemokraterna.se (hämtad 2026)",
+    "sourceUrl": "https://www.socialdemokraterna.se/var-politik/a-till-o/militart-forsvar",
+    "quote": "Uppnå målet om att utbilda 12 000 värnpliktiga och på längre sikt nå mål om 20 000 värnpliktiga",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "forsvar-varnplikt",
+    "partyCode": "MP",
+    "value": 3,
+    "motivation": "Miljöpartiet ser att allmän värnplikt behövs som grund för totalförsvaret men vill att deltagande i militärt försvar så långt möjligt bygger på frivillighet.",
+    "sourceCitation": "Regeringen, \"Blocköverskridande överenskommelse nådd om historisk upprustning\", regeringen.se (2025)",
+    "sourceUrl": "https://www.regeringen.se/pressmeddelanden/2025/06/blockoverskridande-overenskommelse-nadd-om-historisk-upprustning/",
+    "quote": "",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "forsvar-varnplikt",
+    "partyCode": "C",
+    "value": 4,
+    "motivation": "Centerpartiet anser att fler behöver göra värnplikt och vill utöka antalet värnpliktiga, bland annat med målet 40 procent kvinnor.",
+    "sourceCitation": "Centerpartiet, \"Personalförsörjning\", centerpartiet.se (hämtad 2026)",
+    "sourceUrl": "https://www.centerpartiet.se/var-politik/politik-a-o/forsvar/personalforsorjning",
+    "quote": "Sätta ett mål om 40 procent kvinnliga värnpliktiga till 2030",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "forsvar-varnplikt",
+    "partyCode": "L",
+    "value": 4,
+    "motivation": "Liberalerna vill att försvaret bygger på både frivillighet och plikt och ser värnplikten som viktig för beredskap och rekrytering.",
+    "sourceCitation": "Liberalerna, \"Försvar\", liberalerna.se (hämtad 2026)",
+    "sourceUrl": "https://www.liberalerna.se/politik/forsvar",
+    "quote": "Försvaret av Sverige ska bygga på både frivillighet och plikt. Yrkesförsvaret ska utgöra grunden men värnplikten är viktig för beredskapen och rekryteringen.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "forsvar-varnplikt",
+    "partyCode": "KD",
+    "value": 4,
+    "motivation": "Kristdemokraterna vill bygga ut värnplikten och komplettera de anställda soldaterna med fler värnpliktiga för att Försvarsmakten ska kunna växa.",
+    "sourceCitation": "Kristdemokraterna, \"Värnplikt\", kristdemokraterna.se (hämtad 2026)",
+    "sourceUrl": "https://kristdemokraterna.se/var-politik/politik-a-till-o/varnplikt",
+    "quote": "för att Försvarsmakten ska klara av att växa i volym så kommer det att krävas att de anställda soldaterna kompletteras med fler värnpliktiga",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "forsvar-varnplikt",
+    "partyCode": "M",
+    "value": 4,
+    "motivation": "Moderaterna anser att en utökning av värnplikten är viktig för att bygga en större och mer uthållig försvarsmakt.",
+    "sourceCitation": "Moderaterna, \"Försvar och krisberedskap\", moderaterna.se (hämtad 2026)",
+    "sourceUrl": "https://moderaterna.se/var-politik/forsvar-och-krisberedskap/",
+    "quote": "En utökning av värnplikten är viktig för att bygga en större och mer uthållig försvarsmakt.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "forsvar-varnplikt",
+    "partyCode": "SD",
+    "value": 4,
+    "motivation": "Sverigedemokraterna vill att värnplikten återupprättas fullt ut och att utbyggnaden går snabbt.",
+    "sourceCitation": "Sverigedemokraterna, \"Svensk Försvarsmakt\", sd.se (hämtad 2026)",
+    "sourceUrl": "https://www.sd.se/vad-vi-vill/svensk-forsvarsmakt/",
+    "quote": "värnplikten ska återupprättas fullt ut så att svenskarna kan försvara sitt land",
+    "confidence": "high"
+  },
+
+  {
+    "questionKey": "forsvar-karnvapen",
+    "partyCode": "V",
+    "value": 1,
+    "motivation": "Vänsterpartiet accepterar inte kärnvapen på svenskt territorium och vill stifta en lag som förbjuder kärnvapen i Sverige.",
+    "sourceCitation": "Vänsterpartiet, \"Nato\", vansterpartiet.se (hämtad 2026)",
+    "sourceUrl": "https://www.vansterpartiet.se/var-politik/politik-a-o/nato/",
+    "quote": "Sverige måste vara tydliga med att vi inte accepterar kärnvapen på svenskt territorium.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "forsvar-karnvapen",
+    "partyCode": "S",
+    "value": 2,
+    "motivation": "Socialdemokraterna vill att Sverige uttalar förbehåll mot utplacering av kärnvapen på svenskt territorium och är oroade för att icke-spridningsavtalet undergrävs.",
+    "sourceCitation": "SVT Nyheter, \"Så tycker riksdagens partier om kärnvapen\", svt.se (2026)",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/sa-tycker-riksdagens-partier-om-karnvapen",
+    "quote": "Vi är väldigt oroade för om man på olika sätt i olika processer undergräver icke-spridningsavtalet.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "forsvar-karnvapen",
+    "partyCode": "MP",
+    "value": 1,
+    "motivation": "Miljöpartiet vill ha en lag som förbjuder kärnvapen på svenskt territorium i både freds- och krigstid.",
+    "sourceCitation": "SVT Nyheter, \"Så tycker riksdagens partier om kärnvapen\", svt.se (2026)",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/sa-tycker-riksdagens-partier-om-karnvapen",
+    "quote": "Vi vill se en lagstiftning som förbjuder införsel av kärnvapen på svenskt territorium i både freds- och krigstid",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "forsvar-karnvapen",
+    "partyCode": "C",
+    "value": 2,
+    "motivation": "Centerpartiet vill ha en värld fri från kärnvapen men accepterar Natos kärnvapenavskräckning; partiet driver inte att kärnvapen ska placeras på svensk mark.",
+    "sourceCitation": "Centerpartiet, \"Nedrustning och kärnvapen\", centerpartiet.se (hämtad 2026)",
+    "sourceUrl": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/utrikes--och-bistandsfragor/nedrustning-och-karnvapen",
+    "quote": "Centerpartiet vill ha en värld fri från kärnvapen.",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "forsvar-karnvapen",
+    "partyCode": "L",
+    "value": 3,
+    "motivation": "Liberalerna är positiva till europeisk kärnvapenavskräckning och säger ja till permanenta Nato-baser i Sverige, och utesluter inte kärnvapen om läget kräver det.",
+    "sourceCitation": "SVT Nyheter, \"Så tycker riksdagens partier om kärnvapen\", svt.se (2026)",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/sa-tycker-riksdagens-partier-om-karnvapen",
+    "quote": "Hälften av riksdagens partier öppnar också för att kärnvapen ska få placeras i Sverige i händelse av krig.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "forsvar-karnvapen",
+    "partyCode": "KD",
+    "value": 3,
+    "motivation": "Kristdemokraterna utesluter inga åtgärder i krigstid, inklusive kärnvapen på svensk mark, men öppnar inte för det i fredstid.",
+    "sourceCitation": "SVT Nyheter, \"Så tycker riksdagens partier om kärnvapen\", svt.se (2026)",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/sa-tycker-riksdagens-partier-om-karnvapen",
+    "quote": "Vi utesluter inga åtgärder som kan tjäna svensk säkerhet i krigstid, inklusive kärnvapen på svensk mark",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "forsvar-karnvapen",
+    "partyCode": "M",
+    "value": 3,
+    "motivation": "Moderaterna anser att kärnvapen inte är aktuellt i fredstid men är i krig beredda att vidta de åtgärder som behövs för att försvara Sverige och de allierade.",
+    "sourceCitation": "Moderaterna, \"Försvar och krisberedskap\", moderaterna.se (hämtad 2026)",
+    "sourceUrl": "https://moderaterna.se/var-politik/forsvar-och-krisberedskap/",
+    "quote": "Det är inte aktuellt med kärnvapen på svenskt territorium i fredstid. Om det blir krig är vi beredda att vidta de åtgärder som behövs för att säkra försvaret av Sverige och våra allierade.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "forsvar-karnvapen",
+    "partyCode": "SD",
+    "value": 3,
+    "motivation": "Sverigedemokraterna är positiva till europeisk kärnvapenavskräckning och hör till de partier som öppnar för kärnvapen i Sverige i händelse av krig.",
+    "sourceCitation": "SVT Nyheter, \"Så tycker riksdagens partier om kärnvapen\", svt.se (2026)",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/sa-tycker-riksdagens-partier-om-karnvapen",
+    "quote": "Hälften av riksdagens partier öppnar också för att kärnvapen ska få placeras i Sverige i händelse av krig.",
+    "confidence": "medium"
+  },
+
+  {
+    "questionKey": "forsvar-ukraina",
+    "partyCode": "V",
+    "value": 3,
+    "motivation": "Vänsterpartiet står numera bakom allt militärt stöd till Ukraina efter att ha ändrat sitt principbeslut, men har varit det mest tveksamma partiet och hade egna reservationer i riksdagen.",
+    "sourceCitation": "Sveriges riksdag, \"Sveriges militära stöd till Ukraina\", betänkande 2025/26:FöU17, riksdagen.se (2026)",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/sveriges-militara-stod-till-ukraina_hd01f%C3%B6u17/",
+    "quote": "Vänsterpartiet står bakom allt militärt stöd – alla 22 stödpaket – till Ukraina",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "forsvar-ukraina",
+    "partyCode": "S",
+    "value": 4,
+    "motivation": "Socialdemokraterna står bakom ett fortsatt omfattande stöd till Ukraina så länge det behövs och har ingått i den breda riksdagsmajoriteten bakom stödet.",
+    "sourceCitation": "Sveriges riksdag, \"Sveriges militära stöd till Ukraina\", betänkande 2025/26:FöU17, riksdagen.se (2026)",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/sveriges-militara-stod-till-ukraina_hd01f%C3%B6u17/",
+    "quote": "Alla partier i riksdagen står bakom detta stöd",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "forsvar-ukraina",
+    "partyCode": "MP",
+    "value": 4,
+    "motivation": "Miljöpartiet stödjer att Sverige bistår Ukraina med försvarsvapen i kampen för frihet och demokrati och står bakom det militära stödet.",
+    "sourceCitation": "Sveriges riksdag, \"Sveriges militära stöd till Ukraina\", betänkande 2025/26:FöU17, riksdagen.se (2026)",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/sveriges-militara-stod-till-ukraina_hd01f%C3%B6u17/",
+    "quote": "Alla partier i riksdagen står bakom detta stöd",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "forsvar-ukraina",
+    "partyCode": "C",
+    "value": 4,
+    "motivation": "Centerpartiet vill öka och tidigarelägga det militära stödet till Ukraina, bland annat genom att skicka JAS Gripen, och ser stödet som den viktigaste säkerhetspolitiska frågan.",
+    "sourceCitation": "Centerpartiet, \"Kriget i Ukraina\", centerpartiet.se (hämtad 2026)",
+    "sourceUrl": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/utrikes--och-bistandsfragor/kriget-i-ukraina",
+    "quote": "",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "forsvar-ukraina",
+    "partyCode": "L",
+    "value": 4,
+    "motivation": "Liberalerna vill att det svenska militära stödet till Ukraina med avancerade vapensystem, ammunition och utbildning ska intensifieras.",
+    "sourceCitation": "Liberalerna, \"Ukraina\", liberalerna.se (hämtad 2026)",
+    "sourceUrl": "https://www.liberalerna.se/politik/ukraina",
+    "quote": "Det svenska militära stödet i form av avancerade vapensystem och ammunition samt utbildning bör intensifieras.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "forsvar-ukraina",
+    "partyCode": "KD",
+    "value": 4,
+    "motivation": "Kristdemokraterna står bakom regeringens linje med starkt och långsiktigt militärt stöd till Ukraina och låter lärdomarna från kriget vara vägledande.",
+    "sourceCitation": "Sveriges riksdag, \"Sveriges militära stöd till Ukraina\", betänkande 2025/26:FöU17, riksdagen.se (2026)",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/sveriges-militara-stod-till-ukraina_hd01f%C3%B6u17/",
+    "quote": "Alla partier i riksdagen står bakom detta stöd",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "forsvar-ukraina",
+    "partyCode": "M",
+    "value": 4,
+    "motivation": "Moderaterna ser stödet till Ukraina som regeringens främsta utrikespolitiska prioritering och vill ge ett starkt och långsiktigt militärt stöd.",
+    "sourceCitation": "Moderaterna, \"Försvar och krisberedskap\", moderaterna.se (hämtad 2026)",
+    "sourceUrl": "https://moderaterna.se/var-politik/forsvar-och-krisberedskap/",
+    "quote": "Sverige ska ha ett starkt och långsiktigt militärt stöd till Ukraina. Stödet till Ukraina är den moderatledda regeringens främsta utrikespolitiska prioritering.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "forsvar-ukraina",
+    "partyCode": "SD",
+    "value": 3,
+    "motivation": "Sverigedemokraterna stödjer det militära stödet till Ukraina och har ingått i den breda majoriteten, men partiledaren har samtidigt påtalat att det bör finnas en övre gräns för stödet.",
+    "sourceCitation": "Sveriges riksdag, \"Sveriges militära stöd till Ukraina\", betänkande 2025/26:FöU17, riksdagen.se (2026)",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/sveriges-militara-stod-till-ukraina_hd01f%C3%B6u17/",
+    "quote": "Alla partier i riksdagen står bakom detta stöd",
+    "confidence": "medium"
+  }
+]

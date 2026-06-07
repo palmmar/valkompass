@@ -1,0 +1,322 @@
+[
+  {
+    "questionKey": "arbete-las",
+    "partyCode": "V",
+    "value": 1,
+    "motivation": "Vänsterpartiet vill stärka, inte försvaga, anställningsskyddet och motsätter sig uppluckring av LAS.",
+    "sourceCitation": "Arbetet, \"Så vill partierna ändra arbetsrätten\" (2018); jfr Vänsterpartiet, Anställningstrygghet (2024)",
+    "sourceUrl": "https://arbetet.se/2018/03/08/sa-vill-partierna-andra-arbetsratten/",
+    "quote": "Vill stärka anställningsskyddet",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "arbete-las",
+    "partyCode": "S",
+    "value": 2,
+    "motivation": "S vill stärka anställningsskyddet och anklagar högern för att vilja försvaga LAS, men accepterar partsöverenskommelser inom modellen.",
+    "sourceCitation": "Socialdemokraterna, Arbetsrätt / Jobb och arbetsmarknadspolitik (2025)",
+    "sourceUrl": "https://www.socialdemokraterna.se/var-politik/a-till-o/arbetsratt",
+    "quote": "",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "arbete-las",
+    "partyCode": "MP",
+    "value": 1,
+    "motivation": "Miljöpartiet anser att turordningsreglerna fyller sitt syfte och vill inte försvaga anställningsskyddet.",
+    "sourceCitation": "Arbetet, \"Så vill partierna ändra arbetsrätten\" (2018)",
+    "sourceUrl": "https://arbetet.se/2018/03/08/sa-vill-partierna-andra-arbetsratten/",
+    "quote": "Partiet anser att turordningsreglerna fyller sitt syfte och inte bör ändras",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "arbete-las",
+    "partyCode": "C",
+    "value": 4,
+    "motivation": "Centerpartiet vill undanta alla företag med upp till 50 anställda från turordningsreglerna och låta kompetens väga tyngre.",
+    "sourceCitation": "Arbetet, \"Så vill partierna ändra arbetsrätten\" (2018); Centerpartiet, Jobb (2025)",
+    "sourceUrl": "https://arbetet.se/2018/03/08/sa-vill-partierna-andra-arbetsratten/",
+    "quote": "undanta alla företag med upp till 50 anställda från turordningsreglerna",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "arbete-las",
+    "partyCode": "L",
+    "value": 4,
+    "motivation": "Liberalerna vill göra arbetsrätten mer flexibel: kompetens ska väga tyngre vid uppsägning och provanställning förlängas till ett år.",
+    "sourceCitation": "Liberalerna, Arbetsrätt (2025)",
+    "sourceUrl": "https://www.liberalerna.se/politik/arbetsratt",
+    "quote": "Kompetens, prestation och verksamhetens framtida behov ska få större betydelse vid uppsägningar.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "arbete-las",
+    "partyCode": "KD",
+    "value": 3,
+    "motivation": "KD värnar den svenska modellen men anser att ett alltför långtgående anställningsskydd hindrar utsatta och vill öka rörligheten.",
+    "sourceCitation": "Kristdemokraterna, Arbetsrätt (2025)",
+    "sourceUrl": "https://kristdemokraterna.se/var-politik/politik-a-till-o/arbetsratt",
+    "quote": "Kristdemokraterna värnar den svenska modellen, där lönesättning och arbetsrätt i stor utsträckning är en fråga för arbetsmarknadens parter.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "arbete-las",
+    "partyCode": "M",
+    "value": 4,
+    "motivation": "Moderaterna vill reformera arbetsrätten: förlänga provanställningen till tolv månader och låta kompetens väga tyngre än anställningstid vid uppsägning.",
+    "sourceCitation": "Arbetet, \"Så vill partierna ändra arbetsrätten\" (2018)",
+    "sourceUrl": "https://arbetet.se/2018/03/08/sa-vill-partierna-andra-arbetsratten/",
+    "quote": "Förlänga provanställning från sex till tolv månader",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "arbete-las",
+    "partyCode": "SD",
+    "value": 3,
+    "motivation": "SD vill inte avskaffa turordningsreglerna men utöka antalet undantag från två till fem för att underlätta för företag.",
+    "sourceCitation": "SD, Motion 2017/18:2643 Arbetsmarknad (Sven-Olof Sällström m.fl.)",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-lagar/dokument/motion/arbetsmarknad_H5022643",
+    "quote": "Sverigedemokraterna anser inte att man bör avskaffa den trygghet som turordningsreglerna medför för arbetstagarna, men vill samtidigt underlätta för företagen ... genom att öka antalet undantag från turordningsreglerna från två till fem.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "arbete-akassa",
+    "partyCode": "V",
+    "value": 4,
+    "motivation": "Vänsterpartiet vill höja a-kassan: höjt tak och grundbelopp samt ersättningsnivå 80 procent under hela perioden.",
+    "sourceCitation": "Vänsterpartiet, A-kassa (politik A–Ö, 2025)",
+    "sourceUrl": "https://www.vansterpartiet.se/var-politik/politik-a-o/a-kassa/",
+    "quote": "Ersättningsnivån höjs till 80 procent för hela ersättningsperioden samt för tid med aktivitetsstöd",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "arbete-akassa",
+    "partyCode": "S",
+    "value": 3,
+    "motivation": "S vill riva upp regeringens branta avtrappning och förbättra ersättningsvillkoren, men driver inte ett generellt höjt tak lika hårt som V.",
+    "sourceCitation": "Socialdemokraterna, A-kassa (politik A–Ö, 2025)",
+    "sourceUrl": "https://www.socialdemokraterna.se/var-politik/a-till-o/a-kassa",
+    "quote": "Ta bort den branta avtrappningen i A-kassan",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "arbete-akassa",
+    "partyCode": "MP",
+    "value": 3,
+    "motivation": "Miljöpartiet vill behålla det höjda golvet i a-kassan och har sänkt arbetsvillkoret så fler omfattas; vill långsiktigt ha en mer generös försäkring.",
+    "sourceCitation": "Miljöpartiet, Satsningar för samhällets mest utsatta (2025)",
+    "sourceUrl": "https://www.mp.se/politik/satsningar-samhallets-mest-utsatta-hela-listan/",
+    "quote": "",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "arbete-akassa",
+    "partyCode": "C",
+    "value": 2,
+    "motivation": "Centerpartiet vill ha en trygg a-kassa men med högre ersättning bara de första månaderna och därefter avtrappning; stödjer inte en generell höjning.",
+    "sourceCitation": "Centerpartiet, Jobb / A-kassa och omställningsförsäkring (2025)",
+    "sourceUrl": "https://www.centerpartiet.se/var-politik/politik-a-o/jobb",
+    "quote": "Genom att kombinera en trygg a-kassa med en aktiv omställningsförsäkring, ger vi människor verktygen",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "arbete-akassa",
+    "partyCode": "L",
+    "value": 1,
+    "motivation": "Liberalerna står bakom regeringens reformerade a-kassa med snabbare avtrappning och vill inte höja den; ersättningen ska styra mot snabb återgång till arbete.",
+    "sourceCitation": "Liberalerna, A-kassa (2025); Regeringens reform av arbetslöshetsförsäkringen (2025)",
+    "sourceUrl": "https://www.liberalerna.se/politik/a-kassa",
+    "quote": "",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "arbete-akassa",
+    "partyCode": "KD",
+    "value": 2,
+    "motivation": "KD vill ha en allmän omställningsförsäkring med konjunkturbaserade ersättningsnivåer som stärker arbetslinjen, inte en generell höjning.",
+    "sourceCitation": "Kristdemokraterna, A-kassa (politik A–Ö, 2025)",
+    "sourceUrl": "https://kristdemokraterna.se/var-politik/politik-a-till-o/a-kassa",
+    "quote": "A-kassan ska vara en tydlig omställningsförsäkring som stärker arbetslinjen och ger incitament att återgå till arbete.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "arbete-akassa",
+    "partyCode": "M",
+    "value": 1,
+    "motivation": "Moderaterna ser a-kassan som en tillfällig omställningsförsäkring och har i regering reformerat den med snabbare avtrappning; motsätter sig höjning.",
+    "sourceCitation": "Moderaterna, Jobb och arbetsmarknad / arbetslinjen (2025)",
+    "sourceUrl": "https://moderaterna.se/var-politik/arbetslinjen/",
+    "quote": "Den moderatledda regeringen har reformerat a-kassan för att den ska bli mer trygg och modern.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "arbete-akassa",
+    "partyCode": "SD",
+    "value": 2,
+    "motivation": "SD vill se en a-kassa garanterad alla löntagare men har inom regeringssamarbetet stått bakom en reform som sänker ersättningen; ingen generell höjning.",
+    "sourceCitation": "SD, Motion 2017/18:2643 Arbetsmarknad (Sven-Olof Sällström m.fl.)",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-lagar/dokument/motion/arbetsmarknad_H5022643",
+    "quote": "Vi anser därmed att a-kassan ska vara garanterad samtliga löntagare som uppfyller kvalificeringskraven för ersättning och att den ska vara fullt ut solidariskt finansierad via skatten.",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "arbete-bidragstak",
+    "partyCode": "V",
+    "value": 1,
+    "motivation": "Vänsterpartiet motsätter sig regeringens bidragstak och ser det som ett hot mot utsatta hushåll, inte som en väg till arbete.",
+    "sourceCitation": "Jfr Regeringens bidragsreform (M, KD, L, SD) (regeringen.se, 2026)",
+    "sourceUrl": "https://www.regeringen.se/pressmeddelanden/2026/03/regeringens-stora-bidragsreform--forslag-om-bidragstak-och-aktivitetskrav/",
+    "quote": "",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "arbete-bidragstak",
+    "partyCode": "S",
+    "value": 2,
+    "motivation": "S betonar arbetslinjen men är kritiska till regeringens bidragstak som drabbar barnfamiljer; står inte bakom förslaget.",
+    "sourceCitation": "Jfr Regeringens bidragsreform (regeringen.se, 2026)",
+    "sourceUrl": "https://www.regeringen.se/pressmeddelanden/2026/03/regeringens-stora-bidragsreform--forslag-om-bidragstak-och-aktivitetskrav/",
+    "quote": "",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "arbete-bidragstak",
+    "partyCode": "MP",
+    "value": 1,
+    "motivation": "Miljöpartiet motsätter sig ett bidragstak och prioriterar skydd för samhällets mest utsatta.",
+    "sourceCitation": "Miljöpartiet, Satsningar för samhällets mest utsatta (2025)",
+    "sourceUrl": "https://www.mp.se/politik/satsningar-samhallets-mest-utsatta-hela-listan/",
+    "quote": "",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "arbete-bidragstak",
+    "partyCode": "C",
+    "value": 3,
+    "motivation": "Centerpartiet anser att det ska löna sig att arbeta och förespråkar att bidragstagare får behålla mer vid arbete, men driver inte regeringens bidragstak lika hårt.",
+    "sourceCitation": "Centerpartiet, Ekonomiskt bistånd (politik A–Ö, 2025)",
+    "sourceUrl": "https://www.centerpartiet.se/var-politik/politik-a-o/trygghetssystem/ekonomiskt-bistand",
+    "quote": "",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "arbete-bidragstak",
+    "partyCode": "L",
+    "value": 4,
+    "motivation": "Liberalerna vill införa ett bidragstak efter dansk modell så att summan av bidrag blir lägre än lön från arbete.",
+    "sourceCitation": "Regeringens bidragsreform (regeringen.se, 2026); Liberalerna, Arbetslinjen (2025)",
+    "sourceUrl": "https://www.regeringen.se/pressmeddelanden/2026/03/regeringens-stora-bidragsreform--forslag-om-bidragstak-och-aktivitetskrav/",
+    "quote": "Moderaterna (M), Kristdemokraterna (KD), Liberalerna (L) och Sverigedemokraterna (SD) står bakom förslaget.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "arbete-bidragstak",
+    "partyCode": "KD",
+    "value": 4,
+    "motivation": "KD står bakom regeringens bidragstak så att det alltid lönar sig mer att arbeta än att leva på bidrag.",
+    "sourceCitation": "Regeringens bidragsreform (regeringen.se, 2026)",
+    "sourceUrl": "https://www.regeringen.se/pressmeddelanden/2026/03/regeringens-stora-bidragsreform--forslag-om-bidragstak-och-aktivitetskrav/",
+    "quote": "Moderaterna (M), Kristdemokraterna (KD), Liberalerna (L) och Sverigedemokraterna (SD) står bakom förslaget.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "arbete-bidragstak",
+    "partyCode": "M",
+    "value": 4,
+    "motivation": "Moderaterna driver bidragstaket och vill att det alltid ska löna sig bättre att arbeta än att leva på bidrag.",
+    "sourceCitation": "Regeringens bidragsreform (regeringen.se, 2026); Moderaterna, arbetslinjen (2022)",
+    "sourceUrl": "https://www.regeringen.se/pressmeddelanden/2026/03/regeringens-stora-bidragsreform--forslag-om-bidragstak-och-aktivitetskrav/",
+    "quote": "Det är både rätt och rättvist att det lönar sig mer att arbeta än att leva på bidrag.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "arbete-bidragstak",
+    "partyCode": "SD",
+    "value": 4,
+    "motivation": "Sverigedemokraterna står bakom regeringens bidragstak så att det alltid ska löna sig mer att arbeta än att leva på bidrag.",
+    "sourceCitation": "Regeringens bidragsreform (regeringen.se, 2026)",
+    "sourceUrl": "https://www.regeringen.se/pressmeddelanden/2026/03/regeringens-stora-bidragsreform--forslag-om-bidragstak-och-aktivitetskrav/",
+    "quote": "Detta för att det alltid ska löna sig mer att arbeta än att leva på bidrag.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "arbete-arbetstid",
+    "partyCode": "V",
+    "value": 4,
+    "motivation": "Vänsterpartiet vill ha en generell arbetstidsförkortning där arbetstagarnas inkomster inte minskar, med målet sex timmars arbetsdag.",
+    "sourceCitation": "Vänsterpartiet, Arbetstidsförkortning (politik A–Ö, 2025)",
+    "sourceUrl": "https://www.vansterpartiet.se/var-politik/politik-a-o/arbetstidsforkortning/",
+    "quote": "förkortningen ska ske på ett sådant sätt att arbetstagarnas inkomster inte minskar",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "arbete-arbetstid",
+    "partyCode": "S",
+    "value": 2,
+    "motivation": "S driver inte en lagstadgad generell arbetstidsförkortning utan menar att arbetstidsfrågor främst ska lösas av parterna i avtal.",
+    "sourceCitation": "Socialdemokraterna, Arbetsrätt/Jobb (2025); Dagens Arena (2022)",
+    "sourceUrl": "https://www.socialdemokraterna.se/var-politik/a-till-o/arbetsratt",
+    "quote": "",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "arbete-arbetstid",
+    "partyCode": "MP",
+    "value": 3,
+    "motivation": "Miljöpartiet vill stegvis sänka arbetstiden till 35 timmar i veckan med en vision om fyradagarsvecka, men sidan anger inte uttryckligen bibehållen lön.",
+    "sourceCitation": "Miljöpartiet, \"Kortare arbetstid är en jämställdhetsreform\" (2025)",
+    "sourceUrl": "https://www.mp.se/just-nu/kortare-arbetstid-ar-en-jamstalldhetsreform/",
+    "quote": "Vi vill därför se en modern arbetstidslagstiftning där arbetstiden stegvis sänks till 35 timmar i veckan",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "arbete-arbetstid",
+    "partyCode": "C",
+    "value": 1,
+    "motivation": "Centerpartiet motsätter sig lagstadgad generell arbetstidsförkortning och betonar flexibilitet och fler arbetade timmar i ekonomin.",
+    "sourceCitation": "Centerpartiet, Jobb (politik A–Ö, 2025)",
+    "sourceUrl": "https://www.centerpartiet.se/var-politik/politik-a-o/jobb",
+    "quote": "",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "arbete-arbetstid",
+    "partyCode": "L",
+    "value": 1,
+    "motivation": "Liberalerna avvisar lagstadgad arbetstidsförkortning och vill tvärtom att fler ska arbeta och arbeta mer.",
+    "sourceCitation": "Liberalerna, Arbetsmarknad/arbetslinjen (2025)",
+    "sourceUrl": "https://www.liberalerna.se/politik/arbetsmarknad",
+    "quote": "",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "arbete-arbetstid",
+    "partyCode": "KD",
+    "value": 1,
+    "motivation": "KD betonar arbetslinjen och fler arbetade timmar och driver inte generell arbetstidsförkortning med bibehållen lön.",
+    "sourceCitation": "Kristdemokraterna, Arbetsmarknad (politik A–Ö, 2025)",
+    "sourceUrl": "https://kristdemokraterna.se/var-politik/politik-a-till-o/arbetsmarknad",
+    "quote": "",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "arbete-arbetstid",
+    "partyCode": "M",
+    "value": 1,
+    "motivation": "Moderaterna prioriterar arbetslinjen och fler arbetade timmar och motsätter sig lagstadgad arbetstidsförkortning med bibehållen lön.",
+    "sourceCitation": "Moderaterna, Jobb och arbetsmarknad/arbetslinjen (2025)",
+    "sourceUrl": "https://moderaterna.se/var-politik/arbetslinjen/",
+    "quote": "",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "arbete-arbetstid",
+    "partyCode": "SD",
+    "value": 2,
+    "motivation": "SD driver ingen generell lagstadgad arbetstidsförkortning men har varit öppet för begränsad reducerad arbetstid i vissa motioner; oklart stöd för bibehållen lön.",
+    "sourceCitation": "SD, Motion 2021/22:795 Reducerad arbetstid (Anne Oskarsson)",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/reducerad-arbetstid-ger-mervarde-till-barnen-och_h902795/",
+    "quote": "",
+    "confidence": "low"
+  }
+]

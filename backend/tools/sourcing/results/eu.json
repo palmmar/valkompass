@@ -1,0 +1,242 @@
+[
+  {
+    "questionKey": "eu-mer-makt",
+    "partyCode": "V",
+    "value": 1,
+    "motivation": "V vill flytta makt tillbaka till medlemsländerna och se mindre överstatlighet, inte mer EU-makt.",
+    "sourceCitation": "Vänsterpartiet, Vår politik A–Ö: EU (hämtad 2026-06-07)",
+    "sourceUrl": "https://www.vansterpartiet.se/var-politik/politik-a-o/eu/",
+    "quote": "Vi vill se mer av samarbete mellan självständiga stater, och mindre av överstatlighet som begränsar medborgarnas möjligheter att påverka politiken",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "eu-mer-makt",
+    "partyCode": "S",
+    "value": 2,
+    "motivation": "S vill inte flytta mer makt från Sverige till EU, men ser samtidigt ett värde i ett starkt EU i världen.",
+    "sourceCitation": "SVT Valkompass EU-valet 2024, partisvar Socialdemokraterna (hämtad 2026-06-07)",
+    "sourceUrl": "https://valkompass.svt.se/eu-2024/parti/socialdemokraterna/",
+    "quote": "Vi vill inte se att mer makt flyttas från Sverige till EU, men det är viktigt att EU får ett ökat inflytande i världen.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "eu-mer-makt",
+    "partyCode": "MP",
+    "value": 3,
+    "motivation": "MP är EU-positivt och vill behålla dagens nivå av EU-makt, med gemensamma lösningar på klimat, demokrati och rättigheter.",
+    "sourceCitation": "SVT Valkompass EU-valet 2024, partisvar Miljöpartiet (hämtad 2026-06-07)",
+    "sourceUrl": "https://valkompass.svt.se/eu-2024/parti/miljopartiet/",
+    "quote": "Miljö- och klimatfrågan, demokrati och mänskliga rättigheter är gemensamma angelägenheter som kräver gemensamma svar.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "eu-mer-makt",
+    "partyCode": "C",
+    "value": 3,
+    "motivation": "C är EU-vänligt men betonar att beslut ska fattas på rätt nivå; vill i stort behålla dagens maktfördelning.",
+    "sourceCitation": "SVT Valkompass EU-valet 2024, partisvar Centerpartiet (hämtad 2026-06-07)",
+    "sourceUrl": "https://valkompass.svt.se/eu-2024/parti/centerpartiet/",
+    "quote": "EU-samarbetet är otroligt viktigt för freden, friheten och klimatet. För att behålla förtroendet och legitimitet i politiken är det dock viktigt att rätt beslut fattas på rätt plats.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "eu-mer-makt",
+    "partyCode": "L",
+    "value": 4,
+    "motivation": "L vill ha ett starkare, mer federalt EU och vill att unionen ska få mer makt i gränsöverskridande frågor.",
+    "sourceCitation": "Liberalerna, EU/Europeiska unionen (hämtad 2026-06-07)",
+    "sourceUrl": "https://www.liberalerna.se/politik/eu-europeiska-unionen",
+    "quote": "Liberalerna vill därför reformera EU så att unionen blir mer handlingskraftig och bättre rustad för framtidens utmaningar.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "eu-mer-makt",
+    "partyCode": "KD",
+    "value": 2,
+    "motivation": "KD vill ha ett smalare men vassare EU som drar sig tillbaka från vissa områden, alltså inte mer makt generellt.",
+    "sourceCitation": "SVT Valkompass EU-valet 2024, partisvar Kristdemokraterna (hämtad 2026-06-07)",
+    "sourceUrl": "https://valkompass.svt.se/eu-2024/parti/kristdemokraterna/",
+    "quote": "att beslut fattas på bästa ändamålsenliga nivå och att nationers olikheter respekteras i samarbetet",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "eu-mer-makt",
+    "partyCode": "M",
+    "value": 2,
+    "motivation": "M vill att EU fokuserar på gemensamma gränsöverskridande frågor och inte bestämmer för mycket; beslut på lägsta möjliga nivå.",
+    "sourceCitation": "SVT Valkompass EU-valet 2024, partisvar Moderaterna (hämtad 2026-06-07)",
+    "sourceUrl": "https://valkompass.svt.se/eu-2024/parti/moderaterna/",
+    "quote": "EU:s fokus ska ligga på att lösa gemensamma frågor som Sverige och övriga medlemsländerna inte kan hantera på egen hand",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "eu-mer-makt",
+    "partyCode": "SD",
+    "value": 1,
+    "motivation": "SD vill kraftigt minska EU:s makt, begränsa överstatligheten och stoppa maktöverföring till EU.",
+    "sourceCitation": "SVT Valkompass EU-valet 2024, partisvar Sverigedemokraterna (hämtad 2026-06-07)",
+    "sourceUrl": "https://valkompass.svt.se/eu-2024/parti/sverigedemokraterna/",
+    "quote": "Överstatlighet ska begränsas och spärrar mot centralistiska tendenser behövs för att stoppa maktöverföringen.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "eu-euro",
+    "partyCode": "V",
+    "value": 1,
+    "motivation": "V är motståndare till att införa euron och vill behålla en självständig svensk penningpolitik.",
+    "sourceCitation": "Vänsterpartiet, Vår politik A–Ö: EU (hämtad 2026-06-07)",
+    "sourceUrl": "https://www.vansterpartiet.se/var-politik/politik-a-o/eu/",
+    "quote": "Vänsterpartiet är motståndare till att införa euron som valuta i Sverige.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "eu-euro",
+    "partyCode": "S",
+    "value": 1,
+    "motivation": "S vill stå utanför eurosamarbetet och ser ingen anledning att ompröva folkomröstningen 2003.",
+    "sourceCitation": "SVT Valkompass EU-valet 2024, partisvar Socialdemokraterna (hämtad 2026-06-07)",
+    "sourceUrl": "https://valkompass.svt.se/eu-2024/parti/socialdemokraterna/",
+    "quote": "Vi ser i nuläget ingen anledning att ompröva det svenska folkets uttalande i folkomröstningen om EMU.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "eu-euro",
+    "partyCode": "MP",
+    "value": 1,
+    "motivation": "MP vill inte införa euron och respekterar folkomröstningsresultatet; vill behålla självständig penningpolitik.",
+    "sourceCitation": "SVT Valkompass EU-valet 2024, partisvar Miljöpartiet (hämtad 2026-06-07)",
+    "sourceUrl": "https://valkompass.svt.se/eu-2024/parti/miljopartiet/",
+    "quote": "Sverige bör inte införa euron som valuta. Miljöpartiet respekterar folkomröstningsresultatet.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "eu-euro",
+    "partyCode": "C",
+    "value": 2,
+    "motivation": "C säger nej till euron i nuläget men utesluter inte ett framtida införande och vill först tillsätta en utredning.",
+    "sourceCitation": "SVT Valkompass EU-valet 2024, partisvar Centerpartiet (hämtad 2026-06-07)",
+    "sourceUrl": "https://valkompass.svt.se/eu-2024/parti/centerpartiet/",
+    "quote": "Centerpartiet utesluter inte att Sverige kan behöva införa euron i framtiden. Vi vill dock att en utredning tillsätts först som tydligt belyser för- och nackdelar.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "eu-euro",
+    "partyCode": "L",
+    "value": 4,
+    "motivation": "L driver tydligt att Sverige ska införa euron och se det som sista pusselbiten i EU-medlemskapet.",
+    "sourceCitation": "Liberalerna, EU-politik: Euron (hämtad 2026-06-07)",
+    "sourceUrl": "https://www.liberalerna.se/eu-politik/euron",
+    "quote": "Euron är den sista pusselbiten för att vårt land fullt ut ska bli en del av den europeiska gemenskapen.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "eu-euro",
+    "partyCode": "KD",
+    "value": 2,
+    "motivation": "KD vill respektera folkomröstningen 2003 och anser att det för närvarande inte är aktuellt att gå med i eurosamarbetet.",
+    "sourceCitation": "Kristdemokraterna, Vår politik A–Ö: EMU och euron (hämtad 2026-06-07)",
+    "sourceUrl": "https://kristdemokraterna.se/var-politik/politik-a-till-o/emu-och-euron",
+    "quote": "folkomröstningsutfallet från 2003 fortsatt ska respekteras och att det för närvarande inte är aktuellt för Sverige att ansluta sig till eurosamarbetet",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "eu-euro",
+    "partyCode": "M",
+    "value": 2,
+    "motivation": "M anser att medlemskap i euron för närvarande inte är aktuellt och kräver ett stabilare eurosamarbete först.",
+    "sourceCitation": "SVT Valkompass EU-valet 2024, partisvar Moderaterna (hämtad 2026-06-07)",
+    "sourceUrl": "https://valkompass.svt.se/eu-2024/parti/moderaterna/",
+    "quote": "Medlemskap i euron är för närvarande inte aktuellt.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "eu-euro",
+    "partyCode": "SD",
+    "value": 1,
+    "motivation": "SD vill behålla kronan och är emot euron; pekar på att svenska folket röstat nej och vill värna självständig penningpolitik.",
+    "sourceCitation": "SVT Valkompass EU-valet 2024, partisvar Sverigedemokraterna (hämtad 2026-06-07)",
+    "sourceUrl": "https://valkompass.svt.se/eu-2024/parti/sverigedemokraterna/",
+    "quote": "Sverige har folkomröstat om euron och röstat nej. Vår självständiga räntepolitik och penningpolitik har tjänat oss väl.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "eu-forsvarssamarbete",
+    "partyCode": "V",
+    "value": 1,
+    "motivation": "V vill inte föra över mer säkerhets-, försvars- och utrikespolitik till EU och är därför inte drivande för ett tätare EU-försvar.",
+    "sourceCitation": "SVT Valkompass EU-valet 2024, partisvar Vänsterpartiet (hämtad 2026-06-07)",
+    "sourceUrl": "https://valkompass.svt.se/eu-2024/parti/vansterpartiet/",
+    "quote": "Däremot vill vi inte att ännu fler beslut om säkerhets- försvars- och utrikespolitik förs över till EU.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "eu-forsvarssamarbete",
+    "partyCode": "S",
+    "value": 3,
+    "motivation": "S vill ha ett stärkt försvarssamarbete, t.ex. om materielproduktion, men inte ett gemensamt EU-försvar.",
+    "sourceCitation": "SVT Valkompass EU-valet 2024, partisvar Socialdemokraterna (hämtad 2026-06-07)",
+    "sourceUrl": "https://valkompass.svt.se/eu-2024/parti/socialdemokraterna/",
+    "quote": "Vi vill se ett stärkt försvarssamarbete till exempel när det gäller att öka den europeiska produktionen av försvarsmateriel, det är inte samma sak som att vi vill se ett gemensamt EU-försvar.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "eu-forsvarssamarbete",
+    "partyCode": "MP",
+    "value": 3,
+    "motivation": "MP vill att EU stärker försvarsförmågan och vill fortsätta utveckla det militära samarbetet på mellanstatlig nivå.",
+    "sourceCitation": "SVT Valkompass EU-valet 2024, partisvar Miljöpartiet (hämtad 2026-06-07)",
+    "sourceUrl": "https://valkompass.svt.se/eu-2024/parti/miljopartiet/",
+    "quote": "Det finns goda möjligheter att fortsätta utveckla det militära samarbetet på mellanstatlig nivå med andra medlemsstater inom EU.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "eu-forsvarssamarbete",
+    "partyCode": "C",
+    "value": 3,
+    "motivation": "C vill att EU fördjupar sitt försvarspolitiska samarbete, men som komplement till Nato.",
+    "sourceCitation": "SVT Valkompass EU-valet 2024, partisvar Centerpartiet (hämtad 2026-06-07)",
+    "sourceUrl": "https://valkompass.svt.se/eu-2024/parti/centerpartiet/",
+    "quote": "EU behöver fördjupa sitt försvarspolitiska samarbete men det ska komplettera det arbete som sker i Nato.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "eu-forsvarssamarbete",
+    "partyCode": "L",
+    "value": 4,
+    "motivation": "L vill att EU bygger upp en trovärdig gemensam försvarspolitik och är pådrivande för ett tätare europeiskt försvar.",
+    "sourceCitation": "SVT Valkompass EU-valet 2024, partisvar Liberalerna (hämtad 2026-06-07)",
+    "sourceUrl": "https://valkompass.svt.se/eu-2024/parti/liberalerna/",
+    "quote": "EU behöver under de kommande åren som komplement bygga upp en trovärdig, gemensam försvarspolitik.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "eu-forsvarssamarbete",
+    "partyCode": "KD",
+    "value": 3,
+    "motivation": "KD säger nej till en EU-armé men ja till EU som stark säkerhetspolitisk aktör och stärkt materielsamarbete.",
+    "sourceCitation": "SVT Valkompass EU-valet 2024, partisvar Kristdemokraterna (hämtad 2026-06-07)",
+    "sourceUrl": "https://valkompass.svt.se/eu-2024/parti/kristdemokraterna/",
+    "quote": "nej till en EU-armé, men ja till EU som en stark säkerhetspolitisk aktör",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "eu-forsvarssamarbete",
+    "partyCode": "M",
+    "value": 3,
+    "motivation": "M vill fördjupa säkerhets- och försvarssamarbetet i EU som komplement till Nato, men EU ska inte bli en militär allians.",
+    "sourceCitation": "SVT Valkompass EU-valet 2024, partisvar Moderaterna (hämtad 2026-06-07)",
+    "sourceUrl": "https://valkompass.svt.se/eu-2024/parti/moderaterna/",
+    "quote": "EU är och bör inte bli en militär allians.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "eu-forsvarssamarbete",
+    "partyCode": "SD",
+    "value": 1,
+    "motivation": "SD vill att medlemsländerna stärker sina förmågor för att stärka Nato, inte bygga parallella EU-strukturer.",
+    "sourceCitation": "SVT Valkompass EU-valet 2024, partisvar Sverigedemokraterna (hämtad 2026-06-07)",
+    "sourceUrl": "https://valkompass.svt.se/eu-2024/parti/sverigedemokraterna/",
+    "quote": "EU:s medlemsländer behöver stärka sina militära förmågor för att stärka Nato, inte genom att skapa parallella strukturer till Nato.",
+    "confidence": "high"
+  }
+]
