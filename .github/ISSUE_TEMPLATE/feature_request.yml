@@ -1,0 +1,17 @@
+name: Funktionsförslag
+description: Föreslå en ny funktion eller förbättring
+title: "[Förslag]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Vilket problem löser förslaget?
+      description: Beskriv behovet eller problemet.
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Önskad lösning
+      description: Hur tänker du att det skulle fungera?

@@ -1,0 +1,25 @@
+name: Buggrapport
+description: Rapportera ett fel i appen
+title: "[Bugg]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: Vad hände?
+      description: Beskriv felet och vad du förväntade dig skulle hända.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steg för att återskapa
+      placeholder: |
+        1. Gå till ...
+        2. Klicka på ...
+        3. Se felet
+  - type: input
+    id: env
+    attributes:
+      label: Miljö
+      description: Webbläsare och OS, eller om det gäller backend/frontend.
