@@ -74,13 +74,16 @@ och [SOM-institutet/Lunds universitet](https://www.lu.se/artikel/energi-samt-lag
 sjukvård, lag och ordning, migration, klimat/energi, skola och ekonomi väger tyngst, följt
 av arbetsmarknad, försvar, äldreomsorg, bostäder och EU.
 
-> ⚠️ **Partipositionerna är ett UTKAST.** De är ett första utkast baserat på partiernas
-> etablerade hållningar och är markerade `Utkast – verifieras i admin`. Innan publicering
-> ska varje position granskas, justeras och källsättas mot primärkällor (partiprogram,
-> valmanifest, voteringar) via admingränssnittet.
+> ℹ️ **Partipositionerna är källsatta.** De 400 positionerna (50 påståenden × 8 partier) är
+> belagda mot verkliga källor – partiprogram/"Vår politik A–Ö", riksdagsvoteringar, etablerade
+> valkompasser och trovärdig nyhetsrapportering – med full proveniens (ordagrant belägg, URL och
+> konfidens) i `backend/tools/sourcing/sources.json`. Konfidensen fördelar sig **200 high / 147
+> medium / 53 low**; de 53 low-confidence-cellerna listas i `backend/tools/sourcing/NEEDS_REVIEW.md`
+> och bör dubbelkollas i admingränssnittet före publicering.
 
 Innehållet seedas idempotent från `backend/src/Valkompass.Infrastructure/Seed/Content/*.json`.
-Generatorn `backend/tools/gen_content.py` skapar `questions.json` och `positions.json`.
+Generatorn `backend/tools/gen_content.py` skapar `questions.json` och bygger `positions.json` från
+den källsatta `backend/tools/sourcing/sources.json`.
 
 ## Licens
 
