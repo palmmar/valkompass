@@ -13,6 +13,7 @@ public class QuestionConfiguration : IEntityTypeConfiguration<Question>
         b.HasIndex(q => q.ExternalKey).IsUnique();
         b.Property(q => q.Text).HasMaxLength(512).IsRequired();
         b.Property(q => q.Explanation).HasMaxLength(2048);
+        b.Property(q => q.ExplanationSourceUrl).HasMaxLength(512);
 
         b.HasOne(q => q.Category)
             .WithMany(c => c.Questions)

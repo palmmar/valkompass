@@ -33,7 +33,7 @@ public class QuizService(AppDbContext db) : IQuizService
             .ToList();
 
         var questionDtos = questions
-            .Select(q => new QuestionnaireQuestionDto(q.Id, q.Text, q.Explanation, q.Category!.Slug))
+            .Select(q => new QuestionnaireQuestionDto(q.Id, q.Text, q.Explanation, q.ExplanationSourceUrl, q.Category!.Slug))
             .ToList();
 
         return new QuestionnaireDto(categories, questionDtos);
@@ -190,6 +190,7 @@ public class QuizService(AppDbContext db) : IQuizService
                     entity.ExternalKey,
                     entity.Text,
                     entity.Explanation,
+                    entity.ExplanationSourceUrl,
                     entity.Category!.Slug,
                     entity.Category!.Name,
                     (int?)q.UserValue,

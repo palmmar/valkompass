@@ -1,0 +1,386 @@
+[
+  {
+    "questionKey": "sjukvard-statlig-styrning",
+    "explanation": "I dag är de 21 regionerna huvudmän och ansvarar för hälso- och sjukvården. Vårdansvarsutredningen (SOU 2025:62) avrådde 2025 från ett statligt huvudmannaskap, men föreslog ökat statligt ansvar inom vissa områden.",
+    "sourceUrl": "https://www.regeringen.se/rattsliga-dokument/statens-offentliga-utredningar/2025/06/sou-202562/",
+    "sourceCitation": "Regeringen, Ansvaret för hälso- och sjukvården (SOU 2025:62), 2025",
+    "quote": "Kommittén lämnar inget förslag om ett helt statligt huvudmannaskap. Kommittén avråder från ett delvis statligt huvudmannaskap.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "sjukvard-vinstforbud",
+    "explanation": "I dag får privata utförare inom vård, skola och omsorg göra vinst; det finns inget vinstförbud. Riksdagen röstade 2018 nej till regeringens förslag om vinstbegränsning.",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-lagar/dokument/_H501FiU44",
+    "sourceCitation": "Sveriges riksdag, Tillstånd att ta emot offentlig finansiering (Betänkande 2017/18:FiU44), 2018",
+    "quote": "Avslag på propositionen.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "sjukvard-mer-resurser",
+    "explanation": "I dag uppgick utgifterna för hälso- och sjukvård till 719 miljarder kronor 2024, motsvarande 11,2 procent av BNP. Offentliga medel finansierade 86 procent, främst via regionernas skatt.",
+    "sourceUrl": "https://www.scb.se/hitta-statistik/statistik-efter-amne/nationalrakenskaper/nationalrakenskaper/halsorakenskaper/pong/statistiknyhet/halsorakenskaper-2024/",
+    "sourceCitation": "SCB, Hälsoräkenskaper 2024, 2025",
+    "quote": "Utgifter för hälso- och sjukvård uppgick totalt till 719 miljarder kronor år 2024. ... Hälso- och sjukvårdens andel av bruttonationalprodukten, BNP, var 11,2 procent år 2024.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "sjukvard-tandvard",
+    "explanation": "I dag har tandvården ett eget stöd, skilt från sjukvårdens: du betalar själv upp till 3 000 kr/år, får sedan 50 % rabatt (85 % över 15 000 kr) plus ett tandvårdsbidrag. Sjukvårdens högkostnadsskydd är 1 450 kr/år.",
+    "sourceUrl": "https://www.forsakringskassan.se/privatperson/tandvard/tandvardsstod",
+    "sourceCitation": "Försäkringskassan, Tandvårdsstöd, 2026",
+    "quote": "50 procent av de kostnader som överstiger 3 000 kronor ... 85 procent av de kostnader som överstiger 15 000 kronor",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "sjukvard-privata-forsakringar",
+    "explanation": "I dag har närmare 830 000 personer en privat sjukvårdsförsäkring (varav cirka 510 000 betalda av arbetsgivare); marknaden är i huvudsak oreglerad.",
+    "sourceUrl": "https://www.svenskforsakring.se/aktuellt/nyheter/2026/intresset-for-vardforsakringar-fortsatt-hogt/",
+    "sourceCitation": "Svensk Försäkring, Intresset för vårdförsäkringar fortsatt högt, 2026",
+    "quote": "I slutet av 2025 hade närmare 830 000 personer en vårdförsäkring, varav närmare 510 000 var arbetsgivarbetalda.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "lag-skarpta-straff",
+    "explanation": "I april 2026 beslutade regeringen om den största straffreformen sedan brottsbalken: ett 50-tal straffskalor skärps, mängdrabatten avskaffas och dubbla straff införs för gängbrott. Lagarna föreslås gälla från 1 augusti 2026.",
+    "sourceUrl": "https://www.regeringen.se/pressmeddelanden/2026/04/den-storsta-reformen-av-det-svenska-straffsystemet-sedan-brottsbalken-infordes/",
+    "sourceCitation": "Regeringen, Den största reformen av det svenska straffsystemet sedan brottsbalken infördes, 2026",
+    "quote": "Nu gör vi det som borde ha gjorts för länge sedan – vi ökar brottsoffers upprättelse, stärker samhällsskyddet",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "lag-fler-poliser",
+    "explanation": "I mars 2026 fanns cirka 25 280 poliser i Polismyndigheten (och totalt över 38 000 anställda). Polistätheten är den högsta i modern tid och växer med ungefär 1 000 poliser per år.",
+    "sourceUrl": "https://www.polisforbundet.se/polisyrket/hur-manga-poliser-finns-det",
+    "sourceCitation": "Polisförbundet, Hur många poliser finns det?, 2026",
+    "quote": "Det finns 25 280 poliser i Polismyndigheten (mars 2026).",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "lag-visitationszoner",
+    "explanation": "Sedan april 2024 kan polisen besluta om tidsbegränsade säkerhetszoner (visitationszoner) där de får kroppsvisitera personer och söka igenom fordon utan konkret brottsmisstanke. En zon gäller högst två veckor.",
+    "sourceUrl": "https://polisen.se/lagar-och-regler/sakerhetszoner/",
+    "sourceCitation": "Polismyndigheten, Säkerhetszoner, 2024",
+    "quote": "Här får polisen kroppsvisitera personer och söka igenom fordon utan att det finns en konkret misstanke om brott.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "lag-anonyma-vittnen",
+    "explanation": "Sedan 1 januari 2025 är anonyma vittnen tillåtna, men bara i begränsade fall: det krävs påtaglig risk för allvarligt brott mot vittnet och att brottet har minst två års fängelse i straffskalan.",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/proposition/anonyma-vittnen_hc0320/html/",
+    "sourceCitation": "Sveriges riksdag, Anonyma vittnen (Proposition 2024/25:20), 2024",
+    "quote": "Denna lag träder i kraft den 1 januari 2025.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "lag-sankt-straffmyndighet",
+    "explanation": "I dag är straffmyndighetsåldern 15 år; barn under 15 kan inte dömas till straff. En utredning (SOU 2025:11) har föreslagit att sänka åldern till 14 år för grova brott, och regeringen har aviserat ett lagförslag.",
+    "sourceUrl": "https://www.regeringen.se/pressmeddelanden/2026/01/regeringen-foreslar-sankt-straffbarhetsalder-for-allvarliga-brott-och-skarpta-regler-for-unga-lagovertradare/",
+    "sourceCitation": "Regeringen, Regeringen föreslår sänkt straffbarhetsålder för allvarliga brott, 2026",
+    "quote": "förslag om att sänka straffbarhetsåldern till 14 år",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "lag-kameraovervakning",
+    "explanation": "Våren 2025 hade polisen drygt 3 000 kameror i landet. Sedan 1 maj 2025 är tillståndskravet borttaget och polisen får kamerabevaka fler platser med risk för allvarlig brottslighet.",
+    "sourceUrl": "https://polisen.se/om-polisen/polisens-arbete/sa-jobbar-polisen-med-kamerabevakning/",
+    "sourceCitation": "Polismyndigheten, Så jobbar polisen med kamerabevakning, 2025",
+    "quote": "Under våren 2025 beräknas polisen ha drygt 3000 kameror i hela landet.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "migration-faerre-asyl",
+    "explanation": "I dag är asylinvandringen rekordlåg. Under 2025 sökte 6 737 personer asyl i Sverige, ned från 9 645 år 2024 och de lägsta nivåerna sedan SCB:s statistik börjar 2002.",
+    "sourceUrl": "https://www.scb.se/hitta-statistik/sverige-i-siffror/manniskorna-i-sverige/asylsokande-i-sverige/",
+    "sourceCitation": "SCB, Asylsökande i Sverige, 2026",
+    "quote": "Under 2025 sökte 6 737 personer asyl i Sverige, varav 2 772 kvinnor och 3 965 män.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "migration-medborgarskap",
+    "explanation": "Sedan 6 juni 2026 har kraven skärpts: hemvisttiden höjs från fem till åtta år och det krävs godkända kunskaper i svenska och samhället samt egen försörjning.",
+    "sourceUrl": "https://www.regeringen.se/pressmeddelanden/2026/06/nya-krav-for-svenskt-medborgarskap-trader-i-kraft/",
+    "sourceCitation": "Regeringen, Nya krav för svenskt medborgarskap träder i kraft, 2026",
+    "quote": "huvudregeln för kravet på hemvisttid höjs från fem till åtta år",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "migration-arbetskraft",
+    "explanation": "I dag krävs för arbetstillstånd en lön på minst 90 procent av medianlönen, vilket motsvarar ungefär 33 390 kr i månaden. Regeringen kan göra undantag för vissa yrken.",
+    "sourceUrl": "https://www.regeringen.se/pressmeddelanden/2025/10/ny-loneniva-for-arbetskraftsinvandring-och-skarpta-krav-for-anhoriginvandring/",
+    "sourceCitation": "Regeringen, Ny lönenivå för arbetskraftsinvandring och skärpta krav för anhöriginvandring, 2025",
+    "quote": "Det nya kravet för arbetskraftsinvandrare i år skulle motsvara en månadslön på 33 390 kr.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "migration-atervandring",
+    "explanation": "Sedan 1 januari 2026 finns ett kraftigt höjt återvandringsbidrag: 350 000 kr per vuxen och 25 000 kr per barn, högst 600 000 kr per hushåll, för den som frivilligt återvandrar.",
+    "sourceUrl": "https://www.migrationsverket.se/nyhetsarkiv/nyhetsarkiv/2025-10-31-atervandringsbidraget-hojs-den-1-januari-2026.html",
+    "sourceCitation": "Migrationsverket, Återvandringsbidraget höjs den 1 januari 2026, 2025",
+    "quote": "350 000 kronor per vuxen (18 år) och 25 000 kronor per barn",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "migration-sprakkrav-bidrag",
+    "explanation": "I dag finns inget generellt språkkrav för bidrag. Från 1 juli 2026 införs ett aktivitetskrav för försörjningsstöd där språkträning kan ingå, men inget fristående språkprov som villkor.",
+    "sourceUrl": "https://www.regeringen.se/pressmeddelanden/2026/03/regeringens-stora-bidragsreform--forslag-om-bidragstak-och-aktivitetskrav/",
+    "sourceCitation": "Regeringen, Regeringens stora bidragsreform – förslag om bidragstak och aktivitetskrav, 2026",
+    "quote": "Aktiviteterna ska bidra till att öka ... den enskildes språkliga förutsättningar att ta ett arbete",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "migration-utvisning-vandel",
+    "explanation": "I dag kan uppehållstillstånd nekas eller återkallas främst vid brott, säkerhetshot eller oriktiga uppgifter. En utredning (SOU 2025:33) föreslår ett bredare vandelskrav i utlänningslagen.",
+    "sourceUrl": "https://www.regeringen.se/pressmeddelanden/2025/04/utredning-foreslar-skarpta-krav-pa-hederligt-levnadssatt-for-uppehallstillstand-och-okade-mojligheter-till-aterkallelse-av-uppehallstillstand/",
+    "sourceCitation": "Regeringen, Utredning föreslår skärpta krav på hederligt levnadssätt för uppehållstillstånd, 2025",
+    "quote": "ett grundläggande krav på vandel återinförs i utlänningslagen",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "ekonomi-hoginkomstskatt",
+    "explanation": "I dag tas statlig inkomstskatt ut med 20 % på inkomst över skiktgränsen, som 2026 är 643 000 kr/år (brytpunkt ca 660 400 kr). Den extra värnskatten avskaffades 2020, så det finns bara en nivå.",
+    "sourceUrl": "https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html",
+    "sourceCitation": "Skatteverket, Belopp och procent inkomstår 2026, 2026",
+    "quote": "På den beskattningsbara förvärvsinkomsten som överstiger 643 000 kronor är den statliga inkomstskatten 20 procent.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "ekonomi-formogenhetsskatt",
+    "explanation": "I dag finns ingen förmögenhetsskatt i Sverige. Den avskaffades den 1 januari 2007; dessförinnan togs den ut med 1,5 % på förmögenheter över vissa fribelopp.",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/slopad-formogenhetsskatt-och-begransad-avdragsratt_gv01sku15/",
+    "sourceCitation": "Sveriges riksdag, Slopad förmögenhetsskatt (Betänkande 2007/08:SkU15), 2007",
+    "quote": "Slopad förmögenhetsskatt och begränsad avdragsrätt för privat pensionssparande",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "ekonomi-sankt-skatt-arbete",
+    "explanation": "I dag betalar de flesta främst kommunal inkomstskatt på arbete; den genomsnittliga totala kommunalskatten är 2026 cirka 32,38 %. Dessutom minskar jobbskatteavdraget skatten på arbetsinkomster.",
+    "sourceUrl": "https://www.scb.se/hitta-statistik/statistik-efter-amne/offentlig-ekonomi/finanser-for-den-kommunala-sektorn/kommunalskatterna/pong/statistiknyhet/kommunalskatterna-2026/",
+    "sourceCitation": "SCB, Kommunalskatterna 2026, 2025",
+    "quote": "Den genomsnittliga totala kommunala skattesatsen ... uppgår till 32,38 procent.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "ekonomi-drivmedelsskatt",
+    "explanation": "I dag består skatten på bensin av energiskatt och koldioxidskatt. Efter flera sänkningar är de 2026 cirka 0,70 kr/l (energiskatt) och 3,27 kr/l (koldioxidskatt); ytterligare tillfälliga sänkningar har aviserats.",
+    "sourceUrl": "https://www.ekonomifakta.se/sakomraden/energi/styrmedel/bensinskatt_1208679.html",
+    "sourceCitation": "Ekonomifakta, Bensinskatt, 2026",
+    "quote": "Energiskatt: 0,70 kr/l ... Koldioxidskatt: 3,27 kr/l",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "ekonomi-bistand",
+    "explanation": "I dag är biståndet inte längre kopplat till 1 % av BNI. Biståndsramen är ett fast belopp som var 56 miljarder kr/år 2023–2025 och uppgår till 53 miljarder kr/år för 2026–2028.",
+    "sourceUrl": "https://www.regeringen.se/pressmeddelanden/2024/09/regeringen-justerar-bistandsramen-fran-2026/",
+    "sourceCitation": "Regeringen, Regeringen justerar biståndsramen från 2026, 2024",
+    "quote": "Sveriges biståndsbudget kommer från 2026 att uppgå till 53 miljarder kronor per år 2026–2028",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "klimat-karnkraft-utbyggnad",
+    "explanation": "I dag har Sverige sex kärnkraftsreaktorer i drift, på Forsmark (3), Ringhals (2) och Oskarshamn (1). Sedan 1 januari 2024 är taket på max tio reaktorer och kravet på befintliga platser borttaget.",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/ny-karnkraft-i-sverige_hb01nu5/html/",
+    "sourceCitation": "Sveriges riksdag, Ny kärnkraft i Sverige (Betänkande 2023/24:NU5), 2023",
+    "quote": "förbudet mot att tillåta att fler än tio reaktorer är i drift samtidigt",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "klimat-skarpta-mal",
+    "explanation": "I dag är målet att Sverige senast 2045 inte ska ha några nettoutsläpp av växthusgaser, med utsläpp minst 85 % lägre än 1990, plus etappmål till 2030 och 2040. Klimatpolitiska rådet bedömer att målen inte nås med beslutad politik.",
+    "sourceUrl": "https://www.sverigesmiljomal.se/etappmalen/utslapp-av-vaxthusgaser-till-ar-2045/",
+    "sourceCitation": "Sveriges miljömål, Utsläpp av växthusgaser till år 2045, 2025",
+    "quote": "Senast år 2045 ska Sverige inte ha några nettoutsläpp av växthusgaser till atmosfären",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "klimat-vindkraft",
+    "explanation": "I dag står vindkraften för ungefär en femtedel av elproduktionen – cirka 38 TWh, omkring 23 procent av Sveriges elproduktion under 2025.",
+    "sourceUrl": "https://www.energiforetagen.se/medlemsportalen/medlemsnyheter/2026/februari/sa-sag-sveriges-elproduktion-ut-per-elomrade-under-2025/",
+    "sourceCitation": "Energiföretagen Sverige, Så såg Sveriges elproduktion ut per elområde under 2025, 2026",
+    "quote": "Vindkraften minskade ... efter ett ovanligt blåsigt 2024, och produktionen sjönk med 2 TWh eller 5 procent.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "klimat-flygskatt",
+    "explanation": "Det finns ingen flygskatt i dag. Lagen om skatt på flygresor upphörde den 1 juli 2025, och sedan dess betalas ingen flygskatt för resor från svenska flygplatser.",
+    "sourceUrl": "https://www.skatteverket.se/foretag/skatterochavdrag/punktskatter/nyheterinompunktskatter/2024/nyheterinompunktskatter/lagenomskattpaflygresorupphorden1juli2025.5.262c54c219391f2e9633f0f.html",
+    "sourceCitation": "Skatteverket, Lagen om skatt på flygresor upphör den 1 juli 2025, 2024",
+    "quote": "Riksdagen har beslutat att lagen om skatt på flygresor upphör den 1 juli 2025.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "klimat-reduktionsplikt",
+    "explanation": "I dag är reduktionsplikten 10 procent för både bensin och diesel. Nivån sänktes till 6 procent i januari 2024 men höjdes till 10 procent från den 1 juli 2025.",
+    "sourceUrl": "https://www.ekonomifakta.se/sakomraden/energi/styrmedel/reduktionsplikt_1211453.html",
+    "sourceCitation": "Ekonomifakta, Reduktionsplikt, 2025",
+    "quote": "Sedan den 1 juli 2025 är kravet 10 procent för både diesel och bensin.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "skola-friskolor-vinst",
+    "explanation": "I dag får aktiebolag driva skattefinansierade friskolor och dela ut vinst. Läsåret 2024/25 gick cirka 17 procent av grundskoleeleverna i fristående skola och omkring en tredjedel av gymnasieeleverna.",
+    "sourceUrl": "https://www.skolverket.se/statistik-och-utvarderingar/statistik-om-forskola-och-skola/fler-statistiknyheter/statistik/2025-03-26-antalet-elever-i-grundskolan-fortsatter-att-minska",
+    "sourceCitation": "Skolverket, Antalet elever i grundskolan fortsätter att minska, 2025",
+    "quote": "Andelen elever som går i fristående skolor har däremot ökat de senaste åren för att läsåret 2024/25 ligga på 17 procent",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "skola-tidigare-betyg",
+    "explanation": "I dag sätts betyg i grundskolan från och med årskurs 6. Reglerna infördes 2012; tidigare gavs betyg först i årskurs 8.",
+    "sourceUrl": "https://www.skolverket.se/prov-och-bedomning/betyg/fran-bedomningar-till-betyg/terminsbetyg",
+    "sourceCitation": "Skolverket, Terminsbetyg, 2025",
+    "quote": "Lärare sätter terminsbetyg i slutet av varje termin från och med höstterminen i årskurs 6",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "skola-statlig-skola",
+    "explanation": "I dag har skolan kommunalt huvudmannaskap, sedan kommunaliseringen 1991. En statlig utredning har tagit fram underlag för ett möjligt statligt huvudmannaskap, men ansvaret ligger fortfarande hos kommunerna.",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/kommittedirektiv/forutsattningar-for-ett-statligt-huvudmannaskap_h8b1140/",
+    "sourceCitation": "Sveriges riksdag, Förutsättningar för ett statligt huvudmannaskap för skolan (Dir. 2020:140), 2020",
+    "quote": "det ska tas fram ett beslutsunderlag som kan skapa förutsättningar för ett statligt huvudmannaskap för skolan",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "skola-mobilforbud",
+    "explanation": "I dag är privat mobilanvändning som regel förbjuden under lektioner, och rektor får besluta att samla in mobiler vid skoldagens början. Ett nationellt förbud under hela skoldagen föreslås träda i kraft 1 juli 2026.",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/departementsserien/ett-nationellt-mobilforbud-i-de-obligatoriska_hdb49/html/",
+    "sourceCitation": "Regeringskansliet, Ett nationellt mobilförbud i de obligatoriska skolformerna (Ds 2025:9), 2025",
+    "quote": "får en rektor ... besluta att mobiltelefoner ... ska samlas in vid varje skoldags början",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "skola-religiosa-friskolor",
+    "explanation": "I dag är konfessionella (religiösa) friskolor tillåtna men reglerade: religiösa inslag ska vara frivilliga och åtskilda från undervisningen. Förslag om etableringsstopp för nya har lagts men inte blivit lag.",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svar-pa-skriftlig-fraga/problem-pa-religiosa-friskolor_hb121017/",
+    "sourceCitation": "Sveriges riksdag, Svar på skriftlig fråga 2023/24:1017, 2024",
+    "quote": "Det finns i dag inga förslag från regeringen om att införa ett förbud mot religiösa fristående skolor",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "arbete-las",
+    "explanation": "Sedan reformen 1 oktober 2022 krävs \"sakliga skäl\" (i stället för \"saklig grund\") för uppsägning, och alla arbetsgivare får undanta tre personer från turordningen vid arbetsbrist.",
+    "sourceUrl": "https://www.kommunal.se/fragor-om-las",
+    "sourceCitation": "Kommunal, Frågor och svar om förändringar i LAS, 2022",
+    "quote": "Framförallt handlar skillnaden om att det som varit praxis ... skrivs in i lagen.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "arbete-akassa",
+    "explanation": "Sedan den nya inkomstbaserade a-kassan 1 oktober 2025 är högsta ersättningsgrundande inkomst 34 000 kr/mån, vilket ger som mest 80 % = 27 200 kr/mån (ca 1 360 kr/dag) före skatt de första 100 dagarna.",
+    "sourceUrl": "https://www.kommunalsakassa.se/vilka-regler-galler/nya-a-kasseregler-den-1-oktober.html",
+    "sourceCitation": "Kommunals A-kassa, Nya a-kasseregler den 1 oktober, 2025",
+    "quote": "det högsta beloppet du kan få är 80 procent av 34 000 kronor, alltså 27 200 kronor per månad före skatt",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "arbete-bidragstak",
+    "explanation": "I dag finns inget generellt tak för hur mycket bidrag ett hushåll kan få. Regeringen har lagt en proposition om ett bidragstak i försörjningsstödet som föreslås träda i kraft 1 januari 2027.",
+    "sourceUrl": "https://www.regeringen.se/pressmeddelanden/2026/03/regeringens-stora-bidragsreform--forslag-om-bidragstak-och-aktivitetskrav/",
+    "sourceCitation": "Regeringen, Regeringens stora bidragsreform – förslag om bidragstak och aktivitetskrav, 2026",
+    "quote": "Bidragstaket föreslås träda i kraft den 1 januari 2027.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "arbete-arbetstid",
+    "explanation": "I dag är den ordinarie arbetstiden enligt arbetstidslagen högst 40 timmar per vecka, vilket motsvarar en heltid.",
+    "sourceUrl": "https://www.av.se/arbetsmiljoarbete-och-inspektioner/lagar-och-regler-om-arbetsmiljo/om-arbetstidslagen/",
+    "sourceCitation": "Arbetsmiljöverket, Om arbetstidslagen, 2025",
+    "quote": "Arbetstidslagen reglerar bland annat ordinarie arbetstid 40 timmar/vecka (5 §)",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "forsvar-okade-utgifter",
+    "explanation": "I dag motsvarar de svenska försvarsutgifterna cirka 2,4 procent av BNP (2025) enligt Natos beräkning. Regeringen planerar att nå Natos mål om 3,5 procent av BNP till 2030.",
+    "sourceUrl": "https://www.regeringen.se/regeringens-politik/forsvarsbudget/",
+    "sourceCitation": "Regeringen, Försvarsbudget, 2026",
+    "quote": "Regeringen avser att ta de ytterligare steg som krävs för att nå 3,5 procent till 2030.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "forsvar-varnplikt",
+    "explanation": "I dag genomför omkring 8 000–8 500 personer militär grundutbildning med värnplikt per år. Planen är att öka till nära 10 000 inför 2027/28 och 12 000 per år 2032.",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svar-pa-skriftlig-fraga/varnplikt_hd12163/",
+    "sourceCitation": "Sveriges riksdag, Svar på skriftlig fråga 2025/26:163 (Värnplikt), 2026",
+    "quote": "Plikt- och prövningsverket kommer dock att ta ut nära 10 000 värnpliktiga inför grundutbildningsomgången 2027/28",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "forsvar-karnvapen",
+    "explanation": "I dag är Sveriges hållning att det inte finns skäl att ha kärnvapen på svenskt territorium i fredstid. DCA-avtalet med USA reglerar inte kärnvapen, och Sverige behåller bestämmanderätten över verksamhet på sitt territorium.",
+    "sourceUrl": "https://www.regeringen.se/regeringens-politik/militart-forsvar/avtal-om-forsvarssamarbete-med-usa-dca/",
+    "sourceCitation": "Regeringen, Avtal om försvarssamarbete med USA (DCA), 2026",
+    "quote": "det, på samma sätt som i övriga nordiska länder, inte finns skäl att ha kärnvapen på svenskt territorium i fredstid",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "forsvar-ukraina",
+    "explanation": "I dag ger Sverige omfattande militärt stöd till Ukraina – totalt cirka 103 miljarder kronor sedan 2022. Ramen för det militära stödet är 40 miljarder kronor per år för 2026 och 2027.",
+    "sourceUrl": "https://www.regeringen.se/pressmeddelanden/2026/02/luftforsvar-i-fokus-for-nytt-stort-stodpaket-till-ukraina/",
+    "sourceCitation": "Regeringen, Luftförsvar i fokus för nytt stort stödpaket till Ukraina, 2026",
+    "quote": "Med detta stödpaket uppgår nu Sveriges militära stöd till Ukraina till totalt cirka 103 miljarder kronor sedan Rysslands fullskaliga invasion.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "aldre-resurser",
+    "explanation": "I dag drivs och finansieras äldreomsorgen av kommunerna, främst via kommunalskatten. Kommunernas totala kostnad för särskilt boende, hemtjänst och övrig äldreomsorg var 166 miljarder kronor 2024.",
+    "sourceUrl": "https://www.vardforetagarna.se/privat-vardfakta/kapitel/aldreomsorg/",
+    "sourceCitation": "Vårdföretagarna, Äldreomsorg (privat vårdfakta), 2024",
+    "quote": "Kommunernas totala kostnad (det egna åtagandet) för särskilda boenden, hemtjänst och övrig äldreomsorg uppgick 2024 till 166 miljarder kronor.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "aldre-pension",
+    "explanation": "I dag är garantipensionen grundskyddet för den som haft låg eller ingen arbetsinkomst. Som mest är den cirka 11 988 kr/mån före skatt för ensamstående (10 853 kr för gifta), och trappas ned ju högre inkomstgrundad pension man har.",
+    "sourceUrl": "https://www.pensionsmyndigheten.se/forsta-din-pension/sa-fungerar-pensionen/garantipension",
+    "sourceCitation": "Pensionsmyndigheten, Garantipension, 2026",
+    "quote": "Som mest kan garantipensionen bli 11 988 kronor för ensamstående och 10 853 kronor i månaden för gifta.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "aldre-privat-omsorg",
+    "explanation": "I dag drivs en minoritet av äldreomsorgen av privata utförare: cirka 16 procent av brukarna i hemtjänsten och omkring 20 procent på särskilt boende (2024), men andelen varierar stort mellan kommuner.",
+    "sourceUrl": "https://www.vardforetagarna.se/privat-vardfakta/kapitel/aldreomsorg/",
+    "sourceCitation": "Vårdföretagarna, Äldreomsorg (privat vårdfakta), 2024",
+    "quote": "16 procent av alla brukare med hemtjänst har hemtjänst driven av en privat aktör. 21 procent av alla brukare boende på särskilt boende ... bor på ett boende drivet av en privat aktör.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "bostad-hyressattning",
+    "explanation": "I dag sätts hyror för hyresrätter genom bruksvärdessystemet, där hyran baseras på lägenhetens standard, läge och service och bestäms i årliga kollektiva förhandlingar mellan hyresvärdar och Hyresgästföreningen – inte av en fri marknad.",
+    "sourceUrl": "https://www.sverigesallmannytta.se/hyressattning-som-fungerar/",
+    "sourceCitation": "Sveriges Allmännytta, Hyressättning som fungerar, 2025",
+    "quote": "De kollektiva förhandlingarna om hyran mellan hyresvärden och Hyresgästföreningen sker normalt en gång per år",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "bostad-subventioner",
+    "explanation": "I dag finns inget statligt investeringsstöd för att bygga hyresrätter. Riksdagen beslutade 2021 att avveckla stödet, och sedan den 1 januari 2023 beviljas inga nya ansökningar.",
+    "sourceUrl": "https://www.regeringen.se/pressmeddelanden/2022/11/bostadspolitiken-laggs-om/",
+    "sourceCitation": "Regeringen, Bostadspolitiken läggs om, 2022",
+    "quote": "Från och med den 1 januari 2023 kommer inga ansökningar beviljas.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "eu-mer-makt",
+    "explanation": "Sverige är EU-medlem sedan 1995. EU har bara de befogenheter som medlemsländerna tilldelat unionen i fördragen; vissa områden beslutas på EU-nivå (t.ex. handel), andra är delade eller nationella.",
+    "sourceUrl": "https://eur-lex.europa.eu/SV/legal-content/summary/division-of-competences-within-the-european-union.html",
+    "sourceCitation": "EUR-Lex, Uppdelning av befogenheter inom Europeiska unionen, 2024",
+    "quote": "EU har endast de befogenheter (den makt) som man fått tilldelade enligt fördragen. Befogenheter som inte tilldelats EU i fördragen förblir hos medlemsstaterna.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "eu-euro",
+    "explanation": "Sverige behåller kronan. I folkomröstningen 2003 röstade 55,9 procent nej till euron och 42 procent ja, och Sverige har inte anslutit sig till växelkurssamarbetet ERM II.",
+    "sourceUrl": "https://www.val.se/valresultat-och-statistik/folkomrostning-2003",
+    "sourceCitation": "Valmyndigheten, Folkomröstningen om euron 2003, 2003",
+    "quote": "Här kan du se det slutliga resultatet från folkomröstningen om euron den 14 september 2003.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "eu-forsvarssamarbete",
+    "explanation": "Sverige samarbetar om försvar både inom Nato, där Sverige är medlem sedan 7 mars 2024, och inom EU, bland annat genom det permanenta strukturerade samarbetet Pesco.",
+    "sourceUrl": "https://www.regeringen.se/pressmeddelanden/2024/03/sverige-ar-medlem-i-nato/",
+    "sourceCitation": "Regeringen, Sverige är medlem i Nato, 2024",
+    "quote": "Därmed är Sverige medlem i Nato.",
+    "confidence": "high"
+  }
+]

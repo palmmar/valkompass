@@ -112,8 +112,23 @@ export function QuizFlow({ questions, categories }: Props) {
           <div className="space-y-3">
             <Badge variant="secondary">{categoryName(question.categorySlug)}</Badge>
             <h2 className="text-xl font-semibold leading-snug">{question.text}</h2>
-            {question.explanation && (
-              <p className="text-sm text-muted-foreground">{question.explanation}</p>
+            {(question.explanation || question.explanationSourceUrl) && (
+              <p className="text-sm text-muted-foreground">
+                {question.explanation}
+                {question.explanationSourceUrl && (
+                  <>
+                    {question.explanation ? " " : ""}
+                    <a
+                      href={question.explanationSourceUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="whitespace-nowrap underline underline-offset-2"
+                    >
+                      Läs mer ›
+                    </a>
+                  </>
+                )}
+              </p>
             )}
           </div>
 

@@ -11,6 +11,7 @@ export interface QuestionnaireQuestion {
   id: number;
   text: string;
   explanation: string | null;
+  explanationSourceUrl: string | null;
   categorySlug: string;
 }
 
@@ -68,6 +69,7 @@ export interface ResultQuestion {
   externalKey: string;
   text: string;
   explanation: string | null;
+  explanationSourceUrl: string | null;
   categorySlug: string;
   categoryName: string;
   userValue: number | null;

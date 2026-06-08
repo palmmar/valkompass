@@ -51,6 +51,7 @@ export default function EditQuestionPage() {
     externalKey: q.externalKey,
     text: q.text,
     explanation: q.explanation,
+    explanationSourceUrl: q.explanationSourceUrl,
     categoryId: q.categoryId,
     displayOrder: q.displayOrder,
     isActive: q.isActive,

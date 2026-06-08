@@ -108,8 +108,23 @@ export function ResultsView({ doc }: { doc: ResultDocument }) {
                     </span>
                   </AccordionTrigger>
                   <AccordionContent className="space-y-3">
-                    {q.explanation && (
-                      <p className="text-sm text-muted-foreground">{q.explanation}</p>
+                    {(q.explanation || q.explanationSourceUrl) && (
+                      <p className="text-sm text-muted-foreground">
+                        {q.explanation}
+                        {q.explanationSourceUrl && (
+                          <>
+                            {q.explanation ? " " : ""}
+                            <a
+                              href={q.explanationSourceUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="whitespace-nowrap underline underline-offset-2"
+                            >
+                              Läs mer ›
+                            </a>
+                          </>
+                        )}
+                      </p>
                     )}
                     <ul className="divide-y rounded-md border">
                       {parties.map((p) => (

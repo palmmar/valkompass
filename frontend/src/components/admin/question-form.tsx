@@ -48,6 +48,16 @@ export function QuestionForm({
           onChange={(e) => set("explanation", e.target.value || null)}
         />
       </div>
+      <div className="space-y-1.5">
+        <Label htmlFor="explanationSourceUrl">Källänk (Läs mer)</Label>
+        <Input
+          id="explanationSourceUrl"
+          type="url"
+          placeholder="https://…"
+          value={form.explanationSourceUrl ?? ""}
+          onChange={(e) => set("explanationSourceUrl", e.target.value || null)}
+        />
+      </div>
       <div className="grid grid-cols-2 gap-3">
         <div className="space-y-1.5">
           <Label htmlFor="externalKey">Nyckel (externalKey)</Label>

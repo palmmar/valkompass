@@ -81,6 +81,7 @@ public static class SeedData
             {
                 entity.Text = q.Text;
                 entity.Explanation = q.Explanation;
+                entity.ExplanationSourceUrl = q.ExplanationSourceUrl;
                 entity.CategoryId = categoryId;
                 entity.DisplayOrder = q.DisplayOrder;
                 entity.IsActive = true;
@@ -91,6 +92,7 @@ public static class SeedData
                 db.Questions.Add(new Question
                 {
                     ExternalKey = q.ExternalKey, Text = q.Text, Explanation = q.Explanation,
+                    ExplanationSourceUrl = q.ExplanationSourceUrl,
                     CategoryId = categoryId, DisplayOrder = q.DisplayOrder, IsActive = true,
                     CreatedAt = now, UpdatedAt = now,
                 });
@@ -142,6 +144,6 @@ public static class SeedData
 
     private sealed record CategorySeed(string Slug, string Name, string? Description, string? Icon, int DisplayOrder);
     private sealed record PartySeed(string Code, string Name, string FullName, string? ShortDescription, string? Color, int DisplayOrder);
-    private sealed record QuestionSeed(string ExternalKey, string CategorySlug, string Text, string? Explanation, int DisplayOrder);
+    private sealed record QuestionSeed(string ExternalKey, string CategorySlug, string Text, string? Explanation, string? ExplanationSourceUrl, int DisplayOrder);
     private sealed record PositionSeed(string PartyCode, string QuestionKey, int? Value, string? Motivation, string? SourceCitation, string? SourceUrl);
 }

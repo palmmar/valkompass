@@ -30,6 +30,7 @@ export interface AdminQuestion {
   externalKey: string;
   text: string;
   explanation: string | null;
+  explanationSourceUrl: string | null;
   categoryId: number;
   categorySlug: string;
   categoryName: string;
@@ -40,6 +41,7 @@ export interface QuestionInput {
   externalKey: string;
   text: string;
   explanation: string | null;
+  explanationSourceUrl: string | null;
   categoryId: number;
   displayOrder: number;
   isActive: boolean;
