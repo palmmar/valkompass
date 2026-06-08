@@ -15,6 +15,7 @@ import {
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Badge } from "@/components/ui/badge";
 import { Check, Info, Share2, Star } from "lucide-react";
+import { PartyLogo } from "@/components/party-logo";
 import type { ResultDocument, ResultPartyScore } from "@/lib/types";
 import { formatPct, partyColor, scaleShort } from "@/lib/scale";
 
@@ -35,12 +36,7 @@ export function ResultsView({ doc }: { doc: ResultDocument }) {
       {top && (
         <Card>
           <CardContent className="flex items-center gap-4 pt-6">
-            <div
-              className="flex size-14 shrink-0 items-center justify-center rounded-full text-lg font-bold text-white"
-              style={{ backgroundColor: color(top.partyCode) }}
-            >
-              {top.partyCode}
-            </div>
+            <PartyLogo code={top.partyCode} color={color(top.partyCode)} size={56} />
             <div>
               <p className="text-sm text-muted-foreground">Störst överensstämmelse</p>
               <p className="text-lg font-semibold">
@@ -55,7 +51,13 @@ export function ResultsView({ doc }: { doc: ResultDocument }) {
         <h2 className="text-lg font-semibold">Överensstämmelse per parti</h2>
         <div className="space-y-3">
           {doc.overall.map((p) => (
-            <ScoreRow key={p.partyCode} label={name(p.partyCode)} score={p} color={color(p.partyCode)} />
+            <ScoreRow
+              key={p.partyCode}
+              code={p.partyCode}
+              label={name(p.partyCode)}
+              score={p}
+              color={color(p.partyCode)}
+            />
           ))}
         </div>
       </section>
@@ -75,6 +77,7 @@ export function ResultsView({ doc }: { doc: ResultDocument }) {
                   {cat.parties.map((p) => (
                     <ScoreRow
                       key={p.partyCode}
+                      code={p.partyCode}
                       label={name(p.partyCode)}
                       score={p}
                       color={color(p.partyCode)}
@@ -116,10 +119,7 @@ export function ResultsView({ doc }: { doc: ResultDocument }) {
                         <li key={p.partyCode} className="space-y-1 p-3">
                           <div className="flex items-center justify-between gap-2">
                             <span className="flex items-center gap-2 font-medium">
-                              <span
-                                className="inline-block size-3 rounded-full"
-                                style={{ backgroundColor: color(p.partyCode) }}
-                              />
+                              <PartyLogo code={p.partyCode} color={color(p.partyCode)} size={20} />
                               {name(p.partyCode)}
                             </span>
                             <span className="text-sm text-muted-foreground">
@@ -173,10 +173,12 @@ export function ResultsView({ doc }: { doc: ResultDocument }) {
 }
 
 function ScoreRow({
+  code,
   label,
   score,
   color,
 }: {
+  code: string;
   label: string;
   score: ResultPartyScore;
   color: string;
@@ -185,7 +187,10 @@ function ScoreRow({
   return (
     <div className="space-y-1">
       <div className="flex items-center justify-between text-sm">
-        <span className="font-medium">{label}</span>
+        <span className="flex items-center gap-2 font-medium">
+          <PartyLogo code={code} color={color} size={22} />
+          {label}
+        </span>
         <span className="tabular-nums text-muted-foreground">
           {pct == null ? "Otillräckligt underlag" : formatPct(pct)}
         </span>
