@@ -78,23 +78,38 @@ builder.Services.AddRateLimiter(options =>
 
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment())
+// Tillämpa migrations och seeda innehåll i alla miljöer (båda är idempotenta).
+// Krävs för att produktionsdeployer (t.ex. Coolify, som kör Production) ska få
+// ett schema och seedat innehåll – inte bara i utvecklingsläge.
+using (var scope = app.Services.CreateScope())
 {
-    // Tillämpa migrations samt seeda innehåll, roller och bootstrap-admin i utvecklingsläge.
-    using (var scope = app.Services.CreateScope())
-    {
-        var sp = scope.ServiceProvider;
-        var db = sp.GetRequiredService<AppDbContext>();
-        await db.Database.MigrateAsync();
-        await SeedData.SeedContentAsync(db);
+    var sp = scope.ServiceProvider;
+    var db = sp.GetRequiredService<AppDbContext>();
+    await db.Database.MigrateAsync();
+    await SeedData.SeedContentAsync(db);
 
+    // Seeda roller + bootstrap-admin endast om uppgifterna är konfigurerade. I dev
+    // kommer de från appsettings.Development.json; i produktion sätts de via
+    // miljövariablerna AdminUser__Email / AdminUser__Password. Saknas de hoppas
+    // seedningen över (ingen admin med default-lösenord skapas i produktion).
+    var adminEmail = builder.Configuration["AdminUser:Email"];
+    var adminPassword = builder.Configuration["AdminUser:Password"];
+    if (!string.IsNullOrWhiteSpace(adminEmail) && !string.IsNullOrWhiteSpace(adminPassword))
+    {
         var roleManager = sp.GetRequiredService<RoleManager<IdentityRole<Guid>>>();
         var userManager = sp.GetRequiredService<UserManager<ApplicationUser>>();
-        var adminEmail = builder.Configuration["AdminUser:Email"] ?? "admin@valkompass.local";
-        var adminPassword = builder.Configuration["AdminUser:Password"] ?? "Admin123!";
         await IdentitySeed.SeedAsync(roleManager, userManager, adminEmail, adminPassword);
     }
+    else
+    {
+        app.Logger.LogWarning(
+            "Hoppar över admin-seedning: AdminUser:Email/Password saknas. Sätt " +
+            "AdminUser__Email och AdminUser__Password för att skapa en administratör.");
+    }
+}
 
+if (app.Environment.IsDevelopment())
+{
     app.MapOpenApi();
     app.MapScalarApiReference(); // UI på /scalar/v1
 }
@@ -103,6 +118,9 @@ app.UseCors(CorsPolicy);
 app.UseRateLimiter();
 app.UseAuthentication();
 app.UseAuthorization();
+
+// Enkel liveness-endpoint för Coolifys hälsokontroll (GET /health).
+app.MapGet("/health", () => Results.Ok(new { status = "ok" }));
 
 app.MapPublicEndpoints();
 app.MapAuthEndpoints();
