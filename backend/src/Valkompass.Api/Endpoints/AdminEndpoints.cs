@@ -120,6 +120,7 @@ public static class AdminEndpoints
             var entity = new Question
             {
                 ExternalKey = input.ExternalKey, Text = input.Text, Explanation = input.Explanation,
+                ExplanationSourceUrl = input.ExplanationSourceUrl,
                 CategoryId = input.CategoryId, DisplayOrder = input.DisplayOrder, IsActive = input.IsActive,
                 CreatedAt = now, UpdatedAt = now,
             };
@@ -138,6 +139,7 @@ public static class AdminEndpoints
                 return Results.ValidationProblem(Field("categoryId", "Okänd kategori."));
 
             entity.ExternalKey = input.ExternalKey; entity.Text = input.Text; entity.Explanation = input.Explanation;
+            entity.ExplanationSourceUrl = input.ExplanationSourceUrl;
             entity.CategoryId = input.CategoryId; entity.DisplayOrder = input.DisplayOrder; entity.IsActive = input.IsActive;
             entity.UpdatedAt = DateTimeOffset.UtcNow;
             var conflict = await SaveOrConflict(db, "En fråga med samma externalKey finns redan.");
@@ -241,6 +243,6 @@ public static class AdminEndpoints
         new(p.Id, p.Code, p.Name, p.FullName, p.ShortDescription, p.Color, p.DisplayOrder, p.IsActive);
 
     private static AdminQuestionDto Map(Question q) =>
-        new(q.Id, q.ExternalKey, q.Text, q.Explanation, q.CategoryId,
+        new(q.Id, q.ExternalKey, q.Text, q.Explanation, q.ExplanationSourceUrl, q.CategoryId,
             q.Category!.Slug, q.Category!.Name, q.DisplayOrder, q.IsActive);
 }

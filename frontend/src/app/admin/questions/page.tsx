@@ -33,6 +33,7 @@ const EMPTY: QuestionInput = {
   externalKey: "",
   text: "",
   explanation: null,
+  explanationSourceUrl: null,
   categoryId: 0,
   displayOrder: 0,
   isActive: true,

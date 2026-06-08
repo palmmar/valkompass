@@ -38,6 +38,7 @@ public sealed record ResultQuestionDto(
     string ExternalKey,
     string Text,
     string? Explanation,
+    string? ExplanationSourceUrl,
     string CategorySlug,
     string CategoryName,
     int? UserValue,

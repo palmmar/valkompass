@@ -10,6 +10,11 @@ webbkällor: partiprogram/"Vår politik A–Ö", riksdagsvoteringar, etablerade 
 trovärdig nyhetsrapportering). Värdelistan nedan är det ursprungliga UTKASTET och används
 numera bara som fallback för celler som ännu inte finns i sources.json.
 
+Frågornas nulägesbeskrivningar (explanation + explanationSourceUrl) källsätts på samma sätt
+från sourcing/explanations.json för de frågor som är formulerade som en förändring mot i dag
+("A-kassan ska höjas" osv.). Den korta explanation-texten i Q nedan används som fallback för
+frågor som saknas i explanations.json.
+
 Skala: 4 = håller helt med, 3 = delvis med, 2 = delvis emot, 1 = håller inte med, None = oklar.
 Partiordning i value-listan: [V, S, MP, C, L, KD, M, SD]
 """
@@ -257,18 +262,26 @@ def main():
     with open(sources_path, encoding="utf-8") as f:
         src_by = {(s["questionKey"], s["partyCode"]): s for s in json.load(f)}
 
+    # Källsatta nulägesbeskrivningar (verkliga webbkällor). Faller tillbaka på den korta
+    # explanation-texten i Q för frågor som saknas i explanations.json.
+    expl_path = os.path.join(here, "sourcing", "explanations.json")
+    with open(expl_path, encoding="utf-8") as f:
+        expl_by = {e["questionKey"]: e for e in json.load(f)}
+
     questions = []
     positions = []
     order_by_cat = {}
 
     for key, cat, text, expl, values in Q:
         order_by_cat[cat] = order_by_cat.get(cat, 0) + 1
+        e = expl_by.get(key)
         questions.append({
             "externalKey": key,
             "categorySlug": cat,
             "displayOrder": order_by_cat[cat],
             "text": text,
-            "explanation": expl,
+            "explanation": e["explanation"] if e else expl,
+            "explanationSourceUrl": e["sourceUrl"] if e else None,
         })
         for party, value in zip(PARTIES, values):
             src = src_by.get((key, party))
@@ -298,7 +311,9 @@ def main():
         json.dump(positions, f, ensure_ascii=False, indent=2)
         f.write("\n")
 
-    print(f"Wrote {len(questions)} questions and {len(positions)} positions to {content_dir}")
+    sourced_expl = sum(1 for q in questions if q["explanationSourceUrl"])
+    print(f"Wrote {len(questions)} questions ({sourced_expl} med källsatt nuläge) "
+          f"and {len(positions)} positions to {content_dir}")
 
 
 if __name__ == "__main__":

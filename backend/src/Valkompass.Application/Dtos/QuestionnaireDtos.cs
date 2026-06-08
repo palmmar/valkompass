@@ -7,4 +7,4 @@ public sealed record QuestionnaireDto(
 
 public sealed record QuestionnaireCategoryDto(string Slug, string Name, string? Description, int DisplayOrder);
 
-public sealed record QuestionnaireQuestionDto(int Id, string Text, string? Explanation, string CategorySlug);
+public sealed record QuestionnaireQuestionDto(int Id, string Text, string? Explanation, string? ExplanationSourceUrl, string CategorySlug);

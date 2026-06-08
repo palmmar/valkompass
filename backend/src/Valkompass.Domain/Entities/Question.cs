@@ -14,6 +14,9 @@ public class Question
     /// <summary>Förklarande text som visas på resultatsidan (vad frågan egentligen handlar om).</summary>
     public string? Explanation { get; set; }
 
+    /// <summary>Valfri källänk ("Läs mer") till information om nuläget bakom påståendet.</summary>
+    public string? ExplanationSourceUrl { get; set; }
+
     public int CategoryId { get; set; }
     public Category? Category { get; set; }
 

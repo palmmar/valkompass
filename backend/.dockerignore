@@ -1,0 +1,14 @@
+# Byggartefakter och lokala filer ska inte med i build-kontexten.
+**/bin/
+**/obj/
+**/.vs/
+**/.idea/
+**/*.user
+
+# Inte med i runtime-bygget.
+tests/
+tools/
+
+# Docker-filer själva.
+Dockerfile
+.dockerignore
