@@ -26,8 +26,9 @@ cd frontend && npm run build
 ## Bidra med innehåll (frågor och partipositioner)
 
 Innehållet lever i `backend/src/Valkompass.Infrastructure/Seed/Content/*.json` och kan även
-redigeras via admingränssnittet. **Partipositionerna är ett utkast** och behöver granskas
-och källsättas.
+redigeras via admingränssnittet. **Partipositionerna är källsatta** mot verkliga källor (full
+proveniens i `backend/tools/sourcing/sources.json`); de 53 low-confidence-cellerna i
+`backend/tools/sourcing/NEEDS_REVIEW.md` bör dubbelkollas i admin före publicering.
 
 Om du föreslår eller rättar en partiposition:
 
