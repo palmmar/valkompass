@@ -1,4 +1,6 @@
 using Microsoft.EntityFrameworkCore;
+using SixLabors.ImageSharp;
+using SixLabors.ImageSharp.Processing;
 using Valkompass.Application.Dtos;
 using Valkompass.Domain.Entities;
 using Valkompass.Domain.Enums;
@@ -114,21 +116,32 @@ public static class AdminEndpoints
             using var ms = new MemoryStream();
             await file.CopyToAsync(ms);
             var data = ms.ToArray();
-            var contentType = DetectImageType(data);
-            if (contentType is null)
+            if (DetectImageType(data) is null)
                 return Results.ValidationProblem(Field("file", "Endast PNG och WebP stöds."));
+
+            // Skala ner till en rimlig maxstorlek och spara som PNG, så att sidan inte tyngs av
+            // logotyper i full upplösning (visas i 20–56 px). Lagrar de omskalade byten.
+            byte[] png;
+            try
+            {
+                png = await ResizeToPngAsync(data);
+            }
+            catch (ImageFormatException)
+            {
+                return Results.ValidationProblem(Field("file", "Kunde inte läsa bilden."));
+            }
 
             var logo = await db.PartyLogos.FindAsync(id);
             if (logo is null)
             {
                 db.PartyLogos.Add(new PartyLogo
                 {
-                    PartyId = id, Data = data, ContentType = contentType, UpdatedAt = DateTimeOffset.UtcNow,
+                    PartyId = id, Data = png, ContentType = "image/png", UpdatedAt = DateTimeOffset.UtcNow,
                 });
             }
             else
             {
-                logo.Data = data; logo.ContentType = contentType; logo.UpdatedAt = DateTimeOffset.UtcNow;
+                logo.Data = png; logo.ContentType = "image/png"; logo.UpdatedAt = DateTimeOffset.UtcNow;
             }
 
             await db.SaveChangesAsync();
@@ -146,6 +159,25 @@ public static class AdminEndpoints
     }
 
     private const long MaxLogoBytes = 512 * 1024;
+    private const int MaxLogoDimension = 256; // logotyper visas i 20–56 px; 256 räcker även för retina
+
+    /// <summary>Skalar ner bilden så längsta sidan är högst 256 px (skalar aldrig upp) och kodar om till PNG.</summary>
+    private static async Task<byte[]> ResizeToPngAsync(byte[] data)
+    {
+        using var image = Image.Load(data);
+        if (image.Width > MaxLogoDimension || image.Height > MaxLogoDimension)
+        {
+            image.Mutate(c => c.Resize(new ResizeOptions
+            {
+                Mode = ResizeMode.Max,
+                Size = new Size(MaxLogoDimension, MaxLogoDimension),
+            }));
+        }
+
+        using var output = new MemoryStream();
+        await image.SaveAsPngAsync(output);
+        return output.ToArray();
+    }
 
     private static readonly byte[] PngMagic = [0x89, 0x50, 0x4E, 0x47, 0x0D, 0x0A, 0x1A, 0x0A];
 
