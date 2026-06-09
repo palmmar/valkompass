@@ -12,7 +12,6 @@ const MY = 34; // topp/botten-marginal (plats för TAN/GAL)
 const PLOT_W = VIEW_W - 2 * MX;
 const PLOT_H = VIEW_H - 2 * MY;
 const R = 11; // markörradie
-const MIN_SEP = 2 * R + 1; // minsta centrumavstånd innan prickar putas isär
 
 // Inzoomat synfönster. Spannet (8 enheter per axel) rymmer med marginal både alla partier
 // OCH en användares matematiskt mest extrema möjliga position (kalibreringen begränsar den
@@ -28,14 +27,6 @@ const y = (galtan: number) =>
 
 const CX = x(CENTER);
 const CY = y(CENTER);
-
-interface MarkerPos {
-  code: string;
-  econ: number;
-  galtan: number;
-  px: number;
-  py: number;
-}
 
 /** Svart eller vit text beroende på bakgrundsfärgens ljushet. */
 function readableText(hex: string): string {
@@ -56,40 +47,6 @@ function starPoints(cx: number, cy: number, outer: number, inner: number): strin
   return pts.join(" ");
 }
 
-/**
- * Putar isär överlappande markörer (några pixlar) så alla etiketter syns. Rör bara
- * pixelpositionen för visning — de sanna koordinaterna (econ/galtan, tooltip) är oförändrade.
- */
-function resolveOverlaps(points: MarkerPos[]): MarkerPos[] {
-  const p = points.map((o) => ({ ...o }));
-  for (let iter = 0; iter < 80; iter++) {
-    let moved = false;
-    for (let i = 0; i < p.length; i++) {
-      for (let j = i + 1; j < p.length; j++) {
-        const dx = p[j].px - p[i].px;
-        const dy = p[j].py - p[i].py;
-        const d = Math.hypot(dx, dy) || 0.01;
-        if (d < MIN_SEP) {
-          const push = (MIN_SEP - d) / 2;
-          const ux = dx / d;
-          const uy = dy / d;
-          p[i].px -= ux * push;
-          p[i].py -= uy * push;
-          p[j].px += ux * push;
-          p[j].py += uy * push;
-          moved = true;
-        }
-      }
-    }
-    if (!moved) break;
-  }
-  for (const o of p) {
-    o.px = Math.min(MX + PLOT_W - R, Math.max(MX + R, o.px));
-    o.py = Math.min(MY + PLOT_H - R, Math.max(MY + R, o.py));
-  }
-  return p;
-}
-
 export function PoliticalMap({
   questions,
   parties,
@@ -100,20 +57,6 @@ export function PoliticalMap({
   const refByCode = new Map(parties.map((p) => [p.code, p]));
   const user = useMemo(() => placeUser(questions), [questions]);
   const placed = user.econ != null && user.galtan != null;
-
-  const markers = useMemo(
-    () =>
-      resolveOverlaps(
-        Object.entries(PARTY_AXES).map(([code, p]) => ({
-          code,
-          econ: p.econ,
-          galtan: p.galtan,
-          px: x(p.econ),
-          py: y(p.galtan),
-        })),
-      ),
-    [],
-  );
 
   const nearest = useMemo(() => {
     if (!placed) return null;
@@ -174,23 +117,23 @@ export function PoliticalMap({
           </g>
 
           {/* Partier */}
-          {markers.map((m) => {
-            const ref = refByCode.get(m.code);
+          {Object.entries(PARTY_AXES).map(([code, p]) => {
+            const ref = refByCode.get(code);
             const fill = partyColor(ref?.color);
             return (
-              <g key={m.code}>
-                <title>{`${ref?.name ?? m.code} — ekonomi ${m.econ.toFixed(1)}, GAL–TAN ${m.galtan.toFixed(1)}`}</title>
+              <g key={code}>
+                <title>{`${ref?.name ?? code} — ekonomi ${p.econ.toFixed(1)}, GAL–TAN ${p.galtan.toFixed(1)}`}</title>
                 <circle
-                  cx={m.px}
-                  cy={m.py}
+                  cx={x(p.econ)}
+                  cy={y(p.galtan)}
                   r={R}
                   fill={fill}
                   className="stroke-card"
                   strokeWidth={2}
                 />
                 <text
-                  x={m.px}
-                  y={m.py}
+                  x={x(p.econ)}
+                  y={y(p.galtan)}
                   textAnchor="middle"
                   dominantBaseline="central"
                   fontSize="9.5"
@@ -198,7 +141,7 @@ export function PoliticalMap({
                   fill={readableText(fill)}
                   style={{ pointerEvents: "none" }}
                 >
-                  {m.code}
+                  {code}
                 </text>
               </g>
             );
