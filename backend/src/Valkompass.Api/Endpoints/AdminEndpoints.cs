@@ -63,7 +63,10 @@ public static class AdminEndpoints
     {
         admin.MapGet("/parties", async (AppDbContext db) =>
             Results.Ok(await db.Parties.OrderBy(p => p.DisplayOrder)
-                .Select(p => Map(p)).ToListAsync()));
+                .Select(p => new AdminPartyDto(
+                    p.Id, p.Code, p.Name, p.FullName, p.ShortDescription, p.Color, p.DisplayOrder, p.IsActive,
+                    db.PartyLogos.Any(l => l.PartyId == p.Id)))
+                .ToListAsync()));
 
         admin.MapPost("/parties", async (PartyInput input, AppDbContext db) =>
         {
@@ -75,7 +78,7 @@ public static class AdminEndpoints
             };
             db.Parties.Add(entity);
             var conflict = await SaveOrConflict(db, "Ett parti med samma kod finns redan.");
-            return conflict ?? Results.Created($"/api/admin/parties/{entity.Id}", Map(entity));
+            return conflict ?? Results.Created($"/api/admin/parties/{entity.Id}", Map(entity, hasLogo: false));
         });
 
         admin.MapPut("/parties/{id:int}", async (int id, PartyInput input, AppDbContext db) =>
@@ -86,7 +89,9 @@ public static class AdminEndpoints
             entity.ShortDescription = input.ShortDescription; entity.Color = input.Color;
             entity.DisplayOrder = input.DisplayOrder; entity.IsActive = input.IsActive;
             var conflict = await SaveOrConflict(db, "Ett parti med samma kod finns redan.");
-            return conflict ?? Results.Ok(Map(entity));
+            if (conflict is not null) return conflict;
+            var hasLogo = await db.PartyLogos.AnyAsync(l => l.PartyId == entity.Id);
+            return Results.Ok(Map(entity, hasLogo));
         });
 
         admin.MapDelete("/parties/{id:int}", async (int id, AppDbContext db) =>
@@ -96,6 +101,61 @@ public static class AdminEndpoints
             db.Parties.Remove(entity);
             return await SaveOrConflict(db, "Partiet kan inte tas bort.") ?? Results.NoContent();
         }).RequireAuthorization("AdminOnly");
+
+        // Ladda upp/ersätt ett partis logotyp (PNG eller WebP). Lagras som binärdata i DB.
+        admin.MapPost("/parties/{id:int}/logo", async (int id, IFormFile file, AppDbContext db) =>
+        {
+            var party = await db.Parties.FindAsync(id);
+            if (party is null) return Results.NotFound();
+            if (file.Length == 0) return Results.ValidationProblem(Field("file", "Filen är tom."));
+            if (file.Length > MaxLogoBytes)
+                return Results.ValidationProblem(Field("file", "Filen är för stor (max 512 kB)."));
+
+            using var ms = new MemoryStream();
+            await file.CopyToAsync(ms);
+            var data = ms.ToArray();
+            var contentType = DetectImageType(data);
+            if (contentType is null)
+                return Results.ValidationProblem(Field("file", "Endast PNG och WebP stöds."));
+
+            var logo = await db.PartyLogos.FindAsync(id);
+            if (logo is null)
+            {
+                db.PartyLogos.Add(new PartyLogo
+                {
+                    PartyId = id, Data = data, ContentType = contentType, UpdatedAt = DateTimeOffset.UtcNow,
+                });
+            }
+            else
+            {
+                logo.Data = data; logo.ContentType = contentType; logo.UpdatedAt = DateTimeOffset.UtcNow;
+            }
+
+            await db.SaveChangesAsync();
+            return Results.NoContent();
+        }).DisableAntiforgery();
+
+        admin.MapDelete("/parties/{id:int}/logo", async (int id, AppDbContext db) =>
+        {
+            var logo = await db.PartyLogos.FindAsync(id);
+            if (logo is null) return Results.NotFound();
+            db.PartyLogos.Remove(logo);
+            await db.SaveChangesAsync();
+            return Results.NoContent();
+        });
+    }
+
+    private const long MaxLogoBytes = 512 * 1024;
+
+    private static readonly byte[] PngMagic = [0x89, 0x50, 0x4E, 0x47, 0x0D, 0x0A, 0x1A, 0x0A];
+
+    /// <summary>Returnerar MIME-typen om byten är en PNG eller WebP, annars null (validering via magic bytes).</summary>
+    private static string? DetectImageType(byte[] b)
+    {
+        if (b.Length >= 8 && b.AsSpan(0, 8).SequenceEqual(PngMagic)) return "image/png";
+        if (b.Length >= 12 && b[0] == 'R' && b[1] == 'I' && b[2] == 'F' && b[3] == 'F'
+            && b[8] == 'W' && b[9] == 'E' && b[10] == 'B' && b[11] == 'P') return "image/webp";
+        return null;
     }
 
     private static void MapQuestions(RouteGroupBuilder admin)
@@ -239,8 +299,8 @@ public static class AdminEndpoints
     private static AdminCategoryDto Map(Category c) =>
         new(c.Id, c.Slug, c.Name, c.Description, c.Icon, c.DisplayOrder);
 
-    private static AdminPartyDto Map(Party p) =>
-        new(p.Id, p.Code, p.Name, p.FullName, p.ShortDescription, p.Color, p.DisplayOrder, p.IsActive);
+    private static AdminPartyDto Map(Party p, bool hasLogo) =>
+        new(p.Id, p.Code, p.Name, p.FullName, p.ShortDescription, p.Color, p.DisplayOrder, p.IsActive, hasLogo);
 
     private static AdminQuestionDto Map(Question q) =>
         new(q.Id, q.ExternalKey, q.Text, q.Explanation, q.ExplanationSourceUrl, q.CategoryId,
