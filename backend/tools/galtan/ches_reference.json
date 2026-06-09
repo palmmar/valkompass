@@ -1,0 +1,40 @@
+{
+  "_meta": {
+    "source": "Chapel Hill Expert Survey (CHES)",
+    "what": "Oberoende akademisk skattning av partiers positioner, gjord av statsvetare. Används här ENBART för att validera/orientera den data-härledda axeln — inte som indata till partikoordinaterna.",
+    "scale": {
+      "lrecon": "0 = ekonomisk extremvänster, 10 = ekonomisk extremhöger",
+      "galtan": "0 = GAL (frihetlig/grön/postmaterialistisk), 10 = TAN (traditionell/auktoritär/nationalistisk)"
+    },
+    "primary": "2024",
+    "urls": {
+      "2024": "https://www.chesdata.eu/ches-europe",
+      "2019": "https://www.chesdata.eu/2019-chapel-hill-expert-survey"
+    },
+    "citation_2024": "Jolly et al. (2025), The 2024 Chapel Hill Expert Survey on political party positioning in Europe. Sweden (country=16), party means.",
+    "citation_2019": "Jolly et al. (2022), Chapel Hill Expert Survey trend file 1999–2019, Electoral Studies 75:102420. Sweden (country=16), 2019 wave.",
+    "note": "Värden hämtade direkt ur CHES means-CSV och avrundade till 2 decimaler. S lagras i CHES som 'SAP'/'S/SAP'."
+  },
+  "waves": {
+    "2024": {
+      "V":  { "lrecon": 1.89, "galtan": 2.42 },
+      "S":  { "lrecon": 3.68, "galtan": 4.74 },
+      "MP": { "lrecon": 3.16, "galtan": 1.95 },
+      "C":  { "lrecon": 7.84, "galtan": 2.95 },
+      "L":  { "lrecon": 7.32, "galtan": 4.47 },
+      "KD": { "lrecon": 7.26, "galtan": 7.79 },
+      "M":  { "lrecon": 7.89, "galtan": 6.47 },
+      "SD": { "lrecon": 6.32, "galtan": 9.00 }
+    },
+    "2019": {
+      "V":  { "lrecon": 1.76, "galtan": 1.94 },
+      "S":  { "lrecon": 4.12, "galtan": 4.41 },
+      "MP": { "lrecon": 3.94, "galtan": 1.59 },
+      "C":  { "lrecon": 8.00, "galtan": 2.24 },
+      "L":  { "lrecon": 7.12, "galtan": 3.24 },
+      "KD": { "lrecon": 7.24, "galtan": 7.06 },
+      "M":  { "lrecon": 7.71, "galtan": 5.94 },
+      "SD": { "lrecon": 5.59, "galtan": 8.76 }
+    }
+  }
+}

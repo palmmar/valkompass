@@ -1,0 +1,132 @@
+{
+  "method": "signed-mean of centered 1..4 answers per axis, rescaled to 0..10",
+  "chesWave": "2024",
+  "axisLabels": {
+    "econ": "Ekonomi (0=vänster, 10=höger)",
+    "galtan": "GAL-TAN (0=GAL, 10=TAN)"
+  },
+  "calibrationToChes": {
+    "econ": {
+      "slope": 0.6804,
+      "intercept": 1.7903
+    },
+    "galtan": {
+      "slope": 0.6587,
+      "intercept": 1.0762
+    }
+  },
+  "parties": {
+    "V": {
+      "econ": {
+        "data": 0.18,
+        "chesCalibrated": 1.91,
+        "ches": 1.89,
+        "n": 19
+      },
+      "galtan": {
+        "data": 1.17,
+        "chesCalibrated": 1.84,
+        "ches": 2.42,
+        "n": 20
+      }
+    },
+    "S": {
+      "econ": {
+        "data": 2.81,
+        "chesCalibrated": 3.7,
+        "ches": 3.68,
+        "n": 19
+      },
+      "galtan": {
+        "data": 5.67,
+        "chesCalibrated": 4.81,
+        "ches": 4.74,
+        "n": 20
+      }
+    },
+    "MP": {
+      "econ": {
+        "data": 2.11,
+        "chesCalibrated": 3.22,
+        "ches": 3.16,
+        "n": 19
+      },
+      "galtan": {
+        "data": 1.33,
+        "chesCalibrated": 1.95,
+        "ches": 1.95,
+        "n": 20
+      }
+    },
+    "C": {
+      "econ": {
+        "data": 8.25,
+        "chesCalibrated": 7.4,
+        "ches": 7.84,
+        "n": 19
+      },
+      "galtan": {
+        "data": 3.0,
+        "chesCalibrated": 3.05,
+        "ches": 2.95,
+        "n": 20
+      }
+    },
+    "L": {
+      "econ": {
+        "data": 8.6,
+        "chesCalibrated": 7.64,
+        "ches": 7.32,
+        "n": 19
+      },
+      "galtan": {
+        "data": 7.67,
+        "chesCalibrated": 6.13,
+        "ches": 4.47,
+        "n": 20
+      }
+    },
+    "KD": {
+      "econ": {
+        "data": 8.25,
+        "chesCalibrated": 7.4,
+        "ches": 7.26,
+        "n": 19
+      },
+      "galtan": {
+        "data": 9.33,
+        "chesCalibrated": 7.22,
+        "ches": 7.79,
+        "n": 20
+      }
+    },
+    "M": {
+      "econ": {
+        "data": 9.12,
+        "chesCalibrated": 8.0,
+        "ches": 7.89,
+        "n": 19
+      },
+      "galtan": {
+        "data": 9.17,
+        "chesCalibrated": 7.11,
+        "ches": 6.47,
+        "n": 20
+      }
+    },
+    "SD": {
+      "econ": {
+        "data": 6.32,
+        "chesCalibrated": 6.09,
+        "ches": 6.32,
+        "n": 19
+      },
+      "galtan": {
+        "data": 10.0,
+        "chesCalibrated": 7.66,
+        "ches": 9.0,
+        "n": 20
+      }
+    }
+  }
+}
