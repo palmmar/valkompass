@@ -10,6 +10,7 @@ public class AppDbContext(DbContextOptions<AppDbContext> options)
     : IdentityDbContext<ApplicationUser, IdentityRole<Guid>, Guid>(options)
 {
     public DbSet<Party> Parties => Set<Party>();
+    public DbSet<PartyLogo> PartyLogos => Set<PartyLogo>();
     public DbSet<Category> Categories => Set<Category>();
     public DbSet<Question> Questions => Set<Question>();
     public DbSet<PartyPosition> PartyPositions => Set<PartyPosition>();

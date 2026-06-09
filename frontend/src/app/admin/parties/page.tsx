@@ -3,7 +3,14 @@
 import { useState } from "react";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { toast } from "sonner";
-import { createParty, deleteParty, listParties, updateParty } from "@/lib/admin-api";
+import {
+  createParty,
+  deleteParty,
+  deletePartyLogo,
+  listParties,
+  updateParty,
+  uploadPartyLogo,
+} from "@/lib/admin-api";
 import type { AdminParty, PartyInput } from "@/lib/admin-types";
 import { Button } from "@/components/ui/button";
 import {
@@ -116,16 +123,95 @@ export default function PartiesPage() {
             <DialogTitle>{editing === "new" ? "Nytt parti" : "Redigera parti"}</DialogTitle>
           </DialogHeader>
           {editing !== null && (
-            <PartyForm
-              initial={editing === "new" ? EMPTY : editing}
-              busy={save.isPending}
-              onSubmit={(input) =>
-                save.mutate({ id: editing === "new" ? undefined : editing.id, input })
-              }
-            />
+            <div className="space-y-4">
+              {editing !== "new" && <LogoUploader party={editing} />}
+              <PartyForm
+                initial={editing === "new" ? EMPTY : editing}
+                busy={save.isPending}
+                onSubmit={(input) =>
+                  save.mutate({ id: editing === "new" ? undefined : editing.id, input })
+                }
+              />
+            </div>
           )}
         </DialogContent>
       </Dialog>
+    </div>
+  );
+}
+
+function LogoUploader({ party }: { party: AdminParty }) {
+  const queryClient = useQueryClient();
+  const [hasLogo, setHasLogo] = useState(party.hasLogo);
+  const [version, setVersion] = useState(0); // cache-bust efter ändring
+  const [file, setFile] = useState<File | null>(null);
+
+  const upload = useMutation({
+    mutationFn: (f: File) => uploadPartyLogo(party.id, f),
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ["parties"] });
+      setHasLogo(true);
+      setVersion((v) => v + 1);
+      setFile(null);
+      toast.success("Logotyp uppladdad.");
+    },
+    onError: (e) => toast.error(e instanceof Error ? e.message : "Fel."),
+  });
+
+  const remove = useMutation({
+    mutationFn: () => deletePartyLogo(party.id),
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ["parties"] });
+      setHasLogo(false);
+      setVersion((v) => v + 1);
+      toast.success("Logotyp borttagen.");
+    },
+    onError: (e) => toast.error(e instanceof Error ? e.message : "Fel."),
+  });
+
+  return (
+    <div className="space-y-2 rounded-md border p-3">
+      <Label>Logotyp</Label>
+      <div className="flex items-center gap-3">
+        {hasLogo ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={`/api/parties/${party.code}/logo?v=${version}`}
+            alt={`${party.code} logotyp`}
+            className="size-12 rounded-md border object-contain p-1"
+          />
+        ) : (
+          <span className="text-sm text-muted-foreground">Ingen logotyp uppladdad.</span>
+        )}
+      </div>
+      <input
+        type="file"
+        accept="image/png,image/webp"
+        onChange={(e) => setFile(e.target.files?.[0] ?? null)}
+        className="block w-full text-sm text-muted-foreground file:mr-3 file:rounded-md file:border-0 file:bg-secondary file:px-3 file:py-1.5 file:text-sm file:font-medium"
+      />
+      <div className="flex gap-2">
+        <Button
+          type="button"
+          size="sm"
+          disabled={!file || upload.isPending}
+          onClick={() => file && upload.mutate(file)}
+        >
+          {upload.isPending ? "Laddar upp…" : "Ladda upp"}
+        </Button>
+        {hasLogo && (
+          <Button
+            type="button"
+            size="sm"
+            variant="outline"
+            disabled={remove.isPending}
+            onClick={() => remove.mutate()}
+          >
+            Ta bort
+          </Button>
+        )}
+      </div>
+      <p className="text-xs text-muted-foreground">PNG eller WebP, max 512 kB.</p>
     </div>
   );
 }

@@ -5,7 +5,7 @@ public sealed record AdminCategoryDto(int Id, string Slug, string Name, string? 
 public sealed record CategoryInput(string Slug, string Name, string? Description, string? Icon, int DisplayOrder);
 
 // --- Partier ---
-public sealed record AdminPartyDto(int Id, string Code, string Name, string FullName, string? ShortDescription, string? Color, int DisplayOrder, bool IsActive);
+public sealed record AdminPartyDto(int Id, string Code, string Name, string FullName, string? ShortDescription, string? Color, int DisplayOrder, bool IsActive, bool HasLogo);
 public sealed record PartyInput(string Code, string Name, string FullName, string? ShortDescription, string? Color, int DisplayOrder, bool IsActive);
 
 // --- Frågor ---

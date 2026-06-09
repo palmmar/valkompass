@@ -63,6 +63,32 @@ export const updateParty = (id: number, input: PartyInput) =>
 export const deleteParty = (id: number) =>
   req<void>(`/admin/parties/${id}`, { method: "DELETE" });
 
+export const uploadPartyLogo = async (id: number, file: File): Promise<void> => {
+  const body = new FormData();
+  body.append("file", file); // fältnamn "file" matchar IFormFile-parametern i backend
+  // Sätt INTE Content-Type själv – webbläsaren lägger till multipart-gränsen.
+  const res = await fetch(`/api/admin/parties/${id}/logo`, {
+    method: "POST",
+    credentials: "include",
+    body,
+  });
+  if (!res.ok) {
+    const text = await res.text();
+    let message = `Något gick fel (${res.status}).`;
+    try {
+      const data = text ? JSON.parse(text) : null;
+      if (data?.errors) message = Object.values(data.errors).flat().join(" ");
+      else if (data?.message) message = data.message;
+    } catch {
+      /* behåll standardmeddelandet */
+    }
+    throw new ApiError(res.status, message);
+  }
+};
+
+export const deletePartyLogo = (id: number) =>
+  req<void>(`/admin/parties/${id}/logo`, { method: "DELETE" });
+
 // --- Questions ---
 export const listQuestions = () => req<AdminQuestion[]>("/admin/questions");
 export const getQuestion = (id: number) => req<AdminQuestion>(`/admin/questions/${id}`);

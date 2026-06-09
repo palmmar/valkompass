@@ -1,5 +1,7 @@
+using Microsoft.EntityFrameworkCore;
 using Valkompass.Application.Contracts;
 using Valkompass.Application.Dtos;
+using Valkompass.Infrastructure.Persistence;
 
 namespace Valkompass.Api.Endpoints;
 
@@ -8,6 +10,25 @@ public static class PublicEndpoints
     public static IEndpointRouteBuilder MapPublicEndpoints(this IEndpointRouteBuilder app)
     {
         var group = app.MapGroup("/api").WithTags("Public");
+
+        group.MapGet("/parties/{code}/logo", async (string code, AppDbContext db, HttpContext http, CancellationToken ct) =>
+            {
+                var logo = await db.PartyLogos
+                    .Where(l => l.Party!.Code.ToLower() == code.ToLower())
+                    .Select(l => new { l.Data, l.ContentType, l.UpdatedAt })
+                    .FirstOrDefaultAsync(ct);
+                if (logo is null) return Results.NotFound();
+
+                var etag = $"\"{logo.UpdatedAt.UtcTicks}\"";
+                if (http.Request.Headers.IfNoneMatch == etag)
+                    return Results.StatusCode(StatusCodes.Status304NotModified);
+
+                http.Response.Headers.CacheControl = "public, max-age=300";
+                http.Response.Headers.ETag = etag;
+                return Results.File(logo.Data, logo.ContentType);
+            })
+            .WithName("GetPartyLogo")
+            .WithSummary("Hämtar ett partis logotyp (PNG/WebP), eller 404 om ingen är uppladdad.");
 
         group.MapGet("/questionnaire", async (IQuizService quiz, CancellationToken ct) =>
                 Results.Ok(await quiz.GetQuestionnaireAsync(ct)))

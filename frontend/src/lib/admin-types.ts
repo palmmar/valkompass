@@ -22,8 +22,9 @@ export interface AdminParty {
   color: string | null;
   displayOrder: number;
   isActive: boolean;
+  hasLogo: boolean;
 }
-export type PartyInput = Omit<AdminParty, "id">;
+export type PartyInput = Omit<AdminParty, "id" | "hasLogo">;
 
 export interface AdminQuestion {
   id: number;

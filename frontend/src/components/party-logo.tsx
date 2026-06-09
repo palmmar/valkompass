@@ -15,8 +15,8 @@ interface PartyLogoProps {
 }
 
 /**
- * Visar ett partis logotyp från `/public/parties/<code>.svg` (gemener).
- * Saknas filen – eller misslyckas laddningen – visas en färgad cirkel med
+ * Visar ett partis logotyp från API:t (`/api/parties/<code>/logo`, uppladdad i admin).
+ * Saknas logotypen (404) – eller misslyckas laddningen – visas en färgad cirkel med
  * partikoden som fallback, samma utseende som innan logotyper fanns.
  */
 export function PartyLogo({ code, color, size = 40, className }: PartyLogoProps) {
@@ -26,7 +26,7 @@ export function PartyLogo({ code, color, size = 40, className }: PartyLogoProps)
 
   // Vid SSR finns <img> redan i HTML:en, så bilden kan hinna faila (t.ex. 404) INNAN
   // React hydrerat och hängt på onError – då missas error-eventet och alt-texten fastnar.
-  // decode() avvisas om bilden inte kan laddas (men löser ut för en giltig SVG oavsett
+  // decode() avvisas om bilden inte kan laddas (men löser ut för en giltig bild oavsett
   // intrinsiska mått), så vi fångar även ett fel som hann ske före hydreringen.
   useEffect(() => {
     const img = imgRef.current;
@@ -50,11 +50,11 @@ export function PartyLogo({ code, color, size = 40, className }: PartyLogoProps)
   }
 
   return (
-    // Statiska SVG:er från /public – plain <img> räcker, ingen next/image-optimering behövs.
+    // Bild från eget API (proxas via next.config) – plain <img> räcker, ingen optimering behövs.
     // eslint-disable-next-line @next/next/no-img-element
     <img
       ref={imgRef}
-      src={`/parties/${code.toLowerCase()}.svg`}
+      src={`/api/parties/${code}/logo`}
       alt={`${code} logotyp`}
       style={box}
       className={cn("shrink-0 object-contain", className)}
