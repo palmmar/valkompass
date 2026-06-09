@@ -16,6 +16,7 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Badge } from "@/components/ui/badge";
 import { Check, Info, Share2, Star } from "lucide-react";
 import { PartyLogo } from "@/components/party-logo";
+import { PoliticalMap } from "@/components/results/political-map";
 import type { ResultDocument, ResultPartyScore } from "@/lib/types";
 import { formatPct, partyColor, scaleShort } from "@/lib/scale";
 
@@ -46,6 +47,16 @@ export function ResultsView({ doc }: { doc: ResultDocument }) {
           </CardContent>
         </Card>
       )}
+
+      <section className="space-y-4">
+        <div>
+          <h2 className="text-lg font-semibold">Politisk karta</h2>
+          <p className="text-sm text-muted-foreground">
+            Var du och partierna står på ekonomi och GAL–TAN.
+          </p>
+        </div>
+        <PoliticalMap questions={doc.questions} parties={doc.parties} />
+      </section>
 
       <section className="space-y-4">
         <h2 className="text-lg font-semibold">Överensstämmelse per parti</h2>
