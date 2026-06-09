@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 import { partyColor } from "@/lib/scale";
 
@@ -21,7 +21,18 @@ interface PartyLogoProps {
  */
 export function PartyLogo({ code, color, size = 40, className }: PartyLogoProps) {
   const [failed, setFailed] = useState(false);
+  const imgRef = useRef<HTMLImageElement>(null);
   const box = { width: size, height: size };
+
+  // Vid SSR finns <img> redan i HTML:en, så bilden kan hinna faila (t.ex. 404) INNAN
+  // React hydrerat och hängt på onError – då missas error-eventet och alt-texten fastnar.
+  // decode() avvisas om bilden inte kan laddas (men löser ut för en giltig SVG oavsett
+  // intrinsiska mått), så vi fångar även ett fel som hann ske före hydreringen.
+  useEffect(() => {
+    const img = imgRef.current;
+    if (!img?.decode) return;
+    img.decode().catch(() => setFailed(true));
+  }, []);
 
   if (failed) {
     return (
@@ -42,6 +53,7 @@ export function PartyLogo({ code, color, size = 40, className }: PartyLogoProps)
     // Statiska SVG:er från /public – plain <img> räcker, ingen next/image-optimering behövs.
     // eslint-disable-next-line @next/next/no-img-element
     <img
+      ref={imgRef}
       src={`/parties/${code.toLowerCase()}.svg`}
       alt={`${code} logotyp`}
       style={box}
