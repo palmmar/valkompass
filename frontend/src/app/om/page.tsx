@@ -38,6 +38,33 @@ export default function OmPage() {
       </section>
 
       <section className="space-y-2">
+        <h2 className="text-xl font-semibold">Hur räknas den politiska kartan?</h2>
+        <p className="text-muted-foreground">
+          På resultatsidan placeras du och partierna på två axlar: en ekonomisk vänster–höger och
+          en GAL–TAN (grön/alternativ/frihetlig ↔ traditionell/auktoritär/nationalistisk). Varje
+          påstående knyts till den axel det laddar på. Ett partis position är medelvärdet av dess
+          källsatta svar på axelns frågor, och din prick beräknas på exakt samma sätt utifrån dina
+          svar – så att du och partierna mäts med samma måttstock.
+        </p>
+        <p className="text-muted-foreground">
+          För att axlarna ska vara oberoende och inte bara en bedömning kalibreras och kontrolleras
+          de mot{" "}
+          <a
+            href="https://www.chesdata.eu/ches-europe"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline underline-offset-2"
+          >
+            Chapel Hill Expert Survey (2024)
+          </a>
+          , en oberoende akademisk skattning där statsvetare placerar partierna. Rangordningen ur
+          våra data stämmer mycket väl med deras. Kartan är ändå en förenkling: axlarna väger tungt
+          på lag och ordning, migration och klimat, frågor om försvar och EU lämnas utanför, och
+          måttet säger inget om hur central en fråga är för ett parti.
+        </p>
+      </section>
+
+      <section className="space-y-2">
         <h2 className="text-xl font-semibold">Neutralitet och källor</h2>
         <p className="text-muted-foreground">
           Valkompassen är obunden och inte knuten till något parti. Partiernas positioner
