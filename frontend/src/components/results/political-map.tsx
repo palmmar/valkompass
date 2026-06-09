@@ -8,9 +8,55 @@ import { AXIS_META, PARTY_AXES, placeUser } from "@/lib/political-axes";
 const VIEW = 380;
 const MARGIN = 52;
 const PLOT = VIEW - 2 * MARGIN;
+const R = 11; // markörradie
+const MIN_SEP = 2 * R + 1; // minsta centrumavstånd innan prickar putas isär
 
 const x = (econ: number) => MARGIN + (econ / 10) * PLOT;
 const y = (galtan: number) => MARGIN + (1 - galtan / 10) * PLOT; // TAN (10) överst
+
+interface MarkerPos {
+  code: string;
+  econ: number;
+  galtan: number;
+  px: number;
+  py: number;
+}
+
+/**
+ * Putar isär överlappande markörer (några pixlar) så alla etiketter syns. Rör bara
+ * pixelpositionen för visning — de sanna koordinaterna (econ/galtan, tooltip) är oförändrade.
+ */
+function resolveOverlaps(points: MarkerPos[]): MarkerPos[] {
+  const p = points.map((o) => ({ ...o }));
+  for (let iter = 0; iter < 80; iter++) {
+    let moved = false;
+    for (let i = 0; i < p.length; i++) {
+      for (let j = i + 1; j < p.length; j++) {
+        const dx = p[j].px - p[i].px;
+        const dy = p[j].py - p[i].py;
+        const d = Math.hypot(dx, dy) || 0.01;
+        if (d < MIN_SEP) {
+          const push = (MIN_SEP - d) / 2;
+          const ux = dx / d;
+          const uy = dy / d;
+          p[i].px -= ux * push;
+          p[i].py -= uy * push;
+          p[j].px += ux * push;
+          p[j].py += uy * push;
+          moved = true;
+        }
+      }
+    }
+    if (!moved) break;
+  }
+  const lo = MARGIN + R;
+  const hi = MARGIN + PLOT - R;
+  for (const o of p) {
+    o.px = Math.min(hi, Math.max(lo, o.px));
+    o.py = Math.min(hi, Math.max(lo, o.py));
+  }
+  return p;
+}
 
 /** Svart eller vit text beroende på bakgrundsfärgens ljushet. */
 function readableText(hex: string): string {
@@ -41,6 +87,20 @@ export function PoliticalMap({
   const refByCode = new Map(parties.map((p) => [p.code, p]));
   const user = useMemo(() => placeUser(questions), [questions]);
   const placed = user.econ != null && user.galtan != null;
+
+  const markers = useMemo(
+    () =>
+      resolveOverlaps(
+        Object.entries(PARTY_AXES).map(([code, p]) => ({
+          code,
+          econ: p.econ,
+          galtan: p.galtan,
+          px: x(p.econ),
+          py: y(p.galtan),
+        })),
+      ),
+    [],
+  );
 
   const nearest = useMemo(() => {
     if (!placed) return null;
@@ -106,23 +166,23 @@ export function PoliticalMap({
           </g>
 
           {/* Partier */}
-          {Object.entries(PARTY_AXES).map(([code, p]) => {
-            const ref = refByCode.get(code);
+          {markers.map((m) => {
+            const ref = refByCode.get(m.code);
             const fill = partyColor(ref?.color);
             return (
-              <g key={code}>
-                <title>{`${ref?.name ?? code} — ekonomi ${p.econ.toFixed(1)}, GAL–TAN ${p.galtan.toFixed(1)}`}</title>
+              <g key={m.code}>
+                <title>{`${ref?.name ?? m.code} — ekonomi ${m.econ.toFixed(1)}, GAL–TAN ${m.galtan.toFixed(1)}`}</title>
                 <circle
-                  cx={x(p.econ)}
-                  cy={y(p.galtan)}
-                  r={11}
+                  cx={m.px}
+                  cy={m.py}
+                  r={R}
                   fill={fill}
                   className="stroke-card"
                   strokeWidth={2}
                 />
                 <text
-                  x={x(p.econ)}
-                  y={y(p.galtan)}
+                  x={m.px}
+                  y={m.py}
                   textAnchor="middle"
                   dominantBaseline="central"
                   fontSize="9.5"
@@ -130,7 +190,7 @@ export function PoliticalMap({
                   fill={readableText(fill)}
                   style={{ pointerEvents: "none" }}
                 >
-                  {code}
+                  {m.code}
                 </text>
               </g>
             );
