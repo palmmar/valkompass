@@ -14,8 +14,20 @@ const PLOT_H = VIEW_H - 2 * MY;
 const R = 11; // markörradie
 const MIN_SEP = 2 * R + 1; // minsta centrumavstånd innan prickar putas isär
 
-const x = (econ: number) => MX + (econ / 10) * PLOT_W;
-const y = (galtan: number) => MY + (1 - galtan / 10) * PLOT_H; // TAN (10) överst
+// Inzoomat synfönster. Spannet (8 enheter per axel) rymmer med marginal både alla partier
+// OCH en användares matematiskt mest extrema möjliga position (kalibreringen begränsar den
+// till econ ~[1.8, 8.6] och galtan ~[1.1, 7.7]) — så ingen prick kan hamna utanför.
+const ECON_DOMAIN: [number, number] = [1, 9];
+const GALTAN_DOMAIN: [number, number] = [0.5, 8.5];
+const CENTER = 5; // politiskt mittvärde på den kalibrerade 0–10-skalan
+
+const x = (econ: number) =>
+  MX + ((econ - ECON_DOMAIN[0]) / (ECON_DOMAIN[1] - ECON_DOMAIN[0])) * PLOT_W;
+const y = (galtan: number) =>
+  MY + (1 - (galtan - GALTAN_DOMAIN[0]) / (GALTAN_DOMAIN[1] - GALTAN_DOMAIN[0])) * PLOT_H; // TAN överst
+
+const CX = x(CENTER);
+const CY = y(CENTER);
 
 interface MarkerPos {
   code: string;
@@ -141,27 +153,22 @@ export function PoliticalMap({
             className="fill-muted/30 stroke-border"
           />
           <g className="stroke-border" strokeDasharray="4 4">
-            <line x1={MX} y1={MY + PLOT_H / 2} x2={MX + PLOT_W} y2={MY + PLOT_H / 2} />
-            <line x1={MX + PLOT_W / 2} y1={MY} x2={MX + PLOT_W / 2} y2={MY + PLOT_H} />
+            <line x1={MX} y1={CY} x2={MX + PLOT_W} y2={CY} />
+            <line x1={CX} y1={MY} x2={CX} y2={MY + PLOT_H} />
           </g>
 
           {/* Axeletiketter vid kryssets armar */}
           <g className="fill-muted-foreground" fontSize="12">
-            <text x={MX - 6} y={MY + PLOT_H / 2} textAnchor="end" dominantBaseline="middle">
+            <text x={MX - 6} y={CY} textAnchor="end" dominantBaseline="middle">
               {AXIS_META.econ.low}
             </text>
-            <text
-              x={MX + PLOT_W + 6}
-              y={MY + PLOT_H / 2}
-              textAnchor="start"
-              dominantBaseline="middle"
-            >
+            <text x={MX + PLOT_W + 6} y={CY} textAnchor="start" dominantBaseline="middle">
               {AXIS_META.econ.high}
             </text>
-            <text x={MX + PLOT_W / 2} y={MY - 10} textAnchor="middle">
+            <text x={CX} y={MY - 10} textAnchor="middle">
               {AXIS_META.galtan.high}
             </text>
-            <text x={MX + PLOT_W / 2} y={MY + PLOT_H + 18} textAnchor="middle">
+            <text x={CX} y={MY + PLOT_H + 18} textAnchor="middle">
               {AXIS_META.galtan.low}
             </text>
           </g>
