@@ -247,8 +247,17 @@ export function PoliticalMap({
 
       <p className="text-xs text-muted-foreground">
         Axlarna är härledda ur partiernas källsatta svar och kalibrerade mot forskningens
-        partiplaceringar (Chapel Hill Expert Survey). Din prick beräknas ur dina egna svar med
-        samma metod. En förenkling av en mångfacetterad verklighet.
+        partiplaceringar:{" "}
+        <a
+          href="https://www.chesdata.eu/ches-europe"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline underline-offset-2"
+        >
+          Chapel Hill Expert Survey (2024)
+        </a>
+        . Din prick beräknas ur dina egna svar med samma metod. En förenkling av en
+        mångfacetterad verklighet.
       </p>
     </div>
   );
