@@ -4,6 +4,7 @@ import { useMemo } from "react";
 import type { ResultPartyRef, ResultQuestion } from "@/lib/types";
 import { partyColor } from "@/lib/scale";
 import { AXIS_META, PARTY_AXES, placeUser } from "@/lib/political-axes";
+import { PartyLogo } from "@/components/party-logo";
 
 const VIEW_W = 440;
 const VIEW_H = 300;
@@ -11,7 +12,7 @@ const MX = 54; // sidmarginal (plats för Vänster/Höger)
 const MY = 34; // topp/botten-marginal (plats för TAN/GAL)
 const PLOT_W = VIEW_W - 2 * MX;
 const PLOT_H = VIEW_H - 2 * MY;
-const R = 11; // markörradie
+const MARKER = 26; // markörstorlek (viewBox-enheter) – ungefär dagens pricks fotavtryck
 
 // Inzoomat synfönster. Spannet (8 enheter per axel) rymmer med marginal både alla partier
 // OCH en användares matematiskt mest extrema möjliga position (kalibreringen begränsar den
@@ -27,15 +28,6 @@ const y = (galtan: number) =>
 
 const CX = x(CENTER);
 const CY = y(CENTER);
-
-/** Svart eller vit text beroende på bakgrundsfärgens ljushet. */
-function readableText(hex: string): string {
-  const h = hex.replace("#", "");
-  const r = parseInt(h.slice(0, 2), 16);
-  const g = parseInt(h.slice(2, 4), 16);
-  const b = parseInt(h.slice(4, 6), 16);
-  return (0.299 * r + 0.587 * g + 0.114 * b) / 255 > 0.62 ? "#1a1a1a" : "#ffffff";
-}
 
 function starPoints(cx: number, cy: number, outer: number, inner: number): string {
   const pts: string[] = [];
@@ -116,34 +108,34 @@ export function PoliticalMap({
             </text>
           </g>
 
-          {/* Partier */}
+          {/* Partier – logotyp (med cirkel-fallback) i en foreignObject, skalar med kartan */}
           {Object.entries(PARTY_AXES).map(([code, p]) => {
             const ref = refByCode.get(code);
-            const fill = partyColor(ref?.color);
+            const name = ref?.name ?? code;
+            const label = `${name} — ekonomi ${p.econ.toFixed(1)}, GAL–TAN ${p.galtan.toFixed(1)}`;
             return (
-              <g key={code}>
-                <title>{`${ref?.name ?? code} — ekonomi ${p.econ.toFixed(1)}, GAL–TAN ${p.galtan.toFixed(1)}`}</title>
-                <circle
-                  cx={x(p.econ)}
-                  cy={y(p.galtan)}
-                  r={R}
-                  fill={fill}
-                  className="stroke-card"
-                  strokeWidth={2}
-                />
-                <text
-                  x={x(p.econ)}
-                  y={y(p.galtan)}
-                  textAnchor="middle"
-                  dominantBaseline="central"
-                  fontSize="9.5"
-                  fontWeight="700"
-                  fill={readableText(fill)}
-                  style={{ pointerEvents: "none" }}
+              <foreignObject
+                key={code}
+                x={x(p.econ) - MARKER / 2}
+                y={y(p.galtan) - MARKER / 2}
+                width={MARKER}
+                height={MARKER}
+              >
+                <div
+                  title={label}
+                  role="img"
+                  aria-label={label}
+                  tabIndex={0}
+                  className="flex size-full items-center justify-center overflow-hidden rounded-full border bg-card"
                 >
-                  {code}
-                </text>
-              </g>
+                  <PartyLogo
+                    code={code}
+                    color={partyColor(ref?.color)}
+                    size={MARKER}
+                    className="object-contain"
+                  />
+                </div>
+              </foreignObject>
             );
           })}
 
