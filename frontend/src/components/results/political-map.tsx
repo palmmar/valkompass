@@ -5,14 +5,17 @@ import type { ResultPartyRef, ResultQuestion } from "@/lib/types";
 import { partyColor } from "@/lib/scale";
 import { AXIS_META, PARTY_AXES, placeUser } from "@/lib/political-axes";
 
-const VIEW = 380;
-const MARGIN = 52;
-const PLOT = VIEW - 2 * MARGIN;
+const VIEW_W = 440;
+const VIEW_H = 300;
+const MX = 54; // sidmarginal (plats för Vänster/Höger)
+const MY = 34; // topp/botten-marginal (plats för TAN/GAL)
+const PLOT_W = VIEW_W - 2 * MX;
+const PLOT_H = VIEW_H - 2 * MY;
 const R = 11; // markörradie
 const MIN_SEP = 2 * R + 1; // minsta centrumavstånd innan prickar putas isär
 
-const x = (econ: number) => MARGIN + (econ / 10) * PLOT;
-const y = (galtan: number) => MARGIN + (1 - galtan / 10) * PLOT; // TAN (10) överst
+const x = (econ: number) => MX + (econ / 10) * PLOT_W;
+const y = (galtan: number) => MY + (1 - galtan / 10) * PLOT_H; // TAN (10) överst
 
 interface MarkerPos {
   code: string;
@@ -20,6 +23,25 @@ interface MarkerPos {
   galtan: number;
   px: number;
   py: number;
+}
+
+/** Svart eller vit text beroende på bakgrundsfärgens ljushet. */
+function readableText(hex: string): string {
+  const h = hex.replace("#", "");
+  const r = parseInt(h.slice(0, 2), 16);
+  const g = parseInt(h.slice(2, 4), 16);
+  const b = parseInt(h.slice(4, 6), 16);
+  return (0.299 * r + 0.587 * g + 0.114 * b) / 255 > 0.62 ? "#1a1a1a" : "#ffffff";
+}
+
+function starPoints(cx: number, cy: number, outer: number, inner: number): string {
+  const pts: string[] = [];
+  for (let i = 0; i < 10; i++) {
+    const a = (-90 + i * 36) * (Math.PI / 180);
+    const r = i % 2 === 0 ? outer : inner;
+    pts.push(`${(cx + r * Math.cos(a)).toFixed(1)},${(cy + r * Math.sin(a)).toFixed(1)}`);
+  }
+  return pts.join(" ");
 }
 
 /**
@@ -49,32 +71,11 @@ function resolveOverlaps(points: MarkerPos[]): MarkerPos[] {
     }
     if (!moved) break;
   }
-  const lo = MARGIN + R;
-  const hi = MARGIN + PLOT - R;
   for (const o of p) {
-    o.px = Math.min(hi, Math.max(lo, o.px));
-    o.py = Math.min(hi, Math.max(lo, o.py));
+    o.px = Math.min(MX + PLOT_W - R, Math.max(MX + R, o.px));
+    o.py = Math.min(MY + PLOT_H - R, Math.max(MY + R, o.py));
   }
   return p;
-}
-
-/** Svart eller vit text beroende på bakgrundsfärgens ljushet. */
-function readableText(hex: string): string {
-  const h = hex.replace("#", "");
-  const r = parseInt(h.slice(0, 2), 16);
-  const g = parseInt(h.slice(2, 4), 16);
-  const b = parseInt(h.slice(4, 6), 16);
-  return (0.299 * r + 0.587 * g + 0.114 * b) / 255 > 0.62 ? "#1a1a1a" : "#ffffff";
-}
-
-function starPoints(cx: number, cy: number, outer: number, inner: number): string {
-  const pts: string[] = [];
-  for (let i = 0; i < 10; i++) {
-    const a = (-90 + i * 36) * (Math.PI / 180);
-    const r = i % 2 === 0 ? outer : inner;
-    pts.push(`${(cx + r * Math.cos(a)).toFixed(1)},${(cy + r * Math.sin(a)).toFixed(1)}`);
-  }
-  return pts.join(" ");
 }
 
 export function PoliticalMap({
@@ -121,9 +122,9 @@ export function PoliticalMap({
 
   return (
     <div className="space-y-3">
-      <div className="rounded-lg border bg-card p-2 sm:p-4">
+      <div className="rounded-lg border bg-card p-2 sm:p-3">
         <svg
-          viewBox={`0 0 ${VIEW} ${VIEW}`}
+          viewBox={`0 0 ${VIEW_W} ${VIEW_H}`}
           className="h-auto w-full"
           role="img"
           aria-label={`Politisk karta. ${desc}`}
@@ -132,35 +133,35 @@ export function PoliticalMap({
 
           {/* Plotyta + kvadrantkryss */}
           <rect
-            x={MARGIN}
-            y={MARGIN}
-            width={PLOT}
-            height={PLOT}
+            x={MX}
+            y={MY}
+            width={PLOT_W}
+            height={PLOT_H}
             rx={8}
             className="fill-muted/30 stroke-border"
           />
           <g className="stroke-border" strokeDasharray="4 4">
-            <line x1={MARGIN} y1={MARGIN + PLOT / 2} x2={MARGIN + PLOT} y2={MARGIN + PLOT / 2} />
-            <line x1={MARGIN + PLOT / 2} y1={MARGIN} x2={MARGIN + PLOT / 2} y2={MARGIN + PLOT} />
+            <line x1={MX} y1={MY + PLOT_H / 2} x2={MX + PLOT_W} y2={MY + PLOT_H / 2} />
+            <line x1={MX + PLOT_W / 2} y1={MY} x2={MX + PLOT_W / 2} y2={MY + PLOT_H} />
           </g>
 
           {/* Axeletiketter vid kryssets armar */}
           <g className="fill-muted-foreground" fontSize="12">
-            <text x={MARGIN - 6} y={MARGIN + PLOT / 2} textAnchor="end" dominantBaseline="middle">
+            <text x={MX - 6} y={MY + PLOT_H / 2} textAnchor="end" dominantBaseline="middle">
               {AXIS_META.econ.low}
             </text>
             <text
-              x={MARGIN + PLOT + 6}
-              y={MARGIN + PLOT / 2}
+              x={MX + PLOT_W + 6}
+              y={MY + PLOT_H / 2}
               textAnchor="start"
               dominantBaseline="middle"
             >
               {AXIS_META.econ.high}
             </text>
-            <text x={MARGIN + PLOT / 2} y={MARGIN - 10} textAnchor="middle">
+            <text x={MX + PLOT_W / 2} y={MY - 10} textAnchor="middle">
               {AXIS_META.galtan.high}
             </text>
-            <text x={MARGIN + PLOT / 2} y={MARGIN + PLOT + 18} textAnchor="middle">
+            <text x={MX + PLOT_W / 2} y={MY + PLOT_H + 18} textAnchor="middle">
               {AXIS_META.galtan.low}
             </text>
           </g>
