@@ -30,10 +30,17 @@ public static class PublicEndpoints
             .WithName("GetPartyLogo")
             .WithSummary("Hämtar ett partis logotyp (PNG/WebP), eller 404 om ingen är uppladdad.");
 
-        group.MapGet("/questionnaire", async (IQuizService quiz, CancellationToken ct) =>
-                Results.Ok(await quiz.GetQuestionnaireAsync(ct)))
+        group.MapGet("/questionnaire", async (int? mode, IQuizService quiz, CancellationToken ct) =>
+            {
+                if (mode is { } m && !QuizModes.MaxTierByMode.ContainsKey(m))
+                    return Results.ValidationProblem(new Dictionary<string, string[]>
+                    {
+                        ["mode"] = ["Ogiltigt läge. Tillåtna värden: 25, 50, 75."],
+                    });
+                return Results.Ok(await quiz.GetQuestionnaireAsync(mode, ct));
+            })
             .WithName("GetQuestionnaire")
-            .WithSummary("Hämtar det aktiva frågeformuläret (utan partipositioner).");
+            .WithSummary("Hämtar det aktiva frågeformuläret (utan partipositioner). ?mode=25|50|75 styr antalet frågor.");
 
         group.MapPost("/quiz/results", async (SubmitQuizRequest request, IQuizService quiz, CancellationToken ct) =>
             {

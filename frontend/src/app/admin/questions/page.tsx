@@ -36,6 +36,7 @@ const EMPTY: QuestionInput = {
   explanationSourceUrl: null,
   categoryId: 0,
   displayOrder: 0,
+  tier: 3,
   isActive: true,
 };
 

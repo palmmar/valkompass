@@ -1,0 +1,446 @@
+{
+  "sources": [
+    {
+      "questionKey": "bostad-ranteavdrag",
+      "partyCode": "V",
+      "value": 4,
+      "motivation": "V vill att ränteavdragen trappas ned på samtliga lån, inklusive bolån, eftersom avdragen främst gynnar hushåll med stora lån och driver upp skuldsättningen. Partiet har som enda parti föreslagit en konkret nedtrappningstakt.",
+      "sourceCitation": "Vänsterpartiet, Motion 2024/25:3231 med anledning av prop. 2024/25:26 Avtrappat ränteavdrag för lån utan säkerhet, 2024",
+      "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/med-anledning-av-prop-20242526-avtrappat_hc023231/",
+      "quote": null,
+      "confidence": "high"
+    },
+    {
+      "questionKey": "bostad-ranteavdrag",
+      "partyCode": "S",
+      "value": 1,
+      "motivation": "S har inga förslag om att trappa ned ränteavdraget på bolån och är mycket tveksamma till förändringar, med hänvisning till att hushållen har fattat stora ekonomiska beslut utifrån dagens regler.",
+      "sourceCitation": "Finansliv, Flera partier har svängt om ränteavdraget, 2022",
+      "sourceUrl": "https://www.finansliv.se/artikel/flera-partier-har-svangt-om-ranteavdraget/",
+      "quote": "Vi har i dagsläget inga förslag till förändringar i ränteavdragen.",
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "bostad-ranteavdrag",
+      "partyCode": "MP",
+      "value": 3,
+      "motivation": "MP vill på sikt trappa ned ränteavdraget till en lägre nivå som del av en bredare skatte- och bostadsreform, men har inte angett någon tidsplan.",
+      "sourceCitation": "Finansliv, Flera partier har svängt om ränteavdraget, 2022",
+      "sourceUrl": "https://www.finansliv.se/artikel/flera-partier-har-svangt-om-ranteavdraget/",
+      "quote": "På sikt vill vi trappa ned ränteavdraget till en lägre nivå.",
+      "confidence": "high"
+    },
+    {
+      "questionKey": "bostad-ranteavdrag",
+      "partyCode": "C",
+      "value": 2,
+      "motivation": "C har skrotat sina tidigare förslag om nedtrappning och vill i nuläget inte göra några förändringar av ränteavdraget på bolån, men är öppet för att diskutera avdraget inom en bred skattereform.",
+      "sourceCitation": "Finansliv, Flera partier har svängt om ränteavdraget, 2022",
+      "sourceUrl": "https://www.finansliv.se/artikel/flera-partier-har-svangt-om-ranteavdraget/",
+      "quote": "Utifrån hur ränteläget ser ut nu, vill vi i nuläget inte göra några förändringar.",
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "bostad-ranteavdrag",
+      "partyCode": "L",
+      "value": 3,
+      "motivation": "L har länge förespråkat att ränteavdraget trappas ned från 30 till 20 procent under tio år inom ramen för en samlad skattereform, men pausade förslaget när räntorna steg kraftigt. Signalerna har därefter varit delvis motstridiga.",
+      "sourceCitation": "Sverigekredit, Ränteavdraget ifrågasätts – Så vill partierna ändra det, 2026",
+      "sourceUrl": "https://www.sverigekredit.se/nyheter/partiernas-syn-ranteavdrag",
+      "quote": null,
+      "confidence": "low"
+    },
+    {
+      "questionKey": "bostad-ranteavdrag",
+      "partyCode": "KD",
+      "value": 3,
+      "motivation": "KD vill på sikt se en gradvis nedtrappning av ränteavdraget inom en bredare bostads- och skattepolitisk reform, men har velat vänta med en avveckling när hushållens ekonomi är pressad.",
+      "sourceCitation": "Finansliv, Flera partier har svängt om ränteavdraget, 2022",
+      "sourceUrl": "https://www.finansliv.se/artikel/flera-partier-har-svangt-om-ranteavdraget/",
+      "quote": "Vi vill vänta med en avveckling av ränteavdraget.",
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "bostad-ranteavdrag",
+      "partyCode": "M",
+      "value": 1,
+      "motivation": "M säger blankt nej till att trappa ned ränteavdraget på bolån och vill behålla det, med hänvisning till att hushållens ekonomi redan är hårt pressad.",
+      "sourceCitation": "Finansliv, Flera partier har svängt om ränteavdraget, 2022",
+      "sourceUrl": "https://www.finansliv.se/artikel/flera-partier-har-svangt-om-ranteavdraget/",
+      "quote": "Nej vi vill behålla ränteavdraget – hushållens ekonomi är redan oerhört pressad.",
+      "confidence": "high"
+    },
+    {
+      "questionKey": "bostad-ranteavdrag",
+      "partyCode": "SD",
+      "value": 3,
+      "motivation": "SD anser att ränteavdragen successivt behöver avvecklas, men extremt långsamt – omkring en procentenhet per år – för att inte skada hushåll som anpassat sin ekonomi efter dagens regler.",
+      "sourceCitation": "Finansliv, Flera partier har svängt om ränteavdraget, 2022",
+      "sourceUrl": "https://www.finansliv.se/artikel/flera-partier-har-svangt-om-ranteavdraget/",
+      "quote": "Ränteavdragen behöver därför successivt avvecklas.",
+      "confidence": "high"
+    },
+    {
+      "questionKey": "bostad-strandskydd",
+      "partyCode": "V",
+      "value": 1,
+      "motivation": "V röstade nej till lättnaderna i strandskyddet och vill behålla ett starkt skydd, eftersom uppluckring försämrar allmänhetens tillgång till naturen och livsvillkoren för djur och växter.",
+      "sourceCitation": "Miljö- och jordbruksutskottet, Betänkande 2024/25:MJU16 Lättnader i strandskyddet – ett första steg, 2025",
+      "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/lattnader-i-strandskyddet-ett-forsta-steg_hc01mju16/html/",
+      "quote": "allmänhetens tillgänglighet till naturen såväl som livsvillkoren för djur- och växtlivet",
+      "confidence": "high"
+    },
+    {
+      "questionKey": "bostad-strandskydd",
+      "partyCode": "S",
+      "value": 3,
+      "motivation": "S accepterade lättnaderna i strandskyddet i huvudsak och vill se ett mer flexibelt strandskydd med lokala anpassningar, men kräver att allmänhetens fria passage längs stränderna tydligt säkerställs.",
+      "sourceCitation": "Miljö- och jordbruksutskottet, Betänkande 2024/25:MJU16 Lättnader i strandskyddet – ett första steg, 2025",
+      "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/lattnader-i-strandskyddet-ett-forsta-steg_hc01mju16/html/",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "bostad-strandskydd",
+      "partyCode": "MP",
+      "value": 1,
+      "motivation": "MP röstade nej till lättnaderna och anser att ett uppluckrat strandskydd hotar naturvärden och allmänhetens tillgång till stränderna; strandskyddet är en grundläggande del av naturskyddet.",
+      "sourceCitation": "Miljö- och jordbruksutskottet, Betänkande 2024/25:MJU16 Lättnader i strandskyddet – ett första steg, 2025",
+      "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/lattnader-i-strandskyddet-ett-forsta-steg_hc01mju16/html/",
+      "quote": "en grundläggande del av Sveriges allmänna naturskydd",
+      "confidence": "high"
+    },
+    {
+      "questionKey": "bostad-strandskydd",
+      "partyCode": "C",
+      "value": 4,
+      "motivation": "C vill gå längre än regeringens lättnader: avskaffa det generella strandskyddet och flytta makten över strandnära byggande till kommunerna, eftersom ett stelbent strandskydd hämmar landsbygden.",
+      "sourceCitation": "Miljö- och jordbruksutskottet, Betänkande 2024/25:MJU16 Lättnader i strandskyddet – ett första steg, 2025",
+      "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/lattnader-i-strandskyddet-ett-forsta-steg_hc01mju16/html/",
+      "quote": "Ett stelbent strandskydd försvårar för landsbygdsföretag att utveckla sin verksamhet.",
+      "confidence": "high"
+    },
+    {
+      "questionKey": "bostad-strandskydd",
+      "partyCode": "L",
+      "value": 4,
+      "motivation": "L står som regeringsparti bakom propositionen om lättnader i strandskyddet, som undantar fler områden och gör det lättare att bygga strandnära, särskilt på landsbygden.",
+      "sourceCitation": "Regeringen, Proposition 2024/25:102 Lättnader i strandskyddet – ett första steg, 2025",
+      "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/proposition/lattnader-i-strandskyddet-ett-forsta-steg_hc03102/html/",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "bostad-strandskydd",
+      "partyCode": "KD",
+      "value": 4,
+      "motivation": "KD står som regeringsparti bakom propositionen om lättnader i strandskyddet och vill se ett mer differentierat strandskydd som gör det lättare att bygga nära vatten.",
+      "sourceCitation": "Regeringen, Proposition 2024/25:102 Lättnader i strandskyddet – ett första steg, 2025",
+      "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/proposition/lattnader-i-strandskyddet-ett-forsta-steg_hc03102/html/",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "bostad-strandskydd",
+      "partyCode": "M",
+      "value": 4,
+      "motivation": "Den M-ledda regeringen har drivit igenom lättnader i strandskyddet som ett uttalat första steg, med fler undantagna områden och ökade möjligheter att bygga strandnära.",
+      "sourceCitation": "Regeringen, Proposition 2024/25:102 Lättnader i strandskyddet – ett första steg, 2025",
+      "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/proposition/lattnader-i-strandskyddet-ett-forsta-steg_hc03102/html/",
+      "quote": null,
+      "confidence": "high"
+    },
+    {
+      "questionKey": "bostad-strandskydd",
+      "partyCode": "SD",
+      "value": 4,
+      "motivation": "SD stödde lättnaderna i strandskyddet, som bygger på Tidöavtalet, och vill se ännu mer omfattande lättnader med större lokalt inflytande över strandnära byggande.",
+      "sourceCitation": "Miljö- och jordbruksutskottet, Betänkande 2024/25:MJU16 Lättnader i strandskyddet – ett första steg, 2025",
+      "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/lattnader-i-strandskyddet-ett-forsta-steg_hc01mju16/html/",
+      "quote": null,
+      "confidence": "high"
+    },
+    {
+      "questionKey": "eu-gemensam-skuld",
+      "partyCode": "V",
+      "value": 2,
+      "motivation": "V har traditionellt motsatt sig gemensam EU-upplåning och vill i första hand omfördela inom EU:s budget, men har i det försämrade säkerhetsläget sagt sig vara berett att ompröva sin hållning.",
+      "sourceCitation": "SVT Nyheter, Socialdemokraterna och Centerpartiet vill att EU ska låna för upprustning, 2025",
+      "sourceUrl": "https://www.svt.se/nyheter/inrikes/socialdemokraterna-och-centerpartiet-vill-att-eu-ska-lana-for-upprustning",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "eu-gemensam-skuld",
+      "partyCode": "S",
+      "value": 4,
+      "motivation": "S vill att EU ska kunna ta gemensamma lån för försvarssatsningar enligt modell från pandemins SURE-program, så att alla medlemsländer oavsett ekonomi snabbt kan rusta upp.",
+      "sourceCitation": "Socialdemokraterna, S vill se EU-lån för att snabbt stärka och rusta Europa, 2025",
+      "sourceUrl": "https://www.socialdemokraterna.se/nyheter/nyheter/2025-02-20-s-vill-se-eu-lan-for-att-snabbt-starka-och-rusta-europa",
+      "quote": "Ökade möjligheter till EU-lån för försvarssatsningar för att säkerställa att alla EU-länder, oavsett ekonomiska förutsättningar, snabbt kan rusta sina försvar.",
+      "confidence": "high"
+    },
+    {
+      "questionKey": "eu-gemensam-skuld",
+      "partyCode": "MP",
+      "value": 3,
+      "motivation": "MP har svängt och är numera öppet för att gemensamma EU-lån kan krävas för att stötta Ukraina och bygga upp Europas försvarsförmåga, men vill i första hand använda befintliga medel.",
+      "sourceCitation": "SVT Nyheter, Socialdemokraterna och Centerpartiet vill att EU ska låna for upprustning, 2025",
+      "sourceUrl": "https://www.svt.se/nyheter/inrikes/socialdemokraterna-och-centerpartiet-vill-att-eu-ska-lana-for-upprustning",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "eu-gemensam-skuld",
+      "partyCode": "C",
+      "value": 4,
+      "motivation": "C vill att EU ska kunna ta gemensamma lån för att stärka medlemsländernas försvar och stödet till Ukraina; det förändrade säkerhetsläget med ett opålitligt USA har fått partiet att ompröva sitt tidigare motstånd.",
+      "sourceCitation": "SVT Nyheter, Socialdemokraterna och Centerpartiet vill att EU ska låna för upprustning, 2025",
+      "sourceUrl": "https://www.svt.se/nyheter/inrikes/socialdemokraterna-och-centerpartiet-vill-att-eu-ska-lana-for-upprustning",
+      "quote": null,
+      "confidence": "high"
+    },
+    {
+      "questionKey": "eu-gemensam-skuld",
+      "partyCode": "L",
+      "value": 3,
+      "motivation": "L utesluter inte gemensamma EU-lån för att skydda Europa och såg redan i EU-valrörelsen 2024 gemensamma lån för Ukrainastödet som ett tänkbart verktyg, men prioriterar frysta ryska tillgångar som finansiering.",
+      "sourceCitation": "SVT Nyheter, Valkompass EU-valet 2024: EU ska ta gemensamma lån för att öka stödet till Ukraina, 2024",
+      "sourceUrl": "https://valkompass.svt.se/embed-eu-2024/fraga/eu-ska-ta-gemensamma-lan-for-att-oka-stodet-till-ukraina/",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "eu-gemensam-skuld",
+      "partyCode": "KD",
+      "value": 2,
+      "motivation": "KD motsätter sig gemensam EU-upplåning och vill att EU:s budget finansieras genom medlemsavgifter, men utesluter inte att gemensamma åtgärder kan behövas vid akuta kriser på kontinenten.",
+      "sourceCitation": "SVT Nyheter, Valkompass EU-valet 2024: EU ska ta gemensamma lån för att öka stödet till Ukraina, 2024",
+      "sourceUrl": "https://valkompass.svt.se/embed-eu-2024/fraga/eu-ska-ta-gemensamma-lan-for-att-oka-stodet-till-ukraina/",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "eu-gemensam-skuld",
+      "partyCode": "M",
+      "value": 1,
+      "motivation": "M och statsminister Kristersson säger nej till gemensamma EU-lån för försvar och varnar för en skuldunion; partiet vill i stället använda frysta ryska tillgångar och omprioritera i EU-budgeten.",
+      "sourceCitation": "Europaportalen, Kristersson står fast: Inga EU-lån för europeiskt försvar, 2025",
+      "sourceUrl": "https://www.europaportalen.se/2025/01/kristersson-star-fast-inga-eu-lan-forsvaret",
+      "quote": null,
+      "confidence": "high"
+    },
+    {
+      "questionKey": "eu-gemensam-skuld",
+      "partyCode": "SD",
+      "value": 1,
+      "motivation": "SD motsätter sig gemensamma EU-lån och anser att försvaret är ett nationellt ansvar för medlemsländerna; EU bör omfördela inom befintlig budget i stället för att ta upp ny gemensam skuld.",
+      "sourceCitation": "SVT Nyheter, Socialdemokraterna och Centerpartiet vill att EU ska låna för upprustning, 2025",
+      "sourceUrl": "https://www.svt.se/nyheter/inrikes/socialdemokraterna-och-centerpartiet-vill-att-eu-ska-lana-for-upprustning",
+      "quote": "Försvar är en nationell förmåga för medlemsländerna",
+      "confidence": "high"
+    },
+    {
+      "questionKey": "eu-ukraina-medlemskap",
+      "partyCode": "V",
+      "value": 3,
+      "motivation": "V välkomnar att Ukraina närmar sig EU men betonar att det är Ukrainas eget val snarare än något Sverige ska driva, och att vanliga krav på demokrati och rättsstat ska gälla.",
+      "sourceCitation": "Vänsterpartiet, Politik A–Ö: Ukraina, 2024",
+      "sourceUrl": "https://www.vansterpartiet.se/var-politik/politik-a-o/ukraina/",
+      "quote": "Vi stödjer Ukrainas suveränitet och därför dess rätt att själva ta ställning till om man vill närma sig EU eller Nato, söka medlemskap eller ingå associeringsavtal.",
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "eu-ukraina-medlemskap",
+      "partyCode": "S",
+      "value": 4,
+      "motivation": "S anser att det är viktigt för Sveriges och Europas säkerhet att Ukraina kan bli EU-medlem och stödjer medlemskapsprocessen, men utan sänkta krav på demokrati, stabil ekonomi och låg korruption.",
+      "sourceCitation": "SVT Nyheter, Valkompass EU-valet 2024: EU ska utvidgas med fler länder, 2024",
+      "sourceUrl": "https://valkompass.svt.se/embed-eu-2024/fraga/eu-ska-utvidgas-med-fler-lander/",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "eu-ukraina-medlemskap",
+      "partyCode": "MP",
+      "value": 4,
+      "motivation": "MP stödjer uttryckligen Ukrainas ansökan om EU-medlemskap och vill att EU aktivt hjälper landet att uppfylla medlemskapskriterierna och återuppbyggas.",
+      "sourceCitation": "Miljöpartiet, Rysslands invasion mot Ukraina hotar hela Europa, 2022",
+      "sourceUrl": "https://www.mp.se/uppsala/just-nu/rysslands-invasion-mot-ukraina-hotar-hela-europa/",
+      "quote": "Miljöpartiet stöder Ukraina i deras ansökan om att bli medlem i EU.",
+      "confidence": "high"
+    },
+    {
+      "questionKey": "eu-ukraina-medlemskap",
+      "partyCode": "C",
+      "value": 4,
+      "motivation": "C vill att EU utvidgas med länder som uppfyller demokratikraven och varnar för att länder som Ukraina riskerar att hamna under ryskt inflytande om de lämnas utanför unionen.",
+      "sourceCitation": "SVT Nyheter, Valkompass EU-valet 2024: EU ska utvidgas med fler länder, 2024",
+      "sourceUrl": "https://valkompass.svt.se/embed-eu-2024/fraga/eu-ska-utvidgas-med-fler-lander/",
+      "quote": null,
+      "confidence": "high"
+    },
+    {
+      "questionKey": "eu-ukraina-medlemskap",
+      "partyCode": "L",
+      "value": 4,
+      "motivation": "L vill att Ukrainas väg in i EU går snabbt och ser ett medlemskap som ett skydd mot auktoritära makters inflytande; L är det parti som tydligast driver på för en snabb anslutning.",
+      "sourceCitation": "SVT Nyheter, Valkompass EU-valet 2024: EU ska utvidgas med fler länder, 2024",
+      "sourceUrl": "https://valkompass.svt.se/embed-eu-2024/fraga/eu-ska-utvidgas-med-fler-lander/",
+      "quote": null,
+      "confidence": "high"
+    },
+    {
+      "questionKey": "eu-ukraina-medlemskap",
+      "partyCode": "KD",
+      "value": 3,
+      "motivation": "KD är i grunden positivt till utvidgning och stödjer Ukrainas väg mot medlemskap, men betonar att utvidgningen inte får ske till varje pris och att anslutningskriterierna måste vara uppfyllda.",
+      "sourceCitation": "SVT Nyheter, Valkompass EU-valet 2024: EU ska utvidgas med fler länder, 2024",
+      "sourceUrl": "https://valkompass.svt.se/embed-eu-2024/fraga/eu-ska-utvidgas-med-fler-lander/",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "eu-ukraina-medlemskap",
+      "partyCode": "M",
+      "value": 4,
+      "motivation": "Den M-ledda regeringen driver aktivt på för Ukrainas EU-medlemskap, stödjer reformarbetet i merparten av förhandlingskapitlen och verkar för att förhandlingskluster ska öppnas omgående.",
+      "sourceCitation": "Regeringen, Sverige stödjer Ukrainas väg mot EU, 2025",
+      "sourceUrl": "https://www.regeringen.se/regeringens-politik/sveriges-stod-till-ukraina/sverige-stodjer-ukrainas-vag-mot-eu/",
+      "quote": null,
+      "confidence": "high"
+    },
+    {
+      "questionKey": "eu-ukraina-medlemskap",
+      "partyCode": "SD",
+      "value": 1,
+      "motivation": "SD motsätter sig att EU utvidgas och pekar på bristande demokrati, svag rättsstat och korruption i kandidatländerna; partiet vill inte att Sverige driver på för ett ukrainskt medlemskap.",
+      "sourceCitation": "SVT Nyheter, Valkompass EU-valet 2024: EU ska utvidgas med fler länder, 2024",
+      "sourceUrl": "https://valkompass.svt.se/embed-eu-2024/fraga/eu-ska-utvidgas-med-fler-lander/",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "eu-asylpakt",
+      "partyCode": "V",
+      "value": 4,
+      "motivation": "V vill ha ett bindande regelverk som fördelar asylansvaret jämnare mellan EU-länderna, men kritiserar paktens mekanism för att länder kan köpa sig fria från mottagande och för rättsosäkra gränsförfaranden.",
+      "sourceCitation": "Vänsterpartiet, Motion 2025/26:198 EU:s migrationspolitik, 2025",
+      "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/eus-migrationspolitik_hd02198/html/",
+      "quote": "det ligger ett alldeles för stort ansvar på de länder som är människors första ankomstland",
+      "confidence": "high"
+    },
+    {
+      "questionKey": "eu-asylpakt",
+      "partyCode": "S",
+      "value": 4,
+      "motivation": "S röstade ja till EU:s migrations- och asylpakt och har länge krävt att fler EU-länder tar ansvar för asylmottagandet i stället för att några få länder, däribland Sverige, bär huvuddelen.",
+      "sourceCitation": "Europaportalen, Nya EU-regler för asyl- och migration antogs, 2024",
+      "sourceUrl": "https://www.europaportalen.se/2024/04/svag-majoritet-ny-migrationspakt-i-eu-parlamentet",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "eu-asylpakt",
+      "partyCode": "MP",
+      "value": 4,
+      "motivation": "MP vill att asylmottagandet fördelas rättvist mellan EU-länderna men röstade nej till pakten, eftersom dess mekanism låter länder betala sig fria från mottagande och därmed inte ger en jämn ansvarsfördelning.",
+      "sourceCitation": "Miljöpartiet, MP kritisk till EU:s asyl- och migrationspakt, 2024",
+      "sourceUrl": "https://www.mp.se/just-nu/mp-kritisk-till-eus-asyl-och-migrationspakt/",
+      "quote": "Systemet kommer inte att lösa problemet med att länderna i södra Europa tvingas ta ett oproportionerligt stort ansvar för asylmottagandet.",
+      "confidence": "high"
+    },
+    {
+      "questionKey": "eu-asylpakt",
+      "partyCode": "C",
+      "value": 4,
+      "motivation": "C röstade ja till EU:s migrations- och asylpakt och vill ha ett gemensamt europeiskt asylsystem där ansvaret för mottagandet delas solidariskt mellan medlemsländerna.",
+      "sourceCitation": "Europaportalen, Nya EU-regler för asyl- och migration antogs, 2024",
+      "sourceUrl": "https://www.europaportalen.se/2024/04/svag-majoritet-ny-migrationspakt-i-eu-parlamentet",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "eu-asylpakt",
+      "partyCode": "L",
+      "value": 4,
+      "motivation": "L röstade ja till EU:s migrations- och asylpakt och stödjer en gemensam europeisk asylpolitik med solidarisk ansvarsfördelning mellan medlemsländerna.",
+      "sourceCitation": "Europaportalen, Nya EU-regler för asyl- och migration antogs, 2024",
+      "sourceUrl": "https://www.europaportalen.se/2024/04/svag-majoritet-ny-migrationspakt-i-eu-parlamentet",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "eu-asylpakt",
+      "partyCode": "KD",
+      "value": 4,
+      "motivation": "KD röstade ja till pakten med dess solidaritetsmekanism och vill att ansvaret fördelas mellan EU-länderna, men vill samtidigt skärpa regelverket för att minska antalet asylsökande till Europa.",
+      "sourceCitation": "Europaportalen, Nya EU-regler för asyl- och migration antogs, 2024",
+      "sourceUrl": "https://www.europaportalen.se/2024/04/svag-majoritet-ny-migrationspakt-i-eu-parlamentet",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "eu-asylpakt",
+      "partyCode": "M",
+      "value": 4,
+      "motivation": "M har varit pådrivande för paktens solidaritetsmekanism – Tomas Tobé var parlamentets huvudförhandlare – och vill bryta ordningen där ett fåtal länder, inte minst Sverige, burit det stora ansvaret för mottagandet.",
+      "sourceCitation": "SVT Nyheter, SD och M oense om EU:s nya migrationspakt, 2023",
+      "sourceUrl": "https://www.svt.se/nyheter/inrikes/sd-och-m-rostade-motsatt-i-nya-eu-lagen-om-migration",
+      "quote": null,
+      "confidence": "high"
+    },
+    {
+      "questionKey": "eu-asylpakt",
+      "partyCode": "SD",
+      "value": 1,
+      "motivation": "SD röstade nej till hela migrationspakten och motsätter sig att EU-kommissionen genom en gemensam mekanism ska kunna styra hur många asylsökande Sverige tar emot.",
+      "sourceCitation": "SVT Nyheter, SD och M oense om EU:s nya migrationspakt, 2023",
+      "sourceUrl": "https://www.svt.se/nyheter/inrikes/sd-och-m-rostade-motsatt-i-nya-eu-lagen-om-migration",
+      "quote": "ge EU-kommissionen möjlighet att diktera migrantkvoten till Sverige",
+      "confidence": "high"
+    }
+  ],
+  "explanations": [
+    {
+      "questionKey": "bostad-ranteavdrag",
+      "explanation": "I dag får hushåll dra av 30 procent av räntekostnader upp till 100 000 kronor per år (21 procent därutöver). Sedan 2025 trappas ränteavdraget ned för lån utan säkerhet, till exempel blancolån, men för bolån är avdraget oförändrat.",
+      "sourceUrl": "https://www.regeringen.se/pressmeddelanden/2024/08/avtrappat-ranteavdrag-for-lan-utan-sakerheter/",
+      "sourceCitation": "Regeringen, Avtrappat ränteavdrag för lån utan säkerheter, 2024",
+      "quote": null,
+      "confidence": "high"
+    },
+    {
+      "questionKey": "bostad-strandskydd",
+      "explanation": "Strandskyddet förbjuder som huvudregel byggande inom 100 meter från strandlinjen. Riksdagen beslutade i maj 2025 om lättnader som sedan den 1 juli 2025 undantar fler land- och vattenområden och ökar möjligheterna att bygga strandnära.",
+      "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/lattnader-i-strandskyddet-ett-forsta-steg_hc01mju16/html/",
+      "sourceCitation": "Miljö- och jordbruksutskottet, Betänkande 2024/25:MJU16 Lättnader i strandskyddet – ett första steg, 2025",
+      "quote": null,
+      "confidence": "high"
+    },
+    {
+      "questionKey": "eu-gemensam-skuld",
+      "explanation": "EU har genom försvarsinstrumentet Safe börjat låna upp gemensamt på kapitalmarknaden – upp till 150 miljarder euro – för att ge medlemsländer förmånliga lån till försvarsinvesteringar. Sverige har hittills valt att stå utanför programmet.",
+      "sourceUrl": "https://www.europaportalen.se/2025/07/stort-intresse-eus-nya-forsvarslan-18-lander-vill-lana-over-127-miljarder",
+      "sourceCitation": "Europaportalen, Stort intresse för EU:s nya försvarslån – 18 länder vill låna över 127 miljarder, 2025",
+      "quote": null,
+      "confidence": "high"
+    },
+    {
+      "questionKey": "eu-ukraina-medlemskap",
+      "explanation": "Ukraina är kandidatland och medlemskapsförhandlingar med EU pågår. Sverige stödjer aktivt Ukrainas EU-närmande, bland annat genom expertstöd i reformarbetet, och verkar för att de första förhandlingsklustren ska öppnas omgående.",
+      "sourceUrl": "https://www.regeringen.se/regeringens-politik/sveriges-stod-till-ukraina/sverige-stodjer-ukrainas-vag-mot-eu/",
+      "sourceCitation": "Regeringen, Sverige stödjer Ukrainas väg mot EU, 2025",
+      "quote": null,
+      "confidence": "high"
+    },
+    {
+      "questionKey": "eu-asylpakt",
+      "explanation": "EU:s migrations- och asylpakt antogs 2024 och börjar tillämpas den 12 juni 2026. En solidaritetsmekanism ersätter de gamla Dublinreglerna: medlemsländerna ska bidra genom att ta emot asylsökande, betala eller bistå på annat sätt.",
+      "sourceUrl": "https://www.migrationsverket.se/om-migrationsverket/migrationsverket-svarar/2025/2025-06-18-vad-handlar-eus-nya-migrations--och-asylpakt-om.html",
+      "sourceCitation": "Migrationsverket, Vad handlar EU:s nya migrations- och asylpakt om?, 2025",
+      "quote": "en rättvisare fördelning av asylsökande",
+      "confidence": "high"
+    }
+  ]
+}

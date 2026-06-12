@@ -1,0 +1,270 @@
+{
+  "sources": [
+    {
+      "questionKey": "klimat-hoghastighetstag",
+      "partyCode": "V",
+      "value": 4,
+      "motivation": "V vill bygga nya stambanor för höghastighetståg och rankas av Järnvägsfrämjandet som ett av de mest järnvägsvänliga partierna. Partiet kritiserade regeringens beslut att skrota projektet.",
+      "sourceCitation": "Altinget, Järnvägsfrämjandet: Tre partier toppar listan som mest järnvägsvänliga, 2022",
+      "sourceUrl": "https://www.altinget.se/artikel/jarnvagsframjandets-kartlaggning-av-partiernas-jarnvagspolitik",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "klimat-hoghastighetstag",
+      "partyCode": "S",
+      "value": 3,
+      "motivation": "S vill bygga nya stambanor men har förespråkat en etappvis utbyggnad och har inte entydigt bundit sig vid höghastighetsstandard, vilket Järnvägsfrämjandet beskriver som att partiet talar med kluven tunga.",
+      "sourceCitation": "Altinget, Järnvägsfrämjandet: Tre partier toppar listan som mest järnvägsvänliga, 2022",
+      "sourceUrl": "https://www.altinget.se/artikel/jarnvagsframjandets-kartlaggning-av-partiernas-jarnvagspolitik",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "klimat-hoghastighetstag",
+      "partyCode": "MP",
+      "value": 4,
+      "motivation": "MP vill bygga nya stambanor och rankas som ett av de mest järnvägsvänliga partierna, även om partiet tonat ned kravet på de allra högsta hastigheterna.",
+      "sourceCitation": "SVT Nyheter, Miljöpartiet backar från planerna på snabbtåg: \"Vi behöver nya stambanor\", 2023",
+      "sourceUrl": "https://www.svt.se/nyheter/inrikes/miljopartiet-backar-fran-planerna-pa-snabbtag-vi-behover-nya-stambanor",
+      "quote": "Vi behöver nya stambanor",
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "klimat-hoghastighetstag",
+      "partyCode": "C",
+      "value": 3,
+      "motivation": "C vill bygga nya stambanor och hör enligt Järnvägsfrämjandet till de mest järnvägsvänliga partierna, men har varit mer avvaktande till en fullskalig höghastighetssatsning.",
+      "sourceCitation": "Altinget, Järnvägsfrämjandet: Tre partier toppar listan som mest järnvägsvänliga, 2022",
+      "sourceUrl": "https://www.altinget.se/artikel/jarnvagsframjandets-kartlaggning-av-partiernas-jarnvagspolitik",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "klimat-hoghastighetstag",
+      "partyCode": "L",
+      "value": 1,
+      "motivation": "L står bakom regeringens besked hösten 2022 att avbryta arbetet med nya stambanor för höghastighetståg och vill i stället prioritera underhåll av befintlig järnväg.",
+      "sourceCitation": "Sveriges Radio, Så vill partierna klara satsningar på vägar och järnvägar, 2022",
+      "sourceUrl": "https://www.sverigesradio.se/artikel/sa-vill-partierna-klara-satsningar-pa-vagar-och-jarnvagar",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "klimat-hoghastighetstag",
+      "partyCode": "KD",
+      "value": 1,
+      "motivation": "KD står bakom regeringens beslut att skrota planerna på nya stambanor för höghastighetståg och vill prioritera underhåll och befintliga projekt.",
+      "sourceCitation": "Sveriges Radio, Så vill partierna klara satsningar på vägar och järnvägar, 2022",
+      "sourceUrl": "https://www.sverigesradio.se/artikel/sa-vill-partierna-klara-satsningar-pa-vagar-och-jarnvagar",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "klimat-hoghastighetstag",
+      "partyCode": "M",
+      "value": 1,
+      "motivation": "M vill inte bygga nya stambanor för höghastighetståg utan endast fullfölja långt gångna projekt som Ostlänken; den M-ledda regeringen avbröt höghastighetsprojektet 2022.",
+      "sourceCitation": "Altinget, Järnvägsfrämjandet: Tre partier toppar listan som mest järnvägsvänliga, 2022",
+      "sourceUrl": "https://www.altinget.se/artikel/jarnvagsframjandets-kartlaggning-av-partiernas-jarnvagspolitik",
+      "quote": "långt gångna planer såsom Ostlänken",
+      "confidence": "high"
+    },
+    {
+      "questionKey": "klimat-hoghastighetstag",
+      "partyCode": "SD",
+      "value": 1,
+      "motivation": "SD vill inte bygga nya stambanor för höghastighetståg och stödde Tidöpartiernas besked 2022 att avbryta projektet.",
+      "sourceCitation": "Altinget, Järnvägsfrämjandet: Tre partier toppar listan som mest järnvägsvänliga, 2022",
+      "sourceUrl": "https://www.altinget.se/artikel/jarnvagsframjandets-kartlaggning-av-partiernas-jarnvagspolitik",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "skola-skolval-lottning",
+      "partyCode": "V",
+      "value": 4,
+      "motivation": "V vill avskaffa det fria skolvalet i dess nuvarande form och ersätta det med ett gemensamt, offentligt antagningssystem där närhetsprincipen väger tungt.",
+      "sourceCitation": "Dagens Arena, V: Avskaffa det fria skolvalet och den fria etableringsrätten, 2020",
+      "sourceUrl": "https://www.dagensarena.se/innehall/v-avskaffa-det-fria-skolvalet-och-den-fria-etableringsratten/",
+      "quote": "Avskaffa det fria skolvalet",
+      "confidence": "high"
+    },
+    {
+      "questionKey": "skola-skolval-lottning",
+      "partyCode": "S",
+      "value": 3,
+      "motivation": "S vill behålla skolvalet men införa ett gemensamt, offentligt administrerat antagningssystem och slopa kötid som urvalsgrund, vilket S-regeringen föreslog i propositionen om ett mer likvärdigt skolval 2022.",
+      "sourceCitation": "Vi Lärare, 22 heta valfrågor för skolan – så svarar partierna, 2022",
+      "sourceUrl": "https://www.vilarare.se/nyheter/skolpolitik/22-heta-valfragor-for-skolan--sa-svarar-partierna/",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "skola-skolval-lottning",
+      "partyCode": "MP",
+      "value": 3,
+      "motivation": "MP vill behålla möjligheten att välja skola men ha ett gemensamt och transparent antagningssystem administrerat av till exempel Skolverket, utan kötid som urvalsgrund.",
+      "sourceCitation": "Vi Lärare, 22 heta valfrågor för skolan – så svarar partierna, 2022",
+      "sourceUrl": "https://www.vilarare.se/nyheter/skolpolitik/22-heta-valfragor-for-skolan--sa-svarar-partierna/",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "skola-skolval-lottning",
+      "partyCode": "C",
+      "value": 2,
+      "motivation": "C försvarar det fria skolvalet och vill inte begränsa det, men kan acceptera vissa justeringar av antagningsreglerna som begränsad kötid.",
+      "sourceCitation": "Vi Lärare, 22 heta valfrågor för skolan – så svarar partierna, 2022",
+      "sourceUrl": "https://www.vilarare.se/nyheter/skolpolitik/22-heta-valfragor-for-skolan--sa-svarar-partierna/",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "skola-skolval-lottning",
+      "partyCode": "L",
+      "value": 2,
+      "motivation": "L försvarar det fria skolvalet och vill inte begränsa det, men förespråkar ett obligatoriskt och samordnat skolval där alla familjer gör ett aktivt val.",
+      "sourceCitation": "Liberalerna, Skolvalet, 2024",
+      "sourceUrl": "https://www.liberalerna.se/politik/skolvalet",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "skola-skolval-lottning",
+      "partyCode": "KD",
+      "value": 2,
+      "motivation": "KD vill behålla det fria skolvalet men förespråkar ett gemensamt och obligatoriskt skolval med kommunalt samordnad antagning, dock utan att begränsa valfriheten.",
+      "sourceCitation": "Vi Lärare, 22 heta valfrågor för skolan – så svarar partierna, 2022",
+      "sourceUrl": "https://www.vilarare.se/nyheter/skolpolitik/22-heta-valfragor-for-skolan--sa-svarar-partierna/",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "skola-skolval-lottning",
+      "partyCode": "M",
+      "value": 1,
+      "motivation": "M försvarar det fria skolvalet och friskolornas rätt att använda kötid som urvalsgrund, och motsätter sig att skolvalet begränsas eller att antagningen förstatligas.",
+      "sourceCitation": "Vi Lärare, 22 heta valfrågor för skolan – så svarar partierna, 2022",
+      "sourceUrl": "https://www.vilarare.se/nyheter/skolpolitik/22-heta-valfragor-for-skolan--sa-svarar-partierna/",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "skola-skolval-lottning",
+      "partyCode": "SD",
+      "value": 2,
+      "motivation": "SD vill behålla det fria skolvalet men är positiva till ett samordnat skolval som hanteras av kommunerna, utan att valfriheten begränsas.",
+      "sourceCitation": "Vi Lärare, 22 heta valfrågor för skolan – så svarar partierna, 2022",
+      "sourceUrl": "https://www.vilarare.se/nyheter/skolpolitik/22-heta-valfragor-for-skolan--sa-svarar-partierna/",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "skola-sprakforskola",
+      "partyCode": "V",
+      "value": 2,
+      "motivation": "V är skeptiskt till obligatorium och tvång i förskolan och vill i stället nå fler barn genom generella satsningar, uppsökande verksamhet och avgiftsfri förskola.",
+      "sourceCitation": "Altinget, Tidöpartierna vill införa obligatorisk förskola, 2024",
+      "sourceUrl": "https://www.altinget.se/artikel/tidopartierna-vill-infora-obligatorisk-forskola",
+      "quote": null,
+      "confidence": "low"
+    },
+    {
+      "questionKey": "skola-sprakforskola",
+      "partyCode": "S",
+      "value": 3,
+      "motivation": "S vill att hemkommunen från tre års ålder obligatoriskt ska skriva in barn i förskolan som bott kort tid i Sverige eller vars föräldrar gjort det, vilket ligger nära men inte är identiskt med ett obligatorium kopplat till bristande svenska.",
+      "sourceCitation": "Socialdemokraterna, Förskola (Vår politik A till Ö), 2024",
+      "sourceUrl": "https://www.socialdemokraterna.se/var-politik/a-till-o/forskola",
+      "quote": null,
+      "confidence": "high"
+    },
+    {
+      "questionKey": "skola-sprakforskola",
+      "partyCode": "MP",
+      "value": 2,
+      "motivation": "MP är skeptiskt till obligatorisk språkförskola och betonar i stället resurser, likvärdighet och rätt till förskola för alla barn framför tvång.",
+      "sourceCitation": "Altinget, Tidöpartierna vill införa obligatorisk förskola, 2024",
+      "sourceUrl": "https://www.altinget.se/artikel/tidopartierna-vill-infora-obligatorisk-forskola",
+      "quote": null,
+      "confidence": "low"
+    },
+    {
+      "questionKey": "skola-sprakforskola",
+      "partyCode": "C",
+      "value": 2,
+      "motivation": "C betonar frivillighet och föräldrars eget val i förskolan och har varit avvaktande till obligatorium, även om partiet vill att fler barn med svagt svenskt språk nås av förskolan via uppsökande insatser.",
+      "sourceCitation": "Altinget, Tidöpartierna vill införa obligatorisk förskola, 2024",
+      "sourceUrl": "https://www.altinget.se/artikel/tidopartierna-vill-infora-obligatorisk-forskola",
+      "quote": null,
+      "confidence": "low"
+    },
+    {
+      "questionKey": "skola-sprakforskola",
+      "partyCode": "L",
+      "value": 4,
+      "motivation": "L driver frågan i regeringsställning: skolminister Lotta Edholm (L) presenterade tillsammans med statsministern utredningen om obligatorisk språkförskola för barn med bristande svenska.",
+      "sourceCitation": "Regeringen, Statsministern och skolministern presenterade planer på utredning om obligatorisk språkförskola, 2024",
+      "sourceUrl": "https://www.regeringen.se/artiklar/2024/04/statsministern-och-skolministern-besokte-forskola-och-presenterade-planer-pa-utredning-om-obligatorisk-sprakforskola-och-sprakkrav-for-personalen/",
+      "quote": null,
+      "confidence": "high"
+    },
+    {
+      "questionKey": "skola-sprakforskola",
+      "partyCode": "KD",
+      "value": 4,
+      "motivation": "KD står som Tidöparti bakom regeringens utredning om obligatorisk språkförskola för barn som inte exponeras tillräckligt för svenska i hemmiljön.",
+      "sourceCitation": "Altinget, Tidöpartierna vill införa obligatorisk förskola, 2024",
+      "sourceUrl": "https://www.altinget.se/artikel/tidopartierna-vill-infora-obligatorisk-forskola",
+      "quote": null,
+      "confidence": "high"
+    },
+    {
+      "questionKey": "skola-sprakforskola",
+      "partyCode": "M",
+      "value": 4,
+      "motivation": "M driver frågan: statsminister Ulf Kristersson (M) presenterade regeringens utredning om obligatorisk språkförskola för barn som inte talar tillräckligt bra svenska.",
+      "sourceCitation": "Regeringen, Statsministern och skolministern presenterade planer på utredning om obligatorisk språkförskola, 2024",
+      "sourceUrl": "https://www.regeringen.se/artiklar/2024/04/statsministern-och-skolministern-besokte-forskola-och-presenterade-planer-pa-utredning-om-obligatorisk-sprakforskola-och-sprakkrav-for-personalen/",
+      "quote": null,
+      "confidence": "high"
+    },
+    {
+      "questionKey": "skola-sprakforskola",
+      "partyCode": "SD",
+      "value": 4,
+      "motivation": "SD vill tillsammans med regeringspartierna införa obligatorisk förskola för barn som behöver stöd i svenska språket och står bakom utredningsdirektivet.",
+      "sourceCitation": "Altinget, Tidöpartierna vill införa obligatorisk förskola, 2024",
+      "sourceUrl": "https://www.altinget.se/artikel/tidopartierna-vill-infora-obligatorisk-forskola",
+      "quote": null,
+      "confidence": "high"
+    }
+  ],
+  "explanations": [
+    {
+      "questionKey": "klimat-hoghastighetstag",
+      "explanation": "Tidöregeringen (M, KD, L med stöd av SD) avbröt hösten 2022 planeringen av nya stambanor för höghastighetståg mellan storstäderna och prioriterar i stället underhåll av befintlig järnväg, medan V, MP, S och C i olika grad vill återuppta utbyggnaden.",
+      "sourceUrl": "https://www.sverigesradio.se/artikel/sa-vill-partierna-klara-satsningar-pa-vagar-och-jarnvagar",
+      "sourceCitation": "Sveriges Radio, Så vill partierna klara satsningar på vägar och järnvägar, 2022",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "skola-skolval-lottning",
+      "explanation": "I dag väljer familjer skola själva och friskolor sköter sin egen antagning, ofta med kötid som urvalsgrund; S-regeringens förslag 2022 om gemensamt offentligt skolval föll i riksdagen och frågan delar fortsatt blocken, där vänstersidan vill begränsa eller reformera skolvalet medan högersidan försvarar det.",
+      "sourceUrl": "https://www.vilarare.se/nyheter/skolpolitik/22-heta-valfragor-for-skolan--sa-svarar-partierna/",
+      "sourceCitation": "Vi Lärare, 22 heta valfrågor för skolan – så svarar partierna, 2022",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "skola-sprakforskola",
+      "explanation": "Regeringen tillsatte 2024 en utredning (dir. 2024:113) om att införa en obligatorisk språkförskola för barn som inte exponeras tillräckligt för svenska i sin hemmiljö; utredningen ska redovisas i december 2025 och frågan stöds av Tidöpartierna och SD medan V och MP är skeptiska till obligatorium.",
+      "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/kommittedirektiv/en-likvardig-forskola-av-god-kvalitet-med_hcb1113/",
+      "sourceCitation": "Regeringen, Kommittédirektiv 2024:113 En likvärdig förskola av god kvalitet med obligatorisk språkförskola, 2024",
+      "quote": "en språkförskola som är obligatorisk för barn som inte i tillräcklig utsträckning exponeras för det svenska språket i sin hemmiljö",
+      "confidence": "high"
+    }
+  ]
+}

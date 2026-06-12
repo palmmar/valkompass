@@ -10,9 +10,14 @@ const SERVER_BASE = process.env.BACKEND_URL ?? "http://localhost:5208";
 // Klient-bas: tom sträng → relativa /api-anrop som Next proxar (se next.config.ts).
 const CLIENT_BASE = process.env.NEXT_PUBLIC_API_BASE_URL ?? "";
 
-/** Hämtar frågeformuläret server-side. */
-export async function fetchQuestionnaire(): Promise<Questionnaire> {
-  const res = await fetch(`${SERVER_BASE}/api/questionnaire`, { cache: "no-store" });
+/** Quizlägen: antal frågor per genomgång. */
+export const QUIZ_MODES = [25, 50, 75] as const;
+export type QuizMode = (typeof QUIZ_MODES)[number];
+
+/** Hämtar frågeformuläret server-side. `mode` styr antalet frågor (utelämnad = alla). */
+export async function fetchQuestionnaire(mode?: QuizMode): Promise<Questionnaire> {
+  const query = mode ? `?mode=${mode}` : "";
+  const res = await fetch(`${SERVER_BASE}/api/questionnaire${query}`, { cache: "no-store" });
   if (!res.ok) throw new Error(`Kunde inte hämta frågeformuläret (${res.status}).`);
   return res.json();
 }

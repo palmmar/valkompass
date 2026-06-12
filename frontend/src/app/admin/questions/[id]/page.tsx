@@ -54,6 +54,7 @@ export default function EditQuestionPage() {
     explanationSourceUrl: q.explanationSourceUrl,
     categoryId: q.categoryId,
     displayOrder: q.displayOrder,
+    tier: q.tier,
     isActive: q.isActive,
   };
 

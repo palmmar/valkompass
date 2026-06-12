@@ -207,13 +207,16 @@ public static class AdminEndpoints
         {
             if (!await db.Categories.AnyAsync(c => c.Id == input.CategoryId))
                 return Results.ValidationProblem(Field("categoryId", "Okänd kategori."));
+            if (input.Tier is < 1 or > 3)
+                return Results.ValidationProblem(Field("tier", "Nivån måste vara 1, 2 eller 3."));
 
             var now = DateTimeOffset.UtcNow;
             var entity = new Question
             {
                 ExternalKey = input.ExternalKey, Text = input.Text, Explanation = input.Explanation,
                 ExplanationSourceUrl = input.ExplanationSourceUrl,
-                CategoryId = input.CategoryId, DisplayOrder = input.DisplayOrder, IsActive = input.IsActive,
+                CategoryId = input.CategoryId, DisplayOrder = input.DisplayOrder, Tier = input.Tier,
+                IsActive = input.IsActive,
                 CreatedAt = now, UpdatedAt = now,
             };
             db.Questions.Add(entity);
@@ -229,10 +232,13 @@ public static class AdminEndpoints
             if (entity is null) return Results.NotFound();
             if (!await db.Categories.AnyAsync(c => c.Id == input.CategoryId))
                 return Results.ValidationProblem(Field("categoryId", "Okänd kategori."));
+            if (input.Tier is < 1 or > 3)
+                return Results.ValidationProblem(Field("tier", "Nivån måste vara 1, 2 eller 3."));
 
             entity.ExternalKey = input.ExternalKey; entity.Text = input.Text; entity.Explanation = input.Explanation;
             entity.ExplanationSourceUrl = input.ExplanationSourceUrl;
-            entity.CategoryId = input.CategoryId; entity.DisplayOrder = input.DisplayOrder; entity.IsActive = input.IsActive;
+            entity.CategoryId = input.CategoryId; entity.DisplayOrder = input.DisplayOrder; entity.Tier = input.Tier;
+            entity.IsActive = input.IsActive;
             entity.UpdatedAt = DateTimeOffset.UtcNow;
             var conflict = await SaveOrConflict(db, "En fråga med samma externalKey finns redan.");
             if (conflict is not null) return conflict;
@@ -336,5 +342,5 @@ public static class AdminEndpoints
 
     private static AdminQuestionDto Map(Question q) =>
         new(q.Id, q.ExternalKey, q.Text, q.Explanation, q.ExplanationSourceUrl, q.CategoryId,
-            q.Category!.Slug, q.Category!.Name, q.DisplayOrder, q.IsActive);
+            q.Category!.Slug, q.Category!.Name, q.DisplayOrder, q.Tier, q.IsActive);
 }

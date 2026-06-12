@@ -7,125 +7,125 @@
   },
   "calibrationToChes": {
     "econ": {
-      "slope": 0.6804,
-      "intercept": 1.7903
+      "slope": 0.6979,
+      "intercept": 1.6415
     },
     "galtan": {
-      "slope": 0.6587,
-      "intercept": 1.0762
+      "slope": 0.7155,
+      "intercept": 0.7598
     }
   },
   "parties": {
     "V": {
       "econ": {
-        "data": 0.18,
-        "chesCalibrated": 1.91,
+        "data": 0.12,
+        "chesCalibrated": 1.72,
         "ches": 1.89,
-        "n": 19
+        "n": 28
       },
       "galtan": {
-        "data": 1.17,
-        "chesCalibrated": 1.84,
+        "data": 1.49,
+        "chesCalibrated": 1.83,
         "ches": 2.42,
-        "n": 20
+        "n": 29
       }
     },
     "S": {
       "econ": {
-        "data": 2.81,
-        "chesCalibrated": 3.7,
+        "data": 3.33,
+        "chesCalibrated": 3.97,
         "ches": 3.68,
-        "n": 19
+        "n": 28
       },
       "galtan": {
-        "data": 5.67,
-        "chesCalibrated": 4.81,
+        "data": 5.98,
+        "chesCalibrated": 5.04,
         "ches": 4.74,
-        "n": 20
+        "n": 29
       }
     },
     "MP": {
       "econ": {
-        "data": 2.11,
+        "data": 2.26,
         "chesCalibrated": 3.22,
         "ches": 3.16,
-        "n": 19
+        "n": 28
       },
       "galtan": {
-        "data": 1.33,
-        "chesCalibrated": 1.95,
+        "data": 1.48,
+        "chesCalibrated": 1.82,
         "ches": 1.95,
-        "n": 20
+        "n": 27
       }
     },
     "C": {
       "econ": {
-        "data": 8.25,
-        "chesCalibrated": 7.4,
+        "data": 8.1,
+        "chesCalibrated": 7.29,
         "ches": 7.84,
-        "n": 19
+        "n": 28
       },
       "galtan": {
-        "data": 3.0,
-        "chesCalibrated": 3.05,
+        "data": 3.22,
+        "chesCalibrated": 3.06,
         "ches": 2.95,
-        "n": 20
+        "n": 29
       }
     },
     "L": {
       "econ": {
-        "data": 8.6,
-        "chesCalibrated": 7.64,
+        "data": 8.57,
+        "chesCalibrated": 7.62,
         "ches": 7.32,
-        "n": 19
+        "n": 28
       },
       "galtan": {
-        "data": 7.67,
-        "chesCalibrated": 6.13,
+        "data": 7.13,
+        "chesCalibrated": 5.86,
         "ches": 4.47,
-        "n": 20
+        "n": 29
       }
     },
     "KD": {
       "econ": {
-        "data": 8.25,
-        "chesCalibrated": 7.4,
+        "data": 8.21,
+        "chesCalibrated": 7.37,
         "ches": 7.26,
-        "n": 19
+        "n": 28
       },
       "galtan": {
-        "data": 9.33,
-        "chesCalibrated": 7.22,
+        "data": 9.2,
+        "chesCalibrated": 7.34,
         "ches": 7.79,
-        "n": 20
+        "n": 29
       }
     },
     "M": {
       "econ": {
-        "data": 9.12,
-        "chesCalibrated": 8.0,
+        "data": 9.05,
+        "chesCalibrated": 7.96,
         "ches": 7.89,
-        "n": 19
+        "n": 28
       },
       "galtan": {
-        "data": 9.17,
-        "chesCalibrated": 7.11,
+        "data": 8.74,
+        "chesCalibrated": 7.01,
         "ches": 6.47,
-        "n": 20
+        "n": 29
       }
     },
     "SD": {
       "econ": {
-        "data": 6.32,
-        "chesCalibrated": 6.09,
+        "data": 6.54,
+        "chesCalibrated": 6.2,
         "ches": 6.32,
-        "n": 19
+        "n": 26
       },
       "galtan": {
-        "data": 10.0,
-        "chesCalibrated": 7.66,
+        "data": 9.89,
+        "chesCalibrated": 7.83,
         "ches": 9.0,
-        "n": 20
+        "n": 29
       }
     }
   }

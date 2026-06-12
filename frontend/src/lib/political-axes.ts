@@ -22,14 +22,14 @@ export const AXIS_META = {
 
 /** Partikoordinater på CHES-kalibrerad skala 0–10 (econ: 0 vänster … 10 höger; galtan: 0 GAL … 10 TAN). */
 export const PARTY_AXES: Record<string, AxisPoint> = {
-  V: { econ: 1.91, galtan: 1.84 },
-  S: { econ: 3.7, galtan: 4.81 },
-  MP: { econ: 3.22, galtan: 1.95 },
-  C: { econ: 7.4, galtan: 3.05 },
-  L: { econ: 7.64, galtan: 6.13 },
-  KD: { econ: 7.4, galtan: 7.22 },
-  M: { econ: 8.0, galtan: 7.11 },
-  SD: { econ: 6.09, galtan: 7.66 },
+  V: { econ: 1.72, galtan: 1.83 },
+  S: { econ: 3.97, galtan: 5.04 },
+  MP: { econ: 3.22, galtan: 1.82 },
+  C: { econ: 7.29, galtan: 3.06 },
+  L: { econ: 7.62, galtan: 5.86 },
+  KD: { econ: 7.37, galtan: 7.34 },
+  M: { econ: 7.96, galtan: 7.01 },
+  SD: { econ: 6.2, galtan: 7.83 },
 };
 
 /** Riktningsvikt per fråga. Tecken pekar mot axelns höga ände (höger / TAN). Nollor utelämnade. */
@@ -43,16 +43,25 @@ const WEIGHTS: Record<string, Partial<Record<Axis, number>>> = {
   "ekonomi-formogenhetsskatt": { econ: -1 },
   "ekonomi-sankt-skatt-arbete": { econ: 1 },
   "ekonomi-drivmedelsskatt": { econ: 1 },
+  "ekonomi-arvsskatt": { econ: -1 },
+  "ekonomi-rut-avskaffa": { econ: -1 },
+  "ekonomi-matmoms": { econ: -1 },
   "skola-friskolor-vinst": { econ: -1 },
+  "skola-skolval-lottning": { econ: -1 },
   "arbete-las": { econ: 1 },
   "arbete-akassa": { econ: -1 },
   "arbete-bidragstak": { econ: 1 },
   "arbete-arbetstid": { econ: -1 },
+  "arbete-ingangsloner": { econ: 1 },
+  "arbete-strejkratt": { econ: 1 },
   "aldre-resurser": { econ: -1 },
   "aldre-pension": { econ: -1 },
   "aldre-privat-omsorg": { econ: -1 },
   "bostad-hyressattning": { econ: 1 },
   "bostad-subventioner": { econ: -1 },
+  "bostad-flyttskatt": { econ: 1 },
+  "bostad-ranteavdrag": { econ: -1 },
+  "klimat-hoghastighetstag": { econ: -1 },
   "lag-skarpta-straff": { galtan: 1 },
   "lag-fler-poliser": { galtan: 1 },
   "lag-visitationszoner": { galtan: 1 },
@@ -72,13 +81,22 @@ const WEIGHTS: Record<string, Partial<Record<Axis, number>>> = {
   "klimat-flygskatt": { galtan: -1 },
   "klimat-reduktionsplikt": { galtan: 1 },
   "klimat-prioritet": { galtan: -1 },
+  "klimat-bilforbud-2035": { galtan: 1 },
   "skola-mobilforbud": { galtan: 1 },
+  "skola-sprakforskola": { galtan: 1 },
+  "sjukvard-dodshjalp": { galtan: -1 },
+  "sjukvard-surrogat": { galtan: -1 },
+  "lag-preventiv-avlyssning": { galtan: 1 },
+  "lag-narkotika-avkriminalisera": { galtan: -1 },
+  "migration-anhorig-begransa": { galtan: 1 },
+  "migration-tiggeriforbud": { galtan: 1 },
+  "bostad-strandskydd": { galtan: 1 },
 };
 
 /** OLS-kalibrering data→CHES per axel (lutning, intercept). */
 const CALIBRATION: Record<Axis, { slope: number; intercept: number }> = {
-  econ: { slope: 0.6804, intercept: 1.7903 },
-  galtan: { slope: 0.6587, intercept: 1.0762 },
+  econ: { slope: 0.6979, intercept: 1.6415 },
+  galtan: { slope: 0.7155, intercept: 0.7598 },
 };
 
 /** Minsta antal besvarade axelfrågor för att en användarkoordinat ska visas. */

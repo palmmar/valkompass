@@ -11,10 +11,10 @@ public sealed record PartyInput(string Code, string Name, string FullName, strin
 // --- Frågor ---
 public sealed record AdminQuestionDto(
     int Id, string ExternalKey, string Text, string? Explanation, string? ExplanationSourceUrl,
-    int CategoryId, string CategorySlug, string CategoryName, int DisplayOrder, bool IsActive);
+    int CategoryId, string CategorySlug, string CategoryName, int DisplayOrder, int Tier, bool IsActive);
 
 public sealed record QuestionInput(
-    string ExternalKey, string Text, string? Explanation, string? ExplanationSourceUrl, int CategoryId, int DisplayOrder, bool IsActive);
+    string ExternalKey, string Text, string? Explanation, string? ExplanationSourceUrl, int CategoryId, int DisplayOrder, int Tier, bool IsActive);
 
 // --- Positioner (parti × fråga) ---
 public sealed record AdminPositionDto(

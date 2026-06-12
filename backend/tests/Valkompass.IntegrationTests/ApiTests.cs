@@ -14,8 +14,39 @@ public class ApiTests(ApiFactory factory) : IClassFixture<ApiFactory>
         var dto = await client.GetFromJsonAsync<QuestionnaireDto>("/api/questionnaire");
 
         Assert.NotNull(dto);
-        Assert.Equal(50, dto!.Questions.Count);
+        Assert.Equal(75, dto!.Questions.Count);
         Assert.Equal(11, dto.Categories.Count);
+    }
+
+    [Fact]
+    public async Task Questionnaire_ModesAreNestedSubsets()
+    {
+        var client = factory.CreateClient();
+
+        var snabb = await client.GetFromJsonAsync<QuestionnaireDto>("/api/questionnaire?mode=25");
+        var standard = await client.GetFromJsonAsync<QuestionnaireDto>("/api/questionnaire?mode=50");
+        var full = await client.GetFromJsonAsync<QuestionnaireDto>("/api/questionnaire?mode=75");
+
+        Assert.Equal(25, snabb!.Questions.Count);
+        Assert.Equal(50, standard!.Questions.Count);
+        Assert.Equal(75, full!.Questions.Count);
+
+        // Lägena är nästlade: 25 ⊂ 50 ⊂ 75.
+        var standardIds = standard.Questions.Select(q => q.Id).ToHashSet();
+        var fullIds = full.Questions.Select(q => q.Id).ToHashSet();
+        Assert.All(snabb.Questions, q => Assert.Contains(q.Id, standardIds));
+        Assert.All(standard.Questions, q => Assert.Contains(q.Id, fullIds));
+
+        // Alla kategorier finns med även i snabbläget.
+        Assert.Equal(11, snabb.Categories.Count);
+    }
+
+    [Fact]
+    public async Task Questionnaire_InvalidMode_ReturnsValidationProblem()
+    {
+        var client = factory.CreateClient();
+        var res = await client.GetAsync("/api/questionnaire?mode=30");
+        Assert.Equal(HttpStatusCode.BadRequest, res.StatusCode);
     }
 
     [Fact]

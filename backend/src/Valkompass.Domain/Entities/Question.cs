@@ -22,6 +22,12 @@ public class Question
 
     public int DisplayOrder { get; set; }
 
+    /// <summary>
+    /// Djupnivå som styr vilka quizlägen frågan ingår i: 1 = Snabb (25), 2 = Standard (50),
+    /// 3 = Fördjupning (75). Ett läge visar alla frågor med Tier &lt;= lägets nivå.
+    /// </summary>
+    public int Tier { get; set; } = 3;
+
     /// <summary>Soft-enable. Inaktiva frågor visas inte i quizet men finns kvar för historiska resultat.</summary>
     public bool IsActive { get; set; } = true;
 
