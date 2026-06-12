@@ -12,6 +12,8 @@
     { "questionKey": "sjukvard-mer-resurser", "text": "Mer skattepengar till vården även vid höjd skatt", "econ": -1, "galtan": 0 },
     { "questionKey": "sjukvard-tandvard", "text": "Tandvård i högkostnadsskyddet", "econ": -1, "galtan": 0 },
     { "questionKey": "sjukvard-privata-forsakringar", "text": "Privata sjukvårdsförsäkringar ska begränsas", "econ": -1, "galtan": 0 },
+    { "questionKey": "sjukvard-dodshjalp", "text": "Aktiv dödshjälp ska tillåtas", "econ": 0, "galtan": -1, "note": "liberal/permissiv livsåskådningsfråga; medhåll drar mot GAL" },
+    { "questionKey": "sjukvard-surrogat", "text": "Altruistiskt surrogatmödraskap ska tillåtas", "econ": 0, "galtan": -1, "note": "liberal/permissiv; splittrar dock båda blocken (S/V emot av andra skäl)" },
 
     { "questionKey": "lag-skarpta-straff", "text": "Straffen för våldsbrott ska skärpas kraftigt", "econ": 0, "galtan": 1 },
     { "questionKey": "lag-fler-poliser", "text": "Anställa betydligt fler poliser", "econ": 0, "galtan": 1, "note": "svag diskriminator (bred enighet)" },
@@ -19,6 +21,8 @@
     { "questionKey": "lag-anonyma-vittnen", "text": "Anonyma vittnen i fler brottmål", "econ": 0, "galtan": 1 },
     { "questionKey": "lag-sankt-straffmyndighet", "text": "Barn under 15 ska kunna straffas", "econ": 0, "galtan": 1 },
     { "questionKey": "lag-kameraovervakning", "text": "Bygg ut kameraövervakningen kraftigt", "econ": 0, "galtan": 1 },
+    { "questionKey": "lag-preventiv-avlyssning", "text": "Hemlig avlyssning utan konkret brottsmisstanke", "econ": 0, "galtan": 1 },
+    { "questionKey": "lag-narkotika-avkriminalisera", "text": "Avkriminalisera eget bruk av narkotika", "econ": 0, "galtan": -1, "note": "vård före straff = frihetlig/GAL; C bryter blockmönstret" },
 
     { "questionKey": "migration-faerre-asyl", "text": "Ta emot färre asylsökande", "econ": 0, "galtan": 1 },
     { "questionKey": "migration-medborgarskap", "text": "Svårare att få medborgarskap", "econ": 0, "galtan": 1 },
@@ -26,12 +30,17 @@
     { "questionKey": "migration-atervandring", "text": "Uppmuntra aktiv återvandring", "econ": 0, "galtan": 1 },
     { "questionKey": "migration-sprakkrav-bidrag", "text": "Språkkrav för vissa bidrag", "econ": 0, "galtan": 1 },
     { "questionKey": "migration-utvisning-vandel", "text": "Lättare utvisa vid bristande livsföring", "econ": 0, "galtan": 1 },
+    { "questionKey": "migration-anhorig-begransa", "text": "Skärp försörjningskraven för anhöriginvandring", "econ": 0, "galtan": 1 },
+    { "questionKey": "migration-tiggeriforbud", "text": "Förbjud tiggeri i hela Sverige", "econ": 0, "galtan": 1 },
 
     { "questionKey": "ekonomi-hoginkomstskatt", "text": "Höj skatten på höga inkomster", "econ": -1, "galtan": 0 },
     { "questionKey": "ekonomi-formogenhetsskatt", "text": "Återinför förmögenhetsskatt", "econ": -1, "galtan": 0 },
     { "questionKey": "ekonomi-sankt-skatt-arbete", "text": "Sänk skatten på arbete", "econ": 1, "galtan": 0 },
     { "questionKey": "ekonomi-drivmedelsskatt", "text": "Sänk skatten på bensin och diesel", "econ": 1, "galtan": 0, "note": "korsladdar mot grön/TAN; här räknad som skattesänkning (ekonomi)" },
     { "questionKey": "ekonomi-bistand", "text": "Minska biståndet till andra länder", "econ": 0, "galtan": 1, "note": "att minska bistånd laddar nationellt/kosmopolitiskt (galtan), inte ekonomi" },
+    { "questionKey": "ekonomi-arvsskatt", "text": "Återinför arvsskatt på stora arv", "econ": -1, "galtan": 0 },
+    { "questionKey": "ekonomi-rut-avskaffa", "text": "Avskaffa RUT-avdraget", "econ": -1, "galtan": 0 },
+    { "questionKey": "ekonomi-matmoms", "text": "Gör den sänkta matmomsen permanent", "econ": -1, "galtan": 0, "note": "konsumtionsskattesänkning med omfördelningsprofil; vänsterdriven" },
 
     { "questionKey": "klimat-karnkraft-utbyggnad", "text": "Bygg ut kärnkraften", "econ": 0, "galtan": 1, "note": "kärnkraft är låg-koldioxid men sorterar i dag blockmässigt med TAN/höger; omdiskuterat" },
     { "questionKey": "klimat-skarpta-mal", "text": "Skärp Sveriges klimatmål", "econ": 0, "galtan": -1 },
@@ -39,32 +48,48 @@
     { "questionKey": "klimat-flygskatt", "text": "Höj flygskatten", "econ": 0, "galtan": -1, "note": "även skatt, men främst grön styrning" },
     { "questionKey": "klimat-reduktionsplikt", "text": "Sänk reduktionsplikten för lägre drivmedelspriser", "econ": 0, "galtan": 1, "note": "sänkt reduktionsplikt = anti-grön" },
     { "questionKey": "klimat-prioritet", "text": "Klimat före jobb och tillväxt på kort sikt", "econ": 0, "galtan": -1 },
+    { "questionKey": "klimat-bilforbud-2035", "text": "Riv upp EU:s förbud mot nya fossilbilar 2035", "econ": 0, "galtan": 1, "note": "riva upp = anti-grön/TAN" },
+    { "questionKey": "klimat-hoghastighetstag", "text": "Bygg nya stambanor för höghastighetståg", "econ": -1, "galtan": 0, "note": "stort offentligt investeringsprogram; korsladdar grönt (granska)" },
 
     { "questionKey": "skola-friskolor-vinst", "text": "Förbjud vinstdrivande friskolor", "econ": -1, "galtan": 0 },
     { "questionKey": "skola-tidigare-betyg", "text": "Betyg från lägre åldrar", "econ": 0, "galtan": 0, "note": "pedagogik; svag axelladdning, exkluderad" },
     { "questionKey": "skola-statlig-skola", "text": "Förstatliga skolan", "econ": 0, "galtan": 0, "note": "huvudmannaskap; exkluderad" },
     { "questionKey": "skola-mobilforbud", "text": "Mobilförbud hela skoldagen", "econ": 0, "galtan": 1, "note": "ordning/disciplin (svag diskriminator)" },
     { "questionKey": "skola-religiosa-friskolor", "text": "Förbjud religiösa friskolor", "econ": 0, "galtan": 0, "note": "sekularism vs valfrihet korsladdar (liberala C försvarar friskolor); exkluderad" },
+    { "questionKey": "skola-skolval-lottning", "text": "Begränsa det fria skolvalet, gemensam antagning", "econ": -1, "galtan": 0, "note": "marknadsstyrning av skolan; medhåll = vänster" },
+    { "questionKey": "skola-sprakforskola", "text": "Obligatorisk förskola vid bristande svenska", "econ": 0, "galtan": 1, "note": "obligatorium/integrationskrav; svagare laddning än migrationfrågorna" },
 
     { "questionKey": "arbete-las", "text": "Försvaga anställningsskyddet (LAS)", "econ": 1, "galtan": 0 },
     { "questionKey": "arbete-akassa", "text": "Höj a-kassan", "econ": -1, "galtan": 0 },
     { "questionKey": "arbete-bidragstak", "text": "Inför ett bidragstak per hushåll", "econ": 1, "galtan": 0 },
     { "questionKey": "arbete-arbetstid", "text": "Förkorta arbetstiden med bibehållen lön", "econ": -1, "galtan": 0 },
+    { "questionKey": "arbete-ingangsloner", "text": "Lättare att anställa till lägre ingångslöner", "econ": 1, "galtan": 0 },
+    { "questionKey": "arbete-strejkratt", "text": "Begränsa strejk- och sympatiåtgärder", "econ": 1, "galtan": 0 },
 
     { "questionKey": "forsvar-okade-utgifter", "text": "Öka försvarsutgifterna ytterligare", "econ": 0, "galtan": 0, "note": "säkerhetspolitik, bred enighet; exkluderad" },
     { "questionKey": "forsvar-varnplikt", "text": "Bygg ut värnplikten", "econ": 0, "galtan": 0, "note": "säkerhetspolitik; exkluderad" },
     { "questionKey": "forsvar-karnvapen", "text": "Tillåt kärnvapen på svensk mark vid behov", "econ": 0, "galtan": 0, "note": "säkerhetspolitik; exkluderad" },
     { "questionKey": "forsvar-ukraina", "text": "Fortsatt omfattande militärt stöd till Ukraina", "econ": 0, "galtan": 0, "note": "säkerhetspolitik, bred enighet; exkluderad" },
+    { "questionKey": "forsvar-utlandska-baser", "text": "Förbjud permanenta utländska militärbaser", "econ": 0, "galtan": 0, "note": "säkerhetspolitik (DCA); egen dimension, exkluderad" },
+    { "questionKey": "forsvar-vapenexport", "text": "Förbjud vapenexport till icke-demokratier", "econ": 0, "galtan": 0, "note": "säkerhetspolitik/utrikes; exkluderad" },
 
     { "questionKey": "aldre-resurser", "text": "Mer resurser till äldreomsorgen även vid höjd skatt", "econ": -1, "galtan": 0 },
     { "questionKey": "aldre-pension", "text": "Höj de lägsta pensionerna", "econ": -1, "galtan": 0 },
     { "questionKey": "aldre-privat-omsorg", "text": "Begränsa privata utförare i äldreomsorgen", "econ": -1, "galtan": 0 },
+    { "questionKey": "aldre-pensionsalder", "text": "Höj pensionsåldern i takt med livslängden", "econ": 0, "galtan": 0, "note": "V+SD mot mitten – korsladdar; exkluderad" },
+    { "questionKey": "aldre-boendegaranti", "text": "Äldreboendegaranti för 85+", "econ": 0, "galtan": 0, "note": "rättighetsfråga utan tydligt blockmönster; exkluderad" },
 
     { "questionKey": "bostad-hyressattning", "text": "Sätt hyrorna mer marknadsmässigt", "econ": 1, "galtan": 0 },
     { "questionKey": "bostad-subventioner", "text": "Subventionera byggande av hyresrätter", "econ": -1, "galtan": 0 },
+    { "questionKey": "bostad-flyttskatt", "text": "Sänk eller avskaffa reavinstskatten på bostäder", "econ": 1, "galtan": 0 },
+    { "questionKey": "bostad-ranteavdrag", "text": "Trappa ned ränteavdragen på bolån", "econ": -1, "galtan": 0, "note": "mindre subvention av kapitalägande; medhåll = vänster" },
+    { "questionKey": "bostad-strandskydd", "text": "Luckra upp strandskyddet", "econ": 0, "galtan": 1, "note": "exploatering över miljöskydd; korsladdar landsbygd (C) – granska" },
 
     { "questionKey": "eu-mer-makt", "text": "EU ska få mer makt", "econ": 0, "galtan": 0, "note": "EU-dimension korsladdar galtan (vänster- och högereuroskepsis); exkluderad" },
     { "questionKey": "eu-euro", "text": "Inför euron", "econ": 0, "galtan": 0, "note": "EU-dimension; exkluderad" },
-    { "questionKey": "eu-forsvarssamarbete", "text": "Driv på för tätare försvarssamarbete i EU", "econ": 0, "galtan": 0, "note": "EU-dimension; exkluderad" }
+    { "questionKey": "eu-forsvarssamarbete", "text": "Driv på för tätare försvarssamarbete i EU", "econ": 0, "galtan": 0, "note": "EU-dimension; exkluderad" },
+    { "questionKey": "eu-gemensam-skuld", "text": "Gemensam EU-upplåning för försvar och investeringar", "econ": 0, "galtan": 0, "note": "EU-dimension (S/C för, M/SD emot – bryter axlarna); exkluderad" },
+    { "questionKey": "eu-ukraina-medlemskap", "text": "Driv på för ukrainskt EU-medlemskap", "econ": 0, "galtan": 0, "note": "EU-dimension, brett stöd; exkluderad" },
+    { "questionKey": "eu-asylpakt", "text": "Gemensam EU-fördelning av asylmottagandet", "econ": 0, "galtan": 0, "note": "EU-dimension; V+SD emot av motsatta skäl – korsladdar; exkluderad" }
   ]
 }

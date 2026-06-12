@@ -98,11 +98,24 @@ export function QuestionForm({
             onChange={(e) => set("displayOrder", Number(e.target.value))}
           />
         </div>
-        <label className="flex h-9 items-center gap-2">
-          <Switch checked={form.isActive} onCheckedChange={(v) => set("isActive", v)} />
-          <span className="text-sm">Aktiv (visas i quizet)</span>
-        </label>
+        <div className="space-y-1.5">
+          <Label htmlFor="tier">Nivå (quizläge)</Label>
+          <select
+            id="tier"
+            className={selectClass}
+            value={form.tier}
+            onChange={(e) => set("tier", Number(e.target.value))}
+          >
+            <option value={1}>1 – Snabb (25 frågor)</option>
+            <option value={2}>2 – Standard (50 frågor)</option>
+            <option value={3}>3 – Fördjupning (75 frågor)</option>
+          </select>
+        </div>
       </div>
+      <label className="flex h-9 items-center gap-2">
+        <Switch checked={form.isActive} onCheckedChange={(v) => set("isActive", v)} />
+        <span className="text-sm">Aktiv (visas i quizet)</span>
+      </label>
       <Button type="submit" disabled={busy}>
         {busy ? "Sparar…" : submitLabel}
       </Button>

@@ -1,0 +1,270 @@
+{
+  "sources": [
+    {
+      "questionKey": "migration-anhorig-begransa",
+      "partyCode": "V",
+      "value": 1,
+      "motivation": "V vill avslå regeringens skärpningar av villkoren för anhöriginvandring och värnar rätten till familjeåterförening. Partiet menar att höjda försörjningskrav splittrar familjer och särskilt drabbar barn.",
+      "sourceCitation": "Sveriges riksdag, Motion 2024/25:1930 Svensk flyktingpolitik (V), 2024",
+      "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/svensk-flyktingpolitik_hc021930/html/",
+      "quote": null,
+      "confidence": "high"
+    },
+    {
+      "questionKey": "migration-anhorig-begransa",
+      "partyCode": "S",
+      "value": 3,
+      "motivation": "S står bakom en stram migrationspolitik med försörjningskrav men har reserverat sig mot delar av regeringens skärpningar och kräver bland annat övergångsbestämmelser. Partiet vill skärpa kraven, men inte lika långtgående som Tidöpartierna.",
+      "sourceCitation": "Sveriges riksdag, Utskott ställer sig bakom skärpta krav för svenskt medborgarskap, 2026",
+      "sourceUrl": "https://www.riksdagen.se/sv/aktuellt/aktuelltnotiser/2026/apr/28/utskott-staller-sig-bakom-skarpta-krav-for-svenskt_cms9877b1a3-c06e-4220-9ffb-00f2c4e9c722sv/",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "migration-anhorig-begransa",
+      "partyCode": "MP",
+      "value": 1,
+      "motivation": "MP motsätter sig kraftigt höjda försörjningskrav vid anhöriginvandring och varnar för att skärpningarna leder till familjesplittring som särskilt drabbar barn. Partiet vill i stället värna rätten till familjeåterförening.",
+      "sourceCitation": "SVT Nyheter, Miljöpartiet kritiskt mot S-bud om migration, 2025",
+      "sourceUrl": "https://www.svt.se/nyheter/inrikes/miljopartiet-kritiskt-mot-s-bud-om-migration",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "migration-anhorig-begransa",
+      "partyCode": "C",
+      "value": 2,
+      "motivation": "C accepterar försörjningskrav i princip men har reserverat sig mot delar av regeringens kraftiga skärpningar och kritiserar att höjda krav slår mot integration och kompetensförsörjning, inte minst i glesbygd.",
+      "sourceCitation": "Sveriges riksdag, Utskott ställer sig bakom skärpta krav för svenskt medborgarskap, 2026",
+      "sourceUrl": "https://www.riksdagen.se/sv/aktuellt/aktuelltnotiser/2026/apr/28/utskott-staller-sig-bakom-skarpta-krav-for-svenskt_cms9877b1a3-c06e-4220-9ffb-00f2c4e9c722sv/",
+      "quote": null,
+      "confidence": "low"
+    },
+    {
+      "questionKey": "migration-anhorig-begransa",
+      "partyCode": "L",
+      "value": 4,
+      "motivation": "L sitter i den regering som föreslår att försörjningskravet vid anhöriginvandring höjs med 30 procent plus faktisk boendekostnad. Partiet menar att höjda krav stärker drivkrafterna för integration och egenförsörjning.",
+      "sourceCitation": "Regeringen, Höjt försörjningskrav vid anhöriginvandring föreslås, 2025",
+      "sourceUrl": "https://www.regeringen.se/pressmeddelanden/2025/12/hojt-forsorjningskrav-vid-anhoriginvandring-foreslas/",
+      "quote": null,
+      "confidence": "high"
+    },
+    {
+      "questionKey": "migration-anhorig-begransa",
+      "partyCode": "KD",
+      "value": 4,
+      "motivation": "KD står bakom regeringens förslag att kraftigt höja försörjningskravet vid anhöriginvandring och ser skärpta krav som en del i arbetet mot utanförskap.",
+      "sourceCitation": "Regeringen, Höjt försörjningskrav vid anhöriginvandring föreslås, 2025",
+      "sourceUrl": "https://www.regeringen.se/pressmeddelanden/2025/12/hojt-forsorjningskrav-vid-anhoriginvandring-foreslas/",
+      "quote": null,
+      "confidence": "high"
+    },
+    {
+      "questionKey": "migration-anhorig-begransa",
+      "partyCode": "M",
+      "value": 4,
+      "motivation": "M leder den regering som föreslår att försörjningskravet vid anhöriginvandring höjs med 30 procent plus faktisk boendekostnad, som en del av paradigmskiftet i migrationspolitiken.",
+      "sourceCitation": "Regeringen, Höjt försörjningskrav vid anhöriginvandring föreslås, 2025",
+      "sourceUrl": "https://www.regeringen.se/pressmeddelanden/2025/12/hojt-forsorjningskrav-vid-anhoriginvandring-foreslas/",
+      "quote": null,
+      "confidence": "high"
+    },
+    {
+      "questionKey": "migration-anhorig-begransa",
+      "partyCode": "SD",
+      "value": 4,
+      "motivation": "SD har via Tidöavtalet drivit fram skärpta villkor för anhöriginvandring, inklusive kraftigt höjt försörjningskrav, och anser att Sverige tillåter anhöriginvandring i fler fall än EU-rätten kräver.",
+      "sourceCitation": "Regeringen, Höjt försörjningskrav vid anhöriginvandring föreslås, 2025",
+      "sourceUrl": "https://www.regeringen.se/pressmeddelanden/2025/12/hojt-forsorjningskrav-vid-anhoriginvandring-foreslas/",
+      "quote": null,
+      "confidence": "high"
+    },
+    {
+      "questionKey": "ekonomi-arvsskatt",
+      "partyCode": "V",
+      "value": 4,
+      "motivation": "V vill återinföra en arvsskatt på stora arv, över cirka 3 miljoner kronor, som ett led i ett mer omfördelande skattesystem där kapital och förmögenheter beskattas hårdare.",
+      "sourceCitation": "Sveriges riksdag, Motion 2023/24:2321 Ett rättvist skattesystem (V), 2023",
+      "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/ett-rattvist-skattesystem_hb022321/html/",
+      "quote": null,
+      "confidence": "high"
+    },
+    {
+      "questionKey": "ekonomi-arvsskatt",
+      "partyCode": "S",
+      "value": 2,
+      "motivation": "S föreslår ingen återinförd arvsskatt och var partiet som avskaffade den 2004, men är öppet för höjd skatt på höga kapitalinkomster, vilket gör att partiet inte helt stänger dörren för ökad beskattning av stora förmögenhetsöverföringar.",
+      "sourceCitation": "Valkoll, Skatter – så tycker partierna 2026, 2026",
+      "sourceUrl": "https://valkoll2026.se/insikt/skatter-partier-2026/",
+      "quote": null,
+      "confidence": "low"
+    },
+    {
+      "questionKey": "ekonomi-arvsskatt",
+      "partyCode": "MP",
+      "value": 2,
+      "motivation": "MP driver inte ett återinförande av arvsskatten men vill öka beskattningen av kapital och stora förmögenheter, och ligger därmed närmare V än högerblocket i skattefrågor.",
+      "sourceCitation": "Valkoll, Skatter – så tycker partierna 2026, 2026",
+      "sourceUrl": "https://valkoll2026.se/insikt/skatter-partier-2026/",
+      "quote": null,
+      "confidence": "low"
+    },
+    {
+      "questionKey": "ekonomi-arvsskatt",
+      "partyCode": "C",
+      "value": 1,
+      "motivation": "C säger nej till återinförd arvsskatt och vill behålla dagens system utan arvs- och förmögenhetsskatt, bland annat med hänvisning till företagande och ägarskiften.",
+      "sourceCitation": "Valkoll, Skatter – så tycker partierna 2026, 2026",
+      "sourceUrl": "https://valkoll2026.se/insikt/skatter-partier-2026/",
+      "quote": null,
+      "confidence": "low"
+    },
+    {
+      "questionKey": "ekonomi-arvsskatt",
+      "partyCode": "L",
+      "value": 1,
+      "motivation": "L vill inte återinföra arvsskatten och står bakom dagens system utan arvs- och förmögenhetsskatt; partiet röstade för avskaffandet och har inte ändrat linje.",
+      "sourceCitation": "Valkoll, Skatter – så tycker partierna 2026, 2026",
+      "sourceUrl": "https://valkoll2026.se/insikt/skatter-partier-2026/",
+      "quote": null,
+      "confidence": "low"
+    },
+    {
+      "questionKey": "ekonomi-arvsskatt",
+      "partyCode": "KD",
+      "value": 1,
+      "motivation": "KD är emot en återinförd arvsskatt och vill behålla dagens ordning utan arvs- och förmögenhetsskatt.",
+      "sourceCitation": "Valkoll, Skatter – så tycker partierna 2026, 2026",
+      "sourceUrl": "https://valkoll2026.se/insikt/skatter-partier-2026/",
+      "quote": null,
+      "confidence": "low"
+    },
+    {
+      "questionKey": "ekonomi-arvsskatt",
+      "partyCode": "M",
+      "value": 1,
+      "motivation": "M säger uttryckligen nej till en återinförd arvsskatt och varnar för förslag om höjda skatter på sparande, företagande och arv.",
+      "sourceCitation": "Moderaterna, Skattehöjningar (Moderaterna Skåne), 2025",
+      "sourceUrl": "https://moderaterna.se/skane/var-politik/skattehojningar/",
+      "quote": null,
+      "confidence": "high"
+    },
+    {
+      "questionKey": "ekonomi-arvsskatt",
+      "partyCode": "SD",
+      "value": 1,
+      "motivation": "SD vill behålla dagens system utan arvsskatt och motsätter sig liksom övriga högerblocket alla förslag om att återinföra den.",
+      "sourceCitation": "Valkoll, Skatter – så tycker partierna 2026, 2026",
+      "sourceUrl": "https://valkoll2026.se/insikt/skatter-partier-2026/",
+      "quote": null,
+      "confidence": "low"
+    },
+    {
+      "questionKey": "ekonomi-rut-avskaffa",
+      "partyCode": "V",
+      "value": 4,
+      "motivation": "V vill avskaffa rutavdraget eftersom höginkomsttagare använder det betydligt mer än låginkomsttagare, som därmed i praktiken subventionerar de välbeställdas tjänster.",
+      "sourceCitation": "Vänsterpartiet, RUT och ROT (Politik A till Ö), 2025",
+      "sourceUrl": "https://www.vansterpartiet.se/var-politik/politik-a-o/rut-och-rot/",
+      "quote": "Vi har inget emot hushållsnära tjänster. Det vi vänder oss emot är att dessa skattesubventioneras",
+      "confidence": "high"
+    },
+    {
+      "questionKey": "ekonomi-rut-avskaffa",
+      "partyCode": "S",
+      "value": 1,
+      "motivation": "S vill inte avskaffa rutavdraget; partiet behöll och utvidgade avdraget under sina regeringsår och driver inga förslag om avskaffande.",
+      "sourceCitation": "Dagens ETC, Varför vill S inte avskaffa rut-avdraget?, 2021",
+      "sourceUrl": "https://www.etc.se/kommentar/varfoer-vill-s-inte-avskaffa-rut-avdraget",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "ekonomi-rut-avskaffa",
+      "partyCode": "MP",
+      "value": 2,
+      "motivation": "MP föreslår inte att rutavdraget avskaffas men vill rikta om det mot klimatomställningen, med större fokus på reparationer och cirkulära tjänster.",
+      "sourceCitation": "Rödgrön Röra, Jämförelse av rödgröna partiers politik, 2025",
+      "sourceUrl": "https://rodgronrora.nu/",
+      "quote": null,
+      "confidence": "low"
+    },
+    {
+      "questionKey": "ekonomi-rut-avskaffa",
+      "partyCode": "C",
+      "value": 1,
+      "motivation": "C var pådrivande när rutavdraget infördes och vill behålla och utveckla avdraget, som partiet ser som viktigt för jobb och företagande i tjänstesektorn.",
+      "sourceCitation": "Arbetet, Så här tycker partierna om rut och rot, 2014",
+      "sourceUrl": "https://arbetet.se/2014/09/09/sa-har-tycker-partierna-om-rut-och-rot/",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "ekonomi-rut-avskaffa",
+      "partyCode": "L",
+      "value": 1,
+      "motivation": "L vill behålla rutavdraget och sitter i den regering som värnat och förstärkt rut- och rotavdragen, bland annat genom separerade och höjda tak.",
+      "sourceCitation": "Regeringen, Tillfälligt höjt tak för rotavdraget, 2024",
+      "sourceUrl": "https://www.regeringen.se/pressmeddelanden/2024/02/tillfalligt-hojt-tak-for-rotavdraget/",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "ekonomi-rut-avskaffa",
+      "partyCode": "KD",
+      "value": 1,
+      "motivation": "KD vill behålla rutavdraget och sitter i den regering som värnat och förstärkt rut- och rotavdragen i stället för att begränsa dem.",
+      "sourceCitation": "Regeringen, Tillfälligt höjt tak för rotavdraget, 2024",
+      "sourceUrl": "https://www.regeringen.se/pressmeddelanden/2024/02/tillfalligt-hojt-tak-for-rotavdraget/",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "ekonomi-rut-avskaffa",
+      "partyCode": "M",
+      "value": 1,
+      "motivation": "M vill behålla rutavdraget; den M-ledda regeringen har värnat och förstärkt rut- och rotavdragen med finansminister Svantesson som avsändare.",
+      "sourceCitation": "Regeringen, Tillfälligt höjt tak för rotavdraget, 2024",
+      "sourceUrl": "https://www.regeringen.se/pressmeddelanden/2024/02/tillfalligt-hojt-tak-for-rotavdraget/",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "ekonomi-rut-avskaffa",
+      "partyCode": "SD",
+      "value": 1,
+      "motivation": "SD vill behålla rutavdraget och har som samarbetsparti i Tidösamarbetet ställt sig bakom regeringens politik att värna och förstärka rut- och rotavdragen.",
+      "sourceCitation": "Regeringen, Tillfälligt höjt tak för rotavdraget, 2024",
+      "sourceUrl": "https://www.regeringen.se/pressmeddelanden/2024/02/tillfalligt-hojt-tak-for-rotavdraget/",
+      "quote": null,
+      "confidence": "medium"
+    }
+  ],
+  "explanations": [
+    {
+      "questionKey": "migration-anhorig-begransa",
+      "explanation": "Regeringen och SD föreslår utifrån SOU 2025:95 att försörjningskravet vid anhöriginvandring höjs med 30 procent plus faktisk boendekostnad, vilket motsvarar cirka 13 300 kronor i månaden plus boende för ett par. V och MP vill avslå skärpningarna medan S accepterar hårdare krav men med reservationer.",
+      "sourceUrl": "https://www.regeringen.se/pressmeddelanden/2025/12/hojt-forsorjningskrav-vid-anhoriginvandring-foreslas/",
+      "sourceCitation": "Regeringen, Höjt försörjningskrav vid anhöriginvandring föreslås, 2025",
+      "quote": null,
+      "confidence": "high"
+    },
+    {
+      "questionKey": "ekonomi-arvsskatt",
+      "explanation": "Arvsskatten avskaffades 2004 med bred politisk enighet. I dag är V ensamt om att vilja återinföra en arvsskatt på stora arv, över cirka 3 miljoner kronor, medan övriga partier är emot; S och MP vill i stället höja skatten på höga kapitalinkomster.",
+      "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/ett-rattvist-skattesystem_hb022321/html/",
+      "sourceCitation": "Sveriges riksdag, Motion 2023/24:2321 Ett rättvist skattesystem (V), 2023",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "ekonomi-rut-avskaffa",
+      "explanation": "Rutavdraget infördes 2007 och har successivt byggts ut av regeringar från båda blocken; taket är i dag 75 000 kronor per person och år. Endast V vill avskaffa avdraget, medan MP vill rikta om det och övriga partier vill behålla eller utöka det.",
+      "sourceUrl": "https://www.regeringen.se/pressmeddelanden/2024/02/tillfalligt-hojt-tak-for-rotavdraget/",
+      "sourceCitation": "Regeringen, Tillfälligt höjt tak för rotavdraget, 2024",
+      "quote": null,
+      "confidence": "medium"
+    }
+  ]
+}

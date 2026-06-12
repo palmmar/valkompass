@@ -36,6 +36,7 @@ export interface AdminQuestion {
   categorySlug: string;
   categoryName: string;
   displayOrder: number;
+  tier: number;
   isActive: boolean;
 }
 export interface QuestionInput {
@@ -45,6 +46,7 @@ export interface QuestionInput {
   explanationSourceUrl: string | null;
   categoryId: number;
   displayOrder: number;
+  tier: number;
   isActive: boolean;
 }
 

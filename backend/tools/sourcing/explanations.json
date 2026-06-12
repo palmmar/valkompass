@@ -382,5 +382,205 @@
     "sourceCitation": "Regeringen, Sverige är medlem i Nato, 2024",
     "quote": "Därmed är Sverige medlem i Nato.",
     "confidence": "high"
+  },
+  {
+    "questionKey": "sjukvard-dodshjalp",
+    "explanation": "Aktiv dödshjälp är i dag förbjuden i Sverige och den som avsiktligt avslutar en patients liv kan dömas för brott, medan patienter har rätt att tacka nej till livsuppehållande behandling. Flera partier har på senare år öppnat för att frågan ska utredas.",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/flera-partier-utreder-fragan-om-dodshjalp",
+    "sourceCitation": "SVT Nyheter, Flera partier arbetar med frågan om dödshjälp, 2020",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "sjukvard-surrogat",
+    "explanation": "Surrogatarrangemang är inte straffbara i Sverige men tillåts inte inom svensk sjukvård, och kvinnan som föder barnet räknas juridiskt som dess mor. Frågan delar riksdagen: M, L och C vill tillåta altruistiskt surrogatmödraskap medan S, V, KD och SD säger nej.",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/sa-tycker-partierna-i-surrogatfragan",
+    "sourceCitation": "SVT Nyheter, Så tycker partierna i surrogatfrågan, 2024",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "lag-preventiv-avlyssning",
+    "explanation": "Riksdagen har stegvis utökat polisens möjligheter att använda preventiva tvångsmedel, till exempel hemlig avlyssning och rumsavlyssning, för att förebygga allvarlig brottslighet utan att det finns en konkret brottsmisstanke; den senaste stora utvidgningen beslutades i juni 2024.",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/preventiva-tvangsmedel-for-att-forebygga-och_hb01juu24/",
+    "sourceCitation": "Sveriges riksdag, Betänkande 2023/24:JuU24 Preventiva tvångsmedel för att förebygga och förhindra allvarliga brott, 2024",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "lag-narkotika-avkriminalisera",
+    "explanation": "Eget bruk av narkotika är kriminaliserat i Sverige och kan ge böter eller fängelse. Det finns ingen riksdagsmajoritet för avkriminalisering, även om V och C vill avkriminalisera själva ruspåverkan och MP vill utvärdera narkotikastrafflagen.",
+    "sourceUrl": "https://www.alkoholochnarkotika.se/politik/alkohol-narkotikas-valenkat-ar-det-dags-att-avkriminalisera-eget-bruk/",
+    "sourceCitation": "Alkohol & Narkotika, Valenkät: Är det dags att avkriminalisera eget bruk?, 2022",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "migration-tiggeriforbud",
+    "explanation": "Det finns i dag inget nationellt tiggeriförbud i Sverige, men ett tjugotal kommuner har infört lokala förbud via ordningsföreskrifter. Utredningen SOU 2025:83, tillsatt av Tidöpartierna, bedömde 2025 att ett nationellt förbud inte behövs eftersom tiggeriet minskat kraftigt.",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/utredning-om-nationellt-tiggeriforbud-overlamnas",
+    "sourceCitation": "SVT Nyheter, Utredare: Inget behov av nationellt tiggeriförbud, 2025",
+    "quote": "Det behövs inte",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "forsvar-utlandska-baser",
+    "explanation": "Riksdagen godkände i juni 2024 DCA-avtalet med USA, som ger amerikansk militär tillgång till 17 svenska militärbaser och övningsområden; Sverige har dock inga formellt permanenta utländska baser och regeringen har angett att sådana inte är aktuella i fredstid. Endast V och MP röstade nej till avtalet.",
+    "sourceUrl": "https://www.riksdagen.se/sv/aktuellt/aktuelltnotiser/2024/juni/18/ja-till-avtal-om-forsvarssamarbete-med-usa_cms2fa8b58c-5dc6-455f-b909-95d1d9477599sv/",
+    "sourceCitation": "Sveriges riksdag, Ja till avtal om försvarssamarbete med USA, 2024",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "forsvar-vapenexport",
+    "explanation": "Sedan 2018 gäller skärpt exportkontroll av krigsmateriel där köparlandets demokratiska status är ett centralt villkor vid tillståndsprövningen – ett hinder men inget förbud. En betydande del av svensk vapenexport går fortfarande till länder som inte är demokratier, däribland Förenade Arabemiraten.",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/skarpt-exportkontroll-av-krigsmateriel_h501uu9/",
+    "sourceCitation": "Sveriges riksdag, Betänkande 2017/18:UU9 Skärpt exportkontroll av krigsmateriel, 2018",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "aldre-pensionsalder",
+    "explanation": "Riksdagen beslutade 2022 att knyta pensionssystemets åldersgränser till en riktålder som följer medellivslängdens utveckling; från 2026 styr riktåldern (67 år) bland annat när garantipension kan tas ut. Det innebär att pensionsåldern automatiskt höjs i takt med att vi lever längre.",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/justerade-aldersgranser-i-pensionssystemet-och-i_h901sfu25/",
+    "sourceCitation": "Sveriges riksdag, Betänkande 2021/22:SfU25 Justerade åldersgränser i pensionssystemet, 2022",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "aldre-boendegaranti",
+    "explanation": "I dag krävs biståndsbedömning enligt socialtjänstlagen för att få plats på särskilt boende, oavsett ålder, och kommunerna ansvarar för att inrätta boendena; någon åldersbaserad rätt till äldreboende finns inte, även om riksdagen tidigare har tillkännagett att en äldreboendegaranti för personer över 85 bör övervägas.",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svar-pa-skriftlig-fraga/ratt-till-sarskilt-boende-for-aldre_hc12900/",
+    "sourceCitation": "Sveriges riksdag, Svar på skriftlig fråga 2024/25:900 Rätt till särskilt boende för äldre, 2025",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "bostad-flyttskatt",
+    "explanation": "Vinst vid försäljning av bostad beskattas i dag med 22 procent (reavinstskatt). KD har föreslagit att skatten trappas ned med två procentenheter per år efter fem års ägande tills den försvinner efter 16 år, ett förslag som delar riksdagen mellan partier som vill öka rörligheten och partier som varnar för orättvisa fördelningseffekter.",
+    "sourceUrl": "https://bostadspolitik.se/reavinstskatten-delar-riksdagen-l-mest-positiva-s-varnar-for-orattvisa/",
+    "sourceCitation": "Bostadspolitik.se, Reavinstskatten delar riksdagen: L mest positiva, S varnar för orättvisa, 2025",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "bostad-ranteavdrag",
+    "explanation": "I dag får hushåll dra av 30 procent av räntekostnader upp till 100 000 kronor per år (21 procent därutöver). Sedan 2025 trappas ränteavdraget ned för lån utan säkerhet, till exempel blancolån, men för bolån är avdraget oförändrat.",
+    "sourceUrl": "https://www.regeringen.se/pressmeddelanden/2024/08/avtrappat-ranteavdrag-for-lan-utan-sakerheter/",
+    "sourceCitation": "Regeringen, Avtrappat ränteavdrag för lån utan säkerheter, 2024",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "bostad-strandskydd",
+    "explanation": "Strandskyddet förbjuder som huvudregel byggande inom 100 meter från strandlinjen. Riksdagen beslutade i maj 2025 om lättnader som sedan den 1 juli 2025 undantar fler land- och vattenområden och ökar möjligheterna att bygga strandnära.",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/lattnader-i-strandskyddet-ett-forsta-steg_hc01mju16/html/",
+    "sourceCitation": "Miljö- och jordbruksutskottet, Betänkande 2024/25:MJU16 Lättnader i strandskyddet – ett första steg, 2025",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "eu-gemensam-skuld",
+    "explanation": "EU har genom försvarsinstrumentet Safe börjat låna upp gemensamt på kapitalmarknaden – upp till 150 miljarder euro – för att ge medlemsländer förmånliga lån till försvarsinvesteringar. Sverige har hittills valt att stå utanför programmet.",
+    "sourceUrl": "https://www.europaportalen.se/2025/07/stort-intresse-eus-nya-forsvarslan-18-lander-vill-lana-over-127-miljarder",
+    "sourceCitation": "Europaportalen, Stort intresse för EU:s nya försvarslån – 18 länder vill låna över 127 miljarder, 2025",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "eu-ukraina-medlemskap",
+    "explanation": "Ukraina är kandidatland och medlemskapsförhandlingar med EU pågår. Sverige stödjer aktivt Ukrainas EU-närmande, bland annat genom expertstöd i reformarbetet, och verkar för att de första förhandlingsklustren ska öppnas omgående.",
+    "sourceUrl": "https://www.regeringen.se/regeringens-politik/sveriges-stod-till-ukraina/sverige-stodjer-ukrainas-vag-mot-eu/",
+    "sourceCitation": "Regeringen, Sverige stödjer Ukrainas väg mot EU, 2025",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "eu-asylpakt",
+    "explanation": "EU:s migrations- och asylpakt antogs 2024 och börjar tillämpas den 12 juni 2026. En solidaritetsmekanism ersätter de gamla Dublinreglerna: medlemsländerna ska bidra genom att ta emot asylsökande, betala eller bistå på annat sätt.",
+    "sourceUrl": "https://www.migrationsverket.se/om-migrationsverket/migrationsverket-svarar/2025/2025-06-18-vad-handlar-eus-nya-migrations--och-asylpakt-om.html",
+    "sourceCitation": "Migrationsverket, Vad handlar EU:s nya migrations- och asylpakt om?, 2025",
+    "quote": "en rättvisare fördelning av asylsökande",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "migration-anhorig-begransa",
+    "explanation": "Regeringen och SD föreslår utifrån SOU 2025:95 att försörjningskravet vid anhöriginvandring höjs med 30 procent plus faktisk boendekostnad, vilket motsvarar cirka 13 300 kronor i månaden plus boende för ett par. V och MP vill avslå skärpningarna medan S accepterar hårdare krav men med reservationer.",
+    "sourceUrl": "https://www.regeringen.se/pressmeddelanden/2025/12/hojt-forsorjningskrav-vid-anhoriginvandring-foreslas/",
+    "sourceCitation": "Regeringen, Höjt försörjningskrav vid anhöriginvandring föreslås, 2025",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "ekonomi-arvsskatt",
+    "explanation": "Arvsskatten avskaffades 2004 med bred politisk enighet. I dag är V ensamt om att vilja återinföra en arvsskatt på stora arv, över cirka 3 miljoner kronor, medan övriga partier är emot; S och MP vill i stället höja skatten på höga kapitalinkomster.",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/ett-rattvist-skattesystem_hb022321/html/",
+    "sourceCitation": "Sveriges riksdag, Motion 2023/24:2321 Ett rättvist skattesystem (V), 2023",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "ekonomi-rut-avskaffa",
+    "explanation": "Rutavdraget infördes 2007 och har successivt byggts ut av regeringar från båda blocken; taket är i dag 75 000 kronor per person och år. Endast V vill avskaffa avdraget, medan MP vill rikta om det och övriga partier vill behålla eller utöka det.",
+    "sourceUrl": "https://www.regeringen.se/pressmeddelanden/2024/02/tillfalligt-hojt-tak-for-rotavdraget/",
+    "sourceCitation": "Regeringen, Tillfälligt höjt tak för rotavdraget, 2024",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "ekonomi-matmoms",
+    "explanation": "Riksdagen har beslutat att momsen på livsmedel tillfälligt sänks från 12 till 6 procent under perioden 1 april 2026–31 december 2027. Regeringspartierna och SD betonar att sänkningen är tillfällig, medan V och MP vill gå längre och slopa matmomsen permanent.",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/tillfalligt-sankt-mervardesskatt-pa-livsmedel_hd01sku9/",
+    "sourceCitation": "Sveriges riksdag, Betänkande 2025/26:SkU9 Tillfälligt sänkt mervärdesskatt på livsmedel, 2025",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "klimat-bilforbud-2035",
+    "explanation": "EU har beslutat att nya bensin- och dieselbilar inte får säljas från 2035, men EU-kommissionen har föreslagit lättnader i lagen. I Sverige har frågan skapat en spricka i Tidölaget: SD vill riva upp förbudet och KD har svängt, medan regeringens formella linje står fast och S, MP, V och C försvarar förbudet.",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/tidospricka-om-motorforbud-lagg-kulturkriget-at-sidan",
+    "sourceCitation": "SVT Nyheter, Tidöspricka om motorförbud: \"Lägg kulturkriget åt sidan\", 2025",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "klimat-hoghastighetstag",
+    "explanation": "Tidöregeringen (M, KD, L med stöd av SD) avbröt hösten 2022 planeringen av nya stambanor för höghastighetståg mellan storstäderna och prioriterar i stället underhåll av befintlig järnväg, medan V, MP, S och C i olika grad vill återuppta utbyggnaden.",
+    "sourceUrl": "https://www.sverigesradio.se/artikel/sa-vill-partierna-klara-satsningar-pa-vagar-och-jarnvagar",
+    "sourceCitation": "Sveriges Radio, Så vill partierna klara satsningar på vägar och järnvägar, 2022",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "skola-skolval-lottning",
+    "explanation": "I dag väljer familjer skola själva och friskolor sköter sin egen antagning, ofta med kötid som urvalsgrund; S-regeringens förslag 2022 om gemensamt offentligt skolval föll i riksdagen och frågan delar fortsatt blocken, där vänstersidan vill begränsa eller reformera skolvalet medan högersidan försvarar det.",
+    "sourceUrl": "https://www.vilarare.se/nyheter/skolpolitik/22-heta-valfragor-for-skolan--sa-svarar-partierna/",
+    "sourceCitation": "Vi Lärare, 22 heta valfrågor för skolan – så svarar partierna, 2022",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "skola-sprakforskola",
+    "explanation": "Regeringen tillsatte 2024 en utredning (dir. 2024:113) om att införa en obligatorisk språkförskola för barn som inte exponeras tillräckligt för svenska i sin hemmiljö; utredningen ska redovisas i december 2025 och frågan stöds av Tidöpartierna och SD medan V och MP är skeptiska till obligatorium.",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/kommittedirektiv/en-likvardig-forskola-av-god-kvalitet-med_hcb1113/",
+    "sourceCitation": "Regeringen, Kommittédirektiv 2024:113 En likvärdig förskola av god kvalitet med obligatorisk språkförskola, 2024",
+    "quote": "en språkförskola som är obligatorisk för barn som inte i tillräcklig utsträckning exponeras för det svenska språket i sin hemmiljö",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "arbete-ingangsloner",
+    "explanation": "I Sverige sätts ingångslönerna av fack och arbetsgivare i kollektivavtal, inte i lag. Parternas etableringsjobb med lägre lön för nyanlända och långtidsarbetslösa infördes 2022, medan flera borgerliga partier har velat gå längre med lagstadgade inträdesjobb till lägre ingångslön.",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-lagar/dokument/proposition/forutsattningar-for-etableringsjobb-och-vissa_H703117",
+    "sourceCitation": "Regeringen, Proposition 2019/20:117 Förutsättningar för etableringsjobb, 2020",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "arbete-strejkratt",
+    "explanation": "Strejkrätten begränsades senast 2019, då stridsåtgärder mot arbetsgivare med kollektivavtal inskränktes efter en överenskommelse mellan parterna. Regeringspartierna M, KD och L samt C har därefter uttryckt att de vill gå längre med en proportionalitetsprincip och begränsade sympatiåtgärder, medan S, V och MP avvisar ytterligare inskränkningar.",
+    "sourceUrl": "https://www.arbetsvarlden.se/regeringen-vill-se-strejkratten-inskrankt/",
+    "sourceCitation": "Arbetsvärlden, Regeringen vill se strejkrätten inskränkt, 2023",
+    "quote": null,
+    "confidence": "high"
   }
 ]

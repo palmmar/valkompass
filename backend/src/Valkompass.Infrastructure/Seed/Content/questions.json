@@ -3,6 +3,7 @@
     "externalKey": "sjukvard-statlig-styrning",
     "categorySlug": "sjukvard",
     "displayOrder": 1,
+    "tier": 2,
     "text": "Staten ska ta över ansvaret för sjukvården från regionerna",
     "explanation": "I dag är de 21 regionerna huvudmän och ansvarar för hälso- och sjukvården. Vårdansvarsutredningen (SOU 2025:62) avrådde 2025 från ett statligt huvudmannaskap, men föreslog ökat statligt ansvar inom vissa områden.",
     "explanationSourceUrl": "https://www.regeringen.se/rattsliga-dokument/statens-offentliga-utredningar/2025/06/sou-202562/"
@@ -11,6 +12,7 @@
     "externalKey": "sjukvard-vinstforbud",
     "categorySlug": "sjukvard",
     "displayOrder": 2,
+    "tier": 1,
     "text": "Vinster i välfärden ska förbjudas",
     "explanation": "I dag får privata utförare inom vård, skola och omsorg göra vinst; det finns inget vinstförbud. Riksdagen röstade 2018 nej till regeringens förslag om vinstbegränsning.",
     "explanationSourceUrl": "https://www.riksdagen.se/sv/dokument-lagar/dokument/_H501FiU44"
@@ -19,6 +21,7 @@
     "externalKey": "sjukvard-privat-vard",
     "categorySlug": "sjukvard",
     "displayOrder": 3,
+    "tier": 1,
     "text": "Privata vårdgivare är bra för sjukvården",
     "explanation": "Om privata aktörer förbättrar vårdens kvalitet och tillgänglighet.",
     "explanationSourceUrl": null
@@ -27,6 +30,7 @@
     "externalKey": "sjukvard-mer-resurser",
     "categorySlug": "sjukvard",
     "displayOrder": 4,
+    "tier": 1,
     "text": "Mer skattepengar ska gå till sjukvården även om det kräver höjda skatter",
     "explanation": "I dag uppgick utgifterna för hälso- och sjukvård till 719 miljarder kronor 2024, motsvarande 11,2 procent av BNP. Offentliga medel finansierade 86 procent, främst via regionernas skatt.",
     "explanationSourceUrl": "https://www.scb.se/hitta-statistik/statistik-efter-amne/nationalrakenskaper/nationalrakenskaper/halsorakenskaper/pong/statistiknyhet/halsorakenskaper-2024/"
@@ -35,6 +39,7 @@
     "externalKey": "sjukvard-tandvard",
     "categorySlug": "sjukvard",
     "displayOrder": 5,
+    "tier": 2,
     "text": "Tandvården ska ingå i högkostnadsskyddet på samma sätt som annan sjukvård",
     "explanation": "I dag har tandvården ett eget stöd, skilt från sjukvårdens: du betalar själv upp till 3 000 kr/år, får sedan 50 % rabatt (85 % över 15 000 kr) plus ett tandvårdsbidrag. Sjukvårdens högkostnadsskydd är 1 450 kr/år.",
     "explanationSourceUrl": "https://www.forsakringskassan.se/privatperson/tandvard/tandvardsstod"
@@ -43,14 +48,34 @@
     "externalKey": "sjukvard-privata-forsakringar",
     "categorySlug": "sjukvard",
     "displayOrder": 6,
+    "tier": 2,
     "text": "Privata sjukvårdsförsäkringar ska begränsas",
     "explanation": "I dag har närmare 830 000 personer en privat sjukvårdsförsäkring (varav cirka 510 000 betalda av arbetsgivare); marknaden är i huvudsak oreglerad.",
     "explanationSourceUrl": "https://www.svenskforsakring.se/aktuellt/nyheter/2026/intresset-for-vardforsakringar-fortsatt-hogt/"
   },
   {
+    "externalKey": "sjukvard-dodshjalp",
+    "categorySlug": "sjukvard",
+    "displayOrder": 7,
+    "tier": 3,
+    "text": "Aktiv dödshjälp ska tillåtas för svårt sjuka i livets slutskede",
+    "explanation": "Aktiv dödshjälp är i dag förbjuden i Sverige och den som avsiktligt avslutar en patients liv kan dömas för brott, medan patienter har rätt att tacka nej till livsuppehållande behandling. Flera partier har på senare år öppnat för att frågan ska utredas.",
+    "explanationSourceUrl": "https://www.svt.se/nyheter/inrikes/flera-partier-utreder-fragan-om-dodshjalp"
+  },
+  {
+    "externalKey": "sjukvard-surrogat",
+    "categorySlug": "sjukvard",
+    "displayOrder": 8,
+    "tier": 3,
+    "text": "Altruistiskt surrogatmödraskap ska tillåtas i Sverige",
+    "explanation": "Surrogatarrangemang är inte straffbara i Sverige men tillåts inte inom svensk sjukvård, och kvinnan som föder barnet räknas juridiskt som dess mor. Frågan delar riksdagen: M, L och C vill tillåta altruistiskt surrogatmödraskap medan S, V, KD och SD säger nej.",
+    "explanationSourceUrl": "https://www.svt.se/nyheter/inrikes/sa-tycker-partierna-i-surrogatfragan"
+  },
+  {
     "externalKey": "lag-skarpta-straff",
     "categorySlug": "lag-ordning",
     "displayOrder": 1,
+    "tier": 1,
     "text": "Straffen för våldsbrott ska skärpas kraftigt",
     "explanation": "I april 2026 beslutade regeringen om den största straffreformen sedan brottsbalken: ett 50-tal straffskalor skärps, mängdrabatten avskaffas och dubbla straff införs för gängbrott. Lagarna föreslås gälla från 1 augusti 2026.",
     "explanationSourceUrl": "https://www.regeringen.se/pressmeddelanden/2026/04/den-storsta-reformen-av-det-svenska-straffsystemet-sedan-brottsbalken-infordes/"
@@ -59,6 +84,7 @@
     "externalKey": "lag-fler-poliser",
     "categorySlug": "lag-ordning",
     "displayOrder": 2,
+    "tier": 2,
     "text": "Sverige ska anställa betydligt fler poliser",
     "explanation": "I mars 2026 fanns cirka 25 280 poliser i Polismyndigheten (och totalt över 38 000 anställda). Polistätheten är den högsta i modern tid och växer med ungefär 1 000 poliser per år.",
     "explanationSourceUrl": "https://www.polisforbundet.se/polisyrket/hur-manga-poliser-finns-det"
@@ -67,6 +93,7 @@
     "externalKey": "lag-visitationszoner",
     "categorySlug": "lag-ordning",
     "displayOrder": 3,
+    "tier": 1,
     "text": "Polisen ska få inrätta visitationszoner där de kan kroppsvisitera utan konkret brottsmisstanke",
     "explanation": "Sedan april 2024 kan polisen besluta om tidsbegränsade säkerhetszoner (visitationszoner) där de får kroppsvisitera personer och söka igenom fordon utan konkret brottsmisstanke. En zon gäller högst två veckor.",
     "explanationSourceUrl": "https://polisen.se/lagar-och-regler/sakerhetszoner/"
@@ -75,6 +102,7 @@
     "externalKey": "lag-anonyma-vittnen",
     "categorySlug": "lag-ordning",
     "displayOrder": 4,
+    "tier": 2,
     "text": "Anonyma vittnen ska tillåtas i fler brottmål",
     "explanation": "Sedan 1 januari 2025 är anonyma vittnen tillåtna, men bara i begränsade fall: det krävs påtaglig risk för allvarligt brott mot vittnet och att brottet har minst två års fängelse i straffskalan.",
     "explanationSourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/proposition/anonyma-vittnen_hc0320/html/"
@@ -83,6 +111,7 @@
     "externalKey": "lag-sankt-straffmyndighet",
     "categorySlug": "lag-ordning",
     "displayOrder": 5,
+    "tier": 1,
     "text": "Barn under 15 år ska kunna straffas för brott",
     "explanation": "I dag är straffmyndighetsåldern 15 år; barn under 15 kan inte dömas till straff. En utredning (SOU 2025:11) har föreslagit att sänka åldern till 14 år för grova brott, och regeringen har aviserat ett lagförslag.",
     "explanationSourceUrl": "https://www.regeringen.se/pressmeddelanden/2026/01/regeringen-foreslar-sankt-straffbarhetsalder-for-allvarliga-brott-och-skarpta-regler-for-unga-lagovertradare/"
@@ -91,14 +120,34 @@
     "externalKey": "lag-kameraovervakning",
     "categorySlug": "lag-ordning",
     "displayOrder": 6,
+    "tier": 2,
     "text": "Kameraövervakningen på allmänna platser ska byggas ut kraftigt",
     "explanation": "Våren 2025 hade polisen drygt 3 000 kameror i landet. Sedan 1 maj 2025 är tillståndskravet borttaget och polisen får kamerabevaka fler platser med risk för allvarlig brottslighet.",
     "explanationSourceUrl": "https://polisen.se/om-polisen/polisens-arbete/sa-jobbar-polisen-med-kamerabevakning/"
   },
   {
+    "externalKey": "lag-preventiv-avlyssning",
+    "categorySlug": "lag-ordning",
+    "displayOrder": 7,
+    "tier": 3,
+    "text": "Polisen ska få använda hemlig avlyssning mot personer som inte är misstänkta för ett konkret brott",
+    "explanation": "Riksdagen har stegvis utökat polisens möjligheter att använda preventiva tvångsmedel, till exempel hemlig avlyssning och rumsavlyssning, för att förebygga allvarlig brottslighet utan att det finns en konkret brottsmisstanke; den senaste stora utvidgningen beslutades i juni 2024.",
+    "explanationSourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/preventiva-tvangsmedel-for-att-forebygga-och_hb01juu24/"
+  },
+  {
+    "externalKey": "lag-narkotika-avkriminalisera",
+    "categorySlug": "lag-ordning",
+    "displayOrder": 8,
+    "tier": 3,
+    "text": "Eget bruk av narkotika ska avkriminaliseras",
+    "explanation": "Eget bruk av narkotika är kriminaliserat i Sverige och kan ge böter eller fängelse. Det finns ingen riksdagsmajoritet för avkriminalisering, även om V och C vill avkriminalisera själva ruspåverkan och MP vill utvärdera narkotikastrafflagen.",
+    "explanationSourceUrl": "https://www.alkoholochnarkotika.se/politik/alkohol-narkotikas-valenkat-ar-det-dags-att-avkriminalisera-eget-bruk/"
+  },
+  {
     "externalKey": "migration-faerre-asyl",
     "categorySlug": "migration",
     "displayOrder": 1,
+    "tier": 1,
     "text": "Sverige ska ta emot färre asylsökande",
     "explanation": "I dag är asylinvandringen rekordlåg. Under 2025 sökte 6 737 personer asyl i Sverige, ned från 9 645 år 2024 och de lägsta nivåerna sedan SCB:s statistik börjar 2002.",
     "explanationSourceUrl": "https://www.scb.se/hitta-statistik/sverige-i-siffror/manniskorna-i-sverige/asylsokande-i-sverige/"
@@ -107,6 +156,7 @@
     "externalKey": "migration-medborgarskap",
     "categorySlug": "migration",
     "displayOrder": 2,
+    "tier": 2,
     "text": "Det ska bli svårare att få svenskt medborgarskap",
     "explanation": "Sedan 6 juni 2026 har kraven skärpts: hemvisttiden höjs från fem till åtta år och det krävs godkända kunskaper i svenska och samhället samt egen försörjning.",
     "explanationSourceUrl": "https://www.regeringen.se/pressmeddelanden/2026/06/nya-krav-for-svenskt-medborgarskap-trader-i-kraft/"
@@ -115,6 +165,7 @@
     "externalKey": "migration-arbetskraft",
     "categorySlug": "migration",
     "displayOrder": 3,
+    "tier": 3,
     "text": "Arbetskraftsinvandringen ska begränsas till högkvalificerade yrken",
     "explanation": "I dag krävs för arbetstillstånd en lön på minst 90 procent av medianlönen, vilket motsvarar ungefär 33 390 kr i månaden. Regeringen kan göra undantag för vissa yrken.",
     "explanationSourceUrl": "https://www.regeringen.se/pressmeddelanden/2025/10/ny-loneniva-for-arbetskraftsinvandring-och-skarpta-krav-for-anhoriginvandring/"
@@ -123,6 +174,7 @@
     "externalKey": "migration-atervandring",
     "categorySlug": "migration",
     "displayOrder": 4,
+    "tier": 1,
     "text": "Staten ska aktivt uppmuntra invandrare att återvandra till sina hemländer",
     "explanation": "Sedan 1 januari 2026 finns ett kraftigt höjt återvandringsbidrag: 350 000 kr per vuxen och 25 000 kr per barn, högst 600 000 kr per hushåll, för den som frivilligt återvandrar.",
     "explanationSourceUrl": "https://www.migrationsverket.se/nyhetsarkiv/nyhetsarkiv/2025-10-31-atervandringsbidraget-hojs-den-1-januari-2026.html"
@@ -131,6 +183,7 @@
     "externalKey": "migration-sprakkrav-bidrag",
     "categorySlug": "migration",
     "displayOrder": 5,
+    "tier": 2,
     "text": "Det ska krävas kunskaper i svenska för att få vissa bidrag",
     "explanation": "I dag finns inget generellt språkkrav för bidrag. Från 1 juli 2026 införs ett aktivitetskrav för försörjningsstöd där språkträning kan ingå, men inget fristående språkprov som villkor.",
     "explanationSourceUrl": "https://www.regeringen.se/pressmeddelanden/2026/03/regeringens-stora-bidragsreform--forslag-om-bidragstak-och-aktivitetskrav/"
@@ -139,14 +192,34 @@
     "externalKey": "migration-utvisning-vandel",
     "categorySlug": "migration",
     "displayOrder": 6,
+    "tier": 2,
     "text": "Det ska bli lättare att utvisa utländska medborgare på grund av bristande livsföring",
     "explanation": "I dag kan uppehållstillstånd nekas eller återkallas främst vid brott, säkerhetshot eller oriktiga uppgifter. En utredning (SOU 2025:33) föreslår ett bredare vandelskrav i utlänningslagen.",
     "explanationSourceUrl": "https://www.regeringen.se/pressmeddelanden/2025/04/utredning-foreslar-skarpta-krav-pa-hederligt-levnadssatt-for-uppehallstillstand-och-okade-mojligheter-till-aterkallelse-av-uppehallstillstand/"
   },
   {
+    "externalKey": "migration-anhorig-begransa",
+    "categorySlug": "migration",
+    "displayOrder": 7,
+    "tier": 3,
+    "text": "Försörjningskraven för anhöriginvandring ska skärpas kraftigt",
+    "explanation": "Regeringen och SD föreslår utifrån SOU 2025:95 att försörjningskravet vid anhöriginvandring höjs med 30 procent plus faktisk boendekostnad, vilket motsvarar cirka 13 300 kronor i månaden plus boende för ett par. V och MP vill avslå skärpningarna medan S accepterar hårdare krav men med reservationer.",
+    "explanationSourceUrl": "https://www.regeringen.se/pressmeddelanden/2025/12/hojt-forsorjningskrav-vid-anhoriginvandring-foreslas/"
+  },
+  {
+    "externalKey": "migration-tiggeriforbud",
+    "categorySlug": "migration",
+    "displayOrder": 8,
+    "tier": 3,
+    "text": "Tiggeri ska förbjudas i hela Sverige",
+    "explanation": "Det finns i dag inget nationellt tiggeriförbud i Sverige, men ett tjugotal kommuner har infört lokala förbud via ordningsföreskrifter. Utredningen SOU 2025:83, tillsatt av Tidöpartierna, bedömde 2025 att ett nationellt förbud inte behövs eftersom tiggeriet minskat kraftigt.",
+    "explanationSourceUrl": "https://www.svt.se/nyheter/inrikes/utredning-om-nationellt-tiggeriforbud-overlamnas"
+  },
+  {
     "externalKey": "ekonomi-hoginkomstskatt",
     "categorySlug": "ekonomi-skatter",
     "displayOrder": 1,
+    "tier": 1,
     "text": "Skatten på höga inkomster ska höjas",
     "explanation": "I dag tas statlig inkomstskatt ut med 20 % på inkomst över skiktgränsen, som 2026 är 643 000 kr/år (brytpunkt ca 660 400 kr). Den extra värnskatten avskaffades 2020, så det finns bara en nivå.",
     "explanationSourceUrl": "https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html"
@@ -155,6 +228,7 @@
     "externalKey": "ekonomi-formogenhetsskatt",
     "categorySlug": "ekonomi-skatter",
     "displayOrder": 2,
+    "tier": 2,
     "text": "Sverige ska återinföra en skatt på stora förmögenheter",
     "explanation": "I dag finns ingen förmögenhetsskatt i Sverige. Den avskaffades den 1 januari 2007; dessförinnan togs den ut med 1,5 % på förmögenheter över vissa fribelopp.",
     "explanationSourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/slopad-formogenhetsskatt-och-begransad-avdragsratt_gv01sku15/"
@@ -163,6 +237,7 @@
     "externalKey": "ekonomi-sankt-skatt-arbete",
     "categorySlug": "ekonomi-skatter",
     "displayOrder": 3,
+    "tier": 1,
     "text": "Skatten på arbete ska sänkas",
     "explanation": "I dag betalar de flesta främst kommunal inkomstskatt på arbete; den genomsnittliga totala kommunalskatten är 2026 cirka 32,38 %. Dessutom minskar jobbskatteavdraget skatten på arbetsinkomster.",
     "explanationSourceUrl": "https://www.scb.se/hitta-statistik/statistik-efter-amne/offentlig-ekonomi/finanser-for-den-kommunala-sektorn/kommunalskatterna/pong/statistiknyhet/kommunalskatterna-2026/"
@@ -171,6 +246,7 @@
     "externalKey": "ekonomi-drivmedelsskatt",
     "categorySlug": "ekonomi-skatter",
     "displayOrder": 4,
+    "tier": 2,
     "text": "Skatten på bensin och diesel ska sänkas",
     "explanation": "I dag består skatten på bensin av energiskatt och koldioxidskatt. Efter flera sänkningar är de 2026 cirka 0,70 kr/l (energiskatt) och 3,27 kr/l (koldioxidskatt); ytterligare tillfälliga sänkningar har aviserats.",
     "explanationSourceUrl": "https://www.ekonomifakta.se/sakomraden/energi/styrmedel/bensinskatt_1208679.html"
@@ -179,14 +255,43 @@
     "externalKey": "ekonomi-bistand",
     "categorySlug": "ekonomi-skatter",
     "displayOrder": 5,
+    "tier": 1,
     "text": "Sverige ska minska biståndet till andra länder",
     "explanation": "I dag är biståndet inte längre kopplat till 1 % av BNI. Biståndsramen är ett fast belopp som var 56 miljarder kr/år 2023–2025 och uppgår till 53 miljarder kr/år för 2026–2028.",
     "explanationSourceUrl": "https://www.regeringen.se/pressmeddelanden/2024/09/regeringen-justerar-bistandsramen-fran-2026/"
   },
   {
+    "externalKey": "ekonomi-arvsskatt",
+    "categorySlug": "ekonomi-skatter",
+    "displayOrder": 6,
+    "tier": 3,
+    "text": "Sverige ska återinföra en arvsskatt på stora arv",
+    "explanation": "Arvsskatten avskaffades 2004 med bred politisk enighet. I dag är V ensamt om att vilja återinföra en arvsskatt på stora arv, över cirka 3 miljoner kronor, medan övriga partier är emot; S och MP vill i stället höja skatten på höga kapitalinkomster.",
+    "explanationSourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/ett-rattvist-skattesystem_hb022321/html/"
+  },
+  {
+    "externalKey": "ekonomi-rut-avskaffa",
+    "categorySlug": "ekonomi-skatter",
+    "displayOrder": 7,
+    "tier": 3,
+    "text": "RUT-avdraget för hushållsnära tjänster ska avskaffas",
+    "explanation": "Rutavdraget infördes 2007 och har successivt byggts ut av regeringar från båda blocken; taket är i dag 75 000 kronor per person och år. Endast V vill avskaffa avdraget, medan MP vill rikta om det och övriga partier vill behålla eller utöka det.",
+    "explanationSourceUrl": "https://www.regeringen.se/pressmeddelanden/2024/02/tillfalligt-hojt-tak-for-rotavdraget/"
+  },
+  {
+    "externalKey": "ekonomi-matmoms",
+    "categorySlug": "ekonomi-skatter",
+    "displayOrder": 8,
+    "tier": 3,
+    "text": "Den sänkta momsen på livsmedel ska göras permanent",
+    "explanation": "Riksdagen har beslutat att momsen på livsmedel tillfälligt sänks från 12 till 6 procent under perioden 1 april 2026–31 december 2027. Regeringspartierna och SD betonar att sänkningen är tillfällig, medan V och MP vill gå längre och slopa matmomsen permanent.",
+    "explanationSourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/tillfalligt-sankt-mervardesskatt-pa-livsmedel_hd01sku9/"
+  },
+  {
     "externalKey": "klimat-karnkraft-utbyggnad",
     "categorySlug": "klimat-energi",
     "displayOrder": 1,
+    "tier": 1,
     "text": "Sverige ska bygga ut kärnkraften",
     "explanation": "I dag har Sverige sex kärnkraftsreaktorer i drift, på Forsmark (3), Ringhals (2) och Oskarshamn (1). Sedan 1 januari 2024 är taket på max tio reaktorer och kravet på befintliga platser borttaget.",
     "explanationSourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/ny-karnkraft-i-sverige_hb01nu5/html/"
@@ -195,6 +300,7 @@
     "externalKey": "klimat-skarpta-mal",
     "categorySlug": "klimat-energi",
     "displayOrder": 2,
+    "tier": 2,
     "text": "Sveriges klimatmål ska skärpas",
     "explanation": "I dag är målet att Sverige senast 2045 inte ska ha några nettoutsläpp av växthusgaser, med utsläpp minst 85 % lägre än 1990, plus etappmål till 2030 och 2040. Klimatpolitiska rådet bedömer att målen inte nås med beslutad politik.",
     "explanationSourceUrl": "https://www.sverigesmiljomal.se/etappmalen/utslapp-av-vaxthusgaser-till-ar-2045/"
@@ -203,6 +309,7 @@
     "externalKey": "klimat-vindkraft",
     "categorySlug": "klimat-energi",
     "displayOrder": 3,
+    "tier": 2,
     "text": "Utbyggnaden av vindkraft ska påskyndas",
     "explanation": "I dag står vindkraften för ungefär en femtedel av elproduktionen – cirka 38 TWh, omkring 23 procent av Sveriges elproduktion under 2025.",
     "explanationSourceUrl": "https://www.energiforetagen.se/medlemsportalen/medlemsnyheter/2026/februari/sa-sag-sveriges-elproduktion-ut-per-elomrade-under-2025/"
@@ -211,6 +318,7 @@
     "externalKey": "klimat-flygskatt",
     "categorySlug": "klimat-energi",
     "displayOrder": 4,
+    "tier": 3,
     "text": "Flygskatten ska höjas för att minska klimatutsläppen",
     "explanation": "Det finns ingen flygskatt i dag. Lagen om skatt på flygresor upphörde den 1 juli 2025, och sedan dess betalas ingen flygskatt för resor från svenska flygplatser.",
     "explanationSourceUrl": "https://www.skatteverket.se/foretag/skatterochavdrag/punktskatter/nyheterinompunktskatter/2024/nyheterinompunktskatter/lagenomskattpaflygresorupphorden1juli2025.5.262c54c219391f2e9633f0f.html"
@@ -219,6 +327,7 @@
     "externalKey": "klimat-reduktionsplikt",
     "categorySlug": "klimat-energi",
     "displayOrder": 5,
+    "tier": 2,
     "text": "Reduktionsplikten ska sänkas för att hålla nere drivmedelspriserna",
     "explanation": "I dag är reduktionsplikten 10 procent för både bensin och diesel. Nivån sänktes till 6 procent i januari 2024 men höjdes till 10 procent från den 1 juli 2025.",
     "explanationSourceUrl": "https://www.ekonomifakta.se/sakomraden/energi/styrmedel/reduktionsplikt_1211453.html"
@@ -227,14 +336,34 @@
     "externalKey": "klimat-prioritet",
     "categorySlug": "klimat-energi",
     "displayOrder": 6,
+    "tier": 1,
     "text": "Klimatpolitiken ska prioriteras även om det kostar jobb och tillväxt på kort sikt",
     "explanation": "Om klimatåtgärder bör gå före kortsiktig ekonomisk tillväxt.",
     "explanationSourceUrl": null
   },
   {
+    "externalKey": "klimat-bilforbud-2035",
+    "categorySlug": "klimat-energi",
+    "displayOrder": 7,
+    "tier": 3,
+    "text": "EU:s förbud mot försäljning av nya bensin- och dieselbilar från 2035 ska rivas upp",
+    "explanation": "EU har beslutat att nya bensin- och dieselbilar inte får säljas från 2035, men EU-kommissionen har föreslagit lättnader i lagen. I Sverige har frågan skapat en spricka i Tidölaget: SD vill riva upp förbudet och KD har svängt, medan regeringens formella linje står fast och S, MP, V och C försvarar förbudet.",
+    "explanationSourceUrl": "https://www.svt.se/nyheter/inrikes/tidospricka-om-motorforbud-lagg-kulturkriget-at-sidan"
+  },
+  {
+    "externalKey": "klimat-hoghastighetstag",
+    "categorySlug": "klimat-energi",
+    "displayOrder": 8,
+    "tier": 3,
+    "text": "Sverige ska bygga nya stambanor för höghastighetståg",
+    "explanation": "Tidöregeringen (M, KD, L med stöd av SD) avbröt hösten 2022 planeringen av nya stambanor för höghastighetståg mellan storstäderna och prioriterar i stället underhåll av befintlig järnväg, medan V, MP, S och C i olika grad vill återuppta utbyggnaden.",
+    "explanationSourceUrl": "https://www.sverigesradio.se/artikel/sa-vill-partierna-klara-satsningar-pa-vagar-och-jarnvagar"
+  },
+  {
     "externalKey": "skola-friskolor-vinst",
     "categorySlug": "skola",
     "displayOrder": 1,
+    "tier": 1,
     "text": "Vinstdrivande friskolor ska förbjudas",
     "explanation": "I dag får aktiebolag driva skattefinansierade friskolor och dela ut vinst. Läsåret 2024/25 gick cirka 17 procent av grundskoleeleverna i fristående skola och omkring en tredjedel av gymnasieeleverna.",
     "explanationSourceUrl": "https://www.skolverket.se/statistik-och-utvarderingar/statistik-om-forskola-och-skola/fler-statistiknyheter/statistik/2025-03-26-antalet-elever-i-grundskolan-fortsatter-att-minska"
@@ -243,6 +372,7 @@
     "externalKey": "skola-tidigare-betyg",
     "categorySlug": "skola",
     "displayOrder": 2,
+    "tier": 2,
     "text": "Betyg ska ges från lägre åldrar än i dag",
     "explanation": "I dag sätts betyg i grundskolan från och med årskurs 6. Reglerna infördes 2012; tidigare gavs betyg först i årskurs 8.",
     "explanationSourceUrl": "https://www.skolverket.se/prov-och-bedomning/betyg/fran-bedomningar-till-betyg/terminsbetyg"
@@ -251,6 +381,7 @@
     "externalKey": "skola-statlig-skola",
     "categorySlug": "skola",
     "displayOrder": 3,
+    "tier": 1,
     "text": "Staten ska ta över ansvaret för skolan från kommunerna",
     "explanation": "I dag har skolan kommunalt huvudmannaskap, sedan kommunaliseringen 1991. En statlig utredning har tagit fram underlag för ett möjligt statligt huvudmannaskap, men ansvaret ligger fortfarande hos kommunerna.",
     "explanationSourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/kommittedirektiv/forutsattningar-for-ett-statligt-huvudmannaskap_h8b1140/"
@@ -259,6 +390,7 @@
     "externalKey": "skola-mobilforbud",
     "categorySlug": "skola",
     "displayOrder": 4,
+    "tier": 3,
     "text": "Mobiltelefoner ska förbjudas under hela skoldagen",
     "explanation": "I dag är privat mobilanvändning som regel förbjuden under lektioner, och rektor får besluta att samla in mobiler vid skoldagens början. Ett nationellt förbud under hela skoldagen föreslås träda i kraft 1 juli 2026.",
     "explanationSourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/departementsserien/ett-nationellt-mobilforbud-i-de-obligatoriska_hdb49/html/"
@@ -267,14 +399,34 @@
     "externalKey": "skola-religiosa-friskolor",
     "categorySlug": "skola",
     "displayOrder": 5,
+    "tier": 2,
     "text": "Religiösa friskolor ska förbjudas",
     "explanation": "I dag är konfessionella (religiösa) friskolor tillåtna men reglerade: religiösa inslag ska vara frivilliga och åtskilda från undervisningen. Förslag om etableringsstopp för nya har lagts men inte blivit lag.",
     "explanationSourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svar-pa-skriftlig-fraga/problem-pa-religiosa-friskolor_hb121017/"
   },
   {
+    "externalKey": "skola-skolval-lottning",
+    "categorySlug": "skola",
+    "displayOrder": 6,
+    "tier": 1,
+    "text": "Det fria skolvalet ska begränsas och elever fördelas genom ett gemensamt, offentligt antagningssystem",
+    "explanation": "I dag väljer familjer skola själva och friskolor sköter sin egen antagning, ofta med kötid som urvalsgrund; S-regeringens förslag 2022 om gemensamt offentligt skolval föll i riksdagen och frågan delar fortsatt blocken, där vänstersidan vill begränsa eller reformera skolvalet medan högersidan försvarar det.",
+    "explanationSourceUrl": "https://www.vilarare.se/nyheter/skolpolitik/22-heta-valfragor-for-skolan--sa-svarar-partierna/"
+  },
+  {
+    "externalKey": "skola-sprakforskola",
+    "categorySlug": "skola",
+    "displayOrder": 7,
+    "tier": 3,
+    "text": "Förskola ska vara obligatorisk för barn som inte talar tillräckligt bra svenska",
+    "explanation": "Regeringen tillsatte 2024 en utredning (dir. 2024:113) om att införa en obligatorisk språkförskola för barn som inte exponeras tillräckligt för svenska i sin hemmiljö; utredningen ska redovisas i december 2025 och frågan stöds av Tidöpartierna och SD medan V och MP är skeptiska till obligatorium.",
+    "explanationSourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/kommittedirektiv/en-likvardig-forskola-av-god-kvalitet-med_hcb1113/"
+  },
+  {
     "externalKey": "arbete-las",
     "categorySlug": "arbetsmarknad",
     "displayOrder": 1,
+    "tier": 2,
     "text": "Anställningsskyddet ska försvagas för att göra det lättare att säga upp personal",
     "explanation": "Sedan reformen 1 oktober 2022 krävs \"sakliga skäl\" (i stället för \"saklig grund\") för uppsägning, och alla arbetsgivare får undanta tre personer från turordningen vid arbetsbrist.",
     "explanationSourceUrl": "https://www.kommunal.se/fragor-om-las"
@@ -283,6 +435,7 @@
     "externalKey": "arbete-akassa",
     "categorySlug": "arbetsmarknad",
     "displayOrder": 2,
+    "tier": 1,
     "text": "A-kassan ska höjas",
     "explanation": "Sedan den nya inkomstbaserade a-kassan 1 oktober 2025 är högsta ersättningsgrundande inkomst 34 000 kr/mån, vilket ger som mest 80 % = 27 200 kr/mån (ca 1 360 kr/dag) före skatt de första 100 dagarna.",
     "explanationSourceUrl": "https://www.kommunalsakassa.se/vilka-regler-galler/nya-a-kasseregler-den-1-oktober.html"
@@ -291,6 +444,7 @@
     "externalKey": "arbete-bidragstak",
     "categorySlug": "arbetsmarknad",
     "displayOrder": 3,
+    "tier": 1,
     "text": "Det ska finnas ett tak för hur mycket bidrag ett hushåll kan få",
     "explanation": "I dag finns inget generellt tak för hur mycket bidrag ett hushåll kan få. Regeringen har lagt en proposition om ett bidragstak i försörjningsstödet som föreslås träda i kraft 1 januari 2027.",
     "explanationSourceUrl": "https://www.regeringen.se/pressmeddelanden/2026/03/regeringens-stora-bidragsreform--forslag-om-bidragstak-och-aktivitetskrav/"
@@ -299,14 +453,34 @@
     "externalKey": "arbete-arbetstid",
     "categorySlug": "arbetsmarknad",
     "displayOrder": 4,
+    "tier": 2,
     "text": "Arbetstiden ska förkortas med bibehållen lön",
     "explanation": "I dag är den ordinarie arbetstiden enligt arbetstidslagen högst 40 timmar per vecka, vilket motsvarar en heltid.",
     "explanationSourceUrl": "https://www.av.se/arbetsmiljoarbete-och-inspektioner/lagar-och-regler-om-arbetsmiljo/om-arbetstidslagen/"
   },
   {
+    "externalKey": "arbete-ingangsloner",
+    "categorySlug": "arbetsmarknad",
+    "displayOrder": 5,
+    "tier": 3,
+    "text": "Det ska bli lättare att anställa till lägre ingångslöner",
+    "explanation": "I Sverige sätts ingångslönerna av fack och arbetsgivare i kollektivavtal, inte i lag. Parternas etableringsjobb med lägre lön för nyanlända och långtidsarbetslösa infördes 2022, medan flera borgerliga partier har velat gå längre med lagstadgade inträdesjobb till lägre ingångslön.",
+    "explanationSourceUrl": "https://www.riksdagen.se/sv/dokument-lagar/dokument/proposition/forutsattningar-for-etableringsjobb-och-vissa_H703117"
+  },
+  {
+    "externalKey": "arbete-strejkratt",
+    "categorySlug": "arbetsmarknad",
+    "displayOrder": 6,
+    "tier": 3,
+    "text": "Rätten att ta till strejk och sympatiåtgärder ska begränsas",
+    "explanation": "Strejkrätten begränsades senast 2019, då stridsåtgärder mot arbetsgivare med kollektivavtal inskränktes efter en överenskommelse mellan parterna. Regeringspartierna M, KD och L samt C har därefter uttryckt att de vill gå längre med en proportionalitetsprincip och begränsade sympatiåtgärder, medan S, V och MP avvisar ytterligare inskränkningar.",
+    "explanationSourceUrl": "https://www.arbetsvarlden.se/regeringen-vill-se-strejkratten-inskrankt/"
+  },
+  {
     "externalKey": "forsvar-okade-utgifter",
     "categorySlug": "forsvar",
     "displayOrder": 1,
+    "tier": 1,
     "text": "Sverige ska öka försvarsutgifterna ytterligare",
     "explanation": "I dag motsvarar de svenska försvarsutgifterna cirka 2,4 procent av BNP (2025) enligt Natos beräkning. Regeringen planerar att nå Natos mål om 3,5 procent av BNP till 2030.",
     "explanationSourceUrl": "https://www.regeringen.se/regeringens-politik/forsvarsbudget/"
@@ -315,6 +489,7 @@
     "externalKey": "forsvar-varnplikt",
     "categorySlug": "forsvar",
     "displayOrder": 2,
+    "tier": 2,
     "text": "Värnplikten ska byggas ut och omfatta fler",
     "explanation": "I dag genomför omkring 8 000–8 500 personer militär grundutbildning med värnplikt per år. Planen är att öka till nära 10 000 inför 2027/28 och 12 000 per år 2032.",
     "explanationSourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svar-pa-skriftlig-fraga/varnplikt_hd12163/"
@@ -323,6 +498,7 @@
     "externalKey": "forsvar-karnvapen",
     "categorySlug": "forsvar",
     "displayOrder": 3,
+    "tier": 1,
     "text": "Kärnvapen ska få placeras på svensk mark om säkerhetsläget kräver det",
     "explanation": "I dag är Sveriges hållning att det inte finns skäl att ha kärnvapen på svenskt territorium i fredstid. DCA-avtalet med USA reglerar inte kärnvapen, och Sverige behåller bestämmanderätten över verksamhet på sitt territorium.",
     "explanationSourceUrl": "https://www.regeringen.se/regeringens-politik/militart-forsvar/avtal-om-forsvarssamarbete-med-usa-dca/"
@@ -331,14 +507,34 @@
     "externalKey": "forsvar-ukraina",
     "categorySlug": "forsvar",
     "displayOrder": 4,
+    "tier": 2,
     "text": "Sverige ska fortsätta ge omfattande militärt stöd till Ukraina",
     "explanation": "I dag ger Sverige omfattande militärt stöd till Ukraina – totalt cirka 103 miljarder kronor sedan 2022. Ramen för det militära stödet är 40 miljarder kronor per år för 2026 och 2027.",
     "explanationSourceUrl": "https://www.regeringen.se/pressmeddelanden/2026/02/luftforsvar-i-fokus-for-nytt-stort-stodpaket-till-ukraina/"
   },
   {
+    "externalKey": "forsvar-utlandska-baser",
+    "categorySlug": "forsvar",
+    "displayOrder": 5,
+    "tier": 3,
+    "text": "Permanenta utländska militärbaser ska inte tillåtas på svensk mark i fredstid",
+    "explanation": "Riksdagen godkände i juni 2024 DCA-avtalet med USA, som ger amerikansk militär tillgång till 17 svenska militärbaser och övningsområden; Sverige har dock inga formellt permanenta utländska baser och regeringen har angett att sådana inte är aktuella i fredstid. Endast V och MP röstade nej till avtalet.",
+    "explanationSourceUrl": "https://www.riksdagen.se/sv/aktuellt/aktuelltnotiser/2024/juni/18/ja-till-avtal-om-forsvarssamarbete-med-usa_cms2fa8b58c-5dc6-455f-b909-95d1d9477599sv/"
+  },
+  {
+    "externalKey": "forsvar-vapenexport",
+    "categorySlug": "forsvar",
+    "displayOrder": 6,
+    "tier": 3,
+    "text": "Sverige ska förbjuda vapenexport till länder som inte är demokratier",
+    "explanation": "Sedan 2018 gäller skärpt exportkontroll av krigsmateriel där köparlandets demokratiska status är ett centralt villkor vid tillståndsprövningen – ett hinder men inget förbud. En betydande del av svensk vapenexport går fortfarande till länder som inte är demokratier, däribland Förenade Arabemiraten.",
+    "explanationSourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/skarpt-exportkontroll-av-krigsmateriel_h501uu9/"
+  },
+  {
     "externalKey": "aldre-resurser",
     "categorySlug": "aldreomsorg",
     "displayOrder": 1,
+    "tier": 1,
     "text": "Mer resurser ska satsas på äldreomsorgen även om det kräver höjd skatt",
     "explanation": "I dag drivs och finansieras äldreomsorgen av kommunerna, främst via kommunalskatten. Kommunernas totala kostnad för särskilt boende, hemtjänst och övrig äldreomsorg var 166 miljarder kronor 2024.",
     "explanationSourceUrl": "https://www.vardforetagarna.se/privat-vardfakta/kapitel/aldreomsorg/"
@@ -347,6 +543,7 @@
     "externalKey": "aldre-pension",
     "categorySlug": "aldreomsorg",
     "displayOrder": 2,
+    "tier": 1,
     "text": "De lägsta pensionerna ska höjas",
     "explanation": "I dag är garantipensionen grundskyddet för den som haft låg eller ingen arbetsinkomst. Som mest är den cirka 11 988 kr/mån före skatt för ensamstående (10 853 kr för gifta), och trappas ned ju högre inkomstgrundad pension man har.",
     "explanationSourceUrl": "https://www.pensionsmyndigheten.se/forsta-din-pension/sa-fungerar-pensionen/garantipension"
@@ -355,14 +552,34 @@
     "externalKey": "aldre-privat-omsorg",
     "categorySlug": "aldreomsorg",
     "displayOrder": 3,
+    "tier": 2,
     "text": "Privata utförare i äldreomsorgen ska begränsas",
     "explanation": "I dag drivs en minoritet av äldreomsorgen av privata utförare: cirka 16 procent av brukarna i hemtjänsten och omkring 20 procent på särskilt boende (2024), men andelen varierar stort mellan kommuner.",
     "explanationSourceUrl": "https://www.vardforetagarna.se/privat-vardfakta/kapitel/aldreomsorg/"
   },
   {
+    "externalKey": "aldre-pensionsalder",
+    "categorySlug": "aldreomsorg",
+    "displayOrder": 4,
+    "tier": 2,
+    "text": "Pensionsåldern ska höjas i takt med att vi lever längre",
+    "explanation": "Riksdagen beslutade 2022 att knyta pensionssystemets åldersgränser till en riktålder som följer medellivslängdens utveckling; från 2026 styr riktåldern (67 år) bland annat när garantipension kan tas ut. Det innebär att pensionsåldern automatiskt höjs i takt med att vi lever längre.",
+    "explanationSourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/justerade-aldersgranser-i-pensionssystemet-och-i_h901sfu25/"
+  },
+  {
+    "externalKey": "aldre-boendegaranti",
+    "categorySlug": "aldreomsorg",
+    "displayOrder": 5,
+    "tier": 3,
+    "text": "Alla över 85 år ska ha rätt till plats på äldreboende utan biståndsprövning",
+    "explanation": "I dag krävs biståndsbedömning enligt socialtjänstlagen för att få plats på särskilt boende, oavsett ålder, och kommunerna ansvarar för att inrätta boendena; någon åldersbaserad rätt till äldreboende finns inte, även om riksdagen tidigare har tillkännagett att en äldreboendegaranti för personer över 85 bör övervägas.",
+    "explanationSourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svar-pa-skriftlig-fraga/ratt-till-sarskilt-boende-for-aldre_hc12900/"
+  },
+  {
     "externalKey": "bostad-hyressattning",
     "categorySlug": "bostader",
     "displayOrder": 1,
+    "tier": 1,
     "text": "Hyrorna ska sättas mer marknadsmässigt",
     "explanation": "I dag sätts hyror för hyresrätter genom bruksvärdessystemet, där hyran baseras på lägenhetens standard, läge och service och bestäms i årliga kollektiva förhandlingar mellan hyresvärdar och Hyresgästföreningen – inte av en fri marknad.",
     "explanationSourceUrl": "https://www.sverigesallmannytta.se/hyressattning-som-fungerar/"
@@ -371,14 +588,43 @@
     "externalKey": "bostad-subventioner",
     "categorySlug": "bostader",
     "displayOrder": 2,
+    "tier": 2,
     "text": "Staten ska subventionera byggandet av fler hyresrätter",
     "explanation": "I dag finns inget statligt investeringsstöd för att bygga hyresrätter. Riksdagen beslutade 2021 att avveckla stödet, och sedan den 1 januari 2023 beviljas inga nya ansökningar.",
     "explanationSourceUrl": "https://www.regeringen.se/pressmeddelanden/2022/11/bostadspolitiken-laggs-om/"
   },
   {
+    "externalKey": "bostad-flyttskatt",
+    "categorySlug": "bostader",
+    "displayOrder": 3,
+    "tier": 3,
+    "text": "Skatten på vinst vid bostadsförsäljning ska sänkas eller avskaffas",
+    "explanation": "Vinst vid försäljning av bostad beskattas i dag med 22 procent (reavinstskatt). KD har föreslagit att skatten trappas ned med två procentenheter per år efter fem års ägande tills den försvinner efter 16 år, ett förslag som delar riksdagen mellan partier som vill öka rörligheten och partier som varnar för orättvisa fördelningseffekter.",
+    "explanationSourceUrl": "https://bostadspolitik.se/reavinstskatten-delar-riksdagen-l-mest-positiva-s-varnar-for-orattvisa/"
+  },
+  {
+    "externalKey": "bostad-ranteavdrag",
+    "categorySlug": "bostader",
+    "displayOrder": 4,
+    "tier": 3,
+    "text": "Ränteavdragen på bolån ska trappas ned",
+    "explanation": "I dag får hushåll dra av 30 procent av räntekostnader upp till 100 000 kronor per år (21 procent därutöver). Sedan 2025 trappas ränteavdraget ned för lån utan säkerhet, till exempel blancolån, men för bolån är avdraget oförändrat.",
+    "explanationSourceUrl": "https://www.regeringen.se/pressmeddelanden/2024/08/avtrappat-ranteavdrag-for-lan-utan-sakerheter/"
+  },
+  {
+    "externalKey": "bostad-strandskydd",
+    "categorySlug": "bostader",
+    "displayOrder": 5,
+    "tier": 2,
+    "text": "Strandskyddet ska luckras upp för att göra det lättare att bygga nära vatten",
+    "explanation": "Strandskyddet förbjuder som huvudregel byggande inom 100 meter från strandlinjen. Riksdagen beslutade i maj 2025 om lättnader som sedan den 1 juli 2025 undantar fler land- och vattenområden och ökar möjligheterna att bygga strandnära.",
+    "explanationSourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/lattnader-i-strandskyddet-ett-forsta-steg_hc01mju16/html/"
+  },
+  {
     "externalKey": "eu-mer-makt",
     "categorySlug": "eu",
     "displayOrder": 1,
+    "tier": 1,
     "text": "EU ska få mer makt på bekostnad av medlemsländerna",
     "explanation": "Sverige är EU-medlem sedan 1995. EU har bara de befogenheter som medlemsländerna tilldelat unionen i fördragen; vissa områden beslutas på EU-nivå (t.ex. handel), andra är delade eller nationella.",
     "explanationSourceUrl": "https://eur-lex.europa.eu/SV/legal-content/summary/division-of-competences-within-the-european-union.html"
@@ -387,6 +633,7 @@
     "externalKey": "eu-euro",
     "categorySlug": "eu",
     "displayOrder": 2,
+    "tier": 1,
     "text": "Sverige ska införa euron som valuta",
     "explanation": "Sverige behåller kronan. I folkomröstningen 2003 röstade 55,9 procent nej till euron och 42 procent ja, och Sverige har inte anslutit sig till växelkurssamarbetet ERM II.",
     "explanationSourceUrl": "https://www.val.se/valresultat-och-statistik/folkomrostning-2003"
@@ -395,8 +642,36 @@
     "externalKey": "eu-forsvarssamarbete",
     "categorySlug": "eu",
     "displayOrder": 3,
+    "tier": 2,
     "text": "Sverige bör vara drivande för ett tätare försvarssamarbete inom EU",
     "explanation": "Sverige samarbetar om försvar både inom Nato, där Sverige är medlem sedan 7 mars 2024, och inom EU, bland annat genom det permanenta strukturerade samarbetet Pesco.",
     "explanationSourceUrl": "https://www.regeringen.se/pressmeddelanden/2024/03/sverige-ar-medlem-i-nato/"
+  },
+  {
+    "externalKey": "eu-gemensam-skuld",
+    "categorySlug": "eu",
+    "displayOrder": 4,
+    "tier": 3,
+    "text": "EU ska kunna ta gemensamma lån för att finansiera försvar och investeringar",
+    "explanation": "EU har genom försvarsinstrumentet Safe börjat låna upp gemensamt på kapitalmarknaden – upp till 150 miljarder euro – för att ge medlemsländer förmånliga lån till försvarsinvesteringar. Sverige har hittills valt att stå utanför programmet.",
+    "explanationSourceUrl": "https://www.europaportalen.se/2025/07/stort-intresse-eus-nya-forsvarslan-18-lander-vill-lana-over-127-miljarder"
+  },
+  {
+    "externalKey": "eu-ukraina-medlemskap",
+    "categorySlug": "eu",
+    "displayOrder": 5,
+    "tier": 3,
+    "text": "Sverige ska driva på för att Ukraina blir medlem i EU",
+    "explanation": "Ukraina är kandidatland och medlemskapsförhandlingar med EU pågår. Sverige stödjer aktivt Ukrainas EU-närmande, bland annat genom expertstöd i reformarbetet, och verkar för att de första förhandlingsklustren ska öppnas omgående.",
+    "explanationSourceUrl": "https://www.regeringen.se/regeringens-politik/sveriges-stod-till-ukraina/sverige-stodjer-ukrainas-vag-mot-eu/"
+  },
+  {
+    "externalKey": "eu-asylpakt",
+    "categorySlug": "eu",
+    "displayOrder": 6,
+    "tier": 3,
+    "text": "Asyl- och flyktingmottagandet ska fördelas mellan EU-länderna genom en gemensam mekanism",
+    "explanation": "EU:s migrations- och asylpakt antogs 2024 och börjar tillämpas den 12 juni 2026. En solidaritetsmekanism ersätter de gamla Dublinreglerna: medlemsländerna ska bidra genom att ta emot asylsökande, betala eller bistå på annat sätt.",
+    "explanationSourceUrl": "https://www.migrationsverket.se/om-migrationsverket/migrationsverket-svarar/2025/2025-06-18-vad-handlar-eus-nya-migrations--och-asylpakt-om.html"
   }
 ]

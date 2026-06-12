@@ -16,10 +16,12 @@ public class QuizService(AppDbContext db) : IQuizService
 {
     private static readonly JsonSerializerOptions JsonOptions = new(JsonSerializerDefaults.Web);
 
-    public async Task<QuestionnaireDto> GetQuestionnaireAsync(CancellationToken ct = default)
+    public async Task<QuestionnaireDto> GetQuestionnaireAsync(int? mode = null, CancellationToken ct = default)
     {
+        var maxTier = mode is { } m ? QuizModes.MaxTierByMode[m] : 3;
+
         var questions = await db.Questions
-            .Where(q => q.IsActive)
+            .Where(q => q.IsActive && q.Tier <= maxTier)
             .Include(q => q.Category)
             .OrderBy(q => q.Category!.DisplayOrder).ThenBy(q => q.DisplayOrder)
             .ToListAsync(ct);

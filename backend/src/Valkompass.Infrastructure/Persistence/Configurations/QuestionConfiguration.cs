@@ -20,7 +20,10 @@ public class QuestionConfiguration : IEntityTypeConfiguration<Question>
             .HasForeignKey(q => q.CategoryId)
             .OnDelete(DeleteBehavior.Restrict);
 
+        b.Property(q => q.Tier).HasDefaultValue(3);
+
         b.HasIndex(q => q.CategoryId);
         b.HasIndex(q => q.IsActive);
+        b.HasIndex(q => q.Tier);
     }
 }

@@ -3998,5 +3998,2005 @@
     "sourceUrl": "https://valkompass.svt.se/eu-2024/parti/sverigedemokraterna/",
     "quote": "EU:s medlemsländer behöver stärka sina militära förmågor för att stärka Nato, inte genom att skapa parallella strukturer till Nato.",
     "confidence": "high"
+  },
+  {
+    "questionKey": "sjukvard-dodshjalp",
+    "partyCode": "V",
+    "value": 2,
+    "motivation": "V har inte tagit tydlig ställning för att tillåta dödshjälp; partistyrelsen har stött kravet på en utredning men partiet har samtidigt ansett att dödshjälp bör förbli förbjudet.",
+    "sourceCitation": "Senioren, Utredning av dödshjälp rycker närmare, 2022",
+    "sourceUrl": "https://www.senioren.se/nyheter/utredning-av-dodshjalp-rycker-narmare/",
+    "quote": "det vore bra att kunna bemöta det med lite mer fakta",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "sjukvard-dodshjalp",
+    "partyCode": "S",
+    "value": 1,
+    "motivation": "S motsätter sig en legalisering av aktiv dödshjälp och vill inte heller tillsätta någon parlamentarisk utredning, med hänvisning till risken att svårt sjuka känner press att inte ligga samhället och anhöriga till last.",
+    "sourceCitation": "Människovärde, Vad anser politiska partier om dödshjälp?, 2022",
+    "sourceUrl": "https://manniskovarde.se/vad-anser-politiska-partier-om-dodshjalp/",
+    "quote": "Det finns risker med att legalisera dödshjälp. Patienten kan känna att den ligger både samhället och de anhöriga till last",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "sjukvard-dodshjalp",
+    "partyCode": "MP",
+    "value": null,
+    "motivation": "MP var 2015 första parti att kräva en utredning av dödshjälp men har ingen officiell position för eller emot ett tillåtande, utan vill att frågan belyses i en parlamentarisk utredning.",
+    "sourceCitation": "Sjukhusläkaren, Så tycker partierna om dödshjälp, 2019",
+    "sourceUrl": "https://www.sjukhuslakaren.se/sa-tycker-partierna-om-dodshjalp/",
+    "quote": null,
+    "confidence": "low"
+  },
+  {
+    "questionKey": "sjukvard-dodshjalp",
+    "partyCode": "C",
+    "value": 2,
+    "motivation": "C sade länge nej till dödshjälp men partistämman 2023 beslutade att C ska driva på för att aktiv dödshjälp utreds; partiet har dock inte tagit ställning för att tillåta dödshjälp.",
+    "sourceCitation": "Altinget, Centerpartiet svänger om dödshjälp, 2023",
+    "sourceUrl": "https://www.altinget.se/vard/artikel/centerpartiet-svanger-om-dodshjalp",
+    "quote": "Centerpartiet vill att frågan om aktiv dödshjälp ska utredas.",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "sjukvard-dodshjalp",
+    "partyCode": "L",
+    "value": 3,
+    "motivation": "L är det parti som tydligast öppnat för dödshjälp: partiet vill utreda möjligheten att införa frivillig dödshjälp och att en statlig utredning analyserar juridiska, medicinska och etiska frågor innan slutlig ställning tas.",
+    "sourceCitation": "Liberalerna, Frivillig dödshjälp (Vår politik), 2025",
+    "sourceUrl": "https://www.liberalerna.se/politik/frivillig-dodshjalp",
+    "quote": "Liberalerna vill först genomföra en statlig utredning som analyserar juridiska, medicinska och etiska frågor",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "sjukvard-dodshjalp",
+    "partyCode": "KD",
+    "value": 1,
+    "motivation": "KD anser att aktiv dödshjälp ska förbli förbjuden och motsätter sig även en parlamentarisk utredning; vårdens uppgift är enligt partiet att bota, lindra och trösta – inte att avsluta liv.",
+    "sourceCitation": "Människovärde, Vad anser politiska partier om dödshjälp?, 2022",
+    "sourceUrl": "https://manniskovarde.se/vad-anser-politiska-partier-om-dodshjalp/",
+    "quote": "Sjukvårdens uppgift är att bota, lindra och trösta. Aktiv dödshjälp är, och skall fortsatt vara förbjudet",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "sjukvard-dodshjalp",
+    "partyCode": "M",
+    "value": 2,
+    "motivation": "M säger nej till att legalisera dödshjälp men beskriver frågan som komplex, har berett den i en intern arbetsgrupp och har ställt sig bakom att frågan utreds.",
+    "sourceCitation": "Människovärde, Vad anser politiska partier om dödshjälp?, 2022",
+    "sourceUrl": "https://manniskovarde.se/vad-anser-politiska-partier-om-dodshjalp/",
+    "quote": null,
+    "confidence": "low"
+  },
+  {
+    "questionKey": "sjukvard-dodshjalp",
+    "partyCode": "SD",
+    "value": 2,
+    "motivation": "SD har historiskt motsatt sig aktiv dödshjälp men har ställt sig bakom kravet på en statlig utredning av frågan, utan att ta ställning för ett tillåtande.",
+    "sourceCitation": "Människovärde, Vad anser politiska partier om dödshjälp?, 2022",
+    "sourceUrl": "https://manniskovarde.se/vad-anser-politiska-partier-om-dodshjalp/",
+    "quote": null,
+    "confidence": "low"
+  },
+  {
+    "questionKey": "sjukvard-surrogat",
+    "partyCode": "V",
+    "value": 1,
+    "motivation": "V motsätter sig att surrogatmödraskap tillåts i Sverige och vill i stället stärka barnperspektivet och skärpa kontrollen av förmedlingsbyråer, med hänvisning till risken att kvinnor exploateras.",
+    "sourceCitation": "SVT Nyheter, Så tycker partierna i surrogatfrågan, 2024",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/sa-tycker-partierna-i-surrogatfragan",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "sjukvard-surrogat",
+    "partyCode": "S",
+    "value": 1,
+    "motivation": "S säger nej till surrogatmödraskap både i Sverige och internationellt, eftersom partiet ser risker för att kvinnor utnyttjas och pressas att bära barn åt andra.",
+    "sourceCitation": "SVT Nyheter, Så tycker partierna i surrogatfrågan, 2024",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/sa-tycker-partierna-i-surrogatfragan",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "sjukvard-surrogat",
+    "partyCode": "MP",
+    "value": null,
+    "motivation": "MP är det enda riksdagsparti som inte tagit ställning till altruistiskt surrogatmödraskap; partiet vill dock att kommersiella surrogatarrangemang även fortsatt ska vara otillåtna.",
+    "sourceCitation": "SVT Nyheter, Så tycker partierna i surrogatfrågan, 2024",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/sa-tycker-partierna-i-surrogatfragan",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "sjukvard-surrogat",
+    "partyCode": "C",
+    "value": 4,
+    "motivation": "C vill tillåta altruistiskt surrogatmödraskap i Sverige och förenkla de juridiska processerna kring föräldraskapet för att ge barn som föds genom surrogatarrangemang bättre rättslig trygghet.",
+    "sourceCitation": "SVT Nyheter, Så tycker partierna i surrogatfrågan, 2024",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/sa-tycker-partierna-i-surrogatfragan",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "sjukvard-surrogat",
+    "partyCode": "L",
+    "value": 4,
+    "motivation": "L vill legalisera altruistiskt surrogatmödraskap i Sverige, under förutsättning att surrogatmodern ställer upp frivilligt och utan betalning och att arrangemanget har en tydlig rättslig grund.",
+    "sourceCitation": "SVT Nyheter, Så tycker partierna i surrogatfrågan, 2024",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/sa-tycker-partierna-i-surrogatfragan",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "sjukvard-surrogat",
+    "partyCode": "KD",
+    "value": 1,
+    "motivation": "KD motsätter sig att surrogatmödraskap legaliseras i Sverige och anser att dagens ordning, där surrogatarrangemang inte tillåts inom svensk sjukvård, bör bestå.",
+    "sourceCitation": "SVT Nyheter, Så tycker partierna i surrogatfrågan, 2024",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/sa-tycker-partierna-i-surrogatfragan",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "sjukvard-surrogat",
+    "partyCode": "M",
+    "value": 4,
+    "motivation": "M vill ändra lagen så att altruistiskt surrogatmödraskap tillåts i Sverige, för att hjälpa fler ofrivilligt barnlösa par att bli föräldrar.",
+    "sourceCitation": "SVT Nyheter, Så tycker partierna i surrogatfrågan, 2024",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/sa-tycker-partierna-i-surrogatfragan",
+    "quote": "Genom att tillåta altruistiskt surrogatmoderskap i Sverige skulle vi hjälpa fler ofrivilligt barnlösa par att kunna bli föräldrar.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "sjukvard-surrogat",
+    "partyCode": "SD",
+    "value": 1,
+    "motivation": "SD motsätter sig helt att surrogatmödraskap tillåts, även i altruistisk form, med motiveringen att barn inte ska hanteras som handelsvaror och kvinnor inte betraktas som barnfabriker.",
+    "sourceCitation": "SVT Nyheter, Så tycker partierna i surrogatfrågan, 2024",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/sa-tycker-partierna-i-surrogatfragan",
+    "quote": "Barn inte ska hanteras som handelsvaror och kvinnor ska aldrig betraktas som barnfabriker.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "lag-preventiv-avlyssning",
+    "partyCode": "V",
+    "value": 1,
+    "motivation": "V yrkade avslag på regeringens proposition om utökade preventiva tvångsmedel och motsätter sig att polisen får avlyssna personer som inte är misstänkta för något konkret brott, med hänvisning till integritet och rättssäkerhet.",
+    "sourceCitation": "Sveriges riksdag, Betänkande 2023/24:JuU24 Preventiva tvångsmedel för att förebygga och förhindra allvarliga brott, 2024",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/preventiva-tvangsmedel-for-att-forebygga-och_hb01juu24/",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "lag-preventiv-avlyssning",
+    "partyCode": "S",
+    "value": 4,
+    "motivation": "S står bakom att polisen får använda preventiva tvångsmedel som hemlig avlyssning mot personer i gängmiljö utan konkret brottsmisstanke, men vill se utvärdering av lagstiftningen och starkare rättssäkerhetsgarantier.",
+    "sourceCitation": "Sveriges riksdag, Betänkande 2023/24:JuU24 Preventiva tvångsmedel för att förebygga och förhindra allvarliga brott, 2024",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/preventiva-tvangsmedel-for-att-forebygga-och_hb01juu24/",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "lag-preventiv-avlyssning",
+    "partyCode": "MP",
+    "value": 2,
+    "motivation": "MP accepterar viss preventiv tvångsmedelsanvändning men ville avslå de mest ingripande delarna, som preventiv hemlig rumsavlyssning och att tillstånd knyts till en person, eftersom oskyldigas privatliv riskerar att kränkas.",
+    "sourceCitation": "Miljöpartiet, Motion 2023/24:2876 med anledning av prop. 2023/24:117, 2024",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/med-anledning-av-prop-202324117-preventiva_hb022876/",
+    "quote": "finns inget sätt att kontrollera vem personen interagerar med, vilket kan leda till att man i onödan allvarligt kränker oskyldiga personers rätt till privatliv",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "lag-preventiv-avlyssning",
+    "partyCode": "C",
+    "value": 3,
+    "motivation": "C accepterar preventiva tvångsmedel mot organiserad brottslighet men anser att regeringens utvidgning gick för långt och vill begränsa tillämpningen, stärka oberoende tillsyn och göra en samlad översyn av reglerna.",
+    "sourceCitation": "Centerpartiet, Motion 2023/24:2879 med anledning av prop. 2023/24:117, 2024",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/med-anledning-av-prop-202324117-preventiva_hb022879/",
+    "quote": "Åtgärderna kan användas utan att det finns ett brott begånget, eller en konkret misstanke om brott, eller en misstänkt person",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "lag-preventiv-avlyssning",
+    "partyCode": "L",
+    "value": 4,
+    "motivation": "L stod som regeringsparti bakom propositionen om utökade preventiva tvångsmedel och vill att polisen ska kunna använda hemlig avlyssning i förebyggande syfte mot bland annat gängkriminella, utan konkret brottsmisstanke.",
+    "sourceCitation": "Sveriges riksdag, Betänkande 2023/24:JuU24 Preventiva tvångsmedel för att förebygga och förhindra allvarliga brott, 2024",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/preventiva-tvangsmedel-for-att-forebygga-och_hb01juu24/",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "lag-preventiv-avlyssning",
+    "partyCode": "KD",
+    "value": 4,
+    "motivation": "KD stod som regeringsparti bakom de utökade preventiva tvångsmedlen och anser att hemlig avlyssning i förebyggande syfte behövs för att stoppa gängens grova brottslighet innan brott begås.",
+    "sourceCitation": "Sveriges riksdag, Betänkande 2023/24:JuU24 Preventiva tvångsmedel för att förebygga och förhindra allvarliga brott, 2024",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/preventiva-tvangsmedel-for-att-forebygga-och_hb01juu24/",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "lag-preventiv-avlyssning",
+    "partyCode": "M",
+    "value": 4,
+    "motivation": "M har med justitieminister Gunnar Strömmer drivit igenom lagstiftningen som ger polisen utökade möjligheter till preventiv hemlig avlyssning utan konkret brottsmisstanke, som ett centralt verktyg mot gängkriminaliteten.",
+    "sourceCitation": "Sveriges riksdag, Betänkande 2023/24:JuU24 Preventiva tvångsmedel för att förebygga och förhindra allvarliga brott, 2024",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/preventiva-tvangsmedel-for-att-forebygga-och_hb01juu24/",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "lag-preventiv-avlyssning",
+    "partyCode": "SD",
+    "value": 4,
+    "motivation": "SD har inom Tidösamarbetet drivit på för preventiva tvångsmedel och stödde propositionen fullt ut; partiet vill att polisen ska kunna avlyssna gängkriminella i förebyggande syfte utan konkret brottsmisstanke.",
+    "sourceCitation": "Sveriges riksdag, Betänkande 2023/24:JuU24 Preventiva tvångsmedel för att förebygga och förhindra allvarliga brott, 2024",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/preventiva-tvangsmedel-for-att-forebygga-och_hb01juu24/",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "lag-narkotika-avkriminalisera",
+    "partyCode": "V",
+    "value": 4,
+    "motivation": "V vill avkriminalisera själva bruket av narkotika för att minska stigmatiseringen av personer med beroende och låta polisen fokusera på langning och grova narkotikabrott; innehav och försäljning ska dock förbli olagligt.",
+    "sourceCitation": "Vänsterpartiet, Politik A–Ö: Droger och beroende, 2025",
+    "sourceUrl": "https://www.vansterpartiet.se/var-politik/politik-a-o/droger-och-beroende/",
+    "quote": "Det innebär att det inte ska vara olagligt att vara påverkad, men innehav av narkotika ska fortsätta vara olagligt.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "lag-narkotika-avkriminalisera",
+    "partyCode": "S",
+    "value": 1,
+    "motivation": "S håller fast vid kriminaliseringen av eget bruk och är uttryckligen emot både legalisering och avkriminalisering, eftersom partiet bedömer att narkotikaanvändningen och skadorna annars riskerar att öka.",
+    "sourceCitation": "Socialdemokraterna, Vår politik A till Ö: Narkotika, 2025",
+    "sourceUrl": "https://www.socialdemokraterna.se/var-politik/a-till-o/narkotika",
+    "quote": "Socialdemokraterna är därmed emot såväl legalisering som avkriminalisering av samtliga idag förbjudna droger.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "lag-narkotika-avkriminalisera",
+    "partyCode": "MP",
+    "value": 2,
+    "motivation": "MP tar inte ställning för avkriminalisering men vill utvärdera narkotikastrafflagen i linje med SKR:s rekommendation, för att flytta fokus från straff till vård och göra det lättare för personer med beroende att söka hjälp.",
+    "sourceCitation": "Alkohol & Narkotika, Valenkät: Är det dags att avkriminalisera eget bruk?, 2022",
+    "sourceUrl": "https://www.alkoholochnarkotika.se/politik/alkohol-narkotikas-valenkat-ar-det-dags-att-avkriminalisera-eget-bruk/",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "lag-narkotika-avkriminalisera",
+    "partyCode": "C",
+    "value": 3,
+    "motivation": "C beslutade på partistämman 2025 att verka för att avkriminalisera förekomsten av narkotika i kroppen, det vill säga själva ruspåverkan, men vill inte avkriminalisera innehav eller legalisera narkotika.",
+    "sourceCitation": "SVT Nyheter, Centerpartiet vill avkriminalisera narkotika i kroppen, 2025",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/centerpartiet-vill-avkriminalisera-narkotika-i-kroppen",
+    "quote": "Centerpartiets ombud på Centerstämman har beslutat att partiet ska verka för att avkriminalisera förekomsten av narkotika i kroppen.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "lag-narkotika-avkriminalisera",
+    "partyCode": "L",
+    "value": 1,
+    "motivation": "L vill att eget bruk och innehav av narkotika även fortsatt ska vara kriminaliserat i hela kedjan från produktion till bruk, bland annat för att tidigt kunna upptäcka missbruk och strypa de kriminellas inkomster.",
+    "sourceCitation": "Alkohol & Narkotika, Valenkät: Är det dags att avkriminalisera eget bruk?, 2022",
+    "sourceUrl": "https://www.alkoholochnarkotika.se/politik/alkohol-narkotikas-valenkat-ar-det-dags-att-avkriminalisera-eget-bruk/",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "lag-narkotika-avkriminalisera",
+    "partyCode": "KD",
+    "value": 1,
+    "motivation": "KD står för en restriktiv narkotikapolitik och säger nej till att avkriminalisera eget bruk; partiet vill stoppa det man ser som tendenser till drogliberalisering.",
+    "sourceCitation": "Alkohol & Narkotika, Valenkät: Är det dags att avkriminalisera eget bruk?, 2022",
+    "sourceUrl": "https://www.alkoholochnarkotika.se/politik/alkohol-narkotikas-valenkat-ar-det-dags-att-avkriminalisera-eget-bruk/",
+    "quote": "Vi står för en restriktiv narkotikapolitik och är emot både legalisering och avkriminalisering",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "lag-narkotika-avkriminalisera",
+    "partyCode": "M",
+    "value": 1,
+    "motivation": "M vill behålla kriminaliseringen av eget bruk och menar att förbudet sänder en viktig signal, särskilt till barn och unga, samtidigt som narkotikahandeln göder gängkriminaliteten.",
+    "sourceCitation": "Alkohol & Narkotika, Valenkät: Är det dags att avkriminalisera eget bruk?, 2022",
+    "sourceUrl": "https://www.alkoholochnarkotika.se/politik/alkohol-narkotikas-valenkat-ar-det-dags-att-avkriminalisera-eget-bruk/",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "lag-narkotika-avkriminalisera",
+    "partyCode": "SD",
+    "value": 1,
+    "motivation": "SD säger nej till att avkriminalisera eget bruk av narkotika och förespråkar en fortsatt restriktiv narkotikapolitik och narkotikalagstiftning.",
+    "sourceCitation": "Accent, Så vill riksdagspartierna forma narkotikapolitiken, 2018",
+    "sourceUrl": "https://accentmagasin.se/politik/sa-vill-partierna-forma-narkotikapolitiken/",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "migration-tiggeriforbud",
+    "partyCode": "V",
+    "value": 1,
+    "motivation": "V säger nej till både nationellt och kommunala tiggeriförbud och ser tiggeriet som ett uttryck för fattigdom och social nöd som ska bekämpas med sociala insatser, inte med förbud.",
+    "sourceCitation": "SVT Nyheter, Så tycker partierna om tiggeri, 2018",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/sa-tycker-partierna-om-tiggeri",
+    "quote": "ett tecken på en akut social katastrof i dagens Europa",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "migration-tiggeriforbud",
+    "partyCode": "S",
+    "value": 1,
+    "motivation": "S säger nej till ett nationellt tiggeriförbud men vill se över ordningslagen så att samma regler gäller i alla kommuner; frågan har dock splittrat partiet internt och vissa S-kommunpolitiker vill ha förbud.",
+    "sourceCitation": "SVT Nyheter, Så tycker partierna om tiggeri, 2018",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/sa-tycker-partierna-om-tiggeri",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "migration-tiggeriforbud",
+    "partyCode": "MP",
+    "value": 1,
+    "motivation": "MP motsätter sig tiggeriförbud, både nationella och kommunala, och menar att fattigdom inte kan lagstiftas bort genom att förbjuda människor att be om hjälp.",
+    "sourceCitation": "SVT Nyheter, Så tycker partierna om tiggeri, 2018",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/sa-tycker-partierna-om-tiggeri",
+    "quote": "Det går inte att lagstifta bort fattigdom genom att förbjuda människor att be om hjälp.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "migration-tiggeriforbud",
+    "partyCode": "C",
+    "value": 1,
+    "motivation": "C är emot både nationellt och kommunala tiggeriförbud och vill i stället angripa orsakerna, bland annat genom att hemländer som Rumänien och Bulgarien använder EU:s socialfonder för att minska fattigdomen.",
+    "sourceCitation": "SVT Nyheter, Så tycker partierna om tiggeri, 2018",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/sa-tycker-partierna-om-tiggeri",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "migration-tiggeriforbud",
+    "partyCode": "L",
+    "value": 1,
+    "motivation": "L motsätter sig ett tiggeriförbud och har beskrivit utredningen om ett nationellt förbud som en av de mest svårsmälta punkterna i Tidöavtalet; partiet menar att förbud inte löser fattigdomen.",
+    "sourceCitation": "SVT Nyheter, Så tycker partierna om tiggeri, 2018",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/sa-tycker-partierna-om-tiggeri",
+    "quote": "Tiggeri är ingen lösning på fattigdomen, men lösningen ligger inte heller i förbud.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "migration-tiggeriforbud",
+    "partyCode": "KD",
+    "value": 2,
+    "motivation": "KD vill att kommuner ska kunna begränsa eller förbjuda tiggeri lokalt genom ordningsföreskrifter, men har varit tveksamt till ett nationellt förbud i hela landet.",
+    "sourceCitation": "SVT Nyheter, Så tycker partierna om tiggeri, 2018",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/sa-tycker-partierna-om-tiggeri",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "migration-tiggeriforbud",
+    "partyCode": "M",
+    "value": 4,
+    "motivation": "M vill införa ett nationellt förbud mot tiggeri och har som regeringsparti låtit utreda frågan (SOU 2025:83); partiet anser att tiggeri inte är en väg ur fattigdom.",
+    "sourceCitation": "SVT Nyheter, Så tycker partierna om tiggeri, 2018",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/sa-tycker-partierna-om-tiggeri",
+    "quote": "Ja, Moderaterna vill införa ett nationellt förbud mot tiggeri.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "migration-tiggeriforbud",
+    "partyCode": "SD",
+    "value": 4,
+    "motivation": "SD har länge krävt ett nationellt tiggeriförbud, fick in en utredning av förbudet i Tidöavtalet och vill kriminalisera tiggeri i hela landet; kommunala förbud ses bara som ett näst bästa alternativ.",
+    "sourceCitation": "SVT Nyheter, Utredare: Inget behov av nationellt tiggeriförbud, 2025",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/utredning-om-nationellt-tiggeriforbud-overlamnas",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "forsvar-utlandska-baser",
+    "partyCode": "V",
+    "value": 4,
+    "motivation": "V vill säga upp DCA-avtalet med USA och motsätter sig utländsk militär närvaro och baser på svensk mark, som partiet ser som en fråga om svensk suveränitet.",
+    "sourceCitation": "Sveriges riksdag, Motion 2025/26:102 Uppsägning av DCA-avtalet med USA (V), 2025",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/uppsagning-av-dca-avtalet-med-usa_hd02102/",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "forsvar-utlandska-baser",
+    "partyCode": "S",
+    "value": 2,
+    "motivation": "S röstade ja till DCA-avtalet som ger USA tillgång till 17 svenska militärbaser och vill inte ha något lagstadgat förbud, men har samtidigt uttalat att Sverige inte behöver permanenta utländska baser i fredstid.",
+    "sourceCitation": "Sveriges riksdag, Ja till avtal om försvarssamarbete med USA, 2024",
+    "sourceUrl": "https://www.riksdagen.se/sv/aktuellt/aktuelltnotiser/2024/juni/18/ja-till-avtal-om-forsvarssamarbete-med-usa_cms2fa8b58c-5dc6-455f-b909-95d1d9477599sv/",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "forsvar-utlandska-baser",
+    "partyCode": "MP",
+    "value": 4,
+    "motivation": "MP röstade nej till DCA-avtalet och har som villkor för Natomedlemskapet drivit att Sverige inte ska ha permanenta utländska trupper eller kärnvapen på svenskt territorium i fredstid.",
+    "sourceCitation": "Sveriges riksdag, Motion 2022/23:2349 med anledning av prop. 2022/23:74 Sveriges medlemskap i Nato (MP), 2023",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/med-anledning-av-prop-20222374-sveriges_ha022349/",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "forsvar-utlandska-baser",
+    "partyCode": "C",
+    "value": 1,
+    "motivation": "C röstade ja till DCA-avtalet som ger amerikansk militär tillgång till 17 svenska baser och vill att Sverige ska vara en fullt integrerad Natoallierad utan förbehåll mot allierad närvaro.",
+    "sourceCitation": "Sveriges riksdag, Betänkande 2023/24:UFöU1 Avtal om försvarssamarbete med Amerikas förenta stater, 2024",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/avtal-om-forsvarssamarbete-med-amerikas-forenta_hb01uf%C3%B6u1/",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "forsvar-utlandska-baser",
+    "partyCode": "L",
+    "value": 1,
+    "motivation": "L röstade ja till DCA-avtalet och vill ha ett djupt integrerat försvarssamarbete med USA och Nato utan svenska förbehåll mot allierad militär närvaro.",
+    "sourceCitation": "Sveriges riksdag, Betänkande 2023/24:UFöU1 Avtal om försvarssamarbete med Amerikas förenta stater, 2024",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/avtal-om-forsvarssamarbete-med-amerikas-forenta_hb01uf%C3%B6u1/",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "forsvar-utlandska-baser",
+    "partyCode": "KD",
+    "value": 1,
+    "motivation": "KD röstade ja till DCA-avtalet och stöder amerikansk och allierad militär närvaro i Sverige; partiet vill inte lagstifta om förbud mot utländska baser.",
+    "sourceCitation": "Sveriges riksdag, Betänkande 2023/24:UFöU1 Avtal om försvarssamarbete med Amerikas förenta stater, 2024",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/avtal-om-forsvarssamarbete-med-amerikas-forenta_hb01uf%C3%B6u1/",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "forsvar-utlandska-baser",
+    "partyCode": "M",
+    "value": 1,
+    "motivation": "Den M-ledda regeringen förhandlade fram DCA-avtalet som ger USA tillgång till 17 svenska militärbaser och motsätter sig förbud som begränsar allierad närvaro på svensk mark.",
+    "sourceCitation": "Regeringen, Sverige i Nato, 2024",
+    "sourceUrl": "https://www.regeringen.se/regeringens-politik/sverige-i-nato/",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "forsvar-utlandska-baser",
+    "partyCode": "SD",
+    "value": 1,
+    "motivation": "SD röstade ja till DCA-avtalet och stöder amerikansk militär närvaro i Sverige; partiet har även öppnat för Natokärnvapen på svensk mark och vill inte ha några förbud mot allierade baser.",
+    "sourceCitation": "Sveriges riksdag, Betänkande 2023/24:UFöU1 Avtal om försvarssamarbete med Amerikas förenta stater, 2024",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/avtal-om-forsvarssamarbete-med-amerikas-forenta_hb01uf%C3%B6u1/",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "forsvar-vapenexport",
+    "partyCode": "V",
+    "value": 4,
+    "motivation": "V vill ha ett absolut förbud mot vapenexport till diktaturer och stater som kränker mänskliga rättigheter, och var 2018 ensamma om att rösta för ett sådant förbud.",
+    "sourceCitation": "Vänsterpartiet, Vapenexport (Politik A–Ö), 2025",
+    "sourceUrl": "https://www.vansterpartiet.se/var-politik/politik-a-o/vapenexport/",
+    "quote": "förbjuda vapenexport till diktaturer, stater som för angreppskrig och regimer som begår brott mot de mänskliga rättigheterna",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "forsvar-vapenexport",
+    "partyCode": "S",
+    "value": 2,
+    "motivation": "S står bakom 2018 års skärpta exportkontroll där demokratisk status är ett centralt villkor vid tillståndsprövningen, men vill inte införa ett absolut förbud mot export till icke-demokratier.",
+    "sourceCitation": "Sveriges riksdag, Betänkande 2017/18:UU9 Skärpt exportkontroll av krigsmateriel, 2018",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/skarpt-exportkontroll-av-krigsmateriel_h501uu9/",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "forsvar-vapenexport",
+    "partyCode": "MP",
+    "value": 4,
+    "motivation": "MP vill förbjuda vapenexport till diktaturer och länder som kränker mänskliga rättigheter och anser att dagens regelverk inte räcker för att stoppa sådan export.",
+    "sourceCitation": "Miljöpartiet, Vapenexport, 2025",
+    "sourceUrl": "https://www.mp.se/politik/vapenexport/",
+    "quote": "Förbjuda vapenexport till diktaturer och länder som kränker mänskliga rättigheter.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "forsvar-vapenexport",
+    "partyCode": "C",
+    "value": 2,
+    "motivation": "C ställde sig 2018 bakom demokratikriteriet som hinder vid exportprövningen men motsätter sig ett absolut förbud och värnar försvarsindustrins exportmöjligheter.",
+    "sourceCitation": "Sveriges riksdag, Betänkande 2017/18:UU9 Skärpt exportkontroll av krigsmateriel, 2018",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/skarpt-exportkontroll-av-krigsmateriel_h501uu9/",
+    "quote": null,
+    "confidence": "low"
+  },
+  {
+    "questionKey": "forsvar-vapenexport",
+    "partyCode": "L",
+    "value": 1,
+    "motivation": "L ingår i regeringen som vill underlätta krigsmaterielexport efter Natointrädet och ansluta Sverige till ett exportkontrollavtal med Frankrike, Tyskland och Spanien; partiet vill inte förbjuda export till icke-demokratier.",
+    "sourceCitation": "Regeringen, Prop. 2025/26:228 Ett modernt och anpassat regelverk för krigsmateriel, 2025",
+    "sourceUrl": "https://www.regeringen.se/rattsliga-dokument/proposition/2026/04/prop.-202526228",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "forsvar-vapenexport",
+    "partyCode": "KD",
+    "value": 1,
+    "motivation": "KD ingår i regeringen som med proposition 2025/26:228 vill modernisera och underlätta krigsmaterielexporten, och motsätter sig ett demokratiförbud som skulle stoppa export till länder som Förenade Arabemiraten.",
+    "sourceCitation": "Regeringen, Prop. 2025/26:228 Ett modernt och anpassat regelverk för krigsmateriel, 2025",
+    "sourceUrl": "https://www.regeringen.se/rattsliga-dokument/proposition/2026/04/prop.-202526228",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "forsvar-vapenexport",
+    "partyCode": "M",
+    "value": 1,
+    "motivation": "Den M-ledda regeringen vill underlätta och modernisera regelverket för krigsmaterielexport som en del av försvarssamarbetet i Nato, inte förbjuda export till icke-demokratier.",
+    "sourceCitation": "Regeringen, Prop. 2025/26:228 Ett modernt och anpassat regelverk för krigsmateriel, 2025",
+    "sourceUrl": "https://www.regeringen.se/rattsliga-dokument/proposition/2026/04/prop.-202526228",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "forsvar-vapenexport",
+    "partyCode": "SD",
+    "value": 1,
+    "motivation": "SD stöder svensk vapenexport och försvarsindustrin, ställde sig inte bakom något exportförbud vid 2018 års skärpta exportkontroll och backar upp regeringens linje att underlätta exporten.",
+    "sourceCitation": "Sveriges riksdag, Betänkande 2017/18:UU9 Skärpt exportkontroll av krigsmateriel, 2018",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/skarpt-exportkontroll-av-krigsmateriel_h501uu9/",
+    "quote": null,
+    "confidence": "low"
+  },
+  {
+    "questionKey": "aldre-pensionsalder",
+    "partyCode": "V",
+    "value": 1,
+    "motivation": "V står utanför Pensionsgruppen och reserverade sig mot beslutet att höja pensionsåldern och införa riktåldern som följer medellivslängden; partiet anser att höjningen slår hårt mot slitna yrkesgrupper.",
+    "sourceCitation": "Sveriges riksdag, Betänkande 2021/22:SfU25 Justerade åldersgränser i pensionssystemet, 2022",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/justerade-aldersgranser-i-pensionssystemet-och-i_h901sfu25/",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "aldre-pensionsalder",
+    "partyCode": "S",
+    "value": 4,
+    "motivation": "S lade som regeringsparti propositionen om justerade åldersgränser som knyter pensionsåldern till riktåldern, vilket innebär att åldersgränserna höjs i takt med medellivslängden.",
+    "sourceCitation": "Sveriges riksdag, Betänkande 2021/22:SfU25 Justerade åldersgränser i pensionssystemet (prop. 2021/22:181), 2022",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/justerade-aldersgranser-i-pensionssystemet-och-i_h901sfu25/",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "aldre-pensionsalder",
+    "partyCode": "MP",
+    "value": 3,
+    "motivation": "MP ingick i Pensionsgruppen när riktåldern infördes och röstade för de höjda åldersgränserna 2022, men har därefter lämnat gruppen och betonar undantag för dem som inte orkar arbeta längre.",
+    "sourceCitation": "Sveriges riksdag, Betänkande 2021/22:SfU25 Justerade åldersgränser i pensionssystemet, 2022",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/justerade-aldersgranser-i-pensionssystemet-och-i_h901sfu25/",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "aldre-pensionsalder",
+    "partyCode": "C",
+    "value": 4,
+    "motivation": "C ingår i Pensionsgruppen och röstade för riktåldersreformen som höjer pensionsrelaterade åldersgränser i takt med att medellivslängden ökar.",
+    "sourceCitation": "Sveriges riksdag, Betänkande 2021/22:SfU25 Justerade åldersgränser i pensionssystemet, 2022",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/justerade-aldersgranser-i-pensionssystemet-och-i_h901sfu25/",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "aldre-pensionsalder",
+    "partyCode": "L",
+    "value": 4,
+    "motivation": "L ingår i Pensionsgruppen och stödde införandet av riktåldern, som innebär att pensionsåldern automatiskt följer medellivslängdens utveckling.",
+    "sourceCitation": "Sveriges riksdag, Betänkande 2021/22:SfU25 Justerade åldersgränser i pensionssystemet, 2022",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/justerade-aldersgranser-i-pensionssystemet-och-i_h901sfu25/",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "aldre-pensionsalder",
+    "partyCode": "KD",
+    "value": 4,
+    "motivation": "KD ingår i Pensionsgruppen och röstade för de justerade åldersgränserna och riktåldern, som höjer pensionsåldern i takt med ökad medellivslängd för att trygga pensionssystemet.",
+    "sourceCitation": "Sveriges riksdag, Betänkande 2021/22:SfU25 Justerade åldersgränser i pensionssystemet, 2022",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/justerade-aldersgranser-i-pensionssystemet-och-i_h901sfu25/",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "aldre-pensionsalder",
+    "partyCode": "M",
+    "value": 4,
+    "motivation": "M ingår i Pensionsgruppen och stödde riktåldersreformen som kopplar pensionsåldern till medellivslängden, med motivet att fler friska år ska ge fler arbetade år.",
+    "sourceCitation": "Sveriges riksdag, Betänkande 2021/22:SfU25 Justerade åldersgränser i pensionssystemet, 2022",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/justerade-aldersgranser-i-pensionssystemet-och-i_h901sfu25/",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "aldre-pensionsalder",
+    "partyCode": "SD",
+    "value": 1,
+    "motivation": "SD yrkade avslag på propositionen om höjda åldersgränser och riktålder; partiet vill ha flexibilitet och frivilliga incitament för längre arbetsliv i stället för tvingande höjningar som slår mot slitna yrkesgrupper.",
+    "sourceCitation": "Sveriges riksdag, Motion 2021/22:4543 med anledning av prop. 2021/22:181 (SD), 2022",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/med-anledning-av-prop-202122181-justerade_h9024543/",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "aldre-boendegaranti",
+    "partyCode": "V",
+    "value": 2,
+    "motivation": "V vill bygga ut den offentliga äldreomsorgen så att alla med behov får plats, men driver inte någon åldersbaserad rätt till äldreboende utan biståndsprövning utan vill att behoven ska styra.",
+    "sourceCitation": "Vårdföretagarna, Valspecial: Ska du få välja äldreboende själv? Så svarar partierna, 2026",
+    "sourceUrl": "https://www.vardforetagarna.se/2026/05/valspecial-ska-du-fa-valja-aldreboende-sjalv-sa-svarar-partierna/",
+    "quote": null,
+    "confidence": "low"
+  },
+  {
+    "questionKey": "aldre-boendegaranti",
+    "partyCode": "S",
+    "value": 2,
+    "motivation": "S vill att den som behöver äldreboendeplats ska få det utan dröjsmål genom fler platser och höjda statsbidrag, men vill behålla behovsprövningen så att kommunerna kan planera verksamheten.",
+    "sourceCitation": "Socialdemokraterna, Äldreomsorg (Vår politik A till Ö), 2026",
+    "sourceUrl": "https://www.socialdemokraterna.se/var-politik/a-till-o/aldreomsorg",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "aldre-boendegaranti",
+    "partyCode": "MP",
+    "value": 2,
+    "motivation": "MP har inget förslag om biståndsfri rätt till äldreboende för 85-plussare och vill att äldres val ska begränsas till boenden som kommunen har avtal med.",
+    "sourceCitation": "Vårdföretagarna, Valspecial: Ska du få välja äldreboende själv? Så svarar partierna, 2026",
+    "sourceUrl": "https://www.vardforetagarna.se/2026/05/valspecial-ska-du-fa-valja-aldreboende-sjalv-sa-svarar-partierna/",
+    "quote": null,
+    "confidence": "low"
+  },
+  {
+    "questionKey": "aldre-boendegaranti",
+    "partyCode": "C",
+    "value": 3,
+    "motivation": "C vill införa en äldreboendegaranti som ger alla som fyllt 85 år rätt att utan biståndsbedömning flytta till ett trygghetsboende, vilket dock är en enklare boendeform än särskilt boende.",
+    "sourceCitation": "Centerpartiet, Äldreomsorg (Politik A–Ö), 2026",
+    "sourceUrl": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/vard-och-omsorg/aldreomsorg",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "aldre-boendegaranti",
+    "partyCode": "L",
+    "value": 3,
+    "motivation": "L har länge drivit att de äldsta ska få ökad rätt till äldreboende, bland annat förslag om att alla över 85 som önskar ska beviljas plats, men har inte gjort en lagstadgad biståndsfri garanti till tydlig nationell politik.",
+    "sourceCitation": "Senioren, Ge alla över 85 rätt till äldreboende, 2017",
+    "sourceUrl": "https://www.senioren.se/nyheter/ge-alla-over-85-ar-ratt-till-aldreboende/",
+    "quote": "Liberalerna föreslår i sin kommande budget för Stockholms stad 2018 att alla över 85 år som önskar ska beviljas plats på servicehus.",
+    "confidence": "low"
+  },
+  {
+    "questionKey": "aldre-boendegaranti",
+    "partyCode": "KD",
+    "value": 4,
+    "motivation": "KD vill införa en äldreboendegaranti som ger alla som fyllt 85 år lagstadgad rätt till plats i anpassat boende utan biståndsbedömning, när den äldre själv bedömer att behovet finns.",
+    "sourceCitation": "Kristdemokraterna, Äldre (Vår politik), 2026",
+    "sourceUrl": "https://kristdemokraterna.se/var-politik/politikomraden/aldre",
+    "quote": "Vi vill därför införa en äldreboendegaranti där varje person över 85 år har en lagstadgad rätt att få en plats på ett anpassat boende när och om de så vill.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "aldre-boendegaranti",
+    "partyCode": "M",
+    "value": 2,
+    "motivation": "M:s äldreminister hänvisar till dagens biståndsprövning enligt socialtjänstlagen och kommunernas ansvar, och vill inte införa någon åldersbaserad rätt till äldreboende utan behovsbedömning.",
+    "sourceCitation": "Sveriges riksdag, Svar på skriftlig fråga 2024/25:900 Rätt till särskilt boende för äldre (Anna Tenje, M), 2025",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svar-pa-skriftlig-fraga/ratt-till-sarskilt-boende-for-aldre_hc12900/",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "aldre-boendegaranti",
+    "partyCode": "SD",
+    "value": null,
+    "motivation": "SD vill korta väntetiderna, säkra parbogarantin och få en likvärdig biståndsbedömning i hela landet, men har inte tagit tydlig ställning till en biståndsfri rätt till äldreboende för alla över 85.",
+    "sourceCitation": "Sveriges riksdag, Motion 2020/21:2027 God vård och omsorg om äldre (SD), 2020",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/god-vard-och-omsorg-om-aldre_h8022027/html/",
+    "quote": null,
+    "confidence": "low"
+  },
+  {
+    "questionKey": "bostad-flyttskatt",
+    "partyCode": "V",
+    "value": 1,
+    "motivation": "V motsätter sig sänkt reavinstskatt och anser att det är viktigare att pressa hyror och bygga hyresrätter än att sänka skatten för bostadsägare; partiet vill snarare beskatta kapital och fastigheter hårdare.",
+    "sourceCitation": "Fastighetsmäklarförbundet, Partiernas bostadspolitik, 2022",
+    "sourceUrl": "https://fmf.se/partiernas-bostadspolitik/",
+    "quote": null,
+    "confidence": "low"
+  },
+  {
+    "questionKey": "bostad-flyttskatt",
+    "partyCode": "S",
+    "value": 1,
+    "motivation": "S motsätter sig en separat sänkning av reavinstskatten och varnar för att den främst gynnar hushåll som redan gjort stora vinster på sitt boende.",
+    "sourceCitation": "Bostadspolitik.se, Reavinstskatten delar riksdagen: L mest positiva, S varnar för orättvisa, 2025",
+    "sourceUrl": "https://bostadspolitik.se/reavinstskatten-delar-riksdagen-l-mest-positiva-s-varnar-for-orattvisa/",
+    "quote": "en förmögenhetsöverföring till de hushåll som gjort stora vinster",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "bostad-flyttskatt",
+    "partyCode": "MP",
+    "value": 2,
+    "motivation": "MP pekar på att dagens boendebeskattning ger inlåsningseffekter och minskad rörlighet, men vill hantera flyttskatterna inom en bred skattereform och driver ingen ensidig sänkning av reavinstskatten.",
+    "sourceCitation": "Skattebetalarna, Fastighetsskatten delar partierna, 2021",
+    "sourceUrl": "https://skattebetalarna.se/fastighetsskatten-delar-partierna/",
+    "quote": null,
+    "confidence": "low"
+  },
+  {
+    "questionKey": "bostad-flyttskatt",
+    "partyCode": "C",
+    "value": 3,
+    "motivation": "C ser sänkt reavinstskatt som en pusselbit för ökad rörlighet på bostadsmarknaden men anser att den ensam inte löser något och vill ha bredare skatte- och bostadsreformer.",
+    "sourceCitation": "Bostadspolitik.se, Reavinstskatten delar riksdagen: L mest positiva, S varnar för orättvisa, 2025",
+    "sourceUrl": "https://bostadspolitik.se/reavinstskatten-delar-riksdagen-l-mest-positiva-s-varnar-for-orattvisa/",
+    "quote": "En pusselbit i en större pusselläggning",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "bostad-flyttskatt",
+    "partyCode": "L",
+    "value": 4,
+    "motivation": "L vill trappa ned reavinstskatten över tid och ser det som en frihetsfråga, eftersom skatten skapar inlåsningseffekter som hindrar rörligheten på bostadsmarknaden.",
+    "sourceCitation": "Bostadspolitik.se, Reavinstskatten delar riksdagen: L mest positiva, S varnar för orättvisa, 2025",
+    "sourceUrl": "https://bostadspolitik.se/reavinstskatten-delar-riksdagen-l-mest-positiva-s-varnar-for-orattvisa/",
+    "quote": "Vi ställer oss positiva till förslaget att trappa ned reavinstskatten över tid.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "bostad-flyttskatt",
+    "partyCode": "KD",
+    "value": 4,
+    "motivation": "KD vill stegvis avskaffa reavinstskatten vid bostadsförsäljning – med två procentenheter per år efter fem års ägande tills den är noll efter 16 år – för att öka rörligheten på bostadsmarknaden.",
+    "sourceCitation": "Sveriges riksdag, Motion 2025/26:1344 Sänkt reavinstbeskattning (KD), 2025",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/sankt-reavinstbeskattning_hd021344/",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "bostad-flyttskatt",
+    "partyCode": "M",
+    "value": 3,
+    "motivation": "M delar bilden att reavinstskatten skapar inlåsningseffekter och är försiktigt positiva till en sänkning, men betonar att förändringar i skattesystemet måste hanteras varsamt och ansvarsfullt.",
+    "sourceCitation": "Bostadspolitik.se, Reavinstskatten delar riksdagen: L mest positiva, S varnar för orättvisa, 2025",
+    "sourceUrl": "https://bostadspolitik.se/reavinstskatten-delar-riksdagen-l-mest-positiva-s-varnar-for-orattvisa/",
+    "quote": "förändringar i skattesystemet måste hanteras varsamt",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "bostad-flyttskatt",
+    "partyCode": "SD",
+    "value": null,
+    "motivation": "SD har inte tagit ställning till sänkt eller avskaffad reavinstskatt; partiet säger sig vara öppet för att titta på frågan men vill hantera den inom en ordnad budgetprocess med hänsyn till statsfinanserna.",
+    "sourceCitation": "Bostadspolitik.se, Reavinstskatten delar riksdagen: L mest positiva, S varnar för orättvisa, 2025",
+    "sourceUrl": "https://bostadspolitik.se/reavinstskatten-delar-riksdagen-l-mest-positiva-s-varnar-for-orattvisa/",
+    "quote": "öppna för att titta på frågan",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "bostad-ranteavdrag",
+    "partyCode": "V",
+    "value": 4,
+    "motivation": "V vill att ränteavdragen trappas ned på samtliga lån, inklusive bolån, eftersom avdragen främst gynnar hushåll med stora lån och driver upp skuldsättningen. Partiet har som enda parti föreslagit en konkret nedtrappningstakt.",
+    "sourceCitation": "Vänsterpartiet, Motion 2024/25:3231 med anledning av prop. 2024/25:26 Avtrappat ränteavdrag för lån utan säkerhet, 2024",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/med-anledning-av-prop-20242526-avtrappat_hc023231/",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "bostad-ranteavdrag",
+    "partyCode": "S",
+    "value": 1,
+    "motivation": "S har inga förslag om att trappa ned ränteavdraget på bolån och är mycket tveksamma till förändringar, med hänvisning till att hushållen har fattat stora ekonomiska beslut utifrån dagens regler.",
+    "sourceCitation": "Finansliv, Flera partier har svängt om ränteavdraget, 2022",
+    "sourceUrl": "https://www.finansliv.se/artikel/flera-partier-har-svangt-om-ranteavdraget/",
+    "quote": "Vi har i dagsläget inga förslag till förändringar i ränteavdragen.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "bostad-ranteavdrag",
+    "partyCode": "MP",
+    "value": 3,
+    "motivation": "MP vill på sikt trappa ned ränteavdraget till en lägre nivå som del av en bredare skatte- och bostadsreform, men har inte angett någon tidsplan.",
+    "sourceCitation": "Finansliv, Flera partier har svängt om ränteavdraget, 2022",
+    "sourceUrl": "https://www.finansliv.se/artikel/flera-partier-har-svangt-om-ranteavdraget/",
+    "quote": "På sikt vill vi trappa ned ränteavdraget till en lägre nivå.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "bostad-ranteavdrag",
+    "partyCode": "C",
+    "value": 2,
+    "motivation": "C har skrotat sina tidigare förslag om nedtrappning och vill i nuläget inte göra några förändringar av ränteavdraget på bolån, men är öppet för att diskutera avdraget inom en bred skattereform.",
+    "sourceCitation": "Finansliv, Flera partier har svängt om ränteavdraget, 2022",
+    "sourceUrl": "https://www.finansliv.se/artikel/flera-partier-har-svangt-om-ranteavdraget/",
+    "quote": "Utifrån hur ränteläget ser ut nu, vill vi i nuläget inte göra några förändringar.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "bostad-ranteavdrag",
+    "partyCode": "L",
+    "value": 3,
+    "motivation": "L har länge förespråkat att ränteavdraget trappas ned från 30 till 20 procent under tio år inom ramen för en samlad skattereform, men pausade förslaget när räntorna steg kraftigt. Signalerna har därefter varit delvis motstridiga.",
+    "sourceCitation": "Sverigekredit, Ränteavdraget ifrågasätts – Så vill partierna ändra det, 2026",
+    "sourceUrl": "https://www.sverigekredit.se/nyheter/partiernas-syn-ranteavdrag",
+    "quote": null,
+    "confidence": "low"
+  },
+  {
+    "questionKey": "bostad-ranteavdrag",
+    "partyCode": "KD",
+    "value": 3,
+    "motivation": "KD vill på sikt se en gradvis nedtrappning av ränteavdraget inom en bredare bostads- och skattepolitisk reform, men har velat vänta med en avveckling när hushållens ekonomi är pressad.",
+    "sourceCitation": "Finansliv, Flera partier har svängt om ränteavdraget, 2022",
+    "sourceUrl": "https://www.finansliv.se/artikel/flera-partier-har-svangt-om-ranteavdraget/",
+    "quote": "Vi vill vänta med en avveckling av ränteavdraget.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "bostad-ranteavdrag",
+    "partyCode": "M",
+    "value": 1,
+    "motivation": "M säger blankt nej till att trappa ned ränteavdraget på bolån och vill behålla det, med hänvisning till att hushållens ekonomi redan är hårt pressad.",
+    "sourceCitation": "Finansliv, Flera partier har svängt om ränteavdraget, 2022",
+    "sourceUrl": "https://www.finansliv.se/artikel/flera-partier-har-svangt-om-ranteavdraget/",
+    "quote": "Nej vi vill behålla ränteavdraget – hushållens ekonomi är redan oerhört pressad.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "bostad-ranteavdrag",
+    "partyCode": "SD",
+    "value": 3,
+    "motivation": "SD anser att ränteavdragen successivt behöver avvecklas, men extremt långsamt – omkring en procentenhet per år – för att inte skada hushåll som anpassat sin ekonomi efter dagens regler.",
+    "sourceCitation": "Finansliv, Flera partier har svängt om ränteavdraget, 2022",
+    "sourceUrl": "https://www.finansliv.se/artikel/flera-partier-har-svangt-om-ranteavdraget/",
+    "quote": "Ränteavdragen behöver därför successivt avvecklas.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "bostad-strandskydd",
+    "partyCode": "V",
+    "value": 1,
+    "motivation": "V röstade nej till lättnaderna i strandskyddet och vill behålla ett starkt skydd, eftersom uppluckring försämrar allmänhetens tillgång till naturen och livsvillkoren för djur och växter.",
+    "sourceCitation": "Miljö- och jordbruksutskottet, Betänkande 2024/25:MJU16 Lättnader i strandskyddet – ett första steg, 2025",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/lattnader-i-strandskyddet-ett-forsta-steg_hc01mju16/html/",
+    "quote": "allmänhetens tillgänglighet till naturen såväl som livsvillkoren för djur- och växtlivet",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "bostad-strandskydd",
+    "partyCode": "S",
+    "value": 3,
+    "motivation": "S accepterade lättnaderna i strandskyddet i huvudsak och vill se ett mer flexibelt strandskydd med lokala anpassningar, men kräver att allmänhetens fria passage längs stränderna tydligt säkerställs.",
+    "sourceCitation": "Miljö- och jordbruksutskottet, Betänkande 2024/25:MJU16 Lättnader i strandskyddet – ett första steg, 2025",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/lattnader-i-strandskyddet-ett-forsta-steg_hc01mju16/html/",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "bostad-strandskydd",
+    "partyCode": "MP",
+    "value": 1,
+    "motivation": "MP röstade nej till lättnaderna och anser att ett uppluckrat strandskydd hotar naturvärden och allmänhetens tillgång till stränderna; strandskyddet är en grundläggande del av naturskyddet.",
+    "sourceCitation": "Miljö- och jordbruksutskottet, Betänkande 2024/25:MJU16 Lättnader i strandskyddet – ett första steg, 2025",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/lattnader-i-strandskyddet-ett-forsta-steg_hc01mju16/html/",
+    "quote": "en grundläggande del av Sveriges allmänna naturskydd",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "bostad-strandskydd",
+    "partyCode": "C",
+    "value": 4,
+    "motivation": "C vill gå längre än regeringens lättnader: avskaffa det generella strandskyddet och flytta makten över strandnära byggande till kommunerna, eftersom ett stelbent strandskydd hämmar landsbygden.",
+    "sourceCitation": "Miljö- och jordbruksutskottet, Betänkande 2024/25:MJU16 Lättnader i strandskyddet – ett första steg, 2025",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/lattnader-i-strandskyddet-ett-forsta-steg_hc01mju16/html/",
+    "quote": "Ett stelbent strandskydd försvårar för landsbygdsföretag att utveckla sin verksamhet.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "bostad-strandskydd",
+    "partyCode": "L",
+    "value": 4,
+    "motivation": "L står som regeringsparti bakom propositionen om lättnader i strandskyddet, som undantar fler områden och gör det lättare att bygga strandnära, särskilt på landsbygden.",
+    "sourceCitation": "Regeringen, Proposition 2024/25:102 Lättnader i strandskyddet – ett första steg, 2025",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/proposition/lattnader-i-strandskyddet-ett-forsta-steg_hc03102/html/",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "bostad-strandskydd",
+    "partyCode": "KD",
+    "value": 4,
+    "motivation": "KD står som regeringsparti bakom propositionen om lättnader i strandskyddet och vill se ett mer differentierat strandskydd som gör det lättare att bygga nära vatten.",
+    "sourceCitation": "Regeringen, Proposition 2024/25:102 Lättnader i strandskyddet – ett första steg, 2025",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/proposition/lattnader-i-strandskyddet-ett-forsta-steg_hc03102/html/",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "bostad-strandskydd",
+    "partyCode": "M",
+    "value": 4,
+    "motivation": "Den M-ledda regeringen har drivit igenom lättnader i strandskyddet som ett uttalat första steg, med fler undantagna områden och ökade möjligheter att bygga strandnära.",
+    "sourceCitation": "Regeringen, Proposition 2024/25:102 Lättnader i strandskyddet – ett första steg, 2025",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/proposition/lattnader-i-strandskyddet-ett-forsta-steg_hc03102/html/",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "bostad-strandskydd",
+    "partyCode": "SD",
+    "value": 4,
+    "motivation": "SD stödde lättnaderna i strandskyddet, som bygger på Tidöavtalet, och vill se ännu mer omfattande lättnader med större lokalt inflytande över strandnära byggande.",
+    "sourceCitation": "Miljö- och jordbruksutskottet, Betänkande 2024/25:MJU16 Lättnader i strandskyddet – ett första steg, 2025",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/lattnader-i-strandskyddet-ett-forsta-steg_hc01mju16/html/",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "eu-gemensam-skuld",
+    "partyCode": "V",
+    "value": 2,
+    "motivation": "V har traditionellt motsatt sig gemensam EU-upplåning och vill i första hand omfördela inom EU:s budget, men har i det försämrade säkerhetsläget sagt sig vara berett att ompröva sin hållning.",
+    "sourceCitation": "SVT Nyheter, Socialdemokraterna och Centerpartiet vill att EU ska låna för upprustning, 2025",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/socialdemokraterna-och-centerpartiet-vill-att-eu-ska-lana-for-upprustning",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "eu-gemensam-skuld",
+    "partyCode": "S",
+    "value": 4,
+    "motivation": "S vill att EU ska kunna ta gemensamma lån för försvarssatsningar enligt modell från pandemins SURE-program, så att alla medlemsländer oavsett ekonomi snabbt kan rusta upp.",
+    "sourceCitation": "Socialdemokraterna, S vill se EU-lån för att snabbt stärka och rusta Europa, 2025",
+    "sourceUrl": "https://www.socialdemokraterna.se/nyheter/nyheter/2025-02-20-s-vill-se-eu-lan-for-att-snabbt-starka-och-rusta-europa",
+    "quote": "Ökade möjligheter till EU-lån för försvarssatsningar för att säkerställa att alla EU-länder, oavsett ekonomiska förutsättningar, snabbt kan rusta sina försvar.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "eu-gemensam-skuld",
+    "partyCode": "MP",
+    "value": 3,
+    "motivation": "MP har svängt och är numera öppet för att gemensamma EU-lån kan krävas för att stötta Ukraina och bygga upp Europas försvarsförmåga, men vill i första hand använda befintliga medel.",
+    "sourceCitation": "SVT Nyheter, Socialdemokraterna och Centerpartiet vill att EU ska låna for upprustning, 2025",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/socialdemokraterna-och-centerpartiet-vill-att-eu-ska-lana-for-upprustning",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "eu-gemensam-skuld",
+    "partyCode": "C",
+    "value": 4,
+    "motivation": "C vill att EU ska kunna ta gemensamma lån för att stärka medlemsländernas försvar och stödet till Ukraina; det förändrade säkerhetsläget med ett opålitligt USA har fått partiet att ompröva sitt tidigare motstånd.",
+    "sourceCitation": "SVT Nyheter, Socialdemokraterna och Centerpartiet vill att EU ska låna för upprustning, 2025",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/socialdemokraterna-och-centerpartiet-vill-att-eu-ska-lana-for-upprustning",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "eu-gemensam-skuld",
+    "partyCode": "L",
+    "value": 3,
+    "motivation": "L utesluter inte gemensamma EU-lån för att skydda Europa och såg redan i EU-valrörelsen 2024 gemensamma lån för Ukrainastödet som ett tänkbart verktyg, men prioriterar frysta ryska tillgångar som finansiering.",
+    "sourceCitation": "SVT Nyheter, Valkompass EU-valet 2024: EU ska ta gemensamma lån för att öka stödet till Ukraina, 2024",
+    "sourceUrl": "https://valkompass.svt.se/embed-eu-2024/fraga/eu-ska-ta-gemensamma-lan-for-att-oka-stodet-till-ukraina/",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "eu-gemensam-skuld",
+    "partyCode": "KD",
+    "value": 2,
+    "motivation": "KD motsätter sig gemensam EU-upplåning och vill att EU:s budget finansieras genom medlemsavgifter, men utesluter inte att gemensamma åtgärder kan behövas vid akuta kriser på kontinenten.",
+    "sourceCitation": "SVT Nyheter, Valkompass EU-valet 2024: EU ska ta gemensamma lån för att öka stödet till Ukraina, 2024",
+    "sourceUrl": "https://valkompass.svt.se/embed-eu-2024/fraga/eu-ska-ta-gemensamma-lan-for-att-oka-stodet-till-ukraina/",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "eu-gemensam-skuld",
+    "partyCode": "M",
+    "value": 1,
+    "motivation": "M och statsminister Kristersson säger nej till gemensamma EU-lån för försvar och varnar för en skuldunion; partiet vill i stället använda frysta ryska tillgångar och omprioritera i EU-budgeten.",
+    "sourceCitation": "Europaportalen, Kristersson står fast: Inga EU-lån för europeiskt försvar, 2025",
+    "sourceUrl": "https://www.europaportalen.se/2025/01/kristersson-star-fast-inga-eu-lan-forsvaret",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "eu-gemensam-skuld",
+    "partyCode": "SD",
+    "value": 1,
+    "motivation": "SD motsätter sig gemensamma EU-lån och anser att försvaret är ett nationellt ansvar för medlemsländerna; EU bör omfördela inom befintlig budget i stället för att ta upp ny gemensam skuld.",
+    "sourceCitation": "SVT Nyheter, Socialdemokraterna och Centerpartiet vill att EU ska låna för upprustning, 2025",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/socialdemokraterna-och-centerpartiet-vill-att-eu-ska-lana-for-upprustning",
+    "quote": "Försvar är en nationell förmåga för medlemsländerna",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "eu-ukraina-medlemskap",
+    "partyCode": "V",
+    "value": 3,
+    "motivation": "V välkomnar att Ukraina närmar sig EU men betonar att det är Ukrainas eget val snarare än något Sverige ska driva, och att vanliga krav på demokrati och rättsstat ska gälla.",
+    "sourceCitation": "Vänsterpartiet, Politik A–Ö: Ukraina, 2024",
+    "sourceUrl": "https://www.vansterpartiet.se/var-politik/politik-a-o/ukraina/",
+    "quote": "Vi stödjer Ukrainas suveränitet och därför dess rätt att själva ta ställning till om man vill närma sig EU eller Nato, söka medlemskap eller ingå associeringsavtal.",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "eu-ukraina-medlemskap",
+    "partyCode": "S",
+    "value": 4,
+    "motivation": "S anser att det är viktigt för Sveriges och Europas säkerhet att Ukraina kan bli EU-medlem och stödjer medlemskapsprocessen, men utan sänkta krav på demokrati, stabil ekonomi och låg korruption.",
+    "sourceCitation": "SVT Nyheter, Valkompass EU-valet 2024: EU ska utvidgas med fler länder, 2024",
+    "sourceUrl": "https://valkompass.svt.se/embed-eu-2024/fraga/eu-ska-utvidgas-med-fler-lander/",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "eu-ukraina-medlemskap",
+    "partyCode": "MP",
+    "value": 4,
+    "motivation": "MP stödjer uttryckligen Ukrainas ansökan om EU-medlemskap och vill att EU aktivt hjälper landet att uppfylla medlemskapskriterierna och återuppbyggas.",
+    "sourceCitation": "Miljöpartiet, Rysslands invasion mot Ukraina hotar hela Europa, 2022",
+    "sourceUrl": "https://www.mp.se/uppsala/just-nu/rysslands-invasion-mot-ukraina-hotar-hela-europa/",
+    "quote": "Miljöpartiet stöder Ukraina i deras ansökan om att bli medlem i EU.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "eu-ukraina-medlemskap",
+    "partyCode": "C",
+    "value": 4,
+    "motivation": "C vill att EU utvidgas med länder som uppfyller demokratikraven och varnar för att länder som Ukraina riskerar att hamna under ryskt inflytande om de lämnas utanför unionen.",
+    "sourceCitation": "SVT Nyheter, Valkompass EU-valet 2024: EU ska utvidgas med fler länder, 2024",
+    "sourceUrl": "https://valkompass.svt.se/embed-eu-2024/fraga/eu-ska-utvidgas-med-fler-lander/",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "eu-ukraina-medlemskap",
+    "partyCode": "L",
+    "value": 4,
+    "motivation": "L vill att Ukrainas väg in i EU går snabbt och ser ett medlemskap som ett skydd mot auktoritära makters inflytande; L är det parti som tydligast driver på för en snabb anslutning.",
+    "sourceCitation": "SVT Nyheter, Valkompass EU-valet 2024: EU ska utvidgas med fler länder, 2024",
+    "sourceUrl": "https://valkompass.svt.se/embed-eu-2024/fraga/eu-ska-utvidgas-med-fler-lander/",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "eu-ukraina-medlemskap",
+    "partyCode": "KD",
+    "value": 3,
+    "motivation": "KD är i grunden positivt till utvidgning och stödjer Ukrainas väg mot medlemskap, men betonar att utvidgningen inte får ske till varje pris och att anslutningskriterierna måste vara uppfyllda.",
+    "sourceCitation": "SVT Nyheter, Valkompass EU-valet 2024: EU ska utvidgas med fler länder, 2024",
+    "sourceUrl": "https://valkompass.svt.se/embed-eu-2024/fraga/eu-ska-utvidgas-med-fler-lander/",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "eu-ukraina-medlemskap",
+    "partyCode": "M",
+    "value": 4,
+    "motivation": "Den M-ledda regeringen driver aktivt på för Ukrainas EU-medlemskap, stödjer reformarbetet i merparten av förhandlingskapitlen och verkar för att förhandlingskluster ska öppnas omgående.",
+    "sourceCitation": "Regeringen, Sverige stödjer Ukrainas väg mot EU, 2025",
+    "sourceUrl": "https://www.regeringen.se/regeringens-politik/sveriges-stod-till-ukraina/sverige-stodjer-ukrainas-vag-mot-eu/",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "eu-ukraina-medlemskap",
+    "partyCode": "SD",
+    "value": 1,
+    "motivation": "SD motsätter sig att EU utvidgas och pekar på bristande demokrati, svag rättsstat och korruption i kandidatländerna; partiet vill inte att Sverige driver på för ett ukrainskt medlemskap.",
+    "sourceCitation": "SVT Nyheter, Valkompass EU-valet 2024: EU ska utvidgas med fler länder, 2024",
+    "sourceUrl": "https://valkompass.svt.se/embed-eu-2024/fraga/eu-ska-utvidgas-med-fler-lander/",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "eu-asylpakt",
+    "partyCode": "V",
+    "value": 4,
+    "motivation": "V vill ha ett bindande regelverk som fördelar asylansvaret jämnare mellan EU-länderna, men kritiserar paktens mekanism för att länder kan köpa sig fria från mottagande och för rättsosäkra gränsförfaranden.",
+    "sourceCitation": "Vänsterpartiet, Motion 2025/26:198 EU:s migrationspolitik, 2025",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/eus-migrationspolitik_hd02198/html/",
+    "quote": "det ligger ett alldeles för stort ansvar på de länder som är människors första ankomstland",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "eu-asylpakt",
+    "partyCode": "S",
+    "value": 4,
+    "motivation": "S röstade ja till EU:s migrations- och asylpakt och har länge krävt att fler EU-länder tar ansvar för asylmottagandet i stället för att några få länder, däribland Sverige, bär huvuddelen.",
+    "sourceCitation": "Europaportalen, Nya EU-regler för asyl- och migration antogs, 2024",
+    "sourceUrl": "https://www.europaportalen.se/2024/04/svag-majoritet-ny-migrationspakt-i-eu-parlamentet",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "eu-asylpakt",
+    "partyCode": "MP",
+    "value": 4,
+    "motivation": "MP vill att asylmottagandet fördelas rättvist mellan EU-länderna men röstade nej till pakten, eftersom dess mekanism låter länder betala sig fria från mottagande och därmed inte ger en jämn ansvarsfördelning.",
+    "sourceCitation": "Miljöpartiet, MP kritisk till EU:s asyl- och migrationspakt, 2024",
+    "sourceUrl": "https://www.mp.se/just-nu/mp-kritisk-till-eus-asyl-och-migrationspakt/",
+    "quote": "Systemet kommer inte att lösa problemet med att länderna i södra Europa tvingas ta ett oproportionerligt stort ansvar för asylmottagandet.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "eu-asylpakt",
+    "partyCode": "C",
+    "value": 4,
+    "motivation": "C röstade ja till EU:s migrations- och asylpakt och vill ha ett gemensamt europeiskt asylsystem där ansvaret för mottagandet delas solidariskt mellan medlemsländerna.",
+    "sourceCitation": "Europaportalen, Nya EU-regler för asyl- och migration antogs, 2024",
+    "sourceUrl": "https://www.europaportalen.se/2024/04/svag-majoritet-ny-migrationspakt-i-eu-parlamentet",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "eu-asylpakt",
+    "partyCode": "L",
+    "value": 4,
+    "motivation": "L röstade ja till EU:s migrations- och asylpakt och stödjer en gemensam europeisk asylpolitik med solidarisk ansvarsfördelning mellan medlemsländerna.",
+    "sourceCitation": "Europaportalen, Nya EU-regler för asyl- och migration antogs, 2024",
+    "sourceUrl": "https://www.europaportalen.se/2024/04/svag-majoritet-ny-migrationspakt-i-eu-parlamentet",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "eu-asylpakt",
+    "partyCode": "KD",
+    "value": 4,
+    "motivation": "KD röstade ja till pakten med dess solidaritetsmekanism och vill att ansvaret fördelas mellan EU-länderna, men vill samtidigt skärpa regelverket för att minska antalet asylsökande till Europa.",
+    "sourceCitation": "Europaportalen, Nya EU-regler för asyl- och migration antogs, 2024",
+    "sourceUrl": "https://www.europaportalen.se/2024/04/svag-majoritet-ny-migrationspakt-i-eu-parlamentet",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "eu-asylpakt",
+    "partyCode": "M",
+    "value": 4,
+    "motivation": "M har varit pådrivande för paktens solidaritetsmekanism – Tomas Tobé var parlamentets huvudförhandlare – och vill bryta ordningen där ett fåtal länder, inte minst Sverige, burit det stora ansvaret för mottagandet.",
+    "sourceCitation": "SVT Nyheter, SD och M oense om EU:s nya migrationspakt, 2023",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/sd-och-m-rostade-motsatt-i-nya-eu-lagen-om-migration",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "eu-asylpakt",
+    "partyCode": "SD",
+    "value": 1,
+    "motivation": "SD röstade nej till hela migrationspakten och motsätter sig att EU-kommissionen genom en gemensam mekanism ska kunna styra hur många asylsökande Sverige tar emot.",
+    "sourceCitation": "SVT Nyheter, SD och M oense om EU:s nya migrationspakt, 2023",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/sd-och-m-rostade-motsatt-i-nya-eu-lagen-om-migration",
+    "quote": "ge EU-kommissionen möjlighet att diktera migrantkvoten till Sverige",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "migration-anhorig-begransa",
+    "partyCode": "V",
+    "value": 1,
+    "motivation": "V vill avslå regeringens skärpningar av villkoren för anhöriginvandring och värnar rätten till familjeåterförening. Partiet menar att höjda försörjningskrav splittrar familjer och särskilt drabbar barn.",
+    "sourceCitation": "Sveriges riksdag, Motion 2024/25:1930 Svensk flyktingpolitik (V), 2024",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/svensk-flyktingpolitik_hc021930/html/",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "migration-anhorig-begransa",
+    "partyCode": "S",
+    "value": 3,
+    "motivation": "S står bakom en stram migrationspolitik med försörjningskrav men har reserverat sig mot delar av regeringens skärpningar och kräver bland annat övergångsbestämmelser. Partiet vill skärpa kraven, men inte lika långtgående som Tidöpartierna.",
+    "sourceCitation": "Sveriges riksdag, Utskott ställer sig bakom skärpta krav för svenskt medborgarskap, 2026",
+    "sourceUrl": "https://www.riksdagen.se/sv/aktuellt/aktuelltnotiser/2026/apr/28/utskott-staller-sig-bakom-skarpta-krav-for-svenskt_cms9877b1a3-c06e-4220-9ffb-00f2c4e9c722sv/",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "migration-anhorig-begransa",
+    "partyCode": "MP",
+    "value": 1,
+    "motivation": "MP motsätter sig kraftigt höjda försörjningskrav vid anhöriginvandring och varnar för att skärpningarna leder till familjesplittring som särskilt drabbar barn. Partiet vill i stället värna rätten till familjeåterförening.",
+    "sourceCitation": "SVT Nyheter, Miljöpartiet kritiskt mot S-bud om migration, 2025",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/miljopartiet-kritiskt-mot-s-bud-om-migration",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "migration-anhorig-begransa",
+    "partyCode": "C",
+    "value": 2,
+    "motivation": "C accepterar försörjningskrav i princip men har reserverat sig mot delar av regeringens kraftiga skärpningar och kritiserar att höjda krav slår mot integration och kompetensförsörjning, inte minst i glesbygd.",
+    "sourceCitation": "Sveriges riksdag, Utskott ställer sig bakom skärpta krav för svenskt medborgarskap, 2026",
+    "sourceUrl": "https://www.riksdagen.se/sv/aktuellt/aktuelltnotiser/2026/apr/28/utskott-staller-sig-bakom-skarpta-krav-for-svenskt_cms9877b1a3-c06e-4220-9ffb-00f2c4e9c722sv/",
+    "quote": null,
+    "confidence": "low"
+  },
+  {
+    "questionKey": "migration-anhorig-begransa",
+    "partyCode": "L",
+    "value": 4,
+    "motivation": "L sitter i den regering som föreslår att försörjningskravet vid anhöriginvandring höjs med 30 procent plus faktisk boendekostnad. Partiet menar att höjda krav stärker drivkrafterna för integration och egenförsörjning.",
+    "sourceCitation": "Regeringen, Höjt försörjningskrav vid anhöriginvandring föreslås, 2025",
+    "sourceUrl": "https://www.regeringen.se/pressmeddelanden/2025/12/hojt-forsorjningskrav-vid-anhoriginvandring-foreslas/",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "migration-anhorig-begransa",
+    "partyCode": "KD",
+    "value": 4,
+    "motivation": "KD står bakom regeringens förslag att kraftigt höja försörjningskravet vid anhöriginvandring och ser skärpta krav som en del i arbetet mot utanförskap.",
+    "sourceCitation": "Regeringen, Höjt försörjningskrav vid anhöriginvandring föreslås, 2025",
+    "sourceUrl": "https://www.regeringen.se/pressmeddelanden/2025/12/hojt-forsorjningskrav-vid-anhoriginvandring-foreslas/",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "migration-anhorig-begransa",
+    "partyCode": "M",
+    "value": 4,
+    "motivation": "M leder den regering som föreslår att försörjningskravet vid anhöriginvandring höjs med 30 procent plus faktisk boendekostnad, som en del av paradigmskiftet i migrationspolitiken.",
+    "sourceCitation": "Regeringen, Höjt försörjningskrav vid anhöriginvandring föreslås, 2025",
+    "sourceUrl": "https://www.regeringen.se/pressmeddelanden/2025/12/hojt-forsorjningskrav-vid-anhoriginvandring-foreslas/",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "migration-anhorig-begransa",
+    "partyCode": "SD",
+    "value": 4,
+    "motivation": "SD har via Tidöavtalet drivit fram skärpta villkor för anhöriginvandring, inklusive kraftigt höjt försörjningskrav, och anser att Sverige tillåter anhöriginvandring i fler fall än EU-rätten kräver.",
+    "sourceCitation": "Regeringen, Höjt försörjningskrav vid anhöriginvandring föreslås, 2025",
+    "sourceUrl": "https://www.regeringen.se/pressmeddelanden/2025/12/hojt-forsorjningskrav-vid-anhoriginvandring-foreslas/",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "ekonomi-arvsskatt",
+    "partyCode": "V",
+    "value": 4,
+    "motivation": "V vill återinföra en arvsskatt på stora arv, över cirka 3 miljoner kronor, som ett led i ett mer omfördelande skattesystem där kapital och förmögenheter beskattas hårdare.",
+    "sourceCitation": "Sveriges riksdag, Motion 2023/24:2321 Ett rättvist skattesystem (V), 2023",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/ett-rattvist-skattesystem_hb022321/html/",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "ekonomi-arvsskatt",
+    "partyCode": "S",
+    "value": 2,
+    "motivation": "S föreslår ingen återinförd arvsskatt och var partiet som avskaffade den 2004, men är öppet för höjd skatt på höga kapitalinkomster, vilket gör att partiet inte helt stänger dörren för ökad beskattning av stora förmögenhetsöverföringar.",
+    "sourceCitation": "Valkoll, Skatter – så tycker partierna 2026, 2026",
+    "sourceUrl": "https://valkoll2026.se/insikt/skatter-partier-2026/",
+    "quote": null,
+    "confidence": "low"
+  },
+  {
+    "questionKey": "ekonomi-arvsskatt",
+    "partyCode": "MP",
+    "value": 2,
+    "motivation": "MP driver inte ett återinförande av arvsskatten men vill öka beskattningen av kapital och stora förmögenheter, och ligger därmed närmare V än högerblocket i skattefrågor.",
+    "sourceCitation": "Valkoll, Skatter – så tycker partierna 2026, 2026",
+    "sourceUrl": "https://valkoll2026.se/insikt/skatter-partier-2026/",
+    "quote": null,
+    "confidence": "low"
+  },
+  {
+    "questionKey": "ekonomi-arvsskatt",
+    "partyCode": "C",
+    "value": 1,
+    "motivation": "C säger nej till återinförd arvsskatt och vill behålla dagens system utan arvs- och förmögenhetsskatt, bland annat med hänvisning till företagande och ägarskiften.",
+    "sourceCitation": "Valkoll, Skatter – så tycker partierna 2026, 2026",
+    "sourceUrl": "https://valkoll2026.se/insikt/skatter-partier-2026/",
+    "quote": null,
+    "confidence": "low"
+  },
+  {
+    "questionKey": "ekonomi-arvsskatt",
+    "partyCode": "L",
+    "value": 1,
+    "motivation": "L vill inte återinföra arvsskatten och står bakom dagens system utan arvs- och förmögenhetsskatt; partiet röstade för avskaffandet och har inte ändrat linje.",
+    "sourceCitation": "Valkoll, Skatter – så tycker partierna 2026, 2026",
+    "sourceUrl": "https://valkoll2026.se/insikt/skatter-partier-2026/",
+    "quote": null,
+    "confidence": "low"
+  },
+  {
+    "questionKey": "ekonomi-arvsskatt",
+    "partyCode": "KD",
+    "value": 1,
+    "motivation": "KD är emot en återinförd arvsskatt och vill behålla dagens ordning utan arvs- och förmögenhetsskatt.",
+    "sourceCitation": "Valkoll, Skatter – så tycker partierna 2026, 2026",
+    "sourceUrl": "https://valkoll2026.se/insikt/skatter-partier-2026/",
+    "quote": null,
+    "confidence": "low"
+  },
+  {
+    "questionKey": "ekonomi-arvsskatt",
+    "partyCode": "M",
+    "value": 1,
+    "motivation": "M säger uttryckligen nej till en återinförd arvsskatt och varnar för förslag om höjda skatter på sparande, företagande och arv.",
+    "sourceCitation": "Moderaterna, Skattehöjningar (Moderaterna Skåne), 2025",
+    "sourceUrl": "https://moderaterna.se/skane/var-politik/skattehojningar/",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "ekonomi-arvsskatt",
+    "partyCode": "SD",
+    "value": 1,
+    "motivation": "SD vill behålla dagens system utan arvsskatt och motsätter sig liksom övriga högerblocket alla förslag om att återinföra den.",
+    "sourceCitation": "Valkoll, Skatter – så tycker partierna 2026, 2026",
+    "sourceUrl": "https://valkoll2026.se/insikt/skatter-partier-2026/",
+    "quote": null,
+    "confidence": "low"
+  },
+  {
+    "questionKey": "ekonomi-rut-avskaffa",
+    "partyCode": "V",
+    "value": 4,
+    "motivation": "V vill avskaffa rutavdraget eftersom höginkomsttagare använder det betydligt mer än låginkomsttagare, som därmed i praktiken subventionerar de välbeställdas tjänster.",
+    "sourceCitation": "Vänsterpartiet, RUT och ROT (Politik A till Ö), 2025",
+    "sourceUrl": "https://www.vansterpartiet.se/var-politik/politik-a-o/rut-och-rot/",
+    "quote": "Vi har inget emot hushållsnära tjänster. Det vi vänder oss emot är att dessa skattesubventioneras",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "ekonomi-rut-avskaffa",
+    "partyCode": "S",
+    "value": 1,
+    "motivation": "S vill inte avskaffa rutavdraget; partiet behöll och utvidgade avdraget under sina regeringsår och driver inga förslag om avskaffande.",
+    "sourceCitation": "Dagens ETC, Varför vill S inte avskaffa rut-avdraget?, 2021",
+    "sourceUrl": "https://www.etc.se/kommentar/varfoer-vill-s-inte-avskaffa-rut-avdraget",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "ekonomi-rut-avskaffa",
+    "partyCode": "MP",
+    "value": 2,
+    "motivation": "MP föreslår inte att rutavdraget avskaffas men vill rikta om det mot klimatomställningen, med större fokus på reparationer och cirkulära tjänster.",
+    "sourceCitation": "Rödgrön Röra, Jämförelse av rödgröna partiers politik, 2025",
+    "sourceUrl": "https://rodgronrora.nu/",
+    "quote": null,
+    "confidence": "low"
+  },
+  {
+    "questionKey": "ekonomi-rut-avskaffa",
+    "partyCode": "C",
+    "value": 1,
+    "motivation": "C var pådrivande när rutavdraget infördes och vill behålla och utveckla avdraget, som partiet ser som viktigt för jobb och företagande i tjänstesektorn.",
+    "sourceCitation": "Arbetet, Så här tycker partierna om rut och rot, 2014",
+    "sourceUrl": "https://arbetet.se/2014/09/09/sa-har-tycker-partierna-om-rut-och-rot/",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "ekonomi-rut-avskaffa",
+    "partyCode": "L",
+    "value": 1,
+    "motivation": "L vill behålla rutavdraget och sitter i den regering som värnat och förstärkt rut- och rotavdragen, bland annat genom separerade och höjda tak.",
+    "sourceCitation": "Regeringen, Tillfälligt höjt tak för rotavdraget, 2024",
+    "sourceUrl": "https://www.regeringen.se/pressmeddelanden/2024/02/tillfalligt-hojt-tak-for-rotavdraget/",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "ekonomi-rut-avskaffa",
+    "partyCode": "KD",
+    "value": 1,
+    "motivation": "KD vill behålla rutavdraget och sitter i den regering som värnat och förstärkt rut- och rotavdragen i stället för att begränsa dem.",
+    "sourceCitation": "Regeringen, Tillfälligt höjt tak för rotavdraget, 2024",
+    "sourceUrl": "https://www.regeringen.se/pressmeddelanden/2024/02/tillfalligt-hojt-tak-for-rotavdraget/",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "ekonomi-rut-avskaffa",
+    "partyCode": "M",
+    "value": 1,
+    "motivation": "M vill behålla rutavdraget; den M-ledda regeringen har värnat och förstärkt rut- och rotavdragen med finansminister Svantesson som avsändare.",
+    "sourceCitation": "Regeringen, Tillfälligt höjt tak för rotavdraget, 2024",
+    "sourceUrl": "https://www.regeringen.se/pressmeddelanden/2024/02/tillfalligt-hojt-tak-for-rotavdraget/",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "ekonomi-rut-avskaffa",
+    "partyCode": "SD",
+    "value": 1,
+    "motivation": "SD vill behålla rutavdraget och har som samarbetsparti i Tidösamarbetet ställt sig bakom regeringens politik att värna och förstärka rut- och rotavdragen.",
+    "sourceCitation": "Regeringen, Tillfälligt höjt tak för rotavdraget, 2024",
+    "sourceUrl": "https://www.regeringen.se/pressmeddelanden/2024/02/tillfalligt-hojt-tak-for-rotavdraget/",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "ekonomi-matmoms",
+    "partyCode": "V",
+    "value": 4,
+    "motivation": "V vill gå längre än en permanent sänkning och helt slopa momsen på livsmedel för att pressa matpriserna. Partiet ser den tillfälliga sänkningen som otillräcklig.",
+    "sourceCitation": "SVT Nyheter, Slopad matmoms lyfts av V och MP – får kritik för att gynna rika, 2025",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/slopad-matmoms-lyfts-av-vanstern-ger-mest-lattnader-for-rika",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "ekonomi-matmoms",
+    "partyCode": "S",
+    "value": 2,
+    "motivation": "S har uttryckligen krävt en tillfälligt sänkt matmoms i kombination med permanent höjt barnbidrag, och har inte föreslagit att momssänkningen ska göras permanent.",
+    "sourceCitation": "Socialdemokraterna, S kräver tillfälligt sänkt matmoms och permanent höjning av barnbidraget, 2025",
+    "sourceUrl": "https://www.socialdemokraterna.se/nyheter/nyheter/2025-09-01-s-kraver-tillfalligt-sankt-matmoms-och-permanent-hojning-av-barnbidraget",
+    "quote": "S kräver tillfälligt sänkt matmoms och permanent höjning av barnbidraget",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "ekonomi-matmoms",
+    "partyCode": "MP",
+    "value": 4,
+    "motivation": "MP var först i riksdagen med att föreslå sänkt matmoms och vill permanent slopa momsen på basvaror som bröd, mjölk, frukt och grönsaker, vilket går längre än en permanentad sänkning till 6 procent.",
+    "sourceCitation": "SVT Nyheter, Slopad matmoms lyfts av V och MP – får kritik för att gynna rika, 2025",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/slopad-matmoms-lyfts-av-vanstern-ger-mest-lattnader-for-rika",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "ekonomi-matmoms",
+    "partyCode": "C",
+    "value": 2,
+    "motivation": "C stödde den tillfälliga sänkningen men röstade emot vänsterpartiernas förslag om permanent slopad matmoms och vill hellre se långsiktiga strukturreformer av kostnaderna i hela livsmedelskedjan.",
+    "sourceCitation": "Sveriges riksdag, Betänkande 2025/26:SkU9 Tillfälligt sänkt mervärdesskatt på livsmedel, 2025",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/tillfalligt-sankt-mervardesskatt-pa-livsmedel_hd01sku9/",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "ekonomi-matmoms",
+    "partyCode": "L",
+    "value": 2,
+    "motivation": "L står som regeringsparti bakom att sänkningen till 6 procent uttryckligen är tillfällig (april 2026–december 2027) och betonar uppföljning av att sänkningen når konsumenterna snarare än att den permanentas.",
+    "sourceCitation": "Sveriges riksdag, Betänkande 2025/26:SkU9 Tillfälligt sänkt mervärdesskatt på livsmedel, 2025",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/tillfalligt-sankt-mervardesskatt-pa-livsmedel_hd01sku9/",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "ekonomi-matmoms",
+    "partyCode": "KD",
+    "value": 2,
+    "motivation": "KD stödjer den sänkta matmomsen som en bred och träffsäker åtgärd i ett tufft ekonomiskt läge, men står bakom att den är tidsbegränsad till utgången av 2027 och har inte föreslagit att den permanentas.",
+    "sourceCitation": "Sveriges riksdag, Betänkande 2025/26:SkU9 Tillfälligt sänkt mervärdesskatt på livsmedel, 2025",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/tillfalligt-sankt-mervardesskatt-pa-livsmedel_hd01sku9/",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "ekonomi-matmoms",
+    "partyCode": "M",
+    "value": 2,
+    "motivation": "M har som regeringsparti utformat momssänkningen som uttryckligen tillfällig till och med 2027, med en matpriskommission som ska följa effekterna innan ställning tas till fortsättningen.",
+    "sourceCitation": "Regeringen, Regeringen tar nästa steg mot tillfälligt sänkt moms på livsmedel, 2025",
+    "sourceUrl": "https://www.regeringen.se/pressmeddelanden/2025/11/regeringen-tar-nasta-steg-mot-tillfalligt-sankt-moms-pa-livsmedel/",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "ekonomi-matmoms",
+    "partyCode": "SD",
+    "value": 2,
+    "motivation": "SD drev fram den sänkta matmomsen i Tidösamarbetet och framhåller den som en viktig lättnad för barnfamiljer, men förslaget partiet ställt sig bakom är uttryckligen tillfälligt och inte permanent.",
+    "sourceCitation": "Sveriges riksdag, Betänkande 2025/26:SkU9 Tillfälligt sänkt mervärdesskatt på livsmedel, 2025",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/tillfalligt-sankt-mervardesskatt-pa-livsmedel_hd01sku9/",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "klimat-bilforbud-2035",
+    "partyCode": "V",
+    "value": 1,
+    "motivation": "V försvarar EU:s beslut om förbud mot nya bensin- och dieselbilar från 2035 och har snarare velat att ett förbud införs tidigare än att beslutet rivs upp.",
+    "sourceCitation": "SVT, Valkompass EU-valet 2024, 2024",
+    "sourceUrl": "https://valkompass.svt.se/eu-2024/fraga/eu-ska-riva-upp-beslutet-om-forbud-mot-forsaljning-av-nya-bensin-och-dieselbilar-efter-2035/",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "klimat-bilforbud-2035",
+    "partyCode": "S",
+    "value": 1,
+    "motivation": "S anser att 2035-förbudet ska ligga fast och svarade att det vore ett mycket dåligt förslag att riva upp beslutet, eftersom Sverige inte ska binda upp sig i ett långsiktigt fossilberoende.",
+    "sourceCitation": "SVT, Valkompass EU-valet 2024, 2024",
+    "sourceUrl": "https://valkompass.svt.se/eu-2024/fraga/eu-ska-riva-upp-beslutet-om-forbud-mot-forsaljning-av-nya-bensin-och-dieselbilar-efter-2035/",
+    "quote": "Vi vill inte binda upp oss i ett långsiktigt fossilberoende",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "klimat-bilforbud-2035",
+    "partyCode": "MP",
+    "value": 1,
+    "motivation": "MP försvarar förbudet kraftfullt och menar att det vore en katastrof för klimatomställningen att riva upp den redan beslutade EU-lagen.",
+    "sourceCitation": "SVT, Valkompass EU-valet 2024, 2024",
+    "sourceUrl": "https://valkompass.svt.se/eu-2024/fraga/eu-ska-riva-upp-beslutet-om-forbud-mot-forsaljning-av-nya-bensin-och-dieselbilar-efter-2035/",
+    "quote": "riva upp denna klubbade EU-lag skulle vara en katastrof",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "klimat-bilforbud-2035",
+    "partyCode": "C",
+    "value": 1,
+    "motivation": "C anser att EU:s klimatpaket, inklusive 2035-förbudet, ska ligga fast för att Parisavtalets mål ska kunna nås och motsätter sig att beslutet rivs upp.",
+    "sourceCitation": "SVT, Valkompass EU-valet 2024, 2024",
+    "sourceUrl": "https://valkompass.svt.se/eu-2024/fraga/eu-ska-riva-upp-beslutet-om-forbud-mot-forsaljning-av-nya-bensin-och-dieselbilar-efter-2035/",
+    "quote": "EU:s klimatpaket ska ligga fast",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "klimat-bilforbud-2035",
+    "partyCode": "L",
+    "value": 1,
+    "motivation": "L försvarar förbudet och har tidigare velat ha ett ännu tidigare stoppdatum; klimatminister Romina Pourmokhtari avvisar kraven på att riva upp beslutet och vill att Sverige håller kursen.",
+    "sourceCitation": "SVT Nyheter, Tidöspricka om motorförbud: \"Lägg kulturkriget åt sidan\", 2025",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/tidospricka-om-motorforbud-lagg-kulturkriget-at-sidan",
+    "quote": "Sverige har varit en av de starkaste förespråkarna",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "klimat-bilforbud-2035",
+    "partyCode": "KD",
+    "value": 3,
+    "motivation": "KD har svängt i frågan och ställer sig numera bakom att 2035-förbudet rivs upp, efter att tidigare ha accepterat förbudet men krävt teknikneutrala regler som tillåter utsläppsfria bränslen.",
+    "sourceCitation": "SVT Nyheter, Tidöspricka om motorförbud: \"Lägg kulturkriget åt sidan\", 2025",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/tidospricka-om-motorforbud-lagg-kulturkriget-at-sidan",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "klimat-bilforbud-2035",
+    "partyCode": "M",
+    "value": 2,
+    "motivation": "M står formellt bakom regeringens linje att förbudet ligger fast, men partiets EU-toppnamn Tomas Tobé har öppnat dörren för att ompröva lagen och aviserat en ny lösning på EU-nivå.",
+    "sourceCitation": "SVT Nyheter, Tidöspricka om motorförbud: \"Lägg kulturkriget åt sidan\", 2025",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/tidospricka-om-motorforbud-lagg-kulturkriget-at-sidan",
+    "quote": "Rätt snart kommer vi att presentera en ny lösning",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "klimat-bilforbud-2035",
+    "partyCode": "SD",
+    "value": 4,
+    "motivation": "SD vill riva upp 2035-förbudet, som Jimmie Åkesson kallar verklighetsfrånvänt, och välkomnar att EU nu öppnar för att ändra lagen — ju förr desto bättre enligt partiet.",
+    "sourceCitation": "SVT Nyheter, Tidöspricka om motorförbud: \"Lägg kulturkriget åt sidan\", 2025",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/tidospricka-om-motorforbud-lagg-kulturkriget-at-sidan",
+    "quote": "Flera länder backar från det här och andra fullständigt verklighetsfrånvända beslut",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "klimat-hoghastighetstag",
+    "partyCode": "V",
+    "value": 4,
+    "motivation": "V vill bygga nya stambanor för höghastighetståg och rankas av Järnvägsfrämjandet som ett av de mest järnvägsvänliga partierna. Partiet kritiserade regeringens beslut att skrota projektet.",
+    "sourceCitation": "Altinget, Järnvägsfrämjandet: Tre partier toppar listan som mest järnvägsvänliga, 2022",
+    "sourceUrl": "https://www.altinget.se/artikel/jarnvagsframjandets-kartlaggning-av-partiernas-jarnvagspolitik",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "klimat-hoghastighetstag",
+    "partyCode": "S",
+    "value": 3,
+    "motivation": "S vill bygga nya stambanor men har förespråkat en etappvis utbyggnad och har inte entydigt bundit sig vid höghastighetsstandard, vilket Järnvägsfrämjandet beskriver som att partiet talar med kluven tunga.",
+    "sourceCitation": "Altinget, Järnvägsfrämjandet: Tre partier toppar listan som mest järnvägsvänliga, 2022",
+    "sourceUrl": "https://www.altinget.se/artikel/jarnvagsframjandets-kartlaggning-av-partiernas-jarnvagspolitik",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "klimat-hoghastighetstag",
+    "partyCode": "MP",
+    "value": 4,
+    "motivation": "MP vill bygga nya stambanor och rankas som ett av de mest järnvägsvänliga partierna, även om partiet tonat ned kravet på de allra högsta hastigheterna.",
+    "sourceCitation": "SVT Nyheter, Miljöpartiet backar från planerna på snabbtåg: \"Vi behöver nya stambanor\", 2023",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/miljopartiet-backar-fran-planerna-pa-snabbtag-vi-behover-nya-stambanor",
+    "quote": "Vi behöver nya stambanor",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "klimat-hoghastighetstag",
+    "partyCode": "C",
+    "value": 3,
+    "motivation": "C vill bygga nya stambanor och hör enligt Järnvägsfrämjandet till de mest järnvägsvänliga partierna, men har varit mer avvaktande till en fullskalig höghastighetssatsning.",
+    "sourceCitation": "Altinget, Järnvägsfrämjandet: Tre partier toppar listan som mest järnvägsvänliga, 2022",
+    "sourceUrl": "https://www.altinget.se/artikel/jarnvagsframjandets-kartlaggning-av-partiernas-jarnvagspolitik",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "klimat-hoghastighetstag",
+    "partyCode": "L",
+    "value": 1,
+    "motivation": "L står bakom regeringens besked hösten 2022 att avbryta arbetet med nya stambanor för höghastighetståg och vill i stället prioritera underhåll av befintlig järnväg.",
+    "sourceCitation": "Sveriges Radio, Så vill partierna klara satsningar på vägar och järnvägar, 2022",
+    "sourceUrl": "https://www.sverigesradio.se/artikel/sa-vill-partierna-klara-satsningar-pa-vagar-och-jarnvagar",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "klimat-hoghastighetstag",
+    "partyCode": "KD",
+    "value": 1,
+    "motivation": "KD står bakom regeringens beslut att skrota planerna på nya stambanor för höghastighetståg och vill prioritera underhåll och befintliga projekt.",
+    "sourceCitation": "Sveriges Radio, Så vill partierna klara satsningar på vägar och järnvägar, 2022",
+    "sourceUrl": "https://www.sverigesradio.se/artikel/sa-vill-partierna-klara-satsningar-pa-vagar-och-jarnvagar",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "klimat-hoghastighetstag",
+    "partyCode": "M",
+    "value": 1,
+    "motivation": "M vill inte bygga nya stambanor för höghastighetståg utan endast fullfölja långt gångna projekt som Ostlänken; den M-ledda regeringen avbröt höghastighetsprojektet 2022.",
+    "sourceCitation": "Altinget, Järnvägsfrämjandet: Tre partier toppar listan som mest järnvägsvänliga, 2022",
+    "sourceUrl": "https://www.altinget.se/artikel/jarnvagsframjandets-kartlaggning-av-partiernas-jarnvagspolitik",
+    "quote": "långt gångna planer såsom Ostlänken",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "klimat-hoghastighetstag",
+    "partyCode": "SD",
+    "value": 1,
+    "motivation": "SD vill inte bygga nya stambanor för höghastighetståg och stödde Tidöpartiernas besked 2022 att avbryta projektet.",
+    "sourceCitation": "Altinget, Järnvägsfrämjandet: Tre partier toppar listan som mest järnvägsvänliga, 2022",
+    "sourceUrl": "https://www.altinget.se/artikel/jarnvagsframjandets-kartlaggning-av-partiernas-jarnvagspolitik",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "skola-skolval-lottning",
+    "partyCode": "V",
+    "value": 4,
+    "motivation": "V vill avskaffa det fria skolvalet i dess nuvarande form och ersätta det med ett gemensamt, offentligt antagningssystem där närhetsprincipen väger tungt.",
+    "sourceCitation": "Dagens Arena, V: Avskaffa det fria skolvalet och den fria etableringsrätten, 2020",
+    "sourceUrl": "https://www.dagensarena.se/innehall/v-avskaffa-det-fria-skolvalet-och-den-fria-etableringsratten/",
+    "quote": "Avskaffa det fria skolvalet",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "skola-skolval-lottning",
+    "partyCode": "S",
+    "value": 3,
+    "motivation": "S vill behålla skolvalet men införa ett gemensamt, offentligt administrerat antagningssystem och slopa kötid som urvalsgrund, vilket S-regeringen föreslog i propositionen om ett mer likvärdigt skolval 2022.",
+    "sourceCitation": "Vi Lärare, 22 heta valfrågor för skolan – så svarar partierna, 2022",
+    "sourceUrl": "https://www.vilarare.se/nyheter/skolpolitik/22-heta-valfragor-for-skolan--sa-svarar-partierna/",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "skola-skolval-lottning",
+    "partyCode": "MP",
+    "value": 3,
+    "motivation": "MP vill behålla möjligheten att välja skola men ha ett gemensamt och transparent antagningssystem administrerat av till exempel Skolverket, utan kötid som urvalsgrund.",
+    "sourceCitation": "Vi Lärare, 22 heta valfrågor för skolan – så svarar partierna, 2022",
+    "sourceUrl": "https://www.vilarare.se/nyheter/skolpolitik/22-heta-valfragor-for-skolan--sa-svarar-partierna/",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "skola-skolval-lottning",
+    "partyCode": "C",
+    "value": 2,
+    "motivation": "C försvarar det fria skolvalet och vill inte begränsa det, men kan acceptera vissa justeringar av antagningsreglerna som begränsad kötid.",
+    "sourceCitation": "Vi Lärare, 22 heta valfrågor för skolan – så svarar partierna, 2022",
+    "sourceUrl": "https://www.vilarare.se/nyheter/skolpolitik/22-heta-valfragor-for-skolan--sa-svarar-partierna/",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "skola-skolval-lottning",
+    "partyCode": "L",
+    "value": 2,
+    "motivation": "L försvarar det fria skolvalet och vill inte begränsa det, men förespråkar ett obligatoriskt och samordnat skolval där alla familjer gör ett aktivt val.",
+    "sourceCitation": "Liberalerna, Skolvalet, 2024",
+    "sourceUrl": "https://www.liberalerna.se/politik/skolvalet",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "skola-skolval-lottning",
+    "partyCode": "KD",
+    "value": 2,
+    "motivation": "KD vill behålla det fria skolvalet men förespråkar ett gemensamt och obligatoriskt skolval med kommunalt samordnad antagning, dock utan att begränsa valfriheten.",
+    "sourceCitation": "Vi Lärare, 22 heta valfrågor för skolan – så svarar partierna, 2022",
+    "sourceUrl": "https://www.vilarare.se/nyheter/skolpolitik/22-heta-valfragor-for-skolan--sa-svarar-partierna/",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "skola-skolval-lottning",
+    "partyCode": "M",
+    "value": 1,
+    "motivation": "M försvarar det fria skolvalet och friskolornas rätt att använda kötid som urvalsgrund, och motsätter sig att skolvalet begränsas eller att antagningen förstatligas.",
+    "sourceCitation": "Vi Lärare, 22 heta valfrågor för skolan – så svarar partierna, 2022",
+    "sourceUrl": "https://www.vilarare.se/nyheter/skolpolitik/22-heta-valfragor-for-skolan--sa-svarar-partierna/",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "skola-skolval-lottning",
+    "partyCode": "SD",
+    "value": 2,
+    "motivation": "SD vill behålla det fria skolvalet men är positiva till ett samordnat skolval som hanteras av kommunerna, utan att valfriheten begränsas.",
+    "sourceCitation": "Vi Lärare, 22 heta valfrågor för skolan – så svarar partierna, 2022",
+    "sourceUrl": "https://www.vilarare.se/nyheter/skolpolitik/22-heta-valfragor-for-skolan--sa-svarar-partierna/",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "skola-sprakforskola",
+    "partyCode": "V",
+    "value": 2,
+    "motivation": "V är skeptiskt till obligatorium och tvång i förskolan och vill i stället nå fler barn genom generella satsningar, uppsökande verksamhet och avgiftsfri förskola.",
+    "sourceCitation": "Altinget, Tidöpartierna vill införa obligatorisk förskola, 2024",
+    "sourceUrl": "https://www.altinget.se/artikel/tidopartierna-vill-infora-obligatorisk-forskola",
+    "quote": null,
+    "confidence": "low"
+  },
+  {
+    "questionKey": "skola-sprakforskola",
+    "partyCode": "S",
+    "value": 3,
+    "motivation": "S vill att hemkommunen från tre års ålder obligatoriskt ska skriva in barn i förskolan som bott kort tid i Sverige eller vars föräldrar gjort det, vilket ligger nära men inte är identiskt med ett obligatorium kopplat till bristande svenska.",
+    "sourceCitation": "Socialdemokraterna, Förskola (Vår politik A till Ö), 2024",
+    "sourceUrl": "https://www.socialdemokraterna.se/var-politik/a-till-o/forskola",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "skola-sprakforskola",
+    "partyCode": "MP",
+    "value": 2,
+    "motivation": "MP är skeptiskt till obligatorisk språkförskola och betonar i stället resurser, likvärdighet och rätt till förskola för alla barn framför tvång.",
+    "sourceCitation": "Altinget, Tidöpartierna vill införa obligatorisk förskola, 2024",
+    "sourceUrl": "https://www.altinget.se/artikel/tidopartierna-vill-infora-obligatorisk-forskola",
+    "quote": null,
+    "confidence": "low"
+  },
+  {
+    "questionKey": "skola-sprakforskola",
+    "partyCode": "C",
+    "value": 2,
+    "motivation": "C betonar frivillighet och föräldrars eget val i förskolan och har varit avvaktande till obligatorium, även om partiet vill att fler barn med svagt svenskt språk nås av förskolan via uppsökande insatser.",
+    "sourceCitation": "Altinget, Tidöpartierna vill införa obligatorisk förskola, 2024",
+    "sourceUrl": "https://www.altinget.se/artikel/tidopartierna-vill-infora-obligatorisk-forskola",
+    "quote": null,
+    "confidence": "low"
+  },
+  {
+    "questionKey": "skola-sprakforskola",
+    "partyCode": "L",
+    "value": 4,
+    "motivation": "L driver frågan i regeringsställning: skolminister Lotta Edholm (L) presenterade tillsammans med statsministern utredningen om obligatorisk språkförskola för barn med bristande svenska.",
+    "sourceCitation": "Regeringen, Statsministern och skolministern presenterade planer på utredning om obligatorisk språkförskola, 2024",
+    "sourceUrl": "https://www.regeringen.se/artiklar/2024/04/statsministern-och-skolministern-besokte-forskola-och-presenterade-planer-pa-utredning-om-obligatorisk-sprakforskola-och-sprakkrav-for-personalen/",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "skola-sprakforskola",
+    "partyCode": "KD",
+    "value": 4,
+    "motivation": "KD står som Tidöparti bakom regeringens utredning om obligatorisk språkförskola för barn som inte exponeras tillräckligt för svenska i hemmiljön.",
+    "sourceCitation": "Altinget, Tidöpartierna vill införa obligatorisk förskola, 2024",
+    "sourceUrl": "https://www.altinget.se/artikel/tidopartierna-vill-infora-obligatorisk-forskola",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "skola-sprakforskola",
+    "partyCode": "M",
+    "value": 4,
+    "motivation": "M driver frågan: statsminister Ulf Kristersson (M) presenterade regeringens utredning om obligatorisk språkförskola för barn som inte talar tillräckligt bra svenska.",
+    "sourceCitation": "Regeringen, Statsministern och skolministern presenterade planer på utredning om obligatorisk språkförskola, 2024",
+    "sourceUrl": "https://www.regeringen.se/artiklar/2024/04/statsministern-och-skolministern-besokte-forskola-och-presenterade-planer-pa-utredning-om-obligatorisk-sprakforskola-och-sprakkrav-for-personalen/",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "skola-sprakforskola",
+    "partyCode": "SD",
+    "value": 4,
+    "motivation": "SD vill tillsammans med regeringspartierna införa obligatorisk förskola för barn som behöver stöd i svenska språket och står bakom utredningsdirektivet.",
+    "sourceCitation": "Altinget, Tidöpartierna vill införa obligatorisk förskola, 2024",
+    "sourceUrl": "https://www.altinget.se/artikel/tidopartierna-vill-infora-obligatorisk-forskola",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "arbete-ingangsloner",
+    "partyCode": "V",
+    "value": 1,
+    "motivation": "V vill inte att politiken pressar ned ingångslönerna och ser sänkta lägstalöner som ett hot mot den svenska lönebildningsmodellen. Lönerna ska sättas av parterna och låglönejobb ska inte subventioneras fram.",
+    "sourceCitation": "Arbetet, Valfrågan: Vill ditt parti lagstifta om lägstalöner?, 2018",
+    "sourceUrl": "https://arbetet.se/2018/08/27/valfragan-vill-ditt-parti-lagstifta-om-lagstaloner/",
+    "quote": "Det skulle vara ett hot mot den svenska lönebildningsmodellen",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "arbete-ingangsloner",
+    "partyCode": "S",
+    "value": 1,
+    "motivation": "S vill att lönerna även fortsatt förhandlas av parterna och avvisar politiskt beslutade sänkta ingångslöner. Partiet försvarar den svenska modellen och menar att lägre löner inte är vägen in på arbetsmarknaden.",
+    "sourceCitation": "Arbetet, Valfrågan: Vill ditt parti lagstifta om lägstalöner?, 2018",
+    "sourceUrl": "https://arbetet.se/2018/08/27/valfragan-vill-ditt-parti-lagstifta-om-lagstaloner/",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "arbete-ingangsloner",
+    "partyCode": "MP",
+    "value": 1,
+    "motivation": "MP vill inte sänka lönerna och menar att alla förtjänar en anständig lön. Partiet stöder dock parternas egna etableringsjobb som gör det billigare att anställa utan att lagstifta om lägre löner.",
+    "sourceCitation": "SVT Nyheter, Så resonerar partierna om arbetsmarknaden, 2018",
+    "sourceUrl": "https://www.svt.se/nyheter/inrikes/sa-resonerar-partierna-om-arbetsmarknaden",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "arbete-ingangsloner",
+    "partyCode": "C",
+    "value": 4,
+    "motivation": "C vill sänka trösklarna in på arbetsmarknaden med ingångsjobb till lägre ingångslön för dem som står långt från arbetsmarknaden. Partiet ser det som att skapa chanser till ett första jobb, inte som lönesänkning för anställda.",
+    "sourceCitation": "Arbetet, Valfrågan: Vill ditt parti lagstifta om lägstalöner?, 2018",
+    "sourceUrl": "https://arbetet.se/2018/08/27/valfragan-vill-ditt-parti-lagstifta-om-lagstaloner/",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "arbete-ingangsloner",
+    "partyCode": "L",
+    "value": 4,
+    "motivation": "L vill införa en särskild anställningsform med lägre ingångslön för nyanlända och unga utan gymnasieutbildning för att fler ska få sitt första jobb. Partiet har länge drivit att enklare jobb till lägre lön sänker trösklarna.",
+    "sourceCitation": "Arbetet, Valfrågan: Vill ditt parti lagstifta om lägstalöner?, 2018",
+    "sourceUrl": "https://arbetet.se/2018/08/27/valfragan-vill-ditt-parti-lagstifta-om-lagstaloner/",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "arbete-ingangsloner",
+    "partyCode": "KD",
+    "value": 4,
+    "motivation": "KD vill införa inträdesjobb där nyanlända och unga under 23 utan gymnasieexamen anställs till 70 procent av ingångslönen. Partiet menar att lägre ingångslöner ger fler en väg in på arbetsmarknaden.",
+    "sourceCitation": "Arbetet, Valfrågan: Vill ditt parti lagstifta om lägstalöner?, 2018",
+    "sourceUrl": "https://arbetet.se/2018/08/27/valfragan-vill-ditt-parti-lagstifta-om-lagstaloner/",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "arbete-ingangsloner",
+    "partyCode": "M",
+    "value": 4,
+    "motivation": "M vill göra det lättare att anställa till lägre ingångslön genom inträdesjobb för nyanlända och unga utan gymnasieutbildning. Partiet menar att höga ingångslöner stänger ute dem som saknar erfarenhet.",
+    "sourceCitation": "Arbetet, Valfrågan: Vill ditt parti lagstifta om lägstalöner?, 2018",
+    "sourceUrl": "https://arbetet.se/2018/08/27/valfragan-vill-ditt-parti-lagstifta-om-lagstaloner/",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "arbete-ingangsloner",
+    "partyCode": "SD",
+    "value": 2,
+    "motivation": "SD vill i huvudsak att lönerna sätts av parterna enligt den svenska modellen och har profilerat sig mot generellt sänkta ingångslöner; partiet röstade emot etableringsjobben i riksdagen. SD öppnar dock för lärlingsanställningar med lägre lön.",
+    "sourceCitation": "Arbetet, Valfrågan: Vill ditt parti lagstifta om lägstalöner?, 2018",
+    "sourceUrl": "https://arbetet.se/2018/08/27/valfragan-vill-ditt-parti-lagstifta-om-lagstaloner/",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "arbete-strejkratt",
+    "partyCode": "V",
+    "value": 1,
+    "motivation": "V vill inte begränsa strejkrätten utan tvärtom riva upp de inskränkningar som infördes 2019 och stärka konflikträtten. Partiet ser strejkrätten som grundläggande för löntagarnas ställning.",
+    "sourceCitation": "Vänsterpartiet (Ali Esbati m.fl.), Motion 2021/22:464 Strejkrätt, föreningsrätt och integritet i arbetslivet, 2021",
+    "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/strejkratt-foreningsratt-och-integritet-i_h902464/",
+    "quote": "Vänsterpartiet vill riva upp de begränsningar av strejkrätten som infördes 2019",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "arbete-strejkratt",
+    "partyCode": "S",
+    "value": 1,
+    "motivation": "S vill inte röra konflikträtten och försvarar den svenska modellen där parterna själva tar ansvar för fredsplikten. Partiet avvisar både proportionalitetsprincip och begränsade sympatiåtgärder.",
+    "sourceCitation": "Arbetsvärlden, Regeringen vill se strejkrätten inskränkt, 2023",
+    "sourceUrl": "https://www.arbetsvarlden.se/regeringen-vill-se-strejkratten-inskrankt/",
+    "quote": "Det finns inga som helst skäl att peta i konflikträtten.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "arbete-strejkratt",
+    "partyCode": "MP",
+    "value": 1,
+    "motivation": "MP vill inte begränsa strejkrätten och kallar ytterligare inskränkningar en extrem försvagning av demokratin. Partiet kritiserar arbetsgivarsidans krav på proportionalitetsprincip.",
+    "sourceCitation": "Arbetsvärlden, Regeringen vill se strejkrätten inskränkt, 2023",
+    "sourceUrl": "https://www.arbetsvarlden.se/regeringen-vill-se-strejkratten-inskrankt/",
+    "quote": "extrem försvagning i demokratin",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "arbete-strejkratt",
+    "partyCode": "C",
+    "value": 4,
+    "motivation": "C vill se en bred översyn av konfliktreglerna med både en proportionalitetsprincip och begränsade sympatiåtgärder, bland annat för att skydda små företag som dras in i andras konflikter.",
+    "sourceCitation": "Arbetsvärlden, Regeringen vill se strejkrätten inskränkt, 2023",
+    "sourceUrl": "https://www.arbetsvarlden.se/regeringen-vill-se-strejkratten-inskrankt/",
+    "quote": null,
+    "confidence": "high"
+  },
+  {
+    "questionKey": "arbete-strejkratt",
+    "partyCode": "L",
+    "value": 4,
+    "motivation": "L vill begränsa sympatiåtgärder och införa en proportionalitetsprincip och hänvisar till Danmark och Norge där det krävs tydligt samband mellan primär- och sekundäråtgärd.",
+    "sourceCitation": "Arbetsvärlden, Regeringen vill se strejkrätten inskränkt, 2023",
+    "sourceUrl": "https://www.arbetsvarlden.se/regeringen-vill-se-strejkratten-inskrankt/",
+    "quote": "I flera länder, så som Danmark och Norge, ställs det också krav på tydligt samband mellan primär- och sekundäråtgärd.",
+    "confidence": "high"
+  },
+  {
+    "questionKey": "arbete-strejkratt",
+    "partyCode": "KD",
+    "value": 3,
+    "motivation": "KD vill se en proportionalitetsprincip och begränsade sympatiåtgärder men betonar att parterna i första hand bör lösa frågan själva, med lagstiftning som andrahandsalternativ. Förslagen ingår inte i Tidöavtalet.",
+    "sourceCitation": "Arbetsvärlden, Regeringen vill se strejkrätten inskränkt, 2023",
+    "sourceUrl": "https://www.arbetsvarlden.se/regeringen-vill-se-strejkratten-inskrankt/",
+    "quote": "Förslagen ingår inte i Tidö-avtalet",
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "arbete-strejkratt",
+    "partyCode": "M",
+    "value": 3,
+    "motivation": "M ser positivt på en proportionalitetsprincip för stridsåtgärder och enskilda M-ledamöter har motionerat om saken, men partiet prioriterar inte frågan under innevarande mandatperiod.",
+    "sourceCitation": "Arbetsvärlden, Regeringen vill se strejkrätten inskränkt, 2023",
+    "sourceUrl": "https://www.arbetsvarlden.se/regeringen-vill-se-strejkratten-inskrankt/",
+    "quote": null,
+    "confidence": "medium"
+  },
+  {
+    "questionKey": "arbete-strejkratt",
+    "partyCode": "SD",
+    "value": null,
+    "motivation": "SD tar inte ställning för eller emot en begränsad strejkrätt utan vill först se en bred utredning av konsekvenserna. Partiet avböjde att svara ja eller nej när riksdagspartierna tillfrågades, trots att enskilda SD-motioner berört sympatiåtgärder.",
+    "sourceCitation": "Arbetsvärlden, Regeringen vill se strejkrätten inskränkt, 2023",
+    "sourceUrl": "https://www.arbetsvarlden.se/regeringen-vill-se-strejkratten-inskrankt/",
+    "quote": null,
+    "confidence": "medium"
   }
 ]

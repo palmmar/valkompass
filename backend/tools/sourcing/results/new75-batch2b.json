@@ -1,0 +1,182 @@
+{
+  "sources": [
+    {
+      "questionKey": "ekonomi-matmoms",
+      "partyCode": "V",
+      "value": 4,
+      "motivation": "V vill gå längre än en permanent sänkning och helt slopa momsen på livsmedel för att pressa matpriserna. Partiet ser den tillfälliga sänkningen som otillräcklig.",
+      "sourceCitation": "SVT Nyheter, Slopad matmoms lyfts av V och MP – får kritik för att gynna rika, 2025",
+      "sourceUrl": "https://www.svt.se/nyheter/inrikes/slopad-matmoms-lyfts-av-vanstern-ger-mest-lattnader-for-rika",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "ekonomi-matmoms",
+      "partyCode": "S",
+      "value": 2,
+      "motivation": "S har uttryckligen krävt en tillfälligt sänkt matmoms i kombination med permanent höjt barnbidrag, och har inte föreslagit att momssänkningen ska göras permanent.",
+      "sourceCitation": "Socialdemokraterna, S kräver tillfälligt sänkt matmoms och permanent höjning av barnbidraget, 2025",
+      "sourceUrl": "https://www.socialdemokraterna.se/nyheter/nyheter/2025-09-01-s-kraver-tillfalligt-sankt-matmoms-och-permanent-hojning-av-barnbidraget",
+      "quote": "S kräver tillfälligt sänkt matmoms och permanent höjning av barnbidraget",
+      "confidence": "high"
+    },
+    {
+      "questionKey": "ekonomi-matmoms",
+      "partyCode": "MP",
+      "value": 4,
+      "motivation": "MP var först i riksdagen med att föreslå sänkt matmoms och vill permanent slopa momsen på basvaror som bröd, mjölk, frukt och grönsaker, vilket går längre än en permanentad sänkning till 6 procent.",
+      "sourceCitation": "SVT Nyheter, Slopad matmoms lyfts av V och MP – får kritik för att gynna rika, 2025",
+      "sourceUrl": "https://www.svt.se/nyheter/inrikes/slopad-matmoms-lyfts-av-vanstern-ger-mest-lattnader-for-rika",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "ekonomi-matmoms",
+      "partyCode": "C",
+      "value": 2,
+      "motivation": "C stödde den tillfälliga sänkningen men röstade emot vänsterpartiernas förslag om permanent slopad matmoms och vill hellre se långsiktiga strukturreformer av kostnaderna i hela livsmedelskedjan.",
+      "sourceCitation": "Sveriges riksdag, Betänkande 2025/26:SkU9 Tillfälligt sänkt mervärdesskatt på livsmedel, 2025",
+      "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/tillfalligt-sankt-mervardesskatt-pa-livsmedel_hd01sku9/",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "ekonomi-matmoms",
+      "partyCode": "L",
+      "value": 2,
+      "motivation": "L står som regeringsparti bakom att sänkningen till 6 procent uttryckligen är tillfällig (april 2026–december 2027) och betonar uppföljning av att sänkningen når konsumenterna snarare än att den permanentas.",
+      "sourceCitation": "Sveriges riksdag, Betänkande 2025/26:SkU9 Tillfälligt sänkt mervärdesskatt på livsmedel, 2025",
+      "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/tillfalligt-sankt-mervardesskatt-pa-livsmedel_hd01sku9/",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "ekonomi-matmoms",
+      "partyCode": "KD",
+      "value": 2,
+      "motivation": "KD stödjer den sänkta matmomsen som en bred och träffsäker åtgärd i ett tufft ekonomiskt läge, men står bakom att den är tidsbegränsad till utgången av 2027 och har inte föreslagit att den permanentas.",
+      "sourceCitation": "Sveriges riksdag, Betänkande 2025/26:SkU9 Tillfälligt sänkt mervärdesskatt på livsmedel, 2025",
+      "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/tillfalligt-sankt-mervardesskatt-pa-livsmedel_hd01sku9/",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "ekonomi-matmoms",
+      "partyCode": "M",
+      "value": 2,
+      "motivation": "M har som regeringsparti utformat momssänkningen som uttryckligen tillfällig till och med 2027, med en matpriskommission som ska följa effekterna innan ställning tas till fortsättningen.",
+      "sourceCitation": "Regeringen, Regeringen tar nästa steg mot tillfälligt sänkt moms på livsmedel, 2025",
+      "sourceUrl": "https://www.regeringen.se/pressmeddelanden/2025/11/regeringen-tar-nasta-steg-mot-tillfalligt-sankt-moms-pa-livsmedel/",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "ekonomi-matmoms",
+      "partyCode": "SD",
+      "value": 2,
+      "motivation": "SD drev fram den sänkta matmomsen i Tidösamarbetet och framhåller den som en viktig lättnad för barnfamiljer, men förslaget partiet ställt sig bakom är uttryckligen tillfälligt och inte permanent.",
+      "sourceCitation": "Sveriges riksdag, Betänkande 2025/26:SkU9 Tillfälligt sänkt mervärdesskatt på livsmedel, 2025",
+      "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/tillfalligt-sankt-mervardesskatt-pa-livsmedel_hd01sku9/",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "klimat-bilforbud-2035",
+      "partyCode": "V",
+      "value": 1,
+      "motivation": "V försvarar EU:s beslut om förbud mot nya bensin- och dieselbilar från 2035 och har snarare velat att ett förbud införs tidigare än att beslutet rivs upp.",
+      "sourceCitation": "SVT, Valkompass EU-valet 2024, 2024",
+      "sourceUrl": "https://valkompass.svt.se/eu-2024/fraga/eu-ska-riva-upp-beslutet-om-forbud-mot-forsaljning-av-nya-bensin-och-dieselbilar-efter-2035/",
+      "quote": null,
+      "confidence": "high"
+    },
+    {
+      "questionKey": "klimat-bilforbud-2035",
+      "partyCode": "S",
+      "value": 1,
+      "motivation": "S anser att 2035-förbudet ska ligga fast och svarade att det vore ett mycket dåligt förslag att riva upp beslutet, eftersom Sverige inte ska binda upp sig i ett långsiktigt fossilberoende.",
+      "sourceCitation": "SVT, Valkompass EU-valet 2024, 2024",
+      "sourceUrl": "https://valkompass.svt.se/eu-2024/fraga/eu-ska-riva-upp-beslutet-om-forbud-mot-forsaljning-av-nya-bensin-och-dieselbilar-efter-2035/",
+      "quote": "Vi vill inte binda upp oss i ett långsiktigt fossilberoende",
+      "confidence": "high"
+    },
+    {
+      "questionKey": "klimat-bilforbud-2035",
+      "partyCode": "MP",
+      "value": 1,
+      "motivation": "MP försvarar förbudet kraftfullt och menar att det vore en katastrof för klimatomställningen att riva upp den redan beslutade EU-lagen.",
+      "sourceCitation": "SVT, Valkompass EU-valet 2024, 2024",
+      "sourceUrl": "https://valkompass.svt.se/eu-2024/fraga/eu-ska-riva-upp-beslutet-om-forbud-mot-forsaljning-av-nya-bensin-och-dieselbilar-efter-2035/",
+      "quote": "riva upp denna klubbade EU-lag skulle vara en katastrof",
+      "confidence": "high"
+    },
+    {
+      "questionKey": "klimat-bilforbud-2035",
+      "partyCode": "C",
+      "value": 1,
+      "motivation": "C anser att EU:s klimatpaket, inklusive 2035-förbudet, ska ligga fast för att Parisavtalets mål ska kunna nås och motsätter sig att beslutet rivs upp.",
+      "sourceCitation": "SVT, Valkompass EU-valet 2024, 2024",
+      "sourceUrl": "https://valkompass.svt.se/eu-2024/fraga/eu-ska-riva-upp-beslutet-om-forbud-mot-forsaljning-av-nya-bensin-och-dieselbilar-efter-2035/",
+      "quote": "EU:s klimatpaket ska ligga fast",
+      "confidence": "high"
+    },
+    {
+      "questionKey": "klimat-bilforbud-2035",
+      "partyCode": "L",
+      "value": 1,
+      "motivation": "L försvarar förbudet och har tidigare velat ha ett ännu tidigare stoppdatum; klimatminister Romina Pourmokhtari avvisar kraven på att riva upp beslutet och vill att Sverige håller kursen.",
+      "sourceCitation": "SVT Nyheter, Tidöspricka om motorförbud: \"Lägg kulturkriget åt sidan\", 2025",
+      "sourceUrl": "https://www.svt.se/nyheter/inrikes/tidospricka-om-motorforbud-lagg-kulturkriget-at-sidan",
+      "quote": "Sverige har varit en av de starkaste förespråkarna",
+      "confidence": "high"
+    },
+    {
+      "questionKey": "klimat-bilforbud-2035",
+      "partyCode": "KD",
+      "value": 3,
+      "motivation": "KD har svängt i frågan och ställer sig numera bakom att 2035-förbudet rivs upp, efter att tidigare ha accepterat förbudet men krävt teknikneutrala regler som tillåter utsläppsfria bränslen.",
+      "sourceCitation": "SVT Nyheter, Tidöspricka om motorförbud: \"Lägg kulturkriget åt sidan\", 2025",
+      "sourceUrl": "https://www.svt.se/nyheter/inrikes/tidospricka-om-motorforbud-lagg-kulturkriget-at-sidan",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "klimat-bilforbud-2035",
+      "partyCode": "M",
+      "value": 2,
+      "motivation": "M står formellt bakom regeringens linje att förbudet ligger fast, men partiets EU-toppnamn Tomas Tobé har öppnat dörren för att ompröva lagen och aviserat en ny lösning på EU-nivå.",
+      "sourceCitation": "SVT Nyheter, Tidöspricka om motorförbud: \"Lägg kulturkriget åt sidan\", 2025",
+      "sourceUrl": "https://www.svt.se/nyheter/inrikes/tidospricka-om-motorforbud-lagg-kulturkriget-at-sidan",
+      "quote": "Rätt snart kommer vi att presentera en ny lösning",
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "klimat-bilforbud-2035",
+      "partyCode": "SD",
+      "value": 4,
+      "motivation": "SD vill riva upp 2035-förbudet, som Jimmie Åkesson kallar verklighetsfrånvänt, och välkomnar att EU nu öppnar för att ändra lagen — ju förr desto bättre enligt partiet.",
+      "sourceCitation": "SVT Nyheter, Tidöspricka om motorförbud: \"Lägg kulturkriget åt sidan\", 2025",
+      "sourceUrl": "https://www.svt.se/nyheter/inrikes/tidospricka-om-motorforbud-lagg-kulturkriget-at-sidan",
+      "quote": "Flera länder backar från det här och andra fullständigt verklighetsfrånvända beslut",
+      "confidence": "high"
+    }
+  ],
+  "explanations": [
+    {
+      "questionKey": "ekonomi-matmoms",
+      "explanation": "Riksdagen har beslutat att momsen på livsmedel tillfälligt sänks från 12 till 6 procent under perioden 1 april 2026–31 december 2027. Regeringspartierna och SD betonar att sänkningen är tillfällig, medan V och MP vill gå längre och slopa matmomsen permanent.",
+      "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/tillfalligt-sankt-mervardesskatt-pa-livsmedel_hd01sku9/",
+      "sourceCitation": "Sveriges riksdag, Betänkande 2025/26:SkU9 Tillfälligt sänkt mervärdesskatt på livsmedel, 2025",
+      "quote": null,
+      "confidence": "high"
+    },
+    {
+      "questionKey": "klimat-bilforbud-2035",
+      "explanation": "EU har beslutat att nya bensin- och dieselbilar inte får säljas från 2035, men EU-kommissionen har föreslagit lättnader i lagen. I Sverige har frågan skapat en spricka i Tidölaget: SD vill riva upp förbudet och KD har svängt, medan regeringens formella linje står fast och S, MP, V och C försvarar förbudet.",
+      "sourceUrl": "https://www.svt.se/nyheter/inrikes/tidospricka-om-motorforbud-lagg-kulturkriget-at-sidan",
+      "sourceCitation": "SVT Nyheter, Tidöspricka om motorförbud: \"Lägg kulturkriget åt sidan\", 2025",
+      "quote": null,
+      "confidence": "high"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 # Källsättning – celler att dubbelkolla före publicering
 
-Totalt 400 positioner (50 påståenden × 8 partier) är källsatta mot verkliga webbkällor.
-Konfidens: **200 high**, **147 medium**, **53 low**. Full proveniens (citat + URL + konfidens) finns i `sources.json`.
+Totalt 600 positioner (75 påståenden × 8 partier) är källsatta mot verkliga webbkällor.
+Konfidens: **281 high**, **241 medium**, **78 low**. Full proveniens (citat + URL + konfidens) finns i `sources.json`.
 
 Nedan listas de **53 low-confidence-cellerna** – där inget tydligt ordagrant partieget belägg hittades och värdet vilar på tolkning, röstningsutfall eller sekundärkälla. Prioritera dessa vid manuell granskning i admin.
 
@@ -233,3 +233,115 @@ Nedan listas de **53 low-confidence-cellerna** – där inget tydligt ordagrant 
 | Parti | Värde | Källa | Motivering |
 |---|---|---|---|
 | Centerpartiet | Delvis emot (2) | Centerpartiet, "Nedrustning och kärnvapen", centerpartiet.se (hämtad 2026) | Centerpartiet vill ha en värld fri från kärnvapen men accepterar Natos kärnvapenavskräckning; partiet driver inte att kärnvapen ska placeras på svensk mark. |
+
+---
+
+# Tillägg: 25 nya frågor för 75-frågeläget (juni 2026)
+
+Ytterligare 200 positioner (25 påståenden × 8 partier) källsattes för Fördjupning-läget.
+Nedan listas cellerna med **låg konfidens** eller **oklar position (värde saknas)** – prioritera dessa vid granskning i admin.
+
+## Alla över 85 år ska ha rätt till plats på äldreboende utan biståndsprövning
+*Om en äldreboendegaranti ska införas för de äldsta.*  
+`aldre-boendegaranti`
+
+| Parti | Värde | Källa | Motivering |
+|---|---|---|---|
+| Vänsterpartiet | Delvis emot (2) | Vårdföretagarna, Valspecial: Ska du få välja äldreboende själv? Så svarar partierna, 2026 | V vill bygga ut den offentliga äldreomsorgen så att alla med behov får plats, men driver inte någon åldersbaserad rätt till äldreboende utan biståndsprövning utan vill att behoven ska styra. |
+| Miljöpartiet | Delvis emot (2) | Vårdföretagarna, Valspecial: Ska du få välja äldreboende själv? Så svarar partierna, 2026 | MP har inget förslag om biståndsfri rätt till äldreboende för 85-plussare och vill att äldres val ska begränsas till boenden som kommunen har avtal med. |
+| Liberalerna | Delvis med (3) | Senioren, Ge alla över 85 rätt till äldreboende, 2017 | L har länge drivit att de äldsta ska få ökad rätt till äldreboende, bland annat förslag om att alla över 85 som önskar ska beviljas plats, men har inte gjort en lagstadgad biståndsfri garanti till tydlig nationell politik. |
+| Sverigedemokraterna | Oklar (–) | Sveriges riksdag, Motion 2020/21:2027 God vård och omsorg om äldre (SD), 2020 | SD vill korta väntetiderna, säkra parbogarantin och få en likvärdig biståndsbedömning i hela landet, men har inte tagit tydlig ställning till en biståndsfri rätt till äldreboende för alla över 85. |
+
+## Rätten att ta till strejk och sympatiåtgärder ska begränsas
+*Om en proportionalitetsprincip ska begränsa konflikträtten.*  
+`arbete-strejkratt`
+
+| Parti | Värde | Källa | Motivering |
+|---|---|---|---|
+| Sverigedemokraterna | Oklar (–) | Arbetsvärlden, Regeringen vill se strejkrätten inskränkt, 2023 | SD tar inte ställning för eller emot en begränsad strejkrätt utan vill först se en bred utredning av konsekvenserna. Partiet avböjde att svara ja eller nej när riksdagspartierna tillfrågades, trots att enskilda SD-motioner berört sympatiåtgärder. |
+
+## Skatten på vinst vid bostadsförsäljning ska sänkas eller avskaffas
+*Om reavinstskatten ska sänkas för att öka rörligheten på bostadsmarknaden.*  
+`bostad-flyttskatt`
+
+| Parti | Värde | Källa | Motivering |
+|---|---|---|---|
+| Vänsterpartiet | Håller inte med (1) | Fastighetsmäklarförbundet, Partiernas bostadspolitik, 2022 | V motsätter sig sänkt reavinstskatt och anser att det är viktigare att pressa hyror och bygga hyresrätter än att sänka skatten för bostadsägare; partiet vill snarare beskatta kapital och fastigheter hårdare. |
+| Miljöpartiet | Delvis emot (2) | Skattebetalarna, Fastighetsskatten delar partierna, 2021 | MP pekar på att dagens boendebeskattning ger inlåsningseffekter och minskad rörlighet, men vill hantera flyttskatterna inom en bred skattereform och driver ingen ensidig sänkning av reavinstskatten. |
+| Sverigedemokraterna | Oklar (–) | Bostadspolitik.se, Reavinstskatten delar riksdagen: L mest positiva, S varnar för orättvisa, 2025 | SD har inte tagit ställning till sänkt eller avskaffad reavinstskatt; partiet säger sig vara öppet för att titta på frågan men vill hantera den inom en ordnad budgetprocess med hänsyn till statsfinanserna. |
+
+## Ränteavdragen på bolån ska trappas ned
+*Om skattesubventionen av bolåneräntor ska minskas stegvis.*  
+`bostad-ranteavdrag`
+
+| Parti | Värde | Källa | Motivering |
+|---|---|---|---|
+| Liberalerna | Delvis med (3) | Sverigekredit, Ränteavdraget ifrågasätts – Så vill partierna ändra det, 2026 | L har länge förespråkat att ränteavdraget trappas ned från 30 till 20 procent under tio år inom ramen för en samlad skattereform, men pausade förslaget när räntorna steg kraftigt. Signalerna har därefter varit delvis motstridiga. |
+
+## Sverige ska återinföra en arvsskatt på stora arv
+*Om en skatt på stora arv ska införas igen.*  
+`ekonomi-arvsskatt`
+
+| Parti | Värde | Källa | Motivering |
+|---|---|---|---|
+| Socialdemokraterna | Delvis emot (2) | Valkoll, Skatter – så tycker partierna 2026, 2026 | S föreslår ingen återinförd arvsskatt och var partiet som avskaffade den 2004, men är öppet för höjd skatt på höga kapitalinkomster, vilket gör att partiet inte helt stänger dörren för ökad beskattning av stora förmögenhetsöverföringar. |
+| Miljöpartiet | Delvis emot (2) | Valkoll, Skatter – så tycker partierna 2026, 2026 | MP driver inte ett återinförande av arvsskatten men vill öka beskattningen av kapital och stora förmögenheter, och ligger därmed närmare V än högerblocket i skattefrågor. |
+| Centerpartiet | Håller inte med (1) | Valkoll, Skatter – så tycker partierna 2026, 2026 | C säger nej till återinförd arvsskatt och vill behålla dagens system utan arvs- och förmögenhetsskatt, bland annat med hänvisning till företagande och ägarskiften. |
+| Liberalerna | Håller inte med (1) | Valkoll, Skatter – så tycker partierna 2026, 2026 | L vill inte återinföra arvsskatten och står bakom dagens system utan arvs- och förmögenhetsskatt; partiet röstade för avskaffandet och har inte ändrat linje. |
+| Kristdemokraterna | Håller inte med (1) | Valkoll, Skatter – så tycker partierna 2026, 2026 | KD är emot en återinförd arvsskatt och vill behålla dagens ordning utan arvs- och förmögenhetsskatt. |
+| Sverigedemokraterna | Håller inte med (1) | Valkoll, Skatter – så tycker partierna 2026, 2026 | SD vill behålla dagens system utan arvsskatt och motsätter sig liksom övriga högerblocket alla förslag om att återinföra den. |
+
+## RUT-avdraget för hushållsnära tjänster ska avskaffas
+*Om skattereduktionen för hushållsnära tjänster ska tas bort.*  
+`ekonomi-rut-avskaffa`
+
+| Parti | Värde | Källa | Motivering |
+|---|---|---|---|
+| Miljöpartiet | Delvis emot (2) | Rödgrön Röra, Jämförelse av rödgröna partiers politik, 2025 | MP föreslår inte att rutavdraget avskaffas men vill rikta om det mot klimatomställningen, med större fokus på reparationer och cirkulära tjänster. |
+
+## Sverige ska förbjuda vapenexport till länder som inte är demokratier
+*Om vapenexporten till icke-demokratier ska stoppas.*  
+`forsvar-vapenexport`
+
+| Parti | Värde | Källa | Motivering |
+|---|---|---|---|
+| Centerpartiet | Delvis emot (2) | Sveriges riksdag, Betänkande 2017/18:UU9 Skärpt exportkontroll av krigsmateriel, 2018 | C ställde sig 2018 bakom demokratikriteriet som hinder vid exportprövningen men motsätter sig ett absolut förbud och värnar försvarsindustrins exportmöjligheter. |
+| Sverigedemokraterna | Håller inte med (1) | Sveriges riksdag, Betänkande 2017/18:UU9 Skärpt exportkontroll av krigsmateriel, 2018 | SD stöder svensk vapenexport och försvarsindustrin, ställde sig inte bakom något exportförbud vid 2018 års skärpta exportkontroll och backar upp regeringens linje att underlätta exporten. |
+
+## Försörjningskraven för anhöriginvandring ska skärpas kraftigt
+*Om kraven för att ta hit anhöriga ska höjas ytterligare.*  
+`migration-anhorig-begransa`
+
+| Parti | Värde | Källa | Motivering |
+|---|---|---|---|
+| Centerpartiet | Delvis emot (2) | Sveriges riksdag, Utskott ställer sig bakom skärpta krav för svenskt medborgarskap, 2026 | C accepterar försörjningskrav i princip men har reserverat sig mot delar av regeringens kraftiga skärpningar och kritiserar att höjda krav slår mot integration och kompetensförsörjning, inte minst i glesbygd. |
+
+## Aktiv dödshjälp ska tillåtas för svårt sjuka i livets slutskede
+*Om dödshjälp ska legaliseras under strikta villkor.*  
+`sjukvard-dodshjalp`
+
+| Parti | Värde | Källa | Motivering |
+|---|---|---|---|
+| Vänsterpartiet | Delvis emot (2) | Senioren, Utredning av dödshjälp rycker närmare, 2022 | V har inte tagit tydlig ställning för att tillåta dödshjälp; partistyrelsen har stött kravet på en utredning men partiet har samtidigt ansett att dödshjälp bör förbli förbjudet. |
+| Miljöpartiet | Oklar (–) | Sjukhusläkaren, Så tycker partierna om dödshjälp, 2019 | MP var 2015 första parti att kräva en utredning av dödshjälp men har ingen officiell position för eller emot ett tillåtande, utan vill att frågan belyses i en parlamentarisk utredning. |
+| Centerpartiet | Delvis emot (2) | Altinget, Centerpartiet svänger om dödshjälp, 2023 | C sade länge nej till dödshjälp men partistämman 2023 beslutade att C ska driva på för att aktiv dödshjälp utreds; partiet har dock inte tagit ställning för att tillåta dödshjälp. |
+| Moderaterna | Delvis emot (2) | Människovärde, Vad anser politiska partier om dödshjälp?, 2022 | M säger nej till att legalisera dödshjälp men beskriver frågan som komplex, har berett den i en intern arbetsgrupp och har ställt sig bakom att frågan utreds. |
+| Sverigedemokraterna | Delvis emot (2) | Människovärde, Vad anser politiska partier om dödshjälp?, 2022 | SD har historiskt motsatt sig aktiv dödshjälp men har ställt sig bakom kravet på en statlig utredning av frågan, utan att ta ställning för ett tillåtande. |
+
+## Altruistiskt surrogatmödraskap ska tillåtas i Sverige
+*Om surrogatmödraskap utan ersättning ska bli lagligt.*  
+`sjukvard-surrogat`
+
+| Parti | Värde | Källa | Motivering |
+|---|---|---|---|
+| Miljöpartiet | Oklar (–) | SVT Nyheter, Så tycker partierna i surrogatfrågan, 2024 | MP är det enda riksdagsparti som inte tagit ställning till altruistiskt surrogatmödraskap; partiet vill dock att kommersiella surrogatarrangemang även fortsatt ska vara otillåtna. |
+
+## Förskola ska vara obligatorisk för barn som inte talar tillräckligt bra svenska
+*Om obligatorisk språkförskola ska införas för barn med bristande svenska.*  
+`skola-sprakforskola`
+
+| Parti | Värde | Källa | Motivering |
+|---|---|---|---|
+| Vänsterpartiet | Delvis emot (2) | Altinget, Tidöpartierna vill införa obligatorisk förskola, 2024 | V är skeptiskt till obligatorium och tvång i förskolan och vill i stället nå fler barn genom generella satsningar, uppsökande verksamhet och avgiftsfri förskola. |
+| Miljöpartiet | Delvis emot (2) | Altinget, Tidöpartierna vill införa obligatorisk förskola, 2024 | MP är skeptiskt till obligatorisk språkförskola och betonar i stället resurser, likvärdighet och rätt till förskola för alla barn framför tvång. |
+| Centerpartiet | Delvis emot (2) | Altinget, Tidöpartierna vill införa obligatorisk förskola, 2024 | C betonar frivillighet och föräldrars eget val i förskolan och har varit avvaktande till obligatorium, även om partiet vill att fler barn med svagt svenskt språk nås av förskolan via uppsökande insatser. |

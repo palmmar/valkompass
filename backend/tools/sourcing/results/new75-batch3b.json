@@ -1,0 +1,182 @@
+{
+  "sources": [
+    {
+      "questionKey": "arbete-ingangsloner",
+      "partyCode": "V",
+      "value": 1,
+      "motivation": "V vill inte att politiken pressar ned ingångslönerna och ser sänkta lägstalöner som ett hot mot den svenska lönebildningsmodellen. Lönerna ska sättas av parterna och låglönejobb ska inte subventioneras fram.",
+      "sourceCitation": "Arbetet, Valfrågan: Vill ditt parti lagstifta om lägstalöner?, 2018",
+      "sourceUrl": "https://arbetet.se/2018/08/27/valfragan-vill-ditt-parti-lagstifta-om-lagstaloner/",
+      "quote": "Det skulle vara ett hot mot den svenska lönebildningsmodellen",
+      "confidence": "high"
+    },
+    {
+      "questionKey": "arbete-ingangsloner",
+      "partyCode": "S",
+      "value": 1,
+      "motivation": "S vill att lönerna även fortsatt förhandlas av parterna och avvisar politiskt beslutade sänkta ingångslöner. Partiet försvarar den svenska modellen och menar att lägre löner inte är vägen in på arbetsmarknaden.",
+      "sourceCitation": "Arbetet, Valfrågan: Vill ditt parti lagstifta om lägstalöner?, 2018",
+      "sourceUrl": "https://arbetet.se/2018/08/27/valfragan-vill-ditt-parti-lagstifta-om-lagstaloner/",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "arbete-ingangsloner",
+      "partyCode": "MP",
+      "value": 1,
+      "motivation": "MP vill inte sänka lönerna och menar att alla förtjänar en anständig lön. Partiet stöder dock parternas egna etableringsjobb som gör det billigare att anställa utan att lagstifta om lägre löner.",
+      "sourceCitation": "SVT Nyheter, Så resonerar partierna om arbetsmarknaden, 2018",
+      "sourceUrl": "https://www.svt.se/nyheter/inrikes/sa-resonerar-partierna-om-arbetsmarknaden",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "arbete-ingangsloner",
+      "partyCode": "C",
+      "value": 4,
+      "motivation": "C vill sänka trösklarna in på arbetsmarknaden med ingångsjobb till lägre ingångslön för dem som står långt från arbetsmarknaden. Partiet ser det som att skapa chanser till ett första jobb, inte som lönesänkning för anställda.",
+      "sourceCitation": "Arbetet, Valfrågan: Vill ditt parti lagstifta om lägstalöner?, 2018",
+      "sourceUrl": "https://arbetet.se/2018/08/27/valfragan-vill-ditt-parti-lagstifta-om-lagstaloner/",
+      "quote": null,
+      "confidence": "high"
+    },
+    {
+      "questionKey": "arbete-ingangsloner",
+      "partyCode": "L",
+      "value": 4,
+      "motivation": "L vill införa en särskild anställningsform med lägre ingångslön för nyanlända och unga utan gymnasieutbildning för att fler ska få sitt första jobb. Partiet har länge drivit att enklare jobb till lägre lön sänker trösklarna.",
+      "sourceCitation": "Arbetet, Valfrågan: Vill ditt parti lagstifta om lägstalöner?, 2018",
+      "sourceUrl": "https://arbetet.se/2018/08/27/valfragan-vill-ditt-parti-lagstifta-om-lagstaloner/",
+      "quote": null,
+      "confidence": "high"
+    },
+    {
+      "questionKey": "arbete-ingangsloner",
+      "partyCode": "KD",
+      "value": 4,
+      "motivation": "KD vill införa inträdesjobb där nyanlända och unga under 23 utan gymnasieexamen anställs till 70 procent av ingångslönen. Partiet menar att lägre ingångslöner ger fler en väg in på arbetsmarknaden.",
+      "sourceCitation": "Arbetet, Valfrågan: Vill ditt parti lagstifta om lägstalöner?, 2018",
+      "sourceUrl": "https://arbetet.se/2018/08/27/valfragan-vill-ditt-parti-lagstifta-om-lagstaloner/",
+      "quote": null,
+      "confidence": "high"
+    },
+    {
+      "questionKey": "arbete-ingangsloner",
+      "partyCode": "M",
+      "value": 4,
+      "motivation": "M vill göra det lättare att anställa till lägre ingångslön genom inträdesjobb för nyanlända och unga utan gymnasieutbildning. Partiet menar att höga ingångslöner stänger ute dem som saknar erfarenhet.",
+      "sourceCitation": "Arbetet, Valfrågan: Vill ditt parti lagstifta om lägstalöner?, 2018",
+      "sourceUrl": "https://arbetet.se/2018/08/27/valfragan-vill-ditt-parti-lagstifta-om-lagstaloner/",
+      "quote": null,
+      "confidence": "high"
+    },
+    {
+      "questionKey": "arbete-ingangsloner",
+      "partyCode": "SD",
+      "value": 2,
+      "motivation": "SD vill i huvudsak att lönerna sätts av parterna enligt den svenska modellen och har profilerat sig mot generellt sänkta ingångslöner; partiet röstade emot etableringsjobben i riksdagen. SD öppnar dock för lärlingsanställningar med lägre lön.",
+      "sourceCitation": "Arbetet, Valfrågan: Vill ditt parti lagstifta om lägstalöner?, 2018",
+      "sourceUrl": "https://arbetet.se/2018/08/27/valfragan-vill-ditt-parti-lagstifta-om-lagstaloner/",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "arbete-strejkratt",
+      "partyCode": "V",
+      "value": 1,
+      "motivation": "V vill inte begränsa strejkrätten utan tvärtom riva upp de inskränkningar som infördes 2019 och stärka konflikträtten. Partiet ser strejkrätten som grundläggande för löntagarnas ställning.",
+      "sourceCitation": "Vänsterpartiet (Ali Esbati m.fl.), Motion 2021/22:464 Strejkrätt, föreningsrätt och integritet i arbetslivet, 2021",
+      "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/strejkratt-foreningsratt-och-integritet-i_h902464/",
+      "quote": "Vänsterpartiet vill riva upp de begränsningar av strejkrätten som infördes 2019",
+      "confidence": "high"
+    },
+    {
+      "questionKey": "arbete-strejkratt",
+      "partyCode": "S",
+      "value": 1,
+      "motivation": "S vill inte röra konflikträtten och försvarar den svenska modellen där parterna själva tar ansvar för fredsplikten. Partiet avvisar både proportionalitetsprincip och begränsade sympatiåtgärder.",
+      "sourceCitation": "Arbetsvärlden, Regeringen vill se strejkrätten inskränkt, 2023",
+      "sourceUrl": "https://www.arbetsvarlden.se/regeringen-vill-se-strejkratten-inskrankt/",
+      "quote": "Det finns inga som helst skäl att peta i konflikträtten.",
+      "confidence": "high"
+    },
+    {
+      "questionKey": "arbete-strejkratt",
+      "partyCode": "MP",
+      "value": 1,
+      "motivation": "MP vill inte begränsa strejkrätten och kallar ytterligare inskränkningar en extrem försvagning av demokratin. Partiet kritiserar arbetsgivarsidans krav på proportionalitetsprincip.",
+      "sourceCitation": "Arbetsvärlden, Regeringen vill se strejkrätten inskränkt, 2023",
+      "sourceUrl": "https://www.arbetsvarlden.se/regeringen-vill-se-strejkratten-inskrankt/",
+      "quote": "extrem försvagning i demokratin",
+      "confidence": "high"
+    },
+    {
+      "questionKey": "arbete-strejkratt",
+      "partyCode": "C",
+      "value": 4,
+      "motivation": "C vill se en bred översyn av konfliktreglerna med både en proportionalitetsprincip och begränsade sympatiåtgärder, bland annat för att skydda små företag som dras in i andras konflikter.",
+      "sourceCitation": "Arbetsvärlden, Regeringen vill se strejkrätten inskränkt, 2023",
+      "sourceUrl": "https://www.arbetsvarlden.se/regeringen-vill-se-strejkratten-inskrankt/",
+      "quote": null,
+      "confidence": "high"
+    },
+    {
+      "questionKey": "arbete-strejkratt",
+      "partyCode": "L",
+      "value": 4,
+      "motivation": "L vill begränsa sympatiåtgärder och införa en proportionalitetsprincip och hänvisar till Danmark och Norge där det krävs tydligt samband mellan primär- och sekundäråtgärd.",
+      "sourceCitation": "Arbetsvärlden, Regeringen vill se strejkrätten inskränkt, 2023",
+      "sourceUrl": "https://www.arbetsvarlden.se/regeringen-vill-se-strejkratten-inskrankt/",
+      "quote": "I flera länder, så som Danmark och Norge, ställs det också krav på tydligt samband mellan primär- och sekundäråtgärd.",
+      "confidence": "high"
+    },
+    {
+      "questionKey": "arbete-strejkratt",
+      "partyCode": "KD",
+      "value": 3,
+      "motivation": "KD vill se en proportionalitetsprincip och begränsade sympatiåtgärder men betonar att parterna i första hand bör lösa frågan själva, med lagstiftning som andrahandsalternativ. Förslagen ingår inte i Tidöavtalet.",
+      "sourceCitation": "Arbetsvärlden, Regeringen vill se strejkrätten inskränkt, 2023",
+      "sourceUrl": "https://www.arbetsvarlden.se/regeringen-vill-se-strejkratten-inskrankt/",
+      "quote": "Förslagen ingår inte i Tidö-avtalet",
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "arbete-strejkratt",
+      "partyCode": "M",
+      "value": 3,
+      "motivation": "M ser positivt på en proportionalitetsprincip för stridsåtgärder och enskilda M-ledamöter har motionerat om saken, men partiet prioriterar inte frågan under innevarande mandatperiod.",
+      "sourceCitation": "Arbetsvärlden, Regeringen vill se strejkrätten inskränkt, 2023",
+      "sourceUrl": "https://www.arbetsvarlden.se/regeringen-vill-se-strejkratten-inskrankt/",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "arbete-strejkratt",
+      "partyCode": "SD",
+      "value": null,
+      "motivation": "SD tar inte ställning för eller emot en begränsad strejkrätt utan vill först se en bred utredning av konsekvenserna. Partiet avböjde att svara ja eller nej när riksdagspartierna tillfrågades, trots att enskilda SD-motioner berört sympatiåtgärder.",
+      "sourceCitation": "Arbetsvärlden, Regeringen vill se strejkrätten inskränkt, 2023",
+      "sourceUrl": "https://www.arbetsvarlden.se/regeringen-vill-se-strejkratten-inskrankt/",
+      "quote": null,
+      "confidence": "medium"
+    }
+  ],
+  "explanations": [
+    {
+      "questionKey": "arbete-ingangsloner",
+      "explanation": "I Sverige sätts ingångslönerna av fack och arbetsgivare i kollektivavtal, inte i lag. Parternas etableringsjobb med lägre lön för nyanlända och långtidsarbetslösa infördes 2022, medan flera borgerliga partier har velat gå längre med lagstadgade inträdesjobb till lägre ingångslön.",
+      "sourceUrl": "https://www.riksdagen.se/sv/dokument-lagar/dokument/proposition/forutsattningar-for-etableringsjobb-och-vissa_H703117",
+      "sourceCitation": "Regeringen, Proposition 2019/20:117 Förutsättningar för etableringsjobb, 2020",
+      "quote": null,
+      "confidence": "high"
+    },
+    {
+      "questionKey": "arbete-strejkratt",
+      "explanation": "Strejkrätten begränsades senast 2019, då stridsåtgärder mot arbetsgivare med kollektivavtal inskränktes efter en överenskommelse mellan parterna. Regeringspartierna M, KD och L samt C har därefter uttryckt att de vill gå längre med en proportionalitetsprincip och begränsade sympatiåtgärder, medan S, V och MP avvisar ytterligare inskränkningar.",
+      "sourceUrl": "https://www.arbetsvarlden.se/regeringen-vill-se-strejkratten-inskrankt/",
+      "sourceCitation": "Arbetsvärlden, Regeringen vill se strejkrätten inskränkt, 2023",
+      "quote": null,
+      "confidence": "high"
+    }
+  ]
+}

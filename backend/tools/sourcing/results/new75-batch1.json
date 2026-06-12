@@ -1,0 +1,450 @@
+{
+  "sources": [
+    {
+      "questionKey": "sjukvard-dodshjalp",
+      "partyCode": "V",
+      "value": 2,
+      "motivation": "V har inte tagit tydlig ställning för att tillåta dödshjälp; partistyrelsen har stött kravet på en utredning men partiet har samtidigt ansett att dödshjälp bör förbli förbjudet.",
+      "sourceCitation": "Senioren, Utredning av dödshjälp rycker närmare, 2022",
+      "sourceUrl": "https://www.senioren.se/nyheter/utredning-av-dodshjalp-rycker-narmare/",
+      "quote": "det vore bra att kunna bemöta det med lite mer fakta",
+      "confidence": "low"
+    },
+    {
+      "questionKey": "sjukvard-dodshjalp",
+      "partyCode": "S",
+      "value": 1,
+      "motivation": "S motsätter sig en legalisering av aktiv dödshjälp och vill inte heller tillsätta någon parlamentarisk utredning, med hänvisning till risken att svårt sjuka känner press att inte ligga samhället och anhöriga till last.",
+      "sourceCitation": "Människovärde, Vad anser politiska partier om dödshjälp?, 2022",
+      "sourceUrl": "https://manniskovarde.se/vad-anser-politiska-partier-om-dodshjalp/",
+      "quote": "Det finns risker med att legalisera dödshjälp. Patienten kan känna att den ligger både samhället och de anhöriga till last",
+      "confidence": "high"
+    },
+    {
+      "questionKey": "sjukvard-dodshjalp",
+      "partyCode": "MP",
+      "value": null,
+      "motivation": "MP var 2015 första parti att kräva en utredning av dödshjälp men har ingen officiell position för eller emot ett tillåtande, utan vill att frågan belyses i en parlamentarisk utredning.",
+      "sourceCitation": "Sjukhusläkaren, Så tycker partierna om dödshjälp, 2019",
+      "sourceUrl": "https://www.sjukhuslakaren.se/sa-tycker-partierna-om-dodshjalp/",
+      "quote": null,
+      "confidence": "low"
+    },
+    {
+      "questionKey": "sjukvard-dodshjalp",
+      "partyCode": "C",
+      "value": 2,
+      "motivation": "C sade länge nej till dödshjälp men partistämman 2023 beslutade att C ska driva på för att aktiv dödshjälp utreds; partiet har dock inte tagit ställning för att tillåta dödshjälp.",
+      "sourceCitation": "Altinget, Centerpartiet svänger om dödshjälp, 2023",
+      "sourceUrl": "https://www.altinget.se/vard/artikel/centerpartiet-svanger-om-dodshjalp",
+      "quote": "Centerpartiet vill att frågan om aktiv dödshjälp ska utredas.",
+      "confidence": "low"
+    },
+    {
+      "questionKey": "sjukvard-dodshjalp",
+      "partyCode": "L",
+      "value": 3,
+      "motivation": "L är det parti som tydligast öppnat för dödshjälp: partiet vill utreda möjligheten att införa frivillig dödshjälp och att en statlig utredning analyserar juridiska, medicinska och etiska frågor innan slutlig ställning tas.",
+      "sourceCitation": "Liberalerna, Frivillig dödshjälp (Vår politik), 2025",
+      "sourceUrl": "https://www.liberalerna.se/politik/frivillig-dodshjalp",
+      "quote": "Liberalerna vill först genomföra en statlig utredning som analyserar juridiska, medicinska och etiska frågor",
+      "confidence": "high"
+    },
+    {
+      "questionKey": "sjukvard-dodshjalp",
+      "partyCode": "KD",
+      "value": 1,
+      "motivation": "KD anser att aktiv dödshjälp ska förbli förbjuden och motsätter sig även en parlamentarisk utredning; vårdens uppgift är enligt partiet att bota, lindra och trösta – inte att avsluta liv.",
+      "sourceCitation": "Människovärde, Vad anser politiska partier om dödshjälp?, 2022",
+      "sourceUrl": "https://manniskovarde.se/vad-anser-politiska-partier-om-dodshjalp/",
+      "quote": "Sjukvårdens uppgift är att bota, lindra och trösta. Aktiv dödshjälp är, och skall fortsatt vara förbjudet",
+      "confidence": "high"
+    },
+    {
+      "questionKey": "sjukvard-dodshjalp",
+      "partyCode": "M",
+      "value": 2,
+      "motivation": "M säger nej till att legalisera dödshjälp men beskriver frågan som komplex, har berett den i en intern arbetsgrupp och har ställt sig bakom att frågan utreds.",
+      "sourceCitation": "Människovärde, Vad anser politiska partier om dödshjälp?, 2022",
+      "sourceUrl": "https://manniskovarde.se/vad-anser-politiska-partier-om-dodshjalp/",
+      "quote": null,
+      "confidence": "low"
+    },
+    {
+      "questionKey": "sjukvard-dodshjalp",
+      "partyCode": "SD",
+      "value": 2,
+      "motivation": "SD har historiskt motsatt sig aktiv dödshjälp men har ställt sig bakom kravet på en statlig utredning av frågan, utan att ta ställning för ett tillåtande.",
+      "sourceCitation": "Människovärde, Vad anser politiska partier om dödshjälp?, 2022",
+      "sourceUrl": "https://manniskovarde.se/vad-anser-politiska-partier-om-dodshjalp/",
+      "quote": null,
+      "confidence": "low"
+    },
+
+    {
+      "questionKey": "sjukvard-surrogat",
+      "partyCode": "V",
+      "value": 1,
+      "motivation": "V motsätter sig att surrogatmödraskap tillåts i Sverige och vill i stället stärka barnperspektivet och skärpa kontrollen av förmedlingsbyråer, med hänvisning till risken att kvinnor exploateras.",
+      "sourceCitation": "SVT Nyheter, Så tycker partierna i surrogatfrågan, 2024",
+      "sourceUrl": "https://www.svt.se/nyheter/inrikes/sa-tycker-partierna-i-surrogatfragan",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "sjukvard-surrogat",
+      "partyCode": "S",
+      "value": 1,
+      "motivation": "S säger nej till surrogatmödraskap både i Sverige och internationellt, eftersom partiet ser risker för att kvinnor utnyttjas och pressas att bära barn åt andra.",
+      "sourceCitation": "SVT Nyheter, Så tycker partierna i surrogatfrågan, 2024",
+      "sourceUrl": "https://www.svt.se/nyheter/inrikes/sa-tycker-partierna-i-surrogatfragan",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "sjukvard-surrogat",
+      "partyCode": "MP",
+      "value": null,
+      "motivation": "MP är det enda riksdagsparti som inte tagit ställning till altruistiskt surrogatmödraskap; partiet vill dock att kommersiella surrogatarrangemang även fortsatt ska vara otillåtna.",
+      "sourceCitation": "SVT Nyheter, Så tycker partierna i surrogatfrågan, 2024",
+      "sourceUrl": "https://www.svt.se/nyheter/inrikes/sa-tycker-partierna-i-surrogatfragan",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "sjukvard-surrogat",
+      "partyCode": "C",
+      "value": 4,
+      "motivation": "C vill tillåta altruistiskt surrogatmödraskap i Sverige och förenkla de juridiska processerna kring föräldraskapet för att ge barn som föds genom surrogatarrangemang bättre rättslig trygghet.",
+      "sourceCitation": "SVT Nyheter, Så tycker partierna i surrogatfrågan, 2024",
+      "sourceUrl": "https://www.svt.se/nyheter/inrikes/sa-tycker-partierna-i-surrogatfragan",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "sjukvard-surrogat",
+      "partyCode": "L",
+      "value": 4,
+      "motivation": "L vill legalisera altruistiskt surrogatmödraskap i Sverige, under förutsättning att surrogatmodern ställer upp frivilligt och utan betalning och att arrangemanget har en tydlig rättslig grund.",
+      "sourceCitation": "SVT Nyheter, Så tycker partierna i surrogatfrågan, 2024",
+      "sourceUrl": "https://www.svt.se/nyheter/inrikes/sa-tycker-partierna-i-surrogatfragan",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "sjukvard-surrogat",
+      "partyCode": "KD",
+      "value": 1,
+      "motivation": "KD motsätter sig att surrogatmödraskap legaliseras i Sverige och anser att dagens ordning, där surrogatarrangemang inte tillåts inom svensk sjukvård, bör bestå.",
+      "sourceCitation": "SVT Nyheter, Så tycker partierna i surrogatfrågan, 2024",
+      "sourceUrl": "https://www.svt.se/nyheter/inrikes/sa-tycker-partierna-i-surrogatfragan",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "sjukvard-surrogat",
+      "partyCode": "M",
+      "value": 4,
+      "motivation": "M vill ändra lagen så att altruistiskt surrogatmödraskap tillåts i Sverige, för att hjälpa fler ofrivilligt barnlösa par att bli föräldrar.",
+      "sourceCitation": "SVT Nyheter, Så tycker partierna i surrogatfrågan, 2024",
+      "sourceUrl": "https://www.svt.se/nyheter/inrikes/sa-tycker-partierna-i-surrogatfragan",
+      "quote": "Genom att tillåta altruistiskt surrogatmoderskap i Sverige skulle vi hjälpa fler ofrivilligt barnlösa par att kunna bli föräldrar.",
+      "confidence": "high"
+    },
+    {
+      "questionKey": "sjukvard-surrogat",
+      "partyCode": "SD",
+      "value": 1,
+      "motivation": "SD motsätter sig helt att surrogatmödraskap tillåts, även i altruistisk form, med motiveringen att barn inte ska hanteras som handelsvaror och kvinnor inte betraktas som barnfabriker.",
+      "sourceCitation": "SVT Nyheter, Så tycker partierna i surrogatfrågan, 2024",
+      "sourceUrl": "https://www.svt.se/nyheter/inrikes/sa-tycker-partierna-i-surrogatfragan",
+      "quote": "Barn inte ska hanteras som handelsvaror och kvinnor ska aldrig betraktas som barnfabriker.",
+      "confidence": "high"
+    },
+
+    {
+      "questionKey": "lag-preventiv-avlyssning",
+      "partyCode": "V",
+      "value": 1,
+      "motivation": "V yrkade avslag på regeringens proposition om utökade preventiva tvångsmedel och motsätter sig att polisen får avlyssna personer som inte är misstänkta för något konkret brott, med hänvisning till integritet och rättssäkerhet.",
+      "sourceCitation": "Sveriges riksdag, Betänkande 2023/24:JuU24 Preventiva tvångsmedel för att förebygga och förhindra allvarliga brott, 2024",
+      "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/preventiva-tvangsmedel-for-att-forebygga-och_hb01juu24/",
+      "quote": null,
+      "confidence": "high"
+    },
+    {
+      "questionKey": "lag-preventiv-avlyssning",
+      "partyCode": "S",
+      "value": 4,
+      "motivation": "S står bakom att polisen får använda preventiva tvångsmedel som hemlig avlyssning mot personer i gängmiljö utan konkret brottsmisstanke, men vill se utvärdering av lagstiftningen och starkare rättssäkerhetsgarantier.",
+      "sourceCitation": "Sveriges riksdag, Betänkande 2023/24:JuU24 Preventiva tvångsmedel för att förebygga och förhindra allvarliga brott, 2024",
+      "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/preventiva-tvangsmedel-for-att-forebygga-och_hb01juu24/",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "lag-preventiv-avlyssning",
+      "partyCode": "MP",
+      "value": 2,
+      "motivation": "MP accepterar viss preventiv tvångsmedelsanvändning men ville avslå de mest ingripande delarna, som preventiv hemlig rumsavlyssning och att tillstånd knyts till en person, eftersom oskyldigas privatliv riskerar att kränkas.",
+      "sourceCitation": "Miljöpartiet, Motion 2023/24:2876 med anledning av prop. 2023/24:117, 2024",
+      "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/med-anledning-av-prop-202324117-preventiva_hb022876/",
+      "quote": "finns inget sätt att kontrollera vem personen interagerar med, vilket kan leda till att man i onödan allvarligt kränker oskyldiga personers rätt till privatliv",
+      "confidence": "high"
+    },
+    {
+      "questionKey": "lag-preventiv-avlyssning",
+      "partyCode": "C",
+      "value": 3,
+      "motivation": "C accepterar preventiva tvångsmedel mot organiserad brottslighet men anser att regeringens utvidgning gick för långt och vill begränsa tillämpningen, stärka oberoende tillsyn och göra en samlad översyn av reglerna.",
+      "sourceCitation": "Centerpartiet, Motion 2023/24:2879 med anledning av prop. 2023/24:117, 2024",
+      "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/med-anledning-av-prop-202324117-preventiva_hb022879/",
+      "quote": "Åtgärderna kan användas utan att det finns ett brott begånget, eller en konkret misstanke om brott, eller en misstänkt person",
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "lag-preventiv-avlyssning",
+      "partyCode": "L",
+      "value": 4,
+      "motivation": "L stod som regeringsparti bakom propositionen om utökade preventiva tvångsmedel och vill att polisen ska kunna använda hemlig avlyssning i förebyggande syfte mot bland annat gängkriminella, utan konkret brottsmisstanke.",
+      "sourceCitation": "Sveriges riksdag, Betänkande 2023/24:JuU24 Preventiva tvångsmedel för att förebygga och förhindra allvarliga brott, 2024",
+      "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/preventiva-tvangsmedel-for-att-forebygga-och_hb01juu24/",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "lag-preventiv-avlyssning",
+      "partyCode": "KD",
+      "value": 4,
+      "motivation": "KD stod som regeringsparti bakom de utökade preventiva tvångsmedlen och anser att hemlig avlyssning i förebyggande syfte behövs för att stoppa gängens grova brottslighet innan brott begås.",
+      "sourceCitation": "Sveriges riksdag, Betänkande 2023/24:JuU24 Preventiva tvångsmedel för att förebygga och förhindra allvarliga brott, 2024",
+      "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/preventiva-tvangsmedel-for-att-forebygga-och_hb01juu24/",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "lag-preventiv-avlyssning",
+      "partyCode": "M",
+      "value": 4,
+      "motivation": "M har med justitieminister Gunnar Strömmer drivit igenom lagstiftningen som ger polisen utökade möjligheter till preventiv hemlig avlyssning utan konkret brottsmisstanke, som ett centralt verktyg mot gängkriminaliteten.",
+      "sourceCitation": "Sveriges riksdag, Betänkande 2023/24:JuU24 Preventiva tvångsmedel för att förebygga och förhindra allvarliga brott, 2024",
+      "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/preventiva-tvangsmedel-for-att-forebygga-och_hb01juu24/",
+      "quote": null,
+      "confidence": "high"
+    },
+    {
+      "questionKey": "lag-preventiv-avlyssning",
+      "partyCode": "SD",
+      "value": 4,
+      "motivation": "SD har inom Tidösamarbetet drivit på för preventiva tvångsmedel och stödde propositionen fullt ut; partiet vill att polisen ska kunna avlyssna gängkriminella i förebyggande syfte utan konkret brottsmisstanke.",
+      "sourceCitation": "Sveriges riksdag, Betänkande 2023/24:JuU24 Preventiva tvångsmedel för att förebygga och förhindra allvarliga brott, 2024",
+      "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/preventiva-tvangsmedel-for-att-forebygga-och_hb01juu24/",
+      "quote": null,
+      "confidence": "high"
+    },
+
+    {
+      "questionKey": "lag-narkotika-avkriminalisera",
+      "partyCode": "V",
+      "value": 4,
+      "motivation": "V vill avkriminalisera själva bruket av narkotika för att minska stigmatiseringen av personer med beroende och låta polisen fokusera på langning och grova narkotikabrott; innehav och försäljning ska dock förbli olagligt.",
+      "sourceCitation": "Vänsterpartiet, Politik A–Ö: Droger och beroende, 2025",
+      "sourceUrl": "https://www.vansterpartiet.se/var-politik/politik-a-o/droger-och-beroende/",
+      "quote": "Det innebär att det inte ska vara olagligt att vara påverkad, men innehav av narkotika ska fortsätta vara olagligt.",
+      "confidence": "high"
+    },
+    {
+      "questionKey": "lag-narkotika-avkriminalisera",
+      "partyCode": "S",
+      "value": 1,
+      "motivation": "S håller fast vid kriminaliseringen av eget bruk och är uttryckligen emot både legalisering och avkriminalisering, eftersom partiet bedömer att narkotikaanvändningen och skadorna annars riskerar att öka.",
+      "sourceCitation": "Socialdemokraterna, Vår politik A till Ö: Narkotika, 2025",
+      "sourceUrl": "https://www.socialdemokraterna.se/var-politik/a-till-o/narkotika",
+      "quote": "Socialdemokraterna är därmed emot såväl legalisering som avkriminalisering av samtliga idag förbjudna droger.",
+      "confidence": "high"
+    },
+    {
+      "questionKey": "lag-narkotika-avkriminalisera",
+      "partyCode": "MP",
+      "value": 2,
+      "motivation": "MP tar inte ställning för avkriminalisering men vill utvärdera narkotikastrafflagen i linje med SKR:s rekommendation, för att flytta fokus från straff till vård och göra det lättare för personer med beroende att söka hjälp.",
+      "sourceCitation": "Alkohol & Narkotika, Valenkät: Är det dags att avkriminalisera eget bruk?, 2022",
+      "sourceUrl": "https://www.alkoholochnarkotika.se/politik/alkohol-narkotikas-valenkat-ar-det-dags-att-avkriminalisera-eget-bruk/",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "lag-narkotika-avkriminalisera",
+      "partyCode": "C",
+      "value": 3,
+      "motivation": "C beslutade på partistämman 2025 att verka för att avkriminalisera förekomsten av narkotika i kroppen, det vill säga själva ruspåverkan, men vill inte avkriminalisera innehav eller legalisera narkotika.",
+      "sourceCitation": "SVT Nyheter, Centerpartiet vill avkriminalisera narkotika i kroppen, 2025",
+      "sourceUrl": "https://www.svt.se/nyheter/inrikes/centerpartiet-vill-avkriminalisera-narkotika-i-kroppen",
+      "quote": "Centerpartiets ombud på Centerstämman har beslutat att partiet ska verka för att avkriminalisera förekomsten av narkotika i kroppen.",
+      "confidence": "high"
+    },
+    {
+      "questionKey": "lag-narkotika-avkriminalisera",
+      "partyCode": "L",
+      "value": 1,
+      "motivation": "L vill att eget bruk och innehav av narkotika även fortsatt ska vara kriminaliserat i hela kedjan från produktion till bruk, bland annat för att tidigt kunna upptäcka missbruk och strypa de kriminellas inkomster.",
+      "sourceCitation": "Alkohol & Narkotika, Valenkät: Är det dags att avkriminalisera eget bruk?, 2022",
+      "sourceUrl": "https://www.alkoholochnarkotika.se/politik/alkohol-narkotikas-valenkat-ar-det-dags-att-avkriminalisera-eget-bruk/",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "lag-narkotika-avkriminalisera",
+      "partyCode": "KD",
+      "value": 1,
+      "motivation": "KD står för en restriktiv narkotikapolitik och säger nej till att avkriminalisera eget bruk; partiet vill stoppa det man ser som tendenser till drogliberalisering.",
+      "sourceCitation": "Alkohol & Narkotika, Valenkät: Är det dags att avkriminalisera eget bruk?, 2022",
+      "sourceUrl": "https://www.alkoholochnarkotika.se/politik/alkohol-narkotikas-valenkat-ar-det-dags-att-avkriminalisera-eget-bruk/",
+      "quote": "Vi står för en restriktiv narkotikapolitik och är emot både legalisering och avkriminalisering",
+      "confidence": "high"
+    },
+    {
+      "questionKey": "lag-narkotika-avkriminalisera",
+      "partyCode": "M",
+      "value": 1,
+      "motivation": "M vill behålla kriminaliseringen av eget bruk och menar att förbudet sänder en viktig signal, särskilt till barn och unga, samtidigt som narkotikahandeln göder gängkriminaliteten.",
+      "sourceCitation": "Alkohol & Narkotika, Valenkät: Är det dags att avkriminalisera eget bruk?, 2022",
+      "sourceUrl": "https://www.alkoholochnarkotika.se/politik/alkohol-narkotikas-valenkat-ar-det-dags-att-avkriminalisera-eget-bruk/",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "lag-narkotika-avkriminalisera",
+      "partyCode": "SD",
+      "value": 1,
+      "motivation": "SD säger nej till att avkriminalisera eget bruk av narkotika och förespråkar en fortsatt restriktiv narkotikapolitik och narkotikalagstiftning.",
+      "sourceCitation": "Accent, Så vill riksdagspartierna forma narkotikapolitiken, 2018",
+      "sourceUrl": "https://accentmagasin.se/politik/sa-vill-partierna-forma-narkotikapolitiken/",
+      "quote": null,
+      "confidence": "medium"
+    },
+
+    {
+      "questionKey": "migration-tiggeriforbud",
+      "partyCode": "V",
+      "value": 1,
+      "motivation": "V säger nej till både nationellt och kommunala tiggeriförbud och ser tiggeriet som ett uttryck för fattigdom och social nöd som ska bekämpas med sociala insatser, inte med förbud.",
+      "sourceCitation": "SVT Nyheter, Så tycker partierna om tiggeri, 2018",
+      "sourceUrl": "https://www.svt.se/nyheter/inrikes/sa-tycker-partierna-om-tiggeri",
+      "quote": "ett tecken på en akut social katastrof i dagens Europa",
+      "confidence": "high"
+    },
+    {
+      "questionKey": "migration-tiggeriforbud",
+      "partyCode": "S",
+      "value": 1,
+      "motivation": "S säger nej till ett nationellt tiggeriförbud men vill se över ordningslagen så att samma regler gäller i alla kommuner; frågan har dock splittrat partiet internt och vissa S-kommunpolitiker vill ha förbud.",
+      "sourceCitation": "SVT Nyheter, Så tycker partierna om tiggeri, 2018",
+      "sourceUrl": "https://www.svt.se/nyheter/inrikes/sa-tycker-partierna-om-tiggeri",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "migration-tiggeriforbud",
+      "partyCode": "MP",
+      "value": 1,
+      "motivation": "MP motsätter sig tiggeriförbud, både nationella och kommunala, och menar att fattigdom inte kan lagstiftas bort genom att förbjuda människor att be om hjälp.",
+      "sourceCitation": "SVT Nyheter, Så tycker partierna om tiggeri, 2018",
+      "sourceUrl": "https://www.svt.se/nyheter/inrikes/sa-tycker-partierna-om-tiggeri",
+      "quote": "Det går inte att lagstifta bort fattigdom genom att förbjuda människor att be om hjälp.",
+      "confidence": "high"
+    },
+    {
+      "questionKey": "migration-tiggeriforbud",
+      "partyCode": "C",
+      "value": 1,
+      "motivation": "C är emot både nationellt och kommunala tiggeriförbud och vill i stället angripa orsakerna, bland annat genom att hemländer som Rumänien och Bulgarien använder EU:s socialfonder för att minska fattigdomen.",
+      "sourceCitation": "SVT Nyheter, Så tycker partierna om tiggeri, 2018",
+      "sourceUrl": "https://www.svt.se/nyheter/inrikes/sa-tycker-partierna-om-tiggeri",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "migration-tiggeriforbud",
+      "partyCode": "L",
+      "value": 1,
+      "motivation": "L motsätter sig ett tiggeriförbud och har beskrivit utredningen om ett nationellt förbud som en av de mest svårsmälta punkterna i Tidöavtalet; partiet menar att förbud inte löser fattigdomen.",
+      "sourceCitation": "SVT Nyheter, Så tycker partierna om tiggeri, 2018",
+      "sourceUrl": "https://www.svt.se/nyheter/inrikes/sa-tycker-partierna-om-tiggeri",
+      "quote": "Tiggeri är ingen lösning på fattigdomen, men lösningen ligger inte heller i förbud.",
+      "confidence": "high"
+    },
+    {
+      "questionKey": "migration-tiggeriforbud",
+      "partyCode": "KD",
+      "value": 2,
+      "motivation": "KD vill att kommuner ska kunna begränsa eller förbjuda tiggeri lokalt genom ordningsföreskrifter, men har varit tveksamt till ett nationellt förbud i hela landet.",
+      "sourceCitation": "SVT Nyheter, Så tycker partierna om tiggeri, 2018",
+      "sourceUrl": "https://www.svt.se/nyheter/inrikes/sa-tycker-partierna-om-tiggeri",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "migration-tiggeriforbud",
+      "partyCode": "M",
+      "value": 4,
+      "motivation": "M vill införa ett nationellt förbud mot tiggeri och har som regeringsparti låtit utreda frågan (SOU 2025:83); partiet anser att tiggeri inte är en väg ur fattigdom.",
+      "sourceCitation": "SVT Nyheter, Så tycker partierna om tiggeri, 2018",
+      "sourceUrl": "https://www.svt.se/nyheter/inrikes/sa-tycker-partierna-om-tiggeri",
+      "quote": "Ja, Moderaterna vill införa ett nationellt förbud mot tiggeri.",
+      "confidence": "high"
+    },
+    {
+      "questionKey": "migration-tiggeriforbud",
+      "partyCode": "SD",
+      "value": 4,
+      "motivation": "SD har länge krävt ett nationellt tiggeriförbud, fick in en utredning av förbudet i Tidöavtalet och vill kriminalisera tiggeri i hela landet; kommunala förbud ses bara som ett näst bästa alternativ.",
+      "sourceCitation": "SVT Nyheter, Utredare: Inget behov av nationellt tiggeriförbud, 2025",
+      "sourceUrl": "https://www.svt.se/nyheter/inrikes/utredning-om-nationellt-tiggeriforbud-overlamnas",
+      "quote": null,
+      "confidence": "high"
+    }
+  ],
+  "explanations": [
+    {
+      "questionKey": "sjukvard-dodshjalp",
+      "explanation": "Aktiv dödshjälp är i dag förbjuden i Sverige och den som avsiktligt avslutar en patients liv kan dömas för brott, medan patienter har rätt att tacka nej till livsuppehållande behandling. Flera partier har på senare år öppnat för att frågan ska utredas.",
+      "sourceUrl": "https://www.svt.se/nyheter/inrikes/flera-partier-utreder-fragan-om-dodshjalp",
+      "sourceCitation": "SVT Nyheter, Flera partier arbetar med frågan om dödshjälp, 2020",
+      "quote": null,
+      "confidence": "high"
+    },
+    {
+      "questionKey": "sjukvard-surrogat",
+      "explanation": "Surrogatarrangemang är inte straffbara i Sverige men tillåts inte inom svensk sjukvård, och kvinnan som föder barnet räknas juridiskt som dess mor. Frågan delar riksdagen: M, L och C vill tillåta altruistiskt surrogatmödraskap medan S, V, KD och SD säger nej.",
+      "sourceUrl": "https://www.svt.se/nyheter/inrikes/sa-tycker-partierna-i-surrogatfragan",
+      "sourceCitation": "SVT Nyheter, Så tycker partierna i surrogatfrågan, 2024",
+      "quote": null,
+      "confidence": "high"
+    },
+    {
+      "questionKey": "lag-preventiv-avlyssning",
+      "explanation": "Riksdagen har stegvis utökat polisens möjligheter att använda preventiva tvångsmedel, till exempel hemlig avlyssning och rumsavlyssning, för att förebygga allvarlig brottslighet utan att det finns en konkret brottsmisstanke; den senaste stora utvidgningen beslutades i juni 2024.",
+      "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/preventiva-tvangsmedel-for-att-forebygga-och_hb01juu24/",
+      "sourceCitation": "Sveriges riksdag, Betänkande 2023/24:JuU24 Preventiva tvångsmedel för att förebygga och förhindra allvarliga brott, 2024",
+      "quote": null,
+      "confidence": "high"
+    },
+    {
+      "questionKey": "lag-narkotika-avkriminalisera",
+      "explanation": "Eget bruk av narkotika är kriminaliserat i Sverige och kan ge böter eller fängelse. Det finns ingen riksdagsmajoritet för avkriminalisering, även om V och C vill avkriminalisera själva ruspåverkan och MP vill utvärdera narkotikastrafflagen.",
+      "sourceUrl": "https://www.alkoholochnarkotika.se/politik/alkohol-narkotikas-valenkat-ar-det-dags-att-avkriminalisera-eget-bruk/",
+      "sourceCitation": "Alkohol & Narkotika, Valenkät: Är det dags att avkriminalisera eget bruk?, 2022",
+      "quote": null,
+      "confidence": "medium"
+    },
+    {
+      "questionKey": "migration-tiggeriforbud",
+      "explanation": "Det finns i dag inget nationellt tiggeriförbud i Sverige, men ett tjugotal kommuner har infört lokala förbud via ordningsföreskrifter. Utredningen SOU 2025:83, tillsatt av Tidöpartierna, bedömde 2025 att ett nationellt förbud inte behövs eftersom tiggeriet minskat kraftigt.",
+      "sourceUrl": "https://www.svt.se/nyheter/inrikes/utredning-om-nationellt-tiggeriforbud-overlamnas",
+      "sourceCitation": "SVT Nyheter, Utredare: Inget behov av nationellt tiggeriförbud, 2025",
+      "quote": "Det behövs inte",
+      "confidence": "high"
+    }
+  ]
+}
