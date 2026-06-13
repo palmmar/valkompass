@@ -15,6 +15,7 @@ public static class DependencyInjection
                    .UseSnakeCaseNamingConvention());
 
         services.AddScoped<IQuizService, QuizService>();
+        services.AddScoped<IBarometerService, BarometerService>();
 
         return services;
     }

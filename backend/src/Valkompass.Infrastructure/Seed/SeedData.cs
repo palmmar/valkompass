@@ -1,3 +1,4 @@
+using System.Globalization;
 using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
 using Valkompass.Domain.Entities;
@@ -134,6 +135,105 @@ public static class SeedData
         await db.SaveChangesAsync(ct);
     }
 
+    /// <summary>
+    /// Idempotent seedning av valbarometerns opinionsdata från polls.json. Upsertar på
+    /// naturliga nycklar (institutkod, mätningens externalKey, (mätning, parti)) så att
+    /// omkörning är säker. Helt fristående från quiz/resultat. Partier under
+    /// redovisningsgräns lagras som null (aldrig 0).
+    /// </summary>
+    public static async Task SeedBarometerAsync(AppDbContext db, CancellationToken ct = default)
+    {
+        var now = DateTimeOffset.UtcNow;
+        var doc = LoadObject<BarometerSeed>("polls.json");
+
+        // --- Institut (upsert på code) ---
+        var pollsters = await db.Pollsters.ToDictionaryAsync(p => p.Code, ct);
+        foreach (var ps in doc.Pollsters)
+        {
+            if (pollsters.TryGetValue(ps.Code, out var entity))
+            {
+                entity.DisplayName = ps.DisplayName;
+                entity.Method = ps.Method;
+                entity.Commissioner = ps.Commissioner;
+                entity.UpdatedAt = now;
+            }
+            else
+            {
+                db.Pollsters.Add(new Pollster
+                {
+                    Code = ps.Code, DisplayName = ps.DisplayName,
+                    Method = ps.Method, Commissioner = ps.Commissioner, UpdatedAt = now,
+                });
+            }
+        }
+        await db.SaveChangesAsync(ct);
+
+        // --- Mätningar (upsert på externalKey) ---
+        var pollsterIdByCode = await db.Pollsters.ToDictionaryAsync(p => p.Code, p => p.Id, ct);
+        var existingPolls = await db.Polls.ToDictionaryAsync(p => p.ExternalKey, ct);
+        foreach (var p in doc.Polls)
+        {
+            if (!pollsterIdByCode.TryGetValue(p.PollsterCode, out var pollsterId)) continue;
+
+            var published = DateOnly.ParseExact(p.PublishedAt, "yyyy-MM-dd", CultureInfo.InvariantCulture);
+            var fieldStart = ParseDateOrNull(p.FieldStart);
+            var fieldEnd = ParseDateOrNull(p.FieldEnd);
+
+            if (existingPolls.TryGetValue(p.ExternalKey, out var entity))
+            {
+                entity.PollsterId = pollsterId;
+                entity.FieldStart = fieldStart; entity.FieldEnd = fieldEnd;
+                entity.PublishedAt = published; entity.SampleSize = p.SampleSize;
+                entity.SourceUrl = p.SourceUrl; entity.SourceCitation = p.SourceCitation;
+                entity.UpdatedAt = now;
+            }
+            else
+            {
+                db.Polls.Add(new Poll
+                {
+                    ExternalKey = p.ExternalKey, PollsterId = pollsterId,
+                    FieldStart = fieldStart, FieldEnd = fieldEnd, PublishedAt = published,
+                    SampleSize = p.SampleSize, SourceUrl = p.SourceUrl,
+                    SourceCitation = p.SourceCitation, UpdatedAt = now,
+                });
+            }
+        }
+        await db.SaveChangesAsync(ct);
+
+        // --- Partiresultat (upsert på (mätning, parti)) ---
+        var partyIdByCode = await db.Parties.ToDictionaryAsync(p => p.Code, p => p.Id, ct);
+        var pollIdByKey = await db.Polls.ToDictionaryAsync(p => p.ExternalKey, p => p.Id, ct);
+        var resultByKey = (await db.PollResults.ToListAsync(ct)).ToDictionary(r => (r.PollId, r.PartyId));
+        foreach (var p in doc.Polls)
+        {
+            if (!pollIdByKey.TryGetValue(p.ExternalKey, out var pollId)) continue;
+
+            foreach (var (partyCode, value) in p.Results)
+            {
+                if (!partyIdByCode.TryGetValue(partyCode, out var partyId)) continue;
+                double? moe = p.MarginOfError is not null && p.MarginOfError.TryGetValue(partyCode, out var m)
+                    ? m : null;
+
+                if (resultByKey.TryGetValue((pollId, partyId), out var entity))
+                {
+                    entity.Value = value;
+                    entity.MarginOfError = moe;
+                }
+                else
+                {
+                    db.PollResults.Add(new PollResult
+                    {
+                        PollId = pollId, PartyId = partyId, Value = value, MarginOfError = moe,
+                    });
+                }
+            }
+        }
+        await db.SaveChangesAsync(ct);
+    }
+
+    private static DateOnly? ParseDateOrNull(string? s) =>
+        string.IsNullOrWhiteSpace(s) ? null : DateOnly.ParseExact(s, "yyyy-MM-dd", CultureInfo.InvariantCulture);
+
     private static T[] Load<T>(string fileName)
     {
         var assembly = typeof(SeedData).Assembly;
@@ -143,8 +243,25 @@ public static class SeedData
         return JsonSerializer.Deserialize<T[]>(stream, JsonOptions) ?? [];
     }
 
+    private static T LoadObject<T>(string fileName)
+    {
+        var assembly = typeof(SeedData).Assembly;
+        var resourceName = $"Valkompass.Infrastructure.Seed.Content.{fileName}";
+        using var stream = assembly.GetManifestResourceStream(resourceName)
+            ?? throw new InvalidOperationException($"Inbäddad resurs saknas: {resourceName}");
+        return JsonSerializer.Deserialize<T>(stream, JsonOptions)
+            ?? throw new InvalidOperationException($"Kunde inte deserialisera {fileName}.");
+    }
+
     private sealed record CategorySeed(string Slug, string Name, string? Description, string? Icon, int DisplayOrder);
     private sealed record PartySeed(string Code, string Name, string FullName, string? ShortDescription, string? Color, int DisplayOrder);
     private sealed record QuestionSeed(string ExternalKey, string CategorySlug, string Text, string? Explanation, string? ExplanationSourceUrl, int DisplayOrder, int? Tier);
     private sealed record PositionSeed(string PartyCode, string QuestionKey, int? Value, string? Motivation, string? SourceCitation, string? SourceUrl);
+
+    private sealed record BarometerSeed(PollsterSeed[] Pollsters, PollSeed[] Polls);
+    private sealed record PollsterSeed(string Code, string DisplayName, string? Method, string? Commissioner);
+    private sealed record PollSeed(
+        string ExternalKey, string PollsterCode, string? FieldStart, string? FieldEnd,
+        string PublishedAt, int? SampleSize, string? SourceUrl, string? SourceCitation,
+        Dictionary<string, double?> Results, Dictionary<string, double>? MarginOfError);
 }

@@ -29,3 +29,6 @@ yarn-error.log*
 Thumbs.db
 .idea/
 *.swp
+
+# --- Lokala arbetsdokument (ej för repo) ---
+BRAINSTORM-CONTEXT.md
