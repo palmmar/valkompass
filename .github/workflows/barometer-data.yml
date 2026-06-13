@@ -1,0 +1,59 @@
+name: Uppdatera barometerdata
+
+# Hämtar färska opinionsmätningar (SwedishPolls + SCB:s PSU) och öppnar en PR när datan
+# ändrats. Mergas manuellt – det är den mänskliga kvalitetsgrinden. Commit:ar aldrig direkt
+# till main. Seedningen är append-only, så en merge fyller bara på med nya mätningar.
+
+on:
+  schedule:
+    - cron: "0 5 * * *" # dagligen 05:00 UTC (07:00 svensk sommartid)
+  workflow_dispatch: {} # går även att köra manuellt
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: barometer-data
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    name: Hämta och föreslå uppdatering
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      # gen_polls.py använder bara standardbiblioteket – inga beroenden att installera.
+      - name: Generera polls.json
+        run: python3 backend/tools/gen_polls.py
+
+      - name: Öppna/uppdatera PR vid förändrad data
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          FILE=backend/src/Valkompass.Infrastructure/Seed/Content/polls.json
+          if git diff --quiet -- "$FILE"; then
+            echo "Ingen förändring i barometerdata – ingen PR behövs."
+            exit 0
+          fi
+          BRANCH=data/barometer-refresh
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -C "$BRANCH"
+          git add "$FILE"
+          git commit -m "Uppdatera barometerdata (SwedishPolls + SCB)"
+          git push -f origin "$BRANCH"
+          if [ -n "$(gh pr list --head "$BRANCH" --state open --json number --jq '.[0].number // empty')" ]; then
+            echo "En öppen PR finns redan – den uppdaterades via push."
+          else
+            gh pr create --base main --head "$BRANCH" \
+              --title "Uppdatera barometerdata" \
+              --body "Automatisk uppdatering av opinionsdata från SwedishPolls (CC0) och SCB:s PSU (PXWeb), genererad av \`backend/tools/gen_polls.py\` via schemalagd körning. Seedningen är append-only, så endast nya mätningar tillkommer vid merge. Granska diffen och merga manuellt."
+          fi

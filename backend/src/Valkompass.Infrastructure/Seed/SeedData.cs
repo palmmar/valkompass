@@ -146,87 +146,54 @@ public static class SeedData
         var now = DateTimeOffset.UtcNow;
         var doc = LoadObject<BarometerSeed>("polls.json");
 
-        // --- Institut (upsert på code) ---
-        var pollsters = await db.Pollsters.ToDictionaryAsync(p => p.Code, ct);
+        // Append-only. En publicerad mätning är oföränderlig, så seedningen lägger BARA till
+        // det som saknas och rör aldrig befintliga rader. Det gör omstart/omdeploy ofarlig
+        // (inga admin-ändringar eller insamlad data skrivs över) och låter periodisk ingest
+        // bara fylla på med nya mätningar. Korrigeringar av en redan seedad mätning görs i admin.
+
+        // --- Institut: lägg bara till saknade (på code) ---
+        var pollsterCodes = (await db.Pollsters.Select(p => p.Code).ToListAsync(ct)).ToHashSet();
         foreach (var ps in doc.Pollsters)
         {
-            if (pollsters.TryGetValue(ps.Code, out var entity))
+            if (pollsterCodes.Contains(ps.Code)) continue;
+            db.Pollsters.Add(new Pollster
             {
-                entity.DisplayName = ps.DisplayName;
-                entity.Method = ps.Method;
-                entity.Commissioner = ps.Commissioner;
-                entity.UpdatedAt = now;
-            }
-            else
-            {
-                db.Pollsters.Add(new Pollster
-                {
-                    Code = ps.Code, DisplayName = ps.DisplayName,
-                    Method = ps.Method, Commissioner = ps.Commissioner, UpdatedAt = now,
-                });
-            }
+                Code = ps.Code, DisplayName = ps.DisplayName,
+                Method = ps.Method, Commissioner = ps.Commissioner, UpdatedAt = now,
+            });
+            pollsterCodes.Add(ps.Code);
         }
         await db.SaveChangesAsync(ct);
 
-        // --- Mätningar (upsert på externalKey) ---
+        // --- Mätningar + resultat: lägg bara till saknade externalKey (hoppa över befintliga helt) ---
         var pollsterIdByCode = await db.Pollsters.ToDictionaryAsync(p => p.Code, p => p.Id, ct);
-        var existingPolls = await db.Polls.ToDictionaryAsync(p => p.ExternalKey, ct);
+        var partyIdByCode = await db.Parties.ToDictionaryAsync(p => p.Code, p => p.Id, ct);
+        var existingPollKeys = (await db.Polls.Select(p => p.ExternalKey).ToListAsync(ct)).ToHashSet();
+
         foreach (var p in doc.Polls)
         {
+            if (existingPollKeys.Contains(p.ExternalKey)) continue;
             if (!pollsterIdByCode.TryGetValue(p.PollsterCode, out var pollsterId)) continue;
 
-            var published = DateOnly.ParseExact(p.PublishedAt, "yyyy-MM-dd", CultureInfo.InvariantCulture);
-            var fieldStart = ParseDateOrNull(p.FieldStart);
-            var fieldEnd = ParseDateOrNull(p.FieldEnd);
-
-            if (existingPolls.TryGetValue(p.ExternalKey, out var entity))
+            var poll = new Poll
             {
-                entity.PollsterId = pollsterId;
-                entity.FieldStart = fieldStart; entity.FieldEnd = fieldEnd;
-                entity.PublishedAt = published; entity.SampleSize = p.SampleSize;
-                entity.SourceUrl = p.SourceUrl; entity.SourceCitation = p.SourceCitation;
-                entity.UpdatedAt = now;
-            }
-            else
-            {
-                db.Polls.Add(new Poll
-                {
-                    ExternalKey = p.ExternalKey, PollsterId = pollsterId,
-                    FieldStart = fieldStart, FieldEnd = fieldEnd, PublishedAt = published,
-                    SampleSize = p.SampleSize, SourceUrl = p.SourceUrl,
-                    SourceCitation = p.SourceCitation, UpdatedAt = now,
-                });
-            }
-        }
-        await db.SaveChangesAsync(ct);
-
-        // --- Partiresultat (upsert på (mätning, parti)) ---
-        var partyIdByCode = await db.Parties.ToDictionaryAsync(p => p.Code, p => p.Id, ct);
-        var pollIdByKey = await db.Polls.ToDictionaryAsync(p => p.ExternalKey, p => p.Id, ct);
-        var resultByKey = (await db.PollResults.ToListAsync(ct)).ToDictionary(r => (r.PollId, r.PartyId));
-        foreach (var p in doc.Polls)
-        {
-            if (!pollIdByKey.TryGetValue(p.ExternalKey, out var pollId)) continue;
+                ExternalKey = p.ExternalKey, PollsterId = pollsterId,
+                FieldStart = ParseDateOrNull(p.FieldStart), FieldEnd = ParseDateOrNull(p.FieldEnd),
+                PublishedAt = DateOnly.ParseExact(p.PublishedAt, "yyyy-MM-dd", CultureInfo.InvariantCulture),
+                SampleSize = p.SampleSize, SourceUrl = p.SourceUrl,
+                SourceCitation = p.SourceCitation, UpdatedAt = now,
+            };
 
             foreach (var (partyCode, value) in p.Results)
             {
                 if (!partyIdByCode.TryGetValue(partyCode, out var partyId)) continue;
                 double? moe = p.MarginOfError is not null && p.MarginOfError.TryGetValue(partyCode, out var m)
                     ? m : null;
-
-                if (resultByKey.TryGetValue((pollId, partyId), out var entity))
-                {
-                    entity.Value = value;
-                    entity.MarginOfError = moe;
-                }
-                else
-                {
-                    db.PollResults.Add(new PollResult
-                    {
-                        PollId = pollId, PartyId = partyId, Value = value, MarginOfError = moe,
-                    });
-                }
+                poll.Results.Add(new PollResult { PartyId = partyId, Value = value, MarginOfError = moe });
             }
+
+            db.Polls.Add(poll);
+            existingPollKeys.Add(p.ExternalKey);
         }
         await db.SaveChangesAsync(ct);
     }
