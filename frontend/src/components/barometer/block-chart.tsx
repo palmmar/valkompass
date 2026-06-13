@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import type { BarometerElection, BarometerPoll } from "@/lib/barometer-api";
 import { TimeSeriesChart } from "./time-series-chart";
 import {
@@ -22,12 +22,17 @@ interface BlockChartProps {
 }
 
 const dayFmt = new Intl.DateTimeFormat("sv-SE", { day: "numeric", month: "long", year: "numeric" });
+const monthLongFmt = new Intl.DateTimeFormat("sv-SE", { month: "long", year: "numeric" });
+const asDate = (s: string) => new Date(`${s}T00:00:00`);
 
 /**
  * Blockläge: två valbara grupperingar (default S·V·MP·C mot M·KD·L·SD) som linjer med
- * felmarginalband. Summorna räknas om direkt när man klickar ur partier i listan ovanför.
+ * felmarginalband. Summorna räknas om direkt när man klickar ur partier i listan ovanför,
+ * och de stora talen följer hårkorset (eller visar senaste mätning).
  */
 export function BlockChart({ polls, elections, visible, fromDate, toDate, pollsterNames }: BlockChartProps) {
+  const [hoverDate, setHoverDate] = useState<string | null>(null);
+
   const opinion = useMemo(() => polls.filter((p) => !p.pollsterCode.startsWith("val-")), [polls]);
 
   const dots = useMemo(
@@ -47,18 +52,16 @@ export function BlockChart({ polls, elections, visible, fromDate, toDate, pollst
   }));
   const allBlocksVisible = useMemo(() => new Set(DEFAULT_BLOCKS.map((b) => b.id)), []);
 
-  const latest = useMemo(
-    () => (opinion.length ? opinion.reduce((a, b) => (a.publishedAt >= b.publishedAt ? a : b)) : null),
-    [opinion],
-  );
-  const election = useMemo(
-    () => latestElectionBefore(elections, latest?.publishedAt ?? null),
-    [elections, latest],
-  );
+  // Datum som siffrorna avser: hårkorset om man hovrar, annars senaste mätningen.
+  const latestDate = dots[0]?.points.at(-1)?.date ?? null;
+  const shownDate = hoverDate ?? latestDate;
+  const election = useMemo(() => latestElectionBefore(elections, shownDate), [elections, shownDate]);
 
-  const summary = DEFAULT_BLOCKS.map((b) => {
+  const summary = DEFAULT_BLOCKS.map((b, i) => {
     const members = activeMembers(b, visible);
-    const now = latest ? blockSum(latest.results, b.members, visible) : null;
+    const pts = dots[i].points;
+    const point = shownDate ? pts.find((p) => p.date === shownDate) : pts.at(-1);
+    const now = point?.value ?? null;
     const base = election ? blockSum(election.results, b.members, visible) : null;
     const delta = now != null && base != null ? Math.round((now - base) * 10) / 10 : null;
     return { block: b, members, now, delta };
@@ -66,6 +69,17 @@ export function BlockChart({ polls, elections, visible, fromDate, toDate, pollst
 
   return (
     <div className="space-y-4">
+      <div className="text-sm text-muted-foreground">
+        {shownDate ? (
+          <>
+            {hoverDate ? "Vid " : "Senaste mätning · "}
+            <span className="font-medium text-foreground">
+              {hoverDate ? monthLongFmt.format(asDate(shownDate)) : dayFmt.format(asDate(shownDate))}
+            </span>
+          </>
+        ) : null}
+      </div>
+
       <div className="flex flex-wrap gap-4">
         {summary.map((s) => (
           <div
@@ -100,20 +114,15 @@ export function BlockChart({ polls, elections, visible, fromDate, toDate, pollst
         emphasizeLine={false}
         fromDate={fromDate}
         toDate={toDate}
+        onHoverDate={setHoverDate}
       />
 
       <p className="text-xs leading-relaxed text-muted-foreground">
         Varje prick är summan av blockets ikryssade partier i en mätning; linjen är ett glidande
         30-dagarssnitt med felmarginalband. <strong>Grupperingen är valbar</strong> – klicka ur ett
         parti i listan ovan så tas det bort ur sitt block och summan justeras. Ingen påtvingad
-        blockindelning.
-        {latest && (
-          <>
-            {" "}Senaste mätning: {pollsterNames.get(latest.pollsterCode) ?? latest.pollsterCode},{" "}
-            {dayFmt.format(new Date(`${latest.publishedAt}T00:00:00`))}.
-          </>
-        )}
-        {election && <> Förändring (pe) visas mot {election.label}.</>}
+        blockindelning. Håll musen över diagrammet för att läsa av ett visst datum; förändring (pe)
+        visas mot {election ? election.label : "senaste riksdagsval"}.
       </p>
     </div>
   );
