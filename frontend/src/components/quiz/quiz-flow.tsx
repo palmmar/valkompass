@@ -132,7 +132,10 @@ export function QuizFlow({ questions, categories }: Props) {
             )}
           </div>
 
-          <div className="grid gap-2">
+          {/* key per fråga → knapparna monteras om vid frågebyte, så att ett "fastnat"
+              hover-/aktivt läge från en knapptryckning inte följer med till nästa fråga
+              (förekommer i in-app-webbläsare, t.ex. Messenger, som rapporterar hover-stöd). */}
+          <div key={question.id} className="grid gap-2">
             {SCALE_OPTIONS.map((opt) => {
               const selected = current.value === opt.value && !current.isSkipped;
               return (
@@ -140,7 +143,10 @@ export function QuizFlow({ questions, categories }: Props) {
                   key={opt.value}
                   variant={selected ? "default" : "outline"}
                   className={cn("h-12 justify-start text-base", selected && "ring-2 ring-ring")}
-                  onClick={() => choose(opt.value)}
+                  onClick={(e) => {
+                    e.currentTarget.blur();
+                    choose(opt.value);
+                  }}
                 >
                   {opt.label}
                 </Button>
