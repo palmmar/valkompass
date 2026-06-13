@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { ElectionCountdown } from "@/components/election-countdown";
 import { Info, ListChecks, Scale, Share2 } from "lucide-react";
 
 const STEPS = [
@@ -34,6 +35,7 @@ export default function Home() {
           riksdagspartiernas. Frågorna utgår från de samhällsfrågor väljarna
           anser är viktigast just nu.
         </p>
+        <ElectionCountdown />
         <div className="mt-8">
           <Button render={<Link href="/quiz" />} nativeButton={false} size="lg">
             Starta valkompassen
