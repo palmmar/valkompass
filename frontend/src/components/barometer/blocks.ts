@@ -1,21 +1,32 @@
-// Blockläge: summerar partiers stöd till två valbara grupperingar. Aggregeringen sker på
-// klienten (en presentationsfråga) så att summorna räknas om direkt när man klickar ur ett
-// parti. Grupperingen är INTE påtvingad – default nedan kan ändras genom partitoggels.
+// Blockläge: summerar partiers stöd till två grupperingar. Användaren placerar själv varje
+// parti i Block 1, Block 2 eller utanför (default = S·V·MP·C mot M·KD·L·SD). Aggregeringen
+// sker på klienten (en presentationsfråga) så summorna räknas om direkt vid omplacering.
+// Ingen påtvingad blockindelning.
 
 import type { BarometerElection, BarometerPoll } from "@/lib/barometer-api";
 
+/** Vilket block ett parti tillhör, eller "none" = utanför. */
+export type Group = "a" | "b" | "none";
+
 export interface BlockDef {
-  id: string;
-  /** Default-medlemmar (partikoder). Användaren kan klicka ur dem. */
-  members: string[];
+  id: "a" | "b";
+  /** Default-medlemmar (partikoder) – utgångspunkten innan användaren omplacerar. */
+  defaultMembers: string[];
   color: string;
 }
 
-// Default: S·V·MP·C mot M·KD·L·SD (de två grupperingar maintainern efterfrågade).
+// Block 1 (rött) förblir rött och Block 2 (blått) blått oavsett vilka partier som ligger där.
 export const DEFAULT_BLOCKS: BlockDef[] = [
-  { id: "block-a", members: ["S", "V", "MP", "C"], color: "#d64550" },
-  { id: "block-b", members: ["M", "KD", "L", "SD"], color: "#3b7dd8" },
+  { id: "a", defaultMembers: ["S", "V", "MP", "C"], color: "#d64550" },
+  { id: "b", defaultMembers: ["M", "KD", "L", "SD"], color: "#3b7dd8" },
 ];
+
+/** Default-placering: varje default-medlem i sitt block, övriga "none". */
+export function defaultAssignment(): Record<string, Group> {
+  const a: Record<string, Group> = {};
+  for (const block of DEFAULT_BLOCKS) for (const code of block.defaultMembers) a[code] = block.id;
+  return a;
+}
 
 export interface BlockPoint {
   date: string;
@@ -37,24 +48,15 @@ function blockMoe(valuePct: number, n: number | null): number | null {
   return round1(1.96 * Math.sqrt((p * (1 - p)) / n) * 100);
 }
 
-/** Aktiva medlemmar = blockets default-partier som fortfarande är ikryssade. */
-export function activeMembers(block: BlockDef, visible: Set<string>): string[] {
-  return block.members.filter((m) => visible.has(m));
-}
-
-/** En blockprick per mätning = summan av de ikryssade medlemspartiernas stöd. */
-export function buildBlockDots(
-  opinionPolls: BarometerPoll[],
-  members: string[],
-  visible: Set<string>,
-): BlockPoint[] {
-  const active = members.filter((m) => visible.has(m));
+/** En blockprick per mätning = summan av blockets medlemspartiers stöd. */
+export function buildBlockDots(opinionPolls: BarometerPoll[], members: string[]): BlockPoint[] {
+  if (members.length === 0) return [];
   const points: BlockPoint[] = [];
   for (const poll of opinionPolls) {
     const byCode = new Map(poll.results.map((r) => [r.partyCode, r.value]));
     let sum = 0;
     let any = false;
-    for (const m of active) {
+    for (const m of members) {
       const v = byCode.get(m);
       if (v != null) {
         sum += v;
@@ -102,16 +104,14 @@ export function rollingAverage(
   return [...byDate.values()].sort((a, b) => a.date.localeCompare(b.date));
 }
 
-/** Summerar ett blocks ikryssade medlemmar i en uppsättning resultat (mätning eller valresultat). */
+/** Summerar ett blocks medlemmar i en uppsättning resultat (mätning eller valresultat). */
 export function blockSum(
   results: { partyCode: string; value: number | null }[],
   members: string[],
-  visible: Set<string>,
 ): number {
-  const active = members.filter((m) => visible.has(m));
   const byCode = new Map(results.map((r) => [r.partyCode, r.value]));
   let sum = 0;
-  for (const m of active) {
+  for (const m of members) {
     const v = byCode.get(m);
     if (v != null) sum += v;
   }
