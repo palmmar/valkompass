@@ -11,13 +11,15 @@ import { TimeSeriesChart } from "@/components/barometer/time-series-chart";
 import { LatestSnapshot } from "@/components/barometer/latest-snapshot";
 import { PollList } from "@/components/barometer/poll-list";
 import { PartyToggles } from "@/components/barometer/party-toggles";
+import { BlockChart } from "@/components/barometer/block-chart";
 import { cn } from "@/lib/utils";
 
-type Tab = "trend" | "latest" | "pollofpolls";
+type Tab = "trend" | "block" | "latest" | "pollofpolls";
 type Range = "mandate" | "recent" | "all";
 
 const TABS: { id: Tab; label: string }[] = [
   { id: "trend", label: "Trend över tid" },
+  { id: "block", label: "Blockläge" },
   { id: "latest", label: "Senaste läget" },
   { id: "pollofpolls", label: "Glidande snitt" },
 ];
@@ -145,31 +147,48 @@ export function BarometerView() {
           ) : ts ? (
             <>
               <PartyToggles parties={parties} visible={visible} onToggle={toggle} onSetAll={setAll} />
-              <TimeSeriesChart
-                parties={parties}
-                visible={visible}
-                dots={ts.series}
-                line={tab === "trend" ? ts.monthlyAverage : ts.rollingAverage}
-                elections={ts.elections}
-                pollsterNames={pollsterNames}
-                showBand
-                emphasizeLine={tab === "pollofpolls"}
-                fromDate={fromDate}
-                toDate={toDate}
-              />
-              <p className="text-xs text-muted-foreground">
-                {tab === "trend" ? (
-                  <>
-                    Varje prick är en enskild mätning; linjen är ett <strong>månadssnitt</strong> och
-                    den skuggade ytan visar mätningarnas genomsnittliga felmarginal.
-                  </>
+              {tab === "block" ? (
+                pollsQuery.data ? (
+                  <BlockChart
+                    polls={pollsQuery.data}
+                    elections={ts.elections}
+                    visible={visible}
+                    fromDate={fromDate}
+                    toDate={toDate}
+                    pollsterNames={pollsterNames}
+                  />
                 ) : (
-                  <>
-                    Linjen är ett <strong>glidande {ts.rollingWindowDays}-dagarssnitt</strong> av alla
-                    institut (poll-of-polls), med felmarginalband. Ett snitt för läsbarhet – inte en prognos.
-                  </>
-                )}
-              </p>
+                  <Loading />
+                )
+              ) : (
+                <>
+                  <TimeSeriesChart
+                    parties={parties}
+                    visible={visible}
+                    dots={ts.series}
+                    line={tab === "trend" ? ts.monthlyAverage : ts.rollingAverage}
+                    elections={ts.elections}
+                    pollsterNames={pollsterNames}
+                    showBand
+                    emphasizeLine={tab === "pollofpolls"}
+                    fromDate={fromDate}
+                    toDate={toDate}
+                  />
+                  <p className="text-xs text-muted-foreground">
+                    {tab === "trend" ? (
+                      <>
+                        Varje prick är en enskild mätning; linjen är ett <strong>månadssnitt</strong> och
+                        den skuggade ytan visar mätningarnas genomsnittliga felmarginal.
+                      </>
+                    ) : (
+                      <>
+                        Linjen är ett <strong>glidande {ts.rollingWindowDays}-dagarssnitt</strong> av alla
+                        institut (poll-of-polls), med felmarginalband. Ett snitt för läsbarhet – inte en prognos.
+                      </>
+                    )}
+                  </p>
+                </>
+              )}
             </>
           ) : null}
         </div>
