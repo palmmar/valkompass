@@ -1,17 +1,24 @@
 name: Uppdatera barometerdata
 
-# Hämtar färska opinionsmätningar (SwedishPolls + SCB:s PSU) och öppnar en PR när datan
-# ändrats. Mergas manuellt – det är den mänskliga kvalitetsgrinden. Commit:ar aldrig direkt
-# till main. Seedningen är append-only, så en merge fyller bara på med nya mätningar.
+# Hämtar färska opinionsmätningar (SwedishPolls + SCB:s PSU) varje natt och committar
+# polls.json DIREKT till main när datan ändrats. Coolify auto-deployar på push till main, så
+# sidan alltid visar senaste mätningarna. Seedningen är append-only (nya mätningar fylls på,
+# inget skrivs över → ofarlig omstart). En sanity-grind hindrar att trasig/ofullständig
+# uppströmsdata publiceras: antalet mätningar får aldrig minska.
+#
+# OBS: cron är i UTC. "0 3 * * *" = 03:00 UTC ≈ 04–05 svensk tid. Vill du ha 03:00 svensk
+# tid, använd "0 1 * * *" (sommartid) / "0 2 * * *" (vintertid).
+#
+# Kräver att github-actions-botten får pusha till main (ingen "require pull request"-skydd,
+# eller ett undantag för botten).
 
 on:
   schedule:
-    - cron: "0 5 * * *" # dagligen 05:00 UTC (07:00 svensk sommartid)
-  workflow_dispatch: {} # går även att köra manuellt
+    - cron: "0 3 * * *"
+  workflow_dispatch: {}
 
 permissions:
   contents: write
-  pull-requests: write
 
 concurrency:
   group: barometer-data
@@ -19,7 +26,7 @@ concurrency:
 
 jobs:
   refresh:
-    name: Hämta och föreslå uppdatering
+    name: Hämta och uppdatera main
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -29,31 +36,25 @@ jobs:
         with:
           python-version: "3.x"
 
-      # gen_polls.py använder bara standardbiblioteket – inga beroenden att installera.
-      - name: Generera polls.json
-        run: python3 backend/tools/gen_polls.py
+      - name: Generera och validera polls.json
+        run: |
+          set -euo pipefail
+          FILE=backend/src/Valkompass.Infrastructure/Seed/Content/polls.json
+          OLD=$(git show "HEAD:$FILE" | python3 -c "import json,sys; print(len(json.load(sys.stdin)['polls']))")
+          python3 backend/tools/gen_polls.py
+          python3 -c "import json,sys; d=json.load(open(sys.argv[1],encoding='utf-8')); new=len(d['polls']); old=int(sys.argv[2]); assert d.get('pollsters'), 'saknar pollsters'; assert new>=old, f'antal matningar minskade {old}->{new} – avbryter'; print(f'OK: {old} -> {new} matningar')" "$FILE" "$OLD"
 
-      - name: Öppna/uppdatera PR vid förändrad data
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Committa till main vid förändring
         run: |
           set -euo pipefail
           FILE=backend/src/Valkompass.Infrastructure/Seed/Content/polls.json
           if git diff --quiet -- "$FILE"; then
-            echo "Ingen förändring i barometerdata – ingen PR behövs."
+            echo "Ingen förändring i barometerdata – inget att deploya."
             exit 0
           fi
-          BRANCH=data/barometer-refresh
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git switch -C "$BRANCH"
           git add "$FILE"
           git commit -m "Uppdatera barometerdata (SwedishPolls + SCB)"
-          git push -f origin "$BRANCH"
-          if [ -n "$(gh pr list --head "$BRANCH" --state open --json number --jq '.[0].number // empty')" ]; then
-            echo "En öppen PR finns redan – den uppdaterades via push."
-          else
-            gh pr create --base main --head "$BRANCH" \
-              --title "Uppdatera barometerdata" \
-              --body "Automatisk uppdatering av opinionsdata från SwedishPolls (CC0) och SCB:s PSU (PXWeb), genererad av \`backend/tools/gen_polls.py\` via schemalagd körning. Seedningen är append-only, så endast nya mätningar tillkommer vid merge. Granska diffen och merga manuellt."
-          fi
+          git push origin HEAD:main
+          echo "Pushade till main – Coolify deployar."
