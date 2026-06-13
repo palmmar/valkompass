@@ -87,6 +87,7 @@ using (var scope = app.Services.CreateScope())
     var db = sp.GetRequiredService<AppDbContext>();
     await db.Database.MigrateAsync();
     await SeedData.SeedContentAsync(db);
+    await SeedData.SeedBarometerAsync(db);
 
     // Seeda roller + bootstrap-admin endast om uppgifterna är konfigurerade. I dev
     // kommer de från appsettings.Development.json; i produktion sätts de via
@@ -123,8 +124,10 @@ app.UseAuthorization();
 app.MapGet("/health", () => Results.Ok(new { status = "ok" }));
 
 app.MapPublicEndpoints();
+app.MapBarometerEndpoints();
 app.MapAuthEndpoints();
 app.MapAdminEndpoints();
+app.MapBarometerAdminEndpoints();
 
 app.Run();
 

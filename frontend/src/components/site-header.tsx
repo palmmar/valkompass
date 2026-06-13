@@ -7,7 +7,10 @@ export function SiteHeader() {
         <Link href="/" className="font-semibold tracking-tight">
           Valkompass <span className="text-muted-foreground">2026</span>
         </Link>
-        <nav className="text-sm text-muted-foreground">
+        <nav className="flex items-center gap-4 text-sm text-muted-foreground">
+          <Link href="/barometer" className="hover:text-foreground">
+            Valbarometer
+          </Link>
           <Link href="/quiz" className="hover:text-foreground">
             Gör testet
           </Link>

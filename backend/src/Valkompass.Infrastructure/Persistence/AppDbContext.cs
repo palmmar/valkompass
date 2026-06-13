@@ -17,6 +17,11 @@ public class AppDbContext(DbContextOptions<AppDbContext> options)
     public DbSet<QuizSession> QuizSessions => Set<QuizSession>();
     public DbSet<Answer> Answers => Set<Answer>();
 
+    // Valbarometer (fristående opinionsdata – ingen koppling till quiz/resultat).
+    public DbSet<Pollster> Pollsters => Set<Pollster>();
+    public DbSet<Poll> Polls => Set<Poll>();
+    public DbSet<PollResult> PollResults => Set<PollResult>();
+
     protected override void OnModelCreating(ModelBuilder builder)
     {
         base.OnModelCreating(builder);
