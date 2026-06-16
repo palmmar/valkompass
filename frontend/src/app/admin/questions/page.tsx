@@ -84,7 +84,7 @@ export default function QuestionsPage() {
         <TableBody>
           {questions.data?.map((q) => (
             <TableRow key={q.id}>
-              <TableCell className="max-w-sm font-medium">{q.text}</TableCell>
+              <TableCell className="max-w-sm font-medium whitespace-normal break-words">{q.text}</TableCell>
               <TableCell className="text-muted-foreground">{q.categoryName}</TableCell>
               <TableCell>
                 {q.isActive ? (
