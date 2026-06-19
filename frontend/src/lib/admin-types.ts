@@ -71,3 +71,14 @@ export interface PositionInput {
   sourceCitation: string | null;
   sourceUrl: string | null;
 }
+
+export interface QuizSessionSummary {
+  id: string;
+  completedAt: string;
+}
+export interface QuizStats {
+  total: number;
+  last24h: number;
+  last7d: number;
+  latest: QuizSessionSummary[];
+}

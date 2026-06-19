@@ -25,3 +25,8 @@ public sealed record PositionsMatrixDto(int QuestionId, string QuestionText, IRe
 
 public sealed record PositionInput(int PartyId, int? Value, string? Motivation, string? SourceCitation, string? SourceUrl);
 public sealed record PositionsBulkInput(IReadOnlyList<PositionInput> Positions);
+
+// --- Statistik (genomförda kompasser) ---
+public sealed record QuizSessionSummaryDto(Guid Id, DateTimeOffset CompletedAt);
+public sealed record QuizStatsDto(
+    int Total, int Last24h, int Last7d, IReadOnlyList<QuizSessionSummaryDto> Latest);
