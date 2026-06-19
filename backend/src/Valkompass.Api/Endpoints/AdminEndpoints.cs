@@ -19,6 +19,7 @@ public static class AdminEndpoints
         MapParties(admin);
         MapQuestions(admin);
         MapPositions(admin);
+        MapStats(admin);
 
         return app;
     }
@@ -314,6 +315,27 @@ public static class AdminEndpoints
 
             await db.SaveChangesAsync();
             return Results.NoContent();
+        });
+    }
+
+    private static void MapStats(RouteGroupBuilder admin)
+    {
+        // Volym-/aktivitetsmått för genomförda kompasser. Returnerar medvetet bara antal och
+        // tidsstämplar (+ radens Id som nyckel) – aldrig ShareToken, ResultJson eller partidata.
+        admin.MapGet("/quiz/stats", async (AppDbContext db) =>
+        {
+            var now = DateTimeOffset.UtcNow;
+            var sessions = db.QuizSessions;
+            var latest = await sessions
+                .OrderByDescending(s => s.CreatedAt)
+                .Take(20)
+                .Select(s => new QuizSessionSummaryDto(s.Id, s.CreatedAt))
+                .ToListAsync();
+            return Results.Ok(new QuizStatsDto(
+                Total: await sessions.CountAsync(),
+                Last24h: await sessions.CountAsync(s => s.CreatedAt >= now.AddHours(-24)),
+                Last7d: await sessions.CountAsync(s => s.CreatedAt >= now.AddDays(-7)),
+                Latest: latest));
         });
     }
 

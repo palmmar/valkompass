@@ -2,24 +2,26 @@
 
 import Link from "next/link";
 import { useQuery } from "@tanstack/react-query";
-import { listCategories, listParties, listQuestions } from "@/lib/admin-api";
+import { getQuizStats, listCategories, listParties, listQuestions } from "@/lib/admin-api";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function AdminDashboard() {
   const questions = useQuery({ queryKey: ["questions"], queryFn: listQuestions });
   const categories = useQuery({ queryKey: ["categories"], queryFn: listCategories });
   const parties = useQuery({ queryKey: ["parties"], queryFn: listParties });
+  const stats = useQuery({ queryKey: ["quiz-stats"], queryFn: getQuizStats });
 
   const cards = [
     { href: "/admin/questions", title: "Frågor", count: questions.data?.length },
     { href: "/admin/categories", title: "Kategorier", count: categories.data?.length },
     { href: "/admin/parties", title: "Partier", count: parties.data?.length },
+    { href: "/admin/statistik", title: "Genomförda kompasser", count: stats.data?.total },
   ];
 
   return (
     <div className="space-y-6">
       <h1 className="text-2xl font-bold tracking-tight">Administration</h1>
-      <div className="grid gap-4 sm:grid-cols-3">
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {cards.map((c) => (
           <Link key={c.href} href={c.href}>
             <Card className="transition-colors hover:border-foreground/30">

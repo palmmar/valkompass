@@ -8,6 +8,7 @@ import type {
   PositionInput,
   PositionsMatrix,
   QuestionInput,
+  QuizStats,
 } from "@/lib/admin-types";
 
 export class ApiError extends Error {
@@ -107,3 +108,6 @@ export const savePositions = (questionId: number, positions: PositionInput[]) =>
     method: "PUT",
     body: JSON.stringify({ positions }),
   });
+
+// --- Statistik ---
+export const getQuizStats = () => req<QuizStats>("/admin/quiz/stats");
