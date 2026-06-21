@@ -82,3 +82,32 @@ export interface QuizStats {
   last7d: number;
   latest: QuizSessionSummary[];
 }
+
+export interface QuestionAnswerStats {
+  questionId: number;
+  categoryName: string;
+  text: string;
+  total: number;
+  answered: number;
+  skipped: number;
+  important: number;
+  stronglyDisagree: number;
+  partlyDisagree: number;
+  partlyAgree: number;
+  stronglyAgree: number;
+  suppressed: boolean;
+}
+export interface AnswerStats {
+  sessions: number;
+  questions: QuestionAnswerStats[];
+}
+
+export interface PartyMatchSlice {
+  partyCode: string;
+  count: number;
+}
+export interface PartyMatchStats {
+  sessions: number;
+  tied: number;
+  slices: PartyMatchSlice[];
+}

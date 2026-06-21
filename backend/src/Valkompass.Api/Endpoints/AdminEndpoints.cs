@@ -1,3 +1,4 @@
+using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
 using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.Processing;
@@ -318,6 +319,10 @@ public static class AdminEndpoints
         });
     }
 
+    // Aggregat med spärr för små tal (k-anonymitet): fördelningar under detta antal döljs.
+    private const int MinSample = 5;
+    private static readonly JsonSerializerOptions JsonOptions = new(JsonSerializerDefaults.Web);
+
     private static void MapStats(RouteGroupBuilder admin)
     {
         // Volym-/aktivitetsmått för genomförda kompasser. Returnerar medvetet bara antal och
@@ -336,6 +341,73 @@ public static class AdminEndpoints
                 Last24h: await sessions.CountAsync(s => s.CreatedAt >= now.AddHours(-24)),
                 Last7d: await sessions.CountAsync(s => s.CreatedAt >= now.AddDays(-7)),
                 Latest: latest));
+        });
+
+        // Aggregerad svarsfördelning per fråga. Ren GROUP BY över answers – inga per-person-rader.
+        admin.MapGet("/quiz/answer-stats", async (AppDbContext db) =>
+        {
+            var sessions = await db.QuizSessions.CountAsync();
+
+            // null Value = hoppat över. Gruppera per fråga + svarsvärde.
+            var dist = await db.Answers
+                .GroupBy(a => new { a.QuestionId, a.Value })
+                .Select(g => new { g.Key.QuestionId, g.Key.Value, Count = g.Count() })
+                .ToListAsync();
+            var important = (await db.Answers.Where(a => a.IsImportant)
+                    .GroupBy(a => a.QuestionId).Select(g => new { Id = g.Key, Count = g.Count() }).ToListAsync())
+                .ToDictionary(x => x.Id, x => x.Count);
+
+            var byQuestion = dist.GroupBy(d => d.QuestionId).ToDictionary(g => g.Key, g => g.ToList());
+
+            var questions = await db.Questions.Include(q => q.Category)
+                .OrderBy(q => q.Category!.DisplayOrder).ThenBy(q => q.DisplayOrder)
+                .Select(q => new { q.Id, q.Text, Category = q.Category!.Name }).ToListAsync();
+
+            var rows = new List<QuestionAnswerStatsDto>();
+            foreach (var q in questions)
+            {
+                if (!byQuestion.TryGetValue(q.Id, out var cells)) continue; // bara frågor med svar
+                int C(ScaleValue v) => cells.FirstOrDefault(c => c.Value == v)?.Count ?? 0;
+                var skipped = cells.FirstOrDefault(c => c.Value == null)?.Count ?? 0;
+                var sd = C(ScaleValue.StronglyDisagree);
+                var pd = C(ScaleValue.PartlyDisagree);
+                var pa = C(ScaleValue.PartlyAgree);
+                var sa = C(ScaleValue.StronglyAgree);
+                var answered = sd + pd + pa + sa;
+                var total = answered + skipped;
+                rows.Add(total < MinSample
+                    ? new(q.Id, q.Category, q.Text, total, 0, 0, 0, 0, 0, 0, 0, Suppressed: true)
+                    : new(q.Id, q.Category, q.Text, total, answered, skipped,
+                        important.GetValueOrDefault(q.Id), sd, pd, pa, sa, Suppressed: false));
+            }
+            return Results.Ok(new AnswerStatsDto(sessions, rows));
+        });
+
+        // Aggregerad fördelning av bästa partimatchning. Läser ur det frysta result_json,
+        // returnerar bara antal per parti – ingen koppling till enskilda sessioner.
+        admin.MapGet("/quiz/party-stats", async (AppDbContext db) =>
+        {
+            var jsons = await db.QuizSessions.Select(s => s.ResultJson).ToListAsync();
+
+            var counts = new Dictionary<string, int>();
+            int tied = 0, sessions = 0;
+            foreach (var json in jsons)
+            {
+                var doc = JsonSerializer.Deserialize<ResultDocument>(json, JsonOptions);
+                var ranked = doc?.Overall.Where(o => o.AgreementPct is not null)
+                    .OrderByDescending(o => o.AgreementPct).ToList();
+                if (ranked is null || ranked.Count == 0) continue;
+                sessions++;
+                var top = ranked[0].AgreementPct!.Value;
+                var leaders = ranked.Where(o => o.AgreementPct == top).Select(o => o.PartyCode).ToList();
+                if (leaders.Count > 1) { tied++; continue; } // oavgjort räknas inte mot ett enskilt parti
+                counts[leaders[0]] = counts.GetValueOrDefault(leaders[0]) + 1;
+            }
+            var slices = sessions < MinSample
+                ? new List<PartyMatchSliceDto>()
+                : counts.Select(kv => new PartyMatchSliceDto(kv.Key, kv.Value))
+                    .OrderByDescending(s => s.Count).ToList();
+            return Results.Ok(new PartyMatchStatsDto(sessions, tied, slices));
         });
     }
 
