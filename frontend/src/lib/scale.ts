@@ -13,6 +13,12 @@ export const SCALE_OPTIONS: ScaleOption[] = [
   { value: 1, label: "Håller inte med", short: "Emot" },
 ];
 
+// Binärt val för det förenklade swajp-testet: vänster = emot (1), höger = med (4).
+export const BINARY_OPTIONS: ScaleOption[] = [
+  { value: 1, label: "Håller inte med", short: "Emot" },
+  { value: 4, label: "Håller med", short: "Med" },
+];
+
 export function scaleLabel(value: number | null | undefined): string {
   if (value == null) return "Oklart";
   return SCALE_OPTIONS.find((o) => o.value === value)?.label ?? "Oklart";

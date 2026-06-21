@@ -198,6 +198,58 @@ public class MatchCalculatorTests
     }
 
     [Fact]
+    public void Binary_PartlyAgreeCountsAsFullyAgree_Gives100Percent()
+    {
+        // Användare 4, parti 3 (delvis med). Normalt 66.67 %, men binärt snäpps 3 → 4 → 100 %.
+        var result = MatchCalculator.Calculate(
+            [Ans(1, Agree)], [Q(1)], [Party(1, "S")], [Pos(1, 1, PartlyAgr)], binary: true);
+
+        Assert.Equal(100.0, OverallFor(result, "S").AgreementPct!.Value, 5);
+    }
+
+    [Fact]
+    public void Binary_PartlyDisagreeCountsAsFullyDisagree_Gives0Percent()
+    {
+        // Användare 4, parti 2 (delvis emot). Normalt 33.33 %, men binärt snäpps 2 → 1 → 0 %.
+        var result = MatchCalculator.Calculate(
+            [Ans(1, Agree)], [Q(1)], [Party(1, "S")], [Pos(1, 1, PartlyDis)], binary: true);
+
+        Assert.Equal(0.0, OverallFor(result, "S").AgreementPct!.Value, 5);
+    }
+
+    [Fact]
+    public void Binary_DisagreeVsPartlyDisagree_Gives100Percent()
+    {
+        // Användare 1, parti 2 (delvis emot) → båda snäpps till samma sida (1) → 100 %.
+        var result = MatchCalculator.Calculate(
+            [Ans(1, Disagree)], [Q(1)], [Party(1, "S")], [Pos(1, 1, PartlyDis)], binary: true);
+
+        Assert.Equal(100.0, OverallFor(result, "S").AgreementPct!.Value, 5);
+    }
+
+    [Fact]
+    public void Binary_StoresOriginalPartyValue_NotSnapped()
+    {
+        // Träffen blir binär (100 %) men partiets visade position ska förbli den faktiska (3).
+        var result = MatchCalculator.Calculate(
+            [Ans(1, Agree)], [Q(1)], [Party(1, "S")], [Pos(1, 1, PartlyAgr)], binary: true);
+
+        var qc = result.ByQuestion.Single().Parties.Single();
+        Assert.Equal(PartlyAgr, qc.PartyValue);          // oförändrad position
+        Assert.Equal(100.0, qc.AgreementPct!.Value, 5);  // men binär träff
+    }
+
+    [Fact]
+    public void Binary_FalseLeavesPartialScoringUnchanged()
+    {
+        // Regression: utan binary-flaggan ska delvis-positioner ge mellanvärden som vanligt.
+        var result = MatchCalculator.Calculate(
+            [Ans(1, Agree)], [Q(1)], [Party(1, "S")], [Pos(1, 1, PartlyAgr)]);
+
+        Assert.Equal(66.67, OverallFor(result, "S").AgreementPct!.Value, 2);
+    }
+
+    [Fact]
     public void ByQuestion_CarriesUserValueAndImportantFlag()
     {
         var result = MatchCalculator.Calculate(

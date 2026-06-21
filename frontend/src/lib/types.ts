@@ -29,6 +29,8 @@ export interface SubmitAnswer {
 
 export interface SubmitQuizRequest {
   answers: SubmitAnswer[];
+  /** true för det förenklade swajp-testet → binär matchning i backend. */
+  simplified?: boolean;
 }
 
 export interface SubmitQuizResponse {
@@ -85,4 +87,6 @@ export interface ResultDocument {
   categories: ResultCategory[];
   questions: ResultQuestion[];
   disclaimer: string;
+  /** true om resultatet kommer från det förenklade swajp-testet (experimentellt). */
+  experimental?: boolean;
 }

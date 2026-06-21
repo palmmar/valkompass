@@ -65,6 +65,18 @@ export default function OmPage() {
       </section>
 
       <section className="space-y-2">
+        <h2 className="text-xl font-semibold">Sparas mina svar?</h2>
+        <p className="text-muted-foreground">
+          Medan du gör kompassen sparas dina svar lokalt i din webbläsare (localStorage) så att
+          du kan ladda om sidan eller komma tillbaka senare och fortsätta där du slutade.
+          Informationen stannar i din webbläsare – inget skickas till oss förrän du själv väljer
+          att se ditt resultat, och då lagras svaren anonymt utan koppling till dig. Du kan när
+          som helst börja om via knappen “Börja om” på kompassens startsida, eller rensa
+          lagringen i webbläsarens inställningar.
+        </p>
+      </section>
+
+      <section className="space-y-2">
         <h2 className="text-xl font-semibold">Neutralitet och källor</h2>
         <p className="text-muted-foreground">
           Valkompassen är obunden och inte knuten till något parti. Partiernas positioner

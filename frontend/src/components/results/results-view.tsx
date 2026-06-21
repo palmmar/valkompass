@@ -14,7 +14,7 @@ import {
 } from "@/components/ui/accordion";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Badge } from "@/components/ui/badge";
-import { Check, Info, Share2, Star } from "lucide-react";
+import { Check, Info, Share2, Star, FlaskConical } from "lucide-react";
 import { PartyLogo } from "@/components/party-logo";
 import { PoliticalMap } from "@/components/results/political-map";
 import type { ResultDocument, ResultPartyScore } from "@/lib/types";
@@ -33,6 +33,18 @@ export function ResultsView({ doc }: { doc: ResultDocument }) {
         <h1 className="text-2xl font-bold tracking-tight">Ditt resultat</h1>
         <ShareButton />
       </div>
+
+      {doc.experimental && (
+        <Alert>
+          <FlaskConical className="size-4" />
+          <AlertTitle>Experimentellt resultat</AlertTitle>
+          <AlertDescription>
+            Det här resultatet kommer från det förenklade swajp-testet, där varje fråga bara
+            besvaras med håller med eller inte. Det ger en grövre matchning och kan vara mindre
+            träffsäkert än det vanliga testet.
+          </AlertDescription>
+        </Alert>
+      )}
 
       {top && (
         <Card>
