@@ -11,7 +11,8 @@ public sealed record ResultDocument(
     IReadOnlyList<ResultPartyScoreDto> Overall,
     IReadOnlyList<ResultCategoryDto> Categories,
     IReadOnlyList<ResultQuestionDto> Questions,
-    string Disclaimer);
+    string Disclaimer,
+    bool Experimental = false);
 
 /// <summary>Referensdata om ett parti (för visning).</summary>
 public sealed record ResultPartyRefDto(

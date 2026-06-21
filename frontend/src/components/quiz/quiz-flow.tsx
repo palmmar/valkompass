@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
@@ -11,7 +11,9 @@ import { Badge } from "@/components/ui/badge";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Star, SkipForward, ChevronLeft } from "lucide-react";
 import { useQuizStore } from "@/stores/quiz-store";
-import { submitQuiz } from "@/lib/api";
+import { useHydrated } from "@/hooks/use-hydrated";
+import { useSyncQuizSession } from "@/hooks/use-sync-quiz-session";
+import { submitQuiz, type QuizMode } from "@/lib/api";
 import { SCALE_OPTIONS } from "@/lib/scale";
 import type { QuestionnaireCategory, QuestionnaireQuestion, SubmitQuizRequest } from "@/lib/types";
 import { cn } from "@/lib/utils";
@@ -19,15 +21,24 @@ import { cn } from "@/lib/utils";
 interface Props {
   questions: QuestionnaireQuestion[];
   categories: QuestionnaireCategory[];
+  mode: QuizMode;
 }
 
-export function QuizFlow({ questions, categories }: Props) {
+export function QuizFlow({ questions, categories, mode }: Props) {
   const router = useRouter();
-  const { answers, currentIndex, setAnswer, skip, toggleImportant, setIndex, reset } = useQuizStore();
-  const [mounted, setMounted] = useState(false);
+  const {
+    answers,
+    currentIndex,
+    setAnswer,
+    skip,
+    toggleImportant,
+    setIndex,
+    reset,
+  } = useQuizStore();
+  const hydrated = useHydrated();
   const [submitting, setSubmitting] = useState(false);
 
-  useEffect(() => setMounted(true), []);
+  useSyncQuizSession(mode, "standard");
 
   const categoryName = useMemo(() => {
     const map = new Map(categories.map((c) => [c.slug, c.name]));
@@ -39,7 +50,7 @@ export function QuizFlow({ questions, categories }: Props) {
     [answers, questions],
   );
 
-  if (!mounted) {
+  if (!hydrated) {
     return (
       <div className="mx-auto max-w-2xl space-y-6 px-4 py-10">
         <Skeleton className="h-2 w-full" />

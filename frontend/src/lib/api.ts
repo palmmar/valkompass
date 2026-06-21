@@ -14,6 +14,10 @@ const CLIENT_BASE = process.env.NEXT_PUBLIC_API_BASE_URL ?? "";
 export const QUIZ_MODES = [25, 50, 75] as const;
 export type QuizMode = (typeof QUIZ_MODES)[number];
 
+/** Quizvariant: standard knappval, eller förenklat binärt swajp-läge (experimentellt). */
+export const QUIZ_VARIANTS = ["standard", "swipe"] as const;
+export type QuizVariant = (typeof QUIZ_VARIANTS)[number];
+
 /** Hämtar frågeformuläret server-side. `mode` styr antalet frågor (utelämnad = alla). */
 export async function fetchQuestionnaire(mode?: QuizMode): Promise<Questionnaire> {
   const query = mode ? `?mode=${mode}` : "";

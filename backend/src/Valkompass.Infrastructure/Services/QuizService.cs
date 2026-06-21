@@ -90,10 +90,11 @@ public class QuizService(AppDbContext db) : IQuizService
         var matchParties = parties.Select(p => new MatchParty(p.Id, p.Code, p.DisplayOrder)).ToList();
         var matchPositions = positions.Select(p => new MatchPartyPosition(p.PartyId, p.QuestionId, p.Value)).ToList();
 
-        var match = MatchCalculator.Calculate(matchAnswers, matchQuestions, matchParties, matchPositions);
+        var match = MatchCalculator.Calculate(
+            matchAnswers, matchQuestions, matchParties, matchPositions, binary: request.Simplified);
 
         // --- Bygg det frysta resultatdokumentet ---
-        var document = BuildDocument(match, parties, questionById, positionByKey);
+        var document = BuildDocument(match, parties, questionById, positionByKey, request.Simplified);
 
         // --- Spara session + svar ---
         var session = new QuizSession
@@ -136,7 +137,8 @@ public class QuizService(AppDbContext db) : IQuizService
         MatchResult match,
         IReadOnlyList<Party> parties,
         IReadOnlyDictionary<int, Question> questionById,
-        IReadOnlyDictionary<(int PartyId, int QuestionId), PartyPosition> positionByKey)
+        IReadOnlyDictionary<(int PartyId, int QuestionId), PartyPosition> positionByKey,
+        bool experimental)
     {
         var partyById = parties.ToDictionary(p => p.Id);
 
@@ -205,7 +207,7 @@ public class QuizService(AppDbContext db) : IQuizService
             .ToList();
 
         return new ResultDocument(
-            DateTimeOffset.UtcNow, partyRefs, overall, categories, questions, Disclaimers.Result);
+            DateTimeOffset.UtcNow, partyRefs, overall, categories, questions, Disclaimers.Result, experimental);
     }
 
     private async Task<string> GenerateUniqueTokenAsync(CancellationToken ct)
