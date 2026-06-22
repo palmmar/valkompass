@@ -118,6 +118,12 @@ export function ResultsView({ doc }: { doc: ResultDocument }) {
               const parties = [...q.parties].sort(
                 (a, b) => (b.agreementPct ?? -1) - (a.agreementPct ?? -1),
               );
+              // Partier som svarat exakt som användaren (100 % överensstämmelse) – visas
+              // som logotyper redan i den hopfällda rubriken, så att man slipper öppna
+              // varje fråga för att se vilka man matchar fullt ut.
+              const fullMatches = parties.filter(
+                (p) => p.agreementPct != null && p.agreementPct >= 99.95,
+              );
               return (
                 <AccordionItem key={q.questionId} value={String(q.questionId)}>
                   <AccordionTrigger className="text-left">
@@ -131,6 +137,20 @@ export function ResultsView({ doc }: { doc: ResultDocument }) {
                           </Badge>
                         )}
                       </span>
+                      {fullMatches.length > 0 && (
+                        <span className="flex flex-wrap items-center gap-1.5 text-xs font-normal text-muted-foreground">
+                          <span>Samma svar:</span>
+                          {fullMatches.map((p) => (
+                            <span key={p.partyCode} title={name(p.partyCode)} className="inline-flex">
+                              <PartyLogo
+                                code={p.partyCode}
+                                color={color(p.partyCode)}
+                                size={20}
+                              />
+                            </span>
+                          ))}
+                        </span>
+                      )}
                     </span>
                   </AccordionTrigger>
                   <AccordionContent className="space-y-3">
