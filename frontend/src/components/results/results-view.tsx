@@ -93,22 +93,40 @@ export function ResultsView({ doc }: { doc: ResultDocument }) {
 
         <TabsContent value="categories" className="pt-4">
           <Accordion className="w-full">
-            {doc.categories.map((cat) => (
-              <AccordionItem key={cat.slug} value={cat.slug}>
-                <AccordionTrigger>{cat.name}</AccordionTrigger>
-                <AccordionContent className="space-y-3">
-                  {cat.parties.map((p) => (
-                    <ScoreRow
-                      key={p.partyCode}
-                      code={p.partyCode}
-                      label={name(p.partyCode)}
-                      score={p}
-                      color={color(p.partyCode)}
-                    />
-                  ))}
-                </AccordionContent>
-              </AccordionItem>
-            ))}
+            {doc.categories.map((cat) => {
+              // Partiet som stämmer bäst i området plus alla som ligger inom 2 %-enheter
+              // från det – visas som logotyper redan i den hopfällda rubriken, så att man
+              // ser sina toppmatchningar per område utan att fälla ut.
+              const ranked = cat.parties.filter((p) => p.agreementPct != null);
+              const maxPct = ranked.reduce((m, p) => Math.max(m, p.agreementPct!), -Infinity);
+              const bestMatches = ranked.filter((p) => maxPct - p.agreementPct! <= 2);
+              return (
+                <AccordionItem key={cat.slug} value={cat.slug}>
+                  <AccordionTrigger className="text-left">
+                    <span className="flex flex-col gap-1">
+                      <span>{cat.name}</span>
+                      <MatchLogos
+                        label="Stämmer bäst:"
+                        parties={bestMatches}
+                        name={name}
+                        color={color}
+                      />
+                    </span>
+                  </AccordionTrigger>
+                  <AccordionContent className="space-y-3">
+                    {cat.parties.map((p) => (
+                      <ScoreRow
+                        key={p.partyCode}
+                        code={p.partyCode}
+                        label={name(p.partyCode)}
+                        score={p}
+                        color={color(p.partyCode)}
+                      />
+                    ))}
+                  </AccordionContent>
+                </AccordionItem>
+              );
+            })}
           </Accordion>
         </TabsContent>
 
@@ -137,20 +155,7 @@ export function ResultsView({ doc }: { doc: ResultDocument }) {
                           </Badge>
                         )}
                       </span>
-                      {fullMatches.length > 0 && (
-                        <span className="flex flex-wrap items-center gap-1.5 text-xs font-normal text-muted-foreground">
-                          <span>Samma svar:</span>
-                          {fullMatches.map((p) => (
-                            <span key={p.partyCode} title={name(p.partyCode)} className="inline-flex">
-                              <PartyLogo
-                                code={p.partyCode}
-                                color={color(p.partyCode)}
-                                size={20}
-                              />
-                            </span>
-                          ))}
-                        </span>
-                      )}
+                      <MatchLogos label="Samma svar:" parties={fullMatches} name={name} color={color} />
                     </span>
                   </AccordionTrigger>
                   <AccordionContent className="space-y-3">
@@ -227,6 +232,34 @@ export function ResultsView({ doc }: { doc: ResultDocument }) {
         </Button>
       </div>
     </div>
+  );
+}
+
+/**
+ * En rad med partilogotyper i en accordion-rubrik (t.ex. "Samma svar:" per fråga eller
+ * "Stämmer bäst:" per område). Döljs helt när det inte finns några partier att visa.
+ */
+function MatchLogos({
+  label,
+  parties,
+  name,
+  color,
+}: {
+  label: string;
+  parties: { partyCode: string }[];
+  name: (code: string) => string;
+  color: (code: string) => string;
+}) {
+  if (parties.length === 0) return null;
+  return (
+    <span className="flex flex-wrap items-center gap-1.5 text-xs font-normal text-muted-foreground">
+      <span>{label}</span>
+      {parties.map((p) => (
+        <span key={p.partyCode} title={name(p.partyCode)} className="inline-flex">
+          <PartyLogo code={p.partyCode} color={color(p.partyCode)} size={20} />
+        </span>
+      ))}
+    </span>
   );
 }
 
