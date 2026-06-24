@@ -1,18 +1,29 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Fraunces, Libre_Franklin, Spline_Sans_Mono } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "@/components/ui/sonner";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+// Fraunces – redaktionell display-serif för rubriker. Libre Franklin – nyhetsmässig
+// brödtext. Spline Sans Mono – etiketter, siffror och datatabeller (datajournalistik-ton).
+const fraunces = Fraunces({
+  variable: "--font-heading",
   subsets: ["latin"],
+  axes: ["opsz"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const libreFranklin = Libre_Franklin({
+  variable: "--font-sans",
   subsets: ["latin"],
+  display: "swap",
+});
+
+const splineMono = Spline_Sans_Mono({
+  variable: "--font-mono",
+  subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -29,7 +40,7 @@ export default function RootLayout({
   return (
     <html
       lang="sv"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${fraunces.variable} ${libreFranklin.variable} ${splineMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
         <SiteHeader />

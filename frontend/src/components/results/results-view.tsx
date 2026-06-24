@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { toast } from "sonner";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -47,17 +47,12 @@ export function ResultsView({ doc }: { doc: ResultDocument }) {
       )}
 
       {top && (
-        <Card>
-          <CardContent className="flex items-center gap-4 pt-6">
-            <PartyLogo code={top.partyCode} color={color(top.partyCode)} size={56} />
-            <div>
-              <p className="text-sm text-muted-foreground">Störst överensstämmelse</p>
-              <p className="text-lg font-semibold">
-                {name(top.partyCode)} – {formatPct(top.agreementPct)}
-              </p>
-            </div>
-          </CardContent>
-        </Card>
+        <WinnerCallout
+          code={top.partyCode}
+          label={name(top.partyCode)}
+          pct={top.agreementPct ?? 0}
+          color={color(top.partyCode)}
+        />
       )}
 
       <section className="space-y-4">
@@ -263,6 +258,63 @@ function MatchLogos({
   );
 }
 
+/** Räknar upp 0 → target med ease-out när komponenten monteras. */
+function useCountUp(target: number, duration = 1200) {
+  const [value, setValue] = useState(0);
+  useEffect(() => {
+    let raf = 0;
+    const start = performance.now();
+    const tick = (now: number) => {
+      const p = Math.min(1, (now - start) / duration);
+      setValue(target * (1 - Math.pow(1 - p, 3)));
+      if (p < 1) raf = requestAnimationFrame(tick);
+    };
+    raf = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(raf);
+  }, [target, duration]);
+  return value;
+}
+
+/** Redaktionell "vinnar"-callout: störst överensstämmelse, med uppräknande procent. */
+function WinnerCallout({
+  code,
+  label,
+  pct,
+  color,
+}: {
+  code: string;
+  label: string;
+  pct: number;
+  color: string;
+}) {
+  const count = useCountUp(pct);
+  return (
+    <Card className="overflow-hidden">
+      <div className="h-1.5 w-full" style={{ backgroundColor: color }} />
+      <CardContent className="pt-6">
+        <div className="font-mono text-xs font-medium uppercase tracking-[0.16em] text-primary">
+          Störst överensstämmelse
+        </div>
+        <div className="mt-4 flex items-center gap-4 sm:gap-5">
+          <PartyLogo code={code} color={color} size={56} />
+          <div className="min-w-0 flex-1">
+            <p className="font-heading text-xl font-semibold leading-tight sm:text-3xl">
+              {label}
+            </p>
+            <p className="mt-1 text-sm text-muted-foreground">
+              av dina svar sammanfaller med partiets källsatta positioner
+            </p>
+          </div>
+          <div className="font-heading text-4xl font-semibold leading-none tabular-nums sm:text-6xl">
+            {Math.round(count)}
+            <span className="ml-0.5 text-xl text-muted-foreground sm:text-2xl">%</span>
+          </div>
+        </div>
+      </CardContent>
+    </Card>
+  );
+}
+
 function ScoreRow({
   code,
   label,
@@ -282,7 +334,7 @@ function ScoreRow({
           <PartyLogo code={code} color={color} size={22} />
           {label}
         </span>
-        <span className="tabular-nums text-muted-foreground">
+        <span className="font-mono text-xs tabular-nums text-muted-foreground sm:text-sm">
           {pct == null ? "Otillräckligt underlag" : formatPct(pct)}
         </span>
       </div>

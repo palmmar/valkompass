@@ -8,8 +8,8 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-sans);
-  --font-mono: var(--font-geist-mono);
-  --font-heading: var(--font-sans);
+  --font-mono: var(--font-mono);
+  --font-heading: var(--font-heading);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -49,72 +49,75 @@
 }
 
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --radius: 0.625rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  /* Civic / datajournalistik – varmt papper, bläcksvart text, djup teal-accent. */
+  --background: #f4efe4;
+  --foreground: #1b1a16;
+  --card: #faf6ec;
+  --card-foreground: #1b1a16;
+  --popover: #faf6ec;
+  --popover-foreground: #1b1a16;
+  --primary: #1c5d5a;
+  --primary-foreground: #f7f3e9;
+  --secondary: #ebe3d3;
+  --secondary-foreground: #1b1a16;
+  --muted: #ebe3d3;
+  --muted-foreground: #5c5648;
+  --accent: #e0e9e6;
+  --accent-foreground: #14403e;
+  --destructive: oklch(0.55 0.2 25.5);
+  --border: #dbd2c0;
+  --input: #dbd2c0;
+  --ring: #1c5d5a;
+  /* Återhållen redaktionell datapalett (diagram i admin/resultat). */
+  --chart-1: #1c5d5a;
+  --chart-2: #c2783c;
+  --chart-3: #8a3b3b;
+  --chart-4: #4e6e8e;
+  --chart-5: #b59b6a;
+  --radius: 0.4rem;
+  --sidebar: #efe9dc;
+  --sidebar-foreground: #1b1a16;
+  --sidebar-primary: #1c5d5a;
+  --sidebar-primary-foreground: #f7f3e9;
+  --sidebar-accent: #e0e9e6;
+  --sidebar-accent-foreground: #14403e;
+  --sidebar-border: #dbd2c0;
+  --sidebar-ring: #1c5d5a;
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
+  /* Civic mörkt läge – varm kolsvart bas, ljusare teal-accent. */
+  --background: #17150f;
+  --foreground: #ece6d8;
+  --card: #1f1c15;
+  --card-foreground: #ece6d8;
+  --popover: #1f1c15;
+  --popover-foreground: #ece6d8;
+  --primary: #5fb3ac;
+  --primary-foreground: #10221f;
+  --secondary: #2a261c;
+  --secondary-foreground: #ece6d8;
+  --muted: #2a261c;
+  --muted-foreground: #a39c88;
+  --accent: #243430;
+  --accent-foreground: #cfe6e1;
   --destructive: oklch(0.704 0.191 22.216);
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --ring: #5fb3ac;
+  --chart-1: #5fb3ac;
+  --chart-2: #d9985a;
+  --chart-3: #c76b6b;
+  --chart-4: #7c9bbf;
+  --chart-5: #cbb286;
+  --sidebar: #1f1c15;
+  --sidebar-foreground: #ece6d8;
+  --sidebar-primary: #5fb3ac;
+  --sidebar-primary-foreground: #10221f;
+  --sidebar-accent: #243430;
+  --sidebar-accent-foreground: #cfe6e1;
   --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  --sidebar-ring: #5fb3ac;
 }
 
 @layer base {
@@ -126,5 +129,12 @@
   }
   html {
     @apply font-sans;
+  }
+  /* Redaktionell serif på rubriker (Fraunces) – ärvs av alla h1–h3 i appen. */
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.015em;
   }
 }

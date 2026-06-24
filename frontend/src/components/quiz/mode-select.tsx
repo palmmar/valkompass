@@ -97,20 +97,27 @@ export function ModeSelect() {
       <div className="mt-8 grid gap-4 sm:grid-cols-3">
         {MODES.map((m) => (
           <Card key={m.mode}>
-            <CardContent className="flex h-full flex-col gap-2 pt-6">
-              <m.icon className="size-6 text-muted-foreground" />
-              <h2 className="font-semibold">
-                {m.title}
-                <span className="ml-2 text-sm font-normal text-muted-foreground">
-                  {m.mode} frågor · {m.duration}
+            <CardContent className="flex h-full flex-col gap-3 pt-6">
+              {/* Mobil: ikonbricka + titel på rad. Desktop (sm): staplat ovanpå texten. */}
+              <div className="flex items-center gap-4 sm:block sm:space-y-3">
+                <span className="flex size-14 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                  <m.icon className="size-7" />
                 </span>
-              </h2>
-              <p className="flex-1 text-sm text-muted-foreground">{m.body}</p>
+                <div className="min-w-0">
+                  <h2 className="text-lg font-semibold sm:text-xl">{m.title}</h2>
+                  <p className="font-mono text-xs text-muted-foreground">
+                    {m.mode} frågor · {m.duration}
+                  </p>
+                </div>
+              </div>
+              <p className="hidden flex-1 text-sm leading-relaxed text-muted-foreground sm:block">
+                {m.body}
+              </p>
               <Button
                 render={<Link href={`/quiz?mode=${m.mode}`} />}
                 nativeButton={false}
                 onClick={() => start(m.mode as QuizMode)}
-                className="mt-2"
+                className="mt-1 w-full sm:mt-2"
                 variant={m.mode === 50 ? "default" : "outline"}
               >
                 {hasProgress ? "Starta ny" : "Starta"}
@@ -123,7 +130,9 @@ export function ModeSelect() {
       <Card className="mt-4 border-dashed">
         <CardContent className="flex flex-col gap-3 pt-6 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex items-start gap-3">
-            <FlaskConical className="mt-0.5 size-6 shrink-0 text-muted-foreground" />
+            <span className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-secondary text-muted-foreground">
+              <FlaskConical className="size-5" />
+            </span>
             <div>
               <h2 className="flex items-center gap-2 font-semibold">
                 Swajpa
