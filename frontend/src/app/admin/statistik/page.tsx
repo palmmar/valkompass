@@ -5,10 +5,11 @@ import { useQuery } from "@tanstack/react-query";
 import {
   getAnswerStats,
   getPartyMatchStats,
+  getQuizFunnel,
   getQuizStats,
   listParties,
 } from "@/lib/admin-api";
-import type { QuestionAnswerStats } from "@/lib/admin-types";
+import type { QuestionAnswerStats, QuizFunnel } from "@/lib/admin-types";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   Table,
@@ -19,6 +20,9 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { ModeFunnelChart, type ModeDatum } from "@/components/admin/charts/mode-funnel-chart";
+import { DailyLineChart } from "@/components/admin/charts/daily-line-chart";
+import { BucketBarChart, type BucketDatum } from "@/components/admin/charts/bucket-bar-chart";
 
 const dateTimeFmt = new Intl.DateTimeFormat("sv-SE", {
   dateStyle: "short",
@@ -74,6 +78,56 @@ function groupByCategory(questions: QuestionAnswerStats[]) {
   return groups;
 }
 
+// --- Trafik / funnel ---
+const MIN_SAMPLE = 5; // under detta antal döljs slutförandegraden (kan vara missvisande)
+const MODE_NAMES: Record<number, string> = { 25: "Snabb", 50: "Standard", 75: "Fördjupning" };
+const WEEKDAYS = ["Sön", "Mån", "Tis", "Ons", "Tor", "Fre", "Lör"];
+const WEEKDAY_ORDER = [1, 2, 3, 4, 5, 6, 0]; // veckan måndag-först (svensk konvention)
+
+function modeLabel(mode: number, variant: string): string {
+  const base = MODE_NAMES[mode] ?? (mode ? String(mode) : "Okänt");
+  return variant === "swipe" ? `${base} · swajp` : base;
+}
+
+function pct(part: number, whole: number): string {
+  return whole > 0 ? `${Math.round((part / whole) * 100)} %` : "–";
+}
+
+function modeData(funnel: QuizFunnel): ModeDatum[] {
+  return funnel.byMode.map((m) => ({
+    label: modeLabel(m.mode, m.variant),
+    started: m.started,
+    completed: m.completed,
+  }));
+}
+
+function weekdayBuckets(funnel: QuizFunnel): BucketDatum[] {
+  const map = new Map(funnel.byWeekday.map((b) => [b.bucket, b.completed]));
+  return WEEKDAY_ORDER.map((d) => ({ label: WEEKDAYS[d], value: map.get(d) ?? 0 }));
+}
+
+function hourBuckets(funnel: QuizFunnel): BucketDatum[] {
+  const map = new Map(funnel.byHour.map((b) => [b.bucket, b.completed]));
+  return Array.from({ length: 24 }, (_, h) => ({
+    label: String(h).padStart(2, "0"),
+    value: map.get(h) ?? 0,
+    title: `kl ${String(h).padStart(2, "0")}`,
+  }));
+}
+
+function FunnelCard({ title, value }: { title: string; value: number | string }) {
+  return (
+    <Card>
+      <CardHeader>
+        <CardTitle className="text-base text-muted-foreground">{title}</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <p className="text-3xl font-bold tabular-nums">{value}</p>
+      </CardContent>
+    </Card>
+  );
+}
+
 export default function StatistikPage() {
   const [tab, setTab] = useState("latest");
   const [now] = useState(() => Date.now());
@@ -93,6 +147,11 @@ export default function StatistikPage() {
     queryKey: ["parties"],
     queryFn: listParties,
     enabled: tab === "party",
+  });
+  const funnel = useQuery({
+    queryKey: ["quiz-funnel"],
+    queryFn: getQuizFunnel,
+    enabled: tab === "traffic",
   });
 
   const cards = [
@@ -130,6 +189,7 @@ export default function StatistikPage() {
       <Tabs value={tab} onValueChange={(v) => setTab(v as string)}>
         <TabsList>
           <TabsTrigger value="latest">Senaste</TabsTrigger>
+          <TabsTrigger value="traffic">Trafik</TabsTrigger>
           <TabsTrigger value="answers">Svarsfördelning</TabsTrigger>
           <TabsTrigger value="party">Partimatchning</TabsTrigger>
         </TabsList>
@@ -162,6 +222,86 @@ export default function StatistikPage() {
                 ))}
               </TableBody>
             </Table>
+          )}
+        </TabsContent>
+
+        {/* Trafik / funnel */}
+        <TabsContent value="traffic" className="space-y-6 pt-2">
+          {funnel.isLoading ? (
+            <p className="text-sm text-muted-foreground">Laddar…</p>
+          ) : !funnel.data || funnel.data.started + funnel.data.completed === 0 ? (
+            <p className="text-sm text-muted-foreground">Ingen trafik registrerad än.</p>
+          ) : (
+            <>
+              <div className="grid gap-4 sm:grid-cols-3">
+                <FunnelCard title="Påbörjade" value={funnel.data.started} />
+                <FunnelCard title="Slutförda" value={funnel.data.completed} />
+                <FunnelCard
+                  title="Slutförandegrad"
+                  value={pct(funnel.data.completed, funnel.data.started)}
+                />
+              </div>
+
+              <p className="text-xs text-muted-foreground italic">
+                Påbörjade räknas anonymt vid första svaret (en gång per webbläsarsession);
+                slutförda registreras serverside vid inlämning. Slutförandegraden är därför
+                ungefärlig.
+              </p>
+
+              <section className="space-y-3">
+                <h2 className="text-lg font-medium">Per läge</h2>
+                <ModeFunnelChart data={modeData(funnel.data)} />
+                <Table>
+                  <TableHeader>
+                    <TableRow>
+                      <TableHead>Läge</TableHead>
+                      <TableHead className="text-right">Påbörjade</TableHead>
+                      <TableHead className="text-right">Slutförda</TableHead>
+                      <TableHead className="text-right">Slutförandegrad</TableHead>
+                    </TableRow>
+                  </TableHeader>
+                  <TableBody>
+                    {funnel.data.byMode.map((m) => (
+                      <TableRow key={`${m.mode}-${m.variant}`}>
+                        <TableCell>{modeLabel(m.mode, m.variant)}</TableCell>
+                        <TableCell className="text-right tabular-nums">{m.started}</TableCell>
+                        <TableCell className="text-right tabular-nums">{m.completed}</TableCell>
+                        <TableCell className="text-right tabular-nums text-muted-foreground">
+                          {m.started >= MIN_SAMPLE ? pct(m.completed, m.started) : "–"}
+                        </TableCell>
+                      </TableRow>
+                    ))}
+                  </TableBody>
+                </Table>
+              </section>
+
+              <section className="space-y-2">
+                <h2 className="text-lg font-medium">Per dag</h2>
+                <p className="text-xs text-muted-foreground">Senaste 90 dagarna.</p>
+                <DailyLineChart data={funnel.data.daily} />
+              </section>
+
+              <div className="grid gap-6 lg:grid-cols-2">
+                <section className="space-y-2">
+                  <h3 className="text-sm font-semibold text-muted-foreground">
+                    Slutförda per veckodag
+                  </h3>
+                  <BucketBarChart
+                    data={weekdayBuckets(funnel.data)}
+                    ariaLabel="Slutförda kompasser per veckodag"
+                  />
+                </section>
+                <section className="space-y-2">
+                  <h3 className="text-sm font-semibold text-muted-foreground">
+                    Slutförda per timme (svensk tid)
+                  </h3>
+                  <BucketBarChart
+                    data={hourBuckets(funnel.data)}
+                    ariaLabel="Slutförda kompasser per timme"
+                  />
+                </section>
+              </div>
+            </>
           )}
         </TabsContent>
 

@@ -118,6 +118,17 @@ public class QuizService(AppDbContext db) : IQuizService
         }
 
         db.QuizSessions.Add(session);
+
+        // Anonym slutförande-händelse för funnel-statistiken. Skrivs serverside i samma
+        // transaktion → "slutförd" är auktoritativt (kopplat till ett verkligt sparat resultat).
+        db.QuizEvents.Add(new QuizEvent
+        {
+            Type = QuizEventType.Completed,
+            Mode = request.Mode ?? 0,
+            Variant = request.Simplified ? QuizVariant.Swipe : QuizVariant.Standard,
+            OccurredAt = DateTimeOffset.UtcNow,
+        });
+
         await db.SaveChangesAsync(ct);
 
         return SubmitOutcome.Success(session.ShareToken);

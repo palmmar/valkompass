@@ -42,3 +42,17 @@ public sealed record AnswerStatsDto(int Sessions, IReadOnlyList<QuestionAnswerSt
 // --- Partimatchning (bästa match per kompass, aggregerad) ---
 public sealed record PartyMatchSliceDto(string PartyCode, int Count);
 public sealed record PartyMatchStatsDto(int Sessions, int Tied, IReadOnlyList<PartyMatchSliceDto> Slices);
+
+// --- Funnel (påbörjade vs slutförda, lägespopularitet, trender) ---
+// Aggregerat ur den anonyma QuizEvent-strömmen. Variant: "standard" | "swipe".
+public sealed record QuizFunnelModeDto(int Mode, string Variant, int Started, int Completed);
+public sealed record QuizDailyPointDto(DateOnly Date, int Started, int Completed);
+/// <summary><c>Bucket</c> = veckodag (0 = söndag … 6 = lördag) respektive timme (0–23), i svensk tid.</summary>
+public sealed record QuizBucketDto(int Bucket, int Completed);
+public sealed record QuizFunnelDto(
+    int Started,
+    int Completed,
+    IReadOnlyList<QuizFunnelModeDto> ByMode,
+    IReadOnlyList<QuizDailyPointDto> Daily,
+    IReadOnlyList<QuizBucketDto> ByWeekday,
+    IReadOnlyList<QuizBucketDto> ByHour);
