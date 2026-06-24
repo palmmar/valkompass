@@ -184,13 +184,13 @@ export function SwipeFlow({ questions, categories, mode }: Props) {
         className="relative touch-none cursor-grab select-none active:cursor-grabbing"
       >
         <span
-          className="pointer-events-none absolute left-4 top-4 z-10 -rotate-12 rounded-md border-2 border-red-600 px-2 py-1 text-sm font-bold uppercase text-red-600"
+          className="pointer-events-none absolute left-4 top-4 z-10 -rotate-12 rounded-md border-2 border-destructive px-2 py-1 text-sm font-bold uppercase text-destructive"
           style={{ opacity: disagreeHint }}
         >
           Håller inte med
         </span>
         <span
-          className="pointer-events-none absolute right-4 top-4 z-10 rotate-12 rounded-md border-2 border-green-600 px-2 py-1 text-sm font-bold uppercase text-green-600"
+          className="pointer-events-none absolute right-4 top-4 z-10 rotate-12 rounded-md border-2 border-primary px-2 py-1 text-sm font-bold uppercase text-primary"
           style={{ opacity: agreeHint }}
         >
           Håller med
@@ -228,24 +228,30 @@ export function SwipeFlow({ questions, categories, mode }: Props) {
         <Button
           variant="outline"
           aria-label={BINARY_OPTIONS[0].label}
-          className={cn("h-14 border-red-600", chosen === DISAGREE && "ring-2 ring-ring")}
+          className={cn(
+            "h-14 border-destructive",
+            chosen === DISAGREE && "bg-destructive/10 ring-2 ring-destructive",
+          )}
           onClick={(e) => {
             e.currentTarget.blur();
             commit(DISAGREE);
           }}
         >
-          <ThumbsDown className="size-6 text-red-600" />
+          <ThumbsDown className="size-6 text-destructive" />
         </Button>
         <Button
           variant="outline"
           aria-label={BINARY_OPTIONS[1].label}
-          className={cn("h-14 border-green-600", chosen === AGREE && "ring-2 ring-ring")}
+          className={cn(
+            "h-14 border-primary",
+            chosen === AGREE && "bg-primary/10 ring-2 ring-primary",
+          )}
           onClick={(e) => {
             e.currentTarget.blur();
             commit(AGREE);
           }}
         >
-          <ThumbsUp className="size-6 text-green-600" />
+          <ThumbsUp className="size-6 text-primary" />
         </Button>
       </div>
 
