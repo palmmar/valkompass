@@ -11,6 +11,7 @@ import type {
   QuizStats,
   AnswerStats,
   PartyMatchStats,
+  QuizFunnel,
 } from "@/lib/admin-types";
 
 export class ApiError extends Error {
@@ -115,3 +116,4 @@ export const savePositions = (questionId: number, positions: PositionInput[]) =>
 export const getQuizStats = () => req<QuizStats>("/admin/quiz/stats");
 export const getAnswerStats = () => req<AnswerStats>("/admin/quiz/answer-stats");
 export const getPartyMatchStats = () => req<PartyMatchStats>("/admin/quiz/party-stats");
+export const getQuizFunnel = () => req<QuizFunnel>("/admin/quiz/funnel");

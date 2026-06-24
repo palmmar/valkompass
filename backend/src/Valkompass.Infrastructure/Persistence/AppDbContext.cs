@@ -17,6 +17,9 @@ public class AppDbContext(DbContextOptions<AppDbContext> options)
     public DbSet<QuizSession> QuizSessions => Set<QuizSession>();
     public DbSet<Answer> Answers => Set<Answer>();
 
+    /// <summary>Anonym quiz-telemetri (påbörjade/slutförda) – frikopplad från QuizSession.</summary>
+    public DbSet<QuizEvent> QuizEvents => Set<QuizEvent>();
+
     // Valbarometer (fristående opinionsdata – ingen koppling till quiz/resultat).
     public DbSet<Pollster> Pollsters => Set<Pollster>();
     public DbSet<Poll> Polls => Set<Poll>();

@@ -409,6 +409,63 @@ public static class AdminEndpoints
                     .OrderByDescending(s => s.Count).ToList();
             return Results.Ok(new PartyMatchStatsDto(sessions, tied, slices));
         });
+
+        // Funnel ur den anonyma QuizEvent-strömmen: påbörjade vs slutförda, lägespopularitet och
+        // trender. Lägesfördelningen är tidszons-oberoende GROUP BY; tidsserierna konverteras till
+        // svensk tid i minnet (matchar frontendens Europe/Stockholm). Fönstret begränsar uthämtningen.
+        admin.MapGet("/quiz/funnel", async (AppDbContext db) =>
+        {
+            // Lägespopularitet (alltid hela historiken – billig GROUP BY).
+            var modeGroups = await db.QuizEvents
+                .GroupBy(e => new { e.Mode, e.Variant, e.Type })
+                .Select(g => new { g.Key.Mode, g.Key.Variant, g.Key.Type, Count = g.Count() })
+                .ToListAsync();
+
+            int Sum(QuizEventType t) => modeGroups.Where(x => x.Type == t).Sum(x => x.Count);
+
+            var byMode = modeGroups
+                .GroupBy(g => new { g.Mode, g.Variant })
+                .Select(g => new QuizFunnelModeDto(
+                    g.Key.Mode,
+                    g.Key.Variant == QuizVariant.Swipe ? "swipe" : "standard",
+                    g.Where(x => x.Type == QuizEventType.Started).Sum(x => x.Count),
+                    g.Where(x => x.Type == QuizEventType.Completed).Sum(x => x.Count)))
+                .OrderBy(m => m.Mode).ThenBy(m => m.Variant)
+                .ToList();
+
+            // Tidsserier: hämta bara senaste 90 dagarna och bucketa i svensk lokaltid.
+            var tz = TimeZoneInfo.FindSystemTimeZoneById("Europe/Stockholm");
+            var cutoff = DateTimeOffset.UtcNow.AddDays(-90);
+            var recent = await db.QuizEvents
+                .Where(e => e.OccurredAt >= cutoff)
+                .Select(e => new { e.Type, e.OccurredAt })
+                .ToListAsync();
+
+            DateTime Local(DateTimeOffset o) => TimeZoneInfo.ConvertTime(o, tz).DateTime;
+
+            var daily = recent
+                .GroupBy(e => DateOnly.FromDateTime(Local(e.OccurredAt)))
+                .OrderBy(g => g.Key)
+                .Select(g => new QuizDailyPointDto(
+                    g.Key,
+                    g.Count(x => x.Type == QuizEventType.Started),
+                    g.Count(x => x.Type == QuizEventType.Completed)))
+                .ToList();
+
+            var completed = recent.Where(e => e.Type == QuizEventType.Completed).ToList();
+            var byWeekday = completed
+                .GroupBy(e => (int)Local(e.OccurredAt).DayOfWeek) // 0 = söndag … 6 = lördag
+                .Select(g => new QuizBucketDto(g.Key, g.Count()))
+                .OrderBy(b => b.Bucket).ToList();
+            var byHour = completed
+                .GroupBy(e => Local(e.OccurredAt).Hour)
+                .Select(g => new QuizBucketDto(g.Key, g.Count()))
+                .OrderBy(b => b.Bucket).ToList();
+
+            return Results.Ok(new QuizFunnelDto(
+                Sum(QuizEventType.Started), Sum(QuizEventType.Completed),
+                byMode, daily, byWeekday, byHour));
+        });
     }
 
     // --- Hjälpare ---

@@ -111,3 +111,30 @@ export interface PartyMatchStats {
   tied: number;
   slices: PartyMatchSlice[];
 }
+
+// --- Funnel (påbörjade vs slutförda, lägespopularitet, trender) ---
+export interface QuizFunnelMode {
+  mode: number;
+  variant: "standard" | "swipe";
+  started: number;
+  completed: number;
+}
+export interface QuizDailyPoint {
+  /** ISO-datum (YYYY-MM-DD) i svensk tid. */
+  date: string;
+  started: number;
+  completed: number;
+}
+export interface QuizBucket {
+  /** Veckodag (0 = söndag … 6 = lördag) eller timme (0–23), i svensk tid. */
+  bucket: number;
+  completed: number;
+}
+export interface QuizFunnel {
+  started: number;
+  completed: number;
+  byMode: QuizFunnelMode[];
+  daily: QuizDailyPoint[];
+  byWeekday: QuizBucket[];
+  byHour: QuizBucket[];
+}

@@ -1,6 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Valkompass.Application.Contracts;
 using Valkompass.Application.Dtos;
+using Valkompass.Domain.Entities;
+using Valkompass.Domain.Enums;
 using Valkompass.Infrastructure.Persistence;
 
 namespace Valkompass.Api.Endpoints;
@@ -55,6 +57,28 @@ public static class PublicEndpoints
             .WithName("SubmitQuiz")
             .WithSummary("Skickar in svar, beräknar matchning och returnerar en delningstoken.")
             .RequireRateLimiting("submit");
+
+        group.MapPost("/quiz/start", async (StartQuizRequest request, AppDbContext db, CancellationToken ct) =>
+            {
+                if (!QuizModes.MaxTierByMode.ContainsKey(request.Mode))
+                    return Results.ValidationProblem(new Dictionary<string, string[]>
+                    {
+                        ["mode"] = ["Ogiltigt läge. Tillåtna värden: 25, 50, 75."],
+                    });
+
+                db.QuizEvents.Add(new QuizEvent
+                {
+                    Type = QuizEventType.Started,
+                    Mode = request.Mode,
+                    Variant = request.Simplified ? QuizVariant.Swipe : QuizVariant.Standard,
+                    OccurredAt = DateTimeOffset.UtcNow,
+                });
+                await db.SaveChangesAsync(ct);
+                return Results.NoContent();
+            })
+            .WithName("StartQuiz")
+            .WithSummary("Anonym signal om att en kompass påbörjats (för funnel-statistik). Loggar bara läge + variant.")
+            .RequireRateLimiting("start");
 
         group.MapGet("/results/{token}", async (string token, IQuizService quiz, CancellationToken ct) =>
             {

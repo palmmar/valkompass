@@ -74,6 +74,14 @@ builder.Services.AddRateLimiter(options =>
         o.Window = TimeSpan.FromMinutes(1);
         o.QueueLimit = 0;
     });
+    // Påbörjad-signaler är frekventare än inlämningar och är "best effort": tappade pingar
+    // underskattar bara antalet påbörjade. Håll taket rejält över förväntad samtidighet.
+    options.AddFixedWindowLimiter("start", o =>
+    {
+        o.PermitLimit = 120;
+        o.Window = TimeSpan.FromMinutes(1);
+        o.QueueLimit = 0;
+    });
 });
 
 var app = builder.Build();

@@ -20,7 +20,7 @@ import {
 import { useQuizStore } from "@/stores/quiz-store";
 import { useHydrated } from "@/hooks/use-hydrated";
 import { useSyncQuizSession } from "@/hooks/use-sync-quiz-session";
-import { submitQuiz, type QuizMode } from "@/lib/api";
+import { maybePingStart, submitQuiz, type QuizMode } from "@/lib/api";
 import { SCALE_OPTIONS } from "@/lib/scale";
 import type { QuestionnaireCategory, QuestionnaireQuestion, SubmitQuizRequest } from "@/lib/types";
 import { cn } from "@/lib/utils";
@@ -91,18 +91,26 @@ export function QuizFlow({ questions, categories, mode }: Props) {
   const isLast = index === questions.length - 1;
   const progress = (answeredCount / questions.length) * 100;
 
+  // Första svaret/överhoppningen i en färsk kompass → anonym påbörjad-signal (funnel-statistik).
+  function pingIfFirst() {
+    if (answeredCount === 0) maybePingStart(mode, "standard");
+  }
+
   function choose(value: number) {
+    pingIfFirst();
     setAnswer(question.id, value);
     if (!isLast) setTimeout(() => setIndex(index + 1), 180);
   }
 
   function onSkip() {
+    pingIfFirst();
     skip(question.id);
     if (!isLast) setTimeout(() => setIndex(index + 1), 120);
   }
 
   async function onSubmit() {
     const payload: SubmitQuizRequest = {
+      mode,
       answers: questions.map((q) => {
         const a = answers[q.id];
         const answered = a && (a.value != null || a.isSkipped);

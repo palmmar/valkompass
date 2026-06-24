@@ -14,7 +14,7 @@ import { useQuizStore } from "@/stores/quiz-store";
 import { useHydrated } from "@/hooks/use-hydrated";
 import { useSyncQuizSession } from "@/hooks/use-sync-quiz-session";
 import { useSwipe, type SwipeDirection } from "@/hooks/use-swipe";
-import { submitQuiz, type QuizMode } from "@/lib/api";
+import { maybePingStart, submitQuiz, type QuizMode } from "@/lib/api";
 import { BINARY_OPTIONS } from "@/lib/scale";
 import type { QuestionnaireCategory, QuestionnaireQuestion, SubmitQuizRequest } from "@/lib/types";
 import { cn } from "@/lib/utils";
@@ -59,6 +59,7 @@ export function SwipeFlow({ questions, categories, mode }: Props) {
     const latest = useQuizStore.getState().answers;
     const payload: SubmitQuizRequest = {
       simplified: true,
+      mode,
       answers: questions.map((q) => {
         const a = latest[q.id];
         const answered = a && (a.value != null || a.isSkipped);
@@ -80,12 +81,17 @@ export function SwipeFlow({ questions, categories, mode }: Props) {
       toast.error(e instanceof Error ? e.message : "Något gick fel.");
       setSubmitting(false);
     }
-  }, [questions, reset, router]);
+  }, [questions, reset, router, mode]);
 
   // Spara svaret och animera ut kortet. På sista frågan går vi direkt till resultatet.
   const commit = useCallback(
     (value: number) => {
       if (exit || submitting || !question) return;
+      // Första svaret i en färsk kompass → anonym påbörjad-signal (funnel-statistik).
+      const hasAny = Object.values(useQuizStore.getState().answers).some(
+        (a) => a.value != null || a.isSkipped,
+      );
+      if (!hasAny) maybePingStart(mode, "swipe");
       setAnswer(question.id, value);
       setExit(value === AGREE ? "right" : "left");
       setTimeout(() => {
@@ -97,7 +103,7 @@ export function SwipeFlow({ questions, categories, mode }: Props) {
         }
       }, EXIT_MS);
     },
-    [exit, submitting, question, isLast, setAnswer, setIndex, index, submit],
+    [exit, submitting, question, isLast, setAnswer, setIndex, index, submit, mode],
   );
 
   const { dx, dragging, bind } = useSwipe({
@@ -146,6 +152,7 @@ export function SwipeFlow({ questions, categories, mode }: Props) {
 
   function onSkip() {
     if (exit || !question) return;
+    if (answeredCount === 0) maybePingStart(mode, "swipe");
     skip(question.id);
     if (!isLast) setIndex(index + 1);
   }

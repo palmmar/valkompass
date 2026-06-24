@@ -31,6 +31,8 @@ export interface SubmitQuizRequest {
   answers: SubmitAnswer[];
   /** true för det förenklade swajp-testet → binär matchning i backend. */
   simplified?: boolean;
+  /** Valt läge (25/50/75) – loggas i den anonyma funnel-telemetrin. */
+  mode?: number;
 }
 
 export interface SubmitQuizResponse {
