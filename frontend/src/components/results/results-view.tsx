@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { toast } from "sonner";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -47,17 +47,12 @@ export function ResultsView({ doc }: { doc: ResultDocument }) {
       )}
 
       {top && (
-        <Card>
-          <CardContent className="flex items-center gap-4 pt-6">
-            <PartyLogo code={top.partyCode} color={color(top.partyCode)} size={56} />
-            <div>
-              <p className="text-sm text-muted-foreground">Störst överensstämmelse</p>
-              <p className="text-lg font-semibold">
-                {name(top.partyCode)} – {formatPct(top.agreementPct)}
-              </p>
-            </div>
-          </CardContent>
-        </Card>
+        <WinnerCallout
+          code={top.partyCode}
+          label={name(top.partyCode)}
+          pct={top.agreementPct ?? 0}
+          color={color(top.partyCode)}
+        />
       )}
 
       <section className="space-y-4">
@@ -93,22 +88,40 @@ export function ResultsView({ doc }: { doc: ResultDocument }) {
 
         <TabsContent value="categories" className="pt-4">
           <Accordion className="w-full">
-            {doc.categories.map((cat) => (
-              <AccordionItem key={cat.slug} value={cat.slug}>
-                <AccordionTrigger>{cat.name}</AccordionTrigger>
-                <AccordionContent className="space-y-3">
-                  {cat.parties.map((p) => (
-                    <ScoreRow
-                      key={p.partyCode}
-                      code={p.partyCode}
-                      label={name(p.partyCode)}
-                      score={p}
-                      color={color(p.partyCode)}
-                    />
-                  ))}
-                </AccordionContent>
-              </AccordionItem>
-            ))}
+            {doc.categories.map((cat) => {
+              // Partiet som stämmer bäst i området plus alla som ligger inom 2 %-enheter
+              // från det – visas som logotyper redan i den hopfällda rubriken, så att man
+              // ser sina toppmatchningar per område utan att fälla ut.
+              const ranked = cat.parties.filter((p) => p.agreementPct != null);
+              const maxPct = ranked.reduce((m, p) => Math.max(m, p.agreementPct!), -Infinity);
+              const bestMatches = ranked.filter((p) => maxPct - p.agreementPct! <= 2);
+              return (
+                <AccordionItem key={cat.slug} value={cat.slug}>
+                  <AccordionTrigger className="text-left">
+                    <span className="flex flex-col gap-1">
+                      <span>{cat.name}</span>
+                      <MatchLogos
+                        label="Stämmer bäst:"
+                        parties={bestMatches}
+                        name={name}
+                        color={color}
+                      />
+                    </span>
+                  </AccordionTrigger>
+                  <AccordionContent className="space-y-3">
+                    {cat.parties.map((p) => (
+                      <ScoreRow
+                        key={p.partyCode}
+                        code={p.partyCode}
+                        label={name(p.partyCode)}
+                        score={p}
+                        color={color(p.partyCode)}
+                      />
+                    ))}
+                  </AccordionContent>
+                </AccordionItem>
+              );
+            })}
           </Accordion>
         </TabsContent>
 
@@ -137,20 +150,7 @@ export function ResultsView({ doc }: { doc: ResultDocument }) {
                           </Badge>
                         )}
                       </span>
-                      {fullMatches.length > 0 && (
-                        <span className="flex flex-wrap items-center gap-1.5 text-xs font-normal text-muted-foreground">
-                          <span>Samma svar:</span>
-                          {fullMatches.map((p) => (
-                            <span key={p.partyCode} title={name(p.partyCode)} className="inline-flex">
-                              <PartyLogo
-                                code={p.partyCode}
-                                color={color(p.partyCode)}
-                                size={20}
-                              />
-                            </span>
-                          ))}
-                        </span>
-                      )}
+                      <MatchLogos label="Samma svar:" parties={fullMatches} name={name} color={color} />
                     </span>
                   </AccordionTrigger>
                   <AccordionContent className="space-y-3">
@@ -230,6 +230,91 @@ export function ResultsView({ doc }: { doc: ResultDocument }) {
   );
 }
 
+/**
+ * En rad med partilogotyper i en accordion-rubrik (t.ex. "Samma svar:" per fråga eller
+ * "Stämmer bäst:" per område). Döljs helt när det inte finns några partier att visa.
+ */
+function MatchLogos({
+  label,
+  parties,
+  name,
+  color,
+}: {
+  label: string;
+  parties: { partyCode: string }[];
+  name: (code: string) => string;
+  color: (code: string) => string;
+}) {
+  if (parties.length === 0) return null;
+  return (
+    <span className="flex flex-wrap items-center gap-1.5 text-xs font-normal text-muted-foreground">
+      <span>{label}</span>
+      {parties.map((p) => (
+        <span key={p.partyCode} title={name(p.partyCode)} className="inline-flex">
+          <PartyLogo code={p.partyCode} color={color(p.partyCode)} size={20} />
+        </span>
+      ))}
+    </span>
+  );
+}
+
+/** Räknar upp 0 → target med ease-out när komponenten monteras. */
+function useCountUp(target: number, duration = 1200) {
+  const [value, setValue] = useState(0);
+  useEffect(() => {
+    let raf = 0;
+    const start = performance.now();
+    const tick = (now: number) => {
+      const p = Math.min(1, (now - start) / duration);
+      setValue(target * (1 - Math.pow(1 - p, 3)));
+      if (p < 1) raf = requestAnimationFrame(tick);
+    };
+    raf = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(raf);
+  }, [target, duration]);
+  return value;
+}
+
+/** Redaktionell "vinnar"-callout: störst överensstämmelse, med uppräknande procent. */
+function WinnerCallout({
+  code,
+  label,
+  pct,
+  color,
+}: {
+  code: string;
+  label: string;
+  pct: number;
+  color: string;
+}) {
+  const count = useCountUp(pct);
+  return (
+    <Card className="overflow-hidden">
+      <div className="h-1.5 w-full" style={{ backgroundColor: color }} />
+      <CardContent className="pt-6">
+        <div className="font-mono text-xs font-medium uppercase tracking-[0.16em] text-primary">
+          Störst överensstämmelse
+        </div>
+        <div className="mt-4 flex items-center gap-4 sm:gap-5">
+          <PartyLogo code={code} color={color} size={56} />
+          <div className="min-w-0 flex-1">
+            <p className="font-heading text-xl font-semibold leading-tight sm:text-3xl">
+              {label}
+            </p>
+            <p className="mt-1 text-sm text-muted-foreground">
+              av dina svar sammanfaller med partiets källsatta positioner
+            </p>
+          </div>
+          <div className="font-heading text-4xl font-semibold leading-none tabular-nums sm:text-6xl">
+            {Math.round(count)}
+            <span className="ml-0.5 text-xl text-muted-foreground sm:text-2xl">%</span>
+          </div>
+        </div>
+      </CardContent>
+    </Card>
+  );
+}
+
 function ScoreRow({
   code,
   label,
@@ -249,7 +334,7 @@ function ScoreRow({
           <PartyLogo code={code} color={color} size={22} />
           {label}
         </span>
-        <span className="tabular-nums text-muted-foreground">
+        <span className="font-mono text-xs tabular-nums text-muted-foreground sm:text-sm">
           {pct == null ? "Otillräckligt underlag" : formatPct(pct)}
         </span>
       </div>

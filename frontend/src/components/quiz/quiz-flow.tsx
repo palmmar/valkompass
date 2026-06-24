@@ -9,7 +9,14 @@ import { Progress } from "@/components/ui/progress";
 import { Switch } from "@/components/ui/switch";
 import { Badge } from "@/components/ui/badge";
 import { Skeleton } from "@/components/ui/skeleton";
-import { Star, SkipForward, ChevronLeft } from "lucide-react";
+import {
+  Star,
+  SkipForward,
+  ChevronLeft,
+  ThumbsUp,
+  ThumbsDown,
+  type LucideIcon,
+} from "lucide-react";
 import { useQuizStore } from "@/stores/quiz-store";
 import { useHydrated } from "@/hooks/use-hydrated";
 import { useSyncQuizSession } from "@/hooks/use-sync-quiz-session";
@@ -17,6 +24,17 @@ import { submitQuiz, type QuizMode } from "@/lib/api";
 import { SCALE_OPTIONS } from "@/lib/scale";
 import type { QuestionnaireCategory, QuestionnaireQuestion, SubmitQuizRequest } from "@/lib/types";
 import { cn } from "@/lib/utils";
+
+// Ikon + ton per svarssteg (1–4). Tummen upp/ner = riktning, fylld = starkt ställningstagande.
+const ANSWER_STYLE: Record<number, { Icon: LucideIcon; fill: boolean; agree: boolean }> = {
+  4: { Icon: ThumbsUp, fill: true, agree: true }, // Håller helt med
+  3: { Icon: ThumbsUp, fill: false, agree: true }, // Håller delvis med
+  2: { Icon: ThumbsDown, fill: false, agree: false }, // Håller delvis inte med
+  1: { Icon: ThumbsDown, fill: true, agree: false }, // Håller inte med
+};
+
+// Visningsordning vänster→höger: emot → håller med (medhåll till höger känns mest logiskt).
+const ANSWER_ORDER = [...SCALE_OPTIONS].reverse();
 
 interface Props {
   questions: QuestionnaireQuestion[];
@@ -146,20 +164,34 @@ export function QuizFlow({ questions, categories, mode }: Props) {
           {/* key per fråga → knapparna monteras om vid frågebyte, så att ett "fastnat"
               hover-/aktivt läge från en knapptryckning inte följer med till nästa fråga
               (förekommer i in-app-webbläsare, t.ex. Messenger, som rapporterar hover-stöd). */}
-          <div key={question.id} className="grid gap-2">
-            {SCALE_OPTIONS.map((opt) => {
+          <div key={question.id} className="grid grid-cols-4 gap-2 sm:gap-3">
+            {ANSWER_ORDER.map((opt) => {
               const selected = current.value === opt.value && !current.isSkipped;
+              const cfg = ANSWER_STYLE[opt.value];
               return (
                 <Button
                   key={opt.value}
-                  variant={selected ? "default" : "outline"}
-                  className={cn("h-12 justify-start text-base", selected && "ring-2 ring-ring")}
+                  variant="outline"
+                  aria-label={opt.label}
+                  aria-pressed={selected}
+                  className={cn(
+                    "h-auto min-h-20 flex-col gap-2 whitespace-normal px-1 py-3 text-center",
+                    cfg.agree ? "hover:border-primary/60" : "hover:border-destructive/60",
+                    selected &&
+                      (cfg.agree
+                        ? "border-primary bg-primary/10 ring-2 ring-primary"
+                        : "border-destructive bg-destructive/10 ring-2 ring-destructive"),
+                  )}
                   onClick={(e) => {
                     e.currentTarget.blur();
                     choose(opt.value);
                   }}
                 >
-                  {opt.label}
+                  <cfg.Icon
+                    className={cn("size-6", cfg.agree ? "text-primary" : "text-destructive")}
+                    fill={cfg.fill ? "currentColor" : "none"}
+                  />
+                  <span className="text-[11px] font-medium leading-tight">{opt.short}</span>
                 </Button>
               );
             })}

@@ -31,8 +31,12 @@ function unitLabel(value: number, one: string, many: string): string {
 function Unit({ value, label }: { value: number | string; label: string }) {
   return (
     <div className="flex flex-col items-center">
-      <span className="text-3xl font-bold tabular-nums tracking-tight sm:text-4xl">{value}</span>
-      <span className="text-xs uppercase tracking-wide text-muted-foreground">{label}</span>
+      <span className="font-heading text-3xl font-semibold tabular-nums tracking-tight sm:text-4xl">
+        {value}
+      </span>
+      <span className="font-mono text-[0.65rem] uppercase tracking-[0.12em] text-muted-foreground">
+        {label}
+      </span>
     </div>
   );
 }
@@ -63,8 +67,8 @@ export function ElectionCountdown() {
   }
 
   return (
-    <div className="mt-8 flex flex-col items-center gap-1.5">
-      <div className="flex items-start gap-5 sm:gap-7" aria-hidden={remaining === null}>
+    <div className="mt-10 inline-flex flex-col items-start gap-2 border-t border-border pt-5">
+      <div className="flex items-start gap-6 sm:gap-8" aria-hidden={remaining === null}>
         {remaining ? (
           <>
             <Unit value={remaining.days} label={unitLabel(remaining.days, "dag", "dagar")} />
