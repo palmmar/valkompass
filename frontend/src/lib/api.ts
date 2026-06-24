@@ -36,6 +36,30 @@ export async function fetchResult(token: string): Promise<ResultDocument | null>
   return res.json();
 }
 
+/**
+ * Anonym, best-effort signal om att en kompass påbörjats (för funnel-statistik). Skickas en gång
+ * per webbläsarsession och läge+variant (sessionStorage-flagga – ingen cookie, ingen PII). Fel
+ * sväljs medvetet: telemetri får aldrig störa själva testet.
+ */
+export function maybePingStart(mode: QuizMode, variant: QuizVariant): void {
+  if (typeof window === "undefined") return;
+  const key = `valkompass-started:${mode}:${variant}`;
+  try {
+    if (window.sessionStorage.getItem(key)) return;
+    window.sessionStorage.setItem(key, "1");
+  } catch {
+    // sessionStorage kan vara blockerad – hoppa då bara över dedupningen, inte pingen.
+  }
+  void fetch(`${CLIENT_BASE}/api/quiz/start`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ mode, simplified: variant === "swipe" }),
+    keepalive: true,
+  }).catch(() => {
+    // Tappad ping underskattar bara antalet påbörjade – inget att visa användaren.
+  });
+}
+
 /** Skickar in svar (klient-side, proxas till backend). */
 export async function submitQuiz(
   request: SubmitQuizRequest,

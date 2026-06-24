@@ -106,4 +106,47 @@ public class ApiTests(ApiFactory factory) : IClassFixture<ApiFactory>
         var categories = await client.GetAsync("/api/admin/categories");
         Assert.Equal(HttpStatusCode.OK, categories.StatusCode);
     }
+
+    [Fact]
+    public async Task QuizStart_InvalidMode_ReturnsValidationProblem()
+    {
+        var client = factory.CreateClient();
+        var res = await client.PostAsJsonAsync("/api/quiz/start", new StartQuizRequest(30));
+        Assert.Equal(HttpStatusCode.BadRequest, res.StatusCode);
+    }
+
+    [Fact]
+    public async Task QuizFunnel_CountsStartsAndCompletions()
+    {
+        var client = factory.CreateClient();
+        await client.PostAsJsonAsync(
+            "/api/auth/login", new LoginRequest(ApiFactory.AdminEmail, ApiFactory.AdminPassword));
+
+        // Tester delar databas → mät förändring i stället för absoluta tal.
+        var before = await client.GetFromJsonAsync<QuizFunnelDto>("/api/admin/quiz/funnel");
+
+        // Två påbörjade-signaler (olika läge/variant).
+        (await client.PostAsJsonAsync("/api/quiz/start", new StartQuizRequest(25)))
+            .EnsureSuccessStatusCode();
+        (await client.PostAsJsonAsync("/api/quiz/start", new StartQuizRequest(50, Simplified: true)))
+            .EnsureSuccessStatusCode();
+
+        // En slutförd kompass i läge 50 (standard) → skriver en Completed-händelse serverside.
+        var questionnaire = await client.GetFromJsonAsync<QuestionnaireDto>("/api/questionnaire?mode=50");
+        var submit = await client.PostAsJsonAsync("/api/quiz/results", new SubmitQuizRequest(
+            questionnaire!.Questions.Select(q => new SubmitAnswerDto(q.Id, 3, false, false)).ToList(),
+            Simplified: false,
+            Mode: 50));
+        submit.EnsureSuccessStatusCode();
+
+        var after = await client.GetFromJsonAsync<QuizFunnelDto>("/api/admin/quiz/funnel");
+
+        Assert.Equal(before!.Started + 2, after!.Started);
+        Assert.Equal(before.Completed + 1, after.Completed);
+
+        // Lägesfördelningen har en slutförd i läge 50 standard.
+        var mode50 = after.ByMode.FirstOrDefault(m => m is { Mode: 50, Variant: "standard" });
+        Assert.NotNull(mode50);
+        Assert.True(mode50!.Completed >= 1);
+    }
 }
