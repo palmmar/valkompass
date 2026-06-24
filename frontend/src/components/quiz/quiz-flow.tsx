@@ -135,8 +135,8 @@ export function QuizFlow({ questions, categories, mode }: Props) {
   }
 
   return (
-    <div className="mx-auto max-w-2xl space-y-6 px-4 py-8">
-      <div className="space-y-2">
+    <div className="mx-auto flex h-[calc(100dvh_-_3.5rem)] max-w-2xl flex-col gap-4 px-4 py-4 sm:h-auto sm:gap-6 sm:py-8">
+      <div className="shrink-0 space-y-2">
         <div className="flex items-center justify-between text-sm text-muted-foreground">
           <span>Fråga {index + 1} av {questions.length}</span>
           <span>{answeredCount} besvarade</span>
@@ -144,9 +144,9 @@ export function QuizFlow({ questions, categories, mode }: Props) {
         <Progress value={progress} />
       </div>
 
-      <Card>
-        <CardContent className="space-y-5 pt-6">
-          <div className="space-y-3">
+      <Card className="min-h-0 flex-1 sm:flex-none">
+        <CardContent className="flex min-h-0 flex-1 flex-col gap-5 pt-6 sm:block sm:space-y-5">
+          <div className="min-h-0 flex-1 space-y-3 overflow-y-auto sm:flex-none sm:overflow-visible">
             <Badge variant="secondary">{categoryName(question.categorySlug)}</Badge>
             <h2 className="text-xl font-semibold leading-snug">{question.text}</h2>
             {(question.explanation || question.explanationSourceUrl) && (
@@ -172,7 +172,7 @@ export function QuizFlow({ questions, categories, mode }: Props) {
           {/* key per fråga → knapparna monteras om vid frågebyte, så att ett "fastnat"
               hover-/aktivt läge från en knapptryckning inte följer med till nästa fråga
               (förekommer i in-app-webbläsare, t.ex. Messenger, som rapporterar hover-stöd). */}
-          <div key={question.id} className="grid grid-cols-4 gap-2 sm:gap-3">
+          <div key={question.id} className="grid shrink-0 grid-cols-4 gap-2 sm:gap-3">
             {ANSWER_ORDER.map((opt) => {
               const selected = current.value === opt.value && !current.isSkipped;
               const cfg = ANSWER_STYLE[opt.value];
@@ -205,7 +205,7 @@ export function QuizFlow({ questions, categories, mode }: Props) {
             })}
           </div>
 
-          <label className="flex items-center gap-3 rounded-md border p-3">
+          <label className="flex shrink-0 items-center gap-3 rounded-md border p-3">
             <Switch
               checked={current.isImportant}
               onCheckedChange={() => toggleImportant(question.id)}
@@ -218,7 +218,7 @@ export function QuizFlow({ questions, categories, mode }: Props) {
         </CardContent>
       </Card>
 
-      <div className="flex items-center justify-between gap-2">
+      <div className="flex shrink-0 items-center justify-between gap-2">
         <Button
           variant="ghost"
           onClick={() => setIndex(Math.max(0, index - 1))}
@@ -242,7 +242,7 @@ export function QuizFlow({ questions, categories, mode }: Props) {
       </div>
 
       {!isLast && answeredCount === questions.length && (
-        <div className="text-center">
+        <div className="shrink-0 text-center">
           <Button variant="link" onClick={onSubmit} disabled={submitting}>
             Alla frågor besvarade – se ditt resultat
           </Button>
