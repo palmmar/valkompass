@@ -41,10 +41,20 @@ export default function OmPage() {
         <h2 className="text-xl font-semibold">Hur räknas den politiska kartan?</h2>
         <p className="text-muted-foreground">
           På resultatsidan placeras du och partierna på två axlar: en ekonomisk vänster–höger och
-          en GAL–TAN (grön/alternativ/frihetlig ↔ traditionell/auktoritär/nationalistisk). Varje
+          en GAL–TAN (grön/alternativ/libertär ↔ traditionell/auktoritär/nationalistisk). Varje
           påstående knyts till den axel det laddar på. Ett partis position är medelvärdet av dess
           källsatta svar på axelns frågor, och din prick beräknas på exakt samma sätt utifrån dina
           svar – så att du och partierna mäts med samma måttstock.
+        </p>
+        <p className="text-muted-foreground">
+          GAL–TAN kompletterar vänster–höger genom att fånga sociala och kulturella värderingar i
+          stället för ekonomi och fördelning. <span className="font-medium text-foreground">GAL</span>{" "}
+          står för Grön, Alternativ och Libertär – en frihetlig sida som betonar miljö och klimat,
+          öppenhet, individens fri- och rättigheter, mångfald och tolerans.{" "}
+          <span className="font-medium text-foreground">TAN</span> står för Traditionell, Auktoritär
+          och Nationalistisk – en sida som betonar ordning och trygghet, fasta normer och
+          traditioner, starkare statlig auktoritet och nationell gemenskap. De flesta partier och
+          personer hamnar någonstans mellan ytterligheterna.
         </p>
         <p className="text-muted-foreground">
           För att axlarna ska vara oberoende och inte bara en bedömning kalibreras och kontrolleras
