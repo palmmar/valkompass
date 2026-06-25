@@ -14,7 +14,7 @@ import {
 } from "@/components/ui/accordion";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Badge } from "@/components/ui/badge";
-import { Check, Info, Share2, Star, FlaskConical } from "lucide-react";
+import { Check, ChevronDown, Info, Share2, Star, FlaskConical } from "lucide-react";
 import { PartyLogo } from "@/components/party-logo";
 import { PoliticalMap } from "@/components/results/political-map";
 import type { ResultDocument, ResultPartyScore } from "@/lib/types";
@@ -63,6 +63,34 @@ export function ResultsView({ doc }: { doc: ResultDocument }) {
           </p>
         </div>
         <PoliticalMap questions={doc.questions} parties={doc.parties} />
+        <details className="group rounded-lg border bg-card/50 px-4 py-3 text-sm">
+          <summary className="flex cursor-pointer list-none items-center justify-between gap-2 font-medium [&::-webkit-details-marker]:hidden">
+            Vad betyder GAL–TAN?
+            <ChevronDown className="size-4 shrink-0 text-muted-foreground transition-transform group-open:rotate-180" />
+          </summary>
+          <div className="space-y-2 pt-3 text-muted-foreground">
+            <p>
+              GAL–TAN är en värderingsskala som kompletterar den ekonomiska vänster–höger-skalan.
+              Där vänster–höger handlar om ekonomi och fördelning – hur mycket staten ska styra och
+              omfördela – fångar GAL–TAN sociala och kulturella värderingar. De flesta partier och
+              personer hamnar någonstans mellan ytterligheterna.
+            </p>
+            <p>
+              <span className="font-medium text-foreground">GAL</span> står för{" "}
+              <span className="font-medium text-foreground">Grön, Alternativ och Libertär</span>{" "}
+              (libertariansk) – en frihetlig sida som betonar miljö och klimat, öppenhet,
+              individens fri- och rättigheter, mångfald och tolerans.
+            </p>
+            <p>
+              <span className="font-medium text-foreground">TAN</span> står för{" "}
+              <span className="font-medium text-foreground">
+                Traditionell, Auktoritär och Nationalistisk
+              </span>{" "}
+              – en sida som betonar ordning och trygghet, fasta normer och traditioner, starkare
+              statlig auktoritet och nationell gemenskap.
+            </p>
+          </div>
+        </details>
       </section>
 
       <section className="space-y-4">
