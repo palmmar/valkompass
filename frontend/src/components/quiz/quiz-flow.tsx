@@ -36,6 +36,16 @@ const ANSWER_STYLE: Record<number, { Icon: LucideIcon; fill: boolean; agree: boo
 // Visningsordning vänster→höger: emot → håller med (medhåll till höger känns mest logiskt).
 const ANSWER_ORDER = [...SCALE_OPTIONS].reverse();
 
+// Längd på kortets ut-slide vid frågebyte (matchar swajp-läget).
+const EXIT_MS = 220;
+
+function prefersReducedMotion() {
+  return (
+    typeof window !== "undefined" &&
+    window.matchMedia("(prefers-reduced-motion: reduce)").matches
+  );
+}
+
 interface Props {
   questions: QuestionnaireQuestion[];
   categories: QuestionnaireCategory[];
@@ -55,6 +65,8 @@ export function QuizFlow({ questions, categories, mode }: Props) {
   } = useQuizStore();
   const hydrated = useHydrated();
   const [submitting, setSubmitting] = useState(false);
+  const [exitTo, setExitTo] = useState<"left" | "right" | null>(null);
+  const [enterFrom, setEnterFrom] = useState<"left" | "right" | null>(null);
 
   useSyncQuizSession(mode, "standard");
 
@@ -96,16 +108,39 @@ export function QuizFlow({ questions, categories, mode }: Props) {
     if (answeredCount === 0) maybePingStart(mode, "standard");
   }
 
+  // Bläddra till en annan fråga med en horisontell slide: nuvarande kort glider ut,
+  // nästa monteras om (ny key) och glider in från andra hållet.
+  function go(target: number) {
+    if (exitTo) return; // animerar redan ut – ignorera
+    const clamped = Math.max(0, Math.min(questions.length - 1, target));
+    if (clamped === index) return;
+    const forward = clamped > index;
+
+    if (prefersReducedMotion()) {
+      setIndex(clamped); // direkt byte, ingen animation
+      return;
+    }
+
+    setExitTo(forward ? "left" : "right");
+    setTimeout(() => {
+      setEnterFrom(forward ? "right" : "left");
+      setIndex(clamped);
+      setExitTo(null);
+    }, EXIT_MS);
+  }
+
   function choose(value: number) {
+    if (exitTo) return;
     pingIfFirst();
-    setAnswer(question.id, value);
-    if (!isLast) setTimeout(() => setIndex(index + 1), 180);
+    setAnswer(question.id, value); // markeringsringen syns på kortet medan det glider ut
+    if (!isLast) go(index + 1);
   }
 
   function onSkip() {
+    if (exitTo) return;
     pingIfFirst();
     skip(question.id);
-    if (!isLast) setTimeout(() => setIndex(index + 1), 120);
+    if (!isLast) go(index + 1);
   }
 
   async function onSubmit() {
@@ -135,7 +170,7 @@ export function QuizFlow({ questions, categories, mode }: Props) {
   }
 
   return (
-    <div className="mx-auto flex h-[calc(100dvh_-_3.5rem)] max-w-2xl flex-col gap-4 px-4 py-4 sm:h-auto sm:gap-6 sm:py-8">
+    <div className="mx-auto flex h-[calc(100dvh_-_3.5rem)] max-w-2xl flex-col gap-4 overflow-hidden px-4 py-4 sm:h-auto sm:gap-6 sm:py-8">
       <div className="shrink-0 space-y-2">
         <div className="flex items-center justify-between text-sm text-muted-foreground">
           <span>Fråga {index + 1} av {questions.length}</span>
@@ -144,9 +179,30 @@ export function QuizFlow({ questions, categories, mode }: Props) {
         <Progress value={progress} />
       </div>
 
-      <Card className="min-h-0 flex-1 sm:flex-none">
-        <CardContent className="flex min-h-0 flex-1 flex-col gap-5 pt-6 sm:block sm:space-y-5">
-          <div className="min-h-0 flex-1 space-y-3 overflow-y-auto sm:flex-none sm:overflow-visible">
+      {/* key per fråga → hela kortet monteras om vid frågebyte: enter-animationen får ett
+          färskt element att glida in, och ett "fastnat" hover-/aktivt läge på svarsknapparna
+          (förekommer i in-app-webbläsare, t.ex. Messenger) följer inte med till nästa fråga. */}
+      <Card
+        key={question.id}
+        className={cn(
+          "min-h-0 flex-1 sm:h-[30rem] sm:flex-none",
+          enterFrom === "right" &&
+            "motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-right motion-safe:duration-200",
+          enterFrom === "left" &&
+            "motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-left motion-safe:duration-200",
+        )}
+        style={
+          exitTo
+            ? {
+                transform: `translateX(${exitTo === "left" ? "-100%" : "100%"})`,
+                opacity: 0,
+                transition: `transform ${EXIT_MS}ms ease-out, opacity ${EXIT_MS}ms ease-out`,
+              }
+            : undefined
+        }
+      >
+        <CardContent className="flex min-h-0 flex-1 flex-col gap-5 pt-6">
+          <div className="min-h-0 flex-1 space-y-3 overflow-y-auto">
             <Badge variant="secondary">{categoryName(question.categorySlug)}</Badge>
             <h2 className="text-xl font-semibold leading-snug">{question.text}</h2>
             {(question.explanation || question.explanationSourceUrl) && (
@@ -169,10 +225,7 @@ export function QuizFlow({ questions, categories, mode }: Props) {
             )}
           </div>
 
-          {/* key per fråga → knapparna monteras om vid frågebyte, så att ett "fastnat"
-              hover-/aktivt läge från en knapptryckning inte följer med till nästa fråga
-              (förekommer i in-app-webbläsare, t.ex. Messenger, som rapporterar hover-stöd). */}
-          <div key={question.id} className="grid shrink-0 grid-cols-4 gap-2 sm:gap-3">
+          <div className="grid shrink-0 grid-cols-4 gap-2 sm:gap-3">
             {ANSWER_ORDER.map((opt) => {
               const selected = current.value === opt.value && !current.isSkipped;
               const cfg = ANSWER_STYLE[opt.value];
@@ -221,7 +274,7 @@ export function QuizFlow({ questions, categories, mode }: Props) {
       <div className="flex shrink-0 items-center justify-between gap-2">
         <Button
           variant="ghost"
-          onClick={() => setIndex(Math.max(0, index - 1))}
+          onClick={() => go(index - 1)}
           disabled={index === 0}
         >
           <ChevronLeft className="size-4" /> Föregående
@@ -236,7 +289,7 @@ export function QuizFlow({ questions, categories, mode }: Props) {
               {submitting ? "Beräknar…" : "Se resultat"}
             </Button>
           ) : (
-            <Button onClick={() => setIndex(index + 1)}>Nästa</Button>
+            <Button onClick={() => go(index + 1)}>Nästa</Button>
           )}
         </div>
       </div>
