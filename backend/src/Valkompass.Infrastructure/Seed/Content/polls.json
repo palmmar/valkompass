@@ -19497,6 +19497,26 @@
         "MP": 7.5,
         "SD": 20.6
       }
+    },
+    {
+      "externalKey": "novus-2026-07-22",
+      "pollsterCode": "novus",
+      "fieldStart": "2026-07-06",
+      "fieldEnd": "2026-07-19",
+      "publishedAt": "2026-07-22",
+      "sampleSize": 5726,
+      "sourceUrl": "https://github.com/MansMeg/SwedishPolls",
+      "sourceCitation": "Novus, fältperiod 2026-07-06–2026-07-19 (via SwedishPolls)",
+      "results": {
+        "M": 17.3,
+        "L": 1.8,
+        "C": 6.6,
+        "KD": 6.1,
+        "S": 31.8,
+        "V": 7.8,
+        "MP": 7.2,
+        "SD": 20.4
+      }
     }
   ]
 }
