@@ -19517,6 +19517,26 @@
         "MP": 7.2,
         "SD": 20.4
       }
+    },
+    {
+      "externalKey": "demoskop-2026-08-12",
+      "pollsterCode": "demoskop",
+      "fieldStart": "2026-07-29",
+      "fieldEnd": "2026-08-10",
+      "publishedAt": "2026-08-12",
+      "sampleSize": 2016,
+      "sourceUrl": "https://github.com/MansMeg/SwedishPolls",
+      "sourceCitation": "Demoskop, fältperiod 2026-07-29–2026-08-10 (via SwedishPolls)",
+      "results": {
+        "M": 16.8,
+        "L": 2.4,
+        "C": 7.3,
+        "KD": 7.5,
+        "S": 30.2,
+        "V": 6.5,
+        "MP": 6.6,
+        "SD": 20.2
+      }
     }
   ]
 }
