@@ -16,7 +16,7 @@
     <PackageVersion Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="10.0.3" />
     <PackageVersion Include="Scalar.AspNetCore" Version="2.16.20" />
     <!-- 3.1.x: bygger fritt (ingen licensnyckel) och är gratis för öppen källkod; v4 kräver betald licens vid build. -->
-    <PackageVersion Include="SixLabors.ImageSharp" Version="3.1.12" />
+    <PackageVersion Include="SixLabors.ImageSharp" Version="4.1.0" />
     <PackageVersion Include="Testcontainers.PostgreSql" Version="4.14.0" />
   </ItemGroup>
   <ItemGroup>
