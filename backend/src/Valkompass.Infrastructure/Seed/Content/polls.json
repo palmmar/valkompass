@@ -19388,14 +19388,14 @@
       "sourceUrl": "https://github.com/MansMeg/SwedishPolls",
       "sourceCitation": "Ipsos, fältperiod 2026-06-02–2026-06-14 (via SwedishPolls)",
       "results": {
-        "M": 17.0,
-        "L": 1.0,
-        "C": 6.0,
-        "KD": 6.0,
-        "S": 31.0,
-        "V": 10.0,
-        "MP": 7.0,
-        "SD": 19.0
+        "M": 17.5,
+        "L": 1.3,
+        "C": 5.9,
+        "KD": 6.1,
+        "S": 31.2,
+        "V": 9.6,
+        "MP": 7.1,
+        "SD": 19.3
       }
     },
     {
@@ -19576,6 +19576,26 @@
         "V": 7.4,
         "MP": 7.9,
         "SD": 19.1
+      }
+    },
+    {
+      "externalKey": "ipsos-2026-08-25",
+      "pollsterCode": "ipsos",
+      "fieldStart": "2026-08-11",
+      "fieldEnd": "2026-08-23",
+      "publishedAt": "2026-08-25",
+      "sampleSize": 1661,
+      "sourceUrl": "https://github.com/MansMeg/SwedishPolls",
+      "sourceCitation": "Ipsos, fältperiod 2026-08-11–2026-08-23 (via SwedishPolls)",
+      "results": {
+        "M": 17.9,
+        "L": 2.3,
+        "C": 6.3,
+        "KD": 6.1,
+        "S": 30.3,
+        "V": 9.0,
+        "MP": 6.8,
+        "SD": 19.3
       }
     }
   ]
