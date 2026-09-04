@@ -866,7 +866,7 @@
       "publishedAt": "2015-06-05",
       "sampleSize": 6067,
       "sourceUrl": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__ME__ME0201__ME0201A/Vid10/",
-      "sourceCitation": "SCB, Partisympatiundersökningen (PSU), felmarginal via SCB:s öppna API",
+      "sourceCitation": "SCB, Partisympatiundersökningen (PSU)",
       "results": {
         "M": 25.6,
         "L": 4.9,
@@ -876,16 +876,6 @@
         "V": 6.2,
         "MP": 6.6,
         "SD": 14.4
-      },
-      "marginOfError": {
-        "M": 0.9,
-        "L": 0.5,
-        "C": 0.5,
-        "KD": 0.4,
-        "S": 1.0,
-        "V": 0.5,
-        "MP": 0.6,
-        "SD": 0.8
       }
     },
     {
@@ -1676,7 +1666,7 @@
       "publishedAt": "2015-12-01",
       "sampleSize": 4972,
       "sourceUrl": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__ME__ME0201__ME0201A/Vid10/",
-      "sourceCitation": "SCB, Partisympatiundersökningen (PSU), felmarginal via SCB:s öppna API",
+      "sourceCitation": "SCB, Partisympatiundersökningen (PSU)",
       "results": {
         "M": 23.5,
         "L": 5.5,
@@ -1686,16 +1676,6 @@
         "V": 5.5,
         "MP": 5.9,
         "SD": 19.9
-      },
-      "marginOfError": {
-        "M": 1.1,
-        "L": 0.6,
-        "C": 0.5,
-        "KD": 0.5,
-        "S": 1.1,
-        "V": 0.5,
-        "MP": 0.5,
-        "SD": 1.0
       }
     },
     {
@@ -2626,7 +2606,7 @@
       "publishedAt": "2016-05-31",
       "sampleSize": 4838,
       "sourceUrl": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__ME__ME0201__ME0201A/Vid10/",
-      "sourceCitation": "SCB, Partisympatiundersökningen (PSU), felmarginal via SCB:s öppna API",
+      "sourceCitation": "SCB, Partisympatiundersökningen (PSU)",
       "results": {
         "M": 24.7,
         "L": 5.4,
@@ -2636,16 +2616,6 @@
         "V": 6.8,
         "MP": 4.7,
         "SD": 17.3
-      },
-      "marginOfError": {
-        "M": 1.1,
-        "L": 0.5,
-        "C": 0.6,
-        "KD": 0.4,
-        "S": 1.1,
-        "V": 0.6,
-        "MP": 0.6,
-        "SD": 0.9
       }
     },
     {
@@ -3376,7 +3346,7 @@
       "publishedAt": "2016-12-01",
       "sampleSize": 5021,
       "sourceUrl": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__ME__ME0201__ME0201A/Vid10/",
-      "sourceCitation": "SCB, Partisympatiundersökningen (PSU), felmarginal via SCB:s öppna API",
+      "sourceCitation": "SCB, Partisympatiundersökningen (PSU)",
       "results": {
         "M": 22.8,
         "L": 5.0,
@@ -3386,16 +3356,6 @@
         "V": 7.7,
         "MP": 4.5,
         "SD": 17.5
-      },
-      "marginOfError": {
-        "M": 1.0,
-        "L": 0.6,
-        "C": 0.6,
-        "KD": 0.4,
-        "S": 1.0,
-        "V": 0.6,
-        "MP": 0.6,
-        "SD": 0.9
       }
     },
     {
@@ -4326,7 +4286,7 @@
       "publishedAt": "2017-06-01",
       "sampleSize": 4808,
       "sourceUrl": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__ME__ME0201__ME0201A/Vid10/",
-      "sourceCitation": "SCB, Partisympatiundersökningen (PSU), felmarginal via SCB:s öppna API",
+      "sourceCitation": "SCB, Partisympatiundersökningen (PSU)",
       "results": {
         "M": 18.1,
         "L": 5.0,
@@ -4336,16 +4296,6 @@
         "V": 6.3,
         "MP": 4.5,
         "SD": 18.4
-      },
-      "marginOfError": {
-        "M": 1.0,
-        "L": 0.6,
-        "C": 0.8,
-        "KD": 0.5,
-        "S": 1.1,
-        "V": 0.6,
-        "MP": 0.6,
-        "SD": 1.0
       }
     },
     {
@@ -5216,7 +5166,7 @@
       "publishedAt": "2017-12-05",
       "sampleSize": 8919,
       "sourceUrl": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__ME__ME0201__ME0201A/Vid10/",
-      "sourceCitation": "SCB, Partisympatiundersökningen (PSU), felmarginal via SCB:s öppna API",
+      "sourceCitation": "SCB, Partisympatiundersökningen (PSU)",
       "results": {
         "M": 22.2,
         "L": 4.2,
@@ -5226,16 +5176,6 @@
         "V": 7.0,
         "MP": 3.8,
         "SD": 14.8
-      },
-      "marginOfError": {
-        "M": 1.0,
-        "L": 0.5,
-        "C": 0.7,
-        "KD": 0.4,
-        "S": 1.1,
-        "V": 0.6,
-        "MP": 0.6,
-        "SD": 0.9
       }
     },
     {
@@ -6146,7 +6086,7 @@
       "publishedAt": "2018-06-05",
       "sampleSize": 4632,
       "sourceUrl": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__ME__ME0201__ME0201A/Vid10/",
-      "sourceCitation": "SCB, Partisympatiundersökningen (PSU), felmarginal via SCB:s öppna API",
+      "sourceCitation": "SCB, Partisympatiundersökningen (PSU)",
       "results": {
         "M": 22.6,
         "L": 4.4,
@@ -6156,16 +6096,6 @@
         "V": 7.4,
         "MP": 4.3,
         "SD": 18.5
-      },
-      "marginOfError": {
-        "M": 1.1,
-        "L": 0.6,
-        "C": 0.7,
-        "KD": 0.4,
-        "S": 1.1,
-        "V": 0.7,
-        "MP": 0.5,
-        "SD": 1.0
       }
     },
     {
@@ -7716,7 +7646,7 @@
       "publishedAt": "2018-12-04",
       "sampleSize": 8966,
       "sourceUrl": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__ME__ME0201__ME0201A/Vid10/",
-      "sourceCitation": "SCB, Partisympatiundersökningen (PSU), felmarginal via SCB:s öppna API",
+      "sourceCitation": "SCB, Partisympatiundersökningen (PSU)",
       "results": {
         "M": 19.2,
         "L": 4.3,
@@ -7726,16 +7656,6 @@
         "V": 8.4,
         "MP": 4.0,
         "SD": 18.3
-      },
-      "marginOfError": {
-        "M": 0.9,
-        "L": 0.5,
-        "C": 0.5,
-        "KD": 0.4,
-        "S": 0.9,
-        "V": 0.6,
-        "MP": 0.4,
-        "SD": 0.8
       }
     },
     {
@@ -8526,7 +8446,7 @@
       "publishedAt": "2019-06-02",
       "sampleSize": 9092,
       "sourceUrl": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__ME__ME0201__ME0201A/Vid10/",
-      "sourceCitation": "SCB, Partisympatiundersökningen (PSU), felmarginal via SCB:s öppna API",
+      "sourceCitation": "SCB, Partisympatiundersökningen (PSU)",
       "results": {
         "M": 16.0,
         "L": 3.7,
@@ -8536,16 +8456,6 @@
         "V": 8.7,
         "MP": 5.6,
         "SD": 17.1
-      },
-      "marginOfError": {
-        "M": 1.1,
-        "L": 0.4,
-        "C": 0.6,
-        "KD": 0.9,
-        "S": 1.1,
-        "V": 0.6,
-        "MP": 0.7,
-        "SD": 1.0
       }
     },
     {
@@ -9216,7 +9126,7 @@
       "publishedAt": "2019-12-03",
       "sampleSize": 4645,
       "sourceUrl": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__ME__ME0201__ME0201A/Vid10/",
-      "sourceCitation": "SCB, Partisympatiundersökningen (PSU), felmarginal via SCB:s öppna API",
+      "sourceCitation": "SCB, Partisympatiundersökningen (PSU)",
       "results": {
         "M": 18.3,
         "L": 4.1,
@@ -9226,16 +9136,6 @@
         "V": 8.1,
         "MP": 5.1,
         "SD": 22.6
-      },
-      "marginOfError": {
-        "M": 1.0,
-        "L": 0.6,
-        "C": 0.6,
-        "KD": 0.6,
-        "S": 1.0,
-        "V": 0.6,
-        "MP": 0.6,
-        "SD": 1.0
       }
     },
     {
@@ -9926,7 +9826,7 @@
       "publishedAt": "2020-06-08",
       "sampleSize": 4888,
       "sourceUrl": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__ME__ME0201__ME0201A/Vid10/",
-      "sourceCitation": "SCB, Partisympatiundersökningen (PSU), felmarginal via SCB:s öppna API",
+      "sourceCitation": "SCB, Partisympatiundersökningen (PSU)",
       "results": {
         "M": 20.1,
         "L": 3.3,
@@ -9936,16 +9836,6 @@
         "V": 8.2,
         "MP": 4.1,
         "SD": 17.1
-      },
-      "marginOfError": {
-        "M": 0.9,
-        "L": 0.5,
-        "C": 0.5,
-        "KD": 0.6,
-        "S": 1.1,
-        "V": 0.6,
-        "MP": 0.5,
-        "SD": 0.8
       }
     },
     {
@@ -10516,7 +10406,7 @@
       "publishedAt": "2020-12-02",
       "sampleSize": 4692,
       "sourceUrl": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__ME__ME0201__ME0201A/Vid10/",
-      "sourceCitation": "SCB, Partisympatiundersökningen (PSU), felmarginal via SCB:s öppna API",
+      "sourceCitation": "SCB, Partisympatiundersökningen (PSU)",
       "results": {
         "M": 22.1,
         "L": 3.0,
@@ -10526,16 +10416,6 @@
         "V": 9.3,
         "MP": 4.2,
         "SD": 17.6
-      },
-      "marginOfError": {
-        "M": 1.0,
-        "L": 0.4,
-        "C": 0.6,
-        "KD": 0.6,
-        "S": 1.1,
-        "V": 0.7,
-        "MP": 0.6,
-        "SD": 0.9
       }
     },
     {
@@ -11166,7 +11046,7 @@
       "publishedAt": "2021-06-02",
       "sampleSize": 3656,
       "sourceUrl": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__ME__ME0201__ME0201A/Vid10/",
-      "sourceCitation": "SCB, Partisympatiundersökningen (PSU), felmarginal via SCB:s öppna API",
+      "sourceCitation": "SCB, Partisympatiundersökningen (PSU)",
       "results": {
         "M": 22.4,
         "L": 2.5,
@@ -11176,16 +11056,6 @@
         "V": 8.9,
         "MP": 3.8,
         "SD": 18.9
-      },
-      "marginOfError": {
-        "M": 1.0,
-        "L": 0.4,
-        "C": 0.8,
-        "KD": 0.5,
-        "S": 1.1,
-        "V": 0.7,
-        "MP": 0.5,
-        "SD": 0.9
       }
     },
     {
@@ -11836,7 +11706,7 @@
       "publishedAt": "2021-12-02",
       "sampleSize": 4319,
       "sourceUrl": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__ME__ME0201__ME0201A/Vid10/",
-      "sourceCitation": "SCB, Partisympatiundersökningen (PSU), felmarginal via SCB:s öppna API",
+      "sourceCitation": "SCB, Partisympatiundersökningen (PSU)",
       "results": {
         "M": 22.7,
         "L": 2.5,
@@ -11846,16 +11716,6 @@
         "V": 9.2,
         "MP": 3.9,
         "SD": 18.6
-      },
-      "marginOfError": {
-        "M": 1.1,
-        "L": 0.4,
-        "C": 0.7,
-        "KD": 0.6,
-        "S": 1.2,
-        "V": 0.7,
-        "MP": 0.6,
-        "SD": 1.0
       }
     },
     {
@@ -12526,7 +12386,7 @@
       "publishedAt": "2022-06-02",
       "sampleSize": 4274,
       "sourceUrl": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__ME__ME0201__ME0201A/Vid10/",
-      "sourceCitation": "SCB, Partisympatiundersökningen (PSU), felmarginal via SCB:s öppna API",
+      "sourceCitation": "SCB, Partisympatiundersökningen (PSU)",
       "results": {
         "M": 21.3,
         "L": 3.4,
@@ -12536,16 +12396,6 @@
         "V": 7.8,
         "MP": 3.3,
         "SD": 17.0
-      },
-      "marginOfError": {
-        "M": 1.1,
-        "L": 0.5,
-        "C": 0.7,
-        "KD": 0.6,
-        "S": 1.3,
-        "V": 0.7,
-        "MP": 0.5,
-        "SD": 1.0
       }
     },
     {
@@ -14676,7 +14526,7 @@
       "publishedAt": "2022-12-01",
       "sampleSize": 4070,
       "sourceUrl": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__ME__ME0201__ME0201A/Vid10/",
-      "sourceCitation": "SCB, Partisympatiundersökningen (PSU), felmarginal via SCB:s öppna API",
+      "sourceCitation": "SCB, Partisympatiundersökningen (PSU)",
       "results": {
         "M": 18.9,
         "L": 4.1,
@@ -14686,16 +14536,6 @@
         "V": 7.6,
         "MP": 4.4,
         "SD": 18.2
-      },
-      "marginOfError": {
-        "M": 0.9,
-        "L": 0.5,
-        "C": 0.5,
-        "KD": 0.5,
-        "S": 1.2,
-        "V": 0.8,
-        "MP": 0.5,
-        "SD": 0.8
       }
     },
     {
@@ -15346,7 +15186,7 @@
       "publishedAt": "2023-06-01",
       "sampleSize": 4334,
       "sourceUrl": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__ME__ME0201__ME0201A/Vid10/",
-      "sourceCitation": "SCB, Partisympatiundersökningen (PSU), felmarginal via SCB:s öppna API",
+      "sourceCitation": "SCB, Partisympatiundersökningen (PSU)",
       "results": {
         "M": 19.1,
         "L": 3.4,
@@ -15356,16 +15196,6 @@
         "V": 7.3,
         "MP": 4.1,
         "SD": 18.0
-      },
-      "marginOfError": {
-        "M": 1.0,
-        "L": 0.4,
-        "C": 0.5,
-        "KD": 0.5,
-        "S": 1.3,
-        "V": 0.7,
-        "MP": 0.5,
-        "SD": 1.0
       }
     },
     {
@@ -16736,7 +16566,7 @@
       "publishedAt": "2024-06-13",
       "sampleSize": 4427,
       "sourceUrl": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__ME__ME0201__ME0201A/Vid10/",
-      "sourceCitation": "SCB, Partisympatiundersökningen (PSU), felmarginal via SCB:s öppna API",
+      "sourceCitation": "SCB, Partisympatiundersökningen (PSU)",
       "results": {
         "M": 19.8,
         "L": 3.2,
@@ -16746,16 +16576,6 @@
         "V": 8.2,
         "MP": 5.2,
         "SD": 19.5
-      },
-      "marginOfError": {
-        "M": 1.1,
-        "L": 0.5,
-        "C": 0.6,
-        "KD": 0.5,
-        "S": 1.3,
-        "V": 0.8,
-        "MP": 0.6,
-        "SD": 1.0
       }
     },
     {
@@ -18006,7 +17826,7 @@
       "publishedAt": "2025-06-05",
       "sampleSize": 4595,
       "sourceUrl": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__ME__ME0201__ME0201A/Vid10/",
-      "sourceCitation": "SCB, Partisympatiundersökningen (PSU), felmarginal via SCB:s öppna API",
+      "sourceCitation": "SCB, Partisympatiundersökningen (PSU)",
       "results": {
         "M": 18.3,
         "L": 2.8,
@@ -18016,16 +17836,6 @@
         "V": 7.1,
         "MP": 6.5,
         "SD": 18.0
-      },
-      "marginOfError": {
-        "M": 0.9,
-        "L": 0.4,
-        "C": 0.6,
-        "KD": 0.5,
-        "S": 1.2,
-        "V": 0.7,
-        "MP": 0.7,
-        "SD": 1.0
       }
     },
     {
@@ -19336,7 +19146,7 @@
       "publishedAt": "2026-06-04",
       "sampleSize": 4542,
       "sourceUrl": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__ME__ME0201__ME0201A/Vid10/",
-      "sourceCitation": "SCB, Partisympatiundersökningen (PSU), felmarginal via SCB:s öppna API",
+      "sourceCitation": "SCB, Partisympatiundersökningen (PSU)",
       "results": {
         "M": 17.3,
         "L": 2.5,
@@ -19346,16 +19156,6 @@
         "V": 8.6,
         "MP": 6.6,
         "SD": 18.3
-      },
-      "marginOfError": {
-        "M": 1.0,
-        "L": 0.5,
-        "C": 0.6,
-        "KD": 0.6,
-        "S": 1.2,
-        "V": 0.8,
-        "MP": 0.7,
-        "SD": 0.9
       }
     },
     {
