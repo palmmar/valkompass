@@ -87,8 +87,9 @@ builder.Services.AddRateLimiter(options =>
 var app = builder.Build();
 
 // Tillämpa migrations och seeda innehåll i alla miljöer (båda är idempotenta).
-// Krävs för att produktionsdeployer (t.ex. Coolify, som kör Production) ska få
-// ett schema och seedat innehåll – inte bara i utvecklingsläge.
+// Krävs för att produktionsdeployer ska få ett schema och seedat innehåll – inte
+// bara i utvecklingsläge. Podden lyssnar inte förrän detta är klart, så deployens
+// startupProbe måste ge plats för första seedningen (se valkompass-gitops).
 using (var scope = app.Services.CreateScope())
 {
     var sp = scope.ServiceProvider;
@@ -128,7 +129,7 @@ app.UseRateLimiter();
 app.UseAuthentication();
 app.UseAuthorization();
 
-// Enkel liveness-endpoint för Coolifys hälsokontroll (GET /health).
+// Enkel liveness-endpoint för containerns och poddens hälsokontroller (GET /health).
 app.MapGet("/health", () => Results.Ok(new { status = "ok" }));
 
 app.MapPublicEndpoints();
