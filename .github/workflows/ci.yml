@@ -3,8 +3,10 @@ name: CI
 on:
   push:
     branches: [main]
+  # Inget branches-filter här: en PR mot en ANNAN gren än main (staplade PR:er) ska också
+  # byggas, annars granskas den overifierad. Bygg- och testjobben är det enda som tillkommer
+  # — publicering och promotion är gatade på push till main längre ned.
   pull_request:
-    branches: [main]
 
 jobs:
   backend:
