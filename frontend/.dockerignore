@@ -1,0 +1,14 @@
+# Byggartefakter och lokala filer ska inte med i build-kontexten.
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+
+# Lokala miljövariabler hör inte hemma i en image.
+.env
+.env.*
+!.env.example
+
+# Docker-filer själva.
+Dockerfile
+.dockerignore

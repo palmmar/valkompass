@@ -1,10 +1,11 @@
 name: Uppdatera barometerdata
 
 # Hämtar färska opinionsmätningar (SwedishPolls + SCB:s PSU) varje natt och committar
-# polls.json DIREKT till main när datan ändrats. Coolify auto-deployar på push till main, så
-# sidan alltid visar senaste mätningarna. Seedningen är append-only (nya mätningar fylls på,
-# inget skrivs över → ofarlig omstart). En sanity-grind hindrar att trasig/ofullständig
-# uppströmsdata publiceras: antalet mätningar får aldrig minska.
+# polls.json DIREKT till main när datan ändrats. Pushen triggar CI, som bygger nya images och
+# promotar dem till valkompass-gitops – Argo CD rullar sedan ut dem, så sidan alltid visar
+# senaste mätningarna. Seedningen är append-only (nya mätningar fylls på, inget skrivs över
+# → ofarlig omstart). En sanity-grind hindrar att trasig/ofullständig uppströmsdata
+# publiceras: antalet mätningar får aldrig minska.
 #
 # OBS: cron är i UTC. "0 3 * * *" = 03:00 UTC ≈ 04–05 svensk tid. Vill du ha 03:00 svensk
 # tid, använd "0 1 * * *" (sommartid) / "0 2 * * *" (vintertid).
@@ -57,4 +58,4 @@ jobs:
           git add "$FILE"
           git commit -m "Uppdatera barometerdata (SwedishPolls + SCB)"
           git push origin HEAD:main
-          echo "Pushade till main – Coolify deployar."
+          echo "Pushade till main – CI bygger och promotar till produktion."
