@@ -134,6 +134,7 @@ app.MapGet("/health", () => Results.Ok(new { status = "ok" }));
 
 app.MapPublicEndpoints();
 app.MapBarometerEndpoints();
+app.MapElectionEndpoints();
 app.MapAuthEndpoints();
 app.MapAdminEndpoints();
 app.MapBarometerAdminEndpoints();

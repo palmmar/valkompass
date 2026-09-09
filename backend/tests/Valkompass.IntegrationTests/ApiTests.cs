@@ -4,7 +4,8 @@ using Valkompass.Application.Dtos;
 
 namespace Valkompass.IntegrationTests;
 
-public class ApiTests(ApiFactory factory) : IClassFixture<ApiFactory>
+[Collection(ApiCollection.Name)]
+public class ApiTests(ApiFactory factory)
 {
     [Fact]
     public async Task Questionnaire_ReturnsSeededContent()
