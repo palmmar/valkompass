@@ -4,6 +4,8 @@ import type { ElectionLive } from "@/lib/election-api";
 import { PartyLogo } from "@/components/party-logo";
 import { cn } from "@/lib/utils";
 
+const dec = (n: number) => n.toLocaleString("sv-SE", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+
 const pct = (n: number) => `${n.toLocaleString("sv-SE", { minimumFractionDigits: 1, maximumFractionDigits: 1 })} %`;
 
 /** Förändring i procentenheter mot 2022, med tecken. */
@@ -26,14 +28,19 @@ function Change({ points }: { points: number | null }) {
 }
 
 /**
- * Räknat resultat per parti. Innehåller medvetet ingen prognos: så länge nowcasten inte
- * finns (#84) visar sidan bara det Valmyndigheten faktiskt räknat, och då ska inget i
- * tabellen kunna misstas för en uppskattning.
+ * Räknat resultat per parti, med prognos i en egen kolumn när det finns en.
+ *
+ * Prognoskolumnen ritas bara när API:t faktiskt levererar en prognos. Finns ingen ritas den
+ * inte alls – hellre det än en tom kolumn som får läsaren att undra vad som saknas. När den
+ * finns är den visuellt avskild med en egen ram, eftersom det är vår uppskattning och inte
+ * Valmyndighetens siffra.
  */
 export function ResultsTable({ data }: { data: ElectionLive }) {
   const mandateByParty = new Map(data.officialMandates.map((m) => [m.partyCode, m]));
+  const forecastByParty = new Map(data.forecast?.parties.map((p) => [p.partyCode, p]) ?? []);
   const threshold = data.thresholds.nationalPercent;
   const hasMandates = data.officialMandates.length > 0;
+  const hasForecast = forecastByParty.size > 0;
   const max = Math.max(10, ...data.results.map((r) => r.sharePercent));
 
   return (
@@ -49,15 +56,30 @@ export function ResultsTable({ data }: { data: ElectionLive }) {
           <tr className="border-b text-left font-mono text-[0.65rem] uppercase tracking-[0.12em] text-muted-foreground">
             <th scope="col" className="py-2 pr-2 font-medium">Parti</th>
             <th scope="col" className="py-2 pr-2 text-right font-medium">Räknat</th>
-            <th scope="col" className="py-2 pr-2 text-right font-medium">Mot 2022</th>
+            {hasForecast && (
+              // Prognosen får en egen, avvikande kolumngrupp. Att den ser annorlunda ut är
+              // hela poängen: den är vår uppskattning, inte Valmyndighetens siffra.
+              <th
+                scope="col"
+                className="border-l border-dashed py-2 pl-3 pr-2 text-right font-medium text-foreground"
+              >
+                Prognos
+              </th>
+            )}
+            <th scope="col" className="hidden py-2 pr-2 text-right font-medium sm:table-cell">
+              Mot 2022
+            </th>
             {hasMandates && (
-              <th scope="col" className="py-2 pl-2 text-right font-medium">Mandat</th>
+              <th scope="col" className="hidden py-2 pl-2 text-right font-medium sm:table-cell">
+                Mandat
+              </th>
             )}
           </tr>
         </thead>
         <tbody>
           {data.results.map((r) => {
             const mandate = mandateByParty.get(r.partyCode);
+            const forecast = forecastByParty.get(r.partyCode);
             const belowThreshold = r.sharePercent < threshold;
             return (
               <tr key={r.partyCode} className="border-b last:border-0">
@@ -90,11 +112,27 @@ export function ResultsTable({ data }: { data: ElectionLive }) {
                     </span>
                   </span>
                 </td>
-                <td className="py-2.5 pr-2 text-right">
+                {hasForecast && (
+                  <td className="border-l border-dashed py-2.5 pl-3 pr-2 text-right">
+                    {forecast ? (
+                      <>
+                        <span className="block font-semibold tabular-nums">
+                          {pct(forecast.forecastShare)}
+                        </span>
+                        <span className="block whitespace-nowrap text-xs tabular-nums text-muted-foreground">
+                          {dec(forecast.lower90)}–{dec(forecast.upper90)}
+                        </span>
+                      </>
+                    ) : (
+                      <span className="text-muted-foreground">–</span>
+                    )}
+                  </td>
+                )}
+                <td className="hidden py-2.5 pr-2 text-right sm:table-cell">
                   <Change points={r.shareChangePoints} />
                 </td>
                 {hasMandates && (
-                  <td className="py-2.5 pl-2 text-right tabular-nums">
+                  <td className="hidden py-2.5 pl-2 text-right tabular-nums sm:table-cell">
                     {mandate ? (
                       <>
                         <span className="font-semibold">{mandate.mandates}</span>
@@ -119,6 +157,9 @@ export function ResultsTable({ data }: { data: ElectionLive }) {
       <p className="mt-3 text-xs text-muted-foreground">
         Partier under riksdagsspärren på {threshold.toLocaleString("sv-SE")} % är gråmarkerade.
         {hasMandates && " Mandaten är Valmyndighetens officiella preliminära fördelning."}
+        {hasForecast
+          && " Prognoskolumnen är vår egen uppskattning med 90 %-intervall under. Allt annat i"
+            + " tabellen är faktiskt räknat."}
       </p>
     </div>
   );

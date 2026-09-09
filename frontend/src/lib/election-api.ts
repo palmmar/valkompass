@@ -62,6 +62,30 @@ export interface ElectionThresholds {
   constituencyPercent: number;
 }
 
+/** Ett partis prognos. Innehåller aldrig det räknade resultatet – det ligger i `results`. */
+export interface ElectionForecastParty {
+  partyCode: string;
+  forecastShare: number;
+  lower90: number;
+  upper90: number;
+  /** Sannolikhet att nå riksdagsspärren, 0–1. */
+  probabilityAboveThreshold: number;
+}
+
+export interface ElectionForecast {
+  parties: ElectionForecastParty[];
+  /** Härlett ur intervallbredden, aldrig ur klockslag. */
+  confidence: "low" | "medium" | "high" | "veryHigh";
+  /** Halva bredden på ett typiskt 90 %-intervall, i procentenheter. */
+  typicalUncertaintyPoints: number;
+  coveragePercent: number;
+  /** Hur geografiskt skevt underlaget är. 0 = de rapporterade distrikten speglar landet. */
+  regionalSkewPercent: number;
+  comparableDistrictsUsed: number;
+  modelVersion: string;
+  draws: number;
+}
+
 export interface ElectionLive {
   phase: ElectionPhase;
   source: ElectionSource | null;
@@ -69,9 +93,17 @@ export interface ElectionLive {
   results: ElectionPartyResult[];
   officialMandates: ElectionMandate[];
   thresholds: ElectionThresholds;
-  /** Prognos. Alltid null tills nowcasten finns (#84). */
-  forecast: unknown | null;
+  /** Prognos, eller null när ingen finns att visa. Alltid skild från `results`. */
+  forecast: ElectionForecast | null;
 }
+
+/** Prognosläge i klartext. Beskriver modellens osäkerhet, inte hur långt kvällen gått. */
+export const CONFIDENCE_LABEL: Record<ElectionForecast["confidence"], string> = {
+  low: "Låg",
+  medium: "Medel",
+  high: "Hög",
+  veryHigh: "Mycket hög",
+};
 
 export async function fetchElectionLive(): Promise<ElectionLive> {
   const res = await fetch("/api/election/live", { headers: { Accept: "application/json" } });

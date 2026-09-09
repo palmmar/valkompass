@@ -6,6 +6,7 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Skeleton } from "@/components/ui/skeleton";
 import { StatusBar } from "@/components/valvaka/status-bar";
 import { ResultsTable } from "@/components/valvaka/results-table";
+import { ForecastSummary } from "@/components/valvaka/forecast-summary";
 import { PollsCloseCountdown } from "@/components/valvaka/polls-close-countdown";
 import { fetchElectionLive, hasResults, isCounting } from "@/lib/election-api";
 import { AlertTriangle, Info } from "lucide-react";
@@ -89,6 +90,10 @@ export function ValvakaView() {
 
       {showResults && <ResultsTable data={data} />}
 
+      {showResults && data.forecast && (
+        <ForecastSummary forecast={data.forecast} thresholds={data.thresholds} />
+      )}
+
       {data.phase === "preliminaryPaused" && (
         <Alert>
           <Info className="size-4" />
@@ -128,10 +133,24 @@ export function ValvakaView() {
           checksumma och digitala signatur, och visar siffrorna som de är.
         </p>
         <p>
-          <strong className="text-foreground">Allt du ser här är faktiskt räknat resultat.</strong>{" "}
-          Ingen prognos och inga uppskattningar ingår. Andelen räknade valdistrikt är inte
-          detsamma som andelen räknade röster – täckningen ovan utgår därför från antalet
-          röstberättigade i de distrikt som rapporterat.
+          {data.forecast ? (
+            <>
+              <strong className="text-foreground">
+                Kolumnen Räknat är Valmyndighetens siffror. Kolumnen Prognos är vår egen
+                uppskattning.
+              </strong>{" "}
+              De två är olika saker och ska inte läsas som samma sak.
+            </>
+          ) : (
+            <>
+              <strong className="text-foreground">
+                Allt du ser här är faktiskt räknat resultat.
+              </strong>{" "}
+              Ingen prognos och inga uppskattningar ingår.
+            </>
+          )}{" "}
+          Andelen räknade valdistrikt är inte detsamma som andelen räknade röster – täckningen
+          ovan utgår därför från antalet röstberättigade i de distrikt som rapporterat.
         </p>
         <p>
           Mandaten är Valmyndighetens officiella preliminära fördelning. Vi räknar inte mandat
