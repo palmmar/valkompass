@@ -68,8 +68,9 @@ public static class NowcastEngine
             return NowcastResult.Unavailable("För liten andel av rösterna är räknade.");
         }
 
-        var draws = Simulate(ctx, scratch, opts, coverage);
-        return Summarise(ctx, opts, point, draws, coverage, baselineShare);
+        var skew = RegionalSkew(ctx);
+        var draws = Simulate(ctx, scratch, opts, coverage, skew);
+        return Summarise(ctx, opts, point, draws, coverage, baselineShare, skew);
     }
 
     // --- Simulering ---
@@ -78,11 +79,11 @@ public static class NowcastEngine
     /// Bootstrap över de rapporterade distrikten, plus en systematisk stöt som fångar att de
     /// som rapporterat inte behöver likna dem som återstår.
     /// </summary>
-    private static double[][] Simulate(Context ctx, Scratch scratch, NowcastOptions opts, double coverage)
+    private static double[][] Simulate(Context ctx, Scratch scratch, NowcastOptions opts, double coverage, double skew)
     {
         var random = new Random(opts.Seed);
         var remaining = Math.Max(0, 1 - coverage);
-        var sigma = opts.SwingSigma * Math.Sqrt(remaining);
+        var sigma = opts.SwingSigma * Math.Sqrt(remaining) * (1 + opts.SkewPenalty * skew);
 
         var draws = new double[opts.Draws][];
         var sample = new int[ctx.MeasuredCount];
@@ -104,6 +105,38 @@ public static class NowcastEngine
         }
 
         return draws;
+    }
+
+    /// <summary>
+    /// Hur olikt de rapporterade distriktens geografiska fördelning är landets, mätt som
+    /// totalvariationsavstånd mellan länens andel av det mätta underlaget och deras andel av
+    /// riket. Noll betyder att urvalet speglar landet, ett att allt kommer från fel håll.
+    /// </summary>
+    private static double RegionalSkew(Context ctx)
+    {
+        var measured = new double[ctx.CountyCount];
+        double measuredTotal = 0;
+
+        for (var i = 0; i < ctx.MeasuredCount; i++)
+        {
+            var c = ctx.MunicipalityCounty[ctx.DistrictMunicipality[i]];
+            measured[c] += ctx.DistrictVotesPrevious[i];
+            measuredTotal += ctx.DistrictVotesPrevious[i];
+        }
+
+        var nationalTotal = ctx.CountyBaselinePrevious.Sum();
+        if (measuredTotal <= 0 || nationalTotal <= 0)
+        {
+            return 1;
+        }
+
+        double divergence = 0;
+        for (var c = 0; c < ctx.CountyCount; c++)
+        {
+            divergence += Math.Abs(measured[c] / measuredTotal - ctx.CountyBaselinePrevious[c] / nationalTotal);
+        }
+
+        return divergence / 2;
     }
 
     /// <summary>Box–Muller. Egen implementation för att hålla resultatet reproducerbart.</summary>
@@ -270,7 +303,8 @@ public static class NowcastEngine
         Projection point,
         double[][] draws,
         double coverage,
-        double baselineShare)
+        double baselineShare,
+        double skew)
     {
         var parties = new List<PartyForecast>(ctx.PartyCount);
         var halfWidths = new List<double>(ctx.PartyCount);
@@ -317,6 +351,7 @@ public static class NowcastEngine
             BaselineSharePercent: Math.Round((decimal)baselineShare * 100, 2),
             Draws: opts.Draws,
             Seed: opts.Seed,
+            RegionalSkewPercent: Math.Round((decimal)skew * 100, 1),
             TypicalUncertaintyPoints: Math.Round((decimal)typical, 2),
             Confidence: Classify(typical));
 
@@ -370,6 +405,7 @@ public static class NowcastEngine
         public required double[] MunicipalityPartyVotes { get; init; }
         public required double[] MunicipalityPartyShare { get; init; }
 
+        public required double[] CountyBaselinePrevious { get; init; }
         public required double TotalVotesPrevious { get; init; }
         public required double[] ObservedShares { get; init; }
 
@@ -438,6 +474,12 @@ public static class NowcastEngine
                     mPrevious[k] > 0 ? Math.Max(0, (mPrevious[k] - previousSum) / mPrevious[k]) : 0;
             }
 
+            var countyBaseline = new double[counties.Count];
+            for (var k = 0; k < input.Municipalities.Count; k++)
+            {
+                countyBaseline[mCounty[k]] += mPrevious[k];
+            }
+
             var measured = input.Districts.Where(d => d.CanMeasureSwing).ToList();
             var dMunicipality = new int[measured.Count];
             var dVotes = new double[measured.Count];
@@ -493,6 +535,7 @@ public static class NowcastEngine
                 MunicipalityVotesPrevious = mPrevious,
                 MunicipalityPartyVotes = mPartyVotes,
                 MunicipalityPartyShare = mPartyShare,
+                CountyBaselinePrevious = countyBaseline,
                 TotalVotesPrevious = totalPrevious,
                 ObservedShares = observed,
             };

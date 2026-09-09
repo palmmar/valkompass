@@ -30,6 +30,15 @@ public sealed class NowcastOptions
     /// </summary>
     public double SwingSigma { get; init; } = 0.04;
 
+    /// <summary>
+    /// Hur hårt geografisk skevhet vidgar intervallen. Om de distrikt som rapporterat är
+    /// koncentrerade till några få län är swingen skattad på ett urval som inte liknar landet,
+    /// och då ska osäkerheten växa därefter. Utan detta höll intervallen bara 22 procent vid
+    /// län-för-län-rapportering; modellen visste helt enkelt inte att den satt på ett skevt
+    /// underlag.
+    /// </summary>
+    public double SkewPenalty { get; init; } = 2.5;
+
     /// <summary>Antal simuleringar. Fler ger jämnare intervall men kostar tid.</summary>
     public int Draws { get; init; } = 1000;
 

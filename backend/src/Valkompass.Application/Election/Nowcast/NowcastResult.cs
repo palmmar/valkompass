@@ -33,6 +33,8 @@ public sealed record NowcastMetadata(
     decimal BaselineSharePercent,
     int Draws,
     int Seed,
+    // Hur geografiskt skevt underlaget är, 0 = speglar landet.
+    decimal RegionalSkewPercent,
     // Halva bredden på ett typiskt 90 %-intervall, i procentenheter.
     decimal TypicalUncertaintyPoints,
     NowcastConfidence Confidence);
