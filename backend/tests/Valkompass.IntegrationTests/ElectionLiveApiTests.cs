@@ -9,7 +9,8 @@ namespace Valkompass.IntegrationTests;
 /// Kontraktet för <c>GET /api/election/live</c>. Databasen är tom i testerna, så det här är
 /// läget före rösträkningen – det som faktiskt möter besökare fram till valnatten.
 /// </summary>
-public class ElectionLiveApiTests(ApiFactory factory) : IClassFixture<ApiFactory>
+[Collection(ApiCollection.Name)]
+public class ElectionLiveApiTests(ApiFactory factory)
 {
     [Fact]
     public async Task Live_KravInteAuthentication()
