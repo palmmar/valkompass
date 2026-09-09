@@ -41,11 +41,17 @@ public class ElectionSnapshotStore(AppDbContext db) : IElectionSnapshotStore
             await db.SaveChangesAsync(ct);
             return true;
         }
-        catch (DbUpdateException) when (await IsDuplicateAsync(snapshot, ct))
+        catch (DbUpdateException)
         {
-            // Två samtidiga importförsök hann skriva samma checksumma. Det unika indexet är
-            // det som avgör, och resultatet är detsamma som om vi hoppat över filen.
-            return false;
+            // Två samtidiga importförsök kan ha hunnit skriva samma checksumma. Det unika
+            // indexet är det som avgör, och resultatet blir detsamma som om vi hoppat över
+            // filen. Andra skrivfel ska däremot bubbla upp till backoff-hanteringen.
+            if (await IsDuplicateAsync(snapshot, ct))
+            {
+                return false;
+            }
+
+            throw;
         }
     }
 
