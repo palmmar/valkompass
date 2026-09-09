@@ -36,6 +36,9 @@ public static class DependencyInjection
         services.Configure<ElectionImport>(configuration.GetSection(ElectionImport.SectionName));
         services.TryAddSingletonTimeProvider();
 
+        services.AddHttpClient();
+        services.AddSingleton<ElectionSignatureVerifier>();
+
         services.AddHttpClient<ElectionResultImporter>((sp, client) =>
         {
             var options = sp.GetRequiredService<IOptions<ElectionImport>>().Value;

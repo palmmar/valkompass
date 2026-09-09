@@ -27,6 +27,16 @@ public sealed class ElectionImport
     /// </summary>
     public bool AllowTestData { get; set; }
 
+    /// <summary>
+    /// Verifierar Valmyndighetens signaturfiler mot deras certifikat. Går att stänga av som
+    /// nödutgång om certifikatet skulle bytas oväntat mitt under rösträkningen – då faller vi
+    /// tillbaka på checksummekontrollen i stället för att sluta visa resultat.
+    /// </summary>
+    public bool VerifySignatures { get; set; } = true;
+
+    /// <summary>Valmyndighetens publika signeringscertifikat (PEM).</summary>
+    public string CertificateUrl { get; set; } = "https://resultat.val.se/keys/val-sign-crt.pem";
+
     /// <summary>Hur ofta indexet kontrolleras. Valnatten uppdateras filerna ofta.</summary>
     public TimeSpan PollInterval { get; set; } = TimeSpan.FromSeconds(30);
 

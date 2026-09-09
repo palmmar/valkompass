@@ -35,6 +35,7 @@ public enum ImportOutcome
 public class ElectionResultImporter(
     HttpClient http,
     IElectionSnapshotStore store,
+    ElectionSignatureVerifier signatures,
     IOptions<ElectionImport> options,
     TimeProvider time,
     ILogger<ElectionResultImporter> logger)
@@ -119,15 +120,30 @@ public class ElectionResultImporter(
             ?? throw new ElectionResultFormatException(
                 $"{entry.FileName} innehåller ingen mandatfordelning-fil.");
 
-        // Kopiera ut posten så att ZIP-strömmen kan stängas direkt.
-        var json = new MemoryStream();
-        await using (var entryStream = file.Open())
+        var json = await ReadEntryAsync(file, ct);
+
+        // Signaturen ligger bredvid JSON-filen: Namn.json -> Namn_sign.sha256.
+        var signatureName = $"{file.Name[..^".json".Length]}_sign.sha256";
+        var signatureEntry = archive.Entries.FirstOrDefault(e =>
+            string.Equals(e.Name, signatureName, StringComparison.OrdinalIgnoreCase))
+            ?? throw new ElectionResultFormatException(
+                $"{entry.FileName} saknar signaturfilen {signatureName}.");
+
+        await signatures.VerifyAsync(json, await ReadEntryAsync(signatureEntry, ct), file.Name, ct);
+
+        return new MemoryStream(json, writable: false);
+    }
+
+    /// <summary>Kopierar ut en post så att ZIP-strömmen kan stängas direkt.</summary>
+    private static async Task<byte[]> ReadEntryAsync(ZipArchiveEntry entry, CancellationToken ct)
+    {
+        using var buffer = new MemoryStream();
+        await using (var stream = entry.Open())
         {
-            await entryStream.CopyToAsync(json, ct);
+            await stream.CopyToAsync(buffer, ct);
         }
 
-        json.Position = 0;
-        return json;
+        return buffer.ToArray();
     }
 
     /// <summary>
