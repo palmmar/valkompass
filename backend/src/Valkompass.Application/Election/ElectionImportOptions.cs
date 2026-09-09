@@ -9,10 +9,11 @@ public sealed class ElectionImport
     public const string SectionName = "ElectionImport";
 
     /// <summary>
-    /// Slår av importen helt. Ska gå att stänga av utan att sidan går sönder – den senast
-    /// sparade snapshoten fortsätter serveras (#87).
+    /// Nödutgång, inte startknapp. Importen styrs av tiden (se
+    /// <see cref="ElectionImportSchedule"/>) och behöver inte slås på manuellt. Sätt false för
+    /// att stoppa den om något går fel – senast sparade snapshot fortsätter serveras (#87).
     /// </summary>
-    public bool Enabled { get; set; }
+    public bool Enabled { get; set; } = true;
 
     /// <summary>
     /// Katalogen som innehåller <c>index.md5</c>. Produktion:
