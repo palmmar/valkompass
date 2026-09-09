@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { ElectionCountdown } from "@/components/election-countdown";
+import { ElectionDayCta } from "@/components/election-day-cta";
 import { Info, ListChecks, Scale, Share2 } from "lucide-react";
 
 const STEPS = [
@@ -50,7 +50,7 @@ export default function Home() {
             Starta valkompassen
           </Button>
         </div>
-        <ElectionCountdown />
+        <ElectionDayCta />
       </section>
 
       <section className="border-t pt-12">

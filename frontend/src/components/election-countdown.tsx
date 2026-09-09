@@ -1,32 +1,9 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import { POLLS_CLOSE } from "@/lib/config";
-
-interface Remaining {
-  days: number;
-  hours: number;
-  minutes: number;
-  total: number; // millisekunder kvar
-}
-
-function getRemaining(target: Date): Remaining {
-  const total = target.getTime() - Date.now();
-  const clamped = Math.max(0, total);
-  return {
-    days: Math.floor(clamped / 86_400_000),
-    hours: Math.floor((clamped % 86_400_000) / 3_600_000),
-    minutes: Math.floor((clamped % 3_600_000) / 60_000),
-    total,
-  };
-}
+import { useTimeRemaining, unitLabel } from "@/lib/use-time-remaining";
 
 const ELECTION_LABEL = "kvar tills vallokalerna stänger 13 september 2026";
-
-/** Svensk singular/plural för en tidsenhet. */
-function unitLabel(value: number, one: string, many: string): string {
-  return value === 1 ? one : many;
-}
 
 function Unit({ value, label }: { value: number | string; label: string }) {
   return (
@@ -42,26 +19,17 @@ function Unit({ value, label }: { value: number | string; label: string }) {
 }
 
 /**
- * Nedräknare till valet. Renderas som en klient-ö: servern (och första klient-renderingen)
- * visar bara den statiska etiketten, talen fylls i efter mount. setState sker i en
- * callback (inte synkront i effekten) för att undvika both hydrerings-mismatch och
- * lint-regeln react-hooks/set-state-in-effect.
+ * Nedräknare till att vallokalerna stänger. Renderas som en klient-ö: servern (och första
+ * klient-renderingen) visar bara den statiska etiketten, talen fylls i efter mount.
+ *
+ * Används i läget före valdagen. Vad som visas därefter styrs av valvakans fas och inte av
+ * klockan – se ElectionDayCta.
  */
 export function ElectionCountdown() {
-  const [remaining, setRemaining] = useState<Remaining | null>(null);
+  const remaining = useTimeRemaining(POLLS_CLOSE);
 
-  useEffect(() => {
-    const update = () => setRemaining(getRemaining(POLLS_CLOSE));
-    const raf = requestAnimationFrame(update); // första värdet direkt (asynkront)
-    const id = setInterval(update, 1000); // håll minuterna aktuella
-    return () => {
-      cancelAnimationFrame(raf);
-      clearInterval(id);
-    };
-  }, []);
-
-  // Tillfälligt sluttillstånd. Valdagens fulla tillståndsmaskin (före valdagen → valdagen före
-  // 20:00 → valvaka → efter valet) hör till #86.
+  // Nås normalt inte: efter stängning har ElectionDayCta redan bytt till valvake-läget.
+  // Finns kvar som skydd om fasen inte gick att hämta.
   if (remaining && remaining.total <= 0) {
     return (
       <p className="mt-8 text-lg font-semibold tracking-tight">
