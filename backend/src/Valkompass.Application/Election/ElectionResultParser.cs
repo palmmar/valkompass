@@ -193,19 +193,29 @@ public static class ElectionResultParser
             : throw new ElectionResultFormatException($"Fältet {name} är inte en lista.");
     }
 
-    private static string RequiredString(JsonElement parent, string name) =>
-        Required(parent, name).GetString()
-        ?? throw new ElectionResultFormatException($"Fältet {name} är inte en sträng.");
+    private static string RequiredString(JsonElement parent, string name)
+    {
+        // GetString() kastar InvalidOperationException om värdet inte är en sträng, så
+        // kontrollera ValueKind först – trasig indata ska ge vårt eget formatfel.
+        var value = Required(parent, name);
+        return value.ValueKind == JsonValueKind.String
+            ? value.GetString()!
+            : throw new ElectionResultFormatException($"Fältet {name} är inte en sträng.");
+    }
 
     private static string? OptionalString(JsonElement parent, string name) =>
         parent.TryGetProperty(name, out var value) && value.ValueKind == JsonValueKind.String
             ? value.GetString()
             : null;
 
-    private static int RequiredInt(JsonElement parent, string name) =>
-        Required(parent, name).TryGetInt32(out var value)
-            ? value
+    private static int RequiredInt(JsonElement parent, string name)
+    {
+        // Samma sak här: TryGetInt32 kastar om värdet inte är ett tal.
+        var value = Required(parent, name);
+        return value.ValueKind == JsonValueKind.Number && value.TryGetInt32(out var parsed)
+            ? parsed
             : throw new ElectionResultFormatException($"Fältet {name} är inte ett heltal.");
+    }
 
     private static int? OptionalInt(JsonElement parent, string name) =>
         parent.TryGetProperty(name, out var value)

@@ -1,6 +1,6 @@
 using System.IO.Compression;
 using System.Text;
-using System.Text.Json;
+using System.Text.Json.Nodes;
 using Valkompass.Application.Election;
 
 namespace Valkompass.UnitTests;
@@ -50,8 +50,8 @@ public class ElectionResultParserTests
         var snapshot = ParseFixture();
 
         Assert.Equal(
-            ["C", "KD", "L", "M", "MP", "S", "SD", "V"],
-            snapshot.Results.Select(r => r.Code).OrderBy(c => c, StringComparer.Ordinal));
+            new[] { "C", "KD", "L", "M", "MP", "S", "SD", "V" },
+            snapshot.Results.Select(r => r.Code).OrderBy(c => c, StringComparer.Ordinal).ToArray());
     }
 
     [Fact]
@@ -177,11 +177,8 @@ public class ElectionResultParserTests
     [Fact]
     public void Vagrar_fler_raknade_distrikt_an_totalt()
     {
-        Assert.Throws<ElectionResultFormatException>(() => ParseModified(root =>
-        {
-            var area = (Dictionary<string, object?>)root["valomrade"]!;
-            area["antalValdistriktRaknade"] = 9999;
-        }));
+        Assert.Throws<ElectionResultFormatException>(
+            () => ParseModified(root => root["valomrade"]!["antalValdistriktRaknade"] = 9999));
     }
 
     [Fact]
@@ -202,13 +199,13 @@ public class ElectionResultParserTests
     }
 
     /// <summary>Läser fixturen, kör <paramref name="mutate"/> på toppnivån och tolkar resultatet.</summary>
-    private static ElectionSnapshot ParseModified(Action<Dictionary<string, object?>> mutate)
+    private static ElectionSnapshot ParseModified(Action<JsonObject> mutate)
     {
         using var source = OpenMandateFixture();
-        var root = JsonSerializer.Deserialize<Dictionary<string, object?>>(source)!;
+        var root = JsonNode.Parse(source)!.AsObject();
         mutate(root);
 
-        using var modified = new MemoryStream(JsonSerializer.SerializeToUtf8Bytes(root));
+        using var modified = new MemoryStream(Encoding.UTF8.GetBytes(root.ToJsonString()));
         return ElectionResultParser.ParseMandateFile(modified, Checksum, Ingested);
     }
 
