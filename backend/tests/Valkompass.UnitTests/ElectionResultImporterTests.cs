@@ -122,8 +122,7 @@ public class ElectionResultImporterTests
         var tampered = TamperedArchive();
         var checksum = Convert.ToHexString(MD5.HashData(tampered)).ToLowerInvariant();
         var store = new FakeStore();
-        var importer = Build(store, new FakeHandler($"{checksum}  {RdPath}
-", tampered), allowTestData: true);
+        var importer = Build(store, new FakeHandler($"{checksum}  {RdPath}", tampered), allowTestData: true);
 
         var ex = await Assert.ThrowsAsync<ElectionResultFormatException>(() => importer.ImportAsync());
 
