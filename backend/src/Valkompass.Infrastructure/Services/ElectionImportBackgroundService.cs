@@ -10,62 +10,93 @@ namespace Valkompass.Infrastructure.Services;
 /// Pollar Valmyndighetens index och importerar nya resultatfiler under rösträkningen.
 /// </summary>
 /// <remarks>
+/// Tjänsten startar av sig själv strax före vallokalerna stänger och håller på genom onsdagens
+/// uppsamlingsräkning och den slutliga räkningen – ingen behöver slå på den, och framför allt
+/// behöver ingen starta om servern mitt under rösträkningen. När fönstret ska öppna och stänga
+/// bestäms av <see cref="ElectionImportSchedule"/>.
+///
 /// Endast backend pratar med Valmyndigheten: hur många som än läser vårt API blir det aldrig
-/// mer än ett anrop per intervall uppströms. Fel loggas och leder till exponentiell backoff –
+/// mer än ett anrop per pollintervall uppströms. Fel loggas och leder till exponentiell backoff –
 /// senast sparade snapshot ligger kvar och fortsätter serveras under tiden.
 /// </remarks>
 public class ElectionImportBackgroundService(
     IServiceScopeFactory scopeFactory,
-    IOptions<ElectionImport> options,
+    IOptionsMonitor<ElectionImport> importOptions,
+    IOptions<ElectionTimeline> timeline,
+    TimeProvider time,
     ILogger<ElectionImportBackgroundService> logger)
     : BackgroundService
 {
-    private readonly ElectionImport _options = options.Value;
+    private readonly ElectionTimeline _timeline = timeline.Value;
+
+    /// <summary>Så att en pausad import inte loggar samma rad varje pollintervall.</summary>
+    private bool _pauseLogged;
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
-        if (!_options.Enabled)
-        {
-            logger.LogInformation("Valresultatimporten är avstängd (ElectionImport:Enabled = false).");
-            return;
-        }
-
         logger.LogInformation(
-            "Startar valresultatimport mot {BaseUrl} var {Interval}. Testdata tillåten: {AllowTestData}.",
-            _options.BaseUrl, _options.PollInterval, _options.AllowTestData);
+            "Valresultatimport igång mot {BaseUrl}. Fönster {Start:u} till {End:u}, intervall {Interval}.",
+            importOptions.CurrentValue.BaseUrl,
+            ElectionImportSchedule.WindowStart(_timeline),
+            ElectionImportSchedule.WindowEnd(_timeline),
+            importOptions.CurrentValue.PollInterval);
 
-        var retryDelay = _options.InitialRetryDelay;
+        var retryDelay = importOptions.CurrentValue.InitialRetryDelay;
 
         while (!stoppingToken.IsCancellationRequested)
         {
-            TimeSpan delay;
-            try
-            {
-                await using var scope = scopeFactory.CreateAsyncScope();
-                var importer = scope.ServiceProvider.GetRequiredService<ElectionResultImporter>();
+            // Läses om varje varv, så att en ändrad flagga slår igenom utan omstart.
+            var options = importOptions.CurrentValue;
+            var decision = ElectionImportSchedule.Decide(_timeline, options, time.GetUtcNow());
 
-                await importer.ImportAsync(ct: stoppingToken);
-
-                retryDelay = _options.InitialRetryDelay;
-                delay = _options.PollInterval;
-            }
-            catch (OperationCanceledException) when (stoppingToken.IsCancellationRequested)
+            if (decision.Action == ImportAction.Finished)
             {
-                // Normal nedstängning.
+                logger.LogInformation("Importfönstret är passerat. Avslutar importen.");
                 break;
             }
-            catch (Exception ex)
+
+            var delay = decision.Delay;
+
+            if (decision.Action == ImportAction.Paused)
             {
-                // Allt fångas medvetet: en trasig fil, en timeout eller ett 5xx från
-                // Valmyndigheten får inte döda importen för resten av valnatten.
-                logger.LogError(ex, "Importen misslyckades. Försöker igen om {Delay}.", retryDelay);
-                delay = retryDelay;
-                retryDelay = Min(retryDelay * 2, _options.MaxRetryDelay);
+                if (!_pauseLogged)
+                {
+                    logger.LogWarning(
+                        "Importen är pausad (ElectionImport:Enabled = false). Senast sparade "
+                        + "snapshot fortsätter serveras.");
+                    _pauseLogged = true;
+                }
+            }
+            else if (decision.Action == ImportAction.Import)
+            {
+                _pauseLogged = false;
+
+                try
+                {
+                    await using var scope = scopeFactory.CreateAsyncScope();
+                    var importer = scope.ServiceProvider.GetRequiredService<ElectionResultImporter>();
+
+                    await importer.ImportAsync(ct: stoppingToken);
+
+                    retryDelay = options.InitialRetryDelay;
+                }
+                catch (OperationCanceledException) when (stoppingToken.IsCancellationRequested)
+                {
+                    break;
+                }
+                catch (Exception ex)
+                {
+                    // Allt fångas medvetet: en trasig fil, en timeout eller ett 5xx från
+                    // Valmyndigheten får inte döda importen för resten av valnatten.
+                    logger.LogError(ex, "Importen misslyckades. Försöker igen om {Delay}.", retryDelay);
+                    delay = retryDelay;
+                    retryDelay = Min(retryDelay * 2, options.MaxRetryDelay);
+                }
             }
 
             try
             {
-                await Task.Delay(delay, stoppingToken);
+                await Task.Delay(delay, time, stoppingToken);
             }
             catch (OperationCanceledException)
             {

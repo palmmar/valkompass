@@ -15,6 +15,18 @@ public sealed class ElectionTimeline
     /// Hur länge en snapshot får vara utan uppdatering innan källan räknas som fördröjd.
     /// </summary>
     public TimeSpan StaleAfter { get; set; } = TimeSpan.FromMinutes(10);
+
+    /// <summary>
+    /// Hur långt före stängning importen börjar polla. Ett tomt index kostar ingenting, och
+    /// vägen hinner bevisa sig innan den behövs.
+    /// </summary>
+    public TimeSpan ImportStartsBefore { get; set; } = TimeSpan.FromHours(1);
+
+    /// <summary>
+    /// Hur länge efter stängning importen håller på. Måste täcka onsdagens uppsamlingsräkning
+    /// och länsstyrelsernas slutliga räkning veckan efter valet.
+    /// </summary>
+    public TimeSpan ImportStopsAfter { get; set; } = TimeSpan.FromDays(21);
 }
 
 /// <summary>
