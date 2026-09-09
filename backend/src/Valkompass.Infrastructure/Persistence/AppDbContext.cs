@@ -25,6 +25,9 @@ public class AppDbContext(DbContextOptions<AppDbContext> options)
     public DbSet<Poll> Polls => Set<Poll>();
     public DbSet<PollResult> PollResults => Set<PollResult>();
 
+    /// <summary>Importerade rösträkningssnapshots från Valmyndigheten (valvakan).</summary>
+    public DbSet<ElectionSnapshotRecord> ElectionSnapshots => Set<ElectionSnapshotRecord>();
+
     protected override void OnModelCreating(ModelBuilder builder)
     {
         base.OnModelCreating(builder);
