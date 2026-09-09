@@ -82,7 +82,7 @@ public static class NowcastEngine
     {
         var random = new Random(opts.Seed);
         var remaining = Math.Max(0, 1 - coverage);
-        var sigma = opts.SystematicSwingSigma * Math.Sqrt(remaining);
+        var sigma = opts.RelativeSwingSigma * Math.Sqrt(remaining);
 
         var draws = new double[opts.Draws][];
         var sample = new int[ctx.MeasuredCount];
@@ -228,7 +228,11 @@ public static class NowcastEngine
                 var swing = weight * local + (1 - weight) * s.CountySwing[c * slots + p];
 
                 var baseline = ctx.MunicipalityPartyShare[from + p];
-                var projected = baseline + swing + (p < shock.Length ? shock[p] : 0);
+                // Stöten är relativ: ett stort parti kan slå fel med fler procentenheter än
+                // ett litet, så den skalas med partiets storlek i stället för att vara lika
+                // stor för alla.
+                var noise = p < shock.Length ? baseline * shock[p] : 0;
+                var projected = baseline + swing + noise;
                 s.Projected[p] = Math.Max(0, projected);
                 sum += s.Projected[p];
             }

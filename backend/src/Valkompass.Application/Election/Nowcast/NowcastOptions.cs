@@ -17,10 +17,16 @@ public sealed class NowcastOptions
 
     /// <summary>
     /// Systematisk osäkerhet: att de distrikt som hunnit rapportera inte är representativa för
-    /// dem som återstår. Skalas med kvarvarande andel av rösterna, så att den försvinner när
-    /// allt är räknat. Uttryckt som andel (0,01 = en procentenhet vid noll täckning).
+    /// dem som återstår. Uttrycks relativt partiets storlek, eftersom ett parti på 30 procent
+    /// rimligen kan slå fel med ett par procentenheter medan ett parti på 4,5 sällan gör det.
+    /// En additiv stöt gav i backtestet för snäva intervall för de stora partierna och för
+    /// vida för de små.
+    ///
+    /// Skalas dessutom med kvarvarande andel av rösterna, så att den försvinner när allt är
+    /// räknat. Värdet är kalibrerat mot backtestet så att 90-procentsintervallen faktiskt
+    /// träffar omkring 90 procent.
     /// </summary>
-    public double SystematicSwingSigma { get; init; } = 0.012;
+    public double RelativeSwingSigma { get; init; } = 0.06;
 
     /// <summary>Antal simuleringar. Fler ger jämnare intervall men kostar tid.</summary>
     public int Draws { get; init; } = 1000;
