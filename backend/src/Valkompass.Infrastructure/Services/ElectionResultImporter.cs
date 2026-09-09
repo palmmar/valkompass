@@ -4,6 +4,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Valkompass.Application.Contracts;
 using Valkompass.Application.Election;
+using Valkompass.Application.Election.Nowcast;
 using Valkompass.Domain.Enums;
 
 namespace Valkompass.Infrastructure.Services;
@@ -65,10 +66,10 @@ public class ElectionResultImporter(
             entry.FileName, entry.Checksum, lastChecksum ?? "ingen");
 
         var started = time.GetTimestamp();
-        var archive = await DownloadAsync(entry, ct);
+        var files = await DownloadAsync(entry, ct);
 
         var snapshot = ElectionResultParser.ParseMandateFile(
-            archive, entry.Checksum, time.GetUtcNow());
+            new MemoryStream(files.Mandates, writable: false), entry.Checksum, time.GetUtcNow());
 
         if (snapshot.Source.IsTest && !_options.AllowTestData)
         {
@@ -80,7 +81,9 @@ public class ElectionResultImporter(
             return ImportOutcome.RejectedTestData;
         }
 
-        var saved = await store.SaveAsync(snapshot, ct);
+        var forecast = BuildForecast(files, snapshot);
+
+        var saved = await store.SaveAsync(snapshot, forecast, ct);
         logger.LogInformation(
             "Importerade {File} på {Elapsed}: {Reported}/{Total} valdistrikt, uppdaterad {UpdatedAt}. Ny rad: {Saved}.",
             entry.FileName,
@@ -94,10 +97,64 @@ public class ElectionResultImporter(
     }
 
     /// <summary>
-    /// Hämtar ZIP-filen, verifierar den mot checksumman i indexet och packar upp
-    /// mandatfördelningsfilen.
+    /// Beräknar prognosen, när den är påslagen.
     /// </summary>
-    private async Task<Stream> DownloadAsync(ElectionIndexEntry entry, CancellationToken ct)
+    /// <remarks>
+    /// Fel fångas medvetet här. Prognosen är ett tillägg till det räknade resultatet, aldrig
+    /// en förutsättning för det – går modellen fel ska sidan visa Valmyndighetens siffror som
+    /// vanligt, utan prognos, i stället för ingenting alls.
+    /// </remarks>
+    private NowcastResult? BuildForecast(ArchiveFiles files, ElectionSnapshot snapshot)
+    {
+        if (!_options.Forecast)
+        {
+            return null;
+        }
+
+        try
+        {
+            var input = new NowcastInput(
+                NowcastInputParser.ParseDistricts(files.Districts),
+                NowcastInputParser.ParseMunicipalities(files.Summary),
+                snapshot.Reporting.TotalVotesPrevious ?? 0);
+
+            var result = NowcastEngine.Run(input);
+
+            if (result.Available)
+            {
+                logger.LogInformation(
+                    "Prognos beräknad: {Districts} jämförbara distrikt, {Coverage} % täckning, "
+                    + "typisk osäkerhet ±{Uncertainty} pp, geografisk skevhet {Skew} %.",
+                    result.Metadata!.ComparableDistrictsUsed,
+                    result.Metadata.CoveragePercent,
+                    result.Metadata.TypicalUncertaintyPoints,
+                    result.Metadata.RegionalSkewPercent);
+            }
+            else
+            {
+                logger.LogInformation("Ingen prognos: {Reason}", result.UnavailableReason);
+            }
+
+            return result;
+        }
+        catch (Exception ex)
+        {
+            logger.LogError(ex, "Prognosen kunde inte beräknas. Det räknade resultatet sparas ändå.");
+            return null;
+        }
+    }
+
+    /// <summary>De tre JSON-filerna i ett resultatarkiv.</summary>
+    /// <param name="Mandates">Rikets röstfördelning och mandat, ca 300 kB.</param>
+    /// <param name="Summary">Kommunnivån, ca 2 MB.</param>
+    /// <param name="Districts">Valdistrikten, ca 40 MB. Behövs bara för prognosen.</param>
+    private sealed record ArchiveFiles(byte[] Mandates, byte[] Summary, byte[] Districts);
+
+    /// <summary>
+    /// Hämtar ZIP-filen, verifierar den mot checksumman i indexet och packar upp de tre
+    /// JSON-filerna, var och en kontrollerad mot sin signatur.
+    /// </summary>
+    private async Task<ArchiveFiles> DownloadAsync(ElectionIndexEntry entry, CancellationToken ct)
     {
         using var response = await http.GetAsync(
             ResultUrl(entry), HttpCompletionOption.ResponseHeadersRead, ct);
@@ -114,11 +171,25 @@ public class ElectionResultImporter(
 
         zip.Position = 0;
         using var archive = new ZipArchive(zip, ZipArchiveMode.Read);
+
+        return new ArchiveFiles(
+            await ReadVerifiedAsync(archive, entry, "mandatfordelning", ct),
+            await ReadVerifiedAsync(archive, entry, "summering", ct),
+            await ReadVerifiedAsync(archive, entry, "rostfordelning", ct));
+    }
+
+    /// <summary>Packar upp en namngiven JSON-fil och kontrollerar dess signatur.</summary>
+    private async Task<byte[]> ReadVerifiedAsync(
+        ZipArchive archive,
+        ElectionIndexEntry entry,
+        string name,
+        CancellationToken ct)
+    {
         var file = archive.Entries.FirstOrDefault(e =>
-            e.Name.Contains("mandatfordelning", StringComparison.OrdinalIgnoreCase)
+            e.Name.Contains(name, StringComparison.OrdinalIgnoreCase)
             && e.Name.EndsWith(".json", StringComparison.OrdinalIgnoreCase))
             ?? throw new ElectionResultFormatException(
-                $"{entry.FileName} innehåller ingen mandatfordelning-fil.");
+                $"{entry.FileName} innehåller ingen {name}-fil.");
 
         var json = await ReadEntryAsync(file, ct);
 
@@ -131,7 +202,7 @@ public class ElectionResultImporter(
 
         await signatures.VerifyAsync(json, await ReadEntryAsync(signatureEntry, ct), file.Name, ct);
 
-        return new MemoryStream(json, writable: false);
+        return json;
     }
 
     /// <summary>Kopierar ut en post så att ZIP-strömmen kan stängas direkt.</summary>

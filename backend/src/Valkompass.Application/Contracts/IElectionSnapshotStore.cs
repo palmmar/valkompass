@@ -1,4 +1,5 @@
 using Valkompass.Application.Election;
+using Valkompass.Application.Election.Nowcast;
 using Valkompass.Domain.Enums;
 
 namespace Valkompass.Application.Contracts;
@@ -14,13 +15,13 @@ public interface IElectionSnapshotStore
     /// Sparar en snapshot. Är checksumman redan sparad för samma räkningstillfälle görs
     /// ingenting och metoden returnerar false – importen är idempotent.
     /// </summary>
-    Task<bool> SaveAsync(ElectionSnapshot snapshot, CancellationToken ct = default);
+    Task<bool> SaveAsync(ElectionSnapshot snapshot, NowcastResult? forecast, CancellationToken ct = default);
 
     /// <summary>
     /// Senast importerade snapshot, eller null om ingen finns. <paramref name="includeTestData"/>
     /// måste vara sant för att genrepsdata ska returneras.
     /// </summary>
-    Task<ElectionSnapshot?> GetLatestAsync(
+    Task<StoredElectionSnapshot?> GetLatestAsync(
         CountingStage stage,
         bool includeTestData,
         CancellationToken ct = default);

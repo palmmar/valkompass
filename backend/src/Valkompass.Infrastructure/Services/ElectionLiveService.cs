@@ -3,6 +3,7 @@ using Microsoft.Extensions.Options;
 using Valkompass.Application.Contracts;
 using Valkompass.Application.Dtos;
 using Valkompass.Application.Election;
+using Valkompass.Application.Election.Nowcast;
 using Valkompass.Domain.Enums;
 
 namespace Valkompass.Infrastructure.Services;
@@ -31,7 +32,8 @@ public class ElectionLiveService(
 
     public async Task<ElectionLiveResponse> GetLiveAsync(CancellationToken ct = default)
     {
-        var snapshot = await GetSnapshotAsync(ct);
+        var stored = await GetSnapshotAsync(ct);
+        var snapshot = stored?.Result;
         var now = time.GetUtcNow();
 
         var phase = ElectionPhaseCalculator.Resolve(_timeline, snapshot, now);
@@ -86,12 +88,13 @@ public class ElectionLiveService(
                 MandatesPrevious: m.TotalPrevious,
                 Change: m.Change))],
             Thresholds: new ElectionThresholdsDto(
-                snapshot.ThresholdPercent, snapshot.ConstituencyThresholdPercent));
+                snapshot.ThresholdPercent, snapshot.ConstituencyThresholdPercent),
+            Forecast: ToDto(stored?.Forecast));
     }
 
-    private async Task<ElectionSnapshot?> GetSnapshotAsync(CancellationToken ct)
+    private async Task<StoredElectionSnapshot?> GetSnapshotAsync(CancellationToken ct)
     {
-        if (cache.TryGetValue(CacheKey, out ElectionSnapshot? cached))
+        if (cache.TryGetValue(CacheKey, out StoredElectionSnapshot? cached))
         {
             return cached;
         }
@@ -102,5 +105,38 @@ public class ElectionLiveService(
 
         cache.Set(CacheKey, snapshot, CacheDuration);
         return snapshot;
+    }
+
+    /// <summary>
+    /// Översätter prognosen till API-kontraktet. Returnerar null när modellen avstått, så att
+    /// sidan visar räknat resultat utan prognos i stället för ett tomt löfte.
+    /// </summary>
+    private static ElectionForecastDto? ToDto(NowcastResult? forecast)
+    {
+        if (forecast is not { Available: true, Metadata: not null })
+        {
+            return null;
+        }
+
+        return new ElectionForecastDto(
+            Parties: [.. forecast.Parties.Select(p => new ElectionForecastPartyDto(
+                PartyCode: p.PartyCode,
+                ForecastShare: p.ForecastShare,
+                Lower90: p.Lower90,
+                Upper90: p.Upper90,
+                ProbabilityAboveThreshold: p.ProbabilityAboveThreshold))],
+            Confidence: forecast.Metadata.Confidence switch
+            {
+                NowcastConfidence.VeryHigh => "veryHigh",
+                NowcastConfidence.High => "high",
+                NowcastConfidence.Medium => "medium",
+                _ => "low",
+            },
+            TypicalUncertaintyPoints: forecast.Metadata.TypicalUncertaintyPoints,
+            CoveragePercent: forecast.Metadata.CoveragePercent,
+            RegionalSkewPercent: forecast.Metadata.RegionalSkewPercent,
+            ComparableDistrictsUsed: forecast.Metadata.ComparableDistrictsUsed,
+            ModelVersion: forecast.Metadata.ModelVersion,
+            Draws: forecast.Metadata.Draws);
     }
 }

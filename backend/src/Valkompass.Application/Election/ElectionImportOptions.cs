@@ -35,6 +35,13 @@ public sealed class ElectionImport
     /// </summary>
     public bool VerifySignatures { get; set; } = true;
 
+    /// <summary>
+    /// Beräknar och sparar prognosen (#84). Av som standard: det räknade resultatet är en
+    /// fullgod valvaka i sig, och prognosen ska slås på medvetet först när dess kalibrering
+    /// setts mot skarpa siffror.
+    /// </summary>
+    public bool Forecast { get; set; }
+
     /// <summary>Valmyndighetens publika signeringscertifikat (PEM).</summary>
     public string CertificateUrl { get; set; } = "https://resultat.val.se/keys/val-sign-crt.pem";
 

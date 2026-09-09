@@ -2,6 +2,7 @@ using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
 using Valkompass.Application.Contracts;
 using Valkompass.Application.Election;
+using Valkompass.Application.Election.Nowcast;
 using Valkompass.Domain.Entities;
 using Valkompass.Domain.Enums;
 using Valkompass.Infrastructure.Persistence;
@@ -13,7 +14,10 @@ public class ElectionSnapshotStore(AppDbContext db) : IElectionSnapshotStore
 {
     private static readonly JsonSerializerOptions SerializerOptions = new(JsonSerializerDefaults.Web);
 
-    public async Task<bool> SaveAsync(ElectionSnapshot snapshot, CancellationToken ct = default)
+    public async Task<bool> SaveAsync(
+        ElectionSnapshot snapshot,
+        NowcastResult? forecast,
+        CancellationToken ct = default)
     {
         ArgumentNullException.ThrowIfNull(snapshot);
 
@@ -34,6 +38,7 @@ public class ElectionSnapshotStore(AppDbContext db) : IElectionSnapshotStore
             DistrictsReported = snapshot.Reporting.DistrictsReported,
             DistrictsTotal = snapshot.Reporting.DistrictsTotal,
             Payload = JsonSerializer.Serialize(snapshot, SerializerOptions),
+            Forecast = forecast is null ? null : JsonSerializer.Serialize(forecast, SerializerOptions),
         });
 
         try
@@ -55,23 +60,37 @@ public class ElectionSnapshotStore(AppDbContext db) : IElectionSnapshotStore
         }
     }
 
-    public async Task<ElectionSnapshot?> GetLatestAsync(
+    public async Task<StoredElectionSnapshot?> GetLatestAsync(
         CountingStage stage,
         bool includeTestData,
         CancellationToken ct = default)
     {
-        var payload = await db.ElectionSnapshots
+        var row = await db.ElectionSnapshots
             .AsNoTracking()
             .Where(e => e.Stage == stage)
             .Where(e => includeTestData || !e.IsTest)
             .OrderByDescending(e => e.IngestedAt)
             .ThenByDescending(e => e.Id)
-            .Select(e => e.Payload)
+            .Select(e => new { e.Payload, e.Forecast })
             .FirstOrDefaultAsync(ct);
 
-        return payload is null
+        if (row is null)
+        {
+            return null;
+        }
+
+        var result = JsonSerializer.Deserialize<ElectionSnapshot>(row.Payload, SerializerOptions);
+        if (result is null)
+        {
+            return null;
+        }
+
+        // En saknad prognos får aldrig hindra att det räknade resultatet visas.
+        var forecast = row.Forecast is null
             ? null
-            : JsonSerializer.Deserialize<ElectionSnapshot>(payload, SerializerOptions);
+            : JsonSerializer.Deserialize<NowcastResult>(row.Forecast, SerializerOptions);
+
+        return new StoredElectionSnapshot(result, forecast);
     }
 
     public async Task<string?> GetLatestChecksumAsync(CountingStage stage, CancellationToken ct = default) =>
