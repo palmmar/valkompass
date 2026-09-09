@@ -1,4 +1,6 @@
+using System.IO.Compression;
 using System.Net;
+using System.Security.Cryptography;
 using Microsoft.Extensions.Logging.Abstractions;
 using Microsoft.Extensions.Options;
 using Valkompass.Application.Contracts;
@@ -112,6 +114,53 @@ public class ElectionResultImporterTests
         Assert.Equal("en-tidigare-summa", store.LatestChecksum);
     }
 
+    [Fact]
+    public async Task Ratt_checksumma_men_manipulerat_innehall_avvisas_av_signaturen()
+    {
+        // Det här är vad signaturen tillför utöver md5-kontrollen: en fil som stämmer mot
+        // indexet men vars innehåll inte är det Valmyndigheten signerade.
+        var tampered = TamperedArchive();
+        var checksum = Convert.ToHexString(MD5.HashData(tampered)).ToLowerInvariant();
+        var store = new FakeStore();
+        var importer = Build(store, new FakeHandler($"{checksum}  {RdPath}", tampered), allowTestData: true);
+
+        var ex = await Assert.ThrowsAsync<ElectionResultFormatException>(() => importer.ImportAsync());
+
+        Assert.Contains("Signaturen", ex.Message, StringComparison.Ordinal);
+        Assert.Empty(store.Saved);
+    }
+
+    /// <summary>
+    /// Bygger om arkivet med ett blanksteg tillagt i mandatfördelningsfilen. JSON:en är
+    /// fortfarande giltig, så det är signaturen och inget annat som fäller den.
+    /// </summary>
+    private static byte[] TamperedArchive()
+    {
+        var output = new MemoryStream();
+        using (var source = new ZipArchive(new MemoryStream(ZipBytes()), ZipArchiveMode.Read))
+        using (var target = new ZipArchive(output, ZipArchiveMode.Create, leaveOpen: true))
+        {
+            foreach (var entry in source.Entries)
+            {
+                using var reader = entry.Open();
+                using var buffer = new MemoryStream();
+                reader.CopyTo(buffer);
+
+                var bytes = buffer.ToArray();
+                if (entry.Name.Contains("mandatfordelning", StringComparison.Ordinal)
+                    && entry.Name.EndsWith(".json", StringComparison.Ordinal))
+                {
+                    bytes = [.. bytes, (byte)' '];
+                }
+
+                using var writer = target.CreateEntry(entry.FullName).Open();
+                writer.Write(bytes);
+            }
+        }
+
+        return output.ToArray();
+    }
+
     // --- Uppsättning ---
 
     private static ElectionResultImporter Build(
@@ -135,31 +184,19 @@ public class ElectionResultImporterTests
         return new ElectionResultImporter(
             new HttpClient(handler),
             store,
+            Verifier(),
             options,
             TimeProvider.System,
             NullLogger<ElectionResultImporter>.Instance);
     }
 
-    private static byte[] ZipBytes() => File.ReadAllBytes(Path.Combine(
-        FixtureRoot(), "valmyndigheten", "genrep2026", "Genrep_2026_preliminar_00_RD.zip"));
+    private static ElectionSignatureVerifier Verifier() => new(
+        ElectionFixtures.CertificateHttpClientFactory(out _),
+        Options.Create(new ElectionImport()),
+        TimeProvider.System,
+        NullLogger<ElectionSignatureVerifier>.Instance);
 
-    private static string FixtureRoot()
-    {
-        var directory = new DirectoryInfo(AppContext.BaseDirectory);
-        while (directory is not null)
-        {
-            var candidate = Path.Combine(directory.FullName, "fixtures");
-            if (Directory.Exists(candidate))
-            {
-                return candidate;
-            }
-
-            directory = directory.Parent;
-        }
-
-        throw new DirectoryNotFoundException(
-            $"Hittade ingen fixtures-katalog uppåt från {AppContext.BaseDirectory}.");
-    }
+    private static byte[] ZipBytes() => ElectionFixtures.ResultArchiveBytes();
 
     private sealed class FakeHandler(string index, byte[] zip) : HttpMessageHandler
     {
