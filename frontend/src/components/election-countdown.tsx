@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { ELECTION_DATE } from "@/lib/config";
+import { POLLS_CLOSE } from "@/lib/config";
 
 interface Remaining {
   days: number;
@@ -21,7 +21,7 @@ function getRemaining(target: Date): Remaining {
   };
 }
 
-const ELECTION_LABEL = "kvar till valet 13 september 2026";
+const ELECTION_LABEL = "kvar tills vallokalerna stänger 13 september 2026";
 
 /** Svensk singular/plural för en tidsenhet. */
 function unitLabel(value: number, one: string, many: string): string {
@@ -51,7 +51,7 @@ export function ElectionCountdown() {
   const [remaining, setRemaining] = useState<Remaining | null>(null);
 
   useEffect(() => {
-    const update = () => setRemaining(getRemaining(ELECTION_DATE));
+    const update = () => setRemaining(getRemaining(POLLS_CLOSE));
     const raf = requestAnimationFrame(update); // första värdet direkt (asynkront)
     const id = setInterval(update, 1000); // håll minuterna aktuella
     return () => {
@@ -60,9 +60,13 @@ export function ElectionCountdown() {
     };
   }, []);
 
+  // Tillfälligt sluttillstånd. Valdagens fulla tillståndsmaskin (före valdagen → valdagen före
+  // 20:00 → valvaka → efter valet) hör till #86.
   if (remaining && remaining.total <= 0) {
     return (
-      <p className="mt-8 text-lg font-semibold tracking-tight">Valet är genomfört</p>
+      <p className="mt-8 text-lg font-semibold tracking-tight">
+        Vallokalerna har stängt – rösträkningen pågår
+      </p>
     );
   }
 
