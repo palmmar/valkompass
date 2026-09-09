@@ -205,12 +205,29 @@ public class NowcastEngineTests
         // Kalibreringen: hur ofta ligger det verkliga slutresultatet i det intervall vi visar?
         // Ligger andelen långt under 90 % är modellen överkonfident, och då ska ingen
         // sannolikhet för riksdagsspärren publiceras.
+        var rate = IntervalHitRate(RealisticOrders);
+
+        // Ett 90 %-intervall ska träffa ungefär 90 %. För lågt betyder överkonfident, för
+        // högt betyder onödigt breda intervall - båda är fel, så bandet är tvåsidigt.
+        Assert.True(rate is >= 0.86 and <= 0.99, $"90 %-intervallen träffade {rate:P1}.");
+    }
+
+    [Fact]
+    public void Intervallen_haller_hjalpligt_aven_lan_for_lan()
+    {
+        // Kalibreringen görs mot realistiska rapporteringsordningar. Vid extrem geografisk
+        // skevhet ar punktskattningen samre, och da ska intervallen inte kollapsa - men de
+        // kan inte heller behova rymma ett scenario som inte intraffar, for da blir de for
+        // vida alla andra kvallar.
+        var rate = IntervalHitRate([ReportingOrder.ByCounty]);
+
+        Assert.True(rate >= 0.65, $"lan for lan: intervallen traffade {rate:P1}.");
+    }
+
+    /// <summary>Hur ofta det verkliga slutresultatet ligger inom det visade intervallet.</summary>
+    private static double IntervalHitRate(ReportingOrder[] orders)
+    {
         var final = FinalShares();
-        var orders = new[]
-        {
-            ReportingOrder.Random, ReportingOrder.LargestFirst,
-            ReportingOrder.SmallestFirst, ReportingOrder.ByCounty, ReportingOrder.PostalLast,
-        };
         var coverages = new[] { 0.05, 0.10, 0.25, 0.50, 0.75 };
 
         var hits = 0;
@@ -238,11 +255,7 @@ public class NowcastEngineTests
             }
         }
 
-        // Ett 90 %-intervall ska träffa ungefär 90 %. För lågt betyder överkonfident, för
-        // högt betyder onödigt breda intervall - båda är fel, så bandet är tvåsidigt.
-        var rate = (double)hits / total;
-        Assert.True(rate is >= 0.86 and <= 0.99,
-            $"90 %-intervallen träffade {rate:P1} ({hits}/{total}).");
+        return (double)hits / total;
     }
 
     /// <summary>Få simuleringar: punktskattningen påverkas inte, men testerna går fortare.</summary>

@@ -2,7 +2,7 @@ namespace Valkompass.Application.Election.Nowcast;
 
 /// <summary>
 /// Modellens parametrar. Utbrutna hit för att kunna varieras i backtestet – särskilt
-/// <see cref="SystematicSwingSigma"/>, som är det som avgör om 90 %-intervallen faktiskt
+/// <see cref="SwingSigma"/>, som är det som avgör om 90 %-intervallen faktiskt
 /// håller 90 %.
 /// </summary>
 public sealed class NowcastOptions
@@ -17,16 +17,18 @@ public sealed class NowcastOptions
 
     /// <summary>
     /// Systematisk osäkerhet: att de distrikt som hunnit rapportera inte är representativa för
-    /// dem som återstår. Uttrycks relativt partiets storlek, eftersom ett parti på 30 procent
-    /// rimligen kan slå fel med ett par procentenheter medan ett parti på 4,5 sällan gör det.
-    /// En additiv stöt gav i backtestet för snäva intervall för de stora partierna och för
-    /// vida för de små.
+    /// dem som återstår.
+    ///
+    /// Skalas med sqrt(p(1-p)), alltså som standardfelet för en andel. Backtestet visade att
+    /// båda de enklare alternativen är fel: en additiv stöt lika stor för alla partier ger för
+    /// snäva intervall för de stora (träff 81 %), medan en stöt proportionell mot partiets
+    /// storlek gör dem för snäva för de små (träff 63 %). Mellan S på 30 procent och L på 4,5
+    /// skiljer sqrt(p(1-p)) en faktor 2,2, mot 6,7 för proportionell skalning.
     ///
     /// Skalas dessutom med kvarvarande andel av rösterna, så att den försvinner när allt är
-    /// räknat. Värdet är kalibrerat mot backtestet så att 90-procentsintervallen faktiskt
-    /// träffar omkring 90 procent.
+    /// räknat. Värdet är kalibrerat mot backtestet.
     /// </summary>
-    public double RelativeSwingSigma { get; init; } = 0.06;
+    public double SwingSigma { get; init; } = 0.04;
 
     /// <summary>Antal simuleringar. Fler ger jämnare intervall men kostar tid.</summary>
     public int Draws { get; init; } = 1000;
