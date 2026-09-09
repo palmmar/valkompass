@@ -1,18 +1,11 @@
+using System.Text.Json.Serialization;
+using Valkompass.Domain.Enums;
+
 namespace Valkompass.Application.Election;
 
 // Normaliserad representation av ett rösträkningsläge från Valmyndigheten. Rena värden,
 // frikopplade från filformatet – frontend och prognosmotor ska aldrig behöva känna till
 // Valmyndighetens JSON-struktur. Se #82.
-
-/// <summary>Vilken räkning siffrorna kommer från.</summary>
-public enum CountingStage
-{
-    /// <summary>Preliminär räkning (valnatten och onsdagens uppsamling).</summary>
-    Preliminary,
-
-    /// <summary>Slutlig räkning (länsstyrelsernas kontrollräkning).</summary>
-    Final,
-}
 
 /// <summary>
 /// Härkomst för en snapshot. <see cref="IsTest"/> speglar <c>test</c> i källfilen och är
@@ -43,6 +36,7 @@ public sealed record ElectionReporting(
     decimal? TurnoutPercentPrevious)
 {
     /// <summary>Andel röstberättigade i räknade valdistrikt. Null innan något räknats.</summary>
+    [JsonIgnore]
     public decimal? CoveragePercent => EligibleVotersTotal > 0
         ? Math.Round(100m * EligibleVotersCovered / EligibleVotersTotal, 2)
         : null;

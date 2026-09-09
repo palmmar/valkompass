@@ -18,6 +18,7 @@ var frontendOrigin = builder.Configuration["FrontendOrigin"] ?? "http://localhos
 const string CorsPolicy = "frontend";
 
 builder.Services.AddInfrastructure(connectionString);
+builder.Services.AddElectionImport(builder.Configuration);
 
 // Cookie-baserad ASP.NET Core Identity med roller (admingränssnittet).
 builder.Services

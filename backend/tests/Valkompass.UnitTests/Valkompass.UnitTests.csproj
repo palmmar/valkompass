@@ -21,6 +21,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\src\Valkompass.Application\Valkompass.Application.csproj" />
     <ProjectReference Include="..\..\src\Valkompass.Domain\Valkompass.Domain.csproj" />
+    <ProjectReference Include="..\..\src\Valkompass.Infrastructure\Valkompass.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

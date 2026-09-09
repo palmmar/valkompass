@@ -1,5 +1,6 @@
 using System.Globalization;
 using System.Text.Json;
+using Valkompass.Domain.Enums;
 
 namespace Valkompass.Application.Election;
 

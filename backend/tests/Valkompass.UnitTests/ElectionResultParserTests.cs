@@ -2,6 +2,7 @@ using System.IO.Compression;
 using System.Text;
 using System.Text.Json.Nodes;
 using Valkompass.Application.Election;
+using Valkompass.Domain.Enums;
 
 namespace Valkompass.UnitTests;
 
