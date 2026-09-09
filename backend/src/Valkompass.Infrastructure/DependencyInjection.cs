@@ -34,6 +34,9 @@ public static class DependencyInjection
         IConfiguration configuration)
     {
         services.Configure<ElectionImport>(configuration.GetSection(ElectionImport.SectionName));
+        services.Configure<ElectionTimeline>(configuration.GetSection(ElectionTimeline.SectionName));
+        services.AddMemoryCache();
+        services.AddScoped<IElectionLiveService, ElectionLiveService>();
         services.TryAddSingletonTimeProvider();
 
         services.AddHttpClient();
