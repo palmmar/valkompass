@@ -32,6 +32,19 @@ public static class NowcastEngine
         ArgumentNullException.ThrowIfNull(input);
         var opts = options ?? new NowcastOptions();
 
+        // Andra änden av samma fråga som guarderna nedan: de avstår när underlaget är för
+        // tunt, den här när det inte finns något kvar att uppskatta. Modellen skattar de
+        // valdistrikt som inte rapporterat, så med noll sådana blir intervallet noll brett.
+        // Det vore inte en säker prognos utan frånvaron av en – och ±0,0 läses som att
+        // resultatet är säkrat, fast onsdagens uppsamlingsräkning och länsstyrelsernas
+        // slutliga räkning återstår. Den osäkerheten ligger utanför modellen, och då ska den
+        // inte påstå att den är noll.
+        if (input.Districts.Count > 0 && input.Districts.All(d => d.IsReported))
+        {
+            return NowcastResult.Unavailable(
+                "Alla valdistrikt är räknade – det finns inget kvar att uppskatta.");
+        }
+
         var ctx = Context.Build(input, opts.ShrinkageVotes);
         if (ctx is null)
         {

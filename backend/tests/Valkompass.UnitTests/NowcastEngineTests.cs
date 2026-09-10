@@ -33,14 +33,30 @@ public class NowcastEngineTests
     }
 
     [Fact]
-    public void Fardigraknat_ger_prognos_lika_med_det_raknade()
+    public void Nastan_fardigraknat_ger_prognos_lika_med_det_raknade()
     {
-        var result = NowcastEngine.Run(At(1.0));
+        // Med bara några distrikt kvar finns inget utrymme för modellen att dra iväg.
+        var result = NowcastEngine.Run(At(0.995));
 
         Assert.True(result.Available);
         Assert.All(result.Parties, p =>
             Assert.True(Math.Abs(p.ForecastShare - p.ObservedShare) < 0.05m,
                 $"{p.PartyCode}: prognos {p.ForecastShare} mot räknat {p.ObservedShare}"));
+    }
+
+    [Fact]
+    public void Fardigraknat_ger_ingen_prognos_alls()
+    {
+        // Modellen skattar de distrikt som inte rapporterat. Är alla räknade har den inget
+        // att skatta, och ett intervall med noll bredd skulle läsas som att resultatet är
+        // säkrat – fast onsdagens uppsamlingsräkning återstår. Att avstå är rätt svar, och
+        // frontend ritar då ingen prognoskolumn alls.
+        var result = NowcastEngine.Run(At(1.0));
+
+        Assert.False(result.Available);
+        Assert.Contains("inget kvar", result.UnavailableReason!, StringComparison.OrdinalIgnoreCase);
+        Assert.Empty(result.Parties);
+        Assert.Null(result.Metadata);
     }
 
     [Fact]

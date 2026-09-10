@@ -144,20 +144,20 @@ public class ElectionResultImporterTests
     }
 
     [Fact]
-    public async Task Prognos_beraknas_nar_den_slas_pa()
+    public async Task Prognosmodellen_kors_nar_den_slas_pa()
     {
         var store = new FakeStore();
         var importer = Build(store, new FakeHandler(Index, ZipBytes()), allowTestData: true, forecast: true);
 
         await importer.ImportAsync();
 
+        // Modellen körs och dess svar sparas tillsammans med snapshotet. Genrepsfilen är
+        // färdigräknad, och då är svaret att avstå – det finns inga orapporterade valdistrikt
+        // kvar att uppskatta. Att avstå är ett giltigt svar och ska sparas som ett sådant.
         var forecast = Assert.Single(store.SavedForecasts);
         Assert.NotNull(forecast);
-        Assert.True(forecast!.Available, forecast.UnavailableReason);
-        Assert.Equal(8, forecast.Parties.Count);
-        // Genrepsfilen är färdigräknad, så prognosen ska landa på det räknade resultatet.
-        Assert.All(forecast.Parties, p =>
-            Assert.True(Math.Abs(p.ForecastShare - p.ObservedShare) < 0.05m, p.PartyCode));
+        Assert.False(forecast!.Available);
+        Assert.Contains("inget kvar", forecast.UnavailableReason!, StringComparison.OrdinalIgnoreCase);
     }
 
     /// <summary>
