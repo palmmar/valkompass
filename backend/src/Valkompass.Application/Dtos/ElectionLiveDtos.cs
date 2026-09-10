@@ -59,7 +59,7 @@ public sealed record ElectionThresholdsDto(decimal NationalPercent, decimal Cons
 /// <see cref="Forecast"/> är prognos – de är avsiktligt skilda fält och blandas aldrig ihop.
 /// </summary>
 public sealed record ElectionLiveResponse(
-    [property: JsonConverter(typeof(JsonStringEnumConverter<ElectionPhase>))]
+    [property: JsonConverter(typeof(CamelCaseJsonStringEnumConverter<ElectionPhase>))]
     ElectionPhase Phase,
     ElectionSourceDto? Source,
     ElectionReportingDto? Reporting,

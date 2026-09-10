@@ -75,7 +75,13 @@ public class ElectionLiveApiTests(ApiFactory factory)
 
         // Frontend ska kunna jämföra mot ett namn, inte mot ett heltal.
         Assert.Equal(JsonValueKind.String, phase.ValueKind);
-        Assert.NotEmpty(phase.GetString()!);
+
+        // Och namnet ska komma ut i camelCase som resten av API:t – "preElection", inte
+        // "PreElection". Fel skalform ser inte ut som ett fel i frontend, den visar bara fel
+        // läge. Exakt sträng per fas låses i ElectionLiveContractTests.
+        var name = phase.GetString()!;
+        Assert.NotEmpty(name);
+        Assert.True(char.IsLower(name[0]), $"Fasen serialiserades som \"{name}\".");
     }
 
     [Fact]
