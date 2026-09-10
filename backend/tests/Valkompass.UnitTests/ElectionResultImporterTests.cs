@@ -5,6 +5,7 @@ using Microsoft.Extensions.Logging.Abstractions;
 using Microsoft.Extensions.Options;
 using Valkompass.Application.Contracts;
 using Valkompass.Application.Election;
+using Valkompass.Application.Election.Nowcast;
 using Valkompass.Domain.Enums;
 using Valkompass.Infrastructure.Services;
 
@@ -130,6 +131,35 @@ public class ElectionResultImporterTests
         Assert.Empty(store.Saved);
     }
 
+    [Fact]
+    public async Task Ingen_prognos_sparas_nar_den_ar_avstangd()
+    {
+        // Standardläget: valvakan visar räknat resultat och inget annat.
+        var store = new FakeStore();
+        var importer = Build(store, Index, allowTestData: true, out _);
+
+        await importer.ImportAsync();
+
+        Assert.Null(Assert.Single(store.SavedForecasts));
+    }
+
+    [Fact]
+    public async Task Prognos_beraknas_nar_den_slas_pa()
+    {
+        var store = new FakeStore();
+        var importer = Build(store, new FakeHandler(Index, ZipBytes()), allowTestData: true, forecast: true);
+
+        await importer.ImportAsync();
+
+        var forecast = Assert.Single(store.SavedForecasts);
+        Assert.NotNull(forecast);
+        Assert.True(forecast!.Available, forecast.UnavailableReason);
+        Assert.Equal(8, forecast.Parties.Count);
+        // Genrepsfilen är färdigräknad, så prognosen ska landa på det räknade resultatet.
+        Assert.All(forecast.Parties, p =>
+            Assert.True(Math.Abs(p.ForecastShare - p.ObservedShare) < 0.05m, p.PartyCode));
+    }
+
     /// <summary>
     /// Bygger om arkivet med ett blanksteg tillagt i mandatfördelningsfilen. JSON:en är
     /// fortfarande giltig, så det är signaturen och inget annat som fäller den.
@@ -173,12 +203,17 @@ public class ElectionResultImporterTests
         return Build(store, handler, allowTestData);
     }
 
-    private static ElectionResultImporter Build(FakeStore store, FakeHandler handler, bool allowTestData)
+    private static ElectionResultImporter Build(
+        FakeStore store,
+        FakeHandler handler,
+        bool allowTestData,
+        bool forecast = false)
     {
         var options = Options.Create(new ElectionImport
         {
             BaseUrl = BaseUrl,
             AllowTestData = allowTestData,
+            Forecast = forecast,
         });
 
         return new ElectionResultImporter(
@@ -231,16 +266,24 @@ public class ElectionResultImporterTests
 
         public string? LatestChecksum { get; set; }
 
-        public Task<bool> SaveAsync(ElectionSnapshot snapshot, CancellationToken ct = default)
+        public List<NowcastResult?> SavedForecasts { get; } = [];
+
+        public Task<bool> SaveAsync(
+            ElectionSnapshot snapshot,
+            NowcastResult? forecast,
+            CancellationToken ct = default)
         {
             Saved.Add(snapshot);
+            SavedForecasts.Add(forecast);
             LatestChecksum = snapshot.Source.Checksum;
             return Task.FromResult(true);
         }
 
-        public Task<ElectionSnapshot?> GetLatestAsync(
+        public Task<StoredElectionSnapshot?> GetLatestAsync(
             CountingStage stage, bool includeTestData, CancellationToken ct = default) =>
-            Task.FromResult<ElectionSnapshot?>(Saved.LastOrDefault());
+            Task.FromResult(Saved.Count == 0
+                ? null
+                : new StoredElectionSnapshot(Saved[^1], SavedForecasts[^1]));
 
         public Task<string?> GetLatestChecksumAsync(CountingStage stage, CancellationToken ct = default) =>
             Task.FromResult(LatestChecksum);

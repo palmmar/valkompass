@@ -40,4 +40,11 @@ public class ElectionSnapshotRecord
 
     /// <summary>Den normaliserade snapshoten serialiserad som JSON (jsonb).</summary>
     public string Payload { get; set; } = string.Empty;
+
+    /// <summary>
+    /// Prognosen som JSON, eller null när ingen kunde eller fick beräknas. Medvetet en egen
+    /// kolumn och inte en del av <see cref="Payload"/>: räknat resultat och prognos är olika
+    /// saker och ska gå att servera oberoende av varandra.
+    /// </summary>
+    public string? Forecast { get; set; }
 }

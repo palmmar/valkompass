@@ -66,6 +66,7 @@ public sealed record ElectionLiveResponse(
     IReadOnlyList<ElectionPartyResultDto> Results,
     IReadOnlyList<ElectionMandateDto> OfficialMandates,
     ElectionThresholdsDto Thresholds,
-    // Prognos. Alltid null i v1 – nowcasten ligger i #84. Fältet finns med från början så att
-    // kontraktet inte behöver ändras när den kommer.
-    object? Forecast = null);
+    // Prognos, eller null när ingen finns att visa – antingen för att den är avstängd eller
+    // för att modellen avstått. Alltid ett eget fält: räknat resultat och prognos blandas
+    // aldrig ihop.
+    ElectionForecastDto? Forecast = null);

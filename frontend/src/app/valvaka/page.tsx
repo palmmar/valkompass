@@ -14,9 +14,11 @@ export default function ValvakaPage() {
     <div className="mx-auto max-w-4xl space-y-6 px-4 py-8">
       <header className="space-y-2">
         <h1 className="text-2xl font-bold tracking-tight">Valvaka 2026</h1>
+        {/* Texten får inte påstå att sidan saknar prognos – om den finns eller inte avgörs av
+            API-svaret, och sägs i tabellens fotnot och under Källa och metod. */}
         <p className="max-w-3xl text-muted-foreground">
-          Rösträkningen i riksdagsvalet, som den rapporteras av Valmyndigheten. Sidan visar
-          faktiskt räknat resultat – inga prognoser och inga uppskattningar.
+          Rösträkningen i riksdagsvalet, som den rapporteras av Valmyndigheten – uppdaterad
+          löpande under valkvällen.
         </p>
       </header>
       <ElectionQueryProvider>

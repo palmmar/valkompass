@@ -12,6 +12,7 @@ public class ElectionSnapshotRecordConfiguration : IEntityTypeConfiguration<Elec
         b.Property(e => e.Stage).HasConversion<int>();
         b.Property(e => e.Checksum).HasMaxLength(64).IsRequired();
         b.Property(e => e.Payload).HasColumnType("jsonb").IsRequired();
+        b.Property(e => e.Forecast).HasColumnType("jsonb");
 
         // Samma checksumma per räkningstillfälle importeras bara en gång. Gör importen
         // idempotent även om två försök skulle råka överlappa.
