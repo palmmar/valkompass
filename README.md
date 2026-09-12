@@ -60,6 +60,23 @@ cd backend
 dotnet test                       # enhets- + integrationstester
 ```
 
+## Drift
+
+Appen körs på k3s och synkas av Argo CD. Manifesten (API, frontend, PostgreSQL, Ingress) bor i
+[palmmar/valkompass-gitops](https://github.com/palmmar/valkompass-gitops); `Application`-resursen
+som pekar dit ligger i [palmmar/k3s-gitops](https://github.com/palmmar/k3s-gitops).
+
+```text
+main  ──CI──>  ghcr.io/palmmar/valkompass-{api,frontend}:<sha>
+      └──promote──>  valkompass-gitops (k8s/overlays/prod)  ──Argo CD──>  k3s
+```
+
+Varje push till `main` bygger båda imagerna, taggar dem med commit-SHA:t och skriver in taggen i
+prod-overlayn. Frontend-imagen byggs utan inbakad API-domän — klienten anropar relativa
+`/api`-URL:er och ingressen delar trafiken mellan `valkompass-frontend` och `valkompass-api` —
+så samma tagg fungerar i alla miljöer. Secrets, hälsokontroller och driftsdetaljer beskrivs i
+[gitops-repots k8s/README.md](https://github.com/palmmar/valkompass-gitops/blob/main/k8s/README.md).
+
 ## Matchningsmodell (kort)
 
 4-gradig skala utan neutralt mitten (1–4), med "hoppa över" och "extra viktig"
