@@ -37,12 +37,45 @@ public class ElectionResultParserTests
     }
 
     [Fact]
-    public void Saknad_testflagga_tolkas_som_test()
+    public void Skarp_data_utan_testflagga_ar_inte_test()
     {
-        // Hellre märka skarp data som test än tvärtom.
+        // Valmyndigheten sätter test-flaggan bara i genrepet; det skarpa valets filer
+        // utelämnar fältet helt. Tolkas det som test avvisas varenda skarp resultatfil.
+        var snapshot = ParseModified(root =>
+        {
+            root.Remove("test");
+            root["valtillfalle"] = "Val_2026";
+        });
+
+        Assert.False(snapshot.Source.IsTest);
+    }
+
+    [Fact]
+    public void Saknad_testflagga_tolkas_som_test_nar_valtillfallet_inte_ar_skarpt()
+    {
+        // Genrep_2026 utan flagga: hellre märka genrepsdata som test än tvärtom.
         var snapshot = ParseModified(root => root.Remove("test"));
 
         Assert.True(snapshot.Source.IsTest);
+    }
+
+    [Fact]
+    public void Uttrycklig_testflagga_vager_tyngre_an_valtillfallet()
+    {
+        var snapshot = ParseModified(root => root["valtillfalle"] = "Val_2026");
+
+        Assert.True(snapshot.Source.IsTest);
+    }
+
+    [Fact]
+    public void Rostsiffror_utan_mandatfordelning_ar_ett_giltigt_resultat()
+    {
+        // Tidigt på valnatten publiceras röstsiffrorna utan mandatfördelning – mandat fördelas
+        // inte på en handfull räknade valdistrikt. Filen ska tolkas ändå: rösterna finns där.
+        var snapshot = ParseModified(root => root["valomrade"]!.AsObject().Remove("mandatfordelning"));
+
+        Assert.Empty(snapshot.Mandates);
+        Assert.Equal(8, snapshot.Results.Count);
     }
 
     [Fact]

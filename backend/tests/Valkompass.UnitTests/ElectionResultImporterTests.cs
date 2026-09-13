@@ -1,6 +1,8 @@
 using System.IO.Compression;
 using System.Net;
 using System.Security.Cryptography;
+using System.Text;
+using System.Text.Json.Nodes;
 using Microsoft.Extensions.Logging.Abstractions;
 using Microsoft.Extensions.Options;
 using Valkompass.Application.Contracts;
@@ -62,6 +64,27 @@ public class ElectionResultImporterTests
 
         Assert.Equal(ImportOutcome.RejectedTestData, outcome);
         Assert.Empty(store.Saved);
+    }
+
+    [Fact]
+    public async Task Skarp_data_importeras_i_produktionskonfiguration()
+    {
+        // Regression: Valmyndighetens skarpa filer saknar test-flaggan helt (bara genrepet
+        // sätter den). Tolkas det som testdata avvisas varenda resultatfil på valnatten, och
+        // valvakan står kvar på "väntar på resultat" hur mycket som än räknats.
+        var archive = ProductionShapedArchive();
+        var checksum = Convert.ToHexString(MD5.HashData(archive)).ToLowerInvariant();
+        var store = new FakeStore();
+        var importer = Build(
+            store,
+            new FakeHandler($"{checksum}  {RdPath}", archive),
+            allowTestData: false,
+            verifySignatures: false);
+
+        var outcome = await importer.ImportAsync();
+
+        Assert.Equal(ImportOutcome.Imported, outcome);
+        Assert.False(Assert.Single(store.Saved).Source.IsTest);
     }
 
     [Fact]
@@ -164,7 +187,23 @@ public class ElectionResultImporterTests
     /// Bygger om arkivet med ett blanksteg tillagt i mandatfördelningsfilen. JSON:en är
     /// fortfarande giltig, så det är signaturen och inget annat som fäller den.
     /// </summary>
-    private static byte[] TamperedArchive()
+    private static byte[] TamperedArchive() =>
+        RebuildArchive(mandates => [.. mandates, (byte)' ']);
+
+    /// <summary>
+    /// Formar om genrepsarkivet som en skarp resultatfil: <c>valtillfalle: "Val_2026"</c> och
+    /// ingen test-flagga alls, precis som Valmyndighetens filer på valnatten.
+    /// </summary>
+    private static byte[] ProductionShapedArchive() => RebuildArchive(mandates =>
+    {
+        var root = JsonNode.Parse(mandates)!.AsObject();
+        root.Remove("test");
+        root["valtillfalle"] = "Val_2026";
+        return Encoding.UTF8.GetBytes(root.ToJsonString());
+    });
+
+    /// <summary>Packar om arkivet med mandatfördelningsfilen ersatt.</summary>
+    private static byte[] RebuildArchive(Func<byte[], byte[]> rewriteMandates)
     {
         var output = new MemoryStream();
         using (var source = new ZipArchive(new MemoryStream(ZipBytes()), ZipArchiveMode.Read))
@@ -180,7 +219,7 @@ public class ElectionResultImporterTests
                 if (entry.Name.Contains("mandatfordelning", StringComparison.Ordinal)
                     && entry.Name.EndsWith(".json", StringComparison.Ordinal))
                 {
-                    bytes = [.. bytes, (byte)' '];
+                    bytes = rewriteMandates(bytes);
                 }
 
                 using var writer = target.CreateEntry(entry.FullName).Open();
@@ -207,7 +246,8 @@ public class ElectionResultImporterTests
         FakeStore store,
         FakeHandler handler,
         bool allowTestData,
-        bool forecast = false)
+        bool forecast = false,
+        bool verifySignatures = true)
     {
         var options = Options.Create(new ElectionImport
         {
@@ -219,15 +259,19 @@ public class ElectionResultImporterTests
         return new ElectionResultImporter(
             new HttpClient(handler),
             store,
-            Verifier(),
+            Verifier(verifySignatures),
             options,
             TimeProvider.System,
             NullLogger<ElectionResultImporter>.Instance);
     }
 
-    private static ElectionSignatureVerifier Verifier() => new(
+    /// <summary>
+    /// <paramref name="verifySignatures"/> stängs av när testet bygger om arkivet: en omskriven
+    /// JSON-fil kan inte bära Valmyndighetens signatur.
+    /// </summary>
+    private static ElectionSignatureVerifier Verifier(bool verifySignatures = true) => new(
         ElectionFixtures.CertificateHttpClientFactory(out _),
-        Options.Create(new ElectionImport()),
+        Options.Create(new ElectionImport { VerifySignatures = verifySignatures }),
         TimeProvider.System,
         NullLogger<ElectionSignatureVerifier>.Instance);
 
