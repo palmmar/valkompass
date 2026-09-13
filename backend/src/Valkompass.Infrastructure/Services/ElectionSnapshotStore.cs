@@ -33,8 +33,12 @@ public class ElectionSnapshotStore(AppDbContext db) : IElectionSnapshotStore
             Stage = snapshot.Source.Stage,
             Checksum = snapshot.Source.Checksum,
             IsTest = snapshot.Source.IsTest,
-            SourceUpdatedAt = snapshot.Source.UpdatedAt,
-            IngestedAt = snapshot.Source.IngestedAt,
+            // Npgsql skriver bara UTC till timestamptz. Valmyndighetens tidsstämplar är svensk
+            // tid (+02:00 i september) och måste normaliseras här – annars faller hela
+            // sparningen på ArgumentException och ingen snapshot når databasen. Ögonblicket är
+            // detsamma, och den svenska offseten finns kvar i Payload-JSON:en.
+            SourceUpdatedAt = snapshot.Source.UpdatedAt.ToUniversalTime(),
+            IngestedAt = snapshot.Source.IngestedAt.ToUniversalTime(),
             DistrictsReported = snapshot.Reporting.DistrictsReported,
             DistrictsTotal = snapshot.Reporting.DistrictsTotal,
             Payload = JsonSerializer.Serialize(snapshot, SerializerOptions),
