@@ -12,9 +12,6 @@ export function SiteFooter() {
           <Link href="/om" className="hover:text-foreground">
             Om &amp; metod
           </Link>
-          <Link href="/admin" className="hover:text-foreground">
-            Admin
-          </Link>
         </nav>
       </div>
     </footer>
