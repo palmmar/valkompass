@@ -25,6 +25,12 @@ public static class ElectionResultParser
     /// <summary>Riksdagsvalet. Andra valtyper (RF/KF) ingår inte i valvakan.</summary>
     private const string ParliamentaryElection = "RD";
 
+    /// <summary>
+    /// Prefixet i <c>valtillfalle</c> för ett skarpt val (<c>Val_2026</c>). Genrepet heter
+    /// <c>Genrep_2026</c>.
+    /// </summary>
+    private const string LiveElectionPrefix = "Val_";
+
     /// <summary>Tidsstämplarna i filerna saknar offset och avser svensk tid.</summary>
     private static readonly TimeZoneInfo SwedishTime = TimeZoneInfo.FindSystemTimeZoneById(
         OperatingSystem.IsWindows() ? "W. Europe Standard Time" : "Europe/Stockholm");
@@ -55,9 +61,7 @@ public static class ElectionResultParser
             ElectionDate: RequiredDate(root, "valdatum"),
             PreviousElectionDate: RequiredDate(root, "tidigareValdatum"),
             Stage: ParseStage(RequiredString(root, "rakningstillfalle")),
-            // Saknad test-flagga tolkas som testdata. Att av misstag märka skarp data som test
-            // är ofarligt; det omvända är att publicera genrepssiffror som valresultat.
-            IsTest: OptionalBool(root, "test") ?? true,
+            IsTest: IsTestData(root),
             UpdatedAt: RequiredTimestamp(root, "senasteUppdateringstid"),
             IngestedAt: ingestedAt,
             Checksum: checksum,
@@ -88,7 +92,7 @@ public static class ElectionResultParser
             Source: source,
             Reporting: reporting,
             Results: ParseResults(votes),
-            Mandates: ParseMandates(RequiredObject(area, "mandatfordelning")),
+            Mandates: ParseMandates(area),
             OtherParties: ParseOtherParties(votes),
             ThresholdPercent: OptionalDecimal(area, "valomradessparrProcent") ?? 4m,
             ConstituencyThresholdPercent: OptionalDecimal(area, "valkretssparrProcent") ?? 12m);
@@ -120,10 +124,27 @@ public static class ElectionResultParser
         return results;
     }
 
-    private static IReadOnlyList<PartyMandate> ParseMandates(JsonElement mandates)
+    /// <summary>
+    /// Läser den officiella preliminära mandatfördelningen, eller en tom lista när den ännu
+    /// inte finns.
+    /// </summary>
+    /// <remarks>
+    /// Tidigt på valnatten publicerar Valmyndigheten röstsiffror utan <c>mandatfordelning</c> –
+    /// mandat fördelas inte på en handfull räknade valdistrikt. Att kräva fältet vore att
+    /// avvisa hela filen och visa "väntar på resultat" trots att rösterna finns där.
+    /// </remarks>
+    private static IReadOnlyList<PartyMandate> ParseMandates(JsonElement area)
     {
+        if (!area.TryGetProperty("mandatfordelning", out var mandates)
+            || mandates.ValueKind != JsonValueKind.Object
+            || !mandates.TryGetProperty("partiLista", out var parties)
+            || parties.ValueKind != JsonValueKind.Array)
+        {
+            return [];
+        }
+
         var result = new List<PartyMandate>();
-        foreach (var party in RequiredArray(mandates, "partiLista").EnumerateArray())
+        foreach (var party in parties.EnumerateArray())
         {
             result.Add(new PartyMandate(
                 Code: RequiredString(party, "partiforkortning"),
@@ -150,6 +171,28 @@ public static class ElectionResultParser
             SharePercent: OptionalDecimal(other, "andelRoster") ?? 0m,
             VotesPrevious: OptionalInt(other, "antalRosterForegaendeVal"),
             SharePreviousPercent: OptionalDecimal(other, "andelRosterForegaendeVal"));
+    }
+
+    /// <summary>
+    /// Avgör om filen är genrepsdata som aldrig får visas som valresultat.
+    /// </summary>
+    /// <remarks>
+    /// Valmyndigheten sätter <c>test: true</c> i genrepets filer men utelämnar fältet helt i
+    /// det skarpa valets – flaggan finns alltså bara i den ena riktningen. Att tolka en saknad
+    /// flagga som test vore därför att avvisa varenda skarp resultatfil. I stället avgör
+    /// <c>valtillfalle</c> när flaggan saknas: <c>Val_2026</c> är skarpt, allt annat
+    /// (<c>Genrep_2026</c>) behandlas som test. En uttrycklig flagga väger alltid tyngst.
+    /// </remarks>
+    private static bool IsTestData(JsonElement root)
+    {
+        if (OptionalBool(root, "test") is { } flagged)
+        {
+            return flagged;
+        }
+
+        var occasion = OptionalString(root, "valtillfalle");
+        return occasion is null
+            || !occasion.StartsWith(LiveElectionPrefix, StringComparison.OrdinalIgnoreCase);
     }
 
     private static CountingStage ParseStage(string value) => value switch
