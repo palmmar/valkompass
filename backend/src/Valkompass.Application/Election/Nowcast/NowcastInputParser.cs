@@ -70,8 +70,12 @@ public static class NowcastInputParser
             else if (reader.ValueTextEquals("lankod")) county = ReadString(ref reader);
             else if (reader.ValueTextEquals("statusJamforelse")) status = ReadString(ref reader);
             else if (reader.ValueTextEquals("antalRostberattigade")) eligible = ReadNullableInt(ref reader);
-            // Ett distrikt som saknar rapporteringstid har ännu inte räknats.
-            else if (reader.ValueTextEquals("rapporteringsTid")) reported = ReadString(ref reader) is not null;
+            // Ett distrikt som saknar rapporteringstid har ännu inte räknats. Valmyndigheten
+            // skriver tom sträng för dem, inte null – en delvis räknad fil listar alltså alla
+            // 6626 distrikten hela kvällen. Tolkas tom sträng som rapporterad ser modellen ett
+            // färdigräknat val från första filen och avstår från att prognosticera alls.
+            else if (reader.ValueTextEquals("rapporteringsTid"))
+                reported = !string.IsNullOrWhiteSpace(ReadString(ref reader));
             else if (reader.ValueTextEquals("rostfordelning")) votes = ReadVoteDistribution(ref reader);
             else SkipValue(ref reader);
         }
@@ -128,7 +132,10 @@ public static class NowcastInputParser
     private static VoteBlock ReadVoteDistribution(ref Utf8JsonReader reader)
     {
         var block = new VoteBlock();
-        reader.Read(); // in i rostfordelning-objektet
+        if (!StepInto(ref reader, JsonTokenType.StartObject))
+        {
+            return block;
+        }
 
         while (reader.Read() && reader.TokenType != JsonTokenType.EndObject)
         {
@@ -156,7 +163,10 @@ public static class NowcastInputParser
         int votes = 0;
         int? previous = null;
 
-        reader.Read(); // in i rosterPaverkaMandat-objektet
+        if (!StepInto(ref reader, JsonTokenType.StartObject))
+        {
+            return new VoteBlock();
+        }
 
         while (reader.Read() && reader.TokenType != JsonTokenType.EndObject)
         {
@@ -176,7 +186,10 @@ public static class NowcastInputParser
 
     private static void ReadParties(ref Utf8JsonReader reader, List<PartyVotes> parties)
     {
-        reader.Read(); // in i partiRoster-listan
+        if (!StepInto(ref reader, JsonTokenType.StartArray))
+        {
+            return;
+        }
 
         while (reader.Read() && reader.TokenType != JsonTokenType.EndArray)
         {
@@ -230,6 +243,22 @@ public static class NowcastInputParser
         }
 
         return false;
+    }
+
+    /// <summary>
+    /// Kliver in i värdet efter ett fältnamn och svarar om det var behållaren vi väntade oss.
+    /// </summary>
+    /// <remarks>
+    /// Valmyndigheten skriver <c>null</c> i stället för objekt och listor för valdistrikt och
+    /// kommuner som inte rapporterat – tidigt på valnatten gäller det de allra flesta. Läses
+    /// null som om det vore en behållare tappar läsaren nivån och drar in nästa distrikts fält
+    /// i det föregående: 6626 distrikt blev 979 hopslagna poster, tyst och utan fel.
+    /// Vid null står läsaren kvar på null-token, vilket är precis där anroparen väntar sig den.
+    /// </remarks>
+    private static bool StepInto(ref Utf8JsonReader reader, JsonTokenType expected)
+    {
+        reader.Read();
+        return reader.TokenType == expected;
     }
 
     /// <summary>

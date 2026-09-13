@@ -119,6 +119,100 @@ public class NowcastInputParserTests
     }
 
     [Fact]
+    public void Tom_rapporteringstid_ar_inte_ett_raknat_distrikt()
+    {
+        // Genrepsfilen är färdigräknad och har en tidsstämpel överallt, så det här fallet
+        // syntes först i skarp data: en delvis räknad fil listar alla 6626 distrikten hela
+        // kvällen och märker de oräknade med tom sträng, inte null. Räknas de som
+        // rapporterade ser modellen ett färdigräknat val och avstår från att prognosticera.
+        var json = """
+        { "valdistrikt": [
+          { "valdistriktskod": "018001", "kommunkod": "0180", "lankod": "01",
+            "statusJamforelse": "Ej jämförbart", "antalRostberattigade": null,
+            "rapporteringsTid": "",
+            "rostfordelning": { "rosterPaverkaMandat": { "antalRoster": 0, "partiRoster": [] } } },
+          { "valdistriktskod": "01800405", "kommunkod": "0180", "lankod": "01",
+            "statusJamforelse": "Kan jämföras", "antalRostberattigade": 1264,
+            "rapporteringsTid": "2026-09-13T21:34:39",
+            "rostfordelning": { "rosterPaverkaMandat": { "antalRoster": 1270, "partiRoster": [] } } }
+        ] }
+        """u8.ToArray();
+
+        var districts = NowcastInputParser.ParseDistricts(json);
+
+        Assert.False(Assert.Single(districts, d => d.Code == "018001").IsReported);
+        Assert.True(Assert.Single(districts, d => d.Code == "01800405").IsReported);
+    }
+
+    [Fact]
+    public void Orapporterade_distrikt_slar_inte_ihop_sig_med_nasta()
+    {
+        // Valmyndigheten skriver "rostfordelning": null för distrikt som inte rapporterat.
+        // Läses null som ett objekt tappar läsaren nivån och drar in nästa distrikts fält i
+        // det föregående – tyst, utan fel. På valnatten blev 6626 distrikt 979 hopslagna
+        // poster, och modellen räknade på dem som om de vore verkliga valdistrikt.
+        var json = """
+        { "valdistrikt": [
+          { "valdistriktskod": "018001", "kommunkod": "0180", "lankod": "01",
+            "rapporteringsTid": "", "statusJamforelse": "Ej jämförbart",
+            "antalRostberattigade": null, "rostfordelning": null },
+          { "valdistriktskod": "01800405", "kommunkod": "0180", "lankod": "01",
+            "rapporteringsTid": "2026-09-13T21:34:39", "statusJamforelse": "Kan jämföras",
+            "antalRostberattigade": 1264,
+            "rostfordelning": { "rosterPaverkaMandat": { "antalRoster": 1270,
+              "partiRoster": [ { "partiforkortning": "S", "antalRoster": 400 } ] } } },
+          { "valdistriktskod": "01800406", "kommunkod": "0180", "lankod": "01",
+            "rapporteringsTid": "", "statusJamforelse": "Kan jämföras",
+            "antalRostberattigade": 900, "rostfordelning": null }
+        ] }
+        """u8.ToArray();
+
+        var districts = NowcastInputParser.ParseDistricts(json);
+
+        Assert.Equal(3, districts.Count);
+        Assert.Equal(
+            new[] { "018001", "01800405", "01800406" },
+            districts.Select(d => d.Code).ToArray());
+
+        var counted = Assert.Single(districts, d => d.IsReported);
+        Assert.Equal("01800405", counted.Code);
+        Assert.Equal(1270, counted.Votes);
+        Assert.Equal(400, Assert.Single(counted.Parties).Votes);
+
+        // Ett orapporterat distrikt har inga röster – men vet fortfarande vilket det är.
+        var pending = Assert.Single(districts, d => d.Code == "01800406");
+        Assert.False(pending.IsReported);
+        Assert.Equal(0, pending.Votes);
+        Assert.Empty(pending.Parties);
+        Assert.Equal(900, pending.EligibleVoters);
+    }
+
+    [Fact]
+    public void Kommuner_utan_rostfordelning_slar_inte_ihop_sig_med_nasta()
+    {
+        // Samma sak i summeringsfilen: kommuner som inte börjat räkna har null.
+        var json = """
+        { "kommuner": [
+          { "kommunkod": "0115", "lankod": "01", "antalRostberattigade": 25000,
+            "antalValdistriktRaknade": 0, "antalValdistriktSomSkaRaknas": 18,
+            "rostfordelning": null },
+          { "kommunkod": "0180", "lankod": "01", "antalRostberattigade": 700000,
+            "antalValdistriktRaknade": 12, "antalValdistriktSomSkaRaknas": 400,
+            "rostfordelning": { "rosterPaverkaMandat": { "antalRoster": 9000,
+              "antalRosterForegaendeVal": 500000, "partiRoster": [] } } }
+        ] }
+        """u8.ToArray();
+
+        var municipalities = NowcastInputParser.ParseMunicipalities(json);
+
+        Assert.Equal(2, municipalities.Count);
+        Assert.Equal(new[] { "0115", "0180" }, municipalities.Select(m => m.Code).ToArray());
+        Assert.Equal(18, municipalities[0].DistrictsTotal);
+        Assert.Null(municipalities[0].VotesPrevious);
+        Assert.Equal(500_000, municipalities[1].VotesPrevious);
+    }
+
+    [Fact]
     public void Vagrar_fil_utan_valdistrikt()
     {
         var json = """{ "valtyp": "RD" }"""u8.ToArray();
