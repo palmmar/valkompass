@@ -7,6 +7,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { StatusBar } from "@/components/valvaka/status-bar";
 import { ResultsTable } from "@/components/valvaka/results-table";
 import { ForecastSummary } from "@/components/valvaka/forecast-summary";
+import { CoalitionBuilder } from "@/components/valvaka/coalition-builder";
 import { PollsCloseCountdown } from "@/components/valvaka/polls-close-countdown";
 import { fetchElectionLive, hasResults, isCounting } from "@/lib/election-api";
 import { AlertTriangle, Info } from "lucide-react";
@@ -51,6 +52,9 @@ export function ValvakaView() {
   }
 
   const showResults = hasResults(data.phase) && data.results.length > 0;
+  // Mandaten fördelas först när Valmyndigheten har något att fördela. Innan dess vore
+  // regeringsbyggaren en tom stapel.
+  const showCoalitions = showResults && data.officialMandates.some((m) => m.mandates > 0);
 
   return (
     <div className="space-y-6">
@@ -93,6 +97,8 @@ export function ValvakaView() {
       {showResults && data.forecast && (
         <ForecastSummary forecast={data.forecast} thresholds={data.thresholds} />
       )}
+
+      {showCoalitions && <CoalitionBuilder data={data} />}
 
       {data.phase === "preliminaryPaused" && (
         <Alert>

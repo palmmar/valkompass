@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Options;
 using Valkompass.Application.Contracts;
@@ -5,6 +6,7 @@ using Valkompass.Application.Dtos;
 using Valkompass.Application.Election;
 using Valkompass.Application.Election.Nowcast;
 using Valkompass.Domain.Enums;
+using Valkompass.Infrastructure.Persistence;
 
 namespace Valkompass.Infrastructure.Services;
 
@@ -17,6 +19,7 @@ namespace Valkompass.Infrastructure.Services;
 /// kort nog att kännas direkt under en valnatt.
 /// </remarks>
 public class ElectionLiveService(
+    AppDbContext db,
     IElectionSnapshotStore store,
     IMemoryCache cache,
     IOptions<ElectionTimeline> timeline,
@@ -25,7 +28,12 @@ public class ElectionLiveService(
     : IElectionLiveService
 {
     private const string CacheKey = "election:live:snapshot";
+    private const string ColorCacheKey = "election:live:party-colors";
     private static readonly TimeSpan CacheDuration = TimeSpan.FromSeconds(5);
+
+    // Partifärgerna ändras bara när någon redigerar ett parti i admin, så de behöver inte
+    // hämtas lika ofta som siffrorna.
+    private static readonly TimeSpan ColorCacheDuration = TimeSpan.FromMinutes(5);
 
     private readonly ElectionTimeline _timeline = timeline.Value;
     private readonly ElectionImport _import = import.Value;
@@ -34,6 +42,7 @@ public class ElectionLiveService(
     {
         var stored = await GetSnapshotAsync(ct);
         var snapshot = stored?.Result;
+        var colors = await GetPartyColorsAsync(ct);
         var now = time.GetUtcNow();
 
         var phase = ElectionPhaseCalculator.Resolve(_timeline, snapshot, now);
@@ -76,6 +85,7 @@ public class ElectionLiveService(
                     PartyCode: r.Code,
                     Name: r.Name,
                     DisplayOrder: r.DisplayOrder,
+                    Color: ResolveColor(colors, r),
                     Votes: r.Votes,
                     SharePercent: r.SharePercent,
                     SharePreviousPercent: r.SharePreviousPercent,
@@ -90,6 +100,34 @@ public class ElectionLiveService(
             Thresholds: new ElectionThresholdsDto(
                 snapshot.ThresholdPercent, snapshot.ConstituencyThresholdPercent),
             Forecast: ToDto(stored?.Forecast));
+    }
+
+    /// <summary>
+    /// Vår egen partipalett, samma som barometern och resultatsidan visar. Valmyndighetens
+    /// <c>fargkod</c> finns i snapshoten och används som reserv, men den ger fyra snarlika
+    /// blå toner – på ett stapeldiagram går partierna då inte att skilja åt.
+    /// </summary>
+    private static string? ResolveColor(IReadOnlyDictionary<string, string?> colors, PartyResult result)
+    {
+        if (colors.TryGetValue(result.Code, out var color) && !string.IsNullOrWhiteSpace(color))
+        {
+            return color;
+        }
+
+        return string.IsNullOrWhiteSpace(result.ColorHex) ? null : result.ColorHex;
+    }
+
+    private async Task<IReadOnlyDictionary<string, string?>> GetPartyColorsAsync(CancellationToken ct)
+    {
+        if (cache.TryGetValue(ColorCacheKey, out IReadOnlyDictionary<string, string?>? cached) && cached is not null)
+        {
+            return cached;
+        }
+
+        var colors = await db.Parties.AsNoTracking().ToDictionaryAsync(p => p.Code, p => p.Color, ct);
+
+        cache.Set(ColorCacheKey, (IReadOnlyDictionary<string, string?>)colors, ColorCacheDuration);
+        return colors;
     }
 
     private async Task<StoredElectionSnapshot?> GetSnapshotAsync(CancellationToken ct)
