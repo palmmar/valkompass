@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 # Bygg-/körkontext = mappen "backend/".
-# I Coolify: Build Pack = Dockerfile, Base Directory = /backend, Dockerfile = /backend/Dockerfile.
+# Byggs av CI till ghcr.io/palmmar/valkompass-api:<commit-sha>.
 
 # ---- Build ----
 FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
@@ -25,8 +25,8 @@ RUN dotnet publish src/Valkompass.Api/Valkompass.Api.csproj \
 FROM mcr.microsoft.com/dotnet/aspnet:10.0 AS final
 WORKDIR /app
 
-# curl behövs för plattformens hälsokoll (t.ex. Coolify kör curl mot /health);
-# den slimmade runtime-imagen saknar annars både curl och wget.
+# curl behövs för HEALTHCHECK nedan; den slimmade runtime-imagen saknar annars
+# både curl och wget. (I Kubernetes används i stället poddens httpGet-probes.)
 RUN apt-get update && apt-get install -y --no-install-recommends curl \
     && rm -rf /var/lib/apt/lists/*
 
