@@ -40,6 +40,8 @@ export interface ElectionPartyResult {
   partyCode: string;
   name: string;
   displayOrder: number;
+  /** Partiets hex-färg, eller null när varken vi eller Valmyndigheten har en. */
+  color: string | null;
   votes: number;
   sharePercent: number;
   sharePreviousPercent: number | null;

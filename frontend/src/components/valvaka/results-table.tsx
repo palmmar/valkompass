@@ -85,7 +85,7 @@ export function ResultsTable({ data }: { data: ElectionLive }) {
               <tr key={r.partyCode} className="border-b last:border-0">
                 <th scope="row" className="py-2.5 pr-2 text-left font-normal">
                   <span className="flex items-center gap-2.5">
-                    <PartyLogo code={r.partyCode} size={22} />
+                    <PartyLogo code={r.partyCode} color={r.color} size={22} />
                     <span className="font-medium">{r.partyCode}</span>
                     <span className="hidden text-muted-foreground sm:inline">{r.name}</span>
                   </span>

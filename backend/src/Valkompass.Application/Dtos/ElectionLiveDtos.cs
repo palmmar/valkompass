@@ -38,6 +38,9 @@ public sealed record ElectionPartyResultDto(
     string PartyCode,
     string Name,
     int DisplayOrder,
+    // Partiets hex-färg för UI. Vår egen palett (samma som barometern använder), med
+    // Valmyndighetens fargkod som reserv. Null när ingen av dem finns.
+    string? Color,
     int Votes,
     decimal SharePercent,
     decimal? SharePreviousPercent,
