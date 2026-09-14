@@ -99,14 +99,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # GitHub App i stället för PAT: token't är kortlivat och scopat till enbart
-      # valkompass-gitops. Samma app används av rewind, men nyckelparet läggs som
-      # secrets på det här repot.
+      # Dedikerad GitHub App för Valkompass CI. Client ID är en identifierare medan
+      # den privata nyckeln lagras som repository secret.
       - name: Skapa GitHub App-token
         id: app-token
         uses: actions/create-github-app-token@v3
         with:
-          app-id: ${{ secrets.GITOPS_CI_APP_ID }}
+          client-id: ${{ vars.GITOPS_CI_CLIENT_ID }}
           private-key: ${{ secrets.GITOPS_CI_PRIVATE_KEY }}
           owner: ${{ github.repository_owner }}
           repositories: valkompass-gitops
