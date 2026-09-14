@@ -8,11 +8,12 @@ using Valkompass.Application.Dtos;
 using Valkompass.Application.Matching;
 using Valkompass.Domain.Entities;
 using Valkompass.Domain.Enums;
+using Valkompass.Infrastructure.Observability;
 using Valkompass.Infrastructure.Persistence;
 
 namespace Valkompass.Infrastructure.Services;
 
-public class QuizService(AppDbContext db) : IQuizService
+public class QuizService(AppDbContext db, ValkompassMetrics metrics) : IQuizService
 {
     private static readonly JsonSerializerOptions JsonOptions = new(JsonSerializerDefaults.Web);
 
@@ -130,6 +131,9 @@ public class QuizService(AppDbContext db) : IQuizService
         });
 
         await db.SaveChangesAsync(ct);
+
+        // Efter sparningen, inte före: mätvärdet ska räkna resultat som faktiskt finns.
+        metrics.QuizCompleted(request.Mode ?? 0, request.Simplified ? QuizVariant.Swipe : QuizVariant.Standard);
 
         return SubmitOutcome.Success(session.ShareToken);
     }

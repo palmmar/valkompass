@@ -1,11 +1,14 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.RateLimiting;
 using Microsoft.EntityFrameworkCore;
+using OpenTelemetry.Metrics;
+using OpenTelemetry.Resources;
 using Scalar.AspNetCore;
 using Valkompass.Api.Endpoints;
 using Valkompass.Domain.Identity;
 using Valkompass.Infrastructure;
 using Valkompass.Infrastructure.Identity;
+using Valkompass.Infrastructure.Observability;
 using Valkompass.Infrastructure.Persistence;
 using Valkompass.Infrastructure.Seed;
 
@@ -19,6 +22,21 @@ const string CorsPolicy = "frontend";
 
 builder.Services.AddInfrastructure(connectionString);
 builder.Services.AddElectionImport(builder.Configuration);
+builder.Services.AddValkompassMetrics(builder.Configuration);
+
+// Mätvärden i Prometheus-format på /metrics. Tre källor: ASP.NET Cores inbyggda
+// HTTP-mätvärden (trafik, latens, statuskoder per route), .NET-runtimens egna (GC,
+// trådpool, undantag – inbyggda sedan .NET 9) och appens egen meter.
+//
+// OpenTelemetry är bara röret ut: instrumenten är vanliga System.Diagnostics.Metrics-
+// instrument, så exportören går att byta utan att röra mätkoden.
+builder.Services.AddOpenTelemetry()
+    .ConfigureResource(resource => resource.AddService("valkompass-api"))
+    .WithMetrics(metrics => metrics
+        .AddAspNetCoreInstrumentation()
+        .AddMeter("System.Runtime")
+        .AddMeter(ValkompassMetrics.MeterName)
+        .AddPrometheusExporter());
 
 // Cookie-baserad ASP.NET Core Identity med roller (admingränssnittet).
 builder.Services
@@ -132,6 +150,11 @@ app.UseAuthorization();
 
 // Enkel liveness-endpoint för containerns och poddens hälsokontroller (GET /health).
 app.MapGet("/health", () => Results.Ok(new { status = "ok" }));
+
+// Prometheus-skrapning (GET /metrics). Medvetet på samma port som resten: ingressen
+// routar bara /api/* till API:t, så endpointen går inte att nå utifrån. Läggs en
+// bredare regel till i valkompass-gitops måste /metrics blockeras där.
+app.MapPrometheusScrapingEndpoint();
 
 app.MapPublicEndpoints();
 app.MapBarometerEndpoints();
