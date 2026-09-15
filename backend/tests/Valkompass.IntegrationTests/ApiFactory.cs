@@ -28,6 +28,10 @@ public class ApiFactory : WebApplicationFactory<Program>, IAsyncLifetime
         Environment.SetEnvironmentVariable("ConnectionStrings__Default", _db.GetConnectionString());
         Environment.SetEnvironmentVariable("AdminUser__Email", AdminEmail);
         Environment.SetEnvironmentVariable("AdminUser__Password", AdminPassword);
+
+        // De databasgrundade mätarna läses normalt om var 30:e sekund. Testerna ska
+        // inte behöva vänta ut det varvet för att se en nyss sparad kompass.
+        Environment.SetEnvironmentVariable("Metrics__RefreshInterval", "00:00:01");
     }
 
     async Task IAsyncLifetime.DisposeAsync()

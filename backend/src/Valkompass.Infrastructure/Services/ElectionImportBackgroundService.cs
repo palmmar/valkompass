@@ -3,6 +3,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Valkompass.Application.Election;
+using Valkompass.Infrastructure.Observability;
 
 namespace Valkompass.Infrastructure.Services;
 
@@ -22,6 +23,7 @@ namespace Valkompass.Infrastructure.Services;
 public class ElectionImportBackgroundService(
     IServiceScopeFactory scopeFactory,
     IOptionsMonitor<ElectionImport> importOptions,
+    ValkompassMetrics metrics,
     IOptions<ElectionTimeline> timeline,
     TimeProvider time,
     ILogger<ElectionImportBackgroundService> logger)
@@ -76,7 +78,16 @@ public class ElectionImportBackgroundService(
                     await using var scope = scopeFactory.CreateAsyncScope();
                     var importer = scope.ServiceProvider.GetRequiredService<ElectionResultImporter>();
 
-                    await importer.ImportAsync(ct: stoppingToken);
+                    var started = time.GetTimestamp();
+                    var outcome = await importer.ImportAsync(ct: stoppingToken);
+
+                    // Telemetrin hör hemma här, tillsammans med backoff och loggning:
+                    // importern äger ett försök, den här loopen äger hur det gick.
+                    metrics.ElectionImportRun(OutcomeLabel(outcome));
+                    if (outcome == ImportOutcome.Imported)
+                    {
+                        metrics.ElectionImportDuration(time.GetElapsedTime(started));
+                    }
 
                     retryDelay = options.InitialRetryDelay;
                 }
@@ -88,6 +99,7 @@ public class ElectionImportBackgroundService(
                 {
                     // Allt fångas medvetet: en trasig fil, en timeout eller ett 5xx från
                     // Valmyndigheten får inte döda importen för resten av valnatten.
+                    metrics.ElectionImportRun("error");
                     logger.LogError(ex, "Importen misslyckades. Försöker igen om {Delay}.", retryDelay);
                     delay = retryDelay;
                     retryDelay = Min(retryDelay * 2, options.MaxRetryDelay);
@@ -106,6 +118,16 @@ public class ElectionImportBackgroundService(
 
         logger.LogInformation("Valresultatimporten stoppad.");
     }
+
+    /// <summary>Utfallet som Prometheus-label. Fast värdemängd – en label per utfall.</summary>
+    private static string OutcomeLabel(ImportOutcome outcome) => outcome switch
+    {
+        ImportOutcome.Imported => "imported",
+        ImportOutcome.Unchanged => "unchanged",
+        ImportOutcome.NoResultsPublished => "no_results_published",
+        ImportOutcome.RejectedTestData => "rejected_test_data",
+        _ => "unknown",
+    };
 
     private static TimeSpan Min(TimeSpan a, TimeSpan b) => a < b ? a : b;
 }

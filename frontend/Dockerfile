@@ -27,7 +27,8 @@ WORKDIR /app
 ENV NODE_ENV=production \
     NEXT_TELEMETRY_DISABLED=1 \
     PORT=3000 \
-    HOSTNAME=0.0.0.0
+    HOSTNAME=0.0.0.0 \
+    METRICS_PORT=9464
 
 # curl behövs för HEALTHCHECK nedan; alpine har annars bara wget.
 RUN apk add --no-cache curl
@@ -44,6 +45,12 @@ COPY --from=build --chown=nextjs:nodejs /app/.next/static ./.next/static
 
 USER nextjs
 EXPOSE 3000
+
+# Prometheus-mätvärden (GET /metrics) på en egen port. Medvetet skild från 3000:
+# ingressen routar allt utom /api till Next, så en /metrics-rutt i appen hade legat
+# öppen på valkompass.se. Porten här når bara den som är inne i klustret.
+# METRICS_PORT=0 stänger av mätvärdesservern helt.
+EXPOSE 9464
 
 # /health är en force-static route (src/app/health/route.ts) och svarar utan att röra API:t.
 HEALTHCHECK --interval=30s --timeout=5s --start-period=20s --retries=3 \

@@ -4,6 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using Valkompass.Application.Contracts;
 using Valkompass.Application.Election;
+using Valkompass.Infrastructure.Observability;
 using Valkompass.Infrastructure.Persistence;
 using Valkompass.Infrastructure.Services;
 
@@ -51,6 +52,23 @@ public static class DependencyInjection
         });
 
         services.AddHostedService<ElectionImportBackgroundService>();
+
+        return services;
+    }
+
+    /// <summary>
+    /// Registrerar appens egna mätvärden. Själva exporten (OpenTelemetry → Prometheus)
+    /// ligger i API-projektet; här skapas bara instrumenten och tjänsten som håller de
+    /// databasgrundade mätarna aktuella.
+    /// </summary>
+    public static IServiceCollection AddValkompassMetrics(
+        this IServiceCollection services, IConfiguration configuration)
+    {
+        services.Configure<MetricsOptions>(configuration.GetSection(MetricsOptions.SectionName));
+        services.AddMetrics();
+        services.AddSingleton<ValkompassMetrics>();
+        services.AddHostedService<MetricsRefreshBackgroundService>();
+        services.TryAddSingletonTimeProvider();
 
         return services;
     }

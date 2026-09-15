@@ -3,6 +3,7 @@ using Valkompass.Application.Contracts;
 using Valkompass.Application.Dtos;
 using Valkompass.Domain.Entities;
 using Valkompass.Domain.Enums;
+using Valkompass.Infrastructure.Observability;
 using Valkompass.Infrastructure.Persistence;
 
 namespace Valkompass.Api.Endpoints;
@@ -58,7 +59,8 @@ public static class PublicEndpoints
             .WithSummary("Skickar in svar, beräknar matchning och returnerar en delningstoken.")
             .RequireRateLimiting("submit");
 
-        group.MapPost("/quiz/start", async (StartQuizRequest request, AppDbContext db, CancellationToken ct) =>
+        group.MapPost("/quiz/start", async (
+                StartQuizRequest request, AppDbContext db, ValkompassMetrics metrics, CancellationToken ct) =>
             {
                 if (!QuizModes.MaxTierByMode.ContainsKey(request.Mode))
                     return Results.ValidationProblem(new Dictionary<string, string[]>
@@ -66,14 +68,16 @@ public static class PublicEndpoints
                         ["mode"] = ["Ogiltigt läge. Tillåtna värden: 25, 50, 75."],
                     });
 
+                var variant = request.Simplified ? QuizVariant.Swipe : QuizVariant.Standard;
                 db.QuizEvents.Add(new QuizEvent
                 {
                     Type = QuizEventType.Started,
                     Mode = request.Mode,
-                    Variant = request.Simplified ? QuizVariant.Swipe : QuizVariant.Standard,
+                    Variant = variant,
                     OccurredAt = DateTimeOffset.UtcNow,
                 });
                 await db.SaveChangesAsync(ct);
+                metrics.QuizStarted(request.Mode, variant);
                 return Results.NoContent();
             })
             .WithName("StartQuiz")

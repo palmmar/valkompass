@@ -77,6 +77,92 @@ prod-overlayn. Frontend-imagen byggs utan inbakad API-domän — klienten anropa
 så samma tagg fungerar i alla miljöer. Secrets, hälsokontroller och driftsdetaljer beskrivs i
 [gitops-repots k8s/README.md](https://github.com/palmmar/valkompass-gitops/blob/main/k8s/README.md).
 
+## Mätvärden (Prometheus/Grafana)
+
+Båda tjänsterna exponerar mätvärden i Prometheus-format. Instrumenteringen är
+`System.Diagnostics.Metrics` i backend (samma API som ASP.NET Core mäter sig själv med) och
+`prom-client` i Next-servern; OpenTelemetry är bara exportör och går att byta ut utan att
+mätkoden ändras.
+
+| Tjänst   | Skrapas på | Publik? |
+|----------|-----------|---------|
+| API      | `:8080/metrics` | Nej – ingressen routar bara `/api/*` hit |
+| Frontend | `:9464/metrics` | Nej – egen port som ingressen inte routar (`METRICS_PORT`, 0 = av) |
+
+### Vad som mäts
+
+| Mätvärde | Typ | Svarar på |
+|----------|-----|-----------|
+| `valkompass_page_views_total{route,kind}` | counter | **Antal besök** per sida. `kind`: `document` = sidladdning, `navigation` = klientnavigering. Prefetch, statiska filer och `/health` räknas inte. |
+| `valkompass_frontend_request_duration_seconds{route,status}` | histogram | Svarstider för sidrendering |
+| `valkompass_frontend_nodejs_*`, `..._process_*` | diverse | Minne, CPU och event loop-lag i Next-servern |
+| `valkompass_quiz_started_total{mode,variant}` | counter | Påbörjade kompasser |
+| `valkompass_quiz_completed_total{mode,variant}` | counter | **Utförda kompasser** |
+| `valkompass_quiz_sessions_stored` | gauge | Totalt antal sparade resultat – läses ur databasen och överlever en omstart |
+| `valkompass_election_snapshot_ingested_at_seconds` | gauge | **När valvakan senast fick ny data** (unixtid) |
+| `valkompass_election_snapshot_source_updated_at_seconds` | gauge | Valmyndighetens egen tidsstämpel på siffrorna |
+| `valkompass_election_districts_reported` / `_expected` | gauge | Rösträkningens framsteg |
+| `valkompass_election_import_runs_total{outcome}` | counter | Importvarv per utfall: `imported`, `unchanged`, `no_results_published`, `rejected_test_data`, `error` |
+| `valkompass_election_import_duration_seconds` | histogram | Tid per lyckat importvarv |
+| `http_server_request_duration_seconds{http_route,http_response_status_code,…}` | histogram | API-trafik, latens och fel per endpoint |
+
+Räknarna nollställs vid omstart – normalt för Prometheus, som hanterar det i `rate()` och
+`increase()`. Värden som måste överleva omstart läses ur databasen var 30:e sekund av
+`MetricsRefreshBackgroundService` (`Metrics__RefreshInterval` ändrar takten). Saknas data
+rapporteras ingen tidsserie alls i stället för en nolla: en valvaka som inte börjat ska ge
+en tom graf, inte "uppdaterad 1970".
+
+### Exempelfrågor
+
+```promql
+# Besök senaste dygnet, per sida
+sum by (route) (increase(valkompass_page_views_total[24h]))
+
+# Utförda kompasser senaste dygnet, och totalt sedan start
+sum(increase(valkompass_quiz_completed_total[24h]))
+valkompass_quiz_sessions_stored
+
+# Fullföljandegrad (påbörjade → klara)
+sum(increase(valkompass_quiz_completed_total[24h]))
+  / sum(increase(valkompass_quiz_started_total[24h]))
+
+# Minuter sedan valvakan uppdaterades – larma när den står still under valkvällen
+(time() - valkompass_election_snapshot_ingested_at_seconds) / 60
+
+# Andel räknade valdistrikt
+valkompass_election_districts_reported / valkompass_election_districts_expected
+
+# API-fel, utan hälsokontrollerna
+sum(rate(http_server_request_duration_seconds_count{
+  http_response_status_code=~"5..", http_route!="/health"}[5m]))
+```
+
+### Skrapning i klustret
+
+Manifesten bor i [palmmar/valkompass-gitops](https://github.com/palmmar/valkompass-gitops) och
+behöver två tillägg: en namngiven port `metrics` (9464) på frontendens `Service`, och mål för
+Prometheus. Med kube-prometheus-stack räcker en `ServiceMonitor` per tjänst:
+
+```yaml
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: valkompass
+spec:
+  selector:
+    matchLabels: { app.kubernetes.io/part-of: valkompass }
+  endpoints:
+    - port: http     # API:t – /metrics ligger på samma port som API:t
+      path: /metrics
+    - port: metrics  # frontendens egen port 9464
+      path: /metrics
+```
+
+Kör klustret i stället Prometheus med annotationsbaserad upptäckt sätts
+`prometheus.io/scrape: "true"`, `prometheus.io/port` och `prometheus.io/path: /metrics` på
+poddarna. Ingressen ska inte routa `/metrics` – görs regeln för `/api` någon gång bredare måste
+`/metrics` blockeras där.
+
 ## Matchningsmodell (kort)
 
 4-gradig skala utan neutralt mitten (1–4), med "hoppa över" och "extra viktig"
