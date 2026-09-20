@@ -84,7 +84,7 @@ jobs:
 
       # Taggas med commit-SHA:t, aldrig "latest": overlayn i valkompass-gitops pekar på en
       # exakt tagg, så en rollback är att peka tillbaka på en tidigare SHA.
-      - uses: docker/build-push-action@v6
+      - uses: docker/build-push-action@v7
         with:
           context: ${{ matrix.context }}
           push: true
