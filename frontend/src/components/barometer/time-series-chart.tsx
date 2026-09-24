@@ -47,6 +47,13 @@ interface TimeSeriesChartProps {
   toDate: Date;
   /** Anropas med datumet (YYYY-MM-DD) under hårkorset, eller null när musen lämnar. */
   onHoverDate?: (date: string | null) => void;
+  /** En enskild mätning (publiceringsdatum + institut) som markeras i grafen. */
+  highlight?: ChartHighlight | null;
+}
+
+export interface ChartHighlight {
+  date: string;
+  pollsterCode: string;
 }
 
 const d = (s: string) => new Date(`${s}T00:00:00`);
@@ -91,6 +98,7 @@ function Chart({
   fromDate,
   toDate,
   onHoverDate,
+  highlight,
   width,
 }: TimeSeriesChartProps & { width: number }) {
   const { tooltipData, tooltipLeft, tooltipTop, tooltipOpen, showTooltip, hideTooltip } =
@@ -147,6 +155,34 @@ function Chart({
     }
     return [...byDate.entries()].map(([date, x]) => ({ date, x })).sort((a, b) => a.x - b.x);
   }, [orderedVisible, dotsByParty, xScale, inRange]);
+
+  // Den markerade mätningens värden per synligt parti (null om den ligger utanför intervallet).
+  const highlighted = useMemo(() => {
+    if (!highlight || !inRange(highlight.date)) return null;
+    const rows: (TooltipRow & { y: number })[] = [];
+    for (const party of orderedVisible) {
+      const dot = (dotsByParty.get(party.code) ?? []).find(
+        (p) => p.date === highlight.date && p.pollsterCode === highlight.pollsterCode,
+      );
+      if (dot)
+        rows.push({
+          name: party.name,
+          color: partyColor(party.color),
+          value: dot.value,
+          marginOfError: dot.marginOfError,
+          y: yScale(dot.value),
+        });
+    }
+    if (!rows.length) return null;
+    rows.sort((a, b) => b.value - a.value);
+    const datum: TooltipDatum = {
+      date: highlight.date,
+      pollster: pollsterNames.get(highlight.pollsterCode) ?? highlight.pollsterCode,
+      rows,
+    };
+    return { x: xScale(d(highlight.date)), rows, datum };
+  }, [highlight, inRange, orderedVisible, dotsByParty, pollsterNames, xScale, yScale]);
+  const dimDots = highlighted != null;
 
   // Statiska lager (allt utom hårkorset) memoiseras så att hovring inte ritar om ~2000 prickar.
   const staticLayers = useMemo(
@@ -208,7 +244,7 @@ function Chart({
                   cy={yScale(p.value)}
                   r={emphasizeLine ? 1.8 : 2.8}
                   fill={color}
-                  fillOpacity={emphasizeLine ? 0.22 : 0.7}
+                  fillOpacity={(emphasizeLine ? 0.22 : 0.7) * (dimDots ? 0.45 : 1)}
                   stroke="white"
                   strokeWidth={0.5}
                 />
@@ -239,7 +275,7 @@ function Chart({
         />
       </>
     ),
-    [orderedVisible, dotsByParty, lineByParty, elections, xScale, yScale, innerW, innerH, showBand, emphasizeLine, inRange, numXTicks, tickFmt],
+    [orderedVisible, dotsByParty, lineByParty, elections, xScale, yScale, innerW, innerH, showBand, emphasizeLine, inRange, numXTicks, tickFmt, dimDots],
   );
 
   const handleMove = useCallback(
@@ -282,6 +318,15 @@ function Chart({
         <Group left={MARGIN.left} top={MARGIN.top}>
           {staticLayers}
 
+          {highlighted && (
+            <g pointerEvents="none">
+              <line x1={highlighted.x} x2={highlighted.x} y1={0} y2={innerH} stroke="currentColor" strokeOpacity={0.8} strokeWidth={1.5} />
+              {highlighted.rows.map((r) => (
+                <circle key={`hl-${r.name}`} cx={highlighted.x} cy={r.y} r={6} fill={r.color} stroke="currentColor" strokeWidth={2} />
+              ))}
+            </g>
+          )}
+
           {hover && (
             <line x1={hover.x} x2={hover.x} y1={0} y2={innerH} stroke="currentColor" strokeOpacity={0.55} strokeWidth={1} pointerEvents="none" />
           )}
@@ -316,22 +361,41 @@ function Chart({
         </Group>
       </svg>
 
-      {tooltipOpen && tooltipData && (
-        <TooltipWithBounds top={tooltipTop} left={tooltipLeft} style={{ ...defaultStyles, padding: "6px 8px", fontSize: 12, lineHeight: 1.5 }}>
-          <div className="mb-1 font-medium">
-            {monthLongFmt.format(d(tooltipData.date))}
-            {tooltipData.pollster && <span style={{ color: "#6b7280", fontWeight: 400 }}> · {tooltipData.pollster}</span>}
-          </div>
-          {tooltipData.rows.map((r) => (
-            <div key={r.name} className="flex items-center gap-1.5">
-              <span style={{ width: 8, height: 8, borderRadius: 9999, background: r.color, display: "inline-block" }} />
-              <span className="font-medium">{r.name}</span>
-              <span className="tabular-nums">{r.value.toFixed(1)} %</span>
-              {r.marginOfError != null && <span style={{ color: "#6b7280" }}>±{r.marginOfError.toFixed(1)}</span>}
-            </div>
-          ))}
+      {tooltipOpen && tooltipData ? (
+        <TooltipWithBounds top={tooltipTop} left={tooltipLeft} style={TOOLTIP_STYLE}>
+          <TooltipContent datum={tooltipData} />
         </TooltipWithBounds>
-      )}
+      ) : highlighted ? (
+        // Den markerade mätningen har en fast etikett så länge musen inte hovrar i grafen.
+        <TooltipWithBounds
+          top={MARGIN.top + Math.min(...highlighted.rows.map((r) => r.y))}
+          left={MARGIN.left + highlighted.x}
+          style={TOOLTIP_STYLE}
+        >
+          <TooltipContent datum={highlighted.datum} />
+        </TooltipWithBounds>
+      ) : null}
     </div>
+  );
+}
+
+const TOOLTIP_STYLE = { ...defaultStyles, padding: "6px 8px", fontSize: 12, lineHeight: 1.5 };
+
+function TooltipContent({ datum }: { datum: TooltipDatum }) {
+  return (
+    <>
+      <div className="mb-1 font-medium">
+        {monthLongFmt.format(d(datum.date))}
+        {datum.pollster && <span style={{ color: "#6b7280", fontWeight: 400 }}> · {datum.pollster}</span>}
+      </div>
+      {datum.rows.map((r) => (
+        <div key={r.name} className="flex items-center gap-1.5">
+          <span style={{ width: 8, height: 8, borderRadius: 9999, background: r.color, display: "inline-block" }} />
+          <span className="font-medium">{r.name}</span>
+          <span className="tabular-nums">{r.value.toFixed(1)} %</span>
+          {r.marginOfError != null && <span style={{ color: "#6b7280" }}>±{r.marginOfError.toFixed(1)}</span>}
+        </div>
+      ))}
+    </>
   );
 }
