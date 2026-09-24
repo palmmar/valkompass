@@ -246,13 +246,13 @@ export function BarometerView() {
           <a href="https://www.scb.se/vara-tjanster/oppna-data/pxwebapi/" target="_blank" rel="noopener noreferrer" className="underline">
             SCB:s öppna API
           </a>{" "}
-          (PSU). De 25 senaste mätningarna – klicka på en rad för att markera den i grafen:
+          (PSU). Alla mätningar, senaste först – klicka på en rad för att markera den i grafen:
         </p>
         {pollsQuery.isLoading ? (
           <Loading />
         ) : pollsQuery.data ? (
           <PollList
-            polls={pollsQuery.data.slice(0, 25)}
+            polls={pollsQuery.data}
             selectedKey={selectedPoll?.externalKey}
             onSelect={selectPoll}
           />
