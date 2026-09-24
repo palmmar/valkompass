@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import {
+  type BarometerPoll,
   fetchBarometerLatest,
   fetchBarometerPolls,
   fetchBarometerTimeseries,
@@ -31,6 +32,7 @@ const RANGES: { id: Range; label: string }[] = [
 ];
 
 const day = (s: string) => new Date(`${s}T00:00:00`);
+const markFmt = new Intl.DateTimeFormat("sv-SE", { day: "numeric", month: "short", year: "numeric" });
 
 export function BarometerView() {
   const [tab, setTab] = useState<Tab>("trend");
@@ -74,6 +76,26 @@ export function BarometerView() {
     return { fromDate: from, toDate: to };
   }, [range, maxDate]);
 
+  // Mätning som markerats via källtabellen; visas i trend-, block- och snittgrafen.
+  const [selectedPoll, setSelectedPoll] = useState<BarometerPoll | null>(null);
+  const chartRef = useRef<HTMLDivElement>(null);
+  const highlight = useMemo(
+    () => (selectedPoll ? { date: selectedPoll.publishedAt, pollsterCode: selectedPoll.pollsterCode } : null),
+    [selectedPoll],
+  );
+
+  const selectPoll = (poll: BarometerPoll) => {
+    if (selectedPoll?.externalKey === poll.externalKey) {
+      setSelectedPoll(null);
+      return;
+    }
+    setSelectedPoll(poll);
+    if (tab === "latest") setTab("trend");
+    const t = day(poll.publishedAt).getTime();
+    if (t < fromDate.getTime() || t > toDate.getTime()) setRange("all");
+    chartRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   const toggle = (code: string) =>
     setVisible((prev) => {
       const next = new Set(prev);
@@ -94,7 +116,7 @@ export function BarometerView() {
       </div>
 
       {/* Flikar */}
-      <div className="flex flex-wrap gap-1 border-b">
+      <div ref={chartRef} className="flex scroll-mt-20 flex-wrap gap-1 border-b">
         {TABS.map((t) => (
           <button
             key={t.id}
@@ -140,6 +162,22 @@ export function BarometerView() {
                 {r.label}
               </button>
             ))}
+            {selectedPoll && (
+              <span className="ml-auto inline-flex items-center gap-2 rounded-full border border-foreground/40 py-1 pl-3 pr-1 text-xs">
+                <span>
+                  Markerad: <strong className="font-medium">{selectedPoll.pollsterName}</strong>,{" "}
+                  {markFmt.format(day(selectedPoll.publishedAt))}
+                </span>
+                <button
+                  type="button"
+                  onClick={() => setSelectedPoll(null)}
+                  aria-label="Ta bort markering"
+                  className="rounded-full px-1.5 text-muted-foreground hover:bg-muted hover:text-foreground"
+                >
+                  ×
+                </button>
+              </span>
+            )}
           </div>
 
           {tsQuery.isLoading ? (
@@ -154,6 +192,7 @@ export function BarometerView() {
                   fromDate={fromDate}
                   toDate={toDate}
                   pollsterNames={pollsterNames}
+                  highlight={highlight}
                 />
               ) : (
                 <Loading />
@@ -172,6 +211,7 @@ export function BarometerView() {
                   emphasizeLine={tab === "pollofpolls"}
                   fromDate={fromDate}
                   toDate={toDate}
+                  highlight={highlight}
                 />
                 <p className="text-xs text-muted-foreground">
                   {tab === "trend" ? (
@@ -206,12 +246,16 @@ export function BarometerView() {
           <a href="https://www.scb.se/vara-tjanster/oppna-data/pxwebapi/" target="_blank" rel="noopener noreferrer" className="underline">
             SCB:s öppna API
           </a>{" "}
-          (PSU). De 25 senaste mätningarna:
+          (PSU). De 25 senaste mätningarna – klicka på en rad för att markera den i grafen:
         </p>
         {pollsQuery.isLoading ? (
           <Loading />
         ) : pollsQuery.data ? (
-          <PollList polls={pollsQuery.data.slice(0, 25)} />
+          <PollList
+            polls={pollsQuery.data.slice(0, 25)}
+            selectedKey={selectedPoll?.externalKey}
+            onSelect={selectPoll}
+          />
         ) : null}
       </section>
     </div>

@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import type { BarometerElection, BarometerParty, BarometerPoll } from "@/lib/barometer-api";
-import { TimeSeriesChart } from "./time-series-chart";
+import { TimeSeriesChart, type ChartHighlight } from "./time-series-chart";
 import { BlockAssignment } from "./block-assignment";
 import {
   DEFAULT_BLOCKS,
@@ -21,6 +21,7 @@ interface BlockChartProps {
   fromDate: Date;
   toDate: Date;
   pollsterNames: Map<string, string>;
+  highlight?: ChartHighlight | null;
 }
 
 const dayFmt = new Intl.DateTimeFormat("sv-SE", { day: "numeric", month: "long", year: "numeric" });
@@ -34,7 +35,15 @@ const COLOR_B = DEFAULT_BLOCKS[1].color;
  * med felmarginalband. Användaren placerar själv partierna i Block 1, utanför eller Block 2,
  * och summorna + de stora talen räknas om direkt. Talen följer hårkorset.
  */
-export function BlockChart({ parties, polls, elections, fromDate, toDate, pollsterNames }: BlockChartProps) {
+export function BlockChart({
+  parties,
+  polls,
+  elections,
+  fromDate,
+  toDate,
+  pollsterNames,
+  highlight,
+}: BlockChartProps) {
   const [assignment, setAssignment] = useState<Record<string, Group>>(() => defaultAssignment());
   const [hoverDate, setHoverDate] = useState<string | null>(null);
 
@@ -135,6 +144,7 @@ export function BlockChart({ parties, polls, elections, fromDate, toDate, pollst
         fromDate={fromDate}
         toDate={toDate}
         onHoverDate={setHoverDate}
+        highlight={highlight}
       />
 
       <p className="text-xs leading-relaxed text-muted-foreground">
