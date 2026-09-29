@@ -20257,6 +20257,26 @@
         "MP": 7.4,
         "SD": 17.2
       }
+    },
+    {
+      "externalKey": "sentio-2026-09-28",
+      "pollsterCode": "sentio",
+      "fieldStart": "2026-09-21",
+      "fieldEnd": "2026-09-25",
+      "publishedAt": "2026-09-28",
+      "sampleSize": 905,
+      "sourceUrl": "https://github.com/MansMeg/SwedishPolls",
+      "sourceCitation": "Sentio, fältperiod 2026-09-21–2026-09-25 (via SwedishPolls)",
+      "results": {
+        "M": 22.7,
+        "L": 4.1,
+        "C": 5.4,
+        "KD": 5.6,
+        "S": 25.7,
+        "V": 10.0,
+        "MP": 5.7,
+        "SD": 19.4
+      }
     }
   ]
 }
