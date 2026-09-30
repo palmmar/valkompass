@@ -20277,6 +20277,26 @@
         "MP": 5.7,
         "SD": 19.4
       }
+    },
+    {
+      "externalKey": "ipsos-2026-09-29",
+      "pollsterCode": "ipsos",
+      "fieldStart": "2026-09-15",
+      "fieldEnd": "2026-09-27",
+      "publishedAt": "2026-09-29",
+      "sampleSize": 1694,
+      "sourceUrl": "https://github.com/MansMeg/SwedishPolls",
+      "sourceCitation": "Ipsos, fältperiod 2026-09-15–2026-09-27 (via SwedishPolls)",
+      "results": {
+        "M": 22.0,
+        "L": 4.0,
+        "C": 7.0,
+        "KD": 6.0,
+        "S": 28.0,
+        "V": 8.0,
+        "MP": 6.0,
+        "SD": 17.0
+      }
     }
   ]
 }
