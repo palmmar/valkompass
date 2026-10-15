@@ -20297,6 +20297,46 @@
         "MP": 6.0,
         "SD": 17.0
       }
+    },
+    {
+      "externalKey": "novus-2026-10-14",
+      "pollsterCode": "novus",
+      "fieldStart": "2026-10-05",
+      "fieldEnd": "2026-10-11",
+      "publishedAt": "2026-10-14",
+      "sampleSize": 2512,
+      "sourceUrl": "https://github.com/MansMeg/SwedishPolls",
+      "sourceCitation": "Novus, fältperiod 2026-10-05–2026-10-11 (via SwedishPolls)",
+      "results": {
+        "M": 23.9,
+        "L": 3.9,
+        "C": 6.7,
+        "KD": 6.4,
+        "S": 25.9,
+        "V": 7.2,
+        "MP": 6.5,
+        "SD": 18.0
+      }
+    },
+    {
+      "externalKey": "sifo-2026-10-14",
+      "pollsterCode": "sifo",
+      "fieldStart": "2026-09-28",
+      "fieldEnd": "2026-10-11",
+      "publishedAt": "2026-10-14",
+      "sampleSize": 3000,
+      "sourceUrl": "https://github.com/MansMeg/SwedishPolls",
+      "sourceCitation": "Sifo, fältperiod 2026-09-28–2026-10-11 (via SwedishPolls)",
+      "results": {
+        "M": 22.3,
+        "L": 3.7,
+        "C": 6.3,
+        "KD": 5.9,
+        "S": 28.5,
+        "V": 7.8,
+        "MP": 7.1,
+        "SD": 17.2
+      }
     }
   ]
 }
