@@ -20377,6 +20377,26 @@
         "MP": 7.3,
         "SD": 16.3
       }
+    },
+    {
+      "externalKey": "sifo-2026-11-11",
+      "pollsterCode": "sifo",
+      "fieldStart": "2026-10-26",
+      "fieldEnd": "2026-11-08",
+      "publishedAt": "2026-11-11",
+      "sampleSize": 3104,
+      "sourceUrl": "https://github.com/MansMeg/SwedishPolls",
+      "sourceCitation": "Sifo, fältperiod 2026-10-26–2026-11-08 (via SwedishPolls)",
+      "results": {
+        "M": 23.3,
+        "L": 4.1,
+        "C": 5.7,
+        "KD": 6.3,
+        "S": 26.1,
+        "V": 8.5,
+        "MP": 7.5,
+        "SD": 16.9
+      }
     }
   ]
 }
