@@ -20457,6 +20457,46 @@
         "MP": 5.6,
         "SD": 18.1
       }
+    },
+    {
+      "externalKey": "demoskop-2026-11-24",
+      "pollsterCode": "demoskop",
+      "fieldStart": "2026-11-12",
+      "fieldEnd": "2026-11-19",
+      "publishedAt": "2026-11-24",
+      "sampleSize": 2801,
+      "sourceUrl": "https://github.com/MansMeg/SwedishPolls",
+      "sourceCitation": "Demoskop, fältperiod 2026-11-12–2026-11-19 (via SwedishPolls)",
+      "results": {
+        "M": 25.8,
+        "L": 3.2,
+        "C": 5.3,
+        "KD": 5.5,
+        "S": 27.6,
+        "V": 7.5,
+        "MP": 6.9,
+        "SD": 17.0
+      }
+    },
+    {
+      "externalKey": "ipsos-2026-11-24",
+      "pollsterCode": "ipsos",
+      "fieldStart": "2026-11-10",
+      "fieldEnd": "2026-11-23",
+      "publishedAt": "2026-11-24",
+      "sampleSize": 1609,
+      "sourceUrl": "https://github.com/MansMeg/SwedishPolls",
+      "sourceCitation": "Ipsos, fältperiod 2026-11-10–2026-11-23 (via SwedishPolls)",
+      "results": {
+        "M": 25.0,
+        "L": 3.0,
+        "C": 6.0,
+        "KD": 5.0,
+        "S": 26.0,
+        "V": 8.0,
+        "MP": 7.0,
+        "SD": 18.0
+      }
     }
   ]
 }
