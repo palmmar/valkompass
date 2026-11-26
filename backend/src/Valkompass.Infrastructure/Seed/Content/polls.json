@@ -20497,6 +20497,26 @@
         "MP": 7.0,
         "SD": 18.0
       }
+    },
+    {
+      "externalKey": "indikator-2026-11-25",
+      "pollsterCode": "indikator",
+      "fieldStart": "2026-11-04",
+      "fieldEnd": "2026-11-22",
+      "publishedAt": "2026-11-25",
+      "sampleSize": 1537,
+      "sourceUrl": "https://github.com/MansMeg/SwedishPolls",
+      "sourceCitation": "Indikator, fältperiod 2026-11-04–2026-11-22 (via SwedishPolls)",
+      "results": {
+        "M": 25.3,
+        "L": 3.7,
+        "C": 4.8,
+        "KD": 6.2,
+        "S": 25.4,
+        "V": 8.7,
+        "MP": 8.0,
+        "SD": 16.7
+      }
     }
   ]
 }
